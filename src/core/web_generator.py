@@ -5,7 +5,7 @@ from jinja2 import Environment, FileSystemLoader
 
 # CONFIGURATION
 JSON_FOLDER = "data/session_results"
-OUTPUT_HTML_FOLDER = "public"
+OUTPUT_HTML_FOLDER = "docs"
 TEMPLATE_DIR = "src/templates"
 
 class WebGenerator:
