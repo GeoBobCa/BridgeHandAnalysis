@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "filename": "4571375609 (1).lin",
+    "timestamp": "Sat Dec 20 14:00:13 2025"
+  },
+  "facts": {
+    "file": "4571375609 (1).lin",
+    "board": "Board 10",
+    "dealer": "East",
+    "vulnerability": "Both",
+    "hands": {
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "2",
+            "6",
+            "9"
+          ],
+          "H": [
+            "5",
+            "J"
+          ],
+          "D": [
+            "8",
+            "T",
+            "Q",
+            "K"
+          ],
+          "C": [
+            "3",
+            "6",
+            "Q",
+            "A"
+          ]
+        },
+        "stats": {
+          "hcp": 12,
+          "distribution_counts": [
+            3,
+            2,
+            4,
+            4
+          ],
+          "distribution_str": "3-2-4-4"
+        },
+        "raw": "S269H5JD8TQKC36QA"
+      },
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "3",
+            "5",
+            "Q",
+            "K"
+          ],
+          "H": [
+            "Q",
+            "A"
+          ],
+          "D": [
+            "3",
+            "4",
+            "5",
+            "A"
+          ],
+          "C": [
+            "2",
+            "7",
+            "T"
+          ]
+        },
+        "stats": {
+          "hcp": 15,
+          "distribution_counts": [
+            4,
+            2,
+            4,
+            3
+          ],
+          "distribution_str": "4-2-4-3"
+        },
+        "raw": "S35QKHQAD345AC27T"
+      },
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "7",
+            "A"
+          ],
+          "H": [
+            "2",
+            "3",
+            "7",
+            "8",
+            "K"
+          ],
+          "D": [
+            "2",
+            "J"
+          ],
+          "C": [
+            "5",
+            "8",
+            "9",
+            "K"
+          ]
+        },
+        "stats": {
+          "hcp": 11,
+          "distribution_counts": [
+            2,
+            5,
+            2,
+            4
+          ],
+          "distribution_str": "2-5-2-4"
+        },
+        "raw": "S7AH2378KD2JC589K"
+      },
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "J",
+            "T",
+            "8",
+            "4"
+          ],
+          "H": [
+            "T",
+            "9",
+            "6",
+            "4"
+          ],
+          "D": [
+            "9",
+            "7",
+            "6"
+          ],
+          "C": [
+            "J",
+            "4"
+          ]
+        },
+        "stats": {
+          "hcp": 2,
+          "distribution_counts": [
+            4,
+            4,
+            3,
+            2
+          ],
+          "distribution_str": "4-4-3-2"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "p",
+      "1D",
+      "1S",
+      "2H",
+      "p",
+      "3C",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "HA",
+      "H2",
+      "H4",
+      "H5",
+      "S3",
+      "SA",
+      "S4",
+      "S2",
+      "D2",
+      "D6",
+      "DT",
+      "DA",
+      "SK",
+      "S7",
+      "S8",
+      "S6",
+      "HQ",
+      "HK",
+      "H6",
+      "HJ",
+      "C5",
+      "C4",
+      "CQ",
+      "C2",
+      "C3",
+      "C7",
+      "CK",
+      "CJ",
+      "C8",
+      "ST",
+      "CA",
+      "CT",
+      "D8",
+      "D3",
+      "DJ",
+      "D7",
+      "H3",
+      "H9",
+      "C6",
+      "D4",
+      "DK",
+      "D5",
+      "H7",
+      "D9",
+      "DQ",
+      "S5",
+      "H8",
+      "SJ",
+      "S9",
+      "SQ",
+      "C9",
+      "HT"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S269H5JD8TQKC36QA,S35QKHQAD345AC27T,S7AH2378KD2JC589K,|rh||ah|Board 10|sv|b|mb|p|mb|1D|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|HA|pc|H2|pc|H4|pc|H5|pg||pc|S3|pc|SA|pc|S4|pc|S2|pg||pc|D2|pc|D6|pc|DT|pc|DA|pg||pc|SK|pc|S7|pc|S8|pc|S6|pg||pc|HQ|pc|HK|pc|H6|pc|HJ|pg||pc|C5|pc|C4|pc|CQ|pc|C2|pg||pc|C3|pc|C7|pc|CK|pc|CJ|pg||pc|C8|pc|ST|pc|CA|pc|CT|pg||pc|D8|pc|D3|pc|DJ|pc|D7|pg||pc|H3|pc|H9|pc|C6|pc|D4|pg||pc|DK|pc|D5|pc|H7|pc|D9|pg||pc|DQ|pc|S5|pc|H8|pc|SJ|pg||pc|S9|pc|SQ|pc|C9|pc|HT|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "OVERBID AND CRITICAL MISFIT",
+    "basic_analysis": "The contract of 3 Clubs (a Part-Score attempt) by South went down 4 tricks, indicating a significant failure in the auction. The primary flaw was failing to locate the 8-card Spade fit (South and North both hold 4 Spades). While the S-N partnership has only 17 combined HCP, distribution is favorable for Spades, and 4S might have been playable. East-West, despite having 23 combined HCP, complicated the bidding significantly when West overcalled 1S on a poor two-card holding (West should have prioritized 1H or doubled). North, with only 2 HCP, made a competitive 2H bid that South correctly ignored, but South's subsequent bid of 3C was highly flawed. 3C lacked the required minimum eight-card fit (only five clubs total) and was bid far too high, leading to an impossible contract against E-W's combined Club strength (CA, CK, CQ). The play demonstrates the lack of trump control, confirming the terrible fit.",
+    "advanced_insight": "The most sophisticated error was South's failure to employ a Negative Double over West's 1S overcall. A Negative Double by South would guarantee 4 Spades and 4 Hearts (or just unbid majors) and show competitive values (10+ points), providing North the chance to bid 2S, immediately locating the optimal 8-card fit. Furthermore, the E-W partnership had legitimate game chances in 4 Hearts, which they missed when West chose a misleading 1S overcall instead of the more accurate 1H bid on a 5-card suit, or a takeout double.",
+    "lesson_module": {
+      "topic": "Prioritizing Major Suit Fits and Minimum Trump Length",
+      "content": "In bridge, establishing an eight-card major suit fit (Spades or Hearts) is the highest priority, as these contracts score better and are generally easier to make than minor suit contracts. Here, S-N had a hidden 4-4 Spade fit. When an opponent overcalls, responder must use tools like the Negative Double to show unbid major suits and competitive values. Critically, bidding a minor suit contract to the 3-level or higher (like 3C) requires a solid, preferably 8-card fit, and good controls. Playing 3C on a 5-card fit against opponents holding high honors (A, Q, K) is often a guarantee of defeat."
+    }
+  }
+}

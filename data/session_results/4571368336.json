@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "filename": "4571368336.lin",
+    "timestamp": "Sat Dec 20 13:58:23 2025"
+  },
+  "facts": {
+    "file": "4571368336.lin",
+    "board": "Board 8",
+    "dealer": "West",
+    "vulnerability": "None",
+    "hands": {
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "2",
+            "4",
+            "K"
+          ],
+          "H": [
+            "3",
+            "7",
+            "A"
+          ],
+          "D": [
+            "3",
+            "4",
+            "J",
+            "Q",
+            "K"
+          ],
+          "C": [
+            "J",
+            "Q"
+          ]
+        },
+        "stats": {
+          "hcp": 16,
+          "distribution_counts": [
+            3,
+            3,
+            5,
+            2
+          ],
+          "distribution_str": "3-3-5-2"
+        },
+        "raw": "S24KH37AD34JQKCJQ"
+      },
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "T",
+            "J",
+            "A"
+          ],
+          "H": [
+            "2",
+            "4",
+            "9"
+          ],
+          "D": [
+            "6",
+            "7",
+            "T",
+            "A"
+          ],
+          "C": [
+            "2",
+            "K",
+            "A"
+          ]
+        },
+        "stats": {
+          "hcp": 16,
+          "distribution_counts": [
+            3,
+            3,
+            4,
+            3
+          ],
+          "distribution_str": "3-3-4-3"
+        },
+        "raw": "STJAH249D67TAC2KA"
+      },
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "3",
+            "8",
+            "9"
+          ],
+          "H": [
+            "6",
+            "8",
+            "J"
+          ],
+          "D": [
+            "8",
+            "9"
+          ],
+          "C": [
+            "3",
+            "4",
+            "7",
+            "8",
+            "T"
+          ]
+        },
+        "stats": {
+          "hcp": 1,
+          "distribution_counts": [
+            3,
+            3,
+            2,
+            5
+          ],
+          "distribution_str": "3-3-2-5"
+        },
+        "raw": "S389H68JD89C3478T"
+      },
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "Q",
+            "7",
+            "6",
+            "5"
+          ],
+          "H": [
+            "K",
+            "Q",
+            "T",
+            "5"
+          ],
+          "D": [
+            "5",
+            "2"
+          ],
+          "C": [
+            "9",
+            "6",
+            "5"
+          ]
+        },
+        "stats": {
+          "hcp": 7,
+          "distribution_counts": [
+            4,
+            4,
+            2,
+            3
+          ],
+          "distribution_str": "4-4-2-3"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "1D",
+      "p",
+      "1H",
+      "2D",
+      "2H",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "DK",
+      "DA",
+      "D8",
+      "D2",
+      "CA",
+      "C3",
+      "C5",
+      "CQ",
+      "ST",
+      "S3",
+      "S5",
+      "SK",
+      "DQ",
+      "D6",
+      "D9",
+      "D5",
+      "CJ",
+      "CK",
+      "C4",
+      "C6",
+      "SA",
+      "S8",
+      "S6",
+      "S2",
+      "D7",
+      "H6",
+      "HT",
+      "D3",
+      "S7",
+      "S4",
+      "SJ",
+      "S9",
+      "DT",
+      "H8",
+      "HQ",
+      "D4",
+      "SQ",
+      "DJ",
+      "C2",
+      "HJ",
+      "C7",
+      "C9",
+      "HA",
+      "H2",
+      "H3",
+      "H9",
+      "C8",
+      "H5",
+      "H4",
+      "CT",
+      "HK",
+      "H7"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S24KH37AD34JQKCJQ,STJAH249D67TAC2KA,S389H68JD89C3478T,|rh||ah|Board 8|sv|o|mb|1D|mb|p|mb|1H|mb|2D|mb|2H|mb|p|mb|p|mb|p|pg||pc|DK|pc|DA|pc|D8|pc|D2|pg||pc|CA|pc|C3|pc|C5|pc|CQ|pg||pc|ST|pc|S3|pc|S5|pc|SK|pg||pc|DQ|pc|D6|pc|D9|pc|D5|pg||pc|CJ|pc|CK|pc|C4|pc|C6|pg||pc|SA|pc|S8|pc|S6|pc|S2|pg||pc|D7|pc|H6|pc|HT|pc|D3|pg||pc|S7|pc|S4|pc|SJ|pc|S9|pg||pc|DT|pc|H8|pc|HQ|pc|D4|pg||pc|SQ|pc|DJ|pc|C2|pc|HJ|pg||pc|C7|pc|C9|pc|HA|pc|H2|pg||pc|H3|pc|H9|pc|C8|pc|H5|pg||pc|H4|pc|CT|pc|HK|pc|H7|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "FAILED PART-SCORE",
+    "basic_analysis": "The auction was highly irregular and led to a catastrophic contract. North, holding 16 HCP, made a severe error by passing West's 1D opening. Standard SAYC requires a response, likely 1NT (12-14, balanced) or a Takeout Double to keep the auction open for a response with this strength. East's subsequent 1H bid on 1 HCP was a highly speculative, unwarranted entry into the auction, which ultimately derailed the deal entirely. South's 2D bid was also incorrect, as South held only two diamonds. The final contract of 2H by East was doomed because the N/S partnership held the true trump suit (Hearts, 7 cards, including the KQTx) and the point advantage (23 HCP vs 17 HCP). E/W located a weak 6-card fit where N/S held trump control. E/W managed to win only 4 tricks, failing the part-score contract by 4 tricks. N/S missed an easy game opportunity, most likely 3NT (23 combined HCP).",
+    "advanced_insight": "The key failure was not a complex play technique but the total breakdown of competitive bidding principles. North's 16 HCP hand, containing excellent controls (three Aces and a King), was prime for seeking game, specifically 3NT. If North had utilized a Takeout Double over 1D, the partnership could have easily located the 3NT game potential or possibly 4S (though the fit is only 7 cards). N/S had the points and controls to run the minor suits and establish 3NT, achieving at least 9 tricks based on their club and spade winners and external controls, proving that the bidding mechanism, not the play, determined the outcome.",
+    "lesson_module": {
+      "topic": "The Mandatory Response and the Power of the Takeout Double",
+      "content": "When your partner opens the bidding, you must respond if you have 6+ HCP. When an opponent opens the bidding, you must respond or intervene if you have 8+ HCP, especially if you hold 12+ HCP. North, with 16 HCP, violated this fundamental rule by passing 1D. Passing with this strength cedes control of the auction to the opponents. A standard approach here would be a Takeout Double, promising general support for the unbid suits (specifically the majors) and 10+ HCP, or a 1NT bid (showing 12-14 balanced, which is slightly under-range but sometimes acceptable to guarantee a game try). By passing, North allowed East to steal the auction cheaply, leading to a massive penalty for the North-South side's failure to compete for the best contract (3NT)."
+    }
+  }
+}

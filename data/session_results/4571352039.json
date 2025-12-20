@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "filename": "4571352039.lin",
+    "timestamp": "Sat Dec 20 13:56:32 2025"
+  },
+  "facts": {
+    "file": "4571352039.lin",
+    "board": "Board 3",
+    "dealer": "South",
+    "vulnerability": "EW",
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "8",
+            "K",
+            "A"
+          ],
+          "H": [
+            "T",
+            "Q"
+          ],
+          "D": [
+            "2",
+            "3",
+            "8"
+          ],
+          "C": [
+            "3",
+            "9",
+            "T",
+            "J",
+            "A"
+          ]
+        },
+        "stats": {
+          "hcp": 14,
+          "distribution_counts": [
+            3,
+            2,
+            3,
+            5
+          ],
+          "distribution_str": "3-2-3-5"
+        },
+        "raw": "S8KAHTQD238C39TJA"
+      },
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "3",
+            "J"
+          ],
+          "H": [
+            "3",
+            "4",
+            "6",
+            "8",
+            "K"
+          ],
+          "D": [
+            "6",
+            "9",
+            "T",
+            "A"
+          ],
+          "C": [
+            "2",
+            "6"
+          ]
+        },
+        "stats": {
+          "hcp": 8,
+          "distribution_counts": [
+            2,
+            5,
+            4,
+            2
+          ],
+          "distribution_str": "2-5-4-2"
+        },
+        "raw": "S3JH3468KD69TAC26"
+      },
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "2",
+            "4",
+            "6",
+            "7",
+            "Q"
+          ],
+          "H": [
+            "5",
+            "9",
+            "A"
+          ],
+          "D": [
+            "4",
+            "5",
+            "7",
+            "J"
+          ],
+          "C": [
+            "Q"
+          ]
+        },
+        "stats": {
+          "hcp": 9,
+          "distribution_counts": [
+            5,
+            3,
+            4,
+            1
+          ],
+          "distribution_str": "5-3-4-1"
+        },
+        "raw": "S2467QH59AD457JCQ"
+      },
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "T",
+            "9",
+            "5"
+          ],
+          "H": [
+            "J",
+            "7",
+            "2"
+          ],
+          "D": [
+            "K",
+            "Q"
+          ],
+          "C": [
+            "K",
+            "8",
+            "7",
+            "5",
+            "4"
+          ]
+        },
+        "stats": {
+          "hcp": 9,
+          "distribution_counts": [
+            3,
+            3,
+            2,
+            5
+          ],
+          "distribution_str": "3-3-2-5"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "1C",
+      "p",
+      "1S",
+      "p",
+      "1N",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "DA",
+      "D4",
+      "DQ",
+      "D2",
+      "C2",
+      "CQ",
+      "CK",
+      "CA",
+      "CJ",
+      "C6",
+      "D5",
+      "C4",
+      "CT",
+      "H3",
+      "D7",
+      "C5",
+      "C9",
+      "H4",
+      "H5",
+      "C7",
+      "SA",
+      "S3",
+      "S2",
+      "S5",
+      "SK",
+      "SJ",
+      "S4",
+      "S9",
+      "S8",
+      "D6",
+      "SQ",
+      "ST",
+      "S7",
+      "H2",
+      "D3",
+      "H6",
+      "S6",
+      "H7",
+      "D8",
+      "D9",
+      "HA",
+      "HJ",
+      "HT",
+      "H8",
+      "H9",
+      "C8",
+      "HQ",
+      "HK",
+      "DT",
+      "DJ",
+      "DK",
+      "C3"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S8KAHTQD238C39TJA,S3JH3468KD69TAC26,S2467QH59AD457JCQ,|rh||ah|Board 3|sv|e|mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|p|mb|p|pg||pc|DA|pc|D4|pc|DQ|pc|D2|pg||pc|C2|pc|CQ|pc|CK|pc|CA|pg||pc|CJ|pc|C6|pc|D5|pc|C4|pg||pc|CT|pc|H3|pc|D7|pc|C5|pg||pc|C9|pc|H4|pc|H5|pc|C7|pg||pc|SA|pc|S3|pc|S2|pc|S5|pg||pc|SK|pc|SJ|pc|S4|pc|S9|pg||pc|S8|pc|D6|pc|SQ|pc|ST|pg||pc|S7|pc|H2|pc|D3|pc|H6|pg||pc|S6|pc|H7|pc|D8|pc|D9|pg||pc|HA|pc|HJ|pc|HT|pc|H8|pg||pc|H9|pc|C8|pc|HQ|pc|HK|pg||pc|DT|pc|DJ|pc|DK|pc|C3|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "MISSED GAME",
+    "basic_analysis": "The final contract was 1NT by South, a Part-Score, which made 11 tricks. The partnership had a total of 23 HCP (South 14, North 9) and excellent playability in Notrump, converting 1NT into a laydown 3NT game (+2 overtricks). The auction failed because South, after opening 1C and hearing 1S, rebid 1NT, suggesting a balanced hand of 12-14 or 15-17 (depending on partnership style). Regardless of the precise range shown, this rebid limited the hand too much for North (9 HCP) to feel comfortable bidding game directly. North, holding only 9 HCP, correctly judged the hand was not worth 3NT based on strict point count alone, assuming South was minimum for the rebid. This passive approach led to missing the easy game contract.",
+    "advanced_insight": "North's hand features strong distribution (5 Spades, singleton Club) which is poorly reflected by the 9 HCP count. After South's limited 1NT rebid, North should have investigated game, likely by making an invitational bid of 2NT. A jump to 2NT would show roughly 8-10 points, looking for 3NT. If the partnership used Check-Back conventions after Opener's 1NT rebid, North could have used 2C (forcing) to show the 5-card Spade suit and ask Opener to clarify their exact range and control status, which would surely lead to 3NT. The playing phase required no advanced technique; the tricks were largely positional and high-card winners.",
+    "lesson_module": {
+      "topic": "Evaluating Distributional Strength in Notrump Bidding",
+      "content": "When Responder has an invitational hand (8 or 9 HCP) opposite an Opener who has limited their range (like rebidding 1NT), Responder must reassess the hand based on distribution, not just HCP. Here, North has a 5-card major and strong intermediates, making the hand much more valuable than a flat 9 points. If strict point count says 'Pass' but distribution and fit potential suggest 'Invite,' always trust the distributional factors. In this case, 9 HCP combined with South\u2019s 14 HCP brings the total to 23. Combined with good working cards (AK/A/Q), North should take the lead and invite to 2NT, or even push directly to 3NT, to secure the likely game bonus."
+    }
+  }
+}

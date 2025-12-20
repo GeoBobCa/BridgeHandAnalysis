@@ -1,0 +1,18 @@
+# Security
+.env
+
+# Python compilation junk
+__pycache__/
+*.pyc
+
+# Local Data (Don't backup the binary DB to git, backup the JSONL if you want)
+data/bridge_master.db
+inputs/*
+
+# IDE settings
+.vscode/
+.idea/
+
+# Virtual Environment
+venv/
+.venv/

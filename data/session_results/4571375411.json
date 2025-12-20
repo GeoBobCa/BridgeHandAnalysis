@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "filename": "4571375411.lin",
+    "timestamp": "Sat Dec 20 13:59:38 2025"
+  },
+  "facts": {
+    "file": "4571375411.lin",
+    "board": "Board 4",
+    "dealer": "West",
+    "vulnerability": "Both",
+    "hands": {
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "3",
+            "A"
+          ],
+          "H": [
+            "2",
+            "5",
+            "7"
+          ],
+          "D": [
+            "2",
+            "3",
+            "5",
+            "6",
+            "T",
+            "A"
+          ],
+          "C": [
+            "2",
+            "J"
+          ]
+        },
+        "stats": {
+          "hcp": 9,
+          "distribution_counts": [
+            2,
+            3,
+            6,
+            2
+          ],
+          "distribution_str": "2-3-6-2"
+        },
+        "raw": "S3AH257D2356TAC2J"
+      },
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "6",
+            "K"
+          ],
+          "H": [
+            "4",
+            "9",
+            "J",
+            "Q",
+            "A"
+          ],
+          "D": [
+            "7",
+            "9",
+            "Q",
+            "K"
+          ],
+          "C": [
+            "K",
+            "A"
+          ]
+        },
+        "stats": {
+          "hcp": 22,
+          "distribution_counts": [
+            2,
+            5,
+            4,
+            2
+          ],
+          "distribution_str": "2-5-4-2"
+        },
+        "raw": "S6KH49JQAD79QKCKA"
+      },
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "2",
+            "4",
+            "J"
+          ],
+          "H": [
+            "3",
+            "6",
+            "8",
+            "K"
+          ],
+          "D": [
+            "4"
+          ],
+          "C": [
+            "3",
+            "5",
+            "7",
+            "9",
+            "T"
+          ]
+        },
+        "stats": {
+          "hcp": 4,
+          "distribution_counts": [
+            3,
+            4,
+            1,
+            5
+          ],
+          "distribution_str": "3-4-1-5"
+        },
+        "raw": "S24JH368KD4C3579T"
+      },
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "Q",
+            "T",
+            "9",
+            "8",
+            "7",
+            "5"
+          ],
+          "H": [
+            "T"
+          ],
+          "D": [
+            "J",
+            "8"
+          ],
+          "C": [
+            "Q",
+            "8",
+            "6",
+            "4"
+          ]
+        },
+        "stats": {
+          "hcp": 5,
+          "distribution_counts": [
+            6,
+            1,
+            2,
+            4
+          ],
+          "distribution_str": "6-1-2-4"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "2C",
+      "p",
+      "2S",
+      "p",
+      "3H",
+      "p",
+      "3S",
+      "p",
+      "3N",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "H3",
+      "HT",
+      "H2",
+      "HJ",
+      "HA",
+      "H6",
+      "S5",
+      "H5",
+      "HQ",
+      "H8",
+      "S7",
+      "H7",
+      "CA",
+      "C3",
+      "C4",
+      "C2",
+      "CK",
+      "C5",
+      "C6",
+      "CJ",
+      "SK",
+      "S2",
+      "S8",
+      "SA",
+      "DA",
+      "D7",
+      "D4",
+      "D8",
+      "D2",
+      "DK",
+      "C7",
+      "DJ",
+      "DQ",
+      "C9",
+      "S9",
+      "D3",
+      "S6",
+      "S4",
+      "SQ",
+      "S3",
+      "CQ",
+      "D5",
+      "H4",
+      "CT",
+      "C8",
+      "D6",
+      "H9",
+      "SJ",
+      "ST",
+      "DT",
+      "D9",
+      "HK"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S3AH257D2356TAC2J,S6KH49JQAD79QKCKA,S24JH368KD4C3579T,|rh||ah|Board 4|sv|b|mb|2C|mb|p|mb|2S|mb|p|mb|3H|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|H3|pc|HT|pc|H2|pc|HJ|pg||pc|HA|pc|H6|pc|S5|pc|H5|pg||pc|HQ|pc|H8|pc|S7|pc|H7|pg||pc|CA|pc|C3|pc|C4|pc|C2|pg||pc|CK|pc|C5|pc|C6|pc|CJ|pg||pc|SK|pc|S2|pc|S8|pc|SA|pg||pc|DA|pc|D7|pc|D4|pc|D8|pg||pc|D2|pc|DK|pc|C7|pc|DJ|pg||pc|DQ|pc|C9|pc|S9|pc|D3|pg||pc|S6|pc|S4|pc|SQ|pc|S3|pg||pc|CQ|pc|D5|pc|H4|pc|CT|pg||pc|C8|pc|D6|pc|H9|pc|SJ|pg||pc|ST|pc|DT|pc|D9|pc|HK|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "GAME CONTRACT MADE",
+    "basic_analysis": "North/South reached a successful game contract of 3NT, making 10 tricks (+1). The N/S partnership holds 27 combined HCP, which is easily sufficient for game. North's opening 2C (strong, artificial) correctly identified the massive offensive potential. South's 2S response showed a weak hand (5 HCP) with a long Spade suit (6 cards). Although North attempted to locate a Heart fit (3H), South correctly showed preference for the established 8-card Spade fit (3S). North, despite the confirmed major suit fit, chose the safety of 3NT. While 3NT made easily due to the run of high cards in Hearts and Clubs, 4S would have been the superior and standard choice, capitalizing on the 8-card major suit fit, and potentially securing a higher score. Declarer's play focused on cashing the long Heart and Club winners quickly before touching Diamonds or Spades, securing enough tricks before the defense could organize.",
+    "advanced_insight": "The major error was committing to 3NT instead of 4S. With 27 total HCP and a known 8-card fit, the partnership should prioritize the major suit game. North's hand is highly distributional (5-5 in the black suits) and should favor a suit contract. Sophisticated bidding techniques like cue-bidding or specific slam inquiries were not reached because North jumped prematurely to 3NT, overriding the established fit. No complex play technique (like a squeeze or endplay) was necessary to make the contract, which was won by sheer high-card power.",
+    "lesson_module": {
+      "topic": "Prioritizing Major Suit Fits over Notrump",
+      "content": "When a major suit fit of eight cards or more is established and the partnership has sufficient points for game (25+), it is standard practice to play the major suit contract (4H or 4S) rather than 3NT. Major suit games offer the security of trump control, allowing for ruffing losers in the short hand. Although 3NT made, 4S was the percentage contract. North should have responded to the 3S rebid by bidding 4S, trusting the fit and the vulnerability situation. Avoid the temptation to retreat to 3NT simply because you have stoppers, especially when a clear major suit game is available."
+    }
+  }
+}

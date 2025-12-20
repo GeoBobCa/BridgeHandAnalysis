@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "filename": "4571377417.lin",
+    "timestamp": "Sat Dec 20 14:00:50 2025"
+  },
+  "facts": {
+    "file": "4571377417.lin",
+    "board": "Board 11",
+    "dealer": "South",
+    "vulnerability": "None",
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "6",
+            "T",
+            "J"
+          ],
+          "H": [
+            "4",
+            "8"
+          ],
+          "D": [
+            "3",
+            "6",
+            "7",
+            "9",
+            "A"
+          ],
+          "C": [
+            "7",
+            "9",
+            "Q"
+          ]
+        },
+        "stats": {
+          "hcp": 7,
+          "distribution_counts": [
+            3,
+            2,
+            5,
+            3
+          ],
+          "distribution_str": "3-2-5-3"
+        },
+        "raw": "S6TJH48D3679AC79Q"
+      },
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "2"
+          ],
+          "H": [
+            "2",
+            "3",
+            "6",
+            "7",
+            "9",
+            "Q"
+          ],
+          "D": [
+            "8",
+            "Q"
+          ],
+          "C": [
+            "3",
+            "6",
+            "K",
+            "A"
+          ]
+        },
+        "stats": {
+          "hcp": 11,
+          "distribution_counts": [
+            1,
+            6,
+            2,
+            4
+          ],
+          "distribution_str": "1-6-2-4"
+        },
+        "raw": "S2H23679QD8QC36KA"
+      },
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "4",
+            "5",
+            "K",
+            "A"
+          ],
+          "H": [
+            "J"
+          ],
+          "D": [
+            "4",
+            "J",
+            "K"
+          ],
+          "C": [
+            "2",
+            "4",
+            "5",
+            "T",
+            "J"
+          ]
+        },
+        "stats": {
+          "hcp": 13,
+          "distribution_counts": [
+            4,
+            1,
+            3,
+            5
+          ],
+          "distribution_str": "4-1-3-5"
+        },
+        "raw": "S45KAHJD4JKC245TJ"
+      },
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "Q",
+            "9",
+            "8",
+            "7",
+            "3"
+          ],
+          "H": [
+            "A",
+            "K",
+            "T",
+            "5"
+          ],
+          "D": [
+            "T",
+            "5",
+            "2"
+          ],
+          "C": [
+            "8"
+          ]
+        },
+        "stats": {
+          "hcp": 9,
+          "distribution_counts": [
+            5,
+            4,
+            3,
+            1
+          ],
+          "distribution_str": "5-4-3-1"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "p",
+      "2H",
+      "3C",
+      "3H",
+      "p",
+      "4H",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "C2",
+      "C8",
+      "CQ",
+      "CA",
+      "H2",
+      "HJ",
+      "HA",
+      "H4",
+      "HK",
+      "H8",
+      "H3",
+      "C4",
+      "D2",
+      "D9",
+      "DQ",
+      "DK",
+      "S4",
+      "S9",
+      "ST",
+      "S2",
+      "DA",
+      "D8",
+      "D4",
+      "D5",
+      "D7",
+      "H6",
+      "DJ",
+      "DT",
+      "CK",
+      "C5",
+      "S3",
+      "C7",
+      "C3",
+      "CT",
+      "H5",
+      "C9",
+      "S7",
+      "SJ",
+      "H7",
+      "S5",
+      "C6",
+      "CJ",
+      "HT",
+      "S6",
+      "S8",
+      "D3",
+      "H9",
+      "SK",
+      "HQ",
+      "SA",
+      "SQ",
+      "D6"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S6TJH48D3679AC79Q,S2H23679QD8QC36KA,S45KAHJD4JKC245TJ,|rh||ah|Board 11|sv|o|mb|p|mb|2H|mb|3C|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|C2|pc|C8|pc|CQ|pc|CA|pg||pc|H2|pc|HJ|pc|HA|pc|H4|pg||pc|HK|pc|H8|pc|H3|pc|C4|pg||pc|D2|pc|D9|pc|DQ|pc|DK|pg||pc|S4|pc|S9|pc|ST|pc|S2|pg||pc|DA|pc|D8|pc|D4|pc|D5|pg||pc|D7|pc|H6|pc|DJ|pc|DT|pg||pc|CK|pc|C5|pc|S3|pc|C7|pg||pc|C3|pc|CT|pc|H5|pc|C9|pg||pc|S7|pc|SJ|pc|H7|pc|S5|pg||pc|C6|pc|CJ|pc|HT|pc|S6|pg||pc|S8|pc|D3|pc|H9|pc|SK|pg||pc|HQ|pc|SA|pc|SQ|pc|D6|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "GAME CONTRACT MADE",
+    "basic_analysis": "The East-West partnership successfully reached and made their 4 Heart game contract, securing 10 tricks. With 20 combined HCP and a 10-card fit in Hearts (6 in West's hand, 4 in East's hand), 4H was a sound contract choice. West opened 2H, typically interpreted as a weak pre-empt in SAYC, although West's 11 HCP suggests a more intermediate bid. North's 3C was constructive, but failed to convey the partnership's potential to compete for game (N/S also has 20 HCP). East raised to 3H, supporting the suit, and West jumped to 4H to play game. Declarer West played accurately, establishing tricks via two successful ruffs (T7 and T10) to fulfill the contract.",
+    "advanced_insight": "North (13 HCP) missed an opportunity to utilize competitive bidding conventions. Over West's 2H intermediate/pre-emptive bid, North should have employed a Negative Double instead of bidding 3C immediately. The Negative Double would show general strength (10+ HCP) and potential interest in unbid major suits (Spades), keeping the options open for a Notrump or Spade game, while better defining the distribution for partner South (7 HCP). By bidding 3C directly, N/S failed to utilize their competitive strength effectively.",
+    "lesson_module": {
+      "topic": "Competitive Bidding: Responding to Pre-empts (Negative Double)",
+      "content": "When an opponent opens with a pre-emptive bid (like 2H here), and you hold opening hand strength (10+ HCP) but lack an ideal descriptive bid, the Negative Double is your best tool. It shows the strength required to compete and promises four cards in unbid major suits, or simply a balanced hand interested in 3NT. North\u2019s 13 HCP and 4-card Spade suit were perfect for a Negative Double over 2H. Bidding a suit immediately (3C) consumes precious bidding room and fails to fully define the potential of your hand, allowing the opponents to steal the game bid."
+    }
+  }
+}

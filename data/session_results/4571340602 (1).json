@@ -1,0 +1,236 @@
+{
+  "meta": {
+    "filename": "4571340602 (1).lin",
+    "timestamp": "Sat Dec 20 13:55:38 2025"
+  },
+  "facts": {
+    "file": "4571340602 (1).lin",
+    "board": "Board 1",
+    "dealer": "North",
+    "vulnerability": "None",
+    "hands": {
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "5",
+            "6",
+            "T",
+            "J",
+            "Q"
+          ],
+          "H": [
+            "4",
+            "T",
+            "Q",
+            "K"
+          ],
+          "D": [
+            "5"
+          ],
+          "C": [
+            "5",
+            "6",
+            "J"
+          ]
+        },
+        "stats": {
+          "hcp": 9,
+          "distribution_counts": [
+            5,
+            4,
+            1,
+            3
+          ],
+          "distribution_str": "5-4-1-3"
+        },
+        "raw": "S56TJQH4TQKD5C56J"
+      },
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "4"
+          ],
+          "H": [
+            "5",
+            "6",
+            "J"
+          ],
+          "D": [
+            "6",
+            "8",
+            "T",
+            "J",
+            "K"
+          ],
+          "C": [
+            "7",
+            "9",
+            "T",
+            "Q"
+          ]
+        },
+        "stats": {
+          "hcp": 7,
+          "distribution_counts": [
+            1,
+            3,
+            5,
+            4
+          ],
+          "distribution_str": "1-3-5-4"
+        },
+        "raw": "S4H56JD68TJKC79TQ"
+      },
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "2",
+            "3",
+            "7",
+            "K",
+            "A"
+          ],
+          "H": [
+            "3",
+            "8",
+            "9",
+            "A"
+          ],
+          "D": [
+            "2",
+            "3",
+            "A"
+          ],
+          "C": [
+            "A"
+          ]
+        },
+        "stats": {
+          "hcp": 19,
+          "distribution_counts": [
+            5,
+            4,
+            3,
+            1
+          ],
+          "distribution_str": "5-4-3-1"
+        },
+        "raw": "S237KAH389AD23ACA"
+      },
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "9",
+            "8"
+          ],
+          "H": [
+            "7",
+            "2"
+          ],
+          "D": [
+            "Q",
+            "9",
+            "7",
+            "4"
+          ],
+          "C": [
+            "K",
+            "8",
+            "4",
+            "3",
+            "2"
+          ]
+        },
+        "stats": {
+          "hcp": 5,
+          "distribution_counts": [
+            2,
+            2,
+            4,
+            5
+          ],
+          "distribution_str": "2-2-4-5"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "1S",
+      "p",
+      "3S",
+      "p",
+      "4S",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "C2",
+      "C5",
+      "C9",
+      "CA",
+      "H3",
+      "H2",
+      "HQ",
+      "H5",
+      "S5",
+      "S4",
+      "SK",
+      "S8",
+      "S2",
+      "S9",
+      "ST",
+      "D6",
+      "D5",
+      "DK",
+      "DA",
+      "D4",
+      "D2",
+      "D7",
+      "S6",
+      "D8",
+      "H4",
+      "H6",
+      "HA",
+      "H7",
+      "D3",
+      "D9",
+      "SJ",
+      "DT",
+      "HK",
+      "HJ",
+      "H8",
+      "C3",
+      "C6",
+      "CQ",
+      "S3",
+      "C4",
+      "S7",
+      "C8",
+      "SQ",
+      "C7",
+      "CJ",
+      "CT",
+      "SA",
+      "CK",
+      "H9",
+      "DQ",
+      "HT",
+      "DJ"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S56TJQH4TQKD5C56J,S4H56JD68TJKC79TQ,S237KAH389AD23ACA,|rh||ah|Board 1|sv|o|mb|1S|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|C2|pc|C5|pc|C9|pc|CA|pg||pc|H3|pc|H2|pc|HQ|pc|H5|pg||pc|S5|pc|S4|pc|SK|pc|S8|pg||pc|S2|pc|S9|pc|ST|pc|D6|pg||pc|D5|pc|DK|pc|DA|pc|D4|pg||pc|D2|pc|D7|pc|S6|pc|D8|pg||pc|H4|pc|H6|pc|HA|pc|H7|pg||pc|D3|pc|D9|pc|SJ|pc|DT|pg||pc|HK|pc|HJ|pc|H8|pc|C3|pg||pc|C6|pc|CQ|pc|S3|pc|C4|pg||pc|S7|pc|C8|pc|SQ|pc|C7|pg||pc|CJ|pc|CT|pc|SA|pc|CK|pg||pc|H9|pc|DQ|pc|HT|pc|DJ|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "MISSED GRAND SLAM",
+    "basic_analysis": "The partnership (North/South) reached the standard major suit Game contract of 4S. South opened 1S with 19 HCP, and North supported strongly with 3S (9 HCP, 5-card support, singleton diamond). Their combined 28 HCP and excellent 5-5 spade fit made 4S a highly favorable contract. However, South, holding 19 HCP and hearing an invitational response, closed the bidding by jumping straight to 4S. This was premature. The hands produced 13 tricks, meaning the partnership missed a vulnerable Grand Slam (7S), or at least an almost certain small slam (6S). Based on simple point counting (28 HCP), slam should have been thoroughly investigated.",
+    "advanced_insight": "The key failure was South's decision to accept the game invitation rather than cue-bidding or using Blackwood. With 19 HCP, a strong 5-5 fit established, and North showing distributional values (suggested by the jump raise with a singleton), South should have initiated slam exploration. For instance, after 3S, South should bid 4C (showing the Club Ace control, or as a generic slam try/Cue Bid, depending on partnership agreement) instead of 4S. Given the 10 trump winners and the high controls in the side suits (Aces of C, D, H, and K, Q of H), 7S was cold.",
+    "lesson_module": {
+      "topic": "Slam Investigation after a Constructive Raise",
+      "content": "When a partnership establishes a major suit fit and possesses 28 or more combined High Card Points (HCP), the opener must ensure the auction stays alive for slam investigation, even after a limiting response (like North's 3S). If opener holds 19+ HCP and partner shows 9-12 HCP and good support, opener should assume the potential for slam. The principle: Do not accept game immediately if your combined strength reaches slam levels. Instead, use a forcing bid, like a Cue Bid (e.g., bidding 4C or 4D to show first-round control in that suit) or 4NT (Key Card Blackwood), to find out if the hands complement each other for 12 or 13 tricks. In this deal, the 5-5 fit and the complementary distribution guaranteed 13 tricks, making 7S the correct contract."
+    }
+  }
+}

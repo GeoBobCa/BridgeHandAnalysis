@@ -1,0 +1,241 @@
+{
+  "meta": {
+    "filename": "4571347956 (1).lin",
+    "timestamp": "Sat Dec 20 13:56:07 2025"
+  },
+  "facts": {
+    "file": "4571347956 (1).lin",
+    "board": "Board 2",
+    "dealer": "East",
+    "vulnerability": "NS",
+    "hands": {
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "3",
+            "6",
+            "8",
+            "T"
+          ],
+          "H": [
+            "4",
+            "5",
+            "8",
+            "T",
+            "K"
+          ],
+          "D": [
+            "3",
+            "6",
+            "K"
+          ],
+          "C": [
+            "2"
+          ]
+        },
+        "stats": {
+          "hcp": 6,
+          "distribution_counts": [
+            4,
+            5,
+            3,
+            1
+          ],
+          "distribution_str": "4-5-3-1"
+        },
+        "raw": "S368TH458TKD36KC2"
+      },
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "9"
+          ],
+          "H": [
+            "9",
+            "J"
+          ],
+          "D": [
+            "7",
+            "9",
+            "T",
+            "J",
+            "Q"
+          ],
+          "C": [
+            "3",
+            "4",
+            "7",
+            "T",
+            "Q"
+          ]
+        },
+        "stats": {
+          "hcp": 6,
+          "distribution_counts": [
+            1,
+            2,
+            5,
+            5
+          ],
+          "distribution_str": "1-2-5-5"
+        },
+        "raw": "S9H9JD79TJQC347TQ"
+      },
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "4",
+            "Q",
+            "K",
+            "A"
+          ],
+          "H": [
+            "3",
+            "7",
+            "Q"
+          ],
+          "D": [
+            "A"
+          ],
+          "C": [
+            "5",
+            "9",
+            "J",
+            "K",
+            "A"
+          ]
+        },
+        "stats": {
+          "hcp": 23,
+          "distribution_counts": [
+            4,
+            3,
+            1,
+            5
+          ],
+          "distribution_str": "4-3-1-5"
+        },
+        "raw": "S4QKAH37QDAC59JKA"
+      },
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "J",
+            "7",
+            "5",
+            "2"
+          ],
+          "H": [
+            "A",
+            "6",
+            "2"
+          ],
+          "D": [
+            "8",
+            "5",
+            "4",
+            "2"
+          ],
+          "C": [
+            "8",
+            "6"
+          ]
+        },
+        "stats": {
+          "hcp": 5,
+          "distribution_counts": [
+            4,
+            3,
+            4,
+            2
+          ],
+          "distribution_str": "4-3-4-2"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "p",
+      "p",
+      "p",
+      "2C",
+      "p",
+      "2H",
+      "p",
+      "2S",
+      "p",
+      "4S",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "HA",
+      "H4",
+      "H9",
+      "H3",
+      "H2",
+      "H5",
+      "HJ",
+      "HQ",
+      "SQ",
+      "S2",
+      "S3",
+      "S9",
+      "SK",
+      "S5",
+      "S6",
+      "C3",
+      "H7",
+      "H6",
+      "HK",
+      "D7",
+      "C2",
+      "C7",
+      "CK",
+      "C6",
+      "DA",
+      "D2",
+      "D3",
+      "D9",
+      "C5",
+      "C8",
+      "S8",
+      "C4",
+      "ST",
+      "DT",
+      "S4",
+      "SJ",
+      "D4",
+      "DK",
+      "DJ",
+      "C9",
+      "H8",
+      "CT",
+      "SA",
+      "D5",
+      "CA",
+      "S7",
+      "HT",
+      "CQ",
+      "D8",
+      "D6",
+      "DQ",
+      "CJ"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S368TH458TKD36KC2,S9H9JD79TJQC347TQ,S4QKAH37QDAC59JKA,|rh||ah|Board 2|sv|n|mb|p|mb|p|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|HA|pc|H4|pc|H9|pc|H3|pg||pc|H2|pc|H5|pc|HJ|pc|HQ|pg||pc|SQ|pc|S2|pc|S3|pc|S9|pg||pc|SK|pc|S5|pc|S6|pc|C3|pg||pc|H7|pc|H6|pc|HK|pc|D7|pg||pc|C2|pc|C7|pc|CK|pc|C6|pg||pc|DA|pc|D2|pc|D3|pc|D9|pg||pc|C5|pc|C8|pc|S8|pc|C4|pg||pc|ST|pc|DT|pc|S4|pc|SJ|pg||pc|D4|pc|DK|pc|DJ|pc|C9|pg||pc|H8|pc|CT|pc|SA|pc|D5|pg||pc|CA|pc|S7|pc|HT|pc|CQ|pg||pc|D8|pc|D6|pc|DQ|pc|CJ|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "CATASTROPHIC AUCTION FAILURE",
+    "basic_analysis": "The contract of 4S by North/South (NS) was a Game contract played vulnerable and resulted in a catastrophic failure, going down 7 tricks (taking only 3 tricks). This outcome was entirely predictable based on basic Bridge fundamentals. West (holding 23 HCP) committed the initial and most crucial error by passing, allowing the weak NS side (11 combined HCP) to enter the bidding. Subsequently, North opened 2C with only 5 HCP, violating standard opening principles. South compounded these errors by raising to 4S while holding only a singleton spade (S9), resulting in only a 5-card trump suit. A major suit game requires a minimum of an 8-card fit and typically 25+ combined HCP. Both requirements were grossly violated, making the contract impossible. The optimal contract belonged to EW, likely 3NT or 4S/5C, which was missed due to West's failure to open.",
+    "advanced_insight": "The primary insight here is the massive missed opportunity by EW to reach a cold 3NT contract. West's 23 HCP hand is ideal for a strong opening (2C or 2NT). If West had opened 2C (Strong, Artificial), they would have quickly established their strength. With good stoppers in all suits, 3NT is a near-guaranteed make for EW, netting around 10-11 tricks, turning a massive penalty into a large game score. No complex play techniques were relevant, as the contract reached was mathematically indefensible.",
+    "lesson_module": {
+      "topic": "Opening Bids for Strong Hands (20+ HCP)",
+      "content": "The most fundamental mistake in this deal was West's decision to pass with 23 high card points. Hands containing 20 or more HCP require a strong, forcing opening bid to ensure the partnership maintains control of the auction and correctly identifies the appropriate game or slam. In SAYC, hands of 23 HCP are often opened 2NT (if balanced, 20-22) or 2C (if forcing/highly unbalanced). West's hand, while slightly unbalanced (4-3-1-5), warrants a 2C opening to guarantee reaching game. Passing a monster hand is forbidden, as it allows the opponents to preempt or, as happened here, steal the auction and suffer a massive penalty that could have been avoided entirely if EW had simply bid their strength."
+    }
+  }
+}

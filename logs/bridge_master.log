@@ -1,0 +1,162 @@
+2025-12-18 00:20:02 | INFO | main:run_import_cycle:31 - Starting BridgeMaster Import Cycle...
+2025-12-18 00:20:02 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 00:20:02 | INFO | database:init_schema:103 - Database schema initialized.
+2025-12-18 00:20:02 | INFO | main:run_import_cycle:44 - Found 1 files to process.
+2025-12-18 00:20:02 | INFO | main:process_single_file:53 - Processing: Stayman_1.lin
+2025-12-18 00:20:02 | INFO | parsers:parse_lin:119 - Parsed 1 hands from Stayman_1.lin
+2025-12-18 00:20:02 | INFO | main:process_single_file:100 - Archived 1 hands to Stayman_1_20251218_002002.jsonl
+2025-12-18 00:20:02 | INFO | main:run_import_cycle:50 - Import Cycle Complete.
+2025-12-18 01:48:51 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 01:48:51 | INFO | main:run_import_cycle:28 - Starting BridgeMaster Import Cycle...
+2025-12-18 01:48:51 | INFO | database:init_schema:103 - Database schema initialized.
+2025-12-18 01:48:51 | INFO | main:process_single_file:45 - Processing: Bruno_Board_1.lin
+2025-12-18 01:48:51 | INFO | parsers:parse_lin:119 - Parsed 1 hands from Bruno_Board_1.lin
+2025-12-18 01:48:51 | INFO | main:process_single_file:87 - Archived 1 hands to Bruno_Board_1_20251218_014851.jsonl
+2025-12-18 01:48:51 | INFO | main:process_single_file:45 - Processing: Stayman_1.lin
+2025-12-18 01:48:51 | INFO | parsers:parse_lin:119 - Parsed 1 hands from Stayman_1.lin
+2025-12-18 01:48:51 | INFO | main:process_single_file:87 - Archived 1 hands to Stayman_1_20251218_014851.jsonl
+2025-12-18 01:48:51 | INFO | main:run_import_cycle:42 - Import Cycle Complete.
+2025-12-18 01:48:51 | INFO | database:close:34 - Database connection closed.
+2025-12-18 01:48:51 | INFO | main:close:25 - Application Shutdown: Database closed successfully.
+2025-12-18 12:51:41 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 12:51:41 | INFO | main:run_import_cycle:28 - Starting BridgeMaster Import Cycle...
+2025-12-18 12:51:41 | INFO | database:init_schema:103 - Database schema initialized.
+2025-12-18 12:51:41 | INFO | main:process_single_file:45 - Processing: CueBids.lin
+2025-12-18 12:51:41 | INFO | parsers:parse_lin:119 - Parsed 12 hands from CueBids.lin
+2025-12-18 12:51:41 | INFO | main:process_single_file:87 - Archived 12 hands to CueBids_20251218_125141.jsonl
+2025-12-18 12:51:41 | INFO | main:run_import_cycle:42 - Import Cycle Complete.
+2025-12-18 12:51:41 | INFO | database:close:34 - Database connection closed.
+2025-12-18 12:51:41 | INFO | main:close:25 - Application Shutdown: Database closed successfully.
+2025-12-18 13:06:41 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 13:06:41 | INFO | main:run_import_cycle:29 - Starting BridgeMaster Import Cycle...
+2025-12-18 13:06:41 | INFO | database:init_schema:103 - Database schema initialized.
+2025-12-18 13:06:41 | INFO | main:process_single_file:46 - Processing: CueBids.lin
+2025-12-18 13:06:41 | INFO | parsers:parse_lin:119 - Parsed 12 hands from CueBids.lin
+2025-12-18 13:06:41 | INFO | main:process_single_file:91 - Archived 12 hands to CueBids_20251218_130641.jsonl
+2025-12-18 13:06:41 | INFO | main:process_single_file:100 - Moved source file to: C:\Bob\_Projects\BridgeMaster\data\processed\CueBids.lin
+2025-12-18 13:06:41 | INFO | main:run_import_cycle:43 - Import Cycle Complete.
+2025-12-18 13:06:41 | INFO | database:close:34 - Database connection closed.
+2025-12-18 13:06:41 | INFO | main:close:26 - Application Shutdown: Database closed successfully.
+2025-12-18 13:29:51 | INFO | main:main:19 - Launching Bridge Master GUI...
+2025-12-18 13:40:20 | INFO | main:main:19 - Launching Bridge Master GUI...
+2025-12-18 13:41:01 | INFO | main:main:19 - Launching Bridge Master GUI...
+2025-12-18 13:41:33 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 13:41:33 | INFO | main_window:run_import_process:126 - Importing: Stayman_Major_S.lin
+2025-12-18 13:41:33 | INFO | parsers:parse_lin:119 - Parsed 20 hands from Stayman_Major_S.lin
+2025-12-18 13:41:37 | INFO | database:close:34 - Database connection closed.
+2025-12-18 14:02:25 | INFO | main:main:19 - Launching Bridge Master GUI...
+2025-12-18 14:02:30 | INFO | main_window:on_row_selected:139 - Loading HandViewer: http://www.bridgebase.com/tools/handviewer.html?n=sAQ5hAQ64dJ832cK8&s=sJhJ9732dK976cA92&e=shdc&w=s98432hdAT54cQJT5&d=e&v=n
+2025-12-18 14:02:40 | INFO | main_window:on_row_selected:139 - Loading HandViewer: http://www.bridgebase.com/tools/handviewer.html?n=sAQ9hA964d975cAK3&s=sKJ52hJT32dKTc852&e=shdc&w=sT86hQ87dA86cJT94&d=n&v=e
+2025-12-18 14:03:08 | INFO | main_window:on_row_selected:139 - Loading HandViewer: http://www.bridgebase.com/tools/handviewer.html?n=sAKQT2hKQJ6dJcT63&s=s63hA943dKT73cKJ4&e=shdc&w=s985hT72dQ542cQ87&d=n&v=n
+2025-12-18 14:26:29 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 14:26:29 | INFO | main:run_import_cycle:31 - Starting BridgeMaster Import Cycle...
+2025-12-18 14:26:29 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 14:26:29 | INFO | main:process_single_file:50 - Processing: CueBids.lin
+2025-12-18 14:26:29 | INFO | parsers:parse_lin:119 - Parsed 12 hands from CueBids.lin
+2025-12-18 14:26:29 | INFO | main:process_single_file:99 - Archived 12 hands to CueBids_20251218_142629.jsonl
+2025-12-18 14:26:29 | INFO | main:process_single_file:108 - Moved source file to: C:\Bob\_Projects\BridgeMaster\data\processed\CueBids.lin
+2025-12-18 14:26:29 | INFO | main:run_import_cycle:47 - Import Cycle Complete.
+2025-12-18 14:26:29 | INFO | database:close:34 - Database connection closed.
+2025-12-18 14:26:29 | INFO | main:close:28 - Application Shutdown: Database closed successfully.
+2025-12-18 15:11:25 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 15:11:25 | INFO | main:run_import_cycle:31 - Starting BridgeMaster Import Cycle...
+2025-12-18 15:11:25 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 15:11:25 | WARNING | main:run_import_cycle:41 - No .lin or .pbn files found in C:\Bob\_Projects\BridgeMaster\inputs
+2025-12-18 15:11:25 | INFO | database:close:34 - Database connection closed.
+2025-12-18 15:11:25 | INFO | main:close:28 - Application Shutdown: Database closed successfully.
+2025-12-18 15:12:05 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 15:12:05 | INFO | main:run_import_cycle:31 - Starting BridgeMaster Import Cycle...
+2025-12-18 15:12:05 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 15:12:05 | INFO | main:process_single_file:50 - Processing: CueBids.lin
+2025-12-18 15:12:05 | INFO | parsers:parse_lin:119 - Parsed 12 hands from CueBids.lin
+2025-12-18 15:12:05 | INFO | main:process_single_file:99 - Archived 12 hands to CueBids_20251218_151205.jsonl
+2025-12-18 15:12:05 | INFO | main:process_single_file:108 - Moved source file to: C:\Bob\_Projects\BridgeMaster\data\processed\CueBids.lin
+2025-12-18 15:12:05 | INFO | main:run_import_cycle:47 - Import Cycle Complete.
+2025-12-18 15:12:05 | INFO | database:close:34 - Database connection closed.
+2025-12-18 15:12:05 | INFO | main:close:28 - Application Shutdown: Database closed successfully.
+2025-12-18 15:37:02 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 15:37:02 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 15:37:02 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 15:37:02 | INFO | database:close:34 - Database connection closed.
+2025-12-18 15:37:02 | ERROR | ai_orchestrator:__init__:21 - GEMINI_API_KEY not found in .env file. AI features will be disabled.
+2025-12-18 15:37:02 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 17:50:17 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 17:50:17 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 17:50:17 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 17:50:17 | INFO | database:close:34 - Database connection closed.
+2025-12-18 17:50:17 | ERROR | ai_orchestrator:__init__:21 - GEMINI_API_KEY not found in .env file. AI features will be disabled.
+2025-12-18 17:50:17 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 17:51:06 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 17:51:06 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 17:51:06 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 17:51:06 | INFO | database:close:34 - Database connection closed.
+2025-12-18 17:51:06 | ERROR | ai_orchestrator:__init__:21 - GEMINI_API_KEY not found in .env file. AI features will be disabled.
+2025-12-18 17:51:06 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 17:52:41 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 17:52:41 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 17:52:41 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 17:52:41 | INFO | database:close:34 - Database connection closed.
+2025-12-18 17:52:41 | ERROR | ai_orchestrator:__init__:21 - GEMINI_API_KEY not found in .env file. AI features will be disabled.
+2025-12-18 17:52:41 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 20:01:56 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 20:01:56 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 20:01:56 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 20:01:56 | INFO | database:close:34 - Database connection closed.
+2025-12-18 20:01:56 | ERROR | ai_orchestrator:__init__:21 - GEMINI_API_KEY not found in .env file. AI features will be disabled.
+2025-12-18 20:01:56 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 20:12:42 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 20:12:42 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 20:12:42 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 20:12:42 | INFO | database:close:34 - Database connection closed.
+2025-12-18 20:12:42 | ERROR | ai_orchestrator:__init__:21 - GEMINI_API_KEY not found in .env file. AI features will be disabled.
+2025-12-18 20:12:42 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 20:29:44 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 20:29:44 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 20:29:44 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 20:29:44 | INFO | database:close:34 - Database connection closed.
+2025-12-18 20:29:44 | ERROR | ai_orchestrator:__init__:21 - GEMINI_API_KEY not found in .env file. AI features will be disabled.
+2025-12-18 20:29:44 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 20:31:22 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 20:31:22 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 20:31:22 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 20:31:22 | INFO | database:close:34 - Database connection closed.
+2025-12-18 20:31:22 | ERROR | ai_orchestrator:__init__:30 - GEMINI_API_KEY not found. Check .env location or filename.
+2025-12-18 20:31:22 | ERROR | main_window:__init__:33 - AI Disabled: Missing GEMINI_API_KEY in .env
+2025-12-18 20:34:42 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 20:34:42 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 20:34:42 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 20:34:42 | INFO | database:close:34 - Database connection closed.
+2025-12-18 20:34:52 | INFO | ai_orchestrator:analyze_hand:42 - Sending deal 708dd3f2efea4fd514b6afd42fa226fa52f70106c70689f96ff7d8bf67e5ae55 to Gemini...
+2025-12-18 20:34:53 | ERROR | ai_orchestrator:analyze_hand:95 - Gemini API Call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-18 20:35:03 | INFO | ai_orchestrator:analyze_hand:42 - Sending deal 708dd3f2efea4fd514b6afd42fa226fa52f70106c70689f96ff7d8bf67e5ae55 to Gemini...
+2025-12-18 20:35:03 | ERROR | ai_orchestrator:analyze_hand:95 - Gemini API Call failed: 404 models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.
+2025-12-18 22:29:23 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 22:29:23 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 22:29:23 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 22:29:23 | INFO | database:close:34 - Database connection closed.
+2025-12-18 22:29:36 | INFO | ai_orchestrator:analyze_hand:34 - Sending deal 708dd3f2efea4fd514b6afd42fa226fa52f70106c70689f96ff7d8bf67e5ae55 to Gemini...
+2025-12-18 22:29:37 | ERROR | ai_orchestrator:analyze_hand:97 - Gemini API Call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2025-12-18 22:36:30 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 22:36:30 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 22:36:30 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 22:36:30 | INFO | database:close:34 - Database connection closed.
+2025-12-18 22:36:42 | INFO | ai_orchestrator:analyze_hand:34 - Sending deal 708dd3f2efea4fd514b6afd42fa226fa52f70106c70689f96ff7d8bf67e5ae55 to Gemini...
+2025-12-18 22:36:42 | ERROR | ai_orchestrator:analyze_hand:96 - Gemini API Call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash-002 is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2025-12-18 22:56:11 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 22:56:11 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 22:56:11 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 22:56:11 | INFO | database:close:34 - Database connection closed.
+2025-12-18 22:56:27 | INFO | ai_orchestrator:analyze_hand:34 - Sending deal bb5db2511613e6dbb571e8fa91832df2b519e3717e230ea7782ff3f27b5cb4cc to Gemini...
+2025-12-18 22:56:27 | ERROR | ai_orchestrator:analyze_hand:97 - Gemini API Call failed: 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'You exceeded your current quota, please check your plan and billing details. For more information on this error, head to: https://ai.google.dev/gemini-api/docs/rate-limits. To monitor your current usage, head to: https://ai.dev/usage?tab=rate-limit. \n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_input_token_count, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\n* Quota exceeded for metric: generativelanguage.googleapis.com/generate_content_free_tier_requests, limit: 0, model: gemini-2.0-flash\nPlease retry in 32.479453536s.', 'status': 'RESOURCE_EXHAUSTED', 'details': [{'@type': 'type.googleapis.com/google.rpc.Help', 'links': [{'description': 'Learn more about Gemini API quotas', 'url': 'https://ai.google.dev/gemini-api/docs/rate-limits'}]}, {'@type': 'type.googleapis.com/google.rpc.QuotaFailure', 'violations': [{'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_input_token_count', 'quotaId': 'GenerateContentInputTokensPerModelPerMinute-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerMinutePerProjectPerModel-FreeTier', 'quotaDimensions': {'location': 'global', 'model': 'gemini-2.0-flash'}}, {'quotaMetric': 'generativelanguage.googleapis.com/generate_content_free_tier_requests', 'quotaId': 'GenerateRequestsPerDayPerProjectPerModel-FreeTier', 'quotaDimensions': {'model': 'gemini-2.0-flash', 'location': 'global'}}]}, {'@type': 'type.googleapis.com/google.rpc.RetryInfo', 'retryDelay': '32s'}]}}
+2025-12-18 23:02:16 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 23:02:16 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 23:02:16 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 23:02:16 | INFO | database:close:34 - Database connection closed.
+2025-12-18 23:02:31 | INFO | ai_orchestrator:analyze_hand:34 - Sending deal bb5db2511613e6dbb571e8fa91832df2b519e3717e230ea7782ff3f27b5cb4cc to Gemini...
+2025-12-18 23:02:31 | ERROR | ai_orchestrator:analyze_hand:97 - Gemini API Call failed: 404 NOT_FOUND. {'error': {'code': 404, 'message': 'models/gemini-1.5-flash is not found for API version v1beta, or is not supported for generateContent. Call ListModels to see the list of available models and their supported methods.', 'status': 'NOT_FOUND'}}
+2025-12-18 23:05:45 | INFO | main:main:18 - Launching Bridge Master GUI...
+2025-12-18 23:05:45 | INFO | database:connect:26 - Connected to database: C:\Bob\_Projects\BridgeMaster\data\bridge_master.db
+2025-12-18 23:05:45 | INFO | database:init_schema:106 - Database schema initialized.
+2025-12-18 23:05:45 | INFO | database:close:34 - Database connection closed.
+2025-12-18 23:05:45 | INFO | ai_orchestrator:__init__:29 - *** NEW SDK ACTIVE: Initializing Google GenAI Client ***
+2025-12-18 23:05:56 | INFO | ai_orchestrator:analyze_hand:34 - Sending deal a481dc3665dc3db9f9cfff5a4d70cfaf73751ce243e43d630bce4ad712af16fd to Gemini...

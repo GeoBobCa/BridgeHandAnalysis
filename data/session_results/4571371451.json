@@ -1,0 +1,237 @@
+{
+  "meta": {
+    "filename": "4571371451.lin",
+    "timestamp": "Sat Dec 20 13:59:05 2025"
+  },
+  "facts": {
+    "file": "4571371451.lin",
+    "board": "Board 9",
+    "dealer": "North",
+    "vulnerability": "EW",
+    "hands": {
+      "North": {
+        "name": "BeaPercy",
+        "cards": {
+          "S": [
+            "K"
+          ],
+          "H": [
+            "4",
+            "6",
+            "T",
+            "Q"
+          ],
+          "D": [
+            "T",
+            "J",
+            "A"
+          ],
+          "C": [
+            "7",
+            "8",
+            "9",
+            "T",
+            "K"
+          ]
+        },
+        "stats": {
+          "hcp": 13,
+          "distribution_counts": [
+            1,
+            4,
+            3,
+            5
+          ],
+          "distribution_str": "1-4-3-5"
+        },
+        "raw": "SKH46TQDTJAC789TK"
+      },
+      "East": {
+        "name": "bobj245",
+        "cards": {
+          "S": [
+            "2",
+            "3",
+            "8",
+            "T",
+            "J"
+          ],
+          "H": [
+            "3",
+            "8",
+            "A"
+          ],
+          "D": [
+            "2",
+            "3"
+          ],
+          "C": [
+            "2",
+            "5",
+            "Q"
+          ]
+        },
+        "stats": {
+          "hcp": 7,
+          "distribution_counts": [
+            5,
+            3,
+            2,
+            3
+          ],
+          "distribution_str": "5-3-2-3"
+        },
+        "raw": "S238TJH38AD23C25Q"
+      },
+      "South": {
+        "name": "Fish075",
+        "cards": {
+          "S": [
+            "4",
+            "5",
+            "6",
+            "9"
+          ],
+          "H": [
+            "7",
+            "J",
+            "K"
+          ],
+          "D": [
+            "4",
+            "7",
+            "9",
+            "K"
+          ],
+          "C": [
+            "3",
+            "J"
+          ]
+        },
+        "stats": {
+          "hcp": 8,
+          "distribution_counts": [
+            4,
+            3,
+            4,
+            2
+          ],
+          "distribution_str": "4-3-4-2"
+        },
+        "raw": "S4569H7JKD479KC3J"
+      },
+      "West": {
+        "name": "georgenamg",
+        "cards": {
+          "S": [
+            "A",
+            "Q",
+            "7"
+          ],
+          "H": [
+            "9",
+            "5",
+            "2"
+          ],
+          "D": [
+            "Q",
+            "8",
+            "6",
+            "5"
+          ],
+          "C": [
+            "A",
+            "6",
+            "4"
+          ]
+        },
+        "stats": {
+          "hcp": 12,
+          "distribution_counts": [
+            3,
+            3,
+            4,
+            3
+          ],
+          "distribution_str": "3-3-4-3"
+        },
+        "raw": "Calculated"
+      }
+    },
+    "auction": [
+      "p",
+      "1D",
+      "d",
+      "1S",
+      "p",
+      "2S",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "D4",
+      "D5",
+      "DA",
+      "D2",
+      "DT",
+      "D3",
+      "DK",
+      "D6",
+      "C3",
+      "C4",
+      "CK",
+      "C2",
+      "DJ",
+      "H3",
+      "D7",
+      "DQ",
+      "S7",
+      "SK",
+      "S2",
+      "S4",
+      "HT",
+      "HA",
+      "H7",
+      "H2",
+      "S3",
+      "S5",
+      "SA",
+      "C7",
+      "SQ",
+      "C8",
+      "S8",
+      "S6",
+      "D8",
+      "C9",
+      "H8",
+      "D9",
+      "HJ",
+      "H5",
+      "H4",
+      "ST",
+      "SJ",
+      "S9",
+      "H9",
+      "CT",
+      "C5",
+      "CJ",
+      "CA",
+      "H6",
+      "C6",
+      "HQ",
+      "CQ",
+      "HK"
+    ],
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3SKH46TQDTJAC789TK,S238TJH38AD23C25Q,S4569H7JKD479KC3J,|rh||ah|Board 9|sv|e|mb|p|mb|1D|mb|d|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|pg||pc|D4|pc|D5|pc|DA|pc|D2|pg||pc|DT|pc|D3|pc|DK|pc|D6|pg||pc|C3|pc|C4|pc|CK|pc|C2|pg||pc|DJ|pc|H3|pc|D7|pc|DQ|pg||pc|S7|pc|SK|pc|S2|pc|S4|pg||pc|HT|pc|HA|pc|H7|pc|H2|pg||pc|S3|pc|S5|pc|SA|pc|C7|pg||pc|SQ|pc|C8|pc|S8|pc|S6|pg||pc|D8|pc|C9|pc|H8|pc|D9|pg||pc|HJ|pc|H5|pc|H4|pc|ST|pg||pc|SJ|pc|S9|pc|H9|pc|CT|pg||pc|C5|pc|CJ|pc|CA|pc|H6|pg||pc|C6|pc|HQ|pc|CQ|pc|HK|pg||"
+  },
+  "ai_analysis": {
+    "verdict": "PART-SCORE FAILED",
+    "basic_analysis": "The final contract was 2 Spades, a part-score contract. West/East combined for 19 HCP, making 2S an appropriate level given their 5-3 Spade fit. However, the contract failed, going down one trick (making only 7 tricks). The auction was highly irregular, initiated by East's unorthodox 1 Diamond opening bid with only 7 HCP and a 5-card Spade suit. South's takeout double and West's 1 Spade response corrected the partnership to their major suit fit. Declarer play was suboptimal. After drawing two rounds of trumps (T7, T8), West switched to playing Diamonds (T9), allowing South to win the lead (D9) and immediately attack the unmanaged Heart suit (HJ, T10). Although East ruffed (ST), this trick was critical for making the contract, demonstrating a failure of proper trump management before switching focus to side suits.",
+    "advanced_insight": "None",
+    "lesson_module": {
+      "topic": "Declarer Play: Trump Management Priority",
+      "content": "When playing in a trump contract, especially one vulnerable to defensive ruffing or communication shifts, drawing all or most of the opponents' trumps should be the highest priority before attempting to set up side suits. In this deal, after winning the second trump lead (SQ at T8), Declarer (West) failed to continue drawing the last two opposing trumps (S9) before addressing the Diamond suit (D8 led at T9). This lapse immediately allowed the defense to gain the lead and force a damaging ruff/trick sequence in Hearts (T10), resulting in the eventual failure of the contract."
+    }
+  }
+}
