@@ -131,72 +131,65 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S479KH239KD24QC8J,S36H6QAD57C3567TK,S258JH5JD39JKC2QA,|rh||ah|Board 15|sv|n|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|p|mb|p|pg||pc|DA|pc|D2|pc|D5|pc|D3|pg||pc|C9|pc|C8|pc|CK|pc|CA|pg||pc|S2|pc|ST|pc|SK|pc|S3|pg||pc|S4|pc|S6|pc|S8|pc|SQ|pg||pc|C4|pc|CJ|pc|C3|pc|C2|pg||pc|H3|pc|HQ|pc|H5|pc|H4|pg||pc|HA|pc|HJ|pc|H7|pc|H2|pg||pc|H6|pc|D9|pc|HT|pc|HK|pg||pc|D4|pc|D7|pc|DJ|pc|D6|pg||pc|SJ|pc|SA|pc|S7|pc|C5|pg||pc|H8|pc|H9|pc|C6|pc|S5|pg||pc|CQ|pc|D8|pc|S9|pc|C7|pg||pc|DQ|pc|CT|pc|DK|pc|DT|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "UNDERBID MAJOR FIT",
+    "verdict": "MISSED OPTIMAL PARTIAL CONTRACT",
     "actual_critique": [
-      "South passed 1S despite holding 4-card support and 9 total points, failing to confirm the 8-card major fit.",
-      "The partnership stopped prematurely at the one-level (1S) when 2S was the clear optimal contract, sacrificing potential tricks and competitive safety."
+      "South violated a fundamental SAYC principle by responding 1H with only four cards. SAYC mandates five cards for a major suit response at the one-level.",
+      "North's corrective bid of 1S established the 4-4 Spade fit, but the partnership failed to realize their combined strength (21 points) and stopped prematurely at 1S.",
+      "The optimal partial contract is 2S, which offers a better score and greater security than 1S, given the 8-card major fit."
     ],
     "basic_section": {
-      "analysis": "North opened 1D (12 TP, 4 cards) and South responded 1H (9 TP, up-the-line preference). North correctly rebid 1S, showing 4 Spades and a minimum (12-14 TP) opening hand. Given this sequence, South has a duty to show support for the confirmed 4-4 major fit. With 9 total points, South should raise 1S to 2S, establishing the 8-card fit at the safest level.",
+      "analysis": "North opened 1D correctly, showing 12+ points. South, with 9 points, must respond. Under strict SAYC rules, South's 4-4 major holding dictates a 1NT response, as South lacks the required five cards for 1H or 1S, and lacks three-card Diamond support. North, despite being minimum (12 points), should make a non-forcing effort to locate the 4-4 Spade fit by bidding 2S, which South will accept.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "South passes with 9 TP."
+          "bid": "P",
+          "explanation": "South (9 points) passes as dealer, correctly following the 12+ point opening rule."
         },
         {
-          "bid": "p",
-          "explanation": "West passes with 11 TP, borderline for an aggressive 1C opening."
+          "bid": "P",
+          "explanation": "West (11 points) passes, lacking sufficient strength for an opening bid or overcall."
         },
         {
           "bid": "1D",
-          "explanation": "North opens 1D (12 TP, 4-card length, opening priority)."
+          "explanation": "North opens 12 points, choosing the better minor suit (4=4 distribution)."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "P",
+          "explanation": "East passes, lacking sufficient high card points or a strong suit for an overcall."
         },
         {
-          "bid": "1H",
-          "explanation": "South responds 1H (6+ TP, 4 Hearts, up the line)."
+          "bid": "1NT",
+          "explanation": "South's best descriptive bid: 6-9 points, denying a 5-card major, denying Diamond support. (Strict SAYC application required due to 4-card majors.)"
         },
         {
-          "bid": "p",
+          "bid": "P",
           "explanation": "West passes."
         },
         {
-          "bid": "1S",
-          "explanation": "North shows 4 Spades, minimum opening points (12-14 TP), denying 5 Hearts."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
           "bid": "2S",
-          "explanation": "South raises, confirming 4-card Spade support and showing 8-10 total points. This is the optimal partscore contract."
+          "explanation": "North bids 2S, showing 4 Spades and searching for the 4-4 fit. This is an invitational sign-off."
         },
         {
-          "bid": "p",
-          "explanation": "All Pass."
+          "bid": "P",
+          "explanation": "South passes 2S, having reached the optimal partial contract."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The hands are balanced and minimum point counts are involved (21 combined TP). Therefore, advanced sequences like 2/1 Game Forcing are not applicable, and the primary goal remains accurate description and fit finding. The Basic Sequence is already the Master Class sequence here, as it achieves the best partscore contract (2S) efficiently.",
+      "analysis": "Advanced pairs might use conventions like Checkback Stayman after 1D - 1NT to differentiate between minimum and invitational hands while searching for a 4-4 fit. However, even under standard methods, North's 2S rebid after partner's 1NT response is essential here to find the hidden 8-card major fit. Since the hand is clearly a partscore, once the fit is established, the minimum opener (North) must commit to 2S.",
       "sequence": null
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "Responder's Duty to Raise",
+        "topic": "The 5-Card Major Rule: Never bid a major at the one-level (opening or responding) without 5 cards. Your 4-4 hand required a 1NT response.",
         "category": "Review"
       },
       {
-        "player": "Partnership",
-        "topic": "Prioritizing 8-Card Major Fits over 7-Card Minor Fits",
-        "category": "Fit Finding"
+        "player": "North",
+        "topic": "Partscore Valuation: With an 8-card major fit and 21 combined points, 1S is an underbid. Always bid to the 2-level in your trump fit when holding 20-22 combined points.",
+        "category": "Strategy"
       }
     ]
   },
-  "timestamp": "2025-12-21 00:01:52"
+  "timestamp": "2025-12-21 14:17:41"
 }

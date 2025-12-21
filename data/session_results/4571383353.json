@@ -132,95 +132,83 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S8QH56TD46TC478TK,S247H9JQAD58JC2QA,S356TAH2378D2QKCJ,|rh||ah|Board 13|sv|b|mb|p|mb|p|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|2N|mb|p|mb|p|mb|p|pg||pc|C7|pc|CQ|pc|CJ|pc|C3|pg||pc|H9|pc|H2|pc|HK|pc|H5|pg||pc|H4|pc|HT|pc|HA|pc|H3|pg||pc|HQ|pc|H7|pc|C5|pc|H6|pg||pc|HJ|pc|H8|pc|C6|pc|D4|pg||pc|CA|pc|S3|pc|C9|pc|C4|pg||pc|S7|pc|SA|pc|S9|pc|S8|pg||pc|DQ|pc|DA|pc|D6|pc|D5|pg||pc|SK|pc|SQ|pc|S2|pc|S5|pg||pc|SJ|pc|C8|pc|S4|pc|S6|pg||pc|D3|pc|DT|pc|DJ|pc|DK|pg||pc|ST|pc|D7|pc|CT|pc|C2|pg||pc|D2|pc|D9|pc|CK|pc|D8|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME",
+    "verdict": "MISSED GAME OPPORTUNITY",
     "actual_critique": [
-      "West made a significant overbid by jumping to 2NT (14 HCP) after the 1NT response; this action is typically reserved for 18-19 HCP hands or strong invitations (16-17 HCP).",
-      "The partnership failed to reach the straightforward 3NT game contract, easily makable, demonstrating poor total point evaluation (25 combined TP).",
-      "East's 1NT response with 11 total points was slightly high for the standard 6-10 point range, but West exacerbated the issue by misrepresenting their own strength."
+      "North, as the dealer with 11 total points and a 5-card Spade suit, committed a fundamental error by passing instead of opening 1S.",
+      "West violated the strict 5-Card Major rule by opening 1H with only four cards. West should have opened 1D or 1C based on their 3=4=3=3 distribution.",
+      "The partnership (E/W) settled for a conservative 2NT contract despite possessing 25 combined HCP, likely missing the optimal 3NT game."
     ],
     "basic_section": {
-      "analysis": "East/West hold 25 total points, making 3NT a required destination. West opened 1H on a 4-card suit, which is acceptable in certain styles. However, West's subsequent 2NT jump invite was too strong for the 14-point hand. West should aim to invite game slightly aggressively, recognizing the likelihood of a game, or bid 3NT directly given the quality of the cards.",
+      "analysis": "North must open 1S. North has 11 total points (an opening hand) and a 5-card Spade suit, fulfilling the requirements for a 1S opening. West's actual 1H opening with only four cards is strictly disallowed under SAYC rules. If the auction begins correctly, E/W has 25 combined HCP, which is typically sufficient to investigate 3NT.",
       "recommended_auction": [
         {
-          "bid": "1H",
-          "explanation": "West opens their strongest suit (12-20 TP, 4+ Hearts)."
+          "bid": "1S",
+          "explanation": "North (Dealer) must open 1S, showing 11+ points and 5+ Spades."
         },
         {
-          "bid": "P",
-          "explanation": "North passes."
+          "bid": "1NT",
+          "explanation": "East overcalls 1NT, showing 10-12 HCP, balanced, and a stop in Spades."
         },
         {
-          "bid": "1N",
-          "explanation": "East shows 6-11 TP, balanced, no 4-card heart support."
+          "bid": "p",
+          "explanation": "South passes with only 6 points."
         },
         {
-          "bid": "P",
-          "explanation": "South passes."
+          "bid": "2H",
+          "explanation": "West bids 2H, natural, showing 4 hearts and 14 points, seeking a possible major suit fit or describing distribution."
         },
         {
-          "bid": "2N",
-          "explanation": "West makes an invitational rebid, showing 15-17 TP (stretching slightly from 14 HCP to account for suit quality and the need to invite game)."
+          "bid": "p",
+          "explanation": "North passes (or may bid 2S to show length and invite)."
         },
         {
-          "bid": "P",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "3N",
-          "explanation": "East accepts the game invitation with 11 TP, sufficient for game."
+          "bid": "3NT",
+          "explanation": "East jumps to 3NT, confident of game with 11 points opposite West's strength and implied balance."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The West hand (14 HCP, 3=4=3=3) is perfectly suited for a 1NT opening (if playing 14-16 NT). This allows the partnership to use control bids like Stayman to find the optimal denomination, which quickly leads to the robust 3NT contract.",
+      "analysis": "Even in an advanced structure (like 2/1 Game Force), the initial errors dominate. Assuming North correctly opens 1S, East might choose a Takeout Double or a constructive bid like 2D (5+ cards, potentially forcing) to show their significant points (11 TP) and initiate game exploration. The ultimate target remains 3NT for E/W.",
       "sequence": [
         {
-          "bid": "1N",
-          "explanation": "West accurately describes the hand: 14-16 HCP, balanced."
+          "bid": "1S",
+          "explanation": "North opens 1S (11 TP, 5+S)."
         },
         {
-          "bid": "P",
-          "explanation": "North passes."
+          "bid": "2D",
+          "explanation": "East bids 2D, a constructive bid showing 10+ points and a 4+ card Diamond suit, or a potential weak jump shift depending on agreement (here used constructively)."
         },
         {
-          "bid": "2C",
-          "explanation": "East uses Stayman, checking for a 4-card major fit with 11 TP."
-        },
-        {
-          "bid": "P",
+          "bid": "p",
           "explanation": "South passes."
         },
         {
           "bid": "2H",
-          "explanation": "West shows a 4-card heart suit, denying 4 spades."
+          "explanation": "West bids 2H, natural, showing 4 cards and 14 points."
         },
         {
-          "bid": "P",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "3N",
-          "explanation": "East confirms no 4-4 major fit and drives to game based on 25 combined points."
+          "bid": "3NT",
+          "explanation": "East raises directly to 3NT, confirming game values opposite West's 14 TP and assuring a Spade stopper."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "West",
-        "topic": "Respecting Rebid Strength Ranges (1N Response)",
-        "category": "Review"
+        "player": "North",
+        "topic": "Opening mandatory 5-card major suits (1S). Do not pass an opening hand as dealer.",
+        "category": "Fundamental Error"
       },
       {
         "player": "West",
-        "topic": "Choosing the Optimal Opening Bid (1NT vs 1-level suit on 3=4=3=3)",
-        "category": "Technique"
+        "topic": "Strict adherence to 5-Card Major openings. When minors are equal length (3/3), open the higher-ranking minor (1D).",
+        "category": "Rule Review"
       },
       {
         "player": "East/West",
-        "topic": "Total Point Assessment for Game (25 TP requires 3NT)",
-        "category": "Review"
+        "topic": "Game evaluation and seeking 3NT when holding 25+ combined HCP and balanced hands.",
+        "category": "Judgment"
       }
     ]
   },
-  "timestamp": "2025-12-21 00:01:05"
+  "timestamp": "2025-12-21 14:16:26"
 }

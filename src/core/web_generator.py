@@ -24,7 +24,6 @@ class WebGenerator:
             try:
                 with open(os.path.join(JSON_FOLDER, f), 'r', encoding='utf-8') as json_file:
                     data = json.load(json_file)
-                    # Safety Check: Ensure ai_analysis exists, even if empty
                     if 'ai_analysis' not in data:
                         data['ai_analysis'] = {}
                     hands_data.append(data)
@@ -41,12 +40,10 @@ class WebGenerator:
         self._render("index.html", "index.html", hands=hands_data)
         
         for hand in hands_data:
-            # Safety: Default to unknown if facts missing
             facts = hand.get('facts', {})
             page_title = facts.get('board', 'Board_Unknown')
             safe_filename = page_title.replace(' ', '_') + ".html"
             
-            # Safety: Handle missing LIN data
             if 'raw_lin' in facts:
                 hand['handviewer_url'] = "http://www.bridgebase.com/tools/handviewer.html?lin=" + \
                                          urllib.parse.quote(facts['raw_lin'])
@@ -98,7 +95,7 @@ class WebGenerator:
         </html>
         """
         
-        # 2. DETAIL PAGE (With Safety Checks)
+        # 2. DETAIL PAGE (With Compass Badges)
         detail_html = """
         <!DOCTYPE html>
         <html>
@@ -117,6 +114,7 @@ class WebGenerator:
                 .suit-S { color: black; } .suit-H { color: red; }
                 .suit-D { color: orange; } .suit-C { color: green; }
                 .dealer-badge { background-color: #000; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 0.7em; margin-left: 5px; }
+                .dir-badge { width: 35px; text-align: center; display: inline-block; margin-right: 10px; font-weight: bold; background-color: #6c757d; color: white; border-radius: 4px; padding: 2px 0; }
             </style>
         </head>
         <body class="bg-white">
@@ -139,7 +137,6 @@ class WebGenerator:
                                                      'bottom-0 start-50 translate-middle-x mb-2 w-50' if seat == 'South' else
                                                      'top-50 start-0 translate-middle-y ms-2 w-25' if seat == 'West' else
                                                      'top-50 end-0 translate-middle-y me-2 w-25' %}
-                                    
                                     <div class="position-absolute {{ pos_class }}">
                                         <div class="hand-box shadow-sm">
                                             <strong>{{ seat }}</strong> ({{ hand.facts.hands[seat].name }})
@@ -156,7 +153,6 @@ class WebGenerator:
                             </div>
                         </div>
                     </div>
-                    
                     <div class="col-md-4">
                         <div class="card h-100">
                             <div class="card-header">Actual Auction</div>
@@ -178,9 +174,13 @@ class WebGenerator:
                         {% endfor %}
                     </ul>
                     {% else %}
-                    <div class="alert alert-warning">Critique unavailable (AI error or missing data).</div>
+                    <div class="alert alert-warning">Critique unavailable.</div>
                     {% endif %}
                 </div>
+
+                {% set compass = ['North', 'East', 'South', 'West'] %}
+                {% set dealer_map = {'North': 0, 'East': 1, 'South': 2, 'West': 3} %}
+                {% set start_idx = dealer_map[hand.facts.dealer] %}
 
                 <h4 class="section-header">📘 2. The Fundamentals (Standard American)</h4>
                 <div class="card mb-5 border-primary">
@@ -191,25 +191,23 @@ class WebGenerator:
                             {% if hand.ai_analysis.basic_section.recommended_auction %}
                             <div class="mt-4">
                                 <h6>✅ Correct Standard Sequence:</h6>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                <div class="accordion mt-3" id="accordionBasic">
                                     {% for step in hand.ai_analysis.basic_section.recommended_auction %}
-                                    <span class="badge bg-primary bid-badge">{{ step.bid }}</span>
-                                    {% endfor %}
-                                </div>
-                                <div class="accordion" id="accordionBasic">
-                                    {% for step in hand.ai_analysis.basic_section.recommended_auction %}
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading{{ loop.index }}">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}">
-                                                <strong>{{ step.bid }}</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                {{ step.explanation }}
+                                        {% set current_idx = (start_idx + loop.index0) % 4 %}
+                                        {% set bidder = compass[current_idx] %}
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading{{ loop.index }}">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse{{ loop.index }}">
+                                                    <span class="dir-badge">{{ bidder[0] }}</span> <strong>{{ step.bid }}</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    {{ step.explanation }}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     {% endfor %}
                                 </div>
                             </div>
@@ -229,26 +227,24 @@ class WebGenerator:
                             {% if hand.ai_analysis.advanced_section.sequence %}
                             <div class="mt-4">
                                 <h6>✨ Advanced Sequence:</h6>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                <div class="accordion mt-3" id="accordionAdv">
                                     {% for step in hand.ai_analysis.advanced_section.sequence %}
-                                    <span class="badge bg-warning text-dark bid-badge">{{ step.bid }}</span>
-                                    {% endfor %}
-                                </div>
-                                
-                                <div class="accordion" id="accordionAdv">
-                                    {% for step in hand.ai_analysis.advanced_section.sequence %}
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAdv{{ loop.index }}">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv{{ loop.index }}">
-                                                <strong>{{ step.bid }}</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAdv{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                            <div class="accordion-body text-muted">
-                                                {{ step.explanation }}
+                                        {% set current_idx = (start_idx + loop.index0) % 4 %}
+                                        {% set bidder = compass[current_idx] %}
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv{{ loop.index }}">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv{{ loop.index }}">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">{{ bidder[0] }}</span>
+                                                    <strong>{{ step.bid }}</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv{{ loop.index }}" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    {{ step.explanation }}
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     {% endfor %}
                                 </div>
                             </div>

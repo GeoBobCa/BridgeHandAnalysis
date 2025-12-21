@@ -133,7 +133,85 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S3AH257D2356TAC2J,S6KH49JQAD79QKCKA,S24JH368KD4C3579T,|rh||ah|Board 4|sv|b|mb|2C|mb|p|mb|2S|mb|p|mb|3H|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|H3|pc|HT|pc|H2|pc|HJ|pg||pc|HA|pc|H6|pc|S5|pc|H5|pg||pc|HQ|pc|H8|pc|S7|pc|H7|pg||pc|CA|pc|C3|pc|C4|pc|C2|pg||pc|CK|pc|C5|pc|C6|pc|CJ|pg||pc|SK|pc|S2|pc|S8|pc|SA|pg||pc|DA|pc|D7|pc|D4|pc|D8|pg||pc|D2|pc|DK|pc|C7|pc|DJ|pg||pc|DQ|pc|C9|pc|S9|pc|D3|pg||pc|S6|pc|S4|pc|SQ|pc|S3|pg||pc|CQ|pc|D5|pc|H4|pc|CT|pg||pc|C8|pc|D6|pc|H9|pc|SJ|pg||pc|ST|pc|DT|pc|D9|pc|HK|pg||\n"
   },
   "ai_analysis": {
-    "error": "Server disconnected without sending a response."
+    "verdict": "MISSED GRAND SLAM (7NT)",
+    "actual_critique": [
+      "West stopped prematurely at 3NT, failing to investigate slam possibilities despite having 22 HCP opposite partner's expected 5-8 points, missing a laydown 7NT.",
+      "East made an inaccurate initial response of 2S to the strong 2C opening. Standard SAYC requires a 2D negative relay (0-7 total points) before describing shape.",
+      "The partnership failed to utilize quantitative 4NT or control bidding sequences necessary for finding major games or grand slams after establishing the 2C-2NT strength range."
+    ],
+    "basic_section": {
+      "analysis": "West holds a strong, game-forcing hand (22 HCP, 23 TP) suitable for a 2C opening. East holds a weak hand (7 TP) but with excellent 6-card Spade support. The partnership goal must be to determine if 3NT, 4S, or slam is viable. Standard SAYC responses to 2C require East to bid 2D (negative, 0-7 points). West should then show their balanced nature with 2NT (22-24 HCP). From there, 7NT is a laydown contract based on the immense combined power and fit in Spades/controls.",
+      "recommended_auction": [
+        {
+          "bid": "2C",
+          "explanation": "West: Game Forcing (22+ TP/HCP)."
+        },
+        {
+          "bid": "p",
+          "explanation": "North: Pass."
+        },
+        {
+          "bid": "2D",
+          "explanation": "East: Negative response (0-7 TP, standard relay)."
+        },
+        {
+          "bid": "p",
+          "explanation": "South: Pass."
+        },
+        {
+          "bid": "2N",
+          "explanation": "West: Shows 22-24 HCP, balanced distribution."
+        },
+        {
+          "bid": "p",
+          "explanation": "North: Pass."
+        },
+        {
+          "bid": "3S",
+          "explanation": "East: Natural, showing 5+ or 6+ Spades, confirming game interest."
+        },
+        {
+          "bid": "p",
+          "explanation": "South: Pass."
+        },
+        {
+          "bid": "4N",
+          "explanation": "West: Quantitative invitation to 6NT (asking partner to continue if maximal/helpful shape)."
+        },
+        {
+          "bid": "p",
+          "explanation": "North: Pass."
+        },
+        {
+          "bid": "5N",
+          "explanation": "East: Acceptance of slam invitation, showing maximum of range and useful values (Spade length)."
+        },
+        {
+          "bid": "p",
+          "explanation": "South: Pass."
+        },
+        {
+          "bid": "7N",
+          "explanation": "West: Recognizes controls are sufficient and total tricks available are 15."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "Given the potential for a grand slam, West should proceed directly to confirm controls once the NT range is established. After 2C-2D-2NT, East's 3S is forcing. West can use cue bids to check controls, but the 4NT Quantitative bid is the simplest and most effective way to reach 7NT here. East knows West has 22-24 balanced and should push to 5NT (accepting the Grand Slam invitation) based on the running 6-card Spade suit which guarantees numerous tricks in NT.",
+      "sequence": null
+    },
+    "coaches_corner": [
+      {
+        "player": "West",
+        "topic": "Slam investigation: When holding 22+ HCP opposite a known weak hand, always use quantitative 4NT or control bidding to ensure a potential slam is not missed.",
+        "category": "Technique"
+      },
+      {
+        "player": "East",
+        "topic": "Responses to 2C: A 0-7 point hand must always respond 2D before describing shape. Bidding 2S with 7 TP is highly misleading.",
+        "category": "Review"
+      }
+    ]
   },
-  "timestamp": "2025-12-21 00:00:03"
+  "timestamp": "2025-12-21 14:15:34"
 }

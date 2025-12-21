@@ -134,85 +134,109 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "The partnership missed the easily reachable 4 Spade game, despite holding 25 total points and an 8-card fit.",
-      "South (7 TP, 4-card support) was far too conservative, passing 1S when North's prior bidding (1C then 1S) signaled significant strength (18 TP) and established the fit.",
-      "North, holding 18 total points, failed to force the issue for game, accepting partner's passive pass of 1S when minimum game requirements were met."
+      "North (18 TP) severely underbid the hand by rebidding only 1S after opening 1C, failing to convey the significant game-forcing strength needed.",
+      "The partnership missed the optimal 4S contract, failing to confirm their 4-4 Spade fit.",
+      "The final contract of 1S is insufficient for a partnership holding 25 combined total points and an 8-card major suit fit."
     ],
     "basic_section": {
-      "analysis": "With an 18 total point hand and a 4-card spade suit, North should prioritize opening 1 Spade. This immediately shows the best major and high card strength. South, despite being weak (7 TP), has 4-card support and sufficient values to make a constructive raise (2S) over the subsequent 1D overcall. North, knowing the 8-card fit and minimum 25 combined points, should then jump directly to 4 Spades.",
+      "analysis": "North opened 1C (18 TP) and South responded 1H (6+ TP). With 25 combined points and an 8-card Spade fit (4-4), game in Spades (4S) is the primary target. North should use 2NT to indicate the top end of the opening range (18-19 TP) and invite or force game, rather than the minimum descriptive rebid of 1S.",
       "recommended_auction": [
         {
-          "bid": "1S",
-          "explanation": "North opens 1 of the best major (4=2=3=4, 18 TP). This is highly descriptive."
+          "bid": "1C",
+          "explanation": "North: Standard strong opening (18 TP, 4+ clubs)."
         },
         {
           "bid": "1D",
-          "explanation": "East overcalls with a 5-card suit and 10 TP."
+          "explanation": "East: Overcall (10 TP, 5+ diamonds)."
         },
         {
-          "bid": "2S",
-          "explanation": "South shows 4-card support and 6-9 total points, a constructive raise."
+          "bid": "1H",
+          "explanation": "South: Standard response showing 5+ Hearts and 6+ TP."
         },
         {
           "bid": "P",
-          "explanation": "West passes, lacking reason to compete."
+          "explanation": "West: Pass."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "North: Showing 18-19 balanced/semi-balanced TP, denying Heart support, and forcing partner to describe the hand further or invite game."
+        },
+        {
+          "bid": "P",
+          "explanation": "East: Pass."
+        },
+        {
+          "bid": "3S",
+          "explanation": "South: Showing 4-card Spade support and a minimum responding hand (6-9 TP), accepting the high invitation to explore game."
+        },
+        {
+          "bid": "P",
+          "explanation": "West: Pass."
         },
         {
           "bid": "4S",
-          "explanation": "North knows the 8-card fit and 25+ total points. The jump to game is warranted."
+          "explanation": "North: Accepting the invitation with 18 TP and securing the confirmed 4-4 major fit."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "If the partnership adheres to the actual auction (1C opening by North, which is an acceptable if less descriptive choice for 18 TP), North must use a forcing sequence to ensure game is reached. After East's 1D overcall and South's weak 1H response, North's 1S rebid confirms Spades as the primary suit and indicates a strong, potentially forcing hand. South must recognize this power and prioritize the spade fit over the minor heart suit shown earlier, upgrading their hand to 3S or 4S.",
+      "analysis": "Given North's 18 points, a game-forcing sequence should be employed immediately. A jump rebid in the opening minor, 3C, signals a game-forcing hand (18+ TP) when responder bid only at the one-level. This forces South to continue describing shape, leading quickly to the 4-4 Spade fit.",
       "sequence": [
         {
           "bid": "1C",
-          "explanation": "North (18 TP) opens 1C (as in the actual auction)."
+          "explanation": "North: Standard strong opening."
         },
         {
           "bid": "1D",
-          "explanation": "East overcalls."
+          "explanation": "East: Overcall."
         },
         {
           "bid": "1H",
-          "explanation": "South responds, showing the 5-card heart suit lightly (7 TP)."
+          "explanation": "South: Response."
         },
         {
           "bid": "P",
-          "explanation": "West passes."
+          "explanation": "West: Pass."
         },
         {
-          "bid": "2S",
-          "explanation": "North's reverse rebid, showing 4 Spades and forcing partner to bid again, indicating 17+ points."
+          "bid": "3C",
+          "explanation": "North: Game forcing jump rebid (18+ TP) showing values centered in the minors/balance, forcing partner to find the major fit."
         },
         {
           "bid": "P",
-          "explanation": "East passes."
+          "explanation": "East: Pass."
+        },
+        {
+          "bid": "3S",
+          "explanation": "South: Showing the 4-card Spade holding (minimum strength required by the force)."
+        },
+        {
+          "bid": "P",
+          "explanation": "West: Pass."
         },
         {
           "bid": "4S",
-          "explanation": "South recognizes North's strength and the established fit, accepting the invitation to game."
+          "explanation": "North: Closing the auction in the confirmed 4-4 fit."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Opening Hand Selection: Choose the most descriptive opening bid (1S) over an artificial or less specific minor suit opener (1C) when a 4-card major is present and the hand is strong.",
+        "topic": "Rebidding Strong Hands (18+ TP) using jump shifts or 2NT to define maximum strength.",
+        "category": "Structure"
+      },
+      {
+        "player": "North",
+        "topic": "Ensuring major suits are fully explored before settling for a low contract.",
         "category": "Review"
       },
       {
         "player": "South",
-        "topic": "Game Evaluation Principle: When a fit is found and partner has shown a very strong hand (18+ TP), a constructive raise to game is often mandatory, even with minimum values. Avoid passing at the 1-level.",
-        "category": "Technique"
-      },
-      {
-        "player": "North/South",
-        "topic": "Communication Priority: When deciding between responding 1H (5-card suit) and 1S (4-card fit), prioritize finding a known fit, especially when partner has not yet shown a major suit.",
-        "category": "Strategy"
+        "topic": "Recognizing potential 4-4 major fits when partner shows a second suit at the one-level, especially if North demonstrates strength.",
+        "category": "Partner Communication"
       }
     ]
   },
-  "timestamp": "2025-12-21 00:01:38"
+  "timestamp": "2025-12-21 14:17:16"
 }

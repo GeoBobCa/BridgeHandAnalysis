@@ -16,6 +16,7 @@
                 .suit-S { color: black; } .suit-H { color: red; }
                 .suit-D { color: orange; } .suit-C { color: green; }
                 .dealer-badge { background-color: #000; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 0.7em; margin-left: 5px; }
+                .dir-badge { width: 35px; text-align: center; display: inline-block; margin-right: 10px; font-weight: bold; background-color: #6c757d; color: white; border-radius: 4px; padding: 2px 0; }
             </style>
         </head>
         <body class="bg-white">
@@ -35,7 +36,6 @@
                                 </div>
                                 
                                     
-                                    
                                     <div class="position-absolute top-0 start-50 translate-middle-x mt-2 w-50">
                                         <div class="hand-box shadow-sm">
                                             <strong>North</strong> (BeaPercy)
@@ -49,7 +49,6 @@
                                         </div>
                                     </div>
                                 
-                                    
                                     
                                     <div class="position-absolute top-50 start-0 translate-middle-y ms-2 w-25">
                                         <div class="hand-box shadow-sm">
@@ -65,7 +64,6 @@
                                     </div>
                                 
                                     
-                                    
                                     <div class="position-absolute top-50 end-0 translate-middle-y me-2 w-25">
                                         <div class="hand-box shadow-sm">
                                             <strong>East</strong> (bobj245)
@@ -79,7 +77,6 @@
                                         </div>
                                     </div>
                                 
-                                    
                                     
                                     <div class="position-absolute bottom-0 start-50 translate-middle-x mb-2 w-50">
                                         <div class="hand-box shadow-sm">
@@ -97,7 +94,6 @@
                             </div>
                         </div>
                     </div>
-                    
                     <div class="col-md-4">
                         <div class="card h-100">
                             <div class="card-header">Actual Auction</div>
@@ -115,134 +111,190 @@
                     
                     <ul class="list-group">
                         
-                        <li class="list-group-item border-0">🔹 South, having initiated the competition with a strong Takeout Double (14 TP), failed to fulfill the obligation to bid a suit on the subsequent round.</li>
+                        <li class="list-group-item border-0">🔹 South (14 TP, 5 Clubs) failed to rebid their strong club suit (2C) after the opposing 1S response, neglecting to show the actual power and distribution of the hand following the Takeout Double.</li>
                         
-                        <li class="list-group-item border-0">🔹 By passing after East's 2S bid, South allowed the opponents to settle into a favorable partial contract (2S) when N/S had better defensive potential and an 8-card fit in Hearts.</li>
+                        <li class="list-group-item border-0">🔹 North, holding 8 total points and 4-card Diamond support, failed to intervene with 2D over 1S, missing an early opportunity to suggest a minor-suit fit to partner.</li>
                         
-                        <li class="list-group-item border-0">🔹 The N/S partnership missed competing to the 2-level in Hearts (2H), which would have been a sound sacrifice or a reasonable partial contract.</li>
+                        <li class="list-group-item border-0">🔹 The partnership (N/S) failed to capitalize on their 22 combined total points, allowing E/W to play 2S uncontested, despite N/S likely having a makeable game in Diamonds or Clubs (4D/4C).</li>
                         
                     </ul>
                     
                 </div>
 
+                
+                
+                
+
                 <h4 class="section-header">📘 2. The Fundamentals (Standard American)</h4>
                 <div class="card mb-5 border-primary">
                     <div class="card-body">
                         
-                            <p class="lead">The opening sequence was standard. East's 1D opening was appropriate (12 TP). South's Takeout Double was excellent (14 TP, promising support for the unbid suits). West's 1S response was competitive and necessary to show their long suit. The critical failure occurred after East raised to 2S. South is compelled to bid their best suit, preferably a major, to show the reason for the double and keep the pressure on. Failing to bid 2H forfeited the chance to find the N/S 4-4 Heart fit.</p>
+                            <p class="lead">East made a standard 1D opening. South correctly doubled for takeout (14 TP, strong distribution). West made a minimum competitive 1S bid. At this point, South must describe their hand. South holds a strong 5-card club suit and 14 points, making a 2C bid mandatory to show strength and locate a minor suit fit. North has 8 points and 4 Diamonds, giving good support if Diamonds are pursued. The recommended auction secures N/S in a 3D partial, potentially setting up a game try.</p>
                             
                             
                             <div class="mt-4">
                                 <h6>✅ Correct Standard Sequence:</h6>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                <div class="accordion mt-3" id="accordionBasic">
                                     
-                                    <span class="badge bg-primary bid-badge">p</span>
-                                    
-                                    <span class="badge bg-primary bid-badge">1D</span>
-                                    
-                                    <span class="badge bg-primary bid-badge">D</span>
-                                    
-                                    <span class="badge bg-primary bid-badge">1S</span>
-                                    
-                                    <span class="badge bg-primary bid-badge">p</span>
-                                    
-                                    <span class="badge bg-primary bid-badge">2S</span>
-                                    
-                                    <span class="badge bg-primary bid-badge">2H</span>
-                                    
-                                </div>
-                                <div class="accordion" id="accordionBasic">
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                                                <strong>p</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                North passes with 8 total points.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                                                    <span class="dir-badge">N</span> <strong>p</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    North passes (8 TP).
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                                                <strong>1D</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                East opens 1D, showing 12-20 points and 4+ Diamonds.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                                                    <span class="dir-badge">E</span> <strong>1D</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    East opens the longer minor (12 TP, 4-card suit).
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                                                <strong>D</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                South makes a Takeout Double, showing 12+ points and support for unbid suits.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading3">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
+                                                    <span class="dir-badge">S</span> <strong>X</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    South makes a Takeout Double (14 TP, shortage in Diamonds, support for unbid suits).
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading4">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                                                <strong>1S</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                West bids 1S, competitive bid showing 5 Spades and minimum values.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading4">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
+                                                    <span class="dir-badge">W</span> <strong>1S</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    West responds competitively, showing 5+ Spades and 6-10 TP.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading5">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-                                                <strong>p</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                North passes, still minimum.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading5">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
+                                                    <span class="dir-badge">N</span> <strong>2C</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    South bids their strong 5-card suit, confirming the strength shown by the Double (14+ TP). This is highly constructive and forcing.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading6">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-                                                <strong>2S</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                East raises, showing support and minimum opening hand strength.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading6">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
+                                                    <span class="dir-badge">E</span> <strong>p</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    West passes.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="heading7">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
-                                                <strong>2H</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                            <div class="accordion-body text-muted">
-                                                South bids 2H, showing their 4-card major and fulfilling the obligation established by the Takeout Double.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading7">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
+                                                    <span class="dir-badge">S</span> <strong>2D</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    North shows 4-card support for Diamonds (the suit doubled by partner) and a minimum hand (8 TP).
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading8">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
+                                                    <span class="dir-badge">W</span> <strong>2S</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    East competes, showing 3-card support for West and minimum values.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading9">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse9">
+                                                    <span class="dir-badge">N</span> <strong>3D</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse9" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    South shows desire to play in Diamonds, pushing the contract and inviting game based on combined assets (22 TP).
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading10">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse10">
+                                                    <span class="dir-badge">E</span> <strong>p</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapse10" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                                <div class="accordion-body text-muted">
+                                                    All pass, settling for 3D.
+                                                </div>
+                                            </div>
+                                        </div>
                                     
                                 </div>
                             </div>
@@ -255,76 +307,165 @@
                 <div class="card mb-5 adv-card">
                     <div class="card-body">
                         
-                            <p>In competitive auctions, especially when vulnerable opponents open, finding a fit quickly is paramount. South has strong distribution (1=4=3=5) and 14 TP, which demands aggressive competition. South could consider bidding 3C over 2S if focusing strictly on length and high-quality club holding (KT987), using 3C as a jump preference, but showing the 4-card major (2H) at the 2-level is typically superior for defining the fit and maximizing competitive space.</p>
+                            <p>Given the combined 22 TP and the identified 4-4 Diamond fit (N: K974, S: AJT), N/S should press for game. South's strong rebid of 2C followed by 3D suggests confidence in reaching 4D, especially since N/S are not vulnerable and 4D is likely sound, relying on key controls (AK in minors, Ace in Clubs). South should commit to game once North confirms preference for Diamonds over Clubs.</p>
                             
                             
                             <div class="mt-4">
                                 <h6>✨ Advanced Sequence:</h6>
-                                <div class="d-flex flex-wrap gap-2 mb-3">
+                                <div class="accordion mt-3" id="accordionAdv">
                                     
-                                    <span class="badge bg-warning text-dark bid-badge">2H</span>
-                                    
-                                    <span class="badge bg-warning text-dark bid-badge">3S</span>
-                                    
-                                    <span class="badge bg-warning text-dark bid-badge">p</span>
-                                    
-                                    <span class="badge bg-warning text-dark bid-badge">p</span>
-                                    
-                                </div>
-                                
-                                <div class="accordion" id="accordionAdv">
-                                    
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAdv1">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv1">
-                                                <strong>2H</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAdv1" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                            <div class="accordion-body text-muted">
-                                                South bids 2H, prioritizing the 4-card major over the 5-card minor to compete efficiently.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv1">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">N</span>
+                                                    <strong>p</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv1" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    North passes.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAdv2">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv2">
-                                                <strong>3S</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAdv2" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                            <div class="accordion-body text-muted">
-                                                East, highly competitive, pushes to 3S attempting to shut out N/S.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv2">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">E</span>
+                                                    <strong>1D</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv2" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    East opens.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAdv3">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv3">
-                                                <strong>p</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAdv3" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                            <div class="accordion-body text-muted">
-                                                North passes, confirming minimum values.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv3">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv3">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">S</span>
+                                                    <strong>X</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv3" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    South doubles.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
                                     
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header" id="headingAdv4">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv4">
-                                                <strong>p</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="collapseAdv4" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                            <div class="accordion-body text-muted">
-                                                South also passes. Having defined the Heart fit, 3S is likely to go down, providing a positive outcome for N/S.
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv4">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv4">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">W</span>
+                                                    <strong>1S</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv4" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    West responds.
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv5">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv5">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">N</span>
+                                                    <strong>2C</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv5" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    South shows 5+ Clubs, 14+ TP (forcing).
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv6">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv6">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">E</span>
+                                                    <strong>p</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv6" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    West passes.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv7">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv7">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">S</span>
+                                                    <strong>2D</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv7" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    North shows 4+ Diamonds, 8 TP (preference/support).
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv8">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv8">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">W</span>
+                                                    <strong>2S</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv8" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    East competes defensively.
+                                                </div>
+                                            </div>
+                                        </div>
+                                    
+                                        
+                                        
+                                        
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingAdv9">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv9">
+                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">N</span>
+                                                    <strong>4D</strong>
+                                                </button>
+                                            </h2>
+                                            <div id="collapseAdv9" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
+                                                <div class="accordion-body text-muted">
+                                                    South commits to game, recognizing the 4-4 fit and overall partnership strength (22+ TP).
+                                                </div>
+                                            </div>
+                                        </div>
                                     
                                 </div>
                             </div>
@@ -341,7 +482,7 @@
                             <div class="card coach-card h-100">
                                 <div class="card-body">
                                     <small class="text-uppercase text-muted">South | Review</small>
-                                    <h5 class="card-title">Mandatory follow-up after a Takeout Double. Never leave partner guessing after doubling.</h5>
+                                    <h5 class="card-title">Rebidding after Takeout Double and Intervention</h5>
                                 </div>
                             </div>
                         </div>
@@ -349,8 +490,8 @@
                         <div class="col-md-6 mb-3">
                             <div class="card coach-card h-100">
                                 <div class="card-body">
-                                    <small class="text-uppercase text-muted">West | Technique</small>
-                                    <h5 class="card-title">Competitive bidding strategy: Responding with a weak hand to a T/O double requires showing the longest suit immediately.</h5>
+                                    <small class="text-uppercase text-muted">North | Review</small>
+                                    <h5 class="card-title">Signaling Support in Competitive Auctions (4-card Minor Support)</h5>
                                 </div>
                             </div>
                         </div>
@@ -358,8 +499,8 @@
                         <div class="col-md-6 mb-3">
                             <div class="card coach-card h-100">
                                 <div class="card-body">
-                                    <small class="text-uppercase text-muted">North/South | Strategy</small>
-                                    <h5 class="card-title">Defensive vs. Offensive: With roughly equal total points, competitive bidding to the 2 or 3 level is crucial to achieve the best result.</h5>
+                                    <small class="text-uppercase text-muted">South | Mastery</small>
+                                    <h5 class="card-title">Evaluating Game: Reaching 4D with 22 Total Points and a known 4-4 fit</h5>
                                 </div>
                             </div>
                         </div>

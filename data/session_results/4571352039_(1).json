@@ -129,66 +129,79 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S8KAHTQD238C39TJA,S3JH3468KD69TAC26,S2467QH59AD457JCQ,|rh||ah|Board 3|sv|e|mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|p|mb|p|pg||pc|DA|pc|D4|pc|DQ|pc|D2|pg||pc|C2|pc|CQ|pc|CK|pc|CA|pg||pc|CJ|pc|C6|pc|D5|pc|C4|pg||pc|CT|pc|H3|pc|D7|pc|C5|pg||pc|C9|pc|H4|pc|H5|pc|C7|pg||pc|SA|pc|S3|pc|S2|pc|S5|pg||pc|SK|pc|SJ|pc|S4|pc|S9|pg||pc|S8|pc|D6|pc|SQ|pc|ST|pg||pc|S7|pc|H2|pc|D3|pc|H6|pg||pc|S6|pc|H7|pc|D8|pc|D9|pg||pc|HA|pc|HJ|pc|HT|pc|H8|pg||pc|H9|pc|C8|pc|HQ|pc|HK|pg||pc|DT|pc|DJ|pc|DK|pc|C3|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME",
+    "verdict": "MISSED COLD GAME (4S)",
     "actual_critique": [
-      "North committed a critical error by passing the 1NT rebid. With 10 total points, North should be seeking game by making a 2NT invitational bid.",
-      "The partnership has a combined 25 Total Points, which strongly suggests exploration towards the optimal game contract, 3NT.",
-      "While South's 1NT rebid accurately described a minimum, semi-balanced opener without Spade support (12-15 TP), North failed to maximize the scoring potential by limiting the auction."
+      "North incorrectly signed off in 1N, failing to realize the partnership game potential (minimum 23 combined HCP) and the primary 5-3 Spade fit.",
+      "The partnership missed a cold major suit game (4S), which makes easily due to excellent high card placement and shape.",
+      "Although South made a standard minimum rebid of 1N (12-14 HCP), North had sufficient strength (10 total points, 5 Spades) to make an Invitational bid (2S)."
     ],
     "basic_section": {
-      "analysis": "South opens 1C, showing 12-20 total points (TP) and 3+ clubs. North responds 1S, showing 6+ TP and a 4+ card spade suit (here 5 cards). South, lacking 4-card spade support and having a semi-balanced distribution (3=2=3=5) with 15 TP, correctly rebids 1NT, showing 12-15 TP and stoppers in unbid suits. North, with 10 TP, must recognize that the partnership is in the 22-25 TP range and invite game with 2NT. South, having a maximum 1NT opener (15 TP), should accept the invitation and bid 3NT.",
+      "analysis": "South opens a standard 1C (15 total points, 5+ Clubs). North responds 1S, showing 6+ points and a 5-card suit. South's rebid of 1N is appropriate for 14 HCP, showing 12-14 balanced/semi-balanced and a spade stopper, denying 4-card Spade support. North, holding 10 total points and a solid 5-card major, knows the partnership has at least 22 points. North must not pass 1N; the appropriate step is to bid 2S, an invitational bid asking South to carry on to 4S with a maximum opening hand (14 HCP or better distribution). Given South's good cards and 14 HCP, accepting the invite is mandatory.",
       "recommended_auction": [
         {
           "bid": "1C",
-          "explanation": "Standard opening (12-20 TP, 5+ Clubs)."
-        },
-        {
-          "bid": "P",
-          "explanation": "West passes with 9 TP."
+          "explanation": "Standard SAYC opening (12+ TP, 5+ Clubs). South has 15 TP."
         },
         {
           "bid": "1S",
-          "explanation": "6+ TP, 4+ Spades (here 5 cards)."
-        },
-        {
-          "bid": "P",
-          "explanation": "East passes."
+          "explanation": "Standard response (6+ TP, 5+ Spades)."
         },
         {
           "bid": "1N",
-          "explanation": "12-15 TP, semi-balanced, denying 4 Spades support."
+          "explanation": "Standard rebid for 12-14 HCP, semi-balanced, denying 4-card Spade support."
         },
         {
-          "bid": "2N",
-          "explanation": "Game invitation (10-12 TP). Recognizes 22-25+ TP potential."
+          "bid": "2S",
+          "explanation": "Invitational rebid, confirming 5+ Spades and promising 10+ TP, asking South to bid game with a maximum."
         },
         {
-          "bid": "3N",
-          "explanation": "Accepts invitation with 15 TP (maximal 1NT opener)."
+          "bid": "4S",
+          "explanation": "South accepts the game invite with 14 HCP and excellent controls (AK in S, AJT in C)."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "While 3NT is the standard target, N/S must be aware that the Diamond suit is vulnerable (E/W hold KQ and AT96). If opponents lead and run four diamond tricks immediately, 3NT will fail. However, standard Bridge theory mandates aiming for game with 25 combined points, and the defensive risk must be accepted. South has a borderline hand for 1NT rebid being 5-3-3-2 unbalanced, but since no natural rebid exists at a low level, 1NT is the most descriptive. The advanced approach confirms that North's 2NT invitation is the key structural bid necessary to reach the correct contract.",
-      "sequence": null
+      "analysis": "The combined assets (23 HCP and a 5-3 fit) make game a priority. While 3NT is also cold, 4S is often preferred with an 8-card major fit. The basic sequence handles game finding perfectly. North could potentially use a jump shift to 3S if they had slightly more distributional power and were comfortable preempting the auction, but the 2S invitation is safer and more descriptive given the high card points.",
+      "sequence": [
+        {
+          "bid": "1C",
+          "explanation": "SAYC standard."
+        },
+        {
+          "bid": "1S",
+          "explanation": "SAYC standard."
+        },
+        {
+          "bid": "1N",
+          "explanation": "SAYC standard rebid."
+        },
+        {
+          "bid": "2S",
+          "explanation": "Game invitation, emphasizing the 5-card suit."
+        },
+        {
+          "bid": "4S",
+          "explanation": "Accepting the invitation to the known 8-card fit."
+        }
+      ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Game Invitation Values",
-        "category": "Responding"
-      },
-      {
-        "player": "North",
-        "topic": "Responding to Limited Bids (1NT Rebid)",
-        "category": "Review"
+        "topic": "Game Exploration: Do not pass a 1NT rebid when holding 10+ TP and a known 5-card suit opposite an opener.",
+        "category": "Action/Response"
       },
       {
         "player": "South",
-        "topic": "Rebids After 1-over-1 Response",
+        "topic": "Bidding Receptivity: Recognize that 14 HCP is top of the 12-14 range, making acceptance of a 2S invite highly probable, especially with good controls.",
+        "category": "Rebid"
+      },
+      {
+        "player": "Partnership",
+        "topic": "Fit Priority: When 8+ cards are found in a major suit, prioritize the major suit game (4S) over 3NT, even if 3NT seems viable.",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:57:33"
+  "timestamp": "2025-12-21 14:13:22"
 }
