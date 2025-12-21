@@ -134,48 +134,85 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "North failed to investigate game after showing 18 total points (1C) and confirming an 8-card Spade fit (1S). The 1S rebid was too passive.",
-      "South accepted the passive 1S contract by passing, despite having maximum values (7 TP) for their competitive 1H bid and knowing North had a strong hand.",
-      "The partnership settled for a part-score (1S) worth 8 tricks, missing the easily makeable game contract of 4S."
+      "The partnership missed the easily reachable 4 Spade game, despite holding 25 total points and an 8-card fit.",
+      "South (7 TP, 4-card support) was far too conservative, passing 1S when North's prior bidding (1C then 1S) signaled significant strength (18 TP) and established the fit.",
+      "North, holding 18 total points, failed to force the issue for game, accepting partner's passive pass of 1S when minimum game requirements were met."
     ],
     "basic_section": {
-      "analysis": "North's 1C opening (18 TP) followed by South's competitive 1H response and subsequent 4-card Spade support means the partnership has 25 combined points and an 8-card major fit. North must continue to push towards game. After South's 1H response, North's aggressive rebid of 2S (showing four spades and forcing/highly invitational values) encourages South. South, with a maximum 7 points and a Spade fit, should accept the invitation by bidding 3S. North should then confidently bid 4S, which makes comfortably (expected 10 tricks, potentially 11).",
+      "analysis": "With an 18 total point hand and a 4-card spade suit, North should prioritize opening 1 Spade. This immediately shows the best major and high card strength. South, despite being weak (7 TP), has 4-card support and sufficient values to make a constructive raise (2S) over the subsequent 1D overcall. North, knowing the 8-card fit and minimum 25 combined points, should then jump directly to 4 Spades.",
       "recommended_auction": [
-        "1C",
-        "1D",
-        "1H",
-        "p",
-        "2S",
-        "p",
-        "3S",
-        "p",
-        "4S",
-        "p",
-        "p",
-        "p"
+        {
+          "bid": "1S",
+          "explanation": "North opens 1 of the best major (4=2=3=4, 18 TP). This is highly descriptive."
+        },
+        {
+          "bid": "1D",
+          "explanation": "East overcalls with a 5-card suit and 10 TP."
+        },
+        {
+          "bid": "2S",
+          "explanation": "South shows 4-card support and 6-9 total points, a constructive raise."
+        },
+        {
+          "bid": "P",
+          "explanation": "West passes, lacking reason to compete."
+        },
+        {
+          "bid": "4S",
+          "explanation": "North knows the 8-card fit and 25+ total points. The jump to game is warranted."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions are strictly needed for this deal. The key is applying standard competitive bidding principles to reach the logical 4S contract based on combined strength (25 TP) and fit (8+ cards). Players should ensure their 2S rebid systemically guarantees high values and forces partner to describe their hand further, preventing the premature close seen in the actual auction.",
-      "sequence": []
+      "analysis": "If the partnership adheres to the actual auction (1C opening by North, which is an acceptable if less descriptive choice for 18 TP), North must use a forcing sequence to ensure game is reached. After East's 1D overcall and South's weak 1H response, North's 1S rebid confirms Spades as the primary suit and indicates a strong, potentially forcing hand. South must recognize this power and prioritize the spade fit over the minor heart suit shown earlier, upgrading their hand to 3S or 4S.",
+      "sequence": [
+        {
+          "bid": "1C",
+          "explanation": "North (18 TP) opens 1C (as in the actual auction)."
+        },
+        {
+          "bid": "1D",
+          "explanation": "East overcalls."
+        },
+        {
+          "bid": "1H",
+          "explanation": "South responds, showing the 5-card heart suit lightly (7 TP)."
+        },
+        {
+          "bid": "P",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "North's reverse rebid, showing 4 Spades and forcing partner to bid again, indicating 17+ points."
+        },
+        {
+          "bid": "P",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "4S",
+          "explanation": "South recognizes North's strength and the established fit, accepting the invitation to game."
+        }
+      ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Game Investigation with Maximum Hand",
-        "category": "Review"
-      },
-      {
-        "player": "Pair NS",
-        "topic": "Valuation for Game (25+ Total Points with Fit)",
+        "topic": "Opening Hand Selection: Choose the most descriptive opening bid (1S) over an artificial or less specific minor suit opener (1C) when a 4-card major is present and the hand is strong.",
         "category": "Review"
       },
       {
         "player": "South",
-        "topic": "Competitive Support Bidding (Maximizing descriptive bids)",
-        "category": "Review"
+        "topic": "Game Evaluation Principle: When a fit is found and partner has shown a very strong hand (18+ TP), a constructive raise to game is often mandatory, even with minimum values. Avoid passing at the 1-level.",
+        "category": "Technique"
+      },
+      {
+        "player": "North/South",
+        "topic": "Communication Priority: When deciding between responding 1H (5-card suit) and 1S (4-card fit), prioritize finding a known fit, especially when partner has not yet shown a major suit.",
+        "category": "Strategy"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:16:22"
+  "timestamp": "2025-12-21 00:01:38"
 }

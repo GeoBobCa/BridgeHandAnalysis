@@ -130,40 +130,87 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S6TJH48D3679AC79Q,S2H23679QD8QC36KA,S45KAHJD4JKC245TJ,|rh||ah|Board 11|sv|o|mb|p|mb|2H|mb|3C|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|C2|pc|C8|pc|CQ|pc|CA|pg||pc|H2|pc|HJ|pc|HA|pc|H4|pg||pc|HK|pc|H8|pc|H3|pc|C4|pg||pc|D2|pc|D9|pc|DQ|pc|DK|pg||pc|S4|pc|S9|pc|ST|pc|S2|pg||pc|DA|pc|D8|pc|D4|pc|D5|pg||pc|D7|pc|H6|pc|DJ|pc|DT|pg||pc|CK|pc|C5|pc|S3|pc|C7|pg||pc|C3|pc|CT|pc|H5|pc|C9|pg||pc|S7|pc|SJ|pc|H7|pc|S5|pg||pc|C6|pc|CJ|pc|HT|pc|S6|pg||pc|S8|pc|D3|pc|H9|pc|SK|pg||pc|HQ|pc|SA|pc|SQ|pc|D6|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "SEVERE OVERBID",
+    "verdict": "OPTIMAL CONTRACT",
     "actual_critique": [
-      "North's bid of 3C over the 2H opening is highly non-standard, providing misleading preemptive information for a hand that should prefer a takeout double (14 TP, excellent side suit distribution).",
-      "West made a significant error raising 3H to 4H. With only 23 combined Total Points and lacking stoppers in Diamonds (leading to three immediate losers), the game contract is unmakeable.",
-      "The 4H contract fails badly, likely down three tricks, as declarer cannot avoid losing control of the diamond suit (NS hold the AKJ)."
+      "West's 2H opening bid was slightly flawed due to poor suit quality (Q97632 only featuring the Queen, needing 2 of top 3 or 3 of top 5 honors).",
+      "North's immediate jump to 3C over 2H, holding 13 HCP, was highly ambiguous and failed to adequately describe his strength or 4-card spade suit.",
+      "Despite the competitive and unorthodox bidding, the optimal game contract (4H) was ultimately reached."
     ],
     "basic_section": {
-      "analysis": "West opened a standard Weak Two in Hearts. North, holding 14 total points and good support for the unbid suits, should use a Takeout Double to inform partner (South) of strength and desire to compete. East made a reasonable competitive raise to 3H. West should pass 3H, as the combined point count (23 TP) and massive diamond losers make game unattractive.",
+      "analysis": "South passes with minimum points. West opens a standard Weak Two in Hearts, although the honor structure of the suit is marginal. North holds 13 HCP and should aim to show potential defense or a competitive fit, best achieved through a takeout double. East supports Hearts and raises to 3H. West accepts the invitation to game given the confirmation of the fit.",
       "recommended_auction": [
-        "p",
-        "2H",
-        "X",
-        "3H",
-        "p",
-        "p",
-        "p"
+        {
+          "bid": "P",
+          "explanation": "South passes with only 8 total points."
+        },
+        {
+          "bid": "2H",
+          "explanation": "West opens a Weak Two (6-11 HCP, 6-card suit), although the suit quality is poor."
+        },
+        {
+          "bid": "Dbl",
+          "explanation": "North doubles for takeout, showing 10+ HCP and interest in the unbid suits (especially Spades)."
+        },
+        {
+          "bid": "3H",
+          "explanation": "East bids 3H to show support for partner and preempt the opponents, based on 9 total points."
+        },
+        {
+          "bid": "P",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "4H",
+          "explanation": "West bids game, accepting the challenge after hearing confirmed support from East."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions (like Splinter Bids or specialized squeezes) are needed here, as the primary fault lies in basic competitive valuation. If North had utilized a balancing double, South might bid 3D, potentially establishing a competitive auction where 3H is the final, safer contract.",
-      "sequence": null
+      "analysis": "In a competitive auction like this, using the double effectively is paramount. North's double is standard here, demonstrating values that exceed a simple competitive overcall. This sequence leads swiftly to the optimal 4H contract for the East/West pair, minimizing the chance for North/South to find their potential spade fit or make a profitable sacrifice.",
+      "sequence": [
+        {
+          "bid": "P",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "2H",
+          "explanation": "West's Weak Two opening."
+        },
+        {
+          "bid": "Dbl",
+          "explanation": "North shows values and interest in other suits, confirming the competitive nature of the auction."
+        },
+        {
+          "bid": "3H",
+          "explanation": "East shows support and preemption."
+        },
+        {
+          "bid": "P",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "4H",
+          "explanation": "West bids game."
+        }
+      ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Competitive Action over Weak Twos (Takeout Double vs. Direct Bid)",
+        "player": "West",
+        "topic": "Evaluating suit quality for Weak Two openings (Q97632 is border-line/poor).",
         "category": "Review"
       },
       {
-        "player": "West",
-        "topic": "Game Valuation and Side Suit Control in Preempted Auctions",
+        "player": "North",
+        "topic": "Using the Takeout Double to describe a strong hand when facing a preemptive opening.",
+        "category": "Technique"
+      },
+      {
+        "player": "East",
+        "topic": "Making a constructive/competitive raise to game level after partner opens a Weak Two.",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:15:22"
+  "timestamp": "2025-12-21 00:00:42"
 }

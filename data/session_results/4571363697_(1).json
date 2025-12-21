@@ -135,67 +135,79 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S9KH47TKD389QC67J,S3568TH3689AD2TC2,S24JQHQD5JKAC38TK,|rh||ah|Board 7|sv|b|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|2D|mb|p|mb|3D|mb|p|mb|p|mb|p|pg||pc|SA|pc|S9|pc|S3|pc|S2|pg||pc|CA|pc|C6|pc|C2|pc|C3|pg||pc|C4|pc|C7|pc|D2|pc|C8|pg||pc|HA|pc|HQ|pc|H2|pc|H4|pg||pc|S5|pc|S4|pc|S7|pc|SK|pg||pc|D3|pc|DT|pc|DJ|pc|D4|pg||pc|D5|pc|D6|pc|DQ|pc|H3|pg||pc|D8|pc|H6|pc|DK|pc|D7|pg||pc|CK|pc|C5|pc|CJ|pc|S6|pg||pc|SJ|pc|C9|pc|H7|pc|S8|pg||pc|SQ|pc|H5|pc|HT|pc|ST|pg||pc|CT|pc|CQ|pc|D9|pc|H8|pg||pc|HK|pc|H9|pc|DA|pc|HJ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME (Optimal contract 5D)",
+    "verdict": "MISSED GAME",
     "actual_critique": [
-      "North (16 HCP) failed to recognize the high probability of game after South's minimum 2D raise and should have jumped directly to 4D to secure the contract.",
-      "South (9 TP) should have accepted North's invitational 3D bid by continuing to 4D, as the partnership had sufficient strength and an 8-card fit.",
-      "The partnership stopped far short of the optimal 5D contract, which makes 12-13 tricks due to favorable distribution and high card placement."
+      "North, holding 16 HCP and finding an established 9-card Diamond fit (AKJ5 opposite Q983), failed to bid the readily available game of 4D.",
+      "South's pass over 3D, while indicating a minimum hand (9 total points), was too conservative, failing to account for North's strength demonstrated by the 1D-1S rebid sequence.",
+      "The partnership allowed the opponents to successfully shut down the auction at an easy make, missing the potential for extra match points in 4D."
     ],
     "basic_section": {
-      "analysis": "North opened 1D and found an 8-card Diamond fit opposite South's minimum response (9 TP) shown by the 2D raise. With a combined strength of 25 TP and good control cards (A, K, J in Diamonds), the partnership should commit to game. A jump to 4D by North is the most efficient and descriptive way to guarantee the game contract opposite a single raise, as 4D is easily cold.",
+      "analysis": "North/South have 25 combined total points (16 + 9) and a 9-card Diamond fit. This combination strongly suggests a high probability of making game (4D). North opened 1D and subsequently showed 4 Spades (1S), demonstrating a forcing or near-forcing hand of at least 16 HCP. South's 2D bid confirmed the Diamond fit and provided constructive support. When a strong opener (16+ HCP) establishes a major fit opposite support, they should typically commit to game.",
       "recommended_auction": [
-        "1D",
-        "P",
-        "1H",
-        "P",
-        "1S",
-        "P",
-        "2D",
-        "P",
-        "4D",
-        "P",
-        "P",
-        "P"
+        {
+          "bid": "1D",
+          "explanation": "Standard opening (12+ TP) showing 4+ Diamonds. North has 16 HCP."
+        },
+        {
+          "bid": "1H",
+          "explanation": "Standard response showing 6+ TP and 4+ Hearts. South has 9 TP."
+        },
+        {
+          "bid": "1S",
+          "explanation": "Rebid showing 4 Spades and 12-20 HCP (Standard American). This is forcing for one round."
+        },
+        {
+          "bid": "2D",
+          "explanation": "Shows 7-10 points and 4-card Diamond support, confirming the fit and showing a constructive hand."
+        },
+        {
+          "bid": "4D",
+          "explanation": "North recognizes the established 9-card fit combined with 25+ partnership points (16 + minimum 7 shown by 2D) and bids game directly."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "Given the potential for 12 or 13 tricks, the partnership should aim for 5D. Using standard methods, North could bid 3D as a strong invitation after South's 2D raise. If South accepted with 4D, North could then bid 5D, showing excellent distribution and/or specific shape that justifies pushing past game, recognizing the excellent playing strength of the combined hands.",
+      "analysis": "Playing 2/1 Game Forcing (2/1 GF), North's rebid sequence could have been more descriptive of their strength earlier. Since 1H is a non-forcing response, North needed to jump or use a reverse to confirm the game-forcing intent. A 2S rebid is a Reverse showing 16+ HCP, which emphasizes North's strength and forces South to describe their Diamond support fully.",
       "sequence": [
-        "1D",
-        "P",
-        "1H",
-        "P",
-        "1S",
-        "P",
-        "2D",
-        "P",
-        "3D",
-        "P",
-        "4D",
-        "P",
-        "5D",
-        "P",
-        "P",
-        "P"
+        {
+          "bid": "1D",
+          "explanation": "Standard 12-20 point opening."
+        },
+        {
+          "bid": "1H",
+          "explanation": "6-12 points, 4+ Hearts (non-forcing)."
+        },
+        {
+          "bid": "2S",
+          "explanation": "Reverse showing extra strength (16+ HCP) and promising 4 Spades, forcing to game if playing highly stylized system, or highly encouraging."
+        },
+        {
+          "bid": "3D",
+          "explanation": "Jump Preference showing strong support (9-10 TP maximum for response) for Diamonds, suggesting a willingness to play game."
+        },
+        {
+          "bid": "4D",
+          "explanation": "Opener accepts the strong invitation and commits to game."
+        }
       ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Jumping to Game Opposite a Single Raise",
+        "topic": "Game Commitment: When you hold 16 points and establish an 8+ card fit, you must push to game unless partner shows an absolute minimum (5-6 points). North should have bid 4D immediately over 2D.",
         "category": "Review"
       },
       {
         "player": "South",
-        "topic": "Accepting Game Invitations",
-        "category": "Review"
+        "topic": "Valuing Responding Hands: Opposite a strong opener who reverses (1D -> 1S shows 16+), your 9 TP hand is sufficient to cooperate in reaching game when a fit is confirmed. A pass over 3D shows insufficient evaluation of partnership assets.",
+        "category": "Technique"
       },
       {
-        "player": "Pair NS",
-        "topic": "Evaluating Playing Tricks vs. Point Count",
-        "category": "Advanced"
+        "player": "Partnership (N/S)",
+        "topic": "Setting Trumps and Limits: Once trumps (Diamonds) are set by the constructive 2D response, the stronger partner must clarify the limit. 3D was insufficient to confirm 25+ combined points.",
+        "category": "System"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:13:39"
+  "timestamp": "2025-12-20 23:58:29"
 }

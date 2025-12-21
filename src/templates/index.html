@@ -19,7 +19,7 @@
                                     <span class="badge bg-secondary">Vul: {{ item.facts.vulnerability }}</span>
                                     <span class="badge bg-dark">Dlr: {{ item.facts.dealer }}</span>
                                 </div>
-                                <span class="badge bg-primary mb-3">{{ item.ai_analysis.verdict }}</span>
+                                <span class="badge bg-primary mb-3">{{ item.ai_analysis.get('verdict', 'Analysis Pending') }}</span>
                                 <a href="{{ item.facts.board | replace(' ', '_') }}.html" class="btn btn-outline-dark btn-sm w-100">View Analysis</a>
                             </div>
                         </div>

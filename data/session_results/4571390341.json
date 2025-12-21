@@ -134,60 +134,125 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "South underbid after the takeout double, choosing the limiting 2S rebid (12-15 points/non-forcing) instead of showing the full 16 total points and forcing game interest.",
-      "North failed to adequately evaluate the combined strength after South's strong takeout double, passing the 2S contract despite 4S being an easy make.",
-      "The auction stopped prematurely at the part-score level (2S), failing to capitalize on the 4-4 major suit fit and sufficient high-card strength (23 total points)."
+      "West made a critical error by passing South's takeout double of 1H, which risked converting the double to penalty against their own contract rather than escaping with a minimum rebid (2H) or Redouble.",
+      "North/South failed to capitalize on their 23 total points and solid 8-card Spade fit, stopping prematurely in the partial contract of 2S.",
+      "South (the takeout doubler with 16 TP) missed an opportunity to push aggressively toward 4S by inviting game (e.g., 3S) or showing distributional features, leading North to pass 2S."
     ],
     "basic_section": {
-      "analysis": "West's 1H opening was standard. South correctly made a takeout double, indicating 15+ HCP and good shape. North showed minimum preference with 1S (6-9 points). Crucially, South must now ensure that game is reached. With 16 TP and a known 4-4 fit, South should jump to 3S. This bid strongly invites or forces game (depending on partnership agreement) and communicates the strong hand established by the initial double. Given the high probability of 10 tricks, 4S is the correct destination.",
+      "analysis": "West's opening 1H was standard. South's takeout double was correct, showing a strong hand (16 TP) and shortness in hearts, forcing partner to bid. North's 1S response was mandatory and showed 4 Spades. With 23 combined points and an 8-card Spade fit, the partnership should push for game (4S). After South confirmed the fit with 2S, North should have raised to 3S, inviting game, which South would accept with 16 TP.",
       "recommended_auction": [
-        "1H",
-        "p",
-        "p",
-        "d",
-        "p",
-        "1S",
-        "p",
-        "3S",
-        "p",
-        "4S",
-        "p",
-        "p",
-        "p"
+        {
+          "bid": "1H",
+          "explanation": "Standard opening, 12+ total points, 5+ Hearts."
+        },
+        {
+          "bid": "p",
+          "explanation": "Weak hand, insufficient strength to respond."
+        },
+        {
+          "bid": "p",
+          "explanation": "Weak hand."
+        },
+        {
+          "bid": "D",
+          "explanation": "Takeout double, 12+ TP, short Hearts, support for unbid suits."
+        },
+        {
+          "bid": "2H",
+          "explanation": "Escape from the double, showing minimum opening strength."
+        },
+        {
+          "bid": "p",
+          "explanation": "North remains quiet below game level."
+        },
+        {
+          "bid": "p",
+          "explanation": "East remains quiet."
+        },
+        {
+          "bid": "2S",
+          "explanation": "Shows 4-card Spade support and a constructive hand (16 TP). Needs partner to invite game."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "3S",
+          "explanation": "Invitational raise, showing maximum weak hand (7 TP) and interest in 4S."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4S",
+          "explanation": "South accepts the invitation with 16 TP and good distribution."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions are strictly needed to reach the optimal 4S contract. The core issue lies in accurate communication of strength. If the partnership plays 3S as merely invitational, South could consider bidding 2C (showing their strong secondary suit) to initiate a forcing sequence, but given the clear major suit fit established by the 1S response, the most direct path is showing game interest in the agreed trump suit immediately. Recognizing the 23 total points necessary for 4S is paramount.",
+      "analysis": "South's distribution (4=1=3=5) is highly suitable for game-forcing sequences using distributional bids. After the 1H opening and subsequent takeout double, when West escapes to 2H, South should utilize 3H as a Splinter bid, immediately confirming four-card Spade support and a singleton Heart, ensuring the partnership reaches 4S efficiently.",
       "sequence": [
-        "1H",
-        "p",
-        "p",
-        "d",
-        "p",
-        "1S",
-        "p",
-        "3S",
-        "p",
-        "4S"
+        {
+          "bid": "1H",
+          "explanation": "Standard opening."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "D",
+          "explanation": "Takeout double."
+        },
+        {
+          "bid": "2H",
+          "explanation": "Escaping the double, confirming 5+ Hearts."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "3H",
+          "explanation": "Splinter bid, showing 4+ Spades, game forcing, and a singleton/void in Hearts (South's hand qualifies perfectly)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4S",
+          "explanation": "North recognizes game is forced and places the contract in 4S."
+        }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Rebid Strength After Takeout Double and Minimum Response",
+        "player": "West",
+        "topic": "Responding to Opponent's Takeout Double: Never pass when holding the bid suit unless the contract is surely going down for penalty.",
         "category": "Review"
       },
       {
-        "player": "Pair NS",
-        "topic": "Recognizing Game Requirements (Rule of 25 for Major Fits)",
-        "category": "Review"
+        "player": "South",
+        "topic": "Value of Distribution: Use distributional tools (like Splinter Bids) or strong rebids (3S invitation) when holding 16 TP and a singleton to maximize game potential.",
+        "category": "Technique"
       },
       {
         "player": "North",
-        "topic": "Evaluating Partner's Auction Strength (Responding to a Takeout Doubler)",
-        "category": "Review"
+        "topic": "Minimum Responses to Forced Bids: While 1S was necessary, recognize that partner's subsequent strong actions (2S/3H) demand pushing toward game even with limited points.",
+        "category": "Judgment"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:16:51"
+  "timestamp": "2025-12-21 00:02:11"
 }

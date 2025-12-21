@@ -134,65 +134,135 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S368TH458TKD36KC2,S9H9JD79TJQC347TQ,S4QKAH37QDAC59JKA,|rh||ah|Board 2|sv|n|mb|p|mb|p|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|HA|pc|H4|pc|H9|pc|H3|pg||pc|H2|pc|H5|pc|HJ|pc|HQ|pg||pc|SQ|pc|S2|pc|S3|pc|S9|pg||pc|SK|pc|S5|pc|S6|pc|C3|pg||pc|H7|pc|H6|pc|HK|pc|D7|pg||pc|C2|pc|C7|pc|CK|pc|C6|pg||pc|DA|pc|D2|pc|D3|pc|D9|pg||pc|C5|pc|C8|pc|S8|pc|C4|pg||pc|ST|pc|DT|pc|S4|pc|SJ|pg||pc|D4|pc|DK|pc|DJ|pc|C9|pg||pc|H8|pc|CT|pc|SA|pc|D5|pg||pc|CA|pc|S7|pc|HT|pc|CQ|pg||pc|D8|pc|D6|pc|DQ|pc|CJ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED SLAM",
+    "verdict": "MISSED SLAM (6S is Laydown)",
     "actual_critique": [
-      "N/S missed a routine, cold 6S slam (12 tricks available) by failing to employ slam investigation tools like Roman Key Card Blackwood (RKCB).",
-      "South's jump directly to 4S after North's 2S rebid was premature, denying North (the powerful hand) room to maneuver and investigate key cards.",
-      "North, holding 24 total points, should have insisted on further exploration (e.g., using 4NT RKCB) after establishing the spade fit, rather than accepting South's game bid."
+      "South's jump to 4S was an unnecessary sign-off bid after North's strong 2C opening, denying North room to investigate slam.",
+      "North, holding 24 HCP and knowing the partnership total was 31+ combined, failed to use Key Card Blackwood (4NT) or cue bidding to confirm slam viability.",
+      "The partnership missed the excellent distributional features (singleton club in South allowing ruffing) which secured 13 tricks in spades."
     ],
     "basic_section": {
-      "analysis": "North has a powerful, game-forcing hand (24 total points) and must open 2 Clubs. South must respond 2 Diamonds (artificial negative, 0-7 points) to keep the auction low. North then describes their hand, showing 4+ Spades. South, with four-card support and maximum points for their range, raises. North must then use Blackwood (4NT) to confirm key cards for slam.",
+      "analysis": "North opened a strong, game-forcing 2C. South responded with a relay, confirming minimal values but eventually showing support for Spades. However, South's subsequent jump to 4S prematurely ended the auction. Given the combined strength (31 TP) and good fit, North must press for slam investigation using standard Key Card Blackwood after confirming the spade fit.",
       "recommended_auction": [
-        "p",
-        "p",
-        "p",
-        "2C",
-        "p",
-        "2D",
-        "p",
-        "2S",
-        "p",
-        "3S",
-        "p",
-        "4NT",
-        "p",
-        "5C",
-        "p",
-        "6S",
-        "p",
-        "p",
-        "p"
+        {
+          "bid": "p",
+          "explanation": "East passes as dealer with only 5 TP."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes with 7 TP."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes with 8 TP."
+        },
+        {
+          "bid": "2C",
+          "explanation": "North opens 2C, showing 22+ HCP, forcing to game."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2D",
+          "explanation": "South provides the standard negative relay response (0-7 points)."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "North describes their hand: 4+ Spades, distribution, and implies strength in minors/shortness in Diamonds."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "3S",
+          "explanation": "South shows 4-card support and maximum for the 2D relay (7 TP), keeping slam investigation open."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "4NT",
+          "explanation": "North uses RKC Blackwood for Spades, knowing the partnership is strong and fitted."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "5D",
+          "explanation": "South responds 5D (using 1430 convention, showing 3 Key Cards: KH, KD, plus AS or KS missing)."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "6S",
+          "explanation": "North confirms slam, knowing all key controls are accounted for (North holds AS, KS, AC, AD, QS)."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "With the combined N/S strength reaching 30+ total points and excellent controls (missing only the King of Spades, which is well-protected, and the Ace of Hearts, which is known to be missing), slam is certain. The recommended sequence uses the 2D negative response followed by RKCB. South's 5C response to 4NT shows 0 or 3 key cards (3 key cards present: SA, DA, CA), allowing North to confidently bid 6S. Since 12 tricks are available, 6S is a cold contract.",
+      "analysis": "A sophisticated sequence uses cue bidding after the 2S rebid to locate specific controls, confirming the high chance of slam given North's 4=3=1=5 shape and the powerful minor/major combination. Cue bidding 4D shows the Diamond Ace, prompting South to show their Heart King (4H). After controls are known, 4NT confirms enough key cards for the grand slam investigation (or settles for 6S). Since 13 tricks are available, 6S is a certainty.",
       "sequence": [
-        "2C",
-        "2D",
-        "2S",
-        "3S",
-        "4NT",
-        "5C",
-        "6S"
+        {
+          "bid": "2C",
+          "explanation": "Strong opening."
+        },
+        {
+          "bid": "2D",
+          "explanation": "Negative relay."
+        },
+        {
+          "bid": "2S",
+          "explanation": "4+ Spades."
+        },
+        {
+          "bid": "3S",
+          "explanation": "Support, keeping auction forcing."
+        },
+        {
+          "bid": "4D",
+          "explanation": "North cue bids the Ace of Diamonds (first round control)."
+        },
+        {
+          "bid": "4H",
+          "explanation": "South cue bids the King of Hearts (first round control)."
+        },
+        {
+          "bid": "4NT",
+          "explanation": "North initiates RKC. South responds 5D (3 key cards)."
+        },
+        {
+          "bid": "6S",
+          "explanation": "Slam reached."
+        }
       ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Slam Investigation with a Strong Hand (2C opener)",
-        "category": "Advanced"
-      },
-      {
-        "player": "Pair NS",
-        "topic": "Roman Key Card Blackwood (RKCB)",
-        "category": "Advanced"
-      },
-      {
         "player": "South",
-        "topic": "Responding to a 2C Opening (Using the 2D Negative)",
+        "topic": "Responding to Strong Openings (2C)",
+        "category": "Technique"
+      },
+      {
+        "player": "North",
+        "topic": "Slam Investigation Procedures (Cue Bidding/4NT)",
+        "category": "Decision Making"
+      },
+      {
+        "player": "N/S Partnership",
+        "topic": "Valuing Distributional Features (Singletons opposite long suits)",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:12:30"
+  "timestamp": "2025-12-20 23:57:12"
 }

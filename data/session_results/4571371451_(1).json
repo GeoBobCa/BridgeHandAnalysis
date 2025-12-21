@@ -130,48 +130,83 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3SKH46TQDTJAC789TK,S238TJH38AD23C25Q,S4569H7JKD479KC3J,|rh||ah|Board 9|sv|e|mb|p|mb|1D|mb|d|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|pg||pc|D4|pc|D5|pc|DA|pc|D2|pg||pc|DT|pc|D3|pc|DK|pc|D6|pg||pc|C3|pc|C4|pc|CK|pc|C2|pg||pc|DJ|pc|H3|pc|D7|pc|DQ|pg||pc|S7|pc|SK|pc|S2|pc|S4|pg||pc|HT|pc|HA|pc|H7|pc|H2|pg||pc|S3|pc|S5|pc|SA|pc|C7|pg||pc|SQ|pc|C8|pc|S8|pc|S6|pg||pc|D8|pc|C9|pc|H8|pc|D9|pg||pc|HJ|pc|H5|pc|H4|pc|ST|pg||pc|SJ|pc|S9|pc|H9|pc|CT|pg||pc|C5|pc|CJ|pc|CA|pc|H6|pg||pc|C6|pc|HQ|pc|CQ|pc|HK|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "OVERBID (2S fails badly)",
+    "verdict": "FAILED COMPETITION",
     "actual_critique": [
-      "North failed to respond actively to South's Takeout Double after the 1S intervention, allowing E/W to settle the auction too cheaply. North must compete at the two level.",
-      "East over-raised West to 2S, ignoring South's strong double. With only 19 combined points and E/W vulnerable, they should have passed 1S.",
-      "The 2S contract is a failure, likely going down three or more tricks due to N/S owning three outside Aces (H, D, C) and the Spade King."
+      "South, having initiated the competition with a strong Takeout Double (14 TP), failed to fulfill the obligation to bid a suit on the subsequent round.",
+      "By passing after East's 2S bid, South allowed the opponents to settle into a favorable partial contract (2S) when N/S had better defensive potential and an 8-card fit in Hearts.",
+      "The N/S partnership missed competing to the 2-level in Hearts (2H), which would have been a sound sacrifice or a reasonable partial contract."
     ],
     "basic_section": {
-      "analysis": "South correctly made a Takeout Double showing opening values and support for unbid suits (Hearts/Clubs). North, holding 8 points, must respond to this forcing double, especially after West intervened with 1S. North should have preferred to bid 2H (showing the 4-card suit South is interested in) or 2S (a competitive 4-card raise). By passing, North allowed E/W to reach a contract (2S) that is destined to fail badly, though N/S missed their own modest partscore (likely 8 tricks in Hearts or Clubs).",
+      "analysis": "The opening sequence was standard. East's 1D opening was appropriate (12 TP). South's Takeout Double was excellent (14 TP, promising support for the unbid suits). West's 1S response was competitive and necessary to show their long suit. The critical failure occurred after East raised to 2S. South is compelled to bid their best suit, preferably a major, to show the reason for the double and keep the pressure on. Failing to bid 2H forfeited the chance to find the N/S 4-4 Heart fit.",
       "recommended_auction": [
-        "p",
-        "1D",
-        "dbl",
-        "1S",
-        "2H",
-        "p",
-        "3C",
-        "p",
-        "p",
-        "p"
+        {
+          "bid": "p",
+          "explanation": "North passes with 8 total points."
+        },
+        {
+          "bid": "1D",
+          "explanation": "East opens 1D, showing 12-20 points and 4+ Diamonds."
+        },
+        {
+          "bid": "D",
+          "explanation": "South makes a Takeout Double, showing 12+ points and support for unbid suits."
+        },
+        {
+          "bid": "1S",
+          "explanation": "West bids 1S, competitive bid showing 5 Spades and minimum values."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes, still minimum."
+        },
+        {
+          "bid": "2S",
+          "explanation": "East raises, showing support and minimum opening hand strength."
+        },
+        {
+          "bid": "2H",
+          "explanation": "South bids 2H, showing their 4-card major and fulfilling the obligation established by the Takeout Double."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions are necessary to find the competitive partscore. The primary focus remains on North\u2019s compulsory response after a Takeout Double has been made and an opponent has intervened. The pair should prioritize finding their 7-card fit in Hearts or Clubs.",
-      "sequence": null
+      "analysis": "In competitive auctions, especially when vulnerable opponents open, finding a fit quickly is paramount. South has strong distribution (1=4=3=5) and 14 TP, which demands aggressive competition. South could consider bidding 3C over 2S if focusing strictly on length and high-quality club holding (KT987), using 3C as a jump preference, but showing the 4-card major (2H) at the 2-level is typically superior for defining the fit and maximizing competitive space.",
+      "sequence": [
+        {
+          "bid": "2H",
+          "explanation": "South bids 2H, prioritizing the 4-card major over the 5-card minor to compete efficiently."
+        },
+        {
+          "bid": "3S",
+          "explanation": "East, highly competitive, pushes to 3S attempting to shut out N/S."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes, confirming minimum values."
+        },
+        {
+          "bid": "p",
+          "explanation": "South also passes. Having defined the Heart fit, 3S is likely to go down, providing a positive outcome for N/S."
+        }
+      ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Responding to a Takeout Double after Intervention",
+        "player": "South",
+        "topic": "Mandatory follow-up after a Takeout Double. Never leave partner guessing after doubling.",
         "category": "Review"
       },
       {
-        "player": "East",
-        "topic": "Competitive Bidding Limits Opposite a Minimum Hand",
-        "category": "Review"
+        "player": "West",
+        "topic": "Competitive bidding strategy: Responding with a weak hand to a T/O double requires showing the longest suit immediately.",
+        "category": "Technique"
       },
       {
-        "player": "Pair E/W",
-        "topic": "Vulnerability and Total Points in Competitive Auctions",
-        "category": "Review"
+        "player": "North/South",
+        "topic": "Defensive vs. Offensive: With roughly equal total points, competitive bidding to the 2 or 3 level is crucial to achieve the best result.",
+        "category": "Strategy"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:14:26"
+  "timestamp": "2025-12-20 23:59:01"
 }

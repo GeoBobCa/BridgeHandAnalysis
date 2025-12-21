@@ -131,53 +131,89 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "North made a fundamental error responding 1H with only 2 total points and a three-card suit (3=3=2=5 distribution), where a pass was mandatory.",
-      "East's bid of 2D over 1H is highly unorthodox and contributed to the chaotic auction; East should have overcalled 1H or passed.",
-      "The East-West partnership failed to identify their combined 23+ HCP and a clear 3NT game, allowing North-South to play a suboptimal, likely failing, 6-card fit contract (2H)."
+      "West made a catastrophic pass with a strong 16 HCP balanced hand, forfeiting the chance for E/W to bid their highly makable 4S game.",
+      "North responded 1H with only 1 total point and three cards in the suit, forcing the partnership into an unwarranted and failing contract (2H).",
+      "The competitive 2D bid by East was inaccurate and lacked the necessary distributional shape or high-card strength to justify aggressive interference."
     ],
     "basic_section": {
-      "analysis": "South made a standard 1D opening. North, holding only 2 total points, must pass. East, with 7 TP and 4 hearts, should overcall 1H. West's 16 HCP and balanced shape make them ideal partners for game. After S rebids 2D, West should bid 2NT, showing 16-18 HCP, a balanced hand, and a Diamond stopper (AT76). East can then raise straight to 3NT, a highly makeable contract. The NS 2H contract has only a 6-card fit and is highly likely to fail against strong EW defense.",
+      "analysis": "South opens a strong 1D. West, holding 16 HCP and a balanced hand with Diamond stopper, must intervene immediately, usually with 1NT. E/W have a comfortable 4-4 Spade fit and 23 combined HCP, making 4S highly probable. The auction fell apart when West passed, and North incorrectly responded with a negligible hand.",
       "recommended_auction": [
-        "1D",
-        "p",
-        "p",
-        "1H",
-        "2D",
-        "2NT",
-        "p",
-        "3NT"
+        {
+          "bid": "1D",
+          "explanation": "South opens with 12+ points and 5+ Diamonds."
+        },
+        {
+          "bid": "1NT",
+          "explanation": "West overcalls 1NT, showing 15-18 HCP, balanced, and a stop in the opponent's suit."
+        },
+        {
+          "bid": "P",
+          "explanation": "North passes, holding only 1 TP, saving bidding space for partner South."
+        },
+        {
+          "bid": "2S",
+          "explanation": "East bids 2S, typically a transfer (or natural response showing 4+ S) promising 7+ TP and seeking the best fit."
+        },
+        {
+          "bid": "P",
+          "explanation": "South passes, no attractive bid over the E/W constructive sequence."
+        },
+        {
+          "bid": "4S",
+          "explanation": "West accepts the transfer/raises directly to game, recognizing the 4-4 fit and sufficient combined strength (23+ HCP)."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "No complex advanced conventions are strictly necessary here. The key is proper valuation and competitive determination. West should recognize their strength (16 HCP) opposite East's overcall (minimum 7 TP) and commit strongly to game. If a responsive double system were employed, West could double South's 2D rebid, showing major suit interest and ensuring the partnership finds their 4S or 4H fit if 3NT is blocked.",
+      "analysis": "In competitive auctions, especially after an opponent's opening bid, the 1NT overcall is an excellent vehicle for describing a strong, balanced hand and immediately limiting the auction. E/W combined strength (23 HCP) guarantees game regardless of the system used. The simplest approach (transfer or natural raise) is best here.",
       "sequence": [
-        "1D",
-        "p",
-        "p",
-        "1H",
-        "2D",
-        "X",
-        "3D",
-        "3NT"
+        {
+          "bid": "1D",
+          "explanation": "Standard opening."
+        },
+        {
+          "bid": "1NT",
+          "explanation": "Strong Overcall (15-18 HCP)."
+        },
+        {
+          "bid": "P",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "2C",
+          "explanation": "East uses Stayman or equivalent convention to investigate majors/shape."
+        },
+        {
+          "bid": "P",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "West shows four Spades."
+        },
+        {
+          "bid": "4S",
+          "explanation": "East raises directly to game after identifying the 4-4 Spade fit."
+        }
       ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Responding with Minimum Hands (The Rule of Pass)",
+        "player": "West",
+        "topic": "The paramount importance of intervening with strong, balanced hands (15-18 HCP). Passing with 16 HCP prevents finding a game.",
         "category": "Review"
       },
       {
-        "player": "Pair EW",
-        "topic": "Recognizing Game in Competitive Auctions (23+ HCP Combined)",
-        "category": "Review"
+        "player": "North",
+        "topic": "Response Requirements: Unless forced, responders need a minimum of 6-7 total points or a strong distributional hand (e.g., 5-card suit) to bid at the one-level.",
+        "category": "Fundamentals"
       },
       {
         "player": "East",
-        "topic": "Standard Overcall Bidding (Choosing the correct suit/level)",
-        "category": "Review"
+        "topic": "Interference Bids: Disruptive bids like 2D require appropriate shape (e.g., 5+ cards) or high-card strength. Do not interfere aggressively when partner has a clear descriptive bid (1NT) available.",
+        "category": "Discipline"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:14:03"
+  "timestamp": "2025-12-20 23:58:45"
 }

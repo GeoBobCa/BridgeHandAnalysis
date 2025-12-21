@@ -129,46 +129,143 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S56TJQH4TQKD5C56J,S4H56JD68TJKC79TQ,S237KAH389AD23ACA,|rh||ah|Board 1|sv|o|mb|1S|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|C2|pc|C5|pc|C9|pc|CA|pg||pc|H3|pc|H2|pc|HQ|pc|H5|pg||pc|S5|pc|S4|pc|SK|pc|S8|pg||pc|S2|pc|S9|pc|ST|pc|D6|pg||pc|D5|pc|DK|pc|DA|pc|D4|pg||pc|D2|pc|D7|pc|S6|pc|D8|pg||pc|H4|pc|H6|pc|HA|pc|H7|pg||pc|D3|pc|D9|pc|SJ|pc|DT|pg||pc|HK|pc|HJ|pc|H8|pc|C3|pg||pc|C6|pc|CQ|pc|S3|pc|C4|pg||pc|S7|pc|C8|pc|SQ|pc|C7|pg||pc|CJ|pc|CT|pc|SA|pc|CK|pg||pc|H9|pc|DQ|pc|HT|pc|DJ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL CONTRACT MADE",
+    "verdict": "MISSED SLAM",
     "actual_critique": [
-      "North's 1S opening correctly advertised their powerful 20 total point hand and excellent primary suit.",
-      "South's 3S response, while successful in reaching game, was slightly aggressive for a 9 HCP/10 total point minimum hand; a 2S Limit Raise is standard for this strength.",
-      "The North/South pair correctly identified the need for game based on their combined strength (30 total points) and high-quality 10-card Spade fit."
+      "North failed to investigate slam potential despite possessing 19 HCP, perfect controls (4 Aces), and receiving a strong invitational 3S response (10 TP).",
+      "The partnership stopped short at 4S, underestimating the combined 30 total points and excellent fit, which guarantees 12 tricks.",
+      "North should have used cue bids or 4NT Blackwood immediately after 3S to confirm controls and Key Cards necessary for the Spade slam."
     ],
     "basic_section": {
-      "analysis": "North opens 1S (20 Total Points). South holds 10 Total Points and excellent 5-card support. The partnership should immediately aim for game based on combined strength (30 TP). The most standard sequence for South's hand is the Limit Raise (2S, showing 6-10 total points and 4+ trump support). North, holding a maximum opening hand, accepts the limit invitation by jumping to 4S.",
+      "analysis": "North's 1S opening and South's 3S limit raise established a clear 10-card Spade fit and guaranteed sufficient strength for game (30 combined Total Points). With North holding exceptional controls (all four Aces), slam investigation is mandatory using standard cue bidding methods followed by Blackwood.",
       "recommended_auction": [
-        "1S",
-        "p",
-        "2S",
-        "p",
-        "4S",
-        "p",
-        "p",
-        "p"
+        {
+          "bid": "1S",
+          "explanation": "Standard 12-20 points, 5+ Spades."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "3S",
+          "explanation": "Limit raise, showing 10-12 TP and good 4+ support (here 5 cards), inviting game."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4C",
+          "explanation": "Cue bid showing first-round control (Ace) in Clubs and confirming slam interest. This is forcing."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4D",
+          "explanation": "Cue bid showing first-round control (Ace is known in North's hand, South is showing secondary control or general values in D). Confirms continued interest."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4NT",
+          "explanation": "Roman Key Card Blackwood (RKCB 1430), asking for the 5 Key Cards (4 Aces + Spade Queen)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "5D",
+          "explanation": "Shows 1 or 4 Key Cards. Since North knows they have 4 Aces, South is showing the 5th KC (the Spade Queen)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "6S",
+          "explanation": "Slam confirmed with all 5 Key Cards located."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions are necessary to reach the correct game contract (4S). While the partnership has high combined strength (28 HCP), slam (6S) is risky due to missing key controls, specifically the King of Clubs and Queen of Diamonds. Given South's minimal support hand, testing for slam via cuebids or Blackwood is unwarranted, as the risk outweighs the reward.",
-      "sequence": null
+      "analysis": "Given North's highly distributional opener (5=4=3=1) and the absolute certainty of 4 Aces, immediate Roman Key Card Blackwood after the 3S limit raise is the most efficient way to investigate slam. The 3S bid provides enough assurance that South's 10 TP are working points (QJTs and KQT), making detailed control cue-bidding less necessary.",
+      "sequence": [
+        {
+          "bid": "1S",
+          "explanation": "Strong 5-card suit, 19 HCP."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "3S",
+          "explanation": "Fit established, 10 TP, highly constructive/near game-forcing values."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4NT",
+          "explanation": "Immediate RKCB 1430, focusing on the 5 Key Cards (Aces + SQ)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "5D",
+          "explanation": "Shows 1 Key Card (the SQ), confirming 5 total Key Cards for the partnership."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "6S",
+          "explanation": "Slam guaranteed. North proceeds directly."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        }
+      ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Limit Raises: 2S vs 3S",
+        "player": "North",
+        "topic": "Slam Investigation Procedures (RKCB/Cue Bidding) after a Limit Raise",
         "category": "Review"
       },
       {
         "player": "North",
-        "topic": "Game Acceptance Strategy: Accepting a Limit Raise with a maximum opening hand (20 TP)",
-        "category": "Review"
+        "topic": "Recognizing the Value of Perfect Controls (4 Aces) in Slam Bidding",
+        "category": "Technique"
       },
       {
-        "player": "Pair NS",
-        "topic": "Combined Total Points for Game (30 TP achieved)",
+        "player": "South",
+        "topic": "Using Total Points to Determine Slam Enthusiasm",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:12:15"
+  "timestamp": "2025-12-20 23:56:43"
 }

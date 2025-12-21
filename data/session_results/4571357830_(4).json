@@ -130,47 +130,99 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S378TKH89ADC3456J,S45AH2357D28QC89K,S69H6QD4679JC27TQ,|rh||ah|Board 5|sv|n|mb|p|mb|1D|mb|1S|mb|2D|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|S7|pc|S4|pc|S6|pc|SJ|pg||pc|D3|pc|H8|pc|DQ|pc|D4|pg||pc|D2|pc|D6|pc|DA|pc|C3|pg||pc|DK|pc|C4|pc|D8|pc|D7|pg||pc|D5|pc|H9|pc|H2|pc|DJ|pg||pc|D9|pc|DT|pc|C5|pc|H3|pg||pc|S2|pc|S8|pc|SA|pc|S9|pg||pc|C8|pc|C2|pc|CA|pc|C6|pg||pc|SQ|pc|SK|pc|S5|pc|H6|pg||pc|HA|pc|H5|pc|HQ|pc|H4|pg||pc|ST|pc|H7|pc|C7|pc|HT|pg||pc|S3|pc|C9|pc|CT|pc|HJ|pg||pc|CJ|pc|CK|pc|CQ|pc|HK|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL CONTRACT MADE",
+    "verdict": "OPTIMAL CONTRACT",
     "actual_critique": [
-      "East exhibited excellent declarative judgment, bypassing intermediate steps and jumping directly to the certain game of 3NT upon hearing West's constructive 2D response, securing the optimal contract efficiently.",
-      "West's 2D bid was highly accurate, conveying maximum limits (9 TP) and adequate support (3 cards) for Diamonds, providing East with the critical information for the game decision.",
-      "South's 1S overcall, based on only 8 HCP and 10 TP, was slightly under standard requirements, but effective competitively due to the 5-5 shape and lack of vulnerability."
+      "South (Fish075) has a highly distributional 5=3=0=5 hand which was masked by the initial 1S overcall. While 1S is standard, describing the two-suiter later could enhance N/S competitive chances.",
+      "East's jump to 3NT was slightly fast; given the aggressive 1S overcall, East could have used a cue-bid or more descriptive action to ascertain stronger Spade stops or specific features from West before jumping directly to game.",
+      "North's minimum points (6 TP) justified passing throughout, but it highlights the challenge for N/S to enter the competitive auction with such low combined assets."
     ],
     "basic_section": {
-      "analysis": "East opens 1D strongly (18 HCP, 19 TP). South, utilizing good shape (5=3=0=5), makes a competitive overcall of 1S. West holds 9 HCP and 3-card Diamond support, which is suitable for a constructive raise to 2D (Limit Raise, 6-9 HCP). Knowing they have a combined minimum of 27 HCP (18 + 9), and seeing the running Diamond suit (AKT53 opposite Q82), East correctly recognizes the assured 3NT game and jumps directly. 3NT is the optimal contract and makes easily, primarily relying on the Diamond suit for source tricks.",
+      "analysis": "East made a standard 1D opening bid (19 TP). South's 1S overcall was correct, showing a five-card suit and entry into the auction. West's 2D was a standard competitive raise, showing 3+ card support and 7-10 points. East correctly recognized the combined 27 HCP and favorable controls to jump directly to the high-percentage game contract of 3NT, which succeeds easily.",
       "recommended_auction": [
-        "p",
-        "1D",
-        "1S",
-        "2D",
-        "p",
-        "3N",
-        "p",
-        "p",
-        "p"
+        {
+          "bid": "p",
+          "explanation": "North has only 6 TP and should pass."
+        },
+        {
+          "bid": "1D",
+          "explanation": "East opens the strong 5-card major/minor (19 TP)."
+        },
+        {
+          "bid": "1S",
+          "explanation": "South makes a standard overcall (10 TP, 5+ Spades)."
+        },
+        {
+          "bid": "2D",
+          "explanation": "West shows 3-card Diamond support and competitive values (9 TP)."
+        },
+        {
+          "bid": "p",
+          "explanation": "North remains silent with minimal points."
+        },
+        {
+          "bid": "3N",
+          "explanation": "East recognizes combined assets (27 HCP) and good suit controls, opting for the best game contract over the suboptimal 5D."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass, 3N is the final contract."
+        }
       ]
     },
     "advanced_section": {
-      "analysis": "The bidding sequence was efficient and highly descriptive, leading directly to the correct game contract based on combined points and shape. No advanced conventions (such as RKCB, complex transfers, or squeezes) were necessary to reach or play this optimal contract. The confidence shown by East in jumping straight to 3NT is a hallmark of good partnership evaluation.",
-      "sequence": null
+      "analysis": "In a 2/1 environment, East's initial 1D confirms strength. South's intervention complicates complex forcing sequences. East\u2019s strong points (19) mean they are seeking game regardless of West's minimum competitive 2D raise. Although East did not confirm strong Spade defense, the quick jump to 3N is justified by the strong concentration of honors and the calculated risk that 3N is superior to 5D (only 8-card fit).",
+      "sequence": [
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "1D",
+          "explanation": "Standard opening."
+        },
+        {
+          "bid": "1S",
+          "explanation": "South overcalls."
+        },
+        {
+          "bid": "2D",
+          "explanation": "West shows competitive minimum support."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "3N",
+          "explanation": "East ensures game, knowing the 27 combined HCP makes 3N the most reliable target."
+        }
+      ]
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "Competitive Overcall Value",
-        "category": "Review"
-      },
-      {
-        "player": "West",
-        "topic": "Constructive Raises After Interference",
-        "category": "Review"
+        "topic": "Handling Two-Suiters: With a 5=3=0=5 hand, South should consider a reverse or a second bid in clubs later if partner finds a bid, to emphasize the distributional nature, rather than letting the auction die after 1S.",
+        "category": "Technique"
       },
       {
         "player": "East",
-        "topic": "Declarer Judgment in NT (Calculating Fast Tricks)",
+        "topic": "Prioritizing NT: East made an excellent decision to bypass the 5D minor suit game (only an 8-card fit) in favor of the high-percentage 3NT contract, leveraging the concentrated honors for tricks.",
+        "category": "Judgment"
+      },
+      {
+        "player": "West",
+        "topic": "Competitive Raises: West's 2D bid was perfectly measured, showing support and appropriate competitive strength (9 TP) without overstating the hand opposite the powerful East opening.",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 23:12:58"
+  "timestamp": "2025-12-20 23:57:52"
 }
