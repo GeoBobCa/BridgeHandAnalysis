@@ -71,102 +71,99 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "6TJ",
-            "H": "48",
-            "D": "3679A",
-            "C": "79Q"
+            "S": "JT6",
+            "H": "84",
+            "D": "A9763",
+            "C": "Q97"
           },
           "hcp": 7,
+          "total_points": 8,
           "distribution_str": "3=2=5=3"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
             "S": "2",
-            "H": "23679Q",
-            "D": "8Q",
-            "C": "36KA"
+            "H": "Q97632",
+            "D": "Q8",
+            "C": "AK63"
           },
           "hcp": 11,
+          "total_points": 13,
           "distribution_str": "1=6=2=4"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "45KA",
+            "S": "AK54",
             "H": "J",
-            "D": "4JK",
-            "C": "245TJ"
+            "D": "KJ4",
+            "C": "JT542"
           },
           "hcp": 13,
+          "total_points": 14,
           "distribution_str": "4=1=3=5"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "Q9873",
+            "H": "AKT5",
+            "D": "T52",
+            "C": "8"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 9,
+          "total_points": 10,
+          "distribution_str": "5=4=3=1"
         }
       }
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S6TJH48D3679AC79Q,S2H23679QD8QC36KA,S45KAHJD4JKC245TJ,|rh||ah|Board 11|sv|o|mb|p|mb|2H|mb|3C|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|C2|pc|C8|pc|CQ|pc|CA|pg||pc|H2|pc|HJ|pc|HA|pc|H4|pg||pc|HK|pc|H8|pc|H3|pc|C4|pg||pc|D2|pc|D9|pc|DQ|pc|DK|pg||pc|S4|pc|S9|pc|ST|pc|S2|pg||pc|DA|pc|D8|pc|D4|pc|D5|pg||pc|D7|pc|H6|pc|DJ|pc|DT|pg||pc|CK|pc|C5|pc|S3|pc|C7|pg||pc|C3|pc|CT|pc|H5|pc|C9|pg||pc|S7|pc|SJ|pc|H7|pc|S5|pg||pc|C6|pc|CJ|pc|HT|pc|S6|pg||pc|S8|pc|D3|pc|H9|pc|SK|pg||pc|HQ|pc|SA|pc|SQ|pc|D6|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME/POOR COMPETITION",
+    "verdict": "SEVERE OVERBID",
     "actual_critique": [
-      "North (13 HCP) erred significantly by bidding 3C (natural and preemptive) over West's 2H opener. The standard, constructive action is a Takeout Double, which efficiently describes North's values and shape, potentially leading to an NS game contract.",
-      "West's initial 2H opening was too strong (11 HCP) for a textbook Weak Two, which typically ranges from 6-10 HCP. While aggressive, it led to a high contract that was likely successful for EW.",
-      "The NS pair failed to explore their combined 20 HCP adequately, missing a probable game in 3NT or 5D due to poor early competition."
+      "North's bid of 3C over the 2H opening is highly non-standard, providing misleading preemptive information for a hand that should prefer a takeout double (14 TP, excellent side suit distribution).",
+      "West made a significant error raising 3H to 4H. With only 23 combined Total Points and lacking stoppers in Diamonds (leading to three immediate losers), the game contract is unmakeable.",
+      "The 4H contract fails badly, likely down three tricks, as declarer cannot avoid losing control of the diamond suit (NS hold the AKJ)."
     ],
     "basic_section": {
-      "analysis": "When an opponent opens with a preempt (like 2H), a player holding 12+ HCP and shortness in the trump suit should almost always use a Takeout Double to show general strength and interest in the unbid suits. North's 13 HCP and 4=1=3=5 distribution clearly warranted a Double rather than a natural, low-level preempt in a minor (3C). The Double would allow NS to compete effectively and potentially find their own game.",
+      "analysis": "West opened a standard Weak Two in Hearts. North, holding 14 total points and good support for the unbid suits, should use a Takeout Double to inform partner (South) of strength and desire to compete. East made a reasonable competitive raise to 3H. West should pass 3H, as the combined point count (23 TP) and massive diamond losers make game unattractive.",
       "recommended_auction": [
         "p",
         "2H",
-        "Dbl",
+        "X",
         "3H",
         "p",
-        "3S",
         "p",
-        "4H",
-        "Dbl"
+        "p"
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions (such as RKCB or sophisticated squeeze analysis) were strictly needed to correct the bidding error. The core issue relies on proper competitive responses, specifically utilizing the Takeout/Responsive Double convention, which is fundamental even in intermediate systems.",
+      "analysis": "No advanced conventions (like Splinter Bids or specialized squeezes) are needed here, as the primary fault lies in basic competitive valuation. If North had utilized a balancing double, South might bid 3D, potentially establishing a competitive auction where 3H is the final, safer contract.",
       "sequence": null
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Responding to Preempts: Takeout Double vs. Natural Bids",
+        "topic": "Competitive Action over Weak Twos (Takeout Double vs. Direct Bid)",
         "category": "Review"
       },
       {
         "player": "West",
-        "topic": "HCP Range for Standard Weak Two Openings",
-        "category": "Review"
-      },
-      {
-        "player": "Pair NS",
-        "topic": "Competitive Bidding Strategy After a Major Suit Preempt",
+        "topic": "Game Valuation and Side Suit Control in Preempted Auctions",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:25:42"
+  "timestamp": "2025-12-20 23:15:22"
 }

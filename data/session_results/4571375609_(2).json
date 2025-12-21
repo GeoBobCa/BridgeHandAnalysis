@@ -71,102 +71,130 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "269",
-            "H": "5J",
-            "D": "8TQK",
-            "C": "36QA"
+            "S": "962",
+            "H": "J5",
+            "D": "KQT8",
+            "C": "AQ63"
           },
           "hcp": 12,
+          "total_points": 12,
           "distribution_str": "3=2=4=4"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
-            "S": "35QK",
-            "H": "QA",
-            "D": "345A",
-            "C": "27T"
+            "S": "KQ53",
+            "H": "AQ",
+            "D": "A543",
+            "C": "T72"
           },
           "hcp": 15,
+          "total_points": 15,
           "distribution_str": "4=2=4=3"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "7A",
-            "H": "2378K",
-            "D": "2J",
-            "C": "589K"
+            "S": "A7",
+            "H": "K8732",
+            "D": "J2",
+            "C": "K985"
           },
           "hcp": 11,
+          "total_points": 12,
           "distribution_str": "2=5=2=4"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "JT84",
+            "H": "T964",
+            "D": "976",
+            "C": "J4"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 2,
+          "total_points": 2,
+          "distribution_str": "4=4=3=2"
         }
       }
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S269H5JD8TQKC36QA,S35QKHQAD345AC27T,S7AH2378KD2JC589K,|rh||ah|Board 10|sv|b|mb|p|mb|1D|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|HA|pc|H2|pc|H4|pc|H5|pg||pc|S3|pc|SA|pc|S4|pc|S2|pg||pc|D2|pc|D6|pc|DT|pc|DA|pg||pc|SK|pc|S7|pc|S8|pc|S6|pg||pc|HQ|pc|HK|pc|H6|pc|HJ|pg||pc|C5|pc|C4|pc|CQ|pc|C2|pg||pc|C3|pc|C7|pc|CK|pc|CJ|pg||pc|C8|pc|ST|pc|CA|pc|CT|pg||pc|D8|pc|D3|pc|DJ|pc|D7|pg||pc|H3|pc|H9|pc|C6|pc|D4|pg||pc|DK|pc|D5|pc|H7|pc|D9|pg||pc|DQ|pc|S5|pc|H8|pc|SJ|pg||pc|S9|pc|SQ|pc|C9|pc|HT|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME",
+    "verdict": "MISSED SLAM (Settled for Part-Score)",
     "actual_critique": [
-      "North (BeaPercy) failed to accurately describe the hand's potential for No-Trump game, primarily by not utilizing the direct 2NT bid over the 1S overcall, which shows a stopper and 10-12 points.",
-      "North's 2H bid was descriptive of the 5-card suit but unnecessarily complicated the path to the best contract, 3NT, given the balanced nature of the partnership holdings (23 combined HCP).",
-      "After the exchange reaching 3C, North should have recognized the minimum 23 combined HCP and the excellent controls, especially the Spade stopper, and corrected the final contract to 3NT instead of passing 3C."
+      "North severely underbid their hand after South showed the Club fit (3C). With 12 total points and an established 8-card fit, North should have raised immediately to 5C (Game).",
+      "South's rebid of 3C, while descriptive of the minor fit, denied support for North's 5-card Heart suit (2H), missing a chance to confirm the potential major-suit partial before choosing the final contract.",
+      "The partnership missed a laydown Club Slam (6C), settling for a safe 3C part-score contract that makes 13 tricks."
     ],
     "basic_section": {
-      "analysis": "North-South hold 23 high card points and are relatively balanced. When opponents intervene with a 1-level overcall, finding a reliable stopper (here, North's Ace of Spades) is crucial for No-Trump. The most efficient and descriptive sequence is for North to bid 2NT directly over the 1S overcall, showing 10-12 points, a balanced hand, and a stopper in the opponent's suit. South, with a strong 12 HCP opening and no desire to explore other suits, accepts the invitation to 3NT.",
+      "analysis": "South's 1D opening and 3C rebid established a powerful 8-card Club fit. In a competitive auction, South's 3C showed tolerance for Clubs and willingness to compete, denying good support for Hearts. North, holding excellent support (4 clubs, including the King) and strong values (12 TP), should have recognized the immediate game forcing nature of the fit. With 24 combined points and an 8-card minor fit, 5C is mandatory, and slam investigation is warranted.",
       "recommended_auction": [
-        "P",
+        "p",
         "1D",
         "1S",
-        "2NT",
-        "P",
-        "3NT",
-        "P",
-        "P",
-        "P"
+        "2H",
+        "p",
+        "3C",
+        "p",
+        "5C",
+        "p",
+        "p",
+        "p"
       ]
     },
     "advanced_section": {
-      "analysis": "While 2/1 conventions could be used (treating 2H as game-forcing), the fundamental goal remains reaching 3NT due to the balanced nature and high combined HCP. The 2NT response is standard and sufficient here, negating the need for advanced conventions like Splinters or specialized cue bids.",
-      "sequence": null
+      "analysis": "The combined hands hold 4 of the 5 top honors in Clubs (AKQ9), guaranteeing a 3-round trump draw if the opponents split 3-2, resulting in 8 club tricks. With controls in every side suit (AS, KH, KD, plus all minor suit controls), 6C is laydown (making 13 tricks). Advanced players would use control bids (Cuebidding) after 3C to confirm slam interest before employing Key Card Blackwood (4NT) to ensure all key cards are present.",
+      "sequence": [
+        "p",
+        "1D",
+        "1S",
+        "2H",
+        "p",
+        "3C",
+        "p",
+        "4D",
+        "p",
+        "4H",
+        "p",
+        "4S",
+        "p",
+        "4NT",
+        "p",
+        "5D",
+        "p",
+        "6C",
+        "p",
+        "p",
+        "p"
+      ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Direct 2NT Response Over Overcall (Showing Stopper and Strength)",
+        "topic": "Raising Minor Suit Games/Slam after Competitive Bidding",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Major Suit Priority vs. Minor Suit Rebid",
         "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Game Assessment: Recognizing 3NT Game with 23+ HCP",
-        "category": "Review"
-      },
-      {
-        "player": "North",
-        "topic": "Decision Making After Partner Describes Minimum Fit (Elevating 3C to 3NT)",
-        "category": "Review"
+        "topic": "Slam Investigation (Trick Counting and Controls)",
+        "category": "Advanced"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:25:21"
+  "timestamp": "2025-12-20 23:15:08"
 }

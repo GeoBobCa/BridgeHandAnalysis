@@ -68,69 +68,73 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "35",
-            "H": "78T",
-            "D": "45",
-            "C": "38TQKA"
+            "S": "53",
+            "H": "T87",
+            "D": "54",
+            "C": "AKQT83"
           },
           "hcp": 9,
+          "total_points": 11,
           "distribution_str": "2=3=2=6"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
-            "S": "6TJQA",
+            "S": "AQJT6",
             "H": "6",
-            "D": "368JQ",
-            "C": "49"
+            "D": "QJ863",
+            "C": "94"
           },
           "hcp": 10,
+          "total_points": 12,
           "distribution_str": "5=1=5=2"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "289",
-            "H": "345QA",
-            "D": "279",
-            "C": "7J"
+            "S": "982",
+            "H": "AQ543",
+            "D": "972",
+            "C": "J7"
           },
           "hcp": 7,
+          "total_points": 8,
           "distribution_str": "3=5=3=2"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "K74",
+            "H": "KJ92",
+            "D": "AKT",
+            "C": "652"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 14,
+          "total_points": 14,
+          "distribution_str": "3=4=3=3"
         }
       }
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S35H78TD45C38TQKA,S6TJQAH6D368JQC49,S289H345QAD279C7J,|rh||ah|Board 12|sv|n|mb|1S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|H3|pc|HK|pc|H7|pc|H6|pg||pc|SK|pc|S3|pc|S6|pc|S2|pg||pc|S4|pc|S5|pc|SJ|pc|S8|pg||pc|SQ|pc|S9|pc|S7|pc|D4|pg||pc|D3|pc|D2|pc|DA|pc|D5|pg||pc|DK|pc|C3|pc|D6|pc|D7|pg||pc|DT|pc|C8|pc|DQ|pc|D9|pg||pc|DJ|pc|C7|pc|C2|pc|CT|pg||pc|D8|pc|H4|pc|C5|pc|CQ|pg||pc|SA|pc|H5|pc|H2|pc|H8|pg||pc|ST|pc|HQ|pc|H9|pc|HT|pg||pc|C4|pc|CJ|pc|C6|pc|CK|pg||pc|CA|pc|C9|pc|HA|pc|HJ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "CATASTROPHIC OVERBID BY E/W",
+    "verdict": "OVERBID (Contract Fails)",
     "actual_critique": [
-      "East's jump to 4S over partner's 1S opening was a major error. With 11 HCP and only three-card support, East should have made a Limit Raise (2S), or perhaps 3S if aggressive, but not an unsupportable game bid.",
-      "The E/W pair failed to assess their combined playing strength. With only 21 total HCP and immediate losers in Hearts (2), Clubs (3), and Diamonds (1), the 4S contract fails by at least three tricks.",
-      "South missed a critical defensive action. Holding the AKQT of Clubs, South should have doubled 4S for penalty, guaranteeing a substantial score due to the contract's severe deficiency."
+      "East's jump to 4S opposite a minimum 1S opening was highly aggressive and failed to account for the defensive weakness in the side suits (Clubs and Hearts).",
+      "The partnership lacks crucial controls; N/S hold 6 guaranteed winners (4 Clubs and 2 Hearts), ensuring that 4S fails by at least two tricks regardless of optimal play.",
+      "East should have used a forcing or invitational bid (2S or 3S) to allow West, the minimum opener, to stop short of game."
     ],
     "basic_section": {
-      "analysis": "West's 1S opening is standard. East, with 11 HCP and three spades, has values appropriate for a Limit Raise. The Standard American approach calls for a 2S response, showing 10-12 support points. Given West's minimum 10 HCP opener, the pair should then pass, as 2S is sufficient.",
+      "analysis": "West correctly opens 1S (12 TP). East has strong support (3 cards) and 14 HCP, qualifying for a Limit Raise or better. Given the concentration of N/S values in Clubs and Hearts, bidding game is extremely risky. The standard approach suggests East bids 2S (Limit Raise, 10-12+ points), showing support but inviting game. West, holding minimum values (12 TP) and no defensive controls in the critical suits, must pass 2S. The optimal safe contract is 2S, although even 2S may be in danger due to the opponent's immediate 6 winners.",
       "recommended_auction": [
         "1S",
         "p",
@@ -141,26 +145,28 @@
       ]
     },
     "advanced_section": {
-      "analysis": "The critical advanced concept here is not convention-based, but defensive judgment. When opponents jump aggressively to game (4S) despite visible weakness (especially after a minimum opening), the player with strong defensive suits, like South's AKQTx of Clubs, must utilize a penalty double. This indicates confidence in defeating the contract by at least two tricks and is highly recommended here, as 4S is a sure fire failure.",
-      "sequence": null
+      "analysis": "No advanced conventions or sophisticated playing techniques, such as squeezes or elaborate endplays, can overcome the defensive strength of N/S. The N/S partnership holds 4 top Club honors and 2 top Heart honors, guaranteeing 6 tricks immediately if they coordinate their defense and cash their winners. This fatal flaw is a bidding issue, not a play issue.",
+      "sequence": [
+        "No advanced conventions needed."
+      ]
     },
     "coaches_corner": [
       {
         "player": "East",
-        "topic": "Responding to 1 of a Major (Limit Raise vs. Game Jump)",
+        "topic": "Limit Raise vs. Jump to Game",
         "category": "Review"
       },
       {
-        "player": "South",
-        "topic": "Penalty Doubles (Defensive Strength Assessment)",
+        "player": "Pair EW",
+        "topic": "Assessing Defensive Losers and Controls",
         "category": "Review"
       },
       {
-        "player": "Pair E/W",
-        "topic": "Combined Playing Trick Estimation",
+        "player": "East",
+        "topic": "Safety in Competitive Auctions (Bidding up to the Limit)",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:26:20"
+  "timestamp": "2025-12-20 23:16:02"
 }

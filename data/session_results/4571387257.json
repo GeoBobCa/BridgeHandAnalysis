@@ -72,103 +72,109 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "479K",
-            "H": "239K",
-            "D": "24Q",
-            "C": "8J"
+            "S": "K974",
+            "H": "K932",
+            "D": "Q42",
+            "C": "J8"
           },
           "hcp": 9,
+          "total_points": 9,
           "distribution_str": "4=4=3=2"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
-            "S": "36",
-            "H": "6QA",
-            "D": "57",
-            "C": "3567TK"
+            "S": "63",
+            "H": "AQ6",
+            "D": "75",
+            "C": "KT7653"
           },
           "hcp": 9,
+          "total_points": 11,
           "distribution_str": "2=3=2=6"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "258J",
-            "H": "5J",
-            "D": "39JK",
-            "C": "2QA"
+            "S": "J852",
+            "H": "J5",
+            "D": "KJ93",
+            "C": "AQ2"
           },
           "hcp": 12,
+          "total_points": 12,
           "distribution_str": "4=2=4=3"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "AQT",
+            "H": "T874",
+            "D": "AT86",
+            "C": "94"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 10,
+          "total_points": 10,
+          "distribution_str": "3=4=4=2"
         }
       }
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S479KH239KD24QC8J,S36H6QAD57C3567TK,S258JH5JD39JKC2QA,|rh||ah|Board 15|sv|n|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|p|mb|p|pg||pc|DA|pc|D2|pc|D5|pc|D3|pg||pc|C9|pc|C8|pc|CK|pc|CA|pg||pc|S2|pc|ST|pc|SK|pc|S3|pg||pc|S4|pc|S6|pc|S8|pc|SQ|pg||pc|C4|pc|CJ|pc|C3|pc|C2|pg||pc|H3|pc|HQ|pc|H5|pc|H4|pg||pc|HA|pc|HJ|pc|H7|pc|H2|pg||pc|H6|pc|D9|pc|HT|pc|HK|pg||pc|D4|pc|D7|pc|DJ|pc|D6|pg||pc|SJ|pc|SA|pc|S7|pc|C5|pg||pc|H8|pc|H9|pc|C6|pc|S5|pg||pc|CQ|pc|D8|pc|S9|pc|C7|pg||pc|DQ|pc|CT|pc|DK|pc|DT|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED PARTIAL GAME",
+    "verdict": "STOPPED SHORT OF OPTIMAL PART-SCORE",
     "actual_critique": [
-      "South's initial pass with 9 HCP and a 4=4=3=2 distribution was too cautious. Borderline hands should typically be opened by the dealer to simplify finding a major suit fit later.",
-      "The pair failed to correctly value their combined assets (21 HCP and an 8-card Spade fit). Stopping in 1S severely underbid the hand, missing a comfortable partial game in Spades.",
-      "North, holding 12 HCP and knowing they had a 4-4 major fit, should have continued bidding to at least 2S (or 3S) after South passed 1S, as the overall strength easily supports a higher contract."
+      "South (Fish075) failed to show adequate support for partner's second suit (Spades), possessing 9 total points and a four-card fit (K974).",
+      "North/South missed the optimal part-score contract of 2S, settling for 1S when 2S was easily reachable and likely making 10 tricks.",
+      "West could consider an overcall of 1C with a six-card suit and 11 TP, although passing is also defensible given the weak suit quality."
     ],
     "basic_section": {
-      "analysis": "With 21 combined HCP and a secure 4-4 Spade fit, the partnership should be aiming for a comfortable partial game, likely 3S. South should open the bidding, preferably 1H (showing the 4-card major) or 1D. North responds 1S, showing 4+ Spades and 6+ HCP. South then raises to 2S to show the fit and minimum opening values (9-11 HCP). North's hand (12 HCP) is strong enough to invite 3S, which South, having shown a minimum, should pass.",
+      "analysis": "North opened 1D (12 TP). South responded 1H (9 TP, 4 cards). North then bid 1S, confirming a 4-card spade suit and showing a minimum opening hand (12-14 TP). Since N/S established an eight-card spade fit with 21 combined total points, they should aim for the 2-level part-score. South should have bid 2S to show maximum interest in the 1H response range (9 TP is top of the 6-9 range for a 1-level response), inviting partner to pass or bid on. Passing 1S was an underevaluation of their partnership assets.",
       "recommended_auction": [
+        "p",
+        "p",
+        "1D",
+        "p",
         "1H",
         "p",
         "1S",
         "p",
         "2S",
         "p",
-        "3S",
-        "p",
         "p",
         "p"
       ]
     },
     "advanced_section": {
-      "analysis": "This deal is fundamental and does not require advanced bidding conventions. The key is proper opening selection and establishing the fit constructively. No advanced conventions needed.",
-      "sequence": null
+      "analysis": "No advanced conventions (like 2/1 GF or Splinters) are necessary or particularly helpful here, as the partnership communication failure occurred at a very basic level of determining the appropriate part-score. If they were playing 2/1, the 1H response is potentially forcing, which would ensure they continue bidding past 1S to find the best spot.",
+      "sequence": []
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Opening Borderline Hands (9 HCP)",
-        "category": "Review"
-      },
-      {
-        "player": "North",
-        "topic": "Constructive Bidding: Establishing Partial Game Invitation",
-        "category": "Review"
-      },
-      {
         "player": "Pair NS",
-        "topic": "Valuing Combined Strength for Major Suit Fits (21 HCP = Partial Game)",
+        "topic": "Part-Score Assessment (Rule of 20)",
         "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Responding to Opener's Rebid (Preference/Support)",
+        "category": "Review"
+      },
+      {
+        "player": "West",
+        "topic": "Evaluating Weak Six-Card Suits for Overcalls",
+        "category": "Advanced"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:26:57"
+  "timestamp": "2025-12-20 23:16:37"
 }

@@ -73,55 +73,59 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "238T",
-            "H": "467TJ",
-            "D": "9Q",
-            "C": "8K"
+            "S": "T832",
+            "H": "JT764",
+            "D": "Q9",
+            "C": "K8"
           },
           "hcp": 6,
+          "total_points": 7,
           "distribution_str": "4=5=2=2"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
-            "S": "46J",
-            "H": "289",
-            "D": "26T",
-            "C": "24QA"
+            "S": "J64",
+            "H": "982",
+            "D": "T62",
+            "C": "AQ42"
           },
           "hcp": 7,
+          "total_points": 7,
           "distribution_str": "3=3=3=4"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "9QKA",
-            "H": "5A",
-            "D": "3JK",
-            "C": "59TJ"
+            "S": "AKQ9",
+            "H": "A5",
+            "D": "KJ3",
+            "C": "JT95"
           },
           "hcp": 18,
+          "total_points": 18,
           "distribution_str": "4=2=3=4"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "75",
+            "H": "KQ3",
+            "D": "A8754",
+            "C": "763"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 9,
+          "total_points": 10,
+          "distribution_str": "2=3=5=3"
         }
       }
     },
@@ -130,48 +134,48 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "North failed to communicate the strength of the 18 HCP opening hand. Bidding 1S after two intervening bids is a minimum rebid and severely understates the hand's potential. North needed to reverse or bid 2NT/3NT to force the issue.",
-      "South made a critical error passing 1S. Knowing North opened 1C (promising 12+ HCP) and found an 8-card Spade fit, South (6 HCP) has enough support to confirm the fit with a constructive raise (2S) or even invite game, but must not pass.",
-      "East's initial decision to pass as dealer with a 9 HCP hand (2=3=5=3 shape) is poor and allowed the stronger N/S pair to control the auction at a low level, although East later correctly overcalled 1D."
+      "North failed to investigate game after showing 18 total points (1C) and confirming an 8-card Spade fit (1S). The 1S rebid was too passive.",
+      "South accepted the passive 1S contract by passing, despite having maximum values (7 TP) for their competitive 1H bid and knowing North had a strong hand.",
+      "The partnership settled for a part-score (1S) worth 8 tricks, missing the easily makeable game contract of 4S."
     ],
     "basic_section": {
-      "analysis": "North (18 HCP) and South (6 HCP) have 24 combined high card points and an 8-card Spade fit. Game in Spades (4S) is virtually guaranteed. North opened 1C and then faced two intermediate bids (1D/1H). To show the 16+ HCP strength and the 4-card Spade suit, North must make a strong rebid. A Reverse (1C followed by 2S) or a 2NT rebid showing 18-19 balanced is required to start the game investigation. Once North forces the auction, South confirms the fit and values, leading easily to 4S.",
+      "analysis": "North's 1C opening (18 TP) followed by South's competitive 1H response and subsequent 4-card Spade support means the partnership has 25 combined points and an 8-card major fit. North must continue to push towards game. After South's 1H response, North's aggressive rebid of 2S (showing four spades and forcing/highly invitational values) encourages South. South, with a maximum 7 points and a Spade fit, should accept the invitation by bidding 3S. North should then confidently bid 4S, which makes comfortably (expected 10 tricks, potentially 11).",
       "recommended_auction": [
         "1C",
         "1D",
         "1H",
-        "P",
+        "p",
         "2S",
-        "P",
+        "p",
         "3S",
-        "P",
+        "p",
         "4S",
-        "P",
-        "P",
-        "P"
+        "p",
+        "p",
+        "p"
       ]
     },
     "advanced_section": {
-      "analysis": "The 2S rebid by North acts as a Reverse (forcing bid), guaranteeing 16+ HCP and 4+ cards in both minors (Clubs) and the second suit (Spades). Under 2/1 Game Forcing methods, the 2S bid immediately establishes a game force unless partner makes a specific, weak denial response, which 3S is not. Standard constructive bidding is sufficient here; no specialized advanced conventions are needed beyond modern forcing principles.",
-      "sequence": null
+      "analysis": "No advanced conventions are strictly needed for this deal. The key is applying standard competitive bidding principles to reach the logical 4S contract based on combined strength (25 TP) and fit (8+ cards). Players should ensure their 2S rebid systemically guarantees high values and forces partner to describe their hand further, preventing the premature close seen in the actual auction.",
+      "sequence": []
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Rebidding strong hands (16+ HCP) after partner responds or opponents interfere (Reverse Bids)",
+        "topic": "Game Investigation with Maximum Hand",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Valuation for Game (25+ Total Points with Fit)",
         "category": "Review"
       },
       {
         "player": "South",
-        "topic": "Recognizing game potential and making a constructive raise after finding a major suit fit (4-card support opposite an opener)",
-        "category": "Review"
-      },
-      {
-        "player": "East",
-        "topic": "Opening the bidding as dealer (9 HCP, 1D opening is standard)",
+        "topic": "Competitive Support Bidding (Maximizing descriptive bids)",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:26:41"
+  "timestamp": "2025-12-20 23:16:22"
 }

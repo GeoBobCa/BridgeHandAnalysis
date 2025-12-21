@@ -73,110 +73,114 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "5J",
-            "H": "29TA",
-            "D": "456A",
-            "C": "38Q"
+            "S": "J5",
+            "H": "AT92",
+            "D": "A654",
+            "C": "Q83"
           },
           "hcp": 11,
+          "total_points": 11,
           "distribution_str": "2=4=4=3"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
-            "S": "68K",
-            "H": "458Q",
-            "D": "29K",
-            "C": "479"
+            "S": "K86",
+            "H": "Q854",
+            "D": "K92",
+            "C": "974"
           },
           "hcp": 8,
+          "total_points": 8,
           "distribution_str": "3=4=3=3"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "2TQ",
-            "H": "6J",
-            "D": "TJQ",
-            "C": "26JKA"
+            "S": "QT2",
+            "H": "J6",
+            "D": "QJT",
+            "C": "AKJ62"
           },
           "hcp": 14,
+          "total_points": 15,
           "distribution_str": "3=2=3=5"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "A9743",
+            "H": "K73",
+            "D": "873",
+            "C": "T5"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 7,
+          "total_points": 8,
+          "distribution_str": "5=3=3=2"
         }
       }
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S5JH29TAD456AC38Q,S68KH458QD29KC479,S2TQH6JDTJQC26JKA,|rh||ah|Board 6|sv|e|mb|p|mb|p|mb|p|mb|1C|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|SA|pc|S5|pc|S6|pc|S2|pg||pc|H3|pc|H2|pc|H8|pc|HJ|pg||pc|H6|pc|H7|pc|HA|pc|H4|pg||pc|C3|pc|C4|pc|CJ|pc|C5|pg||pc|C2|pc|CT|pc|CQ|pc|C7|pg||pc|H9|pc|HQ|pc|C6|pc|HK|pg||pc|DT|pc|D3|pc|D4|pc|DK|pg||pc|H5|pc|CK|pc|S3|pc|HT|pg||pc|DJ|pc|D7|pc|D5|pc|D2|pg||pc|DQ|pc|D8|pc|DA|pc|D9|pg||pc|D6|pc|C9|pc|CA|pc|S4|pg||pc|ST|pc|S7|pc|SJ|pc|SK|pg||pc|S8|pc|SQ|pc|S9|pc|C8|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME OPPORTUNITY (3NT)",
+    "verdict": "MISSED GAME (5C)",
     "actual_critique": [
-      "West's 1S overcall is dangerously light (8 HCP, 3 cards). Standard bidding practice recommends passing unless substantial defensive strength or a true 5-card suit is present.",
-      "North committed a critical error by bidding 2H. This bid, regardless of system, strongly suggests 4+ cards in Hearts and typically initiates a forcing sequence (a reverse). North holds only a doubleton (H J6). North should have responded 1NT or 2C.",
-      "South, reacting to the confusion, compounded the mistake by bidding 3C with only three cards in the suit. Opener must be extremely careful raising their own suit without strong length, especially when partner has shown strength in a different suit."
+      "South's 2H response, while showing 10+ points and a 4-card heart suit over the 1S overcall, quickly committed the partnership high, limiting future bidding space.",
+      "North failed to recognize the high probability of game (26 combined total points and an 8-card club fit) and should have bid past the limiting 3C contract.",
+      "The partnership missed a certain 5C game, which makes easily for 11 tricks."
     ],
     "basic_section": {
-      "analysis": "The North/South partnership holds 25 HCP and has a clear 8-card fit in Clubs. However, given the balanced nature of both hands (South 2=4=4=3, North 3=2=3=5) and good stoppers in all suits, 3NT is the optimal game contract and superior to 4C. North should use 1NT to describe their 12-14 balanced hand after South's 1C opening. South then searches for a major fit with 2D before accepting 3NT.",
+      "analysis": "North opened 1C and South responded 2H over East's 1S overcall, establishing combined game values (26 TP) and confirming a fit in clubs is likely since hearts are secondary. North, holding 15 TP and a good five-card club suit, must recognize that 5C is reachable. The 3C rebid used in the actual auction was too passive and limited the hand. North should have used a forcing sequence, such as jumping directly to 4C to invite 5C, or using a control bid if applicable, forcing partner to continue until game is reached.",
       "recommended_auction": [
         "1C",
+        "1S",
+        "2H",
         "P",
-        "1NT",
-        "P",
-        "2D",
-        "P",
-        "2NT",
-        "P",
-        "3NT",
+        "4C",
         "P",
         "P",
         "P"
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions (like Splinters or complex squeezes) are needed to reach 3NT. The core teaching moment involves system discipline. North's 2H bid severely violates system agreements concerning suit quality and length needed for two-level responses, particularly reverses. Even if playing 2/1 Game Forcing, a response bid at the two-level guarantees at least 4 cards in the suit named. Adhering strictly to length requirements prevents this type of chaotic miscommunication.",
-      "sequence": null
+      "analysis": "Even without specific advanced systems, North knew the partnership had 25+ points when South made the forcing 2H response. Since 3NT lacked certain spade stopping stability, the focus should immediately shift to the minor suit game, 5C. North's jump to 4C confirms the suit, shows strong game interest, and mandates South continue to 5C with a good maximum response (which South holds). No complex advanced conventions (like Splinters or RKCB) are required here; bidding judgment suffices.",
+      "sequence": [
+        "1C",
+        "1S",
+        "2H",
+        "P",
+        "5C",
+        "P",
+        "P",
+        "P"
+      ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Suit Length Requirements for Responses (Reverses)",
-        "category": "Review"
-      },
-      {
-        "player": "West",
-        "topic": "Light Overcalls and Defensive Strength",
+        "topic": "Minor Suit Game Recognition (5C vs 4C)",
         "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Selecting the Optimal Game Contract (3NT vs. Major/Minor Suit Game)",
+        "topic": "Competitive Bidding: Forcing Sequences after Interference",
         "category": "Review"
       },
       {
         "player": "South",
-        "topic": "Rebidding Opener's Suit with Minimum Length",
+        "topic": "Evaluating Strength for Game: Confirming 5C after 4C Invitation",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:23:37"
+  "timestamp": "2025-12-20 23:13:18"
 }

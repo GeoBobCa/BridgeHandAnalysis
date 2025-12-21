@@ -73,101 +73,110 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "8Q",
-            "H": "56T",
-            "D": "46T",
-            "C": "478TK"
+            "S": "Q8",
+            "H": "T65",
+            "D": "T64",
+            "C": "KT874"
           },
           "hcp": 5,
+          "total_points": 6,
           "distribution_str": "2=3=3=5"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
-            "S": "247",
-            "H": "9JQA",
-            "D": "58J",
-            "C": "2QA"
+            "S": "742",
+            "H": "AQJ9",
+            "D": "J85",
+            "C": "AQ2"
           },
           "hcp": 14,
+          "total_points": 14,
           "distribution_str": "3=4=3=3"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "356TA",
-            "H": "2378",
-            "D": "2QK",
+            "S": "AT653",
+            "H": "8732",
+            "D": "KQ2",
             "C": "J"
           },
           "hcp": 10,
+          "total_points": 11,
           "distribution_str": "5=4=3=1"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "KJ9",
+            "H": "K4",
+            "D": "A973",
+            "C": "9653"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 11,
+          "total_points": 11,
+          "distribution_str": "3=2=4=4"
         }
       }
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S8QH56TD46TC478TK,S247H9JQAD58JC2QA,S356TAH2378D2QKCJ,|rh||ah|Board 13|sv|b|mb|p|mb|p|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|2N|mb|p|mb|p|mb|p|pg||pc|C7|pc|CQ|pc|CJ|pc|C3|pg||pc|H9|pc|H2|pc|HK|pc|H5|pg||pc|H4|pc|HT|pc|HA|pc|H3|pg||pc|HQ|pc|H7|pc|C5|pc|H6|pg||pc|HJ|pc|H8|pc|C6|pc|D4|pg||pc|CA|pc|S3|pc|C9|pc|C4|pg||pc|S7|pc|SA|pc|S9|pc|S8|pg||pc|DQ|pc|DA|pc|D6|pc|D5|pg||pc|SK|pc|SQ|pc|S2|pc|S5|pg||pc|SJ|pc|C8|pc|S4|pc|S6|pg||pc|D3|pc|DT|pc|DJ|pc|DK|pg||pc|ST|pc|D7|pc|CT|pc|C2|pg||pc|D2|pc|D9|pc|CK|pc|D8|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED PARTIAL",
+    "verdict": "MISSED GAME",
     "actual_critique": [
-      "North, as the dealer with 10 HCP and a five-card suit (Spades), committed a serious error by passing initially; North must open 1S.",
-      "East's subsequent bid of 1NT with 0 HCP is a fundamental misrepresentation of hand strength and a catastrophic mistake.",
-      "The resulting contract of 2NT by N/S, played on only 15 combined HCP, is highly ambitious and mathematically guaranteed to fail against the defensive strength held by West."
+      "North committed a critical error by passing with 11 total points and a 5-card Spade suit (AT653), failing to open 1S.",
+      "East significantly underbid their hand by responding 1NT (6-10 HCP range) with 11 HCP and a semi-balanced hand over West's 1H opening.",
+      "The EW pair missed the optimal 3NT game contract due to East's misleadingly weak 1N response, causing West (14 HCP) to stop prematurely at 2N."
     ],
     "basic_section": {
-      "analysis": "North must open 1S. South, denying four-card support and showing 5-10 HCP, responds 1NT. With only 15 combined HCP, game is out of the question. North should rebid 2S (showing a minimum 10-12 points, 5-3 fit confirmed) and invite 3S. South, holding 5 HCP, should decline the invitation by passing, leading to the optimal partial contract of 2S.",
+      "analysis": "North should prioritize opening 1S with 10 HCP and a 5-card major. Since North passed, the auction belonged to EW. EW have 25 combined HCP and strong stoppers in all suits. The ideal contract is 3NT. Over West's 1H opening, East (11 HCP, balanced) should use 2NT to show 11-12 points and stoppers, allowing West (14 HCP) to raise easily to game.",
       "recommended_auction": [
-        "1S",
         "p",
-        "1N",
         "p",
-        "2S",
+        "p",
+        "1H",
+        "p",
+        "2N",
+        "p",
+        "3N",
         "p",
         "p",
         "p"
       ]
     },
     "advanced_section": {
-      "analysis": "Since the partnership goal is a low-level partial, no complex conventions are required. Basic Standard American Bidding is sufficient to locate the 5-3 spade fit and restrict bidding to the 2-level.",
-      "sequence": null
+      "analysis": "No advanced conventions are necessary to reach this contract; the error lies in fundamental NT response bidding. If West had opened 1C or 1D (preferred for 4-4-3-2 or 3-4-3-3 balanced hands), East could have potentially used a 2/1 game forcing response to ensure game exploration. Given the 1H opening, strict adherence to defined NT ranges (1N vs 2N) is the key to success.",
+      "sequence": [
+        "null"
+      ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Opening Requirements (10+ HCP)",
+        "topic": "Opening Hand Requirements (5-card Major)",
         "category": "Review"
       },
       {
         "player": "East",
-        "topic": "Minimum Point Requirements for Bids (Do not bid 1NT with 0 HCP)",
+        "topic": "Responding in Notrump (1NT vs 2NT ranges)",
         "category": "Review"
       },
       {
-        "player": "Pair NS",
-        "topic": "Contract Selection and Fit Priority (Seeking 5-3 Major Fit over No Trump with minimal points)",
+        "player": "Pair EW",
+        "topic": "Recognizing Game When Combined HCP = 25+",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:26:03"
+  "timestamp": "2025-12-20 23:15:38"
 }

@@ -70,55 +70,59 @@
     ],
     "hands": {
       "South": {
-        "name": "Fish075",
         "stats": {
           "cards": {
-            "S": "24K",
-            "H": "37A",
-            "D": "34JQK",
-            "C": "JQ"
+            "S": "K42",
+            "H": "A73",
+            "D": "KQJ43",
+            "C": "QJ"
           },
           "hcp": 16,
+          "total_points": 17,
           "distribution_str": "3=3=5=2"
-        }
+        },
+        "name": "Fish075"
       },
       "West": {
-        "name": "georgenamg",
         "stats": {
           "cards": {
-            "S": "TJA",
-            "H": "249",
-            "D": "67TA",
-            "C": "2KA"
+            "S": "AJT",
+            "H": "942",
+            "D": "AT76",
+            "C": "AK2"
           },
           "hcp": 16,
+          "total_points": 16,
           "distribution_str": "3=3=4=3"
-        }
+        },
+        "name": "georgenamg"
       },
       "North": {
-        "name": "BeaPercy",
         "stats": {
           "cards": {
-            "S": "389",
-            "H": "68J",
-            "D": "89",
-            "C": "3478T"
+            "S": "983",
+            "H": "J86",
+            "D": "98",
+            "C": "T8743"
           },
           "hcp": 1,
+          "total_points": 2,
           "distribution_str": "3=3=2=5"
-        }
+        },
+        "name": "BeaPercy"
       },
       "East": {
         "name": "bobj245",
         "stats": {
           "cards": {
-            "S": "",
-            "H": "",
-            "D": "",
-            "C": ""
+            "S": "Q765",
+            "H": "KQT5",
+            "D": "52",
+            "C": "965"
           },
-          "hcp": 0,
-          "distribution_str": "0=0=0=0"
+          "hcp": 7,
+          "total_points": 7,
+          "distribution_str": "4=4=2=3"
         }
       }
     },
@@ -127,47 +131,53 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "The E/W partnership, holding 24+ combined HCP and a known Heart fit, settled prematurely in 2H. They should have continued searching for the optimal 3NT or 4H game contract.",
-      "South correctly made a highly descriptive jump overcall of 2D (16 HCP, 5+ Diamonds), setting a competitive tone. However, N/S were too passive afterwards, failing to push E/W higher or explore 3D competition.",
-      "West\u2019s bidding was too timid after South\u2019s 2D overcall. With 16 HCP, West needed to make a forcing or highly invitational rebid to encourage East towards game."
+      "North made a fundamental error responding 1H with only 2 total points and a three-card suit (3=3=2=5 distribution), where a pass was mandatory.",
+      "East's bid of 2D over 1H is highly unorthodox and contributed to the chaotic auction; East should have overcalled 1H or passed.",
+      "The East-West partnership failed to identify their combined 23+ HCP and a clear 3NT game, allowing North-South to play a suboptimal, likely failing, 6-card fit contract (2H)."
     ],
     "basic_section": {
-      "analysis": "West opens 1D. South has an ideal hand for a jump overcall (2D), showing 12-16 HCP and a strong five-card Diamond suit. North, with only 1 HCP, must pass. East/West must recognize their combined strength (at least 24 HCP) and their likely 8-card Heart fit (E is assumed to hold 4+ Hearts while W has 3). After South's intrusion, E/W must use appropriate forcing bids or game tries to reach 4H or 3NT, which are excellent contracts given their high card distribution. Settling for 2H falls short of maximizing scoring potential.",
+      "analysis": "South made a standard 1D opening. North, holding only 2 total points, must pass. East, with 7 TP and 4 hearts, should overcall 1H. West's 16 HCP and balanced shape make them ideal partners for game. After S rebids 2D, West should bid 2NT, showing 16-18 HCP, a balanced hand, and a Diamond stopper (AT76). East can then raise straight to 3NT, a highly makeable contract. The NS 2H contract has only a 6-card fit and is highly likely to fail against strong EW defense.",
       "recommended_auction": [
         "1D",
         "p",
+        "p",
         "1H",
         "2D",
-        "2H (W, showing support for H, minimum interest)",
-        "3H (E, game try, showing top end of 1H overcall)",
+        "2NT",
         "p",
-        "4H (W, accepting the game try)",
-        "p",
-        "p",
-        "p"
+        "3NT"
       ]
     },
     "advanced_section": {
-      "analysis": "No advanced conventions are strictly necessary for the N/S pair due to their extremely limited combined assets. However, E/W should use Lightner Doubles if N/S ever bid a competing game, or control-bidding sequences (e.g., cue-bidding the opponent's suit) to confirm slam potential, though 4H is likely the limit here.",
-      "sequence": null
+      "analysis": "No complex advanced conventions are strictly necessary here. The key is proper valuation and competitive determination. West should recognize their strength (16 HCP) opposite East's overcall (minimum 7 TP) and commit strongly to game. If a responsive double system were employed, West could double South's 2D rebid, showing major suit interest and ensuring the partnership finds their 4S or 4H fit if 3NT is blocked.",
+      "sequence": [
+        "1D",
+        "p",
+        "p",
+        "1H",
+        "2D",
+        "X",
+        "3D",
+        "3NT"
+      ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Jump Overcalls (Competitive Bidding)",
+        "player": "North",
+        "topic": "Responding with Minimum Hands (The Rule of Pass)",
         "category": "Review"
       },
       {
-        "player": "Pair E/W",
-        "topic": "Finding Game with Strong Combined Hands (24+ HCP)",
+        "player": "Pair EW",
+        "topic": "Recognizing Game in Competitive Auctions (23+ HCP Combined)",
         "category": "Review"
       },
       {
-        "player": "Pair N/S",
-        "topic": "Competitive Bidding Thresholds (Knowing when to stop competing against a likely game)",
+        "player": "East",
+        "topic": "Standard Overcall Bidding (Choosing the correct suit/level)",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 22:24:23"
+  "timestamp": "2025-12-20 23:14:03"
 }
