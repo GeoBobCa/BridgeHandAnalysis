@@ -3,174 +3,146 @@
         <html>
         <head>
             <meta charset="utf-8">
-            <title>4571340602 (2) - Analysis</title>
+            <title>4571340602 (2) Analysis</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
             <style>
-                .learning-card { border-left: 4px solid #fd7e14; background-color: #fff8f3; }
-                .rec-auction-badge { font-size: 1.1em; margin-right: 5px; }
+                .section-header { border-bottom: 2px solid #dee2e6; margin-bottom: 1rem; padding-bottom: 0.5rem; color: #495057; }
+                .bid-badge { font-family: monospace; font-size: 1.1em; padding: 8px 12px; }
+                .coach-card { background-color: #f8f9fa; border-left: 5px solid #0dcaf0; }
+                .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
             </style>
         </head>
         <body class="bg-white">
             <div class="container py-4">
-                <div class="d-flex justify-content-between mb-3">
-                    <a href="index.html" class="btn btn-secondary">&larr; Dashboard</a>
-                    <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C3S56TJQH4TQKD5C56J%2CS4H56JD68TJKC79TQ%2CS237KAH389AD23ACA%2C%7Crh%7C%7Cah%7CBoard%201%7Csv%7Co%7Cmb%7C1S%7Cmb%7Cp%7Cmb%7C3S%7Cmb%7Cp%7Cmb%7C4S%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CC2%7Cpc%7CC5%7Cpc%7CC9%7Cpc%7CCA%7Cpg%7C%7Cpc%7CH3%7Cpc%7CH2%7Cpc%7CHQ%7Cpc%7CH5%7Cpg%7C%7Cpc%7CS5%7Cpc%7CS4%7Cpc%7CSK%7Cpc%7CS8%7Cpg%7C%7Cpc%7CS2%7Cpc%7CS9%7Cpc%7CST%7Cpc%7CD6%7Cpg%7C%7Cpc%7CD5%7Cpc%7CDK%7Cpc%7CDA%7Cpc%7CD4%7Cpg%7C%7Cpc%7CD2%7Cpc%7CD7%7Cpc%7CS6%7Cpc%7CD8%7Cpg%7C%7Cpc%7CH4%7Cpc%7CH6%7Cpc%7CHA%7Cpc%7CH7%7Cpg%7C%7Cpc%7CD3%7Cpc%7CD9%7Cpc%7CSJ%7Cpc%7CDT%7Cpg%7C%7Cpc%7CHK%7Cpc%7CHJ%7Cpc%7CH8%7Cpc%7CC3%7Cpg%7C%7Cpc%7CC6%7Cpc%7CCQ%7Cpc%7CS3%7Cpc%7CC4%7Cpg%7C%7Cpc%7CS7%7Cpc%7CC8%7Cpc%7CSQ%7Cpc%7CC7%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CCT%7Cpc%7CSA%7Cpc%7CCK%7Cpg%7C%7Cpc%7CH9%7Cpc%7CDQ%7Cpc%7CHT%7Cpc%7CDJ%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">▶ Replay on BBO</a>
-                </div>
-                
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <div>
-                            <h2 class="display-6 m-0">4571340602 (2)</h2>
-                            <h4 class="text-primary mt-2">OPTIMAL CONTRACT ACHIEVED, SLAM INVESTIGATION MISSED</h4>
-                        </div>
-                        <div class="text-end">
-                            <div class="badge bg-dark mb-1">Dealer: North</div><br>
-                            <div class="badge bg-warning text-dark">Vul: None</div>
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <a href="index.html" class="btn btn-outline-secondary">&larr; Back to Dashboard</a>
+                    <h2 class="m-0">4571340602 (2)</h2>
+                    <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C3S56TJQH4TQKD5C56J%2CS4H56JD68TJKC79TQ%2CS237KAH389AD23ACA%2C%7Crh%7C%7Cah%7CBoard%201%7Csv%7Co%7Cmb%7C1S%7Cmb%7Cp%7Cmb%7C3S%7Cmb%7Cp%7Cmb%7C4S%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CC2%7Cpc%7CC5%7Cpc%7CC9%7Cpc%7CCA%7Cpg%7C%7Cpc%7CH3%7Cpc%7CH2%7Cpc%7CHQ%7Cpc%7CH5%7Cpg%7C%7Cpc%7CS5%7Cpc%7CS4%7Cpc%7CSK%7Cpc%7CS8%7Cpg%7C%7Cpc%7CS2%7Cpc%7CS9%7Cpc%7CST%7Cpc%7CD6%7Cpg%7C%7Cpc%7CD5%7Cpc%7CDK%7Cpc%7CDA%7Cpc%7CD4%7Cpg%7C%7Cpc%7CD2%7Cpc%7CD7%7Cpc%7CS6%7Cpc%7CD8%7Cpg%7C%7Cpc%7CH4%7Cpc%7CH6%7Cpc%7CHA%7Cpc%7CH7%7Cpg%7C%7Cpc%7CD3%7Cpc%7CD9%7Cpc%7CSJ%7Cpc%7CDT%7Cpg%7C%7Cpc%7CHK%7Cpc%7CHJ%7Cpc%7CH8%7Cpc%7CC3%7Cpg%7C%7Cpc%7CC6%7Cpc%7CCQ%7Cpc%7CS3%7Cpc%7CC4%7Cpg%7C%7Cpc%7CS7%7Cpc%7CC8%7Cpc%7CSQ%7Cpc%7CC7%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CCT%7Cpc%7CSA%7Cpc%7CCK%7Cpg%7C%7Cpc%7CH9%7Cpc%7CDQ%7Cpc%7CHT%7Cpc%7CDJ%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">Replay Hand</a>
                 </div>
 
-                <div class="row mb-4">
-                    <div class="col-md-7">
-                        <div class="card h-100">
-                            <div class="card-header bg-dark text-white">The Deal</div>
-                            <div class="card-body text-center">
-                                <div class="row">
-                                    <div class="col-12 mb-2">
-                                        <small>BeaPercy</small><br>
-                                        <strong>North</strong><br>5=4=3=1
-                                    </div>
-                                    <div class="col-4 text-start">
-                                        <small>georgenamg</small><br>
-                                        <strong>West</strong><br>7 HCP
-                                    </div>
-                                    <div class="col-4"><img src="https://bridgebase.com/mobile/images/table_felt.jpg" class="img-fluid opacity-50"></div>
-                                    <div class="col-4 text-end">
-                                        <small>bobj245</small><br>
-                                        <strong>East</strong><br>0 HCP
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <small>Fish075</small><br>
-                                        <strong>South</strong><br>5=4=1=3
-                                    </div>
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-12"><strong>North</strong><br>5=4=3=1</div>
+                                    <div class="col-4"><strong>West</strong><br>7 HCP</div>
+                                    <div class="col-4"><img src="https://bridgebase.com/mobile/images/table_felt.jpg" class="img-fluid opacity-25"></div>
+                                    <div class="col-4"><strong>East</strong><br>0 HCP</div>
+                                    <div class="col-12"><strong>South</strong><br>5=4=1=3</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="card h-100">
-                            <div class="card-header bg-secondary text-white">Auction History</div>
+                            <div class="card-header">Actual Auction</div>
                             <div class="card-body d-flex align-items-center justify-content-center">
-                                <div class="alert alert-light border w-100 text-center font-monospace">
-                                    1S - p - 3S - p - 4S - p - p - p
-                                </div>
+                                <div class="font-monospace">1S - p - 3S - p - 4S - p - p - p</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <div class="card border-primary">
-                            <div class="card-header bg-primary text-white">Audrey's Analysis</div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush mb-3">
-                                    
-                                    <li class="list-group-item">🔹 North, holding 19 HCP and all four Aces (5 Key Cards), shut down slam investigation prematurely by jumping directly to 4S after the strong indication from South (3S).</li>
-                                    
-                                    <li class="list-group-item">🔹 South's 3S response confirmed a 5-5 trump fit and adequate values (9 HCP) for game, warranting North to proceed with control-showing bids to assess slam feasibility.</li>
-                                    
-                                    <li class="list-group-item">🔹 While 4S is the correct final contract due to the inevitable two Diamond losers (West KJT86, East Q974), North should have used cue bids (e.g., 4H) to confirm controls and allow South to sign off at the appropriate level.</li>
-                                    
-                                    <li class="list-group-item">🔹 The 4S contract is guaranteed to make exactly ten tricks, relying on the 5-4 Heart split and routine trump drawing.</li>
-                                    
-                                </ul>
+                <h4 class="section-header">🔍 1. Critique of Actual Play</h4>
+                <div class="mb-5">
+                    <ul class="list-group">
+                        
+                        <li class="list-group-item border-0">❌ North (BeaPercy) failed to initiate slam investigation despite holding a maximum opening hand (19 HCP, 5-4-3-1 distribution) and four Aces opposite a known 9+ point limit raise. Stopping at 4S was conservative.</li>
+                        
+                        <li class="list-group-item border-0">❌ South's 3S response was appropriate, showing good support and 8-10/11 HCP, defining the strength necessary for North to make a slam decision.</li>
+                        
+                        <li class="list-group-item border-0">❌ The partnership missed a highly reachable 6S contract, which requires only 12 tricks and benefits from the combined 28 HCP and 10-card trump fit, along with four Aces held by North.</li>
+                        
+                    </ul>
+                </div>
 
+                <h4 class="section-header">📘 2. The Fundamentals (Standard American)</h4>
+                <div class="card mb-5 border-primary">
+                    <div class="card-body">
+                        <p class="lead">North opened 1S and South gave a Limit Raise (3S), showing 8-11 points and 4+ card support, inviting game but not forcing it. North holds a massive 19 HCP with four Aces and an excellent fit. With such a powerful hand, North must cue-bid to investigate slam. North should cue the lowest available first-round control (Aces or King of a suit) before using Blackwood. Starting with 4C shows the Club Ace and asks South to describe their controls.</p>
+                        
+                        <div class="mt-3">
+                            <h6>✅ Correct Standard Sequence:</h6>
+                            <div class="d-flex flex-wrap gap-2">
                                 
-                                <div class="alert alert-warning shadow-sm mt-3">
-                                    <h5><span class="badge bg-warning text-dark me-2">Correction</span> Recommended Bidding Sequence:</h5>
-                                    <div class="d-flex flex-wrap mt-2">
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">1S</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">p</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">3S</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">p</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">4H</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">p</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">4S</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">p</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">p</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">p</span>
-                                            
-                                        
-                                    </div>
-                                </div>
+                                <span class="badge bg-primary bid-badge">1S</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">3S</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">4C</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">4H</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">4NT</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">5D</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">6S</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
                                 
                             </div>
                         </div>
+                        
                     </div>
                 </div>
 
-                
-                <h4 class="mt-4 mb-3 text-secondary">Coach's Corner</h4>
+                <h4 class="section-header">🚀 3. Advanced Concepts</h4>
+                <div class="card mb-5 adv-card">
+                    <div class="card-body">
+                        <p>Given the established 10-card trump fit and North’s extreme concentration of controls (four Aces), the appropriate advanced technique is Key Card Blackwood (RKCB). After cue-bidding 4C and 4H, North uses 4NT to ask for Key Cards (four Aces + Trump King). South responds 5D (showing 1 or 4 key cards, typically 1 key card in 1430 RKCB conventions). North, knowing partner has QJ in trump and the KQT of Hearts, concludes that 6S is safe, as only two losers remain (and these may be reducible via good play or favorable layout).</p>
+                        
+                    </div>
+                </div>
+
+                <h4 class="section-header">🎓 4. Coach's Corner</h4>
                 <div class="row">
                     
                     <div class="col-md-6 mb-3">
-                        <div class="card learning-card h-100">
+                        <div class="card coach-card h-100">
                             <div class="card-body">
-                                <h6 class="text-uppercase text-muted small">Advanced | North</h6>
-                                <h5 class="card-title text-dark">Slam Investigation - Control/Cue Bidding</h5>
-                                <p class="card-text small text-muted">
-                                    Assigned to North based on this deal.
-                                </p>
+                                <small class="text-uppercase text-muted">North | Review</small>
+                                <h5 class="card-title">Slam investigation after a Limit Raise</h5>
                             </div>
                         </div>
                     </div>
                     
                     <div class="col-md-6 mb-3">
-                        <div class="card learning-card h-100">
+                        <div class="card coach-card h-100">
                             <div class="card-body">
-                                <h6 class="text-uppercase text-muted small">Review | Pair NS</h6>
-                                <h5 class="card-title text-dark">Jump Response Agreements (Defining 3S strength)</h5>
-                                <p class="card-text small text-muted">
-                                    Assigned to Pair NS based on this deal.
-                                </p>
+                                <small class="text-uppercase text-muted">North | Review</small>
+                                <h5 class="card-title">Cue-bidding basics (starting the slam sequence)</h5>
                             </div>
                         </div>
                     </div>
                     
                     <div class="col-md-6 mb-3">
-                        <div class="card learning-card h-100">
+                        <div class="card coach-card h-100">
                             <div class="card-body">
-                                <h6 class="text-uppercase text-muted small">Advanced | North</h6>
-                                <h5 class="card-title text-dark">Slam Decision Making (Recognizing permanent losers despite Ace control)</h5>
-                                <p class="card-text small text-muted">
-                                    Assigned to North based on this deal.
-                                </p>
+                                <small class="text-uppercase text-muted">Pair NS | Advanced</small>
+                                <h5 class="card-title">Use of Key Card Blackwood (RKCB) after controls are established</h5>
                             </div>
                         </div>
                     </div>
                     
                 </div>
-                
 
             </div>
         </body>

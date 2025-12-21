@@ -127,39 +127,48 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S479KH239KD24QC8J,S36H6QAD57C3567TK,S258JH5JD39JKC2QA,|rh||ah|Board 15|sv|n|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|p|mb|p|pg||pc|DA|pc|D2|pc|D5|pc|D3|pg||pc|C9|pc|C8|pc|CK|pc|CA|pg||pc|S2|pc|ST|pc|SK|pc|S3|pg||pc|S4|pc|S6|pc|S8|pc|SQ|pg||pc|C4|pc|CJ|pc|C3|pc|C2|pg||pc|H3|pc|HQ|pc|H5|pc|H4|pg||pc|HA|pc|HJ|pc|H7|pc|H2|pg||pc|H6|pc|D9|pc|HT|pc|HK|pg||pc|D4|pc|D7|pc|DJ|pc|D6|pg||pc|SJ|pc|SA|pc|S7|pc|C5|pg||pc|H8|pc|H9|pc|C6|pc|S5|pg||pc|CQ|pc|D8|pc|S9|pc|C7|pg||pc|DQ|pc|CT|pc|DK|pc|DT|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "Underbid. Missed opportunity to reach optimal partial contract.",
-    "analysis_bullets": [
-      "North's 1S rebid confirmed a 4-4 Spade fit and minimum opening strength (12-14 HCP).",
-      "South (9 HCP, 4-card support) should have made an invitational raise to 2S rather than passing 1S.",
-      "Passing 1S stopped the auction prematurely, failing to reach the safe and optimal partial score.",
-      "With a combined 21 HCP, 2S is the correct destination; 4S is too aggressive without better distribution or higher combined point count."
+    "verdict": "MISSED PART SCORE (Too Cautious)",
+    "actual_critique": [
+      "South, the dealer, was overly passive and failed to open the bidding with 9 HCP, allowing North to open 1D unnecessarily.",
+      "After the 4-4 Spade fit was established by North's 1S rebid, South (9 HCP) failed to make a constructive, invitational bid (2S), choosing instead to pass 1S.",
+      "The 1S contract, reached by passing up the mandatory game invitation, resulted in the partnership settling at a sub-optimal contract level."
     ],
-    "recommended_auction": [
-      "P",
-      "P",
-      "1D",
-      "P",
-      "1H",
-      "P",
-      "1S",
-      "P",
-      "2S",
-      "P",
-      "P",
-      "P"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "South (9 HCP, 4=4=3=2) should open 1D as dealer. However, following the actual auction where North opened 1D and subsequently rebid 1S (confirming a 4-4 Spade fit), South has a clear responsibility to describe their hand strength. With 9 HCP and established support, South must make a Limit Raise (2S), inviting North to continue to game if North is max-range (13-14 HCP). Since North holds a minimum 12 HCP, North should decline the invitation, resulting in the correct part score contract of 2S.",
+      "recommended_auction": [
+        "1D (N)",
+        "p (E)",
+        "1H (S)",
+        "p (W)",
+        "1S (N)",
+        "p (E)",
+        "2S (S)",
+        "p (W)",
+        "p (N)",
+        "p (E)"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "No advanced conventions are needed here. The total HCP (21) and the lack of distributional advantages preclude any serious slam consideration. The focus remains strictly on fundamental requirements for finding and confirming the optimal part score level based on HCP limits.",
+      "sequence": null
+    },
+    "coaches_corner": [
       {
         "player": "South",
-        "topic": "Responder's Major Suit Support (Invitational Raises)",
+        "topic": "Opening Requirements (1D with 9 HCP as Dealer)",
         "category": "Review"
       },
       {
-        "player": "Pair NS",
-        "topic": "Game Bidding Thresholds (8-card major fit)",
+        "player": "South",
+        "topic": "Limit Raises and Invitational Bids (Supporting major suit fit with 7-10 HCP)",
+        "category": "Review"
+      },
+      {
+        "player": "North",
+        "topic": "Responding to Game Invitations (Declining the invite with a minimum opener)",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:36:23"
+  "timestamp": "2025-12-20 21:42:20"
 }

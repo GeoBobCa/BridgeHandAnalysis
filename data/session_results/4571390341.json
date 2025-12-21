@@ -128,31 +128,61 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S45JKH2D67AC69TKA,S67H78JKAD9QKC37J,S38TQH456TQD24TCQ,|rh||ah|Board 16|sv|e|mb|1H|mb|p|mb|p|mb|d|mb|p|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|pg||pc|H3|pc|H2|pc|HA|pc|H4|pg||pc|D9|pc|D2|pc|D3|pc|D6|pg||pc|DQ|pc|D4|pc|D5|pc|DA|pg||pc|C6|pc|C3|pc|CQ|pc|C2|pg||pc|H5|pc|H9|pc|S4|pc|H7|pg||pc|D7|pc|DK|pc|DT|pc|D8|pg||pc|C7|pc|H6|pc|C4|pc|C9|pg||pc|S5|pc|S6|pc|ST|pc|S2|pg||pc|S3|pc|S9|pc|SJ|pc|S7|pg||pc|CT|pc|CJ|pc|S8|pc|C5|pg||pc|HT|pc|C8|pc|SK|pc|H8|pg||pc|CK|pc|HJ|pc|HQ|pc|SA|pg||pc|DJ|pc|CA|pc|HK|pc|SQ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "WELL BID TO A SAFE PARTIAL",
-    "analysis_bullets": [
-      "South correctly used the aggressive Takeout Double with a strong 15 HCP hand and excellent distribution (4=1=3=5) over West's 1 Heart opening.",
-      "North provided the essential minimum response (1S), prioritizing finding the major suit fit immediately despite holding only 6 HCP, fulfilling the requirement of the Takeout Double structure.",
-      "South's subsequent 2S raise was an excellent Limit Raise, confirming the fit, describing a maximum range for the double (15-17 points), and rightly stopping short of game given the combined partnership total of only 21 HCP and the opponent's solid heart suit.",
-      "The partnership successfully located their 4-4 spade fit at the two level, maximizing safety while avoiding the disaster of bidding an unmakeable 3NT due to the certain losses in Hearts."
+    "verdict": "MISSED GAME",
+    "actual_critique": [
+      "South's rebid of 2S was an underbid, failing to adequately communicate the significant strength (17 HCP and a singleton) necessary to secure the Spade game contract.",
+      "North and South settled far too low (2S) despite holding 25 total playing points and an 8-card major suit fit, indicating poor hand evaluation after the double.",
+      "The pair should have been aiming for 4S, which appears to be an excellent contract given the favorable distribution and control over the side suits (especially Clubs)."
     ],
-    "recommended_auction": null,
-    "learning_data": [
+    "basic_section": {
+      "analysis": "West opens 1H. South uses a strong reopening double, showing 16+ points and support for unbid suits. North correctly responds 1S (4+ cards, 0-8 HCP). South, holding 17 HCP and 4-card spade support, must make a strong rebid. A jump to 3S is standard, showing 17-19 total points and inviting North to proceed to game if they have maximum values (7-8 HCP). North, with only 6 HCP, would pass 3S. This is the basic, cautious path.",
+      "recommended_auction": [
+        "1H",
+        "p",
+        "p",
+        "d",
+        "p",
+        "1S",
+        "p",
+        "3S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "South has 17 HCP and a 4=1=3=5 shape (5 losers, excellent club control). Opposite a minimum 1S response, 4S is a strong probability based on counting playing tricks (23 HCP plus 2 points for the singleton means 25 total points). When holding this much power opposite a known minimum, bypassing the invite and jumping directly to 4S is appropriate to capitalize on the distributional advantage and strong fit.",
+      "sequence": [
+        "1H",
+        "p",
+        "p",
+        "d",
+        "p",
+        "1S",
+        "p",
+        "4S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "coaches_corner": [
       {
         "player": "South",
-        "topic": "Converting Takeout Double to Limit Raise",
-        "category": "Advanced"
-      },
-      {
-        "player": "North",
-        "topic": "Minimum Response to Takeout Double (Finding the Fit)",
+        "topic": "Rebidding after a Takeout Double",
         "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Game Aspiration Based on Combined Strength (Rule of 25)",
+        "topic": "Game Evaluation and Total Point Count (25+ points)",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Evaluating Distributional Strength (Singletons)",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:36:40"
+  "timestamp": "2025-12-20 21:42:44"
 }

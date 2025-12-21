@@ -123,39 +123,57 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S35H78TD45C38TQKA,S6TJQAH6D368JQC49,S289H345QAD279C7J,|rh||ah|Board 12|sv|n|mb|1S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|H3|pc|HK|pc|H7|pc|H6|pg||pc|SK|pc|S3|pc|S6|pc|S2|pg||pc|S4|pc|S5|pc|SJ|pc|S8|pg||pc|SQ|pc|S9|pc|S7|pc|D4|pg||pc|D3|pc|D2|pc|DA|pc|D5|pg||pc|DK|pc|C3|pc|D6|pc|D7|pg||pc|DT|pc|C8|pc|DQ|pc|D9|pg||pc|DJ|pc|C7|pc|C2|pc|CT|pg||pc|D8|pc|H4|pc|C5|pc|CQ|pg||pc|SA|pc|H5|pc|H2|pc|H8|pg||pc|ST|pc|HQ|pc|H9|pc|HT|pg||pc|C4|pc|CJ|pc|C6|pc|CK|pg||pc|CA|pc|C9|pc|HA|pc|HJ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MAJOR MISSED GAME by E/W and DISASTROUS SACRIFICE by South",
-    "analysis_bullets": [
-      "East (holding 14 HCP and 3-card spade support) committed a catastrophic error by passing partner's 1S opening, immediately forfeiting a guaranteed E/W game in spades.",
-      "South's aggressive jump to 4S was a severe misjudgment, as N/S possess only 16 combined HCP and a weak 5-card fit in the opponent's trump suit, ensuring a massive penalty.",
-      "The optimal contract is 4S by E/W, which is easily available (24 HCP, 8-card fit) and likely makes 11 tricks. The current contract, 4S by South, will go down substantially."
+    "verdict": "FAILED GAME CONTRACT (OVERBID)",
+    "actual_critique": [
+      "East's immediate jump to 4S with a 14 HCP supporting hand was overly aggressive and denied the partnership valuable space for exploration or slam investigation (such as using Jacoby 2NT or a standard 3S limit raise).",
+      "The EW pair failed to adequately assess the defensive potential of South's six-card solid club suit (AKQTxx). This distribution creates too many quick losers, making the 4S contract highly vulnerable.",
+      "The 4S contract is likely to fail by several tricks due to the concentrated defensive power in the opponents' hands, highlighting a failure in high-level hand valuation based on external distribution."
     ],
-    "recommended_auction": [
-      "1S",
-      "P",
-      "2S",
-      "P",
-      "4S",
-      "P",
-      "P",
-      "P"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "West opens 1S (10 HCP, 5 cards). East holds 14 HCP and 3-card support, easily qualifying for a game-invitation/game-forcing bid. The standard approach, if using limit raises, is for East to bid 3S (showing 10-12/13 HCP and 3+ support). West, with a minimum 10 HCP opener, accepts the invitation by bidding 4S. While this sequence arrives at 4S, it is the standard path to confirm game strength.",
+      "recommended_auction": [
+        "1S",
+        "p",
+        "3S",
+        "p",
+        "4S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "For a game-forcing hand (14 HCP, 3+ support), using Jacoby 2NT would have been the preferred treatment to explore controls and slam potential. However, regardless of the advanced bidding sequence, the fundamental problem remains: the poor playing quality of the 4S contract due to the massive club losers held by South. No advanced convention could negate the severe distributional problem here.",
+      "sequence": [
+        "1S",
+        "p",
+        "2NT",
+        "p",
+        "3S",
+        "p",
+        "4S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "coaches_corner": [
       {
         "player": "East",
-        "topic": "Responding to Partner's Major Suit Opening (10+ HCP)",
-        "category": "Review"
-      },
-      {
-        "player": "South",
-        "topic": "Competitive Bidding Strategy in Opponent's Suit",
+        "topic": "Game Force Responses: Bidding Steps vs. Jumping",
         "category": "Review"
       },
       {
         "player": "Pair EW",
-        "topic": "Finding Major Suit Game (24+ Points, 8-Card Fit)",
+        "topic": "Hand Valuation: Accounting for Quick Losers and Opponent Distribution",
         "category": "Advanced"
+      },
+      {
+        "player": "West",
+        "topic": "Accepting Game Invitation with Minimum Opener",
+        "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:35:46"
+  "timestamp": "2025-12-20 21:41:28"
 }

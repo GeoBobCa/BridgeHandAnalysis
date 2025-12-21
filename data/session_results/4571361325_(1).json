@@ -128,7 +128,48 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S5JH29TAD456AC38Q,S68KH458QD29KC479,S2TQH6JDTJQC26JKA,|rh||ah|Board 6|sv|e|mb|p|mb|p|mb|p|mb|1C|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|SA|pc|S5|pc|S6|pc|S2|pg||pc|H3|pc|H2|pc|H8|pc|HJ|pg||pc|H6|pc|H7|pc|HA|pc|H4|pg||pc|C3|pc|C4|pc|CJ|pc|C5|pg||pc|C2|pc|CT|pc|CQ|pc|C7|pg||pc|H9|pc|HQ|pc|C6|pc|HK|pg||pc|DT|pc|D3|pc|D4|pc|DK|pg||pc|H5|pc|CK|pc|S3|pc|HT|pg||pc|DJ|pc|D7|pc|D5|pc|D2|pg||pc|DQ|pc|D8|pc|DA|pc|D9|pg||pc|D6|pc|C9|pc|CA|pc|S4|pg||pc|ST|pc|S7|pc|SJ|pc|SK|pg||pc|S8|pc|SQ|pc|S9|pc|C8|pg||\n"
   },
   "ai_analysis": {
-    "error": "Server disconnected without sending a response."
+    "verdict": "MISSED GAME",
+    "actual_critique": [
+      "South (11 HCP) made a fundamental error by passing initially instead of opening 1D, which complicated the auction and misstated the partnership's potential.",
+      "South's subsequent entry into the auction with 2H was highly ambiguous for a passed hand holding opening points, preventing North from accurately evaluating the combined strength.",
+      "North settled for 3C, failing to investigate game potential despite knowing the partnership held at least 25 high card points (HCP), resulting in missing the likely 3NT game."
+    ],
+    "basic_section": {
+      "analysis": "With 25 combined HCP and relatively balanced distribution, the partnership should be aiming for 3NT. South, holding 11 HCP and a 4-card Diamond suit, must open 1D. North, holding 14 HCP and semi-balanced shape (3=2=3=5), responds 1NT (showing 12-14 points and balanced/semi-balanced) to invite game. South accepts the invitation with a maximum 11-count by bidding 2NT, allowing North to raise to 3NT.",
+      "recommended_auction": [
+        "1D",
+        "P",
+        "1NT",
+        "P",
+        "2NT",
+        "P",
+        "3NT",
+        "P",
+        "P",
+        "P"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "No advanced conventions are necessary to reach the correct 3NT game. If the partnership prioritized the 5-card Club suit, using a 2/1 Game Forcing structure would ensure they easily reach game via 1D - 2C (GF) - 2NT (rebid). The primary issue here was a failure in basic opening principles.",
+      "sequence": null
+    },
+    "coaches_corner": [
+      {
+        "player": "South",
+        "topic": "Opening Bids (The Priority of Opening)",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Assessing Combined Strength (25+ HCP for Game)",
+        "category": "Review"
+      },
+      {
+        "player": "North",
+        "topic": "Constructive Bidding (Seeking NT or Major Game First)",
+        "category": "Review"
+      }
+    ]
   },
-  "timestamp": "2025-12-20 20:33:16"
+  "timestamp": "2025-12-20 21:38:47"
 }

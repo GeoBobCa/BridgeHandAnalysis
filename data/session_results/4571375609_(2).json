@@ -126,39 +126,49 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S269H5JD8TQKC36QA,S35QKHQAD345AC27T,S7AH2378KD2JC589K,|rh||ah|Board 10|sv|b|mb|p|mb|1D|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|HA|pc|H2|pc|H4|pc|H5|pg||pc|S3|pc|SA|pc|S4|pc|S2|pg||pc|D2|pc|D6|pc|DT|pc|DA|pg||pc|SK|pc|S7|pc|S8|pc|S6|pg||pc|HQ|pc|HK|pc|H6|pc|HJ|pg||pc|C5|pc|C4|pc|CQ|pc|C2|pg||pc|C3|pc|C7|pc|CK|pc|CJ|pg||pc|C8|pc|ST|pc|CA|pc|CT|pg||pc|D8|pc|D3|pc|DJ|pc|D7|pg||pc|H3|pc|H9|pc|C6|pc|D4|pg||pc|DK|pc|D5|pc|H7|pc|D9|pg||pc|DQ|pc|S5|pc|H8|pc|SJ|pg||pc|S9|pc|SQ|pc|C9|pc|HT|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME",
-    "analysis_bullets": [
-      "North failed to recognize the partnership's potential for game (23+ combined HCP) after South described a strong 4-card Club suit (3C).",
-      "The partnership missed the established 4-4 Club fit; North should have raised 3C to 4C, or considered 3NT based on overall strength.",
-      "South's jump rebid to 3C was descriptive of the strong Club holding (AQxx) and invited game, but was risky as it bypassed 2NT exploration.",
-      "The optimal contract, 4 Clubs, is highly makeable (estimated 10 tricks)."
+    "verdict": "MISSED GAME (4C or 4H highly likely)",
+    "actual_critique": [
+      "North severely underbid by passing 3C. With 11 HCP, a 5-card major, and a confirmed 8-card Club fit, North must bid 4C.",
+      "The partnership failed to accurately assess their combined strength of 23 HCP and the excellent fit, stopping prematurely in a partial contract.",
+      "South's 3C rebid was appropriate, showing minimum values (12 HCP) and a four-card fit in Clubs, asking North to take the final action."
     ],
-    "recommended_auction": [
-      "1D",
-      "1S",
-      "2H",
-      "p",
-      "3C",
-      "p",
-      "4C"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "South opens 1D, and West overcalls 1S. North's 2H bid is highly constructive (10+ HCP, 5+ Hearts), indicating game interest. South, holding a minimum 12 HCP and limited support for Hearts (only two), properly opts to show the four-card Club fit by bidding 3C. This bid is directional, suggesting a minimum hand and asking partner (North) to judge. North holds 11 HCP and now recognizes the established 8-card Club fit and 23 combined HCP. This is a standard requirement for a minor suit game. North must ignore the defensive pass by East and bid 4C.",
+      "recommended_auction": [
+        "p",
+        "1D",
+        "1S",
+        "2H",
+        "p",
+        "3C",
+        "p",
+        "4C",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "If playing 2/1 Game Forcing, North's 2H response is unconditionally game forcing, guaranteeing the partnership will reach at least 4C or 4H. South's 3C rebid simply describes the minimum hand (12-14 HCP) and four-card Club support. Since the partnership is forced to game and 4C is the best fit (8 cards) and easiest denomination to confirm, North bids 4C directly over 3C. While 4H is also viable (7-card fit, better quality trumps), the 8-card Club fit offers greater safety for the forced game.",
+      "sequence": null
+    },
+    "coaches_corner": [
       {
         "player": "North",
-        "topic": "Game Investigation in Competitive Auctions",
+        "topic": "Game Recognition: Minor Suit Fits",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Handling Opponent Overcalls After a Constructive Response",
         "category": "Review"
       },
       {
         "player": "North",
-        "topic": "Minor Suit Game Valuation (4-4 Fit)",
+        "topic": "Evaluating Minimum Opener Rebids (3C)",
         "category": "Review"
-      },
-      {
-        "player": "South",
-        "topic": "Competitive Rebids after Partner Names a Major Suit",
-        "category": "Advanced"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:34:55"
+  "timestamp": "2025-12-20 21:40:32"
 }

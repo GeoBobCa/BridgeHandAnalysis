@@ -126,46 +126,44 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S378TKH89ADC3456J,S45AH2357D28QC89K,S69H6QD4679JC27TQ,|rh||ah|Board 5|sv|n|mb|p|mb|1D|mb|1S|mb|2D|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|S7|pc|S4|pc|S6|pc|SJ|pg||pc|D3|pc|H8|pc|DQ|pc|D4|pg||pc|D2|pc|D6|pc|DA|pc|C3|pg||pc|DK|pc|C4|pc|D8|pc|D7|pg||pc|D5|pc|H9|pc|H2|pc|DJ|pg||pc|D9|pc|DT|pc|C5|pc|H3|pg||pc|S2|pc|S8|pc|SA|pc|S9|pg||pc|C8|pc|C2|pc|CA|pc|C6|pg||pc|SQ|pc|SK|pc|S5|pc|H6|pg||pc|HA|pc|H5|pc|HQ|pc|H4|pg||pc|ST|pc|H7|pc|C7|pc|HT|pg||pc|S3|pc|C9|pc|CT|pc|HJ|pg||pc|CJ|pc|CK|pc|CQ|pc|HK|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "FAILED GAME SELECTION",
-    "analysis_bullets": [
-      "East's jump to 3NT (18 HCP) was overly optimistic, relying solely on high card points and stoppers without fully considering the risks associated with South's inferred diamond void opposite North's 5-card holding.",
-      "The 3NT contract is fragile, failing by at least one trick against optimal defense, as Declarer cannot establish 9 tricks safely (e.g., losing the fifth Diamond trick and having no secure ninth entry/source).",
-      "North and South were too passive. With a 5-5 spade fit and 13 combined HCP, they should have competed to 2S over 2D, potentially forcing East/West into an uncomfortable defense or a penalty situation.",
-      "West's 2D bid was slightly aggressive for a 9 HCP hand with only 3-card support, misrepresenting the hand strength and encouraging East towards game based on shape commitment rather than solid values."
+    "verdict": "MISJUDGED GAME/OVERBID",
+    "actual_critique": [
+      "South committed a severe error bidding 3NT with only 8 HCP, resulting in a partnership total of only 13 HCP. Standard requirements for NT game generally demand 25+ combined HCP.",
+      "South completely ignored the necessity of a stopper in the opponent's established suit (Diamonds). South is void in Diamonds, and North holds insufficient honors (Q J x x x) to provide a stopper against East/West's likely A K control.",
+      "East's opening bid of 1D with 0 HCP (according to the provided stats) is highly unorthodox and contradicts basic bridge principles requiring 12+ HCP for an opening bid."
     ],
-    "recommended_auction": [
-      "P",
-      "1D",
-      "1S",
-      "2D",
-      "2S",
-      "Dbl",
-      "P",
-      "P",
-      "P"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "North/South have only 13 combined HCP, making any attempt at game highly premature and risky. The goal should be to find a safe partial contract, preferably in their longest established fit, which is Clubs (9 cards total). The 3NT contract is fundamentally unsound due to the lack of combined strength and the guaranteed loss of tricks in Diamonds.",
+      "recommended_auction": [
+        "p",
+        "1D",
+        "1S",
+        "2D",
+        "p",
+        "2C"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "While South's 5=3=0=5 distribution provides excellent distributional playing strength (adding several points for the void and suit length), this strength is usually maximized in a trump contract (like 3C or 3S), not in Notrump. The void Diamond requires partnership discussion, perhaps using cue bids if strong enough, but here, the lack of sufficient combined HCP (even counting distributional points, the total is marginal for game) and the immediate threat of a Diamond run makes 3NT a non-starter. No specialized advanced conventions were required; the issue was one of fundamental valuation and safety.",
+      "sequence": null
+    },
+    "coaches_corner": [
       {
-        "player": "East",
-        "topic": "Notrump Bidding Risks (Void/Distributional Hazards)",
-        "category": "Advanced"
+        "player": "South",
+        "topic": "Assessing Combined Strength for Game (25 Rule)",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "The Requirement of Stoppers in Notrump Contracts",
+        "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Competitive Bidding with Major Suit Fit (Failing to bid 2S)",
-        "category": "Review"
-      },
-      {
-        "player": "West",
-        "topic": "Competitive Suit Raises (3-card minimum support)",
-        "category": "Review"
-      },
-      {
-        "player": "East",
-        "topic": "Penalty Doubles vs. Game Forcing",
+        "topic": "Prioritizing the Longest Fit (Clubs) over Risky NT",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:33:15"
+  "timestamp": "2025-12-20 21:38:32"
 }

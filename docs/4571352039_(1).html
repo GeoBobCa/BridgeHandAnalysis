@@ -3,186 +3,169 @@
         <html>
         <head>
             <meta charset="utf-8">
-            <title>4571352039 (1) - Analysis</title>
+            <title>4571352039 (1) Analysis</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
             <style>
-                .learning-card { border-left: 4px solid #fd7e14; background-color: #fff8f3; }
-                .rec-auction-badge { font-size: 1.1em; margin-right: 5px; }
+                .section-header { border-bottom: 2px solid #dee2e6; margin-bottom: 1rem; padding-bottom: 0.5rem; color: #495057; }
+                .bid-badge { font-family: monospace; font-size: 1.1em; padding: 8px 12px; }
+                .coach-card { background-color: #f8f9fa; border-left: 5px solid #0dcaf0; }
+                .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
             </style>
         </head>
         <body class="bg-white">
             <div class="container py-4">
-                <div class="d-flex justify-content-between mb-3">
-                    <a href="index.html" class="btn btn-secondary">&larr; Dashboard</a>
-                    <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C1S8KAHTQD238C39TJA%2CS3JH3468KD69TAC26%2CS2467QH59AD457JCQ%2C%7Crh%7C%7Cah%7CBoard%203%7Csv%7Ce%7Cmb%7C1C%7Cmb%7Cp%7Cmb%7C1S%7Cmb%7Cp%7Cmb%7C1N%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CDA%7Cpc%7CD4%7Cpc%7CDQ%7Cpc%7CD2%7Cpg%7C%7Cpc%7CC2%7Cpc%7CCQ%7Cpc%7CCK%7Cpc%7CCA%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CC6%7Cpc%7CD5%7Cpc%7CC4%7Cpg%7C%7Cpc%7CCT%7Cpc%7CH3%7Cpc%7CD7%7Cpc%7CC5%7Cpg%7C%7Cpc%7CC9%7Cpc%7CH4%7Cpc%7CH5%7Cpc%7CC7%7Cpg%7C%7Cpc%7CSA%7Cpc%7CS3%7Cpc%7CS2%7Cpc%7CS5%7Cpg%7C%7Cpc%7CSK%7Cpc%7CSJ%7Cpc%7CS4%7Cpc%7CS9%7Cpg%7C%7Cpc%7CS8%7Cpc%7CD6%7Cpc%7CSQ%7Cpc%7CST%7Cpg%7C%7Cpc%7CS7%7Cpc%7CH2%7Cpc%7CD3%7Cpc%7CH6%7Cpg%7C%7Cpc%7CS6%7Cpc%7CH7%7Cpc%7CD8%7Cpc%7CD9%7Cpg%7C%7Cpc%7CHA%7Cpc%7CHJ%7Cpc%7CHT%7Cpc%7CH8%7Cpg%7C%7Cpc%7CH9%7Cpc%7CC8%7Cpc%7CHQ%7Cpc%7CHK%7Cpg%7C%7Cpc%7CDT%7Cpc%7CDJ%7Cpc%7CDK%7Cpc%7CC3%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">▶ Replay on BBO</a>
-                </div>
-                
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <div>
-                            <h2 class="display-6 m-0">4571352039 (1)</h2>
-                            <h4 class="text-primary mt-2">MISSED GAME (4 Spades)</h4>
-                        </div>
-                        <div class="text-end">
-                            <div class="badge bg-dark mb-1">Dealer: South</div><br>
-                            <div class="badge bg-warning text-dark">Vul: E/W</div>
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <a href="index.html" class="btn btn-outline-secondary">&larr; Back to Dashboard</a>
+                    <h2 class="m-0">4571352039 (1)</h2>
+                    <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C1S8KAHTQD238C39TJA%2CS3JH3468KD69TAC26%2CS2467QH59AD457JCQ%2C%7Crh%7C%7Cah%7CBoard%203%7Csv%7Ce%7Cmb%7C1C%7Cmb%7Cp%7Cmb%7C1S%7Cmb%7Cp%7Cmb%7C1N%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CDA%7Cpc%7CD4%7Cpc%7CDQ%7Cpc%7CD2%7Cpg%7C%7Cpc%7CC2%7Cpc%7CCQ%7Cpc%7CCK%7Cpc%7CCA%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CC6%7Cpc%7CD5%7Cpc%7CC4%7Cpg%7C%7Cpc%7CCT%7Cpc%7CH3%7Cpc%7CD7%7Cpc%7CC5%7Cpg%7C%7Cpc%7CC9%7Cpc%7CH4%7Cpc%7CH5%7Cpc%7CC7%7Cpg%7C%7Cpc%7CSA%7Cpc%7CS3%7Cpc%7CS2%7Cpc%7CS5%7Cpg%7C%7Cpc%7CSK%7Cpc%7CSJ%7Cpc%7CS4%7Cpc%7CS9%7Cpg%7C%7Cpc%7CS8%7Cpc%7CD6%7Cpc%7CSQ%7Cpc%7CST%7Cpg%7C%7Cpc%7CS7%7Cpc%7CH2%7Cpc%7CD3%7Cpc%7CH6%7Cpg%7C%7Cpc%7CS6%7Cpc%7CH7%7Cpc%7CD8%7Cpc%7CD9%7Cpg%7C%7Cpc%7CHA%7Cpc%7CHJ%7Cpc%7CHT%7Cpc%7CH8%7Cpg%7C%7Cpc%7CH9%7Cpc%7CC8%7Cpc%7CHQ%7Cpc%7CHK%7Cpg%7C%7Cpc%7CDT%7Cpc%7CDJ%7Cpc%7CDK%7Cpc%7CC3%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">Replay Hand</a>
                 </div>
 
-                <div class="row mb-4">
-                    <div class="col-md-7">
-                        <div class="card h-100">
-                            <div class="card-header bg-dark text-white">The Deal</div>
-                            <div class="card-body text-center">
-                                <div class="row">
-                                    <div class="col-12 mb-2">
-                                        <small>BeaPercy</small><br>
-                                        <strong>North</strong><br>5=3=4=1
-                                    </div>
-                                    <div class="col-4 text-start">
-                                        <small>georgenamg</small><br>
-                                        <strong>West</strong><br>8 HCP
-                                    </div>
-                                    <div class="col-4"><img src="https://bridgebase.com/mobile/images/table_felt.jpg" class="img-fluid opacity-50"></div>
-                                    <div class="col-4 text-end">
-                                        <small>bobj245</small><br>
-                                        <strong>East</strong><br>0 HCP
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <small>Fish075</small><br>
-                                        <strong>South</strong><br>3=2=3=5
-                                    </div>
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-12"><strong>North</strong><br>5=3=4=1</div>
+                                    <div class="col-4"><strong>West</strong><br>8 HCP</div>
+                                    <div class="col-4"><img src="https://bridgebase.com/mobile/images/table_felt.jpg" class="img-fluid opacity-25"></div>
+                                    <div class="col-4"><strong>East</strong><br>0 HCP</div>
+                                    <div class="col-12"><strong>South</strong><br>3=2=3=5</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="card h-100">
-                            <div class="card-header bg-secondary text-white">Auction History</div>
+                            <div class="card-header">Actual Auction</div>
                             <div class="card-body d-flex align-items-center justify-content-center">
-                                <div class="alert alert-light border w-100 text-center font-monospace">
-                                    1C - p - 1S - p - 1N - p - p - p
-                                </div>
+                                <div class="font-monospace">1C - p - 1S - p - 1N - p - p - p</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <div class="card border-primary">
-                            <div class="card-header bg-primary text-white">Audrey's Analysis</div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush mb-3">
-                                    
-                                    <li class="list-group-item">🔹 South's opening bid (1C) and subsequent rebid (1N, 14 HCP, 3=2=3=5 distribution, denying four spades) were accurate descriptive bids.</li>
-                                    
-                                    <li class="list-group-item">🔹 North, holding 9 HCP and a 5-card major suit (Spades), was too passive, accepting 1N when the partnership had ample points (23 HCP) to investigate game.</li>
-                                    
-                                    <li class="list-group-item">🔹 The 5-3 spade fit, backed by excellent side controls (Aces and Queens), makes 4 Spades a strong contract, likely yielding 10 tricks.</li>
-                                    
-                                    <li class="list-group-item">🔹 North should have bid 2S (invitational) over 1N, allowing South (with a maximum 1N hand) to accept the invitation into 4S.</li>
-                                    
-                                </ul>
+                <h4 class="section-header">🔍 1. Critique of Actual Play</h4>
+                <div class="mb-5">
+                    <ul class="list-group">
+                        
+                        <li class="list-group-item border-0">❌ North committed a serious error by passing 1NT. With 9 HCP and a 5-card major, knowing partner had opened (14+ HCP, total 23+ HCP), North was obligated to invite game (2NT) or even bid 3NT directly.</li>
+                        
+                        <li class="list-group-item border-0">❌ The partnership settled prematurely. They failed to fully investigate the strength and potential fit, resulting in a low-level contract when 3NT or possibly 4S were viable options.</li>
+                        
+                        <li class="list-group-item border-0">❌ South's 1NT rebid, while technically correct (12-14 HCP, denying 4 Spades), undersold the overall potential of the hand, particularly the strong 5-card Club suit, which might have led North to investigate further.</li>
+                        
+                    </ul>
+                </div>
 
+                <h4 class="section-header">📘 2. The Fundamentals (Standard American)</h4>
+                <div class="card mb-5 border-primary">
+                    <div class="card-body">
+                        <p class="lead">South opens 1C (14 HCP). North responds 1S (5-card suit, 9 HCP). South rebids 1NT, showing 12-14 balanced/semi-balanced and denying four-card spade support. Since the partnership holds 23 HCP, game is highly likely. North must use 2NT to invite game, promising 8-10 points. South, having a maximum 14 HCP, accepts the invitation by bidding 3NT, the most likely resting place.</p>
+                        
+                        <div class="mt-3">
+                            <h6>✅ Correct Standard Sequence:</h6>
+                            <div class="d-flex flex-wrap gap-2">
                                 
-                                <div class="alert alert-warning shadow-sm mt-3">
-                                    <h5><span class="badge bg-warning text-dark me-2">Correction</span> Recommended Bidding Sequence:</h5>
-                                    <div class="d-flex flex-wrap mt-2">
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">1C</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">1S</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">1N</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">2S</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">3S</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">4S</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                             <span class="text-muted align-self-center mx-1">&rarr;</span> 
-                                        
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">P</span>
-                                            
-                                        
-                                    </div>
-                                </div>
+                                <span class="badge bg-primary bid-badge">1C</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">1S</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">1N</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">2N</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">3N</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
                                 
                             </div>
                         </div>
+                        
                     </div>
                 </div>
 
-                
-                <h4 class="mt-4 mb-3 text-secondary">Coach's Corner</h4>
+                <h4 class="section-header">🚀 3. Advanced Concepts</h4>
+                <div class="card mb-5 adv-card">
+                    <div class="card-body">
+                        <p>While 3NT is achievable, an expert pair would also explore the 5-3 Spade fit (8 cards total) given the good quality honors (AKQ) and the strong 5-card minor in South's hand, which offers excellent side suit development/discard potential. If South uses 2C (a rebid of the suit, showing 13-16 HCP and good clubs) instead of 1NT, it gives North space to confirm the 5-card suit with 2S (8-9 HCP), allowing South to jump directly to the likely winning 4S contract based on distribution and high card strength.</p>
+                        
+                        <div class="mt-3">
+                            <h6>✨ Advanced Sequence:</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                
+                                <span class="badge bg-warning text-dark bid-badge">1C</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">p</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">1S</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">p</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">2C</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">p</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">2S</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">p</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">4S</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">p</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">p</span>
+                                
+                                <span class="badge bg-warning text-dark bid-badge">p</span>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <h4 class="section-header">🎓 4. Coach's Corner</h4>
                 <div class="row">
                     
                     <div class="col-md-6 mb-3">
-                        <div class="card learning-card h-100">
+                        <div class="card coach-card h-100">
                             <div class="card-body">
-                                <h6 class="text-uppercase text-muted small">Review | North</h6>
-                                <h5 class="card-title text-dark">Invitational Bids after Opener's 1NT Rebid</h5>
-                                <p class="card-text small text-muted">
-                                    Assigned to North based on this deal.
-                                </p>
+                                <small class="text-uppercase text-muted">North | Review</small>
+                                <h5 class="card-title">Inviting Game after Opener's 1NT Rebid (Total Partnership Strength)</h5>
                             </div>
                         </div>
                     </div>
                     
                     <div class="col-md-6 mb-3">
-                        <div class="card learning-card h-100">
+                        <div class="card coach-card h-100">
                             <div class="card-body">
-                                <h6 class="text-uppercase text-muted small">Advanced | Pair NS</h6>
-                                <h5 class="card-title text-dark">Recognizing Game Potential in 5-3 Major Suit Fits (23+ HCP)</h5>
-                                <p class="card-text small text-muted">
-                                    Assigned to Pair NS based on this deal.
-                                </p>
+                                <small class="text-uppercase text-muted">South | Review</small>
+                                <h5 class="card-title">Opener Rebids: Choosing between 1NT and Re-bidding a Strong 5-card Minor</h5>
                             </div>
                         </div>
                     </div>
                     
                     <div class="col-md-6 mb-3">
-                        <div class="card learning-card h-100">
+                        <div class="card coach-card h-100">
                             <div class="card-body">
-                                <h6 class="text-uppercase text-muted small">Review | South</h6>
-                                <h5 class="card-title text-dark">Accepting Game Invitations with Maximum Point Counts</h5>
-                                <p class="card-text small text-muted">
-                                    Assigned to South based on this deal.
-                                </p>
+                                <small class="text-uppercase text-muted">Pair NS | Advanced</small>
+                                <h5 class="card-title">Game Determination with 8-Card Major Fits (5-3) and strong minors</h5>
                             </div>
                         </div>
                     </div>
                     
                 </div>
-                
 
             </div>
         </body>

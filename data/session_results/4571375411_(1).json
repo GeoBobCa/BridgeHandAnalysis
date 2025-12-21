@@ -129,36 +129,65 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S3AH257D2356TAC2J,S6KH49JQAD79QKCKA,S24JH368KD4C3579T,|rh||ah|Board 4|sv|b|mb|2C|mb|p|mb|2S|mb|p|mb|3H|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|H3|pc|HT|pc|H2|pc|HJ|pg||pc|HA|pc|H6|pc|S5|pc|H5|pg||pc|HQ|pc|H8|pc|S7|pc|H7|pg||pc|CA|pc|C3|pc|C4|pc|C2|pg||pc|CK|pc|C5|pc|C6|pc|CJ|pg||pc|SK|pc|S2|pc|S8|pc|SA|pg||pc|DA|pc|D7|pc|D4|pc|D8|pg||pc|D2|pc|DK|pc|C7|pc|DJ|pg||pc|DQ|pc|C9|pc|S9|pc|D3|pg||pc|S6|pc|S4|pc|SQ|pc|S3|pg||pc|CQ|pc|D5|pc|H4|pc|CT|pg||pc|C8|pc|D6|pc|H9|pc|SJ|pg||pc|ST|pc|DT|pc|D9|pc|HK|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED INTERFERENCE/COMPETITION",
-    "analysis_bullets": [
-      "South missed a crucial opportunity to enter the auction with 2D after the opponents' strong 2C opening. With 9 HCP and a good 6-card suit (D: AT6532), intervening is mandatory, especially when vulnerable.",
-      "Allowing the opponents (W/E) to proceed unchallenged permitted them to define the high-level contract (3NT) freely, maximizing West's powerful 22 HCP hand.",
-      "Competitive bidding by South (2D) would have forced the 22 HCP West to bid at the three level immediately, potentially guiding the strong hand into a less favorable contract or setting up a worthwhile sacrifice for N/S.",
-      "Given West\u2019s strength, 3NT is likely to make. N/S failed to assess the potential for a favorable sacrifice (such as 4D) against the probable game swing."
+    "verdict": "MISSED GRAND SLAM",
+    "actual_critique": [
+      "West, holding 22 HCP and opening 2C, stopped inexplicably short at 3NT. Given the overall strength (likely 35+ combined HCP), slam investigation was mandatory.",
+      "The auction sequence (2C - 2S - 3H - 3S - 3N) is irregular. If East had 0 HCP (as indicated by the empty hand data), the 2S response would be a massive breach of standard partnership agreements, usually signifying 8+ HCP.",
+      "West failed to utilize forcing bids or Blackwood/quantitative measures to explore slam, settling prematurely for a game contract."
     ],
-    "recommended_auction": [
-      "2C",
-      "p",
-      "2S",
-      "2D"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "West holds 22 HCP, which demands a strong 2 Club opening. The partnership has 35+ HCP combined (since N/S hold only 13). This puts a Grand Slam (7NT) firmly in sight. Assuming East provides the necessary 5 HCP for distribution, West can count 12 tricks off the top (5 Hearts, 4 Diamonds, 2 Clubs, 1 Spade King) before considering East\u2019s contribution. The objective must be to confirm all key controls (Aces and Kings) are held, leading to 7NT.",
+      "recommended_auction": [
+        "2C",
+        "p",
+        "2D",
+        "p",
+        "2NT",
+        "p",
+        "3C",
+        "p",
+        "3H",
+        "p",
+        "4NT",
+        "p",
+        "5C",
+        "p",
+        "7NT"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "With such overwhelming strength (22 HCP) and good shape, West should use RKCB (Roman Key Card Blackwood) quickly after showing the strength and distribution. After West shows 2NT (22-24 balanced) or 2H (showing a 5-card suit and forcing), 4NT can be employed immediately. Given West holds five Key Cards themselves (A, K of Clubs; A, K, Q of Hearts; K, Q of Diamonds; K of Spades), the grand slam is guaranteed. West only needs to ensure the partnership owns all four Aces. Assuming East's 2D response shows 0-7 HCP, West can still bid 7NT based on known top winners.",
+      "sequence": [
+        "2C",
+        "p",
+        "2D",
+        "p",
+        "2H (Showing 5+ H, forcing)",
+        "p",
+        "4NT (RKCB)",
+        "p",
+        "5D (1 or 4 key cards)",
+        "p",
+        "7NT"
+      ]
+    },
+    "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Competitive Bidding over Strong Openings",
+        "player": "West",
+        "topic": "Slam Investigation after a Strong Opening",
         "category": "Review"
       },
       {
-        "player": "South",
-        "topic": "Hand Valuation for Intervention (Suit Quality)",
+        "player": "West",
+        "topic": "Using RKCB to confirm high-level controls",
         "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Assessing Sacrifice Potential (Vulnerable)",
-        "category": "Advanced"
+        "topic": "Evaluating opponent's opening strength (2C promise)",
+        "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:34:36"
+  "timestamp": "2025-12-20 21:40:14"
 }

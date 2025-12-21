@@ -125,31 +125,45 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S24KH37AD34JQKCJQ,STJAH249D67TAC2KA,S389H68JD89C3478T,|rh||ah|Board 8|sv|o|mb|1D|mb|p|mb|1H|mb|2D|mb|2H|mb|p|mb|p|mb|p|pg||pc|DK|pc|DA|pc|D8|pc|D2|pg||pc|CA|pc|C3|pc|C5|pc|CQ|pg||pc|ST|pc|S3|pc|S5|pc|SK|pg||pc|DQ|pc|D6|pc|D9|pc|D5|pg||pc|CJ|pc|CK|pc|C4|pc|C6|pg||pc|SA|pc|S8|pc|S6|pc|S2|pg||pc|D7|pc|H6|pc|HT|pc|D3|pg||pc|S7|pc|S4|pc|SJ|pc|S9|pg||pc|DT|pc|H8|pc|HQ|pc|D4|pg||pc|SQ|pc|DJ|pc|C2|pc|HJ|pg||pc|C7|pc|C9|pc|HA|pc|H2|pg||pc|H3|pc|H9|pc|C8|pc|H5|pg||pc|H4|pc|CT|pc|HK|pc|H7|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "Missed Partscore Opportunity for N/S",
-    "analysis_bullets": [
-      "South (16 HCP, 5=3=3=2 shape) missed the standard competitive action of 1NT overcall after West's 1D opening and East's 1H response, which would have accurately described their hand strength and provided a safe place to play.",
-      "South's decision to bid 2D was a poor choice. It is a highly ambiguous competitive bid here, potentially suggesting a strong hand looking for penalties, or merely showing a fit that the opponents already own (Diamonds).",
-      "North, with only 1 HCP, correctly remained silent throughout the auction, having insufficient values to intervene.",
-      "West and East reached a reasonable competitive partscore (2H) given the intervention, though their combined HCP (estimated 22-24) makes game unlikely, and 2H is vulnerable to South's Heart Ace."
+    "verdict": "MISSED GAME",
+    "actual_critique": [
+      "East committed a significant error passing 2H. West's 2H bid, made over South's competitive 2D overcall, was a constructive raise showing support and strong values (16 HCP), guaranteeing at least 24 combined HCP. Game (4H) should have been bid.",
+      "South's decision to overcall 2D with 16 high card points was passive. While 2D showed the strong suit, a takeout double might have been a more descriptive action to keep partnership options open, even though NS lacked a game."
     ],
-    "recommended_auction": [
-      "1D",
-      "p",
-      "1H",
-      "1NT"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "EW found their 4-4 Heart fit but stopped well short of game. West (opener, 16 HCP) gave a strong indication of values by raising East's 1H response to 2H over the competitive 2D bid. With the partnership totaling 24 HCP and holding an 8-card major fit, game in Hearts is highly achievable. East, holding 8 HCP, must realize the partnership has ample strength and should jump to 4H or at least make a strong game try (3H).",
+      "recommended_auction": [
+        "1D",
+        "p",
+        "1H",
+        "2D",
+        "3H",
+        "p",
+        "4H",
+        "p"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "No advanced conventions (like Splinter bids or advanced competitive doubles) were necessary here. The game was missed due to poor valuation by the responder (East) in a competitive auction.",
+      "sequence": null
+    },
+    "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Balancing 1NT Overcall (15-18 HCP)",
+        "player": "East",
+        "topic": "Recognizing Game Potential after Competitive Raise",
         "category": "Review"
       },
       {
-        "player": "South",
-        "topic": "Competitive Bidding Strategy (Avoiding Ambiguous Cue-Bids)",
+        "player": "Pair NS",
+        "topic": "Descriptive Bidding vs. Competitive Bidding (Overcalls vs. Doubles)",
+        "category": "Review"
+      },
+      {
+        "player": "Pair EW",
+        "topic": "Minimum Requirements for 4 Major",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:33:55"
+  "timestamp": "2025-12-20 21:39:32"
 }

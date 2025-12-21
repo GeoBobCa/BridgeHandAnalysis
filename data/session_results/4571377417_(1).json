@@ -126,42 +126,47 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S6TJH48D3679AC79Q,S2H23679QD8QC36KA,S45KAHJD4JKC245TJ,|rh||ah|Board 11|sv|o|mb|p|mb|2H|mb|3C|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|C2|pc|C8|pc|CQ|pc|CA|pg||pc|H2|pc|HJ|pc|HA|pc|H4|pg||pc|HK|pc|H8|pc|H3|pc|C4|pg||pc|D2|pc|D9|pc|DQ|pc|DK|pg||pc|S4|pc|S9|pc|ST|pc|S2|pg||pc|DA|pc|D8|pc|D4|pc|D5|pg||pc|D7|pc|H6|pc|DJ|pc|DT|pg||pc|CK|pc|C5|pc|S3|pc|C7|pg||pc|C3|pc|CT|pc|H5|pc|C9|pg||pc|S7|pc|SJ|pc|H7|pc|S5|pg||pc|C6|pc|CJ|pc|HT|pc|S6|pg||pc|S8|pc|D3|pc|H9|pc|SK|pg||pc|HQ|pc|SA|pc|SQ|pc|D6|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "OPPONENTS FOUND GAME, NS MISSED THEIR OPTIMAL MINOR SUIT FIT",
-    "analysis_bullets": [
-      "West's 2H opening was effective in preempting the NS partnership, initiating a competitive auction where NS failed to communicate effectively.",
-      "North, holding 13 HCP and a 4-card spade suit, should have prioritized a Takeout Double (X) over the 3C overcall to allow South to show their best suit, potentially finding the 4-4 spade fit or the 5-5 minor suit pattern.",
-      "NS failed to discover their 8-card Diamond fit (5 in South, 3 in North), which offered the best potential for a competitive partial score, potentially 3D or 4D.",
-      "South's passive pass over 3H was a missed opportunity; South should have bid 3D to compete and show their strong 5-card suit, increasing the pressure on the opponents."
+    "verdict": "EFFECTIVE PRE-EMPTION",
+    "actual_critique": [
+      "West's 2H opening, though slightly strong at 11HCP, was highly effective pre-emption, successfully discouraging North/South from entering the auction constructively.",
+      "North, holding 13 HCP and excellent minor suit distribution, should have started with a Takeout Double over 2H to give South the chance to name the longer minor suit (Diamonds), rather than jumping directly to 3C.",
+      "The North/South pair failed to adequately explore their potential 8-card Diamond fit (5-3 distribution), which might have led to a successful competitive contract at the four or five level."
     ],
-    "recommended_auction": [
-      "P",
-      "2H",
-      "X",
-      "3H",
-      "3D",
-      "P",
-      "4H",
-      "P",
-      "P",
-      "P"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "South correctly passed. West\u2019s 2H bid is a standard Weak Two. North, with 13 HCP and support for the unbid suits (Spades/Minors), must prioritize finding a fit and conveying strength. The standard approach over an opponent's Weak Two is using the Takeout Double to show general strength and interest in competing. North's 3C jump was aggressive and restrictive, denying South vital information. Had North doubled, South would have bid 3D, showing their 5-card suit and setting the stage for a competitive auction in Diamonds.",
+      "recommended_auction": [
+        "P",
+        "2H",
+        "Dbl",
+        "P",
+        "3D",
+        "4H",
+        "P",
+        "P",
+        "P"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "Over a Weak Two, advanced pairs often employ specific competitive systems. Even without a complex system, the use of a takeout double is crucial here, serving as the most descriptive and flexible call. North's hand (13 HCP, potential 4-card spade suit, 5-card club suit) is too strong to jump preemptively. No specialized splinter bids or complex game tries are necessary, as the primary goal is merely finding the correct competitive level.",
+      "sequence": null
+    },
+    "coaches_corner": [
       {
         "player": "North",
-        "topic": "Takeout Double vs Direct Suit Overcall",
-        "category": "Review"
-      },
-      {
-        "player": "South",
-        "topic": "Competitive Bidding Showing Length",
+        "topic": "Responding Over Weak Two Bids (Takeout Double vs. Jump Overcall)",
         "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Prioritizing Fit Finding in Competitive Auctions",
-        "category": "Advanced"
+        "topic": "Competitive Bidding Strategy (Minor Suit Fits)",
+        "category": "Review"
+      },
+      {
+        "player": "West",
+        "topic": "Pre-emptive Bidding Effectiveness",
+        "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:35:11"
+  "timestamp": "2025-12-20 21:40:47"
 }

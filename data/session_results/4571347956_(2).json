@@ -131,38 +131,71 @@
   },
   "ai_analysis": {
     "verdict": "MISSED SLAM",
-    "analysis_bullets": [
-      "North-South missed a laydown grand slam (12 tricks required for 6S) because the auction terminated prematurely at 4S.",
-      "South's jump to 4S was non-constructive. With 6 HCP and excellent distributional support (a singleton club opposite North's five-card suit), South should have used a constructive bid, such as a splinter, to describe the hand and encourage slam investigation.",
-      "North, holding 23 HCP and excellent controls, erred significantly by passing 4S. Following a strong 2C opening and finding a major suit fit, North must investigate slam using Blackwood or cuebidding.",
-      "The 4-4 spade fit combined with South's singleton club opposite North's AKJxx clubs guarantees 12 tricks, highlighting the power of distribution often overlooked when assessing high-card points alone."
+    "actual_critique": [
+      "South (6 HCP) erred by responding 2H to North's strong 2C opening. The correct standard response for a hand of 0-7 HCP is the artificial negative bid of 2D.",
+      "North successfully located the 4-4 Spade fit with the 2S rebid, a strong indicator of game and potential slam interest.",
+      "South's jump to 4S (with only 6 HCP) shut down all slam investigation. Given North's 23 HCP, the partnership should have used cue bids or Blackwood to explore a highly likely 6S contract (which is cold)."
     ],
-    "recommended_auction": [
-      "2C",
-      "2H",
-      "2S",
-      "3C",
-      "4NT",
-      "5C",
-      "6S"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "North opened a strong, artificial 2C (22+ HCP). South, holding only 6 HCP, must reply with the artificial negative 2D, regardless of suit length. Once North rebids 2S, showing 4+ Spades, South confirms the 4-4 fit with 3S (showing minimum points). North then uses 4NT (Roman Key Card Blackwood) to investigate slam, knowing the combined strength warrants it. With all key cards likely present, 6S is reached.",
+      "recommended_auction": [
+        "2C",
+        "p",
+        "2D",
+        "p",
+        "2S",
+        "p",
+        "3S",
+        "p",
+        "4NT",
+        "p",
+        "5C",
+        "p",
+        "6S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "After North's 2S rebid and South's 3S support, cue bidding can efficiently establish controls before attempting 4NT. North is aware of the singleton Diamond and singleton Club in partner's hand, making careful control-checking vital. By starting cue bids (e.g., 4C), North can ensure control in all suits, specifically confirming the location of the Diamond King, which is crucial for safety in 6S.",
+      "sequence": [
+        "2C",
+        "p",
+        "2D",
+        "p",
+        "2S",
+        "p",
+        "3S",
+        "p",
+        "4C",
+        "p",
+        "4D",
+        "p",
+        "4H",
+        "p",
+        "4NT",
+        "p",
+        "5C",
+        "p",
+        "6S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "coaches_corner": [
       {
         "player": "South",
-        "topic": "Showing Distributional Values (Splinters) in Forcing Auctions",
-        "category": "Advanced"
-      },
-      {
-        "player": "North",
-        "topic": "Slam Investigation with Maximum Values (RKCB)",
+        "topic": "Responses to a Strong 2C Opening (Negative 2D)",
         "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Recognizing Slam Potential based on Singletons/Fits",
-        "category": "Advanced"
+        "topic": "Slam Exploration After Finding a Major Suit Fit (Cue Bidding/4NT)",
+        "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 19:41:14"
+  "timestamp": "2025-12-20 21:37:43"
 }

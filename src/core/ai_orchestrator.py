@@ -3,25 +3,19 @@ import json
 import time
 import re
 from pathlib import Path
-from typing import Dict, List
+from typing import Dict
 from dotenv import load_dotenv
 from loguru import logger
 from google import genai
 from google.genai import types
 
 class AIOrchestrator:
-    """
-    Manages interactions with Google Gemini and performs 'Red Team' validation.
-    """
-    
     def __init__(self):
         env_path = Path(__file__).resolve().parent.parent.parent / ".env"
         load_dotenv(dotenv_path=env_path)
-
         self.api_key = os.getenv("GEMINI_API_KEY")
         if not self.api_key:
             raise ValueError("Missing GEMINI_API_KEY in .env")
-            
         logger.info("*** PRODUCTION MODE: Google GenAI Client Initialized ***")
         self.client = genai.Client(api_key=self.api_key)
 
@@ -34,10 +28,10 @@ class AIOrchestrator:
             "vulnerability": hand_data.get('vulnerability'),
             "hands": hand_data['hands'],
             "auction_history": hand_data.get('auction', []),
-            "contract": hand_data.get('contract', 'Pass') # Ensure contract is passed
+            "contract": hand_data.get('contract', 'Pass')
         }
 
-        # --- UPDATED PROMPT: Bullet Points + Player Attribution ---
+        # --- 3-TIER PROMPT STRUCTURE ---
         prompt = f"""
         You are an expert Bridge Teacher (Audrey Grant style).
         
@@ -45,29 +39,39 @@ class AIOrchestrator:
         {json.dumps(context_payload, indent=2)}
 
         TASK:
-        Analyze this deal and output strict JSON.
+        Analyze this deal and output strict JSON with these specific sections:
 
         1. VERDICT: Short phrase (e.g., "OPTIMAL CONTRACT", "MISSED GAME").
         
-        2. ANALYSIS_BULLETS: A list of 3-4 concise strings critiquing the auction/play.
+        2. ACTUAL_CRITIQUE: A list of 2-3 strings criticizing exactly what the players did wrong (or right) in the actual auction and play.
+        
+        3. BASIC_SECTION:
+           - "analysis": A simple explanation of the correct Standard American approach.
+           - "recommended_auction": A list of bids for the ideal Standard sequence (e.g. ["1D", "1S", "2NT"]).
            
-        3. RECOMMENDED_AUCTION: 
-           - If bidding was correct, return null.
-           - If incorrect, return a list of bids (e.g., ["1H", "Pass", "4H"]).
-           
-        4. LEARNING_DATA: A list of specific learning items for the database.
-           - "player": Who needs to learn this? ("North", "South", "East", "West", or "Pair NS")
-           - "topic": The concept name (e.g., "Weak Two Bids", "Drawing Trumps")
-           - "category": "Review" (Basic errors) or "Advanced" (Growth opportunities)
+        4. ADVANCED_SECTION:
+           - "analysis": A deeper look (Splinters, 2/1, Squeezes, signals). If none apply, mention "No advanced conventions needed."
+           - "sequence": An illustrated advanced bidding sequence if it differs from the basic one (or null).
+
+        5. COACHES_CORNER: A list of specific learning items.
+           - "player": "North", "South", "East", "West", or "Pair NS".
+           - "topic": The concept name.
+           - "category": "Review" or "Advanced".
 
         OUTPUT JSON FORMAT:
         {{
             "verdict": "...",
-            "analysis_bullets": ["...", "..."],
-            "recommended_auction": ["..."] (or null),
-            "learning_data": [
-                {{ "player": "North", "topic": "Response to Takeout Double", "category": "Review" }},
-                {{ "player": "South", "topic": "Splinter Bids", "category": "Advanced" }}
+            "actual_critique": ["...", "..."],
+            "basic_section": {{
+                "analysis": "...",
+                "recommended_auction": ["..."] 
+            }},
+            "advanced_section": {{
+                "analysis": "...",
+                "sequence": ["..."] (or null)
+            }},
+            "coaches_corner": [
+                {{ "player": "North", "topic": "...", "category": "Review" }}
             ]
         }}
         """
@@ -83,53 +87,26 @@ class AIOrchestrator:
             )
             
             if response.text:
-                raw_analysis = json.loads(response.text)
-                # --- RUN THE RED TEAM SCAN ---
-                final_analysis = self._red_team_scan(raw_analysis, hand_data)
-                return final_analysis
+                return self._red_team_scan(json.loads(response.text), hand_data)
             else:
-                return {"error": "Empty response from AI"}
+                return {"error": "Empty response"}
 
         except Exception as e:
             logger.error(f"Gemini API Call failed: {e}")
             return {"error": str(e)}
 
     def _red_team_scan(self, analysis: Dict, facts: Dict) -> Dict:
-        """
-        A rigid code-validator to catch AI hallucinations before saving.
-        """
-        logger.info("Running Red Team validation...")
-        
-        # RULE 1: The "4 Diamonds is NOT Game" Rule
-        # We extract the contract level and suit from the facts
-        # (This assumes 'contract' string looks like '4D' or '3NT')
+        # Simple Red Team Validator for Game/Part-Score
         contract = facts.get('contract', '')
-        
         if contract and contract != 'Pass':
-            # Regex to find Level (1-7) and Suit (C,D,H,S,NT)
             match = re.search(r'(\d)(NT|[SHDC])', contract)
             if match:
                 level = int(match.group(1))
                 suit = match.group(2)
+                is_game = (suit in ['H','S'] and level>=4) or (suit in ['C','D'] and level>=5) or (suit=='NT' and level>=3)
                 
-                is_major_game = (suit in ['H', 'S'] and level >= 4)
-                is_minor_game = (suit in ['C', 'D'] and level >= 5)
-                is_nt_game = (suit == 'NT' and level >= 3)
-                
-                is_actual_game = is_major_game or is_minor_game or is_nt_game
-                
-                # Check if AI called a part-score "GAME"
-                verdict_upper = analysis.get('verdict', '').upper()
-                if not is_actual_game and "GAME" in verdict_upper and "MISSED" not in verdict_upper:
-                    logger.warning(f"RED TEAM: Caught hallucination on {contract}. AI said Game. Fixing.")
+                verdict = analysis.get('verdict', '').upper()
+                if not is_game and "GAME" in verdict and "MISSED" not in verdict:
                     analysis['verdict'] = "PART-SCORE MADE"
-                    analysis['analysis_bullets'].append(f"(Red Team Correction: {contract} is a part-score, not game.)")
-
+                    analysis['actual_critique'].insert(0, f"Red Team Note: {contract} is a part-score, not game.")
         return analysis
-
-if __name__ == "__main__":
-    try:
-        orch = AIOrchestrator()
-        print("SUCCESS: AI Client initialized with Red Team protocols.")
-    except Exception as e:
-        print(f"FAILURE: {e}")

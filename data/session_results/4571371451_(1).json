@@ -126,42 +126,51 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3SKH46TQDTJAC789TK,S238TJH38AD23C25Q,S4569H7JKD479KC3J,|rh||ah|Board 9|sv|e|mb|p|mb|1D|mb|d|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|pg||pc|D4|pc|D5|pc|DA|pc|D2|pg||pc|DT|pc|D3|pc|DK|pc|D6|pg||pc|C3|pc|C4|pc|CK|pc|C2|pg||pc|DJ|pc|H3|pc|D7|pc|DQ|pg||pc|S7|pc|SK|pc|S2|pc|S4|pg||pc|HT|pc|HA|pc|H7|pc|H2|pg||pc|S3|pc|S5|pc|SA|pc|C7|pg||pc|SQ|pc|C8|pc|S8|pc|S6|pg||pc|D8|pc|C9|pc|H8|pc|D9|pg||pc|HJ|pc|H5|pc|H4|pc|ST|pg||pc|SJ|pc|S9|pc|H9|pc|CT|pg||pc|C5|pc|CJ|pc|CA|pc|H6|pg||pc|C6|pc|HQ|pc|CQ|pc|HK|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME (3NT)",
-    "analysis_bullets": [
-      "South made a correct Takeout Double (DBL) over 1D, showing general strength (13 HCP). However, after West's weak 1S response and East's raising to 2S, South was far too passive to pass 2S.",
-      "With 21 combined HCP (13 S + 8 N) and clear stoppers in all suits, North-South should have competed vigorously for 3NT, the optimal contract.",
-      "East's bid of 2S was highly misleading. If East truly held 14 HCP (inferred), raising a partner known to be weak (7 HCP, forced 1S response) to 2S severely understates their hand and fails to properly challenge NS for the auction.",
-      "South should have jumped directly to 3NT over 2S, recognizing the partnership strength and the favorable vulnerability (E/W vulnerable, NS not)."
+    "verdict": "MISSED GAME (3H)",
+    "actual_critique": [
+      "South failed a basic requirement after making a takeout double. With 13 HCP and potential major suit fits, South must continue the auction over West's 1S response, usually by bidding their best major (1H) or strong minor (2C). Passing was too passive and allowed the opponents to settle cheaply.",
+      "The North-South pair missed a 7-card Heart fit and a guaranteed make at the three-level, likely missing 10 tricks in 3H.",
+      "East/West played the competitive auction well by quickly establishing their 8-card Spade fit and securing a playable contract at 2S, which is likely a comfortable make."
     ],
-    "recommended_auction": [
-      "P",
-      "1D",
-      "DBL",
-      "1S",
-      "P",
-      "2S",
-      "3NT",
-      "P",
-      "P",
-      "P"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "North-South holds 21 combined HCP and a desirable 4-3 Heart fit. After South's takeout double, the partnership must pursue a major fit. South's primary responsibility is to bid 1H (showing 4 cards and prioritizing the major) over West's 1S, signaling intentions to North. North, with 8 HCP and 3-card support, should raise to 2H, showing a minimum hand and securing the 7-card fit. South then has sufficient strength (13 HCP) to bid 3H, which is a highly makeable contract.",
+      "recommended_auction": [
+        "P",
+        "1D",
+        "D",
+        "1S",
+        "P",
+        "1H",
+        "P",
+        "2H",
+        "P",
+        "3H",
+        "P",
+        "P",
+        "P"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "The optimal contract path relies on solid fundamentals of competitive bidding, particularly the follow-up requirements after a takeout double. No advanced conventions like Roman Key Card Blackwood or complex cue-bidding are necessary to reach the correct major suit game level.",
+      "sequence": null
+    },
+    "coaches_corner": [
       {
         "player": "South",
-        "topic": "Game Bidding Over Competition",
-        "category": "Advanced"
-      },
-      {
-        "player": "Pair NS",
-        "topic": "Recognizing NT Game Force",
+        "topic": "Mandatory rebid after making a Takeout Double. Never pass with 13 HCP unless the opponents have preempted to a high level.",
         "category": "Review"
       },
       {
-        "player": "East",
-        "topic": "Showing Strength in Competitive Auctions",
+        "player": "North",
+        "topic": "Supporting a 4-3 fit. Once partner bids 1H, raising to 2H confirms the fit and shows the minimum hand necessary to compete.",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Prioritizing Major Suit Fits in Competition. Even when facing a 1S response, finding your 4-3 Heart fit takes precedence over minor suit rebids.",
         "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 20:34:18"
+  "timestamp": "2025-12-20 21:39:55"
 }

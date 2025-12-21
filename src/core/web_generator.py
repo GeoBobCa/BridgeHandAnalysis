@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import urllib.parse
 from jinja2 import Environment, FileSystemLoader
 
@@ -13,7 +14,7 @@ class WebGenerator:
         os.makedirs(OUTPUT_HTML_FOLDER, exist_ok=True)
         os.makedirs(TEMPLATE_DIR, exist_ok=True)
         self.env = Environment(loader=FileSystemLoader(TEMPLATE_DIR))
-        self._create_default_templates()
+        self._create_templates()
 
     def generate_all(self):
         files = [f for f in os.listdir(JSON_FOLDER) if f.endswith(".json")]
@@ -23,29 +24,37 @@ class WebGenerator:
             with open(os.path.join(JSON_FOLDER, f), 'r', encoding='utf-8') as json_file:
                 hands_data.append(json.load(json_file))
         
-        try:
-            hands_data.sort(key=lambda x: int(x['facts']['board'].replace('Board ', '')))
-        except ValueError:
-            pass 
+        # Robust Sorting: Extracts "1" from "Board 1" or just "1"
+        def get_board_num(item):
+            board_str = item['facts'].get('board', '0')
+            nums = re.findall(r'\d+', board_str)
+            return int(nums[0]) if nums else 0
 
-        self._render_page("index.html", "index.html", hands=hands_data)
+        hands_data.sort(key=get_board_num)
+
+        self._render("index.html", "index.html", hands=hands_data)
         
         for hand in hands_data:
-            safe_filename = hand['facts']['board'].replace(' ', '_') + ".html"
+            # Title: Use "Board X", fallback to "Board Unknown"
+            page_title = hand['facts']['board'] if hand['facts']['board'] else "Board_Unknown"
+            safe_filename = page_title.replace(' ', '_') + ".html"
+            
+            # Handviewer link
             hand['handviewer_url'] = "http://www.bridgebase.com/tools/handviewer.html?lin=" + \
                                      urllib.parse.quote(hand['facts']['raw_lin'])
-            self._render_page("hand_detail.html", safe_filename, hand=hand)
+            
+            self._render("hand_detail.html", safe_filename, hand=hand, title=page_title)
             
         print(f"Website generated in: {OUTPUT_HTML_FOLDER}/")
 
-    def _render_page(self, template_name, output_filename, **kwargs):
-        template = self.env.get_template(template_name)
-        html_content = template.render(**kwargs)
-        with open(os.path.join(OUTPUT_HTML_FOLDER, output_filename), 'w', encoding='utf-8') as f:
-            f.write(html_content)
+    def _render(self, tpl, out, **kwargs):
+        template = self.env.get_template(tpl)
+        content = template.render(**kwargs)
+        with open(os.path.join(OUTPUT_HTML_FOLDER, out), 'w', encoding='utf-8') as f:
+            f.write(content)
 
-    def _create_default_templates(self):
-        # 1. DASHBOARD (Updated to show 4 players clearly)
+    def _create_templates(self):
+        # 1. DASHBOARD
         index_html = """
         <!DOCTYPE html>
         <html>
@@ -53,31 +62,18 @@ class WebGenerator:
             <meta charset="utf-8">
             <title>Bridge Session Report</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
-            <style>
-                .player-names { font-size: 0.85em; color: #555; }
-                .verdict-tag { font-weight: bold; color: #0d6efd; }
-            </style>
         </head>
         <body class="bg-light">
             <div class="container py-5">
                 <h1 class="mb-4">Bridge Session Analysis</h1>
                 <div class="row">
                     {% for item in hands %}
-                    <div class="col-md-4 mb-4">
-                        <div class="card h-100 shadow-sm border-0">
-                            <div class="card-header bg-white d-flex justify-content-between align-items-center">
-                                <h5 class="m-0">{{ item.facts.board }}</h5>
-                                <span class="badge bg-secondary">{{ item.facts.vulnerability }}</span>
-                            </div>
-                            <div class="card-body">
-                                <div class="mb-3 text-center">
-                                    <div class="verdict-tag">{{ item.ai_analysis.verdict }}</div>
-                                </div>
-                                <div class="player-names mb-3 border-top border-bottom py-2 bg-light rounded px-2">
-                                    <div class="d-flex justify-content-between"><span>N/S:</span> <strong>{{ item.facts.hands.North.name }} & {{ item.facts.hands.South.name }}</strong></div>
-                                    <div class="d-flex justify-content-between"><span>E/W:</span> <strong>{{ item.facts.hands.East.name }} & {{ item.facts.hands.West.name }}</strong></div>
-                                </div>
-                                <a href="{{ item.facts.board | replace(' ', '_') }}.html" class="btn btn-primary w-100">View Analysis</a>
+                    <div class="col-md-3 mb-3">
+                        <div class="card shadow-sm h-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">{{ item.facts.board }}</h5>
+                                <span class="badge bg-primary mb-3">{{ item.ai_analysis.verdict }}</span>
+                                <a href="{{ item.facts.board | replace(' ', '_') }}.html" class="btn btn-outline-dark btn-sm w-100">View Analysis</a>
                             </div>
                         </div>
                     </div>
@@ -88,123 +84,109 @@ class WebGenerator:
         </html>
         """
         
-        # 2. DETAIL PAGE (Handles Red Team, Bullets, and Learning Data)
+        # 2. DETAIL PAGE (The 6-Step Layout)
         detail_html = """
         <!DOCTYPE html>
         <html>
         <head>
             <meta charset="utf-8">
-            <title>{{ hand.facts.board }} - Analysis</title>
+            <title>{{ title }} Analysis</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
             <style>
-                .learning-card { border-left: 4px solid #fd7e14; background-color: #fff8f3; }
-                .rec-auction-badge { font-size: 1.1em; margin-right: 5px; }
+                .section-header { border-bottom: 2px solid #dee2e6; margin-bottom: 1rem; padding-bottom: 0.5rem; color: #495057; }
+                .bid-badge { font-family: monospace; font-size: 1.1em; padding: 8px 12px; }
+                .coach-card { background-color: #f8f9fa; border-left: 5px solid #0dcaf0; }
+                .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
             </style>
         </head>
         <body class="bg-white">
             <div class="container py-4">
-                <div class="d-flex justify-content-between mb-3">
-                    <a href="index.html" class="btn btn-secondary">&larr; Dashboard</a>
-                    <a href="{{ hand.handviewer_url }}" target="_blank" class="btn btn-danger">▶ Replay on BBO</a>
-                </div>
-                
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body d-flex justify-content-between align-items-center">
-                        <div>
-                            <h2 class="display-6 m-0">{{ hand.facts.board }}</h2>
-                            <h4 class="text-primary mt-2">{{ hand.ai_analysis.verdict }}</h4>
-                        </div>
-                        <div class="text-end">
-                            <div class="badge bg-dark mb-1">Dealer: {{ hand.facts.dealer }}</div><br>
-                            <div class="badge bg-warning text-dark">Vul: {{ hand.facts.vulnerability }}</div>
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <a href="index.html" class="btn btn-outline-secondary">&larr; Back to Dashboard</a>
+                    <h2 class="m-0">{{ title }}</h2>
+                    <a href="{{ hand.handviewer_url }}" target="_blank" class="btn btn-danger">Replay Hand</a>
                 </div>
 
-                <div class="row mb-4">
-                    <div class="col-md-7">
-                        <div class="card h-100">
-                            <div class="card-header bg-dark text-white">The Deal</div>
-                            <div class="card-body text-center">
-                                <div class="row">
-                                    <div class="col-12 mb-2">
-                                        <small>{{ hand.facts.hands.North.name }}</small><br>
-                                        <strong>North</strong><br>{{ hand.facts.hands.North.stats.distribution_str }}
-                                    </div>
-                                    <div class="col-4 text-start">
-                                        <small>{{ hand.facts.hands.West.name }}</small><br>
-                                        <strong>West</strong><br>{{ hand.facts.hands.West.stats.hcp }} HCP
-                                    </div>
-                                    <div class="col-4"><img src="https://bridgebase.com/mobile/images/table_felt.jpg" class="img-fluid opacity-50"></div>
-                                    <div class="col-4 text-end">
-                                        <small>{{ hand.facts.hands.East.name }}</small><br>
-                                        <strong>East</strong><br>{{ hand.facts.hands.East.stats.hcp }} HCP
-                                    </div>
-                                    <div class="col-12 mt-2">
-                                        <small>{{ hand.facts.hands.South.name }}</small><br>
-                                        <strong>South</strong><br>{{ hand.facts.hands.South.stats.distribution_str }}
-                                    </div>
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="row text-center">
+                                    <div class="col-12"><strong>North</strong><br>{{ hand.facts.hands.North.stats.distribution_str }}</div>
+                                    <div class="col-4"><strong>West</strong><br>{{ hand.facts.hands.West.stats.hcp }} HCP</div>
+                                    <div class="col-4"><img src="https://bridgebase.com/mobile/images/table_felt.jpg" class="img-fluid opacity-25"></div>
+                                    <div class="col-4"><strong>East</strong><br>{{ hand.facts.hands.East.stats.hcp }} HCP</div>
+                                    <div class="col-12"><strong>South</strong><br>{{ hand.facts.hands.South.stats.distribution_str }}</div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-5">
+                    <div class="col-md-4">
                         <div class="card h-100">
-                            <div class="card-header bg-secondary text-white">Auction History</div>
+                            <div class="card-header">Actual Auction</div>
                             <div class="card-body d-flex align-items-center justify-content-center">
-                                <div class="alert alert-light border w-100 text-center font-monospace">
-                                    {{ hand.facts.auction | join(' - ') }}
-                                </div>
+                                <div class="font-monospace">{{ hand.facts.auction | join(' - ') }}</div>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="row">
-                    <div class="col-md-12 mb-3">
-                        <div class="card border-primary">
-                            <div class="card-header bg-primary text-white">Audrey's Analysis</div>
-                            <div class="card-body">
-                                <ul class="list-group list-group-flush mb-3">
-                                    {% for point in hand.ai_analysis.analysis_bullets %}
-                                    <li class="list-group-item">🔹 {{ point }}</li>
-                                    {% endfor %}
-                                </ul>
+                <h4 class="section-header">🔍 1. Critique of Actual Play</h4>
+                <div class="mb-5">
+                    <ul class="list-group">
+                        {% for point in hand.ai_analysis.actual_critique %}
+                        <li class="list-group-item border-0">❌ {{ point }}</li>
+                        {% endfor %}
+                    </ul>
+                </div>
 
-                                {% if hand.ai_analysis.recommended_auction %}
-                                <div class="alert alert-warning shadow-sm mt-3">
-                                    <h5><span class="badge bg-warning text-dark me-2">Correction</span> Recommended Bidding Sequence:</h5>
-                                    <div class="d-flex flex-wrap mt-2">
-                                        {% for bid in hand.ai_analysis.recommended_auction %}
-                                            <span class="badge bg-white text-dark border border-secondary rec-auction-badge p-2">{{ bid }}</span>
-                                            {% if not loop.last %} <span class="text-muted align-self-center mx-1">&rarr;</span> {% endif %}
-                                        {% endfor %}
-                                    </div>
-                                </div>
-                                {% endif %}
+                <h4 class="section-header">📘 2. The Fundamentals (Standard American)</h4>
+                <div class="card mb-5 border-primary">
+                    <div class="card-body">
+                        <p class="lead">{{ hand.ai_analysis.basic_section.analysis }}</p>
+                        {% if hand.ai_analysis.basic_section.recommended_auction %}
+                        <div class="mt-3">
+                            <h6>✅ Correct Standard Sequence:</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% for bid in hand.ai_analysis.basic_section.recommended_auction %}
+                                <span class="badge bg-primary bid-badge">{{ bid }}</span>
+                                {% endfor %}
                             </div>
                         </div>
+                        {% endif %}
                     </div>
                 </div>
 
-                {% if hand.ai_analysis.learning_data %}
-                <h4 class="mt-4 mb-3 text-secondary">Coach's Corner</h4>
+                <h4 class="section-header">🚀 3. Advanced Concepts</h4>
+                <div class="card mb-5 adv-card">
+                    <div class="card-body">
+                        <p>{{ hand.ai_analysis.advanced_section.analysis }}</p>
+                        {% if hand.ai_analysis.advanced_section.sequence %}
+                        <div class="mt-3">
+                            <h6>✨ Advanced Sequence:</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                {% for bid in hand.ai_analysis.advanced_section.sequence %}
+                                <span class="badge bg-warning text-dark bid-badge">{{ bid }}</span>
+                                {% endfor %}
+                            </div>
+                        </div>
+                        {% endif %}
+                    </div>
+                </div>
+
+                <h4 class="section-header">🎓 4. Coach's Corner</h4>
                 <div class="row">
-                    {% for item in hand.ai_analysis.learning_data %}
+                    {% for item in hand.ai_analysis.coaches_corner %}
                     <div class="col-md-6 mb-3">
-                        <div class="card learning-card h-100">
+                        <div class="card coach-card h-100">
                             <div class="card-body">
-                                <h6 class="text-uppercase text-muted small">{{ item.category }} | {{ item.player }}</h6>
-                                <h5 class="card-title text-dark">{{ item.topic }}</h5>
-                                <p class="card-text small text-muted">
-                                    Assigned to {{ item.player }} based on this deal.
-                                </p>
+                                <small class="text-uppercase text-muted">{{ item.player }} | {{ item.category }}</small>
+                                <h5 class="card-title">{{ item.topic }}</h5>
                             </div>
                         </div>
                     </div>
                     {% endfor %}
                 </div>
-                {% endif %}
 
             </div>
         </body>
@@ -218,5 +200,4 @@ class WebGenerator:
             f.write(detail_html)
 
 if __name__ == "__main__":
-    gen = WebGenerator()
-    gen.generate_all()
+    WebGenerator().generate_all()

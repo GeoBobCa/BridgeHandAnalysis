@@ -125,42 +125,54 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S56TJQH4TQKD5C56J,S4H56JD68TJKC79TQ,S237KAH389AD23ACA,|rh||ah|Board 1|sv|o|mb|1S|mb|p|mb|3S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|C2|pc|C5|pc|C9|pc|CA|pg||pc|H3|pc|H2|pc|HQ|pc|H5|pg||pc|S5|pc|S4|pc|SK|pc|S8|pg||pc|S2|pc|S9|pc|ST|pc|D6|pg||pc|D5|pc|DK|pc|DA|pc|D4|pg||pc|D2|pc|D7|pc|S6|pc|D8|pg||pc|H4|pc|H6|pc|HA|pc|H7|pg||pc|D3|pc|D9|pc|SJ|pc|DT|pg||pc|HK|pc|HJ|pc|H8|pc|C3|pg||pc|C6|pc|CQ|pc|S3|pc|C4|pg||pc|S7|pc|C8|pc|SQ|pc|C7|pg||pc|CJ|pc|CT|pc|SA|pc|CK|pg||pc|H9|pc|DQ|pc|HT|pc|DJ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL CONTRACT ACHIEVED, SLAM INVESTIGATION MISSED",
-    "analysis_bullets": [
-      "North, holding 19 HCP and all four Aces (5 Key Cards), shut down slam investigation prematurely by jumping directly to 4S after the strong indication from South (3S).",
-      "South's 3S response confirmed a 5-5 trump fit and adequate values (9 HCP) for game, warranting North to proceed with control-showing bids to assess slam feasibility.",
-      "While 4S is the correct final contract due to the inevitable two Diamond losers (West KJT86, East Q974), North should have used cue bids (e.g., 4H) to confirm controls and allow South to sign off at the appropriate level.",
-      "The 4S contract is guaranteed to make exactly ten tricks, relying on the 5-4 Heart split and routine trump drawing."
+    "verdict": "MISSED SLAM",
+    "actual_critique": [
+      "North (BeaPercy) failed to initiate slam investigation despite holding a maximum opening hand (19 HCP, 5-4-3-1 distribution) and four Aces opposite a known 9+ point limit raise. Stopping at 4S was conservative.",
+      "South's 3S response was appropriate, showing good support and 8-10/11 HCP, defining the strength necessary for North to make a slam decision.",
+      "The partnership missed a highly reachable 6S contract, which requires only 12 tricks and benefits from the combined 28 HCP and 10-card trump fit, along with four Aces held by North."
     ],
-    "recommended_auction": [
-      "1S",
-      "p",
-      "3S",
-      "p",
-      "4H",
-      "p",
-      "4S",
-      "p",
-      "p",
-      "p"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "North opened 1S and South gave a Limit Raise (3S), showing 8-11 points and 4+ card support, inviting game but not forcing it. North holds a massive 19 HCP with four Aces and an excellent fit. With such a powerful hand, North must cue-bid to investigate slam. North should cue the lowest available first-round control (Aces or King of a suit) before using Blackwood. Starting with 4C shows the Club Ace and asks South to describe their controls.",
+      "recommended_auction": [
+        "1S",
+        "p",
+        "3S",
+        "p",
+        "4C",
+        "p",
+        "4H",
+        "p",
+        "4NT",
+        "p",
+        "5D",
+        "p",
+        "6S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "Given the established 10-card trump fit and North\u2019s extreme concentration of controls (four Aces), the appropriate advanced technique is Key Card Blackwood (RKCB). After cue-bidding 4C and 4H, North uses 4NT to ask for Key Cards (four Aces + Trump King). South responds 5D (showing 1 or 4 key cards, typically 1 key card in 1430 RKCB conventions). North, knowing partner has QJ in trump and the KQT of Hearts, concludes that 6S is safe, as only two losers remain (and these may be reducible via good play or favorable layout).",
+      "sequence": null
+    },
+    "coaches_corner": [
       {
         "player": "North",
-        "topic": "Slam Investigation - Control/Cue Bidding",
-        "category": "Advanced"
-      },
-      {
-        "player": "Pair NS",
-        "topic": "Jump Response Agreements (Defining 3S strength)",
+        "topic": "Slam investigation after a Limit Raise",
         "category": "Review"
       },
       {
         "player": "North",
-        "topic": "Slam Decision Making (Recognizing permanent losers despite Ace control)",
+        "topic": "Cue-bidding basics (starting the slam sequence)",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Use of Key Card Blackwood (RKCB) after controls are established",
         "category": "Advanced"
       }
     ]
   },
-  "timestamp": "2025-12-20 19:40:57"
+  "timestamp": "2025-12-20 21:37:21"
 }

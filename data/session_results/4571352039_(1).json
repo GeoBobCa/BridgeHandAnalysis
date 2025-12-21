@@ -125,46 +125,63 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S8KAHTQD238C39TJA,S3JH3468KD69TAC26,S2467QH59AD457JCQ,|rh||ah|Board 3|sv|e|mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|p|mb|p|pg||pc|DA|pc|D4|pc|DQ|pc|D2|pg||pc|C2|pc|CQ|pc|CK|pc|CA|pg||pc|CJ|pc|C6|pc|D5|pc|C4|pg||pc|CT|pc|H3|pc|D7|pc|C5|pg||pc|C9|pc|H4|pc|H5|pc|C7|pg||pc|SA|pc|S3|pc|S2|pc|S5|pg||pc|SK|pc|SJ|pc|S4|pc|S9|pg||pc|S8|pc|D6|pc|SQ|pc|ST|pg||pc|S7|pc|H2|pc|D3|pc|H6|pg||pc|S6|pc|H7|pc|D8|pc|D9|pg||pc|HA|pc|HJ|pc|HT|pc|H8|pg||pc|H9|pc|C8|pc|HQ|pc|HK|pg||pc|DT|pc|DJ|pc|DK|pc|C3|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME (4 Spades)",
-    "analysis_bullets": [
-      "South's opening bid (1C) and subsequent rebid (1N, 14 HCP, 3=2=3=5 distribution, denying four spades) were accurate descriptive bids.",
-      "North, holding 9 HCP and a 5-card major suit (Spades), was too passive, accepting 1N when the partnership had ample points (23 HCP) to investigate game.",
-      "The 5-3 spade fit, backed by excellent side controls (Aces and Queens), makes 4 Spades a strong contract, likely yielding 10 tricks.",
-      "North should have bid 2S (invitational) over 1N, allowing South (with a maximum 1N hand) to accept the invitation into 4S."
+    "verdict": "MISSED GAME",
+    "actual_critique": [
+      "North committed a serious error by passing 1NT. With 9 HCP and a 5-card major, knowing partner had opened (14+ HCP, total 23+ HCP), North was obligated to invite game (2NT) or even bid 3NT directly.",
+      "The partnership settled prematurely. They failed to fully investigate the strength and potential fit, resulting in a low-level contract when 3NT or possibly 4S were viable options.",
+      "South's 1NT rebid, while technically correct (12-14 HCP, denying 4 Spades), undersold the overall potential of the hand, particularly the strong 5-card Club suit, which might have led North to investigate further."
     ],
-    "recommended_auction": [
-      "1C",
-      "P",
-      "1S",
-      "P",
-      "1N",
-      "P",
-      "2S",
-      "P",
-      "3S",
-      "P",
-      "4S",
-      "P",
-      "P",
-      "P"
-    ],
-    "learning_data": [
+    "basic_section": {
+      "analysis": "South opens 1C (14 HCP). North responds 1S (5-card suit, 9 HCP). South rebids 1NT, showing 12-14 balanced/semi-balanced and denying four-card spade support. Since the partnership holds 23 HCP, game is highly likely. North must use 2NT to invite game, promising 8-10 points. South, having a maximum 14 HCP, accepts the invitation by bidding 3NT, the most likely resting place.",
+      "recommended_auction": [
+        "1C",
+        "p",
+        "1S",
+        "p",
+        "1N",
+        "p",
+        "2N",
+        "p",
+        "3N",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "advanced_section": {
+      "analysis": "While 3NT is achievable, an expert pair would also explore the 5-3 Spade fit (8 cards total) given the good quality honors (AKQ) and the strong 5-card minor in South's hand, which offers excellent side suit development/discard potential. If South uses 2C (a rebid of the suit, showing 13-16 HCP and good clubs) instead of 1NT, it gives North space to confirm the 5-card suit with 2S (8-9 HCP), allowing South to jump directly to the likely winning 4S contract based on distribution and high card strength.",
+      "sequence": [
+        "1C",
+        "p",
+        "1S",
+        "p",
+        "2C",
+        "p",
+        "2S",
+        "p",
+        "4S",
+        "p",
+        "p",
+        "p"
+      ]
+    },
+    "coaches_corner": [
       {
         "player": "North",
-        "topic": "Invitational Bids after Opener's 1NT Rebid",
+        "topic": "Inviting Game after Opener's 1NT Rebid (Total Partnership Strength)",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Opener Rebids: Choosing between 1NT and Re-bidding a Strong 5-card Minor",
         "category": "Review"
       },
       {
         "player": "Pair NS",
-        "topic": "Recognizing Game Potential in 5-3 Major Suit Fits (23+ HCP)",
+        "topic": "Game Determination with 8-Card Major Fits (5-3) and strong minors",
         "category": "Advanced"
-      },
-      {
-        "player": "South",
-        "topic": "Accepting Game Invitations with Maximum Point Counts",
-        "category": "Review"
       }
     ]
   },
-  "timestamp": "2025-12-20 19:41:33"
+  "timestamp": "2025-12-20 21:38:11"
 }
