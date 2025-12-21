@@ -15,6 +15,10 @@
                         <div class="card shadow-sm h-100">
                             <div class="card-body text-center">
                                 <h5 class="card-title">{{ item.facts.board }}</h5>
+                                <div class="mb-2">
+                                    <span class="badge bg-secondary">Vul: {{ item.facts.vulnerability }}</span>
+                                    <span class="badge bg-dark">Dlr: {{ item.facts.dealer }}</span>
+                                </div>
                                 <span class="badge bg-primary mb-3">{{ item.ai_analysis.verdict }}</span>
                                 <a href="{{ item.facts.board | replace(' ', '_') }}.html" class="btn btn-outline-dark btn-sm w-100">View Analysis</a>
                             </div>

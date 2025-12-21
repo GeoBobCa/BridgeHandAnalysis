@@ -7,15 +7,18 @@ class LINParser:
     """
     
     def parse_single_hand(self, raw_lin_data: str, filename: str = "Unknown") -> Dict:
-        """
-        Main entry point: Converts a raw LIN string into a clean dictionary.
-        """
-        # 1. Extract Basic Metadata
+        # 1. Extract Board Name from LIN (e.g., |ah|Board 13|)
+        # Fallback to filename if not found
+        board_name = filename.replace('_', ' ').replace('.lin', '')
+        ah_match = re.search(r'ah\|([^|]+)\|', raw_lin_data)
+        if ah_match:
+            board_name = ah_match.group(1).strip()
+
         data = {
-            "board": filename.replace('_', ' ').replace('.lin', ''),
+            "board": board_name,
             "dealer": self._get_dealer(raw_lin_data),
             "vulnerability": self._get_vuln(raw_lin_data),
-            "contract": self._get_contract(raw_lin_data), # Added specifically for Red Teaming
+            "contract": self._get_contract(raw_lin_data),
             "auction": self._parse_auction(raw_lin_data),
             "play": self._parse_play(raw_lin_data),
             "hands": self._parse_hands(raw_lin_data),
@@ -24,7 +27,6 @@ class LINParser:
         return data
 
     def _get_dealer(self, lin: str) -> str:
-        # LIN format: 'md|1...' where 1=South, 2=West, 3=North, 4=East
         match = re.search(r'md\|([1-4])', lin)
         if match:
             map_dealer = {'1': 'South', '2': 'West', '3': 'North', '4': 'East'}
@@ -32,7 +34,6 @@ class LINParser:
         return 'Unknown'
 
     def _get_vuln(self, lin: str) -> str:
-        # LIN format: 'sv|...' where o=None, n=NS, e=EW, b=Both
         match = re.search(r'sv\|([oneb])', lin)
         if match:
             map_vuln = {'o': 'None', 'n': 'N/S', 'e': 'E/W', 'b': 'Both'}
@@ -40,48 +41,38 @@ class LINParser:
         return 'None'
     
     def _get_contract(self, lin: str) -> str:
-        # LIN format for contract often appears in 'mb' (bids). 
-        # This is a basic extractor for the final contract.
-        # We rely on the auction parser for detailed sequences, 
-        # but this helper finds the last significant bid.
         bids = re.findall(r'mb\|([^|]+)\|', lin)
         valid_bids = [b for b in bids if b.lower() not in ['p', 'pass', 'd', 'dbl', 'r', 'rdbl', 'an']]
         if valid_bids:
-            return valid_bids[-1] # The last bid made
+            return valid_bids[-1]
         return "Pass"
 
     def _parse_auction(self, lin: str) -> List[str]:
-        # Extract all 'mb|...|' tags
         raw_bids = re.findall(r'mb\|([^|]+)\|', lin)
-        # Clean them up (remove alerts 'an', etc.)
         clean_bids = [b for b in raw_bids if b != 'an']
         return clean_bids
 
     def _parse_play(self, lin: str) -> List[str]:
-        # Extract all 'pc|...|' tags (Play Card)
         cards = re.findall(r'pc\|([^|]+)\|', lin)
         return cards
 
     def _parse_hands(self, lin: str) -> Dict:
-        # LIN Encode: md|1S...H...D...C...,...|
-        # 1=South hand, then West, North, East comma separated.
         match = re.search(r'md\|[1-4]([^|]+)\|', lin)
         if not match:
             return {}
 
         raw_hands = match.group(1).split(',')
         
-        # Helper to convert "SKQJ..." to separate suits
         def parse_hand_string(h_str):
             suits = {'S': '', 'H': '', 'D': '', 'C': ''}
             current_suit = ''
+            # BBO encoding: S...H...D...C...
             for char in h_str:
                 if char in suits:
                     current_suit = char
                 else:
                     suits[current_suit] += char
             
-            # Calculate HCP
             hcp = 0
             for s in suits.values():
                 for card in s:
@@ -90,15 +81,11 @@ class LINParser:
                     elif card == 'Q': hcp += 2
                     elif card == 'J': hcp += 1
             
-            # Dist string
             dist = f"{len(suits['S'])}={len(suits['H'])}={len(suits['D'])}={len(suits['C'])}"
             return {"cards": suits, "hcp": hcp, "distribution_str": dist}
 
-        # Map properly based on Dealer (LIN is quirky here, but let's assume standard rotation order)
-        # If dealer is 1 (South), the string is S,W,N,E
-        # Note: BBO LINs often only give 3 hands and rely on logic for the 4th, 
-        # but modern files usually include all. We will implement basic parsing here.
-        
+        # BBO LIN usually provides South, West, North (and sometimes East is implied, but usually present)
+        # Note: LIN 'md|1...' means South is first.
         hands_dict = {
             "South": {"name": "South", "stats": parse_hand_string(raw_hands[0] if len(raw_hands) > 0 else "")},
             "West":  {"name": "West",  "stats": parse_hand_string(raw_hands[1] if len(raw_hands) > 1 else "")},
@@ -106,7 +93,6 @@ class LINParser:
             "East":  {"name": "East",  "stats": parse_hand_string(raw_hands[3] if len(raw_hands) > 3 else "")},
         }
         
-        # Try to find player names 'pn|South,West,North,East|'
         name_match = re.search(r'pn\|([^|]+)\|', lin)
         if name_match:
             names = name_match.group(1).split(',')

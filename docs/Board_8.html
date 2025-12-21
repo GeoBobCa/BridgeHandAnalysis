@@ -3,75 +3,102 @@
         <html>
         <head>
             <meta charset="utf-8">
-            <title>Board 8 - Analysis</title>
+            <title>Board 8 Analysis</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
             <style>
-                .coach-box { background-color: #e8f4f8; border-left: 5px solid #007bff; }
-                .player-name { font-size: 0.9em; color: #666; font-style: italic; }
+                .section-header { border-bottom: 2px solid #dee2e6; margin-bottom: 1rem; padding-bottom: 0.5rem; color: #495057; }
+                .bid-badge { font-family: monospace; font-size: 1.1em; padding: 8px 12px; }
+                .coach-card { background-color: #f8f9fa; border-left: 5px solid #0dcaf0; }
+                .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
+                
+                /* Hand Diagram Styles */
+                .hand-box { background: #fdfdfd; border: 1px solid #ccc; padding: 10px; border-radius: 5px; font-size: 0.9rem; }
+                .suit-symbol { display: inline-block; width: 15px; text-align: center; font-weight: bold; }
+                .suit-S { color: black; } .suit-H { color: red; }
+                .suit-D { color: orange; } .suit-C { color: green; }
+                .dealer-badge { background-color: #000; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 0.7em; margin-left: 5px; }
             </style>
         </head>
-        <body class="bg-light">
+        <body class="bg-white">
             <div class="container py-4">
-                <div class="d-flex justify-content-between mb-3">
-                    <a href="index.html" class="btn btn-secondary">&larr; Back to Dashboard</a>
-                    <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C2S24KH37AD34JQKCJQ%2CSTJAH249D67TAC2KA%2CS389H68JD89C3478T%2C%7Crh%7C%7Cah%7CBoard%208%7Csv%7Co%7Cmb%7C1D%7Cmb%7Cp%7Cmb%7C1H%7Cmb%7C2D%7Cmb%7C2H%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CDK%7Cpc%7CDA%7Cpc%7CD8%7Cpc%7CD2%7Cpg%7C%7Cpc%7CCA%7Cpc%7CC3%7Cpc%7CC5%7Cpc%7CCQ%7Cpg%7C%7Cpc%7CST%7Cpc%7CS3%7Cpc%7CS5%7Cpc%7CSK%7Cpg%7C%7Cpc%7CDQ%7Cpc%7CD6%7Cpc%7CD9%7Cpc%7CD5%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CCK%7Cpc%7CC4%7Cpc%7CC6%7Cpg%7C%7Cpc%7CSA%7Cpc%7CS8%7Cpc%7CS6%7Cpc%7CS2%7Cpg%7C%7Cpc%7CD7%7Cpc%7CH6%7Cpc%7CHT%7Cpc%7CD3%7Cpg%7C%7Cpc%7CS7%7Cpc%7CS4%7Cpc%7CSJ%7Cpc%7CS9%7Cpg%7C%7Cpc%7CDT%7Cpc%7CH8%7Cpc%7CHQ%7Cpc%7CD4%7Cpg%7C%7Cpc%7CSQ%7Cpc%7CDJ%7Cpc%7CC2%7Cpc%7CHJ%7Cpg%7C%7Cpc%7CC7%7Cpc%7CC9%7Cpc%7CHA%7Cpc%7CH2%7Cpg%7C%7Cpc%7CH3%7Cpc%7CH9%7Cpc%7CC8%7Cpc%7CH5%7Cpg%7C%7Cpc%7CH4%7Cpc%7CCT%7Cpc%7CHK%7Cpc%7CH7%7Cpg%7C%7C" target="_blank" class="btn btn-danger">
-                        ▶ Replay Hand (BBO)
-                    </a>
-                </div>
-                
-                <div class="card mb-4 shadow-sm">
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-md-8">
-                                <h2 class="display-6">Board 8</h2>
-                                <h4 class="text-muted">FAILED PART-SCORE</h4>
-                            </div>
-                            <div class="col-md-4 text-end">
-                                <span class="badge bg-secondary">Dealer: West</span>
-                                <span class="badge bg-warning text-dark">Vul: None</span>
-                            </div>
-                        </div>
-                    </div>
+                <div class="d-flex justify-content-between mb-4">
+                    <a href="index.html" class="btn btn-outline-secondary">&larr; Back to Dashboard</a>
+                    <h2 class="m-0">Board 8</h2>
+                    <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C2S24KH37AD34JQKCJQ%2CSTJAH249D67TAC2KA%2CS389H68JD89C3478T%2C%7Crh%7C%7Cah%7CBoard%208%7Csv%7Co%7Cmb%7C1D%7Cmb%7Cp%7Cmb%7C1H%7Cmb%7C2D%7Cmb%7C2H%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CDK%7Cpc%7CDA%7Cpc%7CD8%7Cpc%7CD2%7Cpg%7C%7Cpc%7CCA%7Cpc%7CC3%7Cpc%7CC5%7Cpc%7CCQ%7Cpg%7C%7Cpc%7CST%7Cpc%7CS3%7Cpc%7CS5%7Cpc%7CSK%7Cpg%7C%7Cpc%7CDQ%7Cpc%7CD6%7Cpc%7CD9%7Cpc%7CD5%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CCK%7Cpc%7CC4%7Cpc%7CC6%7Cpg%7C%7Cpc%7CSA%7Cpc%7CS8%7Cpc%7CS6%7Cpc%7CS2%7Cpg%7C%7Cpc%7CD7%7Cpc%7CH6%7Cpc%7CHT%7Cpc%7CD3%7Cpg%7C%7Cpc%7CS7%7Cpc%7CS4%7Cpc%7CSJ%7Cpc%7CS9%7Cpg%7C%7Cpc%7CDT%7Cpc%7CH8%7Cpc%7CHQ%7Cpc%7CD4%7Cpg%7C%7Cpc%7CSQ%7Cpc%7CDJ%7Cpc%7CC2%7Cpc%7CHJ%7Cpg%7C%7Cpc%7CC7%7Cpc%7CC9%7Cpc%7CHA%7Cpc%7CH2%7Cpg%7C%7Cpc%7CH3%7Cpc%7CH9%7Cpc%7CC8%7Cpc%7CH5%7Cpg%7C%7Cpc%7CH4%7Cpc%7CCT%7Cpc%7CHK%7Cpc%7CH7%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">Replay Hand</a>
                 </div>
 
-                <div class="row mb-4">
-                    <div class="col-md-6">
-                        <div class="card h-100">
-                            <div class="card-header bg-dark text-white">The Deal (Verified)</div>
-                            <div class="card-body">
-                                <div class="row text-center align-items-center">
-                                    <div class="col-12 mb-3">
-                                        <div class="player-name">BeaPercy</div>
-                                        <strong>North (16 HCP)</strong><br>
-                                        3-3-4-3
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="player-name">georgenamg</div>
-                                        <strong>West</strong><br>
-                                        16 HCP
-                                    </div>
-                                    <div class="col-6">
-                                        <img src="https://bridgebase.com/mobile/images/table_felt.jpg" class="img-fluid rounded shadow-sm" style="opacity:0.5">
-                                    </div>
-                                    <div class="col-3">
-                                        <div class="player-name">bobj245</div>
-                                        <strong>East</strong><br>
-                                        1 HCP
-                                    </div>
-                                    <div class="col-12 mt-3">
-                                        <div class="player-name">Fish075</div>
-                                        <strong>South (7 HCP)</strong><br>
-                                        4-4-2-3
+                <div class="row mb-5">
+                    <div class="col-md-8">
+                        <div class="card bg-success bg-opacity-10 border-success">
+                            <div class="card-body position-relative" style="min-height: 400px;">
+                                
+                                <div class="position-absolute top-50 start-50 translate-middle text-center bg-white p-3 border rounded shadow-sm" style="z-index: 2;">
+                                    <strong>Board 8</strong><br>
+                                    Dealer: West<br>
+                                    Vul: None
+                                </div>
+
+                                <div class="position-absolute top-0 start-50 translate-middle-x mt-2 w-50">
+                                    <div class="hand-box shadow-sm">
+                                        <strong>North</strong> (BeaPercy)
+                                        
+                                        <div class="float-end fw-bold">1 HCP</div>
+                                        <hr class="my-1">
+                                        <div><span class="suit-symbol suit-S">♠</span> 389</div>
+                                        <div><span class="suit-symbol suit-H">♥</span> 68J</div>
+                                        <div><span class="suit-symbol suit-D">♦</span> 89</div>
+                                        <div><span class="suit-symbol suit-C">♣</span> 3478T</div>
                                     </div>
                                 </div>
+
+                                <div class="position-absolute top-50 start-0 translate-middle-y ms-2 w-25">
+                                    <div class="hand-box shadow-sm">
+                                        <strong>West</strong> (georgenamg)
+                                        <span class="dealer-badge">DLR</span>
+                                        <div class="fw-bold">16 HCP</div>
+                                        <hr class="my-1">
+                                        <div><span class="suit-symbol suit-S">♠</span> TJA</div>
+                                        <div><span class="suit-symbol suit-H">♥</span> 249</div>
+                                        <div><span class="suit-symbol suit-D">♦</span> 67TA</div>
+                                        <div><span class="suit-symbol suit-C">♣</span> 2KA</div>
+                                    </div>
+                                </div>
+
+                                <div class="position-absolute top-50 end-0 translate-middle-y me-2 w-25">
+                                    <div class="hand-box shadow-sm">
+                                        <strong>East</strong> (bobj245)
+                                        
+                                        <div class="fw-bold">0 HCP</div>
+                                        <hr class="my-1">
+                                        <div><span class="suit-symbol suit-S">♠</span> </div>
+                                        <div><span class="suit-symbol suit-H">♥</span> </div>
+                                        <div><span class="suit-symbol suit-D">♦</span> </div>
+                                        <div><span class="suit-symbol suit-C">♣</span> </div>
+                                    </div>
+                                </div>
+
+                                <div class="position-absolute bottom-0 start-50 translate-middle-x mb-2 w-50">
+                                    <div class="hand-box shadow-sm">
+                                        <strong>South</strong> (Fish075)
+                                        
+                                        <div class="float-end fw-bold">16 HCP</div>
+                                        <hr class="my-1">
+                                        <div><span class="suit-symbol suit-S">♠</span> 24K</div>
+                                        <div><span class="suit-symbol suit-H">♥</span> 37A</div>
+                                        <div><span class="suit-symbol suit-D">♦</span> 34JQK</div>
+                                        <div><span class="suit-symbol suit-C">♣</span> JQ</div>
+                                    </div>
+                                </div>
+                                
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
+                    
+                    <div class="col-md-4">
                         <div class="card h-100">
-                            <div class="card-header bg-dark text-white">Auction History</div>
-                            <div class="card-body font-monospace d-flex align-items-center justify-content-center">
-                                <div class="p-3 bg-light rounded border w-100 text-center">
+                            <div class="card-header">Actual Auction</div>
+                            <div class="card-body d-flex align-items-center justify-content-center">
+                                <div class="font-monospace text-center">
                                     1D - p - 1H - 2D - 2H - p - p - p
                                 </div>
                             </div>
@@ -79,35 +106,97 @@
                     </div>
                 </div>
 
-                <div class="card mb-3">
-                    <div class="card-header bg-success text-white">Audrey's Analysis</div>
+                <h4 class="section-header">🔍 1. Critique of Actual Play</h4>
+                <div class="mb-5">
+                    <ul class="list-group">
+                        
+                        <li class="list-group-item border-0">❌ The E/W partnership, holding 24+ combined HCP and a known Heart fit, settled prematurely in 2H. They should have continued searching for the optimal 3NT or 4H game contract.</li>
+                        
+                        <li class="list-group-item border-0">❌ South correctly made a highly descriptive jump overcall of 2D (16 HCP, 5+ Diamonds), setting a competitive tone. However, N/S were too passive afterwards, failing to push E/W higher or explore 3D competition.</li>
+                        
+                        <li class="list-group-item border-0">❌ West’s bidding was too timid after South’s 2D overcall. With 16 HCP, West needed to make a forcing or highly invitational rebid to encourage East towards game.</li>
+                        
+                    </ul>
+                </div>
+
+                <h4 class="section-header">📘 2. The Fundamentals (Standard American)</h4>
+                <div class="card mb-5 border-primary">
                     <div class="card-body">
-                        <h5>Standard American Critique</h5>
-                        <p>The auction was highly irregular and led to a catastrophic contract. North, holding 16 HCP, made a severe error by passing West's 1D opening. Standard SAYC requires a response, likely 1NT (12-14, balanced) or a Takeout Double to keep the auction open for a response with this strength. East's subsequent 1H bid on 1 HCP was a highly speculative, unwarranted entry into the auction, which ultimately derailed the deal entirely. South's 2D bid was also incorrect, as South held only two diamonds. The final contract of 2H by East was doomed because the N/S partnership held the true trump suit (Hearts, 7 cards, including the KQTx) and the point advantage (23 HCP vs 17 HCP). E/W located a weak 6-card fit where N/S held trump control. E/W managed to win only 4 tricks, failing the part-score contract by 4 tricks. N/S missed an easy game opportunity, most likely 3NT (23 combined HCP).</p>
-                        <hr>
-                        <button class="btn btn-outline-dark btn-sm" type="button" data-bs-toggle="collapse" data-bs-target="#advancedBox">
-                            🎓 Toggle Advanced Analysis
-                        </button>
-                        <div class="collapse mt-3" id="advancedBox">
-                            <div class="card card-body bg-light border-warning">
-                                <strong>Advanced Insight:</strong>
-                                The key failure was not a complex play technique but the total breakdown of competitive bidding principles. North's 16 HCP hand, containing excellent controls (three Aces and a King), was prime for seeking game, specifically 3NT. If North had utilized a Takeout Double over 1D, the partnership could have easily located the 3NT game potential or possibly 4S (though the fit is only 7 cards). N/S had the points and controls to run the minor suits and establish 3NT, achieving at least 9 tricks based on their club and spade winners and external controls, proving that the bidding mechanism, not the play, determined the outcome.
+                        <p class="lead">West opens 1D. South has an ideal hand for a jump overcall (2D), showing 12-16 HCP and a strong five-card Diamond suit. North, with only 1 HCP, must pass. East/West must recognize their combined strength (at least 24 HCP) and their likely 8-card Heart fit (E is assumed to hold 4+ Hearts while W has 3). After South's intrusion, E/W must use appropriate forcing bids or game tries to reach 4H or 3NT, which are excellent contracts given their high card distribution. Settling for 2H falls short of maximizing scoring potential.</p>
+                        
+                        <div class="mt-3">
+                            <h6>✅ Correct Standard Sequence:</h6>
+                            <div class="d-flex flex-wrap gap-2">
+                                
+                                <span class="badge bg-primary bid-badge">1D</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">1H</span>
+                                
+                                <span class="badge bg-primary bid-badge">2D</span>
+                                
+                                <span class="badge bg-primary bid-badge">2H (W, showing support for H, minimum interest)</span>
+                                
+                                <span class="badge bg-primary bid-badge">3H (E, game try, showing top end of 1H overcall)</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">4H (W, accepting the game try)</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                                <span class="badge bg-primary bid-badge">p</span>
+                                
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+
+                <h4 class="section-header">🚀 3. Advanced Concepts</h4>
+                <div class="card mb-5 adv-card">
+                    <div class="card-body">
+                        <p>No advanced conventions are strictly necessary for the N/S pair due to their extremely limited combined assets. However, E/W should use Lightner Doubles if N/S ever bid a competing game, or control-bidding sequences (e.g., cue-bidding the opponent's suit) to confirm slam potential, though 4H is likely the limit here.</p>
+                        
+                    </div>
+                </div>
+
+                <h4 class="section-header">🎓 4. Coach's Corner</h4>
+                <div class="row">
+                    
+                    <div class="col-md-6 mb-3">
+                        <div class="card coach-card h-100">
+                            <div class="card-body">
+                                <small class="text-uppercase text-muted">South | Review</small>
+                                <h5 class="card-title">Jump Overcalls (Competitive Bidding)</h5>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                
-                <div class="card coach-box mb-5">
-                    <div class="card-body">
-                        <h4 class="text-primary">💡 Coach's Corner: The Mandatory Response and the Power of the Takeout Double</h4>
-                        <p>When your partner opens the bidding, you must respond if you have 6+ HCP. When an opponent opens the bidding, you must respond or intervene if you have 8+ HCP, especially if you hold 12+ HCP. North, with 16 HCP, violated this fundamental rule by passing 1D. Passing with this strength cedes control of the auction to the opponents. A standard approach here would be a Takeout Double, promising general support for the unbid suits (specifically the majors) and 10+ HCP, or a 1NT bid (showing 12-14 balanced, which is slightly under-range but sometimes acceptable to guarantee a game try). By passing, North allowed East to steal the auction cheaply, leading to a massive penalty for the North-South side's failure to compete for the best contract (3NT).</p>
+                    
+                    <div class="col-md-6 mb-3">
+                        <div class="card coach-card h-100">
+                            <div class="card-body">
+                                <small class="text-uppercase text-muted">Pair E/W | Review</small>
+                                <h5 class="card-title">Finding Game with Strong Combined Hands (24+ HCP)</h5>
+                            </div>
+                        </div>
                     </div>
+                    
+                    <div class="col-md-6 mb-3">
+                        <div class="card coach-card h-100">
+                            <div class="card-body">
+                                <small class="text-uppercase text-muted">Pair N/S | Review</small>
+                                <h5 class="card-title">Competitive Bidding Thresholds (Knowing when to stop competing against a likely game)</h5>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
-                
 
             </div>
-            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
         </body>
         </html>
         
