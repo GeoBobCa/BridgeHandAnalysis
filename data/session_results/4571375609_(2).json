@@ -1,0 +1,164 @@
+{
+  "facts": {
+    "board": "4571375609 (2)",
+    "dealer": "East",
+    "vulnerability": "Both",
+    "contract": "3C",
+    "auction": [
+      "p",
+      "1D",
+      "1S",
+      "2H",
+      "p",
+      "3C",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "HA",
+      "H2",
+      "H4",
+      "H5",
+      "S3",
+      "SA",
+      "S4",
+      "S2",
+      "D2",
+      "D6",
+      "DT",
+      "DA",
+      "SK",
+      "S7",
+      "S8",
+      "S6",
+      "HQ",
+      "HK",
+      "H6",
+      "HJ",
+      "C5",
+      "C4",
+      "CQ",
+      "C2",
+      "C3",
+      "C7",
+      "CK",
+      "CJ",
+      "C8",
+      "ST",
+      "CA",
+      "CT",
+      "D8",
+      "D3",
+      "DJ",
+      "D7",
+      "H3",
+      "H9",
+      "C6",
+      "D4",
+      "DK",
+      "D5",
+      "H7",
+      "D9",
+      "DQ",
+      "S5",
+      "H8",
+      "SJ",
+      "S9",
+      "SQ",
+      "C9",
+      "HT"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "269",
+            "H": "5J",
+            "D": "8TQK",
+            "C": "36QA"
+          },
+          "hcp": 12,
+          "distribution_str": "3=2=4=4"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "35QK",
+            "H": "QA",
+            "D": "345A",
+            "C": "27T"
+          },
+          "hcp": 15,
+          "distribution_str": "4=2=4=3"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "7A",
+            "H": "2378K",
+            "D": "2J",
+            "C": "589K"
+          },
+          "hcp": 11,
+          "distribution_str": "2=5=2=4"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S269H5JD8TQKC36QA,S35QKHQAD345AC27T,S7AH2378KD2JC589K,|rh||ah|Board 10|sv|b|mb|p|mb|1D|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|HA|pc|H2|pc|H4|pc|H5|pg||pc|S3|pc|SA|pc|S4|pc|S2|pg||pc|D2|pc|D6|pc|DT|pc|DA|pg||pc|SK|pc|S7|pc|S8|pc|S6|pg||pc|HQ|pc|HK|pc|H6|pc|HJ|pg||pc|C5|pc|C4|pc|CQ|pc|C2|pg||pc|C3|pc|C7|pc|CK|pc|CJ|pg||pc|C8|pc|ST|pc|CA|pc|CT|pg||pc|D8|pc|D3|pc|DJ|pc|D7|pg||pc|H3|pc|H9|pc|C6|pc|D4|pg||pc|DK|pc|D5|pc|H7|pc|D9|pg||pc|DQ|pc|S5|pc|H8|pc|SJ|pg||pc|S9|pc|SQ|pc|C9|pc|HT|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "MISSED GAME",
+    "analysis_bullets": [
+      "North failed to recognize the partnership's potential for game (23+ combined HCP) after South described a strong 4-card Club suit (3C).",
+      "The partnership missed the established 4-4 Club fit; North should have raised 3C to 4C, or considered 3NT based on overall strength.",
+      "South's jump rebid to 3C was descriptive of the strong Club holding (AQxx) and invited game, but was risky as it bypassed 2NT exploration.",
+      "The optimal contract, 4 Clubs, is highly makeable (estimated 10 tricks)."
+    ],
+    "recommended_auction": [
+      "1D",
+      "1S",
+      "2H",
+      "p",
+      "3C",
+      "p",
+      "4C"
+    ],
+    "learning_data": [
+      {
+        "player": "North",
+        "topic": "Game Investigation in Competitive Auctions",
+        "category": "Review"
+      },
+      {
+        "player": "North",
+        "topic": "Minor Suit Game Valuation (4-4 Fit)",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Competitive Rebids after Partner Names a Major Suit",
+        "category": "Advanced"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 20:34:55"
+}

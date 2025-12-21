@@ -1,0 +1,158 @@
+{
+  "facts": {
+    "board": "4571390341",
+    "dealer": "West",
+    "vulnerability": "E/W",
+    "contract": "2S",
+    "auction": [
+      "1H",
+      "p",
+      "p",
+      "d",
+      "p",
+      "1S",
+      "p",
+      "2S",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "H3",
+      "H2",
+      "HA",
+      "H4",
+      "D9",
+      "D2",
+      "D3",
+      "D6",
+      "DQ",
+      "D4",
+      "D5",
+      "DA",
+      "C6",
+      "C3",
+      "CQ",
+      "C2",
+      "H5",
+      "H9",
+      "S4",
+      "H7",
+      "D7",
+      "DK",
+      "DT",
+      "D8",
+      "C7",
+      "H6",
+      "C4",
+      "C9",
+      "S5",
+      "S6",
+      "ST",
+      "S2",
+      "S3",
+      "S9",
+      "SJ",
+      "S7",
+      "CT",
+      "CJ",
+      "S8",
+      "C5",
+      "HT",
+      "C8",
+      "SK",
+      "H8",
+      "CK",
+      "HJ",
+      "HQ",
+      "SA",
+      "DJ",
+      "CA",
+      "HK",
+      "SQ"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "45JK",
+            "H": "2",
+            "D": "67A",
+            "C": "69TKA"
+          },
+          "hcp": 15,
+          "distribution_str": "4=1=3=5"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "67",
+            "H": "78JKA",
+            "D": "9QK",
+            "C": "37J"
+          },
+          "hcp": 14,
+          "distribution_str": "2=5=3=3"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "38TQ",
+            "H": "456TQ",
+            "D": "24T",
+            "C": "Q"
+          },
+          "hcp": 6,
+          "distribution_str": "4=5=3=1"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S45JKH2D67AC69TKA,S67H78JKAD9QKC37J,S38TQH456TQD24TCQ,|rh||ah|Board 16|sv|e|mb|1H|mb|p|mb|p|mb|d|mb|p|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|pg||pc|H3|pc|H2|pc|HA|pc|H4|pg||pc|D9|pc|D2|pc|D3|pc|D6|pg||pc|DQ|pc|D4|pc|D5|pc|DA|pg||pc|C6|pc|C3|pc|CQ|pc|C2|pg||pc|H5|pc|H9|pc|S4|pc|H7|pg||pc|D7|pc|DK|pc|DT|pc|D8|pg||pc|C7|pc|H6|pc|C4|pc|C9|pg||pc|S5|pc|S6|pc|ST|pc|S2|pg||pc|S3|pc|S9|pc|SJ|pc|S7|pg||pc|CT|pc|CJ|pc|S8|pc|C5|pg||pc|HT|pc|C8|pc|SK|pc|H8|pg||pc|CK|pc|HJ|pc|HQ|pc|SA|pg||pc|DJ|pc|CA|pc|HK|pc|SQ|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "WELL BID TO A SAFE PARTIAL",
+    "analysis_bullets": [
+      "South correctly used the aggressive Takeout Double with a strong 15 HCP hand and excellent distribution (4=1=3=5) over West's 1 Heart opening.",
+      "North provided the essential minimum response (1S), prioritizing finding the major suit fit immediately despite holding only 6 HCP, fulfilling the requirement of the Takeout Double structure.",
+      "South's subsequent 2S raise was an excellent Limit Raise, confirming the fit, describing a maximum range for the double (15-17 points), and rightly stopping short of game given the combined partnership total of only 21 HCP and the opponent's solid heart suit.",
+      "The partnership successfully located their 4-4 spade fit at the two level, maximizing safety while avoiding the disaster of bidding an unmakeable 3NT due to the certain losses in Hearts."
+    ],
+    "recommended_auction": null,
+    "learning_data": [
+      {
+        "player": "South",
+        "topic": "Converting Takeout Double to Limit Raise",
+        "category": "Advanced"
+      },
+      {
+        "player": "North",
+        "topic": "Minimum Response to Takeout Double (Finding the Fit)",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Game Aspiration Based on Combined Strength (Rule of 25)",
+        "category": "Review"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 20:36:40"
+}

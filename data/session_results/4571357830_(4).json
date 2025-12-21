@@ -1,0 +1,171 @@
+{
+  "facts": {
+    "board": "4571357830 (4)",
+    "dealer": "North",
+    "vulnerability": "N/S",
+    "contract": "3N",
+    "auction": [
+      "p",
+      "1D",
+      "1S",
+      "2D",
+      "p",
+      "3N",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "S7",
+      "S4",
+      "S6",
+      "SJ",
+      "D3",
+      "H8",
+      "DQ",
+      "D4",
+      "D2",
+      "D6",
+      "DA",
+      "C3",
+      "DK",
+      "C4",
+      "D8",
+      "D7",
+      "D5",
+      "H9",
+      "H2",
+      "DJ",
+      "D9",
+      "DT",
+      "C5",
+      "H3",
+      "S2",
+      "S8",
+      "SA",
+      "S9",
+      "C8",
+      "C2",
+      "CA",
+      "C6",
+      "SQ",
+      "SK",
+      "S5",
+      "H6",
+      "HA",
+      "H5",
+      "HQ",
+      "H4",
+      "ST",
+      "H7",
+      "C7",
+      "HT",
+      "S3",
+      "C9",
+      "CT",
+      "HJ",
+      "CJ",
+      "CK",
+      "CQ",
+      "HK"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "378TK",
+            "H": "89A",
+            "D": "",
+            "C": "3456J"
+          },
+          "hcp": 8,
+          "distribution_str": "5=3=0=5"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "45A",
+            "H": "2357",
+            "D": "28Q",
+            "C": "89K"
+          },
+          "hcp": 9,
+          "distribution_str": "3=4=3=3"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "69",
+            "H": "6Q",
+            "D": "4679J",
+            "C": "27TQ"
+          },
+          "hcp": 5,
+          "distribution_str": "2=2=5=4"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S378TKH89ADC3456J,S45AH2357D28QC89K,S69H6QD4679JC27TQ,|rh||ah|Board 5|sv|n|mb|p|mb|1D|mb|1S|mb|2D|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|S7|pc|S4|pc|S6|pc|SJ|pg||pc|D3|pc|H8|pc|DQ|pc|D4|pg||pc|D2|pc|D6|pc|DA|pc|C3|pg||pc|DK|pc|C4|pc|D8|pc|D7|pg||pc|D5|pc|H9|pc|H2|pc|DJ|pg||pc|D9|pc|DT|pc|C5|pc|H3|pg||pc|S2|pc|S8|pc|SA|pc|S9|pg||pc|C8|pc|C2|pc|CA|pc|C6|pg||pc|SQ|pc|SK|pc|S5|pc|H6|pg||pc|HA|pc|H5|pc|HQ|pc|H4|pg||pc|ST|pc|H7|pc|C7|pc|HT|pg||pc|S3|pc|C9|pc|CT|pc|HJ|pg||pc|CJ|pc|CK|pc|CQ|pc|HK|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "FAILED GAME SELECTION",
+    "analysis_bullets": [
+      "East's jump to 3NT (18 HCP) was overly optimistic, relying solely on high card points and stoppers without fully considering the risks associated with South's inferred diamond void opposite North's 5-card holding.",
+      "The 3NT contract is fragile, failing by at least one trick against optimal defense, as Declarer cannot establish 9 tricks safely (e.g., losing the fifth Diamond trick and having no secure ninth entry/source).",
+      "North and South were too passive. With a 5-5 spade fit and 13 combined HCP, they should have competed to 2S over 2D, potentially forcing East/West into an uncomfortable defense or a penalty situation.",
+      "West's 2D bid was slightly aggressive for a 9 HCP hand with only 3-card support, misrepresenting the hand strength and encouraging East towards game based on shape commitment rather than solid values."
+    ],
+    "recommended_auction": [
+      "P",
+      "1D",
+      "1S",
+      "2D",
+      "2S",
+      "Dbl",
+      "P",
+      "P",
+      "P"
+    ],
+    "learning_data": [
+      {
+        "player": "East",
+        "topic": "Notrump Bidding Risks (Void/Distributional Hazards)",
+        "category": "Advanced"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Competitive Bidding with Major Suit Fit (Failing to bid 2S)",
+        "category": "Review"
+      },
+      {
+        "player": "West",
+        "topic": "Competitive Suit Raises (3-card minimum support)",
+        "category": "Review"
+      },
+      {
+        "player": "East",
+        "topic": "Penalty Doubles vs. Game Forcing",
+        "category": "Review"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 20:33:15"
+}

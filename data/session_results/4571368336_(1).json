@@ -1,0 +1,155 @@
+{
+  "facts": {
+    "board": "4571368336 (1)",
+    "dealer": "West",
+    "vulnerability": "None",
+    "contract": "2H",
+    "auction": [
+      "1D",
+      "p",
+      "1H",
+      "2D",
+      "2H",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "DK",
+      "DA",
+      "D8",
+      "D2",
+      "CA",
+      "C3",
+      "C5",
+      "CQ",
+      "ST",
+      "S3",
+      "S5",
+      "SK",
+      "DQ",
+      "D6",
+      "D9",
+      "D5",
+      "CJ",
+      "CK",
+      "C4",
+      "C6",
+      "SA",
+      "S8",
+      "S6",
+      "S2",
+      "D7",
+      "H6",
+      "HT",
+      "D3",
+      "S7",
+      "S4",
+      "SJ",
+      "S9",
+      "DT",
+      "H8",
+      "HQ",
+      "D4",
+      "SQ",
+      "DJ",
+      "C2",
+      "HJ",
+      "C7",
+      "C9",
+      "HA",
+      "H2",
+      "H3",
+      "H9",
+      "C8",
+      "H5",
+      "H4",
+      "CT",
+      "HK",
+      "H7"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "24K",
+            "H": "37A",
+            "D": "34JQK",
+            "C": "JQ"
+          },
+          "hcp": 16,
+          "distribution_str": "3=3=5=2"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "TJA",
+            "H": "249",
+            "D": "67TA",
+            "C": "2KA"
+          },
+          "hcp": 16,
+          "distribution_str": "3=3=4=3"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "389",
+            "H": "68J",
+            "D": "89",
+            "C": "3478T"
+          },
+          "hcp": 1,
+          "distribution_str": "3=3=2=5"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S24KH37AD34JQKCJQ,STJAH249D67TAC2KA,S389H68JD89C3478T,|rh||ah|Board 8|sv|o|mb|1D|mb|p|mb|1H|mb|2D|mb|2H|mb|p|mb|p|mb|p|pg||pc|DK|pc|DA|pc|D8|pc|D2|pg||pc|CA|pc|C3|pc|C5|pc|CQ|pg||pc|ST|pc|S3|pc|S5|pc|SK|pg||pc|DQ|pc|D6|pc|D9|pc|D5|pg||pc|CJ|pc|CK|pc|C4|pc|C6|pg||pc|SA|pc|S8|pc|S6|pc|S2|pg||pc|D7|pc|H6|pc|HT|pc|D3|pg||pc|S7|pc|S4|pc|SJ|pc|S9|pg||pc|DT|pc|H8|pc|HQ|pc|D4|pg||pc|SQ|pc|DJ|pc|C2|pc|HJ|pg||pc|C7|pc|C9|pc|HA|pc|H2|pg||pc|H3|pc|H9|pc|C8|pc|H5|pg||pc|H4|pc|CT|pc|HK|pc|H7|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "Missed Partscore Opportunity for N/S",
+    "analysis_bullets": [
+      "South (16 HCP, 5=3=3=2 shape) missed the standard competitive action of 1NT overcall after West's 1D opening and East's 1H response, which would have accurately described their hand strength and provided a safe place to play.",
+      "South's decision to bid 2D was a poor choice. It is a highly ambiguous competitive bid here, potentially suggesting a strong hand looking for penalties, or merely showing a fit that the opponents already own (Diamonds).",
+      "North, with only 1 HCP, correctly remained silent throughout the auction, having insufficient values to intervene.",
+      "West and East reached a reasonable competitive partscore (2H) given the intervention, though their combined HCP (estimated 22-24) makes game unlikely, and 2H is vulnerable to South's Heart Ace."
+    ],
+    "recommended_auction": [
+      "1D",
+      "p",
+      "1H",
+      "1NT"
+    ],
+    "learning_data": [
+      {
+        "player": "South",
+        "topic": "Balancing 1NT Overcall (15-18 HCP)",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Competitive Bidding Strategy (Avoiding Ambiguous Cue-Bids)",
+        "category": "Review"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 20:33:55"
+}

@@ -1,0 +1,169 @@
+{
+  "facts": {
+    "board": "4571383353",
+    "dealer": "North",
+    "vulnerability": "Both",
+    "contract": "2N",
+    "auction": [
+      "p",
+      "p",
+      "p",
+      "1H",
+      "p",
+      "1N",
+      "p",
+      "2N",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "C7",
+      "CQ",
+      "CJ",
+      "C3",
+      "H9",
+      "H2",
+      "HK",
+      "H5",
+      "H4",
+      "HT",
+      "HA",
+      "H3",
+      "HQ",
+      "H7",
+      "C5",
+      "H6",
+      "HJ",
+      "H8",
+      "C6",
+      "D4",
+      "CA",
+      "S3",
+      "C9",
+      "C4",
+      "S7",
+      "SA",
+      "S9",
+      "S8",
+      "DQ",
+      "DA",
+      "D6",
+      "D5",
+      "SK",
+      "SQ",
+      "S2",
+      "S5",
+      "SJ",
+      "C8",
+      "S4",
+      "S6",
+      "D3",
+      "DT",
+      "DJ",
+      "DK",
+      "ST",
+      "D7",
+      "CT",
+      "C2",
+      "D2",
+      "D9",
+      "CK",
+      "D8"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "8Q",
+            "H": "56T",
+            "D": "46T",
+            "C": "478TK"
+          },
+          "hcp": 5,
+          "distribution_str": "2=3=3=5"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "247",
+            "H": "9JQA",
+            "D": "58J",
+            "C": "2QA"
+          },
+          "hcp": 14,
+          "distribution_str": "3=4=3=3"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "356TA",
+            "H": "2378",
+            "D": "2QK",
+            "C": "J"
+          },
+          "hcp": 10,
+          "distribution_str": "5=4=3=1"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S8QH56TD46TC478TK,S247H9JQAD58JC2QA,S356TAH2378D2QKCJ,|rh||ah|Board 13|sv|b|mb|p|mb|p|mb|p|mb|1H|mb|p|mb|1N|mb|p|mb|2N|mb|p|mb|p|mb|p|pg||pc|C7|pc|CQ|pc|CJ|pc|C3|pg||pc|H9|pc|H2|pc|HK|pc|H5|pg||pc|H4|pc|HT|pc|HA|pc|H3|pg||pc|HQ|pc|H7|pc|C5|pc|H6|pg||pc|HJ|pc|H8|pc|C6|pc|D4|pg||pc|CA|pc|S3|pc|C9|pc|C4|pg||pc|S7|pc|SA|pc|S9|pc|S8|pg||pc|DQ|pc|DA|pc|D6|pc|D5|pg||pc|SK|pc|SQ|pc|S2|pc|S5|pg||pc|SJ|pc|C8|pc|S4|pc|S6|pg||pc|D3|pc|DT|pc|DJ|pc|DK|pg||pc|ST|pc|D7|pc|CT|pc|C2|pg||pc|D2|pc|D9|pc|CK|pc|D8|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "Underbid Game by West/East",
+    "analysis_bullets": [
+      "North missed a vital competitive opportunity by passing over West's 1H opening, holding 10 HCP and a good 5-card Spade suit (1S overcall was standard).",
+      "The West/East partnership failed to reach a makable game contract (likely 3N or 4H). With 25+ combined HCP, stopping at 2N is a major underbid.",
+      "West's rebid of 2N over East's 1N response was too cautious for a 14 HCP opener facing a responder who must hold at least 6-7 HCP for 1N."
+    ],
+    "recommended_auction": [
+      "P",
+      "P",
+      "P",
+      "1H",
+      "1S",
+      "2H",
+      "P",
+      "3N",
+      "P",
+      "P",
+      "P"
+    ],
+    "learning_data": [
+      {
+        "player": "North",
+        "topic": "Competitive Bidding (Overcall Strength)",
+        "category": "Review"
+      },
+      {
+        "player": "Pair WE",
+        "topic": "Reaching Game in Notrump (25+ HCP)",
+        "category": "Review"
+      },
+      {
+        "player": "West",
+        "topic": "Rebid after 1N Response",
+        "category": "Review"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 20:35:29"
+}

@@ -1,0 +1,167 @@
+{
+  "facts": {
+    "board": "4571377417 (1)",
+    "dealer": "South",
+    "vulnerability": "None",
+    "contract": "4H",
+    "auction": [
+      "p",
+      "2H",
+      "3C",
+      "3H",
+      "p",
+      "4H",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "C2",
+      "C8",
+      "CQ",
+      "CA",
+      "H2",
+      "HJ",
+      "HA",
+      "H4",
+      "HK",
+      "H8",
+      "H3",
+      "C4",
+      "D2",
+      "D9",
+      "DQ",
+      "DK",
+      "S4",
+      "S9",
+      "ST",
+      "S2",
+      "DA",
+      "D8",
+      "D4",
+      "D5",
+      "D7",
+      "H6",
+      "DJ",
+      "DT",
+      "CK",
+      "C5",
+      "S3",
+      "C7",
+      "C3",
+      "CT",
+      "H5",
+      "C9",
+      "S7",
+      "SJ",
+      "H7",
+      "S5",
+      "C6",
+      "CJ",
+      "HT",
+      "S6",
+      "S8",
+      "D3",
+      "H9",
+      "SK",
+      "HQ",
+      "SA",
+      "SQ",
+      "D6"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "6TJ",
+            "H": "48",
+            "D": "3679A",
+            "C": "79Q"
+          },
+          "hcp": 7,
+          "distribution_str": "3=2=5=3"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "2",
+            "H": "23679Q",
+            "D": "8Q",
+            "C": "36KA"
+          },
+          "hcp": 11,
+          "distribution_str": "1=6=2=4"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "45KA",
+            "H": "J",
+            "D": "4JK",
+            "C": "245TJ"
+          },
+          "hcp": 13,
+          "distribution_str": "4=1=3=5"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S6TJH48D3679AC79Q,S2H23679QD8QC36KA,S45KAHJD4JKC245TJ,|rh||ah|Board 11|sv|o|mb|p|mb|2H|mb|3C|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|C2|pc|C8|pc|CQ|pc|CA|pg||pc|H2|pc|HJ|pc|HA|pc|H4|pg||pc|HK|pc|H8|pc|H3|pc|C4|pg||pc|D2|pc|D9|pc|DQ|pc|DK|pg||pc|S4|pc|S9|pc|ST|pc|S2|pg||pc|DA|pc|D8|pc|D4|pc|D5|pg||pc|D7|pc|H6|pc|DJ|pc|DT|pg||pc|CK|pc|C5|pc|S3|pc|C7|pg||pc|C3|pc|CT|pc|H5|pc|C9|pg||pc|S7|pc|SJ|pc|H7|pc|S5|pg||pc|C6|pc|CJ|pc|HT|pc|S6|pg||pc|S8|pc|D3|pc|H9|pc|SK|pg||pc|HQ|pc|SA|pc|SQ|pc|D6|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "OPPONENTS FOUND GAME, NS MISSED THEIR OPTIMAL MINOR SUIT FIT",
+    "analysis_bullets": [
+      "West's 2H opening was effective in preempting the NS partnership, initiating a competitive auction where NS failed to communicate effectively.",
+      "North, holding 13 HCP and a 4-card spade suit, should have prioritized a Takeout Double (X) over the 3C overcall to allow South to show their best suit, potentially finding the 4-4 spade fit or the 5-5 minor suit pattern.",
+      "NS failed to discover their 8-card Diamond fit (5 in South, 3 in North), which offered the best potential for a competitive partial score, potentially 3D or 4D.",
+      "South's passive pass over 3H was a missed opportunity; South should have bid 3D to compete and show their strong 5-card suit, increasing the pressure on the opponents."
+    ],
+    "recommended_auction": [
+      "P",
+      "2H",
+      "X",
+      "3H",
+      "3D",
+      "P",
+      "4H",
+      "P",
+      "P",
+      "P"
+    ],
+    "learning_data": [
+      {
+        "player": "North",
+        "topic": "Takeout Double vs Direct Suit Overcall",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Competitive Bidding Showing Length",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Prioritizing Fit Finding in Competitive Auctions",
+        "category": "Advanced"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 20:35:11"
+}

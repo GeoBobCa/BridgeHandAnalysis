@@ -1,0 +1,166 @@
+{
+  "facts": {
+    "board": "4571363697 (1)",
+    "dealer": "South",
+    "vulnerability": "Both",
+    "contract": "3D",
+    "auction": [
+      "p",
+      "p",
+      "1D",
+      "p",
+      "1H",
+      "p",
+      "1S",
+      "p",
+      "2D",
+      "p",
+      "3D",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "SA",
+      "S9",
+      "S3",
+      "S2",
+      "CA",
+      "C6",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "D2",
+      "C8",
+      "HA",
+      "HQ",
+      "H2",
+      "H4",
+      "S5",
+      "S4",
+      "S7",
+      "SK",
+      "D3",
+      "DT",
+      "DJ",
+      "D4",
+      "D5",
+      "D6",
+      "DQ",
+      "H3",
+      "D8",
+      "H6",
+      "DK",
+      "D7",
+      "CK",
+      "C5",
+      "CJ",
+      "S6",
+      "SJ",
+      "C9",
+      "H7",
+      "S8",
+      "SQ",
+      "H5",
+      "HT",
+      "ST",
+      "CT",
+      "CQ",
+      "D9",
+      "H8",
+      "HK",
+      "H9",
+      "DA",
+      "HJ"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "9K",
+            "H": "47TK",
+            "D": "389Q",
+            "C": "67J"
+          },
+          "hcp": 9,
+          "distribution_str": "2=4=4=3"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "3568T",
+            "H": "3689A",
+            "D": "2T",
+            "C": "2"
+          },
+          "hcp": 4,
+          "distribution_str": "5=5=2=1"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "24JQ",
+            "H": "Q",
+            "D": "5JKA",
+            "C": "38TK"
+          },
+          "hcp": 16,
+          "distribution_str": "4=1=4=4"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S9KH47TKD389QC67J,S3568TH3689AD2TC2,S24JQHQD5JKAC38TK,|rh||ah|Board 7|sv|b|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|2D|mb|p|mb|3D|mb|p|mb|p|mb|p|pg||pc|SA|pc|S9|pc|S3|pc|S2|pg||pc|CA|pc|C6|pc|C2|pc|C3|pg||pc|C4|pc|C7|pc|D2|pc|C8|pg||pc|HA|pc|HQ|pc|H2|pc|H4|pg||pc|S5|pc|S4|pc|S7|pc|SK|pg||pc|D3|pc|DT|pc|DJ|pc|D4|pg||pc|D5|pc|D6|pc|DQ|pc|H3|pg||pc|D8|pc|H6|pc|DK|pc|D7|pg||pc|CK|pc|C5|pc|CJ|pc|S6|pg||pc|SJ|pc|C9|pc|H7|pc|S8|pg||pc|SQ|pc|H5|pc|HT|pc|ST|pg||pc|CT|pc|CQ|pc|D9|pc|H8|pg||pc|HK|pc|H9|pc|DA|pc|HJ|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "MISSED GAME",
+    "analysis_bullets": [
+      "North\u2019s initial response of 1H, holding only a singleton heart, was a catastrophic misrepresentation of shape. North should have bid 1S, showing four Spades and initiating the auction efficiently.",
+      "South compounded the error by responding 1S (holding only two Spades) over North's 1H. South should have rebid 2D, describing their primary suit and minimum strength (9 HCP).",
+      "Despite the distorted auction, NS eventually found their strong 9-card diamond fit and 25 combined HCP. North (16 HCP) was too passive in stopping at 3D, failing to insist on the highly makable game of 4D.",
+      "4D is the optimal contract. With AKJ5 opposite Q983, the diamond suit is excellent, and 10 tricks are easily achievable."
+    ],
+    "recommended_auction": [
+      "1D",
+      "1S",
+      "2D",
+      "4D"
+    ],
+    "learning_data": [
+      {
+        "player": "North",
+        "topic": "Responses: Suit Preference and Minimum Length",
+        "category": "Review"
+      },
+      {
+        "player": "South",
+        "topic": "Opener's Rebid: Prioritizing Suit and Strength Description",
+        "category": "Review"
+      },
+      {
+        "player": "North",
+        "topic": "Insisting on Game with Strong Fit and HCP",
+        "category": "Advanced"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 20:33:33"
+}

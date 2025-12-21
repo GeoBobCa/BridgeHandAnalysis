@@ -1,162 +1,119 @@
 import re
-from typing import Dict, List, Optional
+from typing import Dict, List
 
-class BridgeParser:
+class LINParser:
     """
-    Parses LIN files from BBO to extract 'Ground Truth' data.
+    Parses Bridge Base Online (BBO) .lin files into structured JSON data.
     """
-
-    def parse_lin_content(self, filename: str, content: str) -> Dict:
-        try:
-            # 1. Extract Metadata
-            board_num = self._extract_tag(content, 'ah') or "Unknown"
-            dealer_code = self._extract_dealer(content)
-            vul_code = self._extract_tag(content, 'sv') or "0"
-            
-            # NEW: Extract Player Names
-            # pn|South,West,North,East|
-            player_names = self._extract_players(content)
-
-            # 2. Extract and Complete Hands
-            md_match = re.search(r"md\|(\d)(.*?)\|", content)
-            if not md_match:
-                raise ValueError("No 'md' (Deal) tag found.")
-
-            dealer_digit = int(md_match.group(1))
-            hands_raw = md_match.group(2).split(',')
-            compass_map = self._get_compass_rotation(dealer_digit)
-            
-            full_deal = {}
-            all_known_cards = set()
-
-            for i, raw_hand_str in enumerate(hands_raw):
-                if i < 4 and raw_hand_str:
-                    direction = compass_map[i]
-                    parsed_hand = self._parse_hand_string(raw_hand_str)
-                    stats = self._calculate_stats(parsed_hand)
-                    full_deal[direction] = {
-                        "name": player_names.get(direction, "Unknown"), # NEW
-                        "cards": parsed_hand,
-                        "stats": stats,
-                        "raw": raw_hand_str
-                    }
-                    for suit in parsed_hand:
-                        for rank in parsed_hand[suit]:
-                            all_known_cards.add(f"{suit}{rank}")
-
-            missing_direction = None
-            for direction in ["South", "West", "North", "East"]:
-                if direction not in full_deal:
-                    missing_direction = direction
-                    break
-            
-            if missing_direction:
-                deduced_hand = self._deduct_missing_hand(all_known_cards)
-                stats = self._calculate_stats(deduced_hand)
-                full_deal[missing_direction] = {
-                    "name": player_names.get(missing_direction, "Unknown"), # NEW
-                    "cards": deduced_hand,
-                    "stats": stats,
-                    "raw": "Calculated"
-                }
-
-            # 3. Extract Auction & Play
-            auction = self._extract_auction(content)
-            play = self._extract_play(content)
-
-            return {
-                "file": filename,
-                "board": board_num,
-                "dealer": self._code_to_dealer(dealer_digit),
-                "vulnerability": self._code_to_vul(vul_code),
-                "hands": full_deal,
-                "auction": auction,
-                "play": play,
-                "raw_lin": content.replace('\n', '').strip() # NEW: For Handviewer
-            }
-
-        except Exception as e:
-            return {"file": filename, "error": str(e)}
-
-    # --- HELPER FUNCTIONS ---
-
-    def _extract_players(self, content):
-        """Extracts names from pn|S,W,N,E| tag."""
-        match = re.search(r"pn\|(.*?)\|", content)
-        names = {}
-        if match:
-            # BBO Standard: South, West, North, East
-            raw_names = match.group(1).split(',')
-            dirs = ["South", "West", "North", "East"]
-            for i, name in enumerate(raw_names):
-                if i < 4:
-                    names[dirs[i]] = name
-        return names
-
-    def _get_compass_rotation(self, dealer_digit):
-        if dealer_digit == 1: return ["South", "West", "North", "East"]
-        if dealer_digit == 2: return ["West", "North", "East", "South"]
-        if dealer_digit == 3: return ["North", "East", "South", "West"]
-        if dealer_digit == 4: return ["East", "South", "West", "North"]
-        return ["South", "West", "North", "East"]
-
-    def _parse_hand_string(self, hand_str):
-        suits = {'S': [], 'H': [], 'D': [], 'C': []}
-        current_suit = None
-        for char in hand_str:
-            if char in suits:
-                current_suit = char
-            elif current_suit:
-                suits[current_suit].append(char)
-        return suits
-
-    def _calculate_stats(self, hand_dict):
-        hcp = 0
-        dist = []
-        values = {'A': 4, 'K': 3, 'Q': 2, 'J': 1}
-        for suit in ['S', 'H', 'D', 'C']:
-            cards = hand_dict.get(suit, [])
-            dist.append(len(cards))
-            for card in cards:
-                hcp += values.get(card, 0)
-        return {
-            "hcp": hcp,
-            "distribution_counts": dist,
-            "distribution_str": "-".join(map(str, dist))
+    
+    def parse_single_hand(self, raw_lin_data: str, filename: str = "Unknown") -> Dict:
+        """
+        Main entry point: Converts a raw LIN string into a clean dictionary.
+        """
+        # 1. Extract Basic Metadata
+        data = {
+            "board": filename.replace('_', ' ').replace('.lin', ''),
+            "dealer": self._get_dealer(raw_lin_data),
+            "vulnerability": self._get_vuln(raw_lin_data),
+            "contract": self._get_contract(raw_lin_data), # Added specifically for Red Teaming
+            "auction": self._parse_auction(raw_lin_data),
+            "play": self._parse_play(raw_lin_data),
+            "hands": self._parse_hands(raw_lin_data),
+            "raw_lin": raw_lin_data
         }
+        return data
 
-    def _deduct_missing_hand(self, known_cards_set):
-        full_deck = []
-        ranks = "AKQJT98765432"
-        for suit in ['S', 'H', 'D', 'C']:
-            for rank in ranks:
-                full_deck.append(f"{suit}{rank}")
-        missing_cards = {'S': [], 'H': [], 'D': [], 'C': []}
-        for card in full_deck:
-            if card not in known_cards_set:
-                missing_cards[card[0]].append(card[1])
-        return missing_cards
+    def _get_dealer(self, lin: str) -> str:
+        # LIN format: 'md|1...' where 1=South, 2=West, 3=North, 4=East
+        match = re.search(r'md\|([1-4])', lin)
+        if match:
+            map_dealer = {'1': 'South', '2': 'West', '3': 'North', '4': 'East'}
+            return map_dealer.get(match.group(1), 'Unknown')
+        return 'Unknown'
 
-    def _extract_auction(self, content):
-        bids = re.findall(r"mb\|(.*?)\|", content)
-        return [b for b in bids if b]
+    def _get_vuln(self, lin: str) -> str:
+        # LIN format: 'sv|...' where o=None, n=NS, e=EW, b=Both
+        match = re.search(r'sv\|([oneb])', lin)
+        if match:
+            map_vuln = {'o': 'None', 'n': 'N/S', 'e': 'E/W', 'b': 'Both'}
+            return map_vuln.get(match.group(1), 'None')
+        return 'None'
+    
+    def _get_contract(self, lin: str) -> str:
+        # LIN format for contract often appears in 'mb' (bids). 
+        # This is a basic extractor for the final contract.
+        # We rely on the auction parser for detailed sequences, 
+        # but this helper finds the last significant bid.
+        bids = re.findall(r'mb\|([^|]+)\|', lin)
+        valid_bids = [b for b in bids if b.lower() not in ['p', 'pass', 'd', 'dbl', 'r', 'rdbl', 'an']]
+        if valid_bids:
+            return valid_bids[-1] # The last bid made
+        return "Pass"
 
-    def _extract_play(self, content):
-        plays = re.findall(r"pc\|(.*?)\|", content)
-        return [p for p in plays if p]
+    def _parse_auction(self, lin: str) -> List[str]:
+        # Extract all 'mb|...|' tags
+        raw_bids = re.findall(r'mb\|([^|]+)\|', lin)
+        # Clean them up (remove alerts 'an', etc.)
+        clean_bids = [b for b in raw_bids if b != 'an']
+        return clean_bids
 
-    def _extract_tag(self, content, tag):
-        match = re.search(rf"{tag}\|(.*?)\|", content)
-        return match.group(1) if match else None
+    def _parse_play(self, lin: str) -> List[str]:
+        # Extract all 'pc|...|' tags (Play Card)
+        cards = re.findall(r'pc\|([^|]+)\|', lin)
+        return cards
+
+    def _parse_hands(self, lin: str) -> Dict:
+        # LIN Encode: md|1S...H...D...C...,...|
+        # 1=South hand, then West, North, East comma separated.
+        match = re.search(r'md\|[1-4]([^|]+)\|', lin)
+        if not match:
+            return {}
+
+        raw_hands = match.group(1).split(',')
         
-    def _extract_dealer(self, content):
-        match = re.search(r"md\|(\d)", content)
-        return int(match.group(1)) if match else 1
+        # Helper to convert "SKQJ..." to separate suits
+        def parse_hand_string(h_str):
+            suits = {'S': '', 'H': '', 'D': '', 'C': ''}
+            current_suit = ''
+            for char in h_str:
+                if char in suits:
+                    current_suit = char
+                else:
+                    suits[current_suit] += char
+            
+            # Calculate HCP
+            hcp = 0
+            for s in suits.values():
+                for card in s:
+                    if card == 'A': hcp += 4
+                    elif card == 'K': hcp += 3
+                    elif card == 'Q': hcp += 2
+                    elif card == 'J': hcp += 1
+            
+            # Dist string
+            dist = f"{len(suits['S'])}={len(suits['H'])}={len(suits['D'])}={len(suits['C'])}"
+            return {"cards": suits, "hcp": hcp, "distribution_str": dist}
 
-    def _code_to_dealer(self, code):
-        mapping = {1: "South", 2: "West", 3: "North", 4: "East"}
-        return mapping.get(code, "Unknown")
+        # Map properly based on Dealer (LIN is quirky here, but let's assume standard rotation order)
+        # If dealer is 1 (South), the string is S,W,N,E
+        # Note: BBO LINs often only give 3 hands and rely on logic for the 4th, 
+        # but modern files usually include all. We will implement basic parsing here.
         
-    def _code_to_vul(self, code):
-        mapping = {'0': 'None', 'b': 'Both', 'n': 'NS', 'e': 'EW'}
-        return mapping.get(code, "None")
+        hands_dict = {
+            "South": {"name": "South", "stats": parse_hand_string(raw_hands[0] if len(raw_hands) > 0 else "")},
+            "West":  {"name": "West",  "stats": parse_hand_string(raw_hands[1] if len(raw_hands) > 1 else "")},
+            "North": {"name": "North", "stats": parse_hand_string(raw_hands[2] if len(raw_hands) > 2 else "")},
+            "East":  {"name": "East",  "stats": parse_hand_string(raw_hands[3] if len(raw_hands) > 3 else "")},
+        }
+        
+        # Try to find player names 'pn|South,West,North,East|'
+        name_match = re.search(r'pn\|([^|]+)\|', lin)
+        if name_match:
+            names = name_match.group(1).split(',')
+            if len(names) >= 4:
+                hands_dict["South"]["name"] = names[0]
+                hands_dict["West"]["name"] = names[1]
+                hands_dict["North"]["name"] = names[2]
+                hands_dict["East"]["name"] = names[3]
+
+        return hands_dict

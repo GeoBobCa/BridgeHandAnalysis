@@ -1,0 +1,168 @@
+{
+  "facts": {
+    "board": "4571347956 (2)",
+    "dealer": "East",
+    "vulnerability": "N/S",
+    "contract": "4S",
+    "auction": [
+      "p",
+      "p",
+      "p",
+      "2C",
+      "p",
+      "2H",
+      "p",
+      "2S",
+      "p",
+      "4S",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "HA",
+      "H4",
+      "H9",
+      "H3",
+      "H2",
+      "H5",
+      "HJ",
+      "HQ",
+      "SQ",
+      "S2",
+      "S3",
+      "S9",
+      "SK",
+      "S5",
+      "S6",
+      "C3",
+      "H7",
+      "H6",
+      "HK",
+      "D7",
+      "C2",
+      "C7",
+      "CK",
+      "C6",
+      "DA",
+      "D2",
+      "D3",
+      "D9",
+      "C5",
+      "C8",
+      "S8",
+      "C4",
+      "ST",
+      "DT",
+      "S4",
+      "SJ",
+      "D4",
+      "DK",
+      "DJ",
+      "C9",
+      "H8",
+      "CT",
+      "SA",
+      "D5",
+      "CA",
+      "S7",
+      "HT",
+      "CQ",
+      "D8",
+      "D6",
+      "DQ",
+      "CJ"
+    ],
+    "hands": {
+      "South": {
+        "name": "Fish075",
+        "stats": {
+          "cards": {
+            "S": "368T",
+            "H": "458TK",
+            "D": "36K",
+            "C": "2"
+          },
+          "hcp": 6,
+          "distribution_str": "4=5=3=1"
+        }
+      },
+      "West": {
+        "name": "georgenamg",
+        "stats": {
+          "cards": {
+            "S": "9",
+            "H": "9J",
+            "D": "79TJQ",
+            "C": "347TQ"
+          },
+          "hcp": 6,
+          "distribution_str": "1=2=5=5"
+        }
+      },
+      "North": {
+        "name": "BeaPercy",
+        "stats": {
+          "cards": {
+            "S": "4QKA",
+            "H": "37Q",
+            "D": "A",
+            "C": "59JKA"
+          },
+          "hcp": 23,
+          "distribution_str": "4=3=1=5"
+        }
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "",
+            "H": "",
+            "D": "",
+            "C": ""
+          },
+          "hcp": 0,
+          "distribution_str": "0=0=0=0"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S368TH458TKD36KC2,S9H9JD79TJQC347TQ,S4QKAH37QDAC59JKA,|rh||ah|Board 2|sv|n|mb|p|mb|p|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|HA|pc|H4|pc|H9|pc|H3|pg||pc|H2|pc|H5|pc|HJ|pc|HQ|pg||pc|SQ|pc|S2|pc|S3|pc|S9|pg||pc|SK|pc|S5|pc|S6|pc|C3|pg||pc|H7|pc|H6|pc|HK|pc|D7|pg||pc|C2|pc|C7|pc|CK|pc|C6|pg||pc|DA|pc|D2|pc|D3|pc|D9|pg||pc|C5|pc|C8|pc|S8|pc|C4|pg||pc|ST|pc|DT|pc|S4|pc|SJ|pg||pc|D4|pc|DK|pc|DJ|pc|C9|pg||pc|H8|pc|CT|pc|SA|pc|D5|pg||pc|CA|pc|S7|pc|HT|pc|CQ|pg||pc|D8|pc|D6|pc|DQ|pc|CJ|pg||\n"
+  },
+  "ai_analysis": {
+    "verdict": "MISSED SLAM",
+    "analysis_bullets": [
+      "North-South missed a laydown grand slam (12 tricks required for 6S) because the auction terminated prematurely at 4S.",
+      "South's jump to 4S was non-constructive. With 6 HCP and excellent distributional support (a singleton club opposite North's five-card suit), South should have used a constructive bid, such as a splinter, to describe the hand and encourage slam investigation.",
+      "North, holding 23 HCP and excellent controls, erred significantly by passing 4S. Following a strong 2C opening and finding a major suit fit, North must investigate slam using Blackwood or cuebidding.",
+      "The 4-4 spade fit combined with South's singleton club opposite North's AKJxx clubs guarantees 12 tricks, highlighting the power of distribution often overlooked when assessing high-card points alone."
+    ],
+    "recommended_auction": [
+      "2C",
+      "2H",
+      "2S",
+      "3C",
+      "4NT",
+      "5C",
+      "6S"
+    ],
+    "learning_data": [
+      {
+        "player": "South",
+        "topic": "Showing Distributional Values (Splinters) in Forcing Auctions",
+        "category": "Advanced"
+      },
+      {
+        "player": "North",
+        "topic": "Slam Investigation with Maximum Values (RKCB)",
+        "category": "Review"
+      },
+      {
+        "player": "Pair NS",
+        "topic": "Recognizing Slam Potential based on Singletons/Fits",
+        "category": "Advanced"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20 19:41:14"
+}

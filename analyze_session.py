@@ -1,92 +1,87 @@
 import os
 import json
+import glob
 import time
 from pathlib import Path
-from loguru import logger
+from dotenv import load_dotenv
 
-# Import our modules
-from src.core.lin_parser import BridgeParser
+# Import our custom modules
+from src.core.lin_parser import LINParser
 from src.core.ai_orchestrator import AIOrchestrator
 
 # CONFIGURATION
-INPUT_FOLDER = "data/session_raw"
-OUTPUT_FOLDER = "data/session_results"
+SESSION_DIR = "data/session_raw"
+RESULTS_DIR = "data/session_results"
 
 def main():
-    # 1. Setup
-    parser = BridgeParser()
+    # 1. Load Environment (API Keys)
+    load_dotenv()
+    
+    # 2. Initialize the Engine
     try:
-        ai = AIOrchestrator()
+        parser = LINParser()
+        orchestrator = AIOrchestrator()
+        print("✅ System initialized: Parser & AI Ready.")
     except Exception as e:
-        logger.error(f"Could not start AI: {e}")
+        print(f"❌ Initialization Failed: {e}")
         return
 
-    # Ensure output folder exists
-    os.makedirs(OUTPUT_FOLDER, exist_ok=True)
+    # 3. Prepare Folders
+    if not os.path.exists(RESULTS_DIR):
+        os.makedirs(RESULTS_DIR)
 
-    # 2. Get Files
-    if not os.path.exists(INPUT_FOLDER):
-        logger.error(f"Input folder not found: {INPUT_FOLDER}")
+    # 4. Find all .lin files
+    lin_files = glob.glob(os.path.join(SESSION_DIR, "*.lin"))
+    if not lin_files:
+        print(f"⚠️ No .lin files found in {SESSION_DIR}")
         return
 
-    lin_files = [f for f in os.listdir(INPUT_FOLDER) if f.endswith(".lin")]
-    logger.info(f"Found {len(lin_files)} files to process.")
+    print(f"📂 Found {len(lin_files)} files to process...")
 
-    # 3. Batch Loop
-    for index, filename in enumerate(lin_files):
+    # 5. Process Loop
+    for file_path in lin_files:
+        filename = os.path.basename(file_path)
+        board_name = Path(file_path).stem  # e.g., "Board 1"
         
-        # --- SKIP LOGIC START ---
-        output_filename = filename.replace(".lin", ".json")
-        output_path = os.path.join(OUTPUT_FOLDER, output_filename)
+        # Check if already done (Skipping logic)
+        # NOTE: Since we changed the data format, you should manually delete 
+        # the old JSON files in 'data/session_results' before running this!
+        output_filename = f"{board_name.replace(' ', '_')}.json"
+        output_path = os.path.join(RESULTS_DIR, output_filename)
         
         if os.path.exists(output_path):
-            logger.info(f"Skipping {filename} (Report already exists)")
-            continue
-        # --- SKIP LOGIC END ---
-
-        logger.info(f"Processing {index + 1}/{len(lin_files)}: {filename}")
-        
-        file_path = os.path.join(INPUT_FOLDER, filename)
-        
-        # A. PARSE (The Math)
-        with open(file_path, 'r') as f:
-            content = f.read()
-        
-        parsed_data = parser.parse_lin_content(filename, content)
-        
-        if "error" in parsed_data:
-            logger.error(f"Skipping {filename} due to parse error: {parsed_data['error']}")
+            print(f"⏩ Skipping {board_name} (Already analyzed)")
             continue
 
-        # B. ANALYZE (The AI)
-        analysis = ai.analyze_hand(parsed_data, parsed_data['hands'])
+        print(f"Bridge Engine: Analyzing {board_name}...")
         
-        if "error" in analysis:
-            # If AI fails, log it but DO NOT SAVE. 
-            # We let the loop fall through to the sleep timer so we don't hammer the server.
-            logger.error(f"AI Failed for {filename}: {analysis['error']}")
-            logger.warning("Skipping save so this hand can be retried later.")
-        else:
-            # C. COMBINE & SAVE (Only if successful)
-            final_record = {
-                "meta": {
-                    "filename": filename,
-                    "timestamp": time.ctime()
-                },
-                "facts": parsed_data,   
-                "ai_analysis": analysis 
+        try:
+            # Step A: Parse the LIN file into Data
+            with open(file_path, 'r') as f:
+                raw_lin = f.read()
+                
+            hand_data = parser.parse_single_hand(raw_lin, board_name)
+            
+            # Step B: AI Analysis (Audrey Grant + Red Team)
+            # We pass empty math_results={} because the stats are already inside hand_data
+            ai_result = orchestrator.analyze_hand(hand_data, math_results={})
+            
+            # Step C: Combine & Save
+            final_output = {
+                "facts": hand_data,
+                "ai_analysis": ai_result,
+                "timestamp": time.strftime("%Y-%m-%d %H:%M:%S")
             }
             
-            with open(output_path, 'w') as f:
-                json.dump(final_record, f, indent=2)
+            with open(output_path, 'w', encoding='utf-8') as f:
+                json.dump(final_output, f, indent=2)
                 
-            logger.success(f"Saved report to: {output_path}")
+            print(f"✅ Saved analysis for {board_name}")
+            
+        except Exception as e:
+            print(f"❌ Error processing {filename}: {e}")
 
-        # D. RATE LIMIT PAUSE (Runs every time, even after error)
-        logger.info("Waiting 10s for API rate limit...")
-        time.sleep(10)
-
-    logger.success("BATCH PROCESSING COMPLETE!")
+    print("\n🎉 Session Analysis Complete!")
 
 if __name__ == "__main__":
     main()
