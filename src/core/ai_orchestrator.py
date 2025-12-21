@@ -37,7 +37,7 @@ class AIOrchestrator:
             "contract": hand_data.get('contract', 'Pass')
         }
 
-        # --- UPDATED PROMPT: STRICT SAYC RULES ---
+        # --- UPDATED PROMPT: OPENING VS RESPONDING DISTINCTION ---
         prompt = f"""
         You are an expert Bridge Teacher (Audrey Grant/SAYC style).
         Analyze this deal based strictly on the provided FACTS.
@@ -49,10 +49,10 @@ class AIOrchestrator:
         1. **Points:** Use 'total_points' (HCP + Length) for opening decisions.
         2. **Weak 2 Bids:** Check suit quality (2 of top 3 honors OR 3 of top 5).
         3. **Game Contracts:** 3NT, 4H, 4S, 5C, 5D. (4D is NOT Game).
-        4. **SAYC OPENING RULES (STRICT):**
-           - **5-CARD MAJORS:** NEVER open 1H or 1S with fewer than 5 cards.
-           - If you have 4 Spades and 4 Hearts, open your longer Minor (1C or 1D).
-           - Exception: You may open 1H/1S with 4 cards ONLY in 3rd/4th seat partial openings, but standard is 5.
+        4. **SAYC MAJOR SUIT RULES (STRICT):**
+           - **OPENER:** MUST have 5+ cards to OPEN 1H or 1S. (If 4-4, open 1D or 1C).
+           - **RESPONDER:** May respond 1H or 1S with only 4+ cards over a minor suit opening. THIS IS CORRECT SAYC.
+           - **DO NOT** critique a responder for bidding a 4-card major over 1C/1D.
 
         TASK:
         Output strict JSON with these specific sections:
@@ -64,7 +64,7 @@ class AIOrchestrator:
         3. BASIC_SECTION (The Fundamentals):
            - "analysis": Explanation of the Standard American approach.
            - "recommended_auction": A LIST OF OBJECTS representing the ideal sequence.
-             Format: {{ "bid": "1H", "explanation": "Shows 12-20 pts, 5+ Hearts." }}
+             Format: {{ "bid": "1H", "explanation": "Shows 6+ pts, 4+ Hearts (Responder)." }}
            
         4. ADVANCED_SECTION (The Master Class):
            - "analysis": Deeper look (Splinters, 2/1, etc.).
@@ -130,12 +130,14 @@ class AIOrchestrator:
                     analysis['verdict'] = "PART-SCORE MADE"
                     analysis['actual_critique'].insert(0, f"Red Team Correction: {contract} is a part-score, not game.")
 
-        # 2. Check 5-Card Major Rule
+        # 2. Check 5-Card Major Rule (OPENER ONLY)
         try:
             recommended = analysis.get('basic_section', {}).get('recommended_auction', [])
             if recommended:
-                first_bid = recommended[0]['bid']
-                # Identify if opening is 1H or 1S
+                first_bid_obj = recommended[0]
+                first_bid = first_bid_obj['bid']
+                
+                # Identify if OPENING is 1H or 1S
                 if first_bid in ['1H', '1S']:
                     dealer_seat = facts.get('dealer', 'South')
                     # Get Dealer's hand stats
@@ -145,13 +147,11 @@ class AIOrchestrator:
                     suit_length = len(dealer_hand.get(suit_char, ''))
                     
                     if suit_length < 5:
-                        logger.warning(f"RED TEAM: AI suggested opening {first_bid} with only {suit_length} cards!")
+                        logger.warning(f"RED TEAM: AI suggested OPENING {first_bid} with only {suit_length} cards!")
                         # FORCE CORRECTION
-                        analysis['actual_critique'].insert(0, f"⚠️ AI ERROR FIXED: Cannot open {first_bid} with only {suit_length} cards (SAYC requires 5).")
-                        # We can't easily rewrite the whole auction logic in Python, so we flag it loudly.
-                        analysis['basic_section']['analysis'] += f" [RED TEAM NOTE: The recommended bid of {first_bid} is technically invalid as Dealer holds only {suit_length} cards in that suit. A minor suit opening was required.]"
+                        analysis['actual_critique'].insert(0, f"⚠️ AI ERROR FIXED: Cannot OPEN {first_bid} with only {suit_length} cards (SAYC requires 5).")
+                        analysis['basic_section']['analysis'] += f" [RED TEAM NOTE: Opening {first_bid} requires 5 cards. A minor suit opening was required.]"
         except Exception as e:
             logger.error(f"Red Team Major Check failed: {e}")
 
         return analysis
-    

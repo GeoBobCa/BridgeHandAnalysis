@@ -133,63 +133,106 @@
   "ai_analysis": {
     "verdict": "MISSED OPTIMAL PARTIAL CONTRACT",
     "actual_critique": [
-      "South violated a fundamental SAYC principle by responding 1H with only four cards. SAYC mandates five cards for a major suit response at the one-level.",
-      "North's corrective bid of 1S established the 4-4 Spade fit, but the partnership failed to realize their combined strength (21 points) and stopped prematurely at 1S.",
-      "The optimal partial contract is 2S, which offers a better score and greater security than 1S, given the 8-card major fit."
+      "The partnership settled for 1S when 2S was available, a safer, higher-scoring partial contract based on the known 8-card Spade fit.",
+      "South erred by passing 1S. Holding 9 total points and 4-card support for North's 1S rebid, South should have bid 2S to confirm the fit and show minimum responding strength (6-9 TP).",
+      "The actual auction stopped prematurely, resulting in a low contract score."
     ],
     "basic_section": {
-      "analysis": "North opened 1D correctly, showing 12+ points. South, with 9 points, must respond. Under strict SAYC rules, South's 4-4 major holding dictates a 1NT response, as South lacks the required five cards for 1H or 1S, and lacks three-card Diamond support. North, despite being minimum (12 points), should make a non-forcing effort to locate the 4-4 Spade fit by bidding 2S, which South will accept.",
+      "analysis": "North opened 1D (12 TP, 4=2=4=3 shape). South, with 9 TP, correctly responded 1H showing a four-card major. North then rebid 1S, showing four Spades and 12-14 points. Since North and South hold a combined 8-card Spade fit (4-4), South must confirm this fit with a competitive raise. With 9 TP, South should bid 2S, showing minimal values (6-9 TP) for a partial contract.",
       "recommended_auction": [
         {
-          "bid": "P",
-          "explanation": "South (9 points) passes as dealer, correctly following the 12+ point opening rule."
-        },
-        {
-          "bid": "P",
-          "explanation": "West (11 points) passes, lacking sufficient strength for an opening bid or overcall."
-        },
-        {
           "bid": "1D",
-          "explanation": "North opens 12 points, choosing the better minor suit (4=4 distribution)."
+          "explanation": "North opens 1D (12+ TP, 4+ Diamonds)."
         },
         {
-          "bid": "P",
-          "explanation": "East passes, lacking sufficient high card points or a strong suit for an overcall."
+          "bid": "p",
+          "explanation": "East passes."
         },
         {
-          "bid": "1NT",
-          "explanation": "South's best descriptive bid: 6-9 points, denying a 5-card major, denying Diamond support. (Strict SAYC application required due to 4-card majors.)"
+          "bid": "1H",
+          "explanation": "South responds 1H (6+ TP, 4+ Hearts)."
         },
         {
-          "bid": "P",
+          "bid": "p",
           "explanation": "West passes."
         },
         {
-          "bid": "2S",
-          "explanation": "North bids 2S, showing 4 Spades and searching for the 4-4 fit. This is an invitational sign-off."
+          "bid": "1S",
+          "explanation": "North rebids 1S (12-14 TP, 4+ Spades, showing 4-4 majors or preference)."
         },
         {
-          "bid": "P",
-          "explanation": "South passes 2S, having reached the optimal partial contract."
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "South confirms 8-card Spade fit, showing 6-9 TP (minimum responding hand)."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes (N/S total 21 TP, not enough for game invitation)."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes. Contract: 2S."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "Advanced pairs might use conventions like Checkback Stayman after 1D - 1NT to differentiate between minimum and invitational hands while searching for a 4-4 fit. However, even under standard methods, North's 2S rebid after partner's 1NT response is essential here to find the hidden 8-card major fit. Since the hand is clearly a partscore, once the fit is established, the minimum opener (North) must commit to 2S.",
-      "sequence": null
+      "analysis": "Given the low combined total points (21 TP) and flat distribution (4=4=3=2 opposite 4=2=4=3), advanced conventional methods like 2/1 Game Force are not applicable, and game is not in consideration. The goal remains finding the optimal partial contract, which is 2S. The recommended basic auction serves as the appropriate advanced sequence here.",
+      "sequence": [
+        {
+          "bid": "1D",
+          "explanation": "North opening standard."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "1H",
+          "explanation": "South standard response."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "1S",
+          "explanation": "North 4-card major rebid."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "South confirms the fit and shows minimum hand strength, reaching the comfortable partial contract."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass out in 2S."
+        }
+      ]
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "The 5-Card Major Rule: Never bid a major at the one-level (opening or responding) without 5 cards. Your 4-4 hand required a 1NT response.",
-        "category": "Review"
+        "topic": "Supporting Partner's Major Suit Bid",
+        "category": "Review",
+        "tip": "When partner makes a minimum rebid into a major (1S), and you have 4-card support and minimal responding strength (6-9 TP), you must confirm the 8-card fit by raising to the 2-level (2S)."
       },
       {
-        "player": "North",
-        "topic": "Partscore Valuation: With an 8-card major fit and 21 combined points, 1S is an underbid. Always bid to the 2-level in your trump fit when holding 20-22 combined points.",
-        "category": "Strategy"
+        "player": "North/South Partnership",
+        "topic": "Identifying Partial Score Contracts",
+        "category": "Awareness",
+        "tip": "With combined strength around 20-22 TP, the partnership should aggressively pursue the known 8-card fit to find the highest achievable partial score (usually 2 of the major)."
       }
     ]
   },
-  "timestamp": "2025-12-21 14:17:41"
+  "timestamp": "2025-12-21 14:41:33"
 }

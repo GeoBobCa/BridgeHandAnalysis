@@ -130,95 +130,70 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S269H5JD8TQKC36QA,S35QKHQAD345AC27T,S7AH2378KD2JC589K,|rh||ah|Board 10|sv|b|mb|p|mb|1D|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|HA|pc|H2|pc|H4|pc|H5|pg||pc|S3|pc|SA|pc|S4|pc|S2|pg||pc|D2|pc|D6|pc|DT|pc|DA|pg||pc|SK|pc|S7|pc|S8|pc|S6|pg||pc|HQ|pc|HK|pc|H6|pc|HJ|pg||pc|C5|pc|C4|pc|CQ|pc|C2|pg||pc|C3|pc|C7|pc|CK|pc|CJ|pg||pc|C8|pc|ST|pc|CA|pc|CT|pg||pc|D8|pc|D3|pc|DJ|pc|D7|pg||pc|H3|pc|H9|pc|C6|pc|D4|pg||pc|DK|pc|D5|pc|H7|pc|D9|pg||pc|DQ|pc|S5|pc|H8|pc|SJ|pg||pc|S9|pc|SQ|pc|C9|pc|HT|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME",
+    "verdict": "OPTIMAL CONTRACT",
     "actual_critique": [
-      "North/South missed a clear game opportunity (5C or 3NT) despite reaching 24 combined total points and establishing an 8-card Club fit.",
-      "South's 3C rebid was descriptive of his shape (4-4 in minors) but failed to show adequate game interest or invitation after partner's 2H constructive bid.",
-      "North failed to evaluate the hand strength correctly after hearing South's shape description, prematurely passing 3C instead of bidding 3NT or 5C."
+      "North, holding 12 total points and discovering an 8-card Club fit after South's 3C rebid, missed the opportunity to explore game (3NT or 4C invitation) despite reaching the 24+ TP range.",
+      "South's rebid of 3C was constructive but did not fully emphasize the hand's potential (12 TP, 4-card support for partner's suit/fit) in a contested auction.",
+      "The partnership settled for 3C prematurely, failing to test the viability of 3NT, which is the standard exploratory game try when holding marginal values and seeking a minor suit game."
     ],
     "basic_section": {
-      "analysis": "South had a standard 12 TP opening hand, starting with 1D based on the 4-4-4-3 minor preference rule (or longest minor). West intervened aggressively with 1S. North showed a constructive 10+ TP response with 5+ Hearts (2H). South's 3C rebid shows his four-card club suit and confirms a minimum opening hand. North, holding 12 TP and knowing they have an 8-card club fit and 24 combined points, must immediately bid game, likely 5C due to the known fit and competitive auction.",
+      "analysis": "South opens 1D based on 4-4 minors (standard SAYC). West intervenes with a strong 1S overcall. North correctly bids 2H, showing a 5-card suit and competitive values (10-12 TP). South's 3C confirms an 8-card Club fit and shows improvement/preference for the minor suit. Given N/S likely have 24+ total points, North should explore 3NT. While 3NT is not guaranteed to make due to the lack of a definite Spade stopper by South, it is the standard technique for a game try in this situation.",
       "recommended_auction": [
         {
+          "bid": "p",
+          "explanation": "East passes, lacking sufficient points (2 TP) to open."
+        },
+        {
           "bid": "1D",
-          "explanation": "Standard 12+ TP opening, showing 4+ Diamonds."
+          "explanation": "South opens 1D (12 TP) following the 4-4 minor rule (D before C)."
         },
         {
           "bid": "1S",
-          "explanation": "West's competitive overcall, showing 10+ TP and 4+ Spades."
+          "explanation": "West overcalls 1S, showing 10+ TP and a 4+ card Spade suit (15 TP)."
         },
         {
           "bid": "2H",
-          "explanation": "North shows 10+ TP, 5+ Hearts, forcing one round."
+          "explanation": "North competes, showing a 5+ card Heart suit and 10-12 TP."
         },
         {
-          "bid": "P",
+          "bid": "p",
           "explanation": "East passes."
         },
         {
           "bid": "3C",
-          "explanation": "South describes a 4-card Club suit, confirming a 4-4 minor structure (or similar balanced pattern) and minimum opening strength."
+          "explanation": "South shows preference for Clubs, confirming an 8-card fit, and confirming constructive strength (12 TP)."
         },
         {
-          "bid": "P",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "5C",
-          "explanation": "North recognizes the 8-card fit and combined 24 points, bidding game directly in the known minor fit. This is safer than 3NT given the competitive bidding."
-        }
-      ]
-    },
-    "advanced_section": {
-      "analysis": "While 5C is a safe contract based on the known fit, 3NT may be a superior alternative given 24 TP and potential stoppers in the opponents' suits. South shows a semi-balanced hand structure (3=2=4=4). North has the critical Spade stopper (SA) to handle West's 1S overcall. Bidding 3NT exploits the strength in the long suits (Diamonds and Clubs) and avoids playing at the five level.",
-      "sequence": [
-        {
-          "bid": "1D",
-          "explanation": "Standard opening."
-        },
-        {
-          "bid": "1S",
-          "explanation": "Competitive overcall."
-        },
-        {
-          "bid": "2H",
-          "explanation": "Constructive response, 5+ Hearts."
-        },
-        {
-          "bid": "P",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "3C",
-          "explanation": "South shows the 4-card club suit and minimum strength, descriptive rebid."
-        },
-        {
-          "bid": "P",
+          "bid": "p",
           "explanation": "West passes."
         },
         {
           "bid": "3NT",
-          "explanation": "North recognizes the 24 combined TP, possesses stoppers (especially SA), and judges 3NT to be the optimal contract."
+          "explanation": "North makes a game try, showing maximum values for the previous bid and expecting South to pass or correct to 4C/5C."
         }
       ]
+    },
+    "advanced_section": {
+      "analysis": "In advanced competitive methods, after South's constructive 3C, North could bypass 3NT and make a direct game invite (4C) or use a forcing diamond bid (3D, if used as a trial bid) to gain more descriptive information from South about controls or strength. Since the combined N/S strength is borderline (23 HCP, 24 TP) and the opposition holds the bulk of the high cards in Spades and Hearts, stopping at 3C is technically safe, although the 3NT exploration is warranted based on TP count.",
+      "sequence": null
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Game Recognition with Known Fit and Combined Strength",
-        "category": "Decision Making"
+        "topic": "Recognizing Game Potential and 3NT Exploration",
+        "category": "Rebidding"
       },
       {
         "player": "South",
-        "topic": "Rebidding Strength in Competitive Auctions",
+        "topic": "4-4 Minor Openings: 1D is Standard",
         "category": "Review"
       },
       {
         "player": "West",
-        "topic": "Competitive Overcall Decisions (1S vs. 1NT)",
-        "category": "Evaluation"
+        "topic": "Effective Intermediate Overcalls (15 TP)",
+        "category": "Positive"
       }
     ]
   },
-  "timestamp": "2025-12-21 14:15:53"
+  "timestamp": "2025-12-21 14:39:53"
 }

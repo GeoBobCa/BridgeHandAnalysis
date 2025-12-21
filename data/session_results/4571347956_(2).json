@@ -134,111 +134,65 @@
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S368TH458TKD36KC2,S9H9JD79TJQC347TQ,S4QKAH37QDAC59JKA,|rh||ah|Board 2|sv|n|mb|p|mb|p|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|HA|pc|H4|pc|H9|pc|H3|pg||pc|H2|pc|H5|pc|HJ|pc|HQ|pg||pc|SQ|pc|S2|pc|S3|pc|S9|pg||pc|SK|pc|S5|pc|S6|pc|C3|pg||pc|H7|pc|H6|pc|HK|pc|D7|pg||pc|C2|pc|C7|pc|CK|pc|C6|pg||pc|DA|pc|D2|pc|D3|pc|D9|pg||pc|C5|pc|C8|pc|S8|pc|C4|pg||pc|ST|pc|DT|pc|S4|pc|SJ|pg||pc|D4|pc|DK|pc|DJ|pc|C9|pg||pc|H8|pc|CT|pc|SA|pc|D5|pg||pc|CA|pc|S7|pc|HT|pc|CQ|pg||pc|D8|pc|D6|pc|DQ|pc|CJ|pg||\n"
   },
   "ai_analysis": {
-    "verdict": "CORRECT MAJOR SUIT GAME REACHED",
+    "verdict": "MISSED SLAM (6S)",
     "actual_critique": [
-      "South (7 TP) made an overly aggressive jump to 4S. Opposite a 2C opening (22+), limited hands should use a constructive bid (e.g., 3S) rather than committing immediately to game.",
-      "The partnership either used a non-standard 2C structure (2H as the negative relay instead of 2D) or South chose to show their 5-card Heart suit naturally (2H), only for North to override it by showing 4 Spades (2S).",
-      "North should have considered rebidding 3NT after establishing the 4-4 Spade fit, as the runnings Clubs and risk management (Diamond distribution) make 3NT potentially safer than 4S."
+      "South accepted the game prematurely (4S) on the maximum end of their negative response (7 TP), failing to cue-bid controls or initiate Blackwood despite North's guaranteed slam-invitational strength (2C opening).",
+      "North failed to insist on slam investigation after South's non-forcing 4S jump, especially given the combined 29 total points and favorable distribution (4=3=1=5 opposite 4=5=3=1).",
+      "The partnership reached 4S, which is an underbid; 6S is virtually assured given control placement and ruffing potential."
     ],
     "basic_section": {
-      "analysis": "North holds a powerful hand (24 TP) and correctly opens 2C, promising 22+ points. South, with only 7 TP, should use the standard 2D negative relay. North then shows their 4-card Spade suit with 2S. South provides constructive 4-card support (3S, indicating 5-8 TP), allowing North to place the final contract in 4S, recognizing the combined 31 TP justifies game.",
+      "analysis": "North correctly opened the artificial, game-forcing 2 Club bid (24 TP). South's 2 Heart response was a standard negative, showing 0-7 points. North's subsequent 2 Spade rebid defined the trump suit and confirmed game-forcing values with four Spades. South, holding the maximum negative points (7 TP) and two valuable Kings (D and H), must recognize the immense slam potential and begin cue-bidding controls rather than stopping at 4S. 6 Spades is the appropriate contract.",
       "recommended_auction": [
         {
           "bid": "2C",
-          "explanation": "North opens 2C, promising 22+ points and forcing to game."
+          "explanation": "North opens 2C, showing 22+ Total Points, artificial and forcing."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "2D",
-          "explanation": "Standard SAYC negative response/relay, showing 0-7 points."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
+          "bid": "2H",
+          "explanation": "South makes the negative/waiting response (0-7 TP)."
         },
         {
           "bid": "2S",
-          "explanation": "North shows 4 cards in Spades, forcing. (Higher ranking of the 4-card suits if not balanced 2NT)."
+          "explanation": "North defines the suit (4+ Spades, game forcing)."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "3D",
+          "explanation": "South cue-bids first round control (King of Diamonds) and confirms slam interest."
         },
         {
-          "bid": "3S",
-          "explanation": "South shows 4-card Spade support and confirms 5-8 total points, inviting game."
+          "bid": "3H",
+          "explanation": "North cue-bids first round control (Queen/Ace of Hearts)."
         },
         {
-          "bid": "p",
-          "explanation": "West passes."
+          "bid": "4NT",
+          "explanation": "South uses Blackwood (Standard or Keycard) to check for Aces."
         },
         {
-          "bid": "4S",
-          "explanation": "North accepts the game invitation, confirming the excellent fit and strength."
+          "bid": "5C",
+          "explanation": "North shows 3 Aces (SA, DA, CA)."
+        },
+        {
+          "bid": "6S",
+          "explanation": "Slam confirmed. All Aces are present, and controls were cue-bid."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "While 4S is reached, given North's 5-card Club suit and South's lack of controls (Diamond singleton is not ideal for trump contracts when holding the K), 3NT holds significant appeal. If North had rebid 2NT after the 2D relay (showing a balanced 22-24 points), South would have evaluated their hand for stoppers and likely supported 3NT or used 3S as a transfer/natural suit show, possibly leading to 3NT which avoids the unfavorable 5-4 Diamond distribution.",
-      "sequence": [
-        {
-          "bid": "2C",
-          "explanation": "Strong opening."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "2D",
-          "explanation": "Negative/Relay."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "2NT",
-          "explanation": "North shows a 22-24 balanced hand (although 4=3=1=5 is not perfectly balanced, it is within the range for a strong NT rebid, prioritizing NT game)."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "3S",
-          "explanation": "South shows 4 Spades, aiming for a major suit game over NT, knowing the partnership lacks Diamond stoppers."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "4S",
-          "explanation": "North accepts the preferred major suit game."
-        }
-      ]
+      "analysis": "The 2C opening by North revealed a hand with potential for 12+ tricks immediately, aided by a major suit fit (4=4). South's maximum negative hand is highly valuable here, providing two essential outside Kings (KD, KH) and robust trump support. The slam line relies on using the Diamond singleton (A) in North as an entry to ruff subsequent Diamonds in South\u2019s hand, establishing 13 total tricks without relying on an immediate Heart finesse (though 4H cuebidding often helps place the Ace). The 3D cuebid by South is crucial as it shows the King of Diamonds is correctly placed for slam development.",
+      "sequence": null
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "Game Determination Opposite 2C Openings",
+        "topic": "Slam Investigation after a Strong 2C Opening: Utilizing Cuebids.",
         "category": "Review"
       },
       {
-        "player": "South",
-        "topic": "Constructive Bidding (3S vs 4S jump)",
-        "category": "Technique"
-      },
-      {
         "player": "North",
-        "topic": "3NT Consideration vs Major Suit Games (Hand Evaluation/Safety)",
-        "category": "Advanced Strategy"
+        "topic": "Managing Strong 2C Sequences: Insisting on Control Checks after Partner jumps to Game.",
+        "category": "Technique"
       }
     ]
   },
-  "timestamp": "2025-12-21 14:13:04"
+  "timestamp": "2025-12-21 14:37:03"
 }
