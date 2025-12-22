@@ -185,50 +185,34 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME (3NT makes 9 tricks)",
+    "verdict": "OPTIMAL CONTRACT",
     "actual_critique": [
-      "The partnership stopped prematurely in 1NT, missing the optimal 3NT contract, which makes easily (9 tricks).",
-      "North (Responder) failed to invite game despite holding 9 HCP and a 5-card major, passing over Opener's 1NT rebid.",
-      "With 23 combined HCP (14 + 9), the partnership should have probed for game, especially when the 1NT rebid showed a maximum minimum hand."
+      "The partnership correctly identified that they lacked the combined strength (23 total HCP) required for a game contract, as confirmed by the double dummy truth (no game makes).",
+      "South's opening bid of 1C and subsequent rebid of 1NT accurately described a minimum opening hand (14 HCP) with a semi-balanced shape and denying 4-card Spade support.",
+      "North showed excellent discipline by passing 1NT. Although holding a 5-card major, North correctly recognized that the partnership was not strong enough to push for game or even a higher part-score in Spades."
     ],
     "basic_section": {
-      "analysis": "South's opening 1C and subsequent 1N rebid (showing 12-14 HCP, semi-balanced, denying 4-card Spade support) were standard. North's 1S response was also correct. The critical moment was North's rebid. Although North only has 9 HCP, opposite a 14 HCP hand, the partnership total is 23 points. North should recognize this potential and issue a game invitation (2NT) rather than passing 1NT. South, holding the maximum 14 HCP for the 1NT rebid, should accept the invitation and bid 3NT.",
+      "analysis": "South opened 1 Club, showing a minimum opening hand (12+ HCP) and a club suit. North responded 1 Spade, showing 6+ points and a 4+ card Spade suit (here 5 cards). South's rebid of 1NT showed 12-14 HCP, a semi-balanced hand, and denied having 4-card support for Spades. Since North only has 9 HCP, the partnership total is 23 HCP, which is insufficient for game (usually requiring 25+ HCP). North correctly passed 1NT, securing the optimal part-score contract.",
       "recommended_auction": [
         {
           "bid": "1C",
-          "explanation": "Standard opening bid, 14 HCP, 5-card suit."
+          "explanation": "Standard opening bid (14 HCP, 5 clubs)."
         },
         {
           "bid": "p",
-          "explanation": "West passes with 8 HCP."
+          "explanation": "West passes with only 8 HCP."
         },
         {
           "bid": "1S",
-          "explanation": "Standard response, 9 HCP, 5-card major."
+          "explanation": "Standard response showing 6+ points and a 5-card major."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "East passes with 9 HCP."
         },
         {
           "bid": "1N",
-          "explanation": "South shows 12-14 HCP, semi-balanced, denying 4-card Spade support."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "2N",
-          "explanation": "Invitational bid (10-12 points expected, but 9 HCP is sufficient here given the 5-card suit and maximum opener). Probes for 3NT."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "3N",
-          "explanation": "South accepts the invitation, holding 14 HCP (a maximum 1N rebid)."
+          "explanation": "South shows 12-14 HCP, semi-balanced shape, denying 4-card Spade support."
         },
         {
           "bid": "p",
@@ -236,82 +220,66 @@
         },
         {
           "bid": "p",
-          "explanation": "North passes, satisfied with game."
+          "explanation": "North recognizes the minimum strength shown by South and passes, stopping safely in 1NT."
         },
         {
           "bid": "p",
-          "explanation": "East passes. Auction ends."
+          "explanation": "East passes. Contract is 1NT."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The partnership missed a crucial game opportunity. While 3S also makes, 3NT is the preferred contract for scoring. North's 9 HCP hand, featuring a 5-card major and good controls (A, Q, J), plays stronger than a flat minimum. When Opener rebids 1NT, Responder must evaluate whether Opener is likely to be 12 HCP or 14 HCP. Since 3NT makes, North should have stretched to invite game, recognizing that 23 combined points is often sufficient for 3NT, especially when the hand shapes complement each other well (5-card club suit opposite a 5-card spade suit, and good controls in the side suits).",
+      "analysis": "South's 1NT rebid is the most descriptive choice, despite the 5-card club suit, as the hand is too balanced to rebid 2C (which would promise a stronger hand or a 6-card suit). North's hand, while containing a 5-card major, is weak (9 HCP) and lacks secondary values (Q-singleton club). Attempting to rebid 2S would be forcing and highly aggressive given the minimum strength shown by Opener. North's pass of 1NT demonstrates excellent judgment in evaluating the combined partnership strength (23 HCP) and prioritizing safety over pushing for a marginal game that does not exist.",
       "sequence": [
         {
           "bid": "1C",
-          "explanation": "Opener (South)"
+          "explanation": "South opens 1C (14 HCP, 5 cards)."
         },
         {
           "bid": "p",
-          "explanation": "West"
+          "explanation": "West passes."
         },
         {
           "bid": "1S",
-          "explanation": "Responder (North)"
+          "explanation": "North responds 1S, showing 6+ points and a 5-card major."
         },
         {
           "bid": "p",
-          "explanation": "East"
+          "explanation": "East passes."
         },
         {
           "bid": "1N",
-          "explanation": "Opener (South)"
+          "explanation": "South shows 12-14 HCP, semi-balanced, denying 4 Spades."
         },
         {
           "bid": "p",
-          "explanation": "West"
-        },
-        {
-          "bid": "2N",
-          "explanation": "Responder (North) stretches to invite game."
+          "explanation": "West passes."
         },
         {
           "bid": "p",
-          "explanation": "East"
-        },
-        {
-          "bid": "3N",
-          "explanation": "Opener (South) accepts the invitation."
+          "explanation": "North passes. With 9 HCP opposite a minimum 1NT rebid, the partnership is clearly short of game."
         },
         {
           "bid": "p",
-          "explanation": "West"
-        },
-        {
-          "bid": "p",
-          "explanation": "North"
-        },
-        {
-          "bid": "p",
-          "explanation": "East"
+          "explanation": "All pass."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Game Invitation with 9 HCP",
-        "category": "Bidding Strategy"
-      },
-      {
-        "player": "Partnership",
-        "topic": "Recognizing 3NT Potential (23+ Points)",
-        "category": "Game Recognition"
-      },
-      {
         "player": "South",
-        "topic": "Accepting Game Invitations (Maximum Hand)",
-        "category": "Bidding Fundamentals"
+        "topic": "Rebids after 1C - 1S",
+        "category": "Standard Bidding"
+      },
+      {
+        "player": "North",
+        "topic": "Passing 1NT with a 5-card major (Weak Hand)",
+        "category": "Contract Evaluation"
+      },
+      {
+        "player": "N/S Partnership",
+        "topic": "Game vs. Part-Score Thresholds (23 HCP)",
+        "category": "Partnership Agreement"
       }
     ]
   },

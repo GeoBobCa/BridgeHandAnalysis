@@ -189,133 +189,125 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL CONTRACT REACHED",
+    "verdict": "OPTIMAL CONTRACT",
     "actual_critique": [
-      "West correctly opened 2C, showing a game-forcing hand (22+ HCP).",
-      "East's 2S response was highly non-standard and misleading; 2D is the required negative response (0-7 HCP) for their 5 HCP hand.",
-      "Despite the irregular response sequence, West successfully navigated to 3NT, which is the optimal game contract (10 tricks)."
+      "The partnership successfully reached the optimal game contract (3NT making 10 tricks), securing the maximum score available on this deal.",
+      "West handled the strong 2C opening sequence perfectly, correctly identifying the need for game and settling in 3NT when partner showed weakness but failed to confirm a major suit fit.",
+      "East's 2S response over 2C, holding only 5 HCP, was highly irregular and misleading. In standard SAYC, 2D is the negative response (0-7 HCP). This error could have led West astray, but West recovered well."
     ],
     "basic_section": {
-      "analysis": "West holds 22 HCP, requiring a strong, artificial 2C opening. East, with only 5 HCP, must give the standard negative response, 2D. West then describes their hand, starting with the 5-card Heart suit (2H). East shows their 6-card Spade suit (2S). Knowing the combined strength is 27 HCP and having stoppers in all suits, West correctly concludes that 3NT is the safest and highest-scoring game contract.",
+      "analysis": "West holds a massive 22 HCP, requiring a forcing 2C opening bid. East is weak (5 HCP) but has a long 6-card spade suit. With 27 combined HCP, game is mandatory. Since West is balanced (2=5=4=2) and East is minimum, 3NT is the safest and highest-scoring game contract available, making 10 tricks.",
       "recommended_auction": [
         {
           "bid": "2C",
-          "explanation": "Strong, artificial, game-forcing opening (22+ HCP)."
+          "explanation": "West opens 2C, showing 22+ HCP, forcing to game."
         },
         {
           "bid": "p",
-          "explanation": "Standard pass."
+          "explanation": "North passes."
         },
         {
           "bid": "2D",
-          "explanation": "Standard negative response, showing 0-7 HCP."
+          "explanation": "East gives the standard negative response (0-7 HCP) over 2C, despite having a long suit."
         },
         {
           "bid": "p",
-          "explanation": "Standard pass."
+          "explanation": "South passes."
         },
         {
-          "bid": "2H",
-          "explanation": "Opener shows a 5-card Heart suit, forcing."
-        },
-        {
-          "bid": "p",
-          "explanation": "Standard pass."
-        },
-        {
-          "bid": "2S",
-          "explanation": "Responder shows a 6-card Spade suit, confirming minimum values (5 HCP)."
+          "bid": "2N",
+          "explanation": "West shows a balanced hand, 22-24 HCP range."
         },
         {
           "bid": "p",
-          "explanation": "Standard pass."
+          "explanation": "North passes."
+        },
+        {
+          "bid": "3S",
+          "explanation": "East shows their 6-card spade suit, confirming minimum values after the negative response."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
         },
         {
           "bid": "3N",
-          "explanation": "Opener has shown 22+ HCP and stoppers everywhere. 3NT is the best game given the combined 27 HCP and the lack of slam interest."
+          "explanation": "West knows game is required and chooses the safest spot, 3NT, given the balanced nature and lack of confirmed major suit fit."
         },
         {
           "bid": "p",
-          "explanation": "Standard pass."
-        },
-        {
-          "bid": "p",
-          "explanation": "Standard pass."
-        },
-        {
-          "bid": "p",
-          "explanation": "Auction closes."
+          "explanation": "All pass, ending the auction."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "After the 2D negative, West knows slam is highly unlikely. West's primary goal is to find the best game. The 2H rebid is descriptive. East's 2S shows shape and minimum values. West could continue describing shape (e.g., 3D showing 5H-4D), but since East is weak and West has a balanced hand with excellent controls (AK in Clubs, AQJ in Hearts, KQ in Diamonds, K in Spades), jumping directly to 3NT is the most efficient and accurate conclusion, maximizing the high-card strength.",
+      "analysis": "West's 22 HCP hand is slightly unbalanced (5 Hearts) but strong enough to be treated as balanced for the 2C opening structure. In the actual auction, East's 2S response was highly irregular for 5 HCP, typically promising 8+ HCP. West's 3H rebid was a natural description of their 5-card suit. When East rebid 3S, West correctly inferred that East was weak but had length. With 27 combined points and stoppers in all suits, West correctly terminated the auction in 3NT, avoiding potential issues in a suit contract where the combined trump length might be insufficient or the distribution unfavorable for high tricks.",
       "sequence": [
         {
           "bid": "2C",
-          "explanation": "Strong, artificial, game-forcing."
+          "explanation": "West: Strong, artificial, forcing to game (22+ HCP)."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "2D",
-          "explanation": "Negative response (0-7 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "2H",
-          "explanation": "Opener shows 5+ Hearts."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
+          "explanation": "North passes."
         },
         {
           "bid": "2S",
-          "explanation": "Responder shows 6 Spades, minimum values."
+          "explanation": "East: Irregular response for 5 HCP. Should have been 2D (negative)."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "South passes."
+        },
+        {
+          "bid": "3H",
+          "explanation": "West: Showing a 5-card Heart suit, continuing to describe the hand."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "3S",
+          "explanation": "East: Confirming 6+ Spades, still showing minimum values."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
         },
         {
           "bid": "3N",
-          "explanation": "Opener concludes the auction. 27 combined HCP and balanced distribution makes 3NT the optimal game."
+          "explanation": "West: Deciding 3NT is the best game contract, based on combined strength and balanced distribution."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "North passes."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "South passes. Contract 3NT."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "East",
-        "topic": "Responding to 2C: The 2D Negative",
-        "category": "Bidding Fundamentals"
+        "topic": "Response to 2C Opening",
+        "category": "Bidding System/Conventions"
       },
       {
         "player": "West",
-        "topic": "Rebidding after a 2C/2D sequence to describe shape (5-4-2-2)",
-        "category": "Strong Opening Bids"
+        "topic": "Rebidding after 2C Opening",
+        "category": "Advanced Bidding"
       },
       {
-        "player": "E/W",
-        "topic": "Contract Selection: Prioritizing 3NT over Major Suit Games with 27+ HCP",
-        "category": "Contract Evaluation"
+        "player": "Partnership",
+        "topic": "Game Selection (3NT vs. Suit Game)",
+        "category": "Contract Selection"
       }
     ]
   },

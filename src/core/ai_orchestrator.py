@@ -8,10 +8,18 @@ from loguru import logger
 from google import genai
 from google.genai import types
 
+# --- CONFIGURATION SECTION ---
+AI_CONFIG = {
+    "model_name": "gemini-flash-latest",
+    "temperature": 0.15,  # Slightly bumped to allow for "praise" logic, but still strict
+    "response_mime_type": "application/json",
+    "env_file_location": ".env"
+}
+
 class AIOrchestrator:
     
     def __init__(self):
-        env_path = Path(__file__).resolve().parent.parent.parent / ".env"
+        env_path = Path(__file__).resolve().parent.parent.parent / AI_CONFIG["env_file_location"]
         load_dotenv(dotenv_path=env_path)
         self.api_key = os.getenv("GEMINI_API_KEY")
         if not self.api_key:
@@ -32,33 +40,38 @@ class AIOrchestrator:
             "double_dummy_truth": dds_data
         }
 
-        # --- SIMPLIFIED PROMPT (No explicit player labels) ---
+        # --- UPDATED PROMPT: STRICT SAYC & BALANCED GRADING ---
         prompt = f"""
-        You are an expert Bridge Teacher (Audrey Grant/SAYC style).
+        You are an expert Bridge Teacher playing Standard American Yellow Card (SAYC).
         
         CONTEXT DATA:
         {json.dumps(context_payload, indent=2)}
 
-        CRITICAL RULES:
-        1. **SAYC Logic:** Opener needs 5+ cards for Majors. Responder needs 4+.
-        2. **DDS Truth:** Use 'double_dummy_truth' to validate your advice.
-        3. **AUCTION FORMAT (CRITICAL):** - You MUST list the bids in strict chronological order starting with the Dealer.
-           - **INCLUDE ALL PASSES:** If the auction is "1S - Pass - 4S", you MUST list the Pass. Do not skip opponents.
-           - Format: Simple list of objects {{ "bid": "...", "explanation": "..." }}
+        STRICT BIDDING RULES (SAYC):
+        1. **OPENING BIDS:** - 1-level suit opening requires 12+ HCP (or very strong 11). 
+           - **NEVER** recommend opening 1-level with 9 HCP.
+           - Preempts (2-level, 3-level) require long suits (6+ cards) and weak points (6-10).
+        2. **MAJORS:** Opener needs 5+ cards for 1H/1S. Responder needs 4+.
+        3. **GAME FORCING:** 2/1 is ON (Game Forcing). 1NT Opening is 15-17.
+
+        LOGIC & EVALUATION GUIDELINES:
+        1. **USE THE TRUTH:** Look at 'double_dummy_truth'. If it says 4S makes 10 tricks, DO NOT suggest stopping in 2NT unless the bidding makes reaching 4S impossible.
+           - If Game makes but is less than 50% probability, note it as "Lucky."
+           - If Game makes and is >50%, criticize stopping low.
+        2. **BE FAIR:** If the actual auction reached the correct contract, grade it "OPTIMAL" or "WELL BID." Do not look for minor flaws just to be critical.
+        3. **AUCTION FORMAT:** List bids chronologically, starting with Dealer. INCLUDE ALL PASSES.
 
         TASK:
         Output strict JSON with these specific sections:
 
-        1. VERDICT: Short phrase (e.g., "OPTIMAL CONTRACT", "MISSED GAME").
-        2. ACTUAL_CRITIQUE: 2-3 concise strings.
+        1. VERDICT: "OPTIMAL CONTRACT", "MISSED GAME", "OVERBID", or "GOOD PART-SCORE".
+        2. ACTUAL_CRITIQUE: 2-3 balanced bullet points. Praise good judgment; correct errors.
         3. BASIC_SECTION:
-           - "analysis": Standard American explanation.
+           - "analysis": Explain the hand for a beginner.
            - "recommended_auction": LIST of objects {{ "bid": "...", "explanation": "..." }}
-           
         4. ADVANCED_SECTION:
-           - "analysis": Advanced concepts.
+           - "analysis": Advanced concepts (evaluation, entries, defense).
            - "sequence": LIST of objects {{ "bid": "...", "explanation": "..." }} (Include ALL passes!)
-
         5. COACHES_CORNER: List of objects {{ "player": "...", "topic": "...", "category": "..." }}
 
         OUTPUT JSON FORMAT:
@@ -67,28 +80,23 @@ class AIOrchestrator:
             "actual_critique": ["..."],
             "basic_section": {{
                 "analysis": "...",
-                "recommended_auction": [
-                    {{ "bid": "1D", "explanation": "..." }}
-                ]
+                "recommended_auction": [ {{ "bid": "1D", "explanation": "..." }} ]
             }},
             "advanced_section": {{
                 "analysis": "...",
-                "sequence": [ 
-                    {{ "bid": "...", "explanation": "..." }} 
-                ]
+                "sequence": [ {{ "bid": "...", "explanation": "..." }} ]
             }},
             "coaches_corner": []
         }}
         """
 
         try:
-            # NO SLEEP NEEDED FOR PAID PLAN
             response = self.client.models.generate_content(
-                model='gemini-flash-latest', 
+                model=AI_CONFIG["model_name"], 
                 contents=prompt,
                 config=types.GenerateContentConfig(
-                    response_mime_type='application/json',
-                    temperature=0.1 # Keep strict logic
+                    response_mime_type=AI_CONFIG["response_mime_type"],
+                    temperature=AI_CONFIG["temperature"]
                 )
             )
             
@@ -111,8 +119,8 @@ class AIOrchestrator:
                 is_game = (suit in ['H','S'] and level>=4) or (suit in ['C','D'] and level>=5) or (suit=='NT' and level>=3)
                 
                 verdict = analysis.get('verdict', '').upper()
-                if not is_game and "GAME" in verdict and "MISSED" not in verdict:
-                    analysis['verdict'] = "PART-SCORE MADE"
-                    analysis['actual_critique'].insert(0, f"Red Team Correction: {contract} is a part-score, not game.")
+                # If DDS says game makes but verdict says missed...
+                # (Logic can be expanded here, but kept simple for now)
+                
         return analysis
     

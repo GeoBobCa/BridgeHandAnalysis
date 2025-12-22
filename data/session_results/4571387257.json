@@ -187,26 +187,26 @@
     }
   },
   "ai_analysis": {
-    "verdict": "POOR CONTRACT SELECTION",
+    "verdict": "OVERBID",
     "actual_critique": [
-      "The partnership failed to confirm their 4-4 Spade fit (K974/J852). South's final pass over 1S was an error, as they should have raised to 2S.",
-      "The actual contract of 1S was disastrous, going down three tricks (DDS shows 4 tricks taken), highlighting a severe overestimation of trick-taking potential.",
-      "The highest making contract for N/S was 1H (7 tricks), demonstrating that the combined 21 HCP were poorly distributed for offense."
+      "The contract of 1S was disastrous, failing by three tricks (down 3). This was due to poor card placement in Spades, where East held AQT opposite the N/S holdings of K974 and J852.",
+      "North's 1S rebid, while technically showing a 4-card suit, was ill-advised. With a minimum 12 HCP and a 4=2=4=3 shape, a 1NT rebid or a 2D rebid would have been more descriptive and safer than introducing a second major.",
+      "The partnership missed their optimal part-score contract of 2H or 2C, both of which make exactly seven tricks. They should have prioritized finding the 4-4 Heart fit."
     ],
     "basic_section": {
-      "analysis": "South (9 HCP) should have supported North's 1S rebid, confirming the 4-4 Spade fit. Standard SAYC requires a raise to 2S with 7-10 points and four-card support. Although 2S would also fail badly due to poor card placement, finding the fit and bidding to the appropriate level (2S) is the fundamental goal of this sequence.",
+      "analysis": "South is too weak to open (9 HCP). North opens 1D (12 HCP, minimum). South responds 1H, showing 4+ hearts and 6+ points. North, with a balanced minimum hand, should aim to describe their shape and strength accurately. The actual auction led to 1S, which is a poor fit and fails badly. The partnership should aim for 1NT or, ideally, the 4-4 Heart fit.",
       "recommended_auction": [
         {
           "bid": "p",
-          "explanation": "South passes with a light 9 HCP hand."
+          "explanation": "South (9 HCP) correctly passes."
         },
         {
           "bid": "p",
-          "explanation": "West passes with 9 HCP and a long minor."
+          "explanation": "West (9 HCP) passes, despite a 6-card club suit, preferring to wait."
         },
         {
           "bid": "1D",
-          "explanation": "North opens 1D (12 HCP, 4+ Diamonds)."
+          "explanation": "North (12 HCP, 4=2=4=3) opens 1D, standard for this minimum, balanced shape."
         },
         {
           "bid": "p",
@@ -214,40 +214,32 @@
         },
         {
           "bid": "1H",
-          "explanation": "South responds 1H, showing 6+ points and 4+ Hearts."
+          "explanation": "South responds 1H, showing 6+ points and a 4-card Heart suit."
         },
         {
           "bid": "p",
           "explanation": "West passes."
         },
         {
-          "bid": "1S",
-          "explanation": "North rebids 1S, showing 4 Spades and 4 Diamonds (4-4 shape), minimum 12-14 HCP."
+          "bid": "2D",
+          "explanation": "North rebids 2D, showing a minimum hand (12-14) and confirming 4+ Diamonds, denying a 4-card Heart fit or a strong hand for 1NT."
+        },
+        {
+          "bid": "2H",
+          "explanation": "South shows preference for Hearts (4-4 fit found) over Diamonds. This is the optimal part-score contract."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "2S",
-          "explanation": "South raises to 2S, confirming the 4-4 Spade fit and showing 7-10 points."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes, accepting the partial score with a minimum hand."
+          "explanation": "North passes, having shown a minimum hand."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The partnership correctly identified the 4-4 Spade fit, but South's failure to bid 2S led to the disastrous 1S contract. While 2S is the standard destination for 21 combined HCP and a fit, the DDS shows that N/S has extremely poor offensive potential (4 tricks in Spades). The only making contract is 1H (7 tricks). North, recognizing the minimum nature of the hand after the 1H response, might have considered passing 1H instead of bidding 1S, suppressing the 4-card major to stop at the safest level, although this is non-standard SAYC.",
+      "analysis": "The double dummy truth shows that 2H makes 7 tricks, achieving the optimal part-score. The actual 1S contract was a major failure because N/S lacked control over the spade suit (AQT held by East). When North opened 1D and South responded 1H, North should have prioritized showing the balanced nature (1NT) or the primary suit (2D) rather than introducing 1S, which is often reserved for hands with better spade quality or greater strength. South's hand is highly defensive, and stopping low is mandatory.",
       "sequence": [
         {
           "bid": "p",
-          "explanation": "South passes."
+          "explanation": "South passes (9 HCP)."
         },
         {
           "bid": "p",
@@ -255,7 +247,7 @@
         },
         {
           "bid": "1D",
-          "explanation": "North opens 1D."
+          "explanation": "North opens 1D (12 HCP)."
         },
         {
           "bid": "p",
@@ -263,7 +255,7 @@
         },
         {
           "bid": "1H",
-          "explanation": "South responds 1H."
+          "explanation": "South responds 1H (4+ Hearts, 6+ points)."
         },
         {
           "bid": "p",
@@ -271,7 +263,7 @@
         },
         {
           "bid": "1S",
-          "explanation": "North correctly shows the 4-card Spade suit."
+          "explanation": "North rebids 1S, showing 4 Spades and 12-14 HCP. This is the actual, flawed bid."
         },
         {
           "bid": "p",
@@ -279,29 +271,29 @@
         },
         {
           "bid": "p",
-          "explanation": "South passes, failing to support Spades or show preference for Hearts, leading to the poor 1S contract."
+          "explanation": "South passes, showing a minimum response and accepting the strain."
         },
         {
           "bid": "p",
-          "explanation": "West closes the auction."
+          "explanation": "West passes. Contract 1S, down 3."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Major Suit Support",
-        "category": "Bidding Fundamentals"
+        "player": "North",
+        "topic": "Opener's Rebid Strategy",
+        "category": "Bidding"
       },
       {
         "player": "Partnership (N/S)",
-        "topic": "Hand Valuation and Trick Potential",
-        "category": "Advanced Play"
+        "topic": "Finding the 4-4 Major Suit Fit",
+        "category": "Bidding"
       },
       {
         "player": "North",
-        "topic": "Rebids after 1-level Response",
-        "category": "Bidding Fundamentals"
+        "topic": "Suit Quality and Safety",
+        "category": "Evaluation"
       }
     ]
   },

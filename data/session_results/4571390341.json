@@ -188,79 +188,63 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME",
+    "verdict": "GOOD PART-SCORE",
     "actual_critique": [
-      "North/South missed the optimal game contract of 4 Clubs, which makes 10 tricks according to Double Dummy Solver (DDS).",
-      "South failed to adequately describe the strength (15 HCP) and distribution (5-card Clubs) of their hand, prioritizing the 4-card Spade fit (2S) over showing their powerful primary suit (2C).",
-      "The partnership stopped prematurely at 2S, resulting in a significant missed score opportunity (340+ points)."
+      "West made a significant error passing the takeout double of 1H. With 14 HCP and a 5-card suit, West should have rebid 2H to compete and show strength, rather than risking a penalty pass.",
+      "South correctly used the takeout double (15 HCP) to enter the auction and show a strong hand, leading to a successful part-score contract in Spades.",
+      "North/South showed good judgment in stopping at 2S. Although 5C makes 10 tricks, 4S fails (making only 8), and 2S is a safe, successful contract based on the limited combined strength (21 HCP)."
     ],
     "basic_section": {
-      "analysis": "West's 1 Heart opening was standard. South's takeout double (15 HCP) was strong. After North's minimum 1 Spade response, South should have focused on showing their powerful 5-card Club suit. Bidding 2 Clubs (a new suit by the doubler at the two level) is forcing and shows a hand too strong to stop at 2 Spades. Although the 5-1 Club fit is unusual, the quality of South's suit (AKT96) and the overall point count (21 HCP) justify exploring game. North should show preference for Spades (2S) but must continue bidding when South insists on Clubs (3C), leading to the successful 4 Club game.",
+      "analysis": "West opened 1 Heart. South has a strong hand (15 HCP) and used a takeout double to show interest in the unbid suits, particularly the majors and Clubs. North, forced to bid after the double, responded 1 Spade with 6 HCP. South then supported Spades at the 2-level, showing a strong hand (12+ points) and 4-card support, inviting game. Since North was minimum, the partnership correctly stopped at 2S, which is a successful part-score.",
       "recommended_auction": [
         {
           "bid": "1H",
-          "explanation": "Standard opening, 5+ Hearts, 12-21 HCP."
+          "explanation": "Standard opening by West (14 HCP, 5-card suit)."
         },
         {
           "bid": "p",
-          "explanation": "North has only 6 HCP and passes initially."
+          "explanation": "North is too weak (6 HCP) to respond."
         },
         {
           "bid": "p",
-          "explanation": "East has insufficient values to intervene."
+          "explanation": "East is too weak (5 HCP)."
         },
         {
           "bid": "d",
-          "explanation": "Strong takeout double (15 HCP, good shape) showing support for unbid suits."
+          "explanation": "South makes a takeout double, showing 12+ HCP and support for unbid suits."
         },
         {
           "bid": "p",
-          "explanation": "West passes, showing a minimum hand."
+          "explanation": "West passes, hoping to defend 1H doubled (a poor decision with 14 HCP)."
         },
         {
           "bid": "1S",
-          "explanation": "Minimum response to the takeout double, showing 4+ Spades (6 HCP)."
-        },
-        {
-          "bid": "2C",
-          "explanation": "Strong rebid by the doubler, showing a 5+ card Club suit and 15+ HCP. This bid is forcing."
+          "explanation": "North is forced to bid, showing 4+ Spades (0-8 HCP)."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
           "bid": "2S",
-          "explanation": "Preference for the 4-card Spade suit, showing minimum values (6 HCP)."
+          "explanation": "South shows strong support for Spades (12+ HCP, 4 cards), inviting game."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "3C",
-          "explanation": "South insists on Clubs, showing a very strong hand and distribution, forcing to game."
+          "explanation": "North declines the game invitation due to minimum strength."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "4C",
-          "explanation": "North accepts the game invitation, recognizing South's strength and the potential for distributional tricks."
+          "explanation": "East passes."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
+          "explanation": "Contract 2S."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "South's hand is highly distributional (4=1=3=5) and strong (15 HCP). After the takeout double, the priority shifts from finding a 4-4 major fit to describing the hand's primary source of tricks. Bidding 2C is a 'reverse' or strong rebid, forcing partner to continue. While North correctly shows preference for Spades (2S), South must use 3C to convey the extreme quality and length of the Club suit, overriding the initial preference. This sequence ensures the partnership reaches the optimal game contract based on combined strength and distribution, even with a 5-1 fit.",
+      "analysis": "The optimal contract is 5 Clubs, making 10 tricks. Reaching 5C requires South to prioritize their powerful 5-card Club suit over the established Spade fit, especially since South's hand is highly distributional (4=1=3=5). If West makes the standard rebid of 2H, South must use 3C as a forcing bid to show their suit and strength, aiming for game in a minor or 3NT, as 4S is known to fail.",
       "sequence": [
         {
           "bid": "1H",
@@ -276,69 +260,61 @@
         },
         {
           "bid": "d",
-          "explanation": "South's strong takeout double."
+          "explanation": "South makes a strong takeout double (15 HCP)."
+        },
+        {
+          "bid": "2H",
+          "explanation": "Standard rebid by West, showing 5+ Hearts and 12-15 points."
+        },
+        {
+          "bid": "2S",
+          "explanation": "North competes, showing 4+ Spades (6-9 points)."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "3C",
+          "explanation": "South shows a strong 5-card Club suit. This new suit by the doubler is forcing to game."
         },
         {
           "bid": "p",
           "explanation": "West passes."
         },
         {
-          "bid": "1S",
-          "explanation": "North's minimum response."
-        },
-        {
-          "bid": "2C",
-          "explanation": "Forcing rebid by the doubler, showing 5+ Clubs and 15+ HCP."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "2S",
-          "explanation": "North shows preference for Spades."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "3C",
-          "explanation": "South insists on Clubs, showing game interest and a powerful suit."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
+          "bid": "3S",
+          "explanation": "North shows preference for Spades, denying better support for Clubs/Diamonds."
         },
         {
           "bid": "4C",
-          "explanation": "North accepts the game invitation."
+          "explanation": "South insists on Clubs, showing a powerful suit and inviting 5C."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "West passes."
         },
         {
-          "bid": "p",
-          "explanation": "Pass."
+          "bid": "5C",
+          "explanation": "North accepts the invitation, knowing the combined strength and fit is sufficient for game."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Rebidding after a Takeout Double",
-        "category": "Bidding Strategy"
+        "player": "West",
+        "topic": "Rebid after opponent's takeout double. Never pass with 14 HCP and a decent suit.",
+        "category": "Defensive Bidding"
       },
       {
         "player": "South",
-        "topic": "Showing Distributional Strength over Minor Fit",
-        "category": "Hand Evaluation"
+        "topic": "Prioritizing suit length vs. partner's forced response. Showing the 5-card Club suit (3C) is key to reaching the optimal contract.",
+        "category": "Competitive Bidding"
       },
       {
         "player": "North",
-        "topic": "Responding to Forcing Rebids by the Doubler",
-        "category": "Bidding Conventions"
+        "topic": "Forced responses after a takeout double. Bidding 1S with 6 HCP was mandatory and correct.",
+        "category": "Basic Bidding"
       }
     ]
   },

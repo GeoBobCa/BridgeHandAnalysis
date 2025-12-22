@@ -188,26 +188,26 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED OPTIMAL GAME (4H)",
+    "verdict": "MISSED GAME",
     "actual_critique": [
-      "The partnership missed a makeable game contract (4H makes exactly 9 tricks).",
-      "North's 3C rebid was too passive, failing to explore game possibilities after South's forcing 2H response.",
-      "The final contract of 3C was severely underbid and failed by two tricks (DDS shows 7 tricks available)."
+      "The partnership missed the technically optimal game contract of 4S (10 tricks), although reaching this contract would have been highly unconventional due to the poor 5-card fit.",
+      "North (Opener) shut down the auction prematurely with the 3C rebid. After South's constructive 2H response (showing 10+ points and 4+ Hearts), North should have explored game by bidding 2NT, showing a Spade stopper and inviting 3NT.",
+      "The final contract of 3C is severely underbid and fails by two tricks (7 tricks taken), resulting in a poor score when a game was available."
     ],
     "basic_section": {
-      "analysis": "N/S hold 25 high card points, making game highly probable. North's 1C opening and South's 2H response established a forcing sequence. North, with 14 HCP, should have continued exploring game rather than retreating to 3C, which suggested a minimum hand and shut down the auction prematurely. The partnership failed to find the 4-2 Heart fit, which provides the best natural game contract.",
+      "analysis": "North/South have 25 HCP combined, which is sufficient for game. North opened 1C (14 HCP) and South responded constructively with 2H (11 HCP, 4-card Heart suit). North's 3C rebid was a minimum preference bid, denying 4-card Heart support and showing 5+ Clubs. However, with 14 HCP, North should have prioritized game exploration. The most logical game target, 3NT, fails by one trick (8 tricks), but the partnership should have aimed for it. Stopping in 3C, which fails by two tricks, was a major missed opportunity.",
       "recommended_auction": [
         {
           "bid": "p",
-          "explanation": "East passes, 7 HCP is insufficient for an opening bid."
+          "explanation": "East passes with 7 HCP."
         },
         {
           "bid": "p",
-          "explanation": "South passes, waiting for North to open."
+          "explanation": "South passes with 11 HCP. While borderline, passing is acceptable under strict SAYC 12+ HCP opening rules."
         },
         {
           "bid": "p",
-          "explanation": "West passes."
+          "explanation": "West passes with 8 HCP."
         },
         {
           "bid": "1C",
@@ -215,11 +215,11 @@
         },
         {
           "bid": "1S",
-          "explanation": "East overcalls 1S (5 cards, 7 HCP)."
+          "explanation": "East overcalls 1S (5-card suit, 7 HCP)."
         },
         {
           "bid": "2H",
-          "explanation": "South responds 2H, showing 4+ Hearts and 10+ HCP. This is forcing."
+          "explanation": "South bids 2H, showing 4+ Hearts and 10+ points (constructive response)."
         },
         {
           "bid": "p",
@@ -227,7 +227,7 @@
         },
         {
           "bid": "2NT",
-          "explanation": "North shows 12-14 HCP, balanced shape, and a partial stopper in Spades, denying 3-card Heart support."
+          "explanation": "North bids 2NT. This shows 12-14 HCP, a Spade stopper, and denies 4-card Heart support. This is an invitational bid to 3NT."
         },
         {
           "bid": "p",
@@ -235,7 +235,7 @@
         },
         {
           "bid": "3NT",
-          "explanation": "South has 11 HCP and good controls, bidding the expected game based on combined strength (25 HCP). (Note: While 3NT fails by 1, it is the standard bid here.)"
+          "explanation": "South accepts the invitation with 11 HCP and good controls (AAQ)."
         },
         {
           "bid": "p",
@@ -244,31 +244,27 @@
         {
           "bid": "p",
           "explanation": "North passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "Given the competitive auction and the 4-2 Heart fit that makes game, N/S should use the 2NT rebid by Opener to describe strength, followed by Responder's secondary suit (3D) to find the optimal fit. North's 3H rebid, showing preference for the 4-2 fit over 3NT, is crucial here, allowing South to raise to the makeable 4H contract.",
+      "analysis": "The double dummy truth indicates that 4S makes 10 tricks, which is highly anomalous given the 5-card N/S fit and the E/W holding of AK in Spades. Since 4S is unbiddable using standard methods, the partnership should focus on the most logical game, 3NT. North's decision to bid 3C over 2H was a failure of evaluation. North has excellent controls (AKJ in Clubs, QT in Spades, QJT in Diamonds) and should recognize the combined strength. Bidding 2NT is crucial here to describe the hand accurately (minimum opener, stopper, no major fit) and allow the 11 HCP responder to push to game. The actual 3C contract is a poor choice, as the Club suit is vulnerable to the 10 and 9 in East/West hands, leading to quick losers.",
       "sequence": [
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "East passes (7 HCP)."
         },
         {
           "bid": "p",
-          "explanation": "South passes."
+          "explanation": "South passes (11 HCP)."
         },
         {
           "bid": "p",
-          "explanation": "West passes."
+          "explanation": "West passes (8 HCP)."
         },
         {
           "bid": "1C",
-          "explanation": "North opens 1C."
+          "explanation": "North opens 1C (14 HCP, 5+ C)."
         },
         {
           "bid": "1S",
@@ -276,7 +272,7 @@
         },
         {
           "bid": "2H",
-          "explanation": "South shows 4+ H, 10+ HCP, forcing."
+          "explanation": "South shows 10+ points and 4+ Hearts."
         },
         {
           "bid": "p",
@@ -284,31 +280,15 @@
         },
         {
           "bid": "2NT",
-          "explanation": "North shows 12-14 HCP, balanced, partial S stopper."
+          "explanation": "North shows minimum opening values (12-14), a Spade stopper, and denies 4H support. Game invitation."
         },
         {
           "bid": "p",
           "explanation": "East passes."
         },
         {
-          "bid": "3D",
-          "explanation": "South shows a 4-card Diamond suit, confirming game interest, forcing."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "3H",
-          "explanation": "North shows 2-card support, preferring Hearts over Diamonds, suggesting 4H might be better than 3NT."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "4H",
-          "explanation": "South accepts the preference, knowing 25 HCP warrants game in the best available fit."
+          "bid": "3NT",
+          "explanation": "South accepts the game invitation."
         },
         {
           "bid": "p",
@@ -317,23 +297,24 @@
         {
           "bid": "p",
           "explanation": "North passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "North (BeaPercy)",
-        "topic": "Competitive Rebids by Opener",
-        "category": "Bidding Judgment"
+        "player": "South",
+        "topic": "Opening Hand Evaluation",
+        "category": "Bidding Basics"
       },
       {
-        "player": "South (Fish075)",
-        "topic": "Continuing to Game after Opener Shows Strength",
-        "category": "Game Theory"
+        "player": "North",
+        "topic": "Rebid Strategy (2NT vs. 3C)",
+        "category": "Intermediate Bidding"
+      },
+      {
+        "player": "Partnership",
+        "topic": "Game Exploration after Constructive Response",
+        "category": "Partnership Agreement"
       }
     ]
   },
