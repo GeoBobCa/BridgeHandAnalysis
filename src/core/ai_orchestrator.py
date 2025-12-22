@@ -10,22 +10,17 @@ from google import genai
 from google.genai import types
 
 class AIOrchestrator:
-    """
-    Manages interactions with Google Gemini and performs 'Red Team' validation.
-    """
     
     def __init__(self):
         env_path = Path(__file__).resolve().parent.parent.parent / ".env"
         load_dotenv(dotenv_path=env_path)
-
         self.api_key = os.getenv("GEMINI_API_KEY")
         if not self.api_key:
-            raise ValueError("Missing GEMINI_API_KEY in .env")
-            
+            raise ValueError("Missing GEMINI_API_KEY")
         logger.info("*** PRODUCTION MODE: Google GenAI Client Initialized ***")
         self.client = genai.Client(api_key=self.api_key)
 
-    def analyze_hand(self, hand_data: Dict, math_results: Dict) -> Dict:
+    def analyze_hand(self, hand_data: Dict, math_results: Dict, dds_data: Dict = None) -> Dict:
         deal_id = hand_data.get('board', 'Unknown')
         logger.info(f"Sending deal {deal_id} to Gemini...")
 
@@ -34,62 +29,59 @@ class AIOrchestrator:
             "vulnerability": hand_data.get('vulnerability'),
             "hands": hand_data['hands'],
             "auction_history": hand_data.get('auction', []),
-            "contract": hand_data.get('contract', 'Pass')
+            "contract": hand_data.get('contract', 'Pass'),
+            "double_dummy_truth": dds_data
         }
 
-        # --- UPDATED PROMPT: OPENING VS RESPONDING DISTINCTION ---
+        # --- GOLDEN MASTER PROMPT ---
         prompt = f"""
         You are an expert Bridge Teacher (Audrey Grant/SAYC style).
-        Analyze this deal based strictly on the provided FACTS.
         
         CONTEXT DATA:
         {json.dumps(context_payload, indent=2)}
 
         CRITICAL EVALUATION RULES:
-        1. **Points:** Use 'total_points' (HCP + Length) for opening decisions.
-        2. **Weak 2 Bids:** Check suit quality (2 of top 3 honors OR 3 of top 5).
-        3. **Game Contracts:** 3NT, 4H, 4S, 5C, 5D. (4D is NOT Game).
-        4. **SAYC MAJOR SUIT RULES (STRICT):**
-           - **OPENER:** MUST have 5+ cards to OPEN 1H or 1S. (If 4-4, open 1D or 1C).
-           - **RESPONDER:** May respond 1H or 1S with only 4+ cards over a minor suit opening. THIS IS CORRECT SAYC.
-           - **DO NOT** critique a responder for bidding a 4-card major over 1C/1D.
+        1. **SAYC Rules:** - OPENER: Must have 5+ cards to OPEN 1H or 1S.
+           - RESPONDER: May bid 1H or 1S with 4+ cards (Standard Response).
+        2. **DDS TRUTH:** - Use 'double_dummy_truth' to see if contracts actually make.
+           - If a contract fails deep analysis but is a good percentage bid, praise the bid but note the bad luck.
+        3. **AUCTIONS:** - Generate FULL auctions including final passes.
+           - **STRICT FORMAT:** You MUST include the 'player' field for every bid.
 
         TASK:
         Output strict JSON with these specific sections:
 
         1. VERDICT: Short phrase (e.g., "OPTIMAL CONTRACT", "MISSED GAME").
-        
-        2. ACTUAL_CRITIQUE: A list of 2-3 concise strings criticizing the actual play.
-        
-        3. BASIC_SECTION (The Fundamentals):
-           - "analysis": Explanation of the Standard American approach.
-           - "recommended_auction": A LIST OF OBJECTS representing the ideal sequence.
-             Format: {{ "bid": "1H", "explanation": "Shows 6+ pts, 4+ Hearts (Responder)." }}
+        2. ACTUAL_CRITIQUE: 2-3 concise strings.
+        3. BASIC_SECTION:
+           - "analysis": Standard American explanation.
+           - "recommended_auction": LIST OF OBJECTS.
+             Format: {{ "player": "North", "bid": "1H", "explanation": "..." }}
            
-        4. ADVANCED_SECTION (The Master Class):
-           - "analysis": Deeper look (Splinters, 2/1, etc.).
-           - "sequence": A LIST OF OBJECTS for the advanced sequence (or null).
+        4. ADVANCED_SECTION:
+           - "analysis": Advanced concepts.
+           - "sequence": LIST OF OBJECTS (or null).
+             Format: {{ "player": "North", "bid": "Splinter", "explanation": "..." }}
 
-        5. COACHES_CORNER:
-           - List of objects: {{ "player": "North", "topic": "...", "category": "Review" }}
+        5. COACHES_CORNER: List of objects {{ "player": "...", "topic": "...", "category": "..." }}
 
         OUTPUT JSON FORMAT:
         {{
             "verdict": "...",
-            "actual_critique": ["...", "..."],
+            "actual_critique": ["..."],
             "basic_section": {{
                 "analysis": "...",
                 "recommended_auction": [
-                    {{ "bid": "...", "explanation": "..." }}
+                    {{ "player": "North", "bid": "1D", "explanation": "..." }}
                 ]
             }},
             "advanced_section": {{
                 "analysis": "...",
-                "sequence": [ {{ "bid": "...", "explanation": "..." }} ]
+                "sequence": [ 
+                    {{ "player": "North", "bid": "...", "explanation": "..." }} 
+                ]
             }},
-            "coaches_corner": [
-                {{ "player": "North", "topic": "...", "category": "Review" }}
-            ]
+            "coaches_corner": []
         }}
         """
 
@@ -99,24 +91,21 @@ class AIOrchestrator:
                 model='gemini-flash-latest', 
                 contents=prompt,
                 config=types.GenerateContentConfig(
-                    response_mime_type='application/json'
+                    response_mime_type='application/json',
+                    temperature=0.1  # <--- CRITICAL: Low creativity = Better Bridge
                 )
             )
             
             if response.text:
                 return self._red_team_scan(json.loads(response.text), hand_data)
             else:
-                return {"error": "Empty response from AI"}
+                return {"error": "Empty response"}
 
         except Exception as e:
             logger.error(f"Gemini API Call failed: {e}")
             return {"error": str(e)}
 
     def _red_team_scan(self, analysis: Dict, facts: Dict) -> Dict:
-        """
-        Validates AI logic against Python math.
-        """
-        # 1. Check Game vs Part-Score
         contract = facts.get('contract', '')
         if contract and contract != 'Pass':
             match = re.search(r'(\d)(NT|[SHDC])', contract)
@@ -129,29 +118,5 @@ class AIOrchestrator:
                 if not is_game and "GAME" in verdict and "MISSED" not in verdict:
                     analysis['verdict'] = "PART-SCORE MADE"
                     analysis['actual_critique'].insert(0, f"Red Team Correction: {contract} is a part-score, not game.")
-
-        # 2. Check 5-Card Major Rule (OPENER ONLY)
-        try:
-            recommended = analysis.get('basic_section', {}).get('recommended_auction', [])
-            if recommended:
-                first_bid_obj = recommended[0]
-                first_bid = first_bid_obj['bid']
-                
-                # Identify if OPENING is 1H or 1S
-                if first_bid in ['1H', '1S']:
-                    dealer_seat = facts.get('dealer', 'South')
-                    # Get Dealer's hand stats
-                    dealer_hand = facts['hands'][dealer_seat]['stats']['cards']
-                    
-                    suit_char = first_bid[1] # 'H' or 'S'
-                    suit_length = len(dealer_hand.get(suit_char, ''))
-                    
-                    if suit_length < 5:
-                        logger.warning(f"RED TEAM: AI suggested OPENING {first_bid} with only {suit_length} cards!")
-                        # FORCE CORRECTION
-                        analysis['actual_critique'].insert(0, f"⚠️ AI ERROR FIXED: Cannot OPEN {first_bid} with only {suit_length} cards (SAYC requires 5).")
-                        analysis['basic_section']['analysis'] += f" [RED TEAM NOTE: Opening {first_bid} requires 5 cards. A minor suit opening was required.]"
-        except Exception as e:
-            logger.error(f"Red Team Major Check failed: {e}")
-
         return analysis
+    

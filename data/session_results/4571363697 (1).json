@@ -1,0 +1,329 @@
+{
+  "facts": {
+    "board": "Board 7",
+    "dealer": "South",
+    "vulnerability": "Both",
+    "contract": "3D",
+    "auction": [
+      "p",
+      "p",
+      "1D",
+      "p",
+      "1H",
+      "p",
+      "1S",
+      "p",
+      "2D",
+      "p",
+      "3D",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "SA",
+      "S9",
+      "S3",
+      "S2",
+      "CA",
+      "C6",
+      "C2",
+      "C3",
+      "C4",
+      "C7",
+      "D2",
+      "C8",
+      "HA",
+      "HQ",
+      "H2",
+      "H4",
+      "S5",
+      "S4",
+      "S7",
+      "SK",
+      "D3",
+      "DT",
+      "DJ",
+      "D4",
+      "D5",
+      "D6",
+      "DQ",
+      "H3",
+      "D8",
+      "H6",
+      "DK",
+      "D7",
+      "CK",
+      "C5",
+      "CJ",
+      "S6",
+      "SJ",
+      "C9",
+      "H7",
+      "S8",
+      "SQ",
+      "H5",
+      "HT",
+      "ST",
+      "CT",
+      "CQ",
+      "D9",
+      "H8",
+      "HK",
+      "H9",
+      "DA",
+      "HJ"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "K9",
+            "H": "KT74",
+            "D": "Q983",
+            "C": "J76"
+          },
+          "hcp": 9,
+          "total_points": 9,
+          "distribution_str": "2=4=4=3"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "T8653",
+            "H": "A9863",
+            "D": "T2",
+            "C": "2"
+          },
+          "hcp": 4,
+          "total_points": 6,
+          "distribution_str": "5=5=2=1"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "QJ42",
+            "H": "Q",
+            "D": "AKJ5",
+            "C": "KT83"
+          },
+          "hcp": 16,
+          "total_points": 16,
+          "distribution_str": "4=1=4=4"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "A7",
+            "H": "J52",
+            "D": "764",
+            "C": "AQ954"
+          },
+          "hcp": 11,
+          "total_points": 12,
+          "distribution_str": "2=3=3=5"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S9KH47TKD389QC67J,S3568TH3689AD2TC2,S24JQHQD5JKAC38TK,|rh||ah|Board 7|sv|b|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|2D|mb|p|mb|3D|mb|p|mb|p|mb|p|pg||pc|SA|pc|S9|pc|S3|pc|S2|pg||pc|CA|pc|C6|pc|C2|pc|C3|pg||pc|C4|pc|C7|pc|D2|pc|C8|pg||pc|HA|pc|HQ|pc|H2|pc|H4|pg||pc|S5|pc|S4|pc|S7|pc|SK|pg||pc|D3|pc|DT|pc|DJ|pc|D4|pg||pc|D5|pc|D6|pc|DQ|pc|H3|pg||pc|D8|pc|H6|pc|DK|pc|D7|pg||pc|CK|pc|C5|pc|CJ|pc|S6|pg||pc|SJ|pc|C9|pc|H7|pc|S8|pg||pc|SQ|pc|H5|pc|HT|pc|ST|pg||pc|CT|pc|CQ|pc|D9|pc|H8|pg||pc|HK|pc|H9|pc|DA|pc|HJ|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 9,
+      "total_points": 9,
+      "distribution": "2=4=4=3",
+      "is_balanced": true
+    },
+    "West": {
+      "hcp": 4,
+      "total_points": 6,
+      "distribution": "5=5=2=1",
+      "is_balanced": false
+    },
+    "North": {
+      "hcp": 16,
+      "total_points": 16,
+      "distribution": "4=1=4=4",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 11,
+      "total_points": 12,
+      "distribution": "2=3=3=5",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 7,
+      "D": 6,
+      "H": 8,
+      "S": 8,
+      "NT": 9
+    },
+    "S": {
+      "C": 7,
+      "D": 5,
+      "H": 8,
+      "S": 8,
+      "NT": 9
+    },
+    "E": {
+      "C": 6,
+      "D": 7,
+      "H": 4,
+      "S": 5,
+      "NT": 4
+    },
+    "W": {
+      "C": 6,
+      "D": 7,
+      "H": 4,
+      "S": 5,
+      "NT": 4
+    }
+  },
+  "ai_analysis": {
+    "verdict": "MISSED GAME OPPORTUNITY",
+    "actual_critique": [
+      "South's rebid of 1S with only two cards was a serious misstatement of shape, violating SAYC principles requiring 4+ cards (ideally 5+) to bid a major at the 1-level as opener.",
+      "The partnership stopped prematurely in 3D, which makes easily, but missed the optimal 3NT game (9 tricks) available based on combined strength (9 + 16 = 25 HCP).",
+      "North, holding 16 HCP, should have continued bidding after South showed minimum values (9 HCP) to ensure the partnership reached the known game zone."
+    ],
+    "basic_section": {
+      "analysis": "South opened 1D (9 HCP, 4-card suit). North responded 1H (16 HCP, 4-card major, forcing). South's hand is minimum and semi-balanced (4=4=4=3). The most descriptive rebid for a minimum, balanced hand that denies support for the responder's major is 1NT. This bid limits South's hand to 6-9 HCP and shows 4+ Diamonds. North, knowing the partnership has 25+ HCP, must now drive to game, likely 3NT, as no strong major suit fit was found.",
+      "recommended_auction": [
+        {
+          "player": "South",
+          "bid": "1D",
+          "explanation": "Standard opening bid, showing 4+ Diamonds and 12-21 HCP (here, 9 HCP)."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Insufficient strength to intervene."
+        },
+        {
+          "player": "North",
+          "bid": "1H",
+          "explanation": "Standard response showing 4+ Hearts and 6+ HCP. North has 16 HCP, making this a strong response."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Insufficient strength or shape to intervene effectively."
+        },
+        {
+          "player": "South",
+          "bid": "1NT",
+          "explanation": "The best rebid. Shows a minimum hand (6-9 HCP), balanced shape, and denies 4-card Heart support. This is highly descriptive."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "2S",
+          "explanation": "Checkback/Natural bid showing 4 Spades and forcing to game, as North knows the partnership has 25+ HCP."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "2NT",
+          "explanation": "Shows the top of the 1NT range (8-9 HCP) and denies 3-card support for Spades."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "3NT",
+          "explanation": "Game reached. North has sufficient points and controls to declare 3NT."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "The actual auction failed because South prioritized bidding a non-existent 4-card major (1S) over describing the hand's strength and balance (1NT). When Opener has a minimum hand (6-9 HCP) and is semi-balanced (4-4-3-2 or similar), 1NT is often the most accurate second bid, even if it means bypassing a rebid of the opening minor. North's 16 HCP hand is too strong to stop short of game. After South's actual 1S rebid, North should have used 2NT (invitational/forcing) or 3C/3S (cuebids/forcing) to confirm game interest, rather than settling for 3D.",
+      "sequence": [
+        {
+          "player": "South",
+          "bid": "1D",
+          "explanation": "Standard opening."
+        },
+        {
+          "player": "North",
+          "bid": "1H",
+          "explanation": "Strong response."
+        },
+        {
+          "player": "South",
+          "bid": "1S",
+          "explanation": "CRITICAL ERROR: Bidding a 2-card suit. Should be 1NT."
+        },
+        {
+          "player": "North",
+          "bid": "2NT",
+          "explanation": "After the confusing 1S rebid, North shows 13+ HCP and asks South to clarify shape/strength, forcing to game."
+        },
+        {
+          "player": "South",
+          "bid": "3D",
+          "explanation": "Shows minimum hand (9 HCP) and 4+ Diamonds, denying 3-card Spade support."
+        },
+        {
+          "player": "North",
+          "bid": "3NT",
+          "explanation": "North takes the game decision based on combined points and controls."
+        }
+      ]
+    },
+    "coaches_corner": [
+      {
+        "player": "South",
+        "topic": "Opener's Rebid Priority",
+        "category": "Bidding Fundamentals"
+      },
+      {
+        "player": "South",
+        "topic": "Misrepresenting Suit Length (1S with 2 cards)",
+        "category": "SAYC Rules"
+      },
+      {
+        "player": "North",
+        "topic": "Driving to Game with 25+ Combined Points",
+        "category": "Game Valuation"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

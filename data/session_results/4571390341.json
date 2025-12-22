@@ -131,140 +131,221 @@
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S45JKH2D67AC69TKA,S67H78JKAD9QKC37J,S38TQH456TQD24TCQ,|rh||ah|Board 16|sv|e|mb|1H|mb|p|mb|p|mb|d|mb|p|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|pg||pc|H3|pc|H2|pc|HA|pc|H4|pg||pc|D9|pc|D2|pc|D3|pc|D6|pg||pc|DQ|pc|D4|pc|D5|pc|DA|pg||pc|C6|pc|C3|pc|CQ|pc|C2|pg||pc|H5|pc|H9|pc|S4|pc|H7|pg||pc|D7|pc|DK|pc|DT|pc|D8|pg||pc|C7|pc|H6|pc|C4|pc|C9|pg||pc|S5|pc|S6|pc|ST|pc|S2|pg||pc|S3|pc|S9|pc|SJ|pc|S7|pg||pc|CT|pc|CJ|pc|S8|pc|C5|pg||pc|HT|pc|C8|pc|SK|pc|H8|pg||pc|CK|pc|HJ|pc|HQ|pc|SA|pg||pc|DJ|pc|CA|pc|HK|pc|SQ|pg||\n"
   },
+  "math": {
+    "South": {
+      "hcp": 15,
+      "total_points": 16,
+      "distribution": "4=1=3=5",
+      "is_balanced": false
+    },
+    "West": {
+      "hcp": 14,
+      "total_points": 15,
+      "distribution": "2=5=3=3",
+      "is_balanced": true
+    },
+    "North": {
+      "hcp": 6,
+      "total_points": 7,
+      "distribution": "4=5=3=1",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 5,
+      "total_points": 5,
+      "distribution": "3=2=4=4",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 10,
+      "D": 7,
+      "H": 7,
+      "S": 8,
+      "NT": 7
+    },
+    "S": {
+      "C": 10,
+      "D": 7,
+      "H": 7,
+      "S": 8,
+      "NT": 7
+    },
+    "E": {
+      "C": 3,
+      "D": 5,
+      "H": 6,
+      "S": 4,
+      "NT": 4
+    },
+    "W": {
+      "C": 3,
+      "D": 5,
+      "H": 6,
+      "S": 4,
+      "NT": 4
+    }
+  },
   "ai_analysis": {
-    "verdict": "BELOW OPTIMAL STRAIN",
+    "verdict": "SUCCESSFUL PARTIAL",
     "actual_critique": [
-      "West committed a critical error by passing South's takeout double with 14 total points and a 5-card heart suit, forfeiting the ability to compete effectively in their primary suit.",
-      "The auction stopped prematurely at 2S, which is significantly below the strain that North/South could comfortably achieve (likely 3S, possibly 4S).",
-      "West failed to follow the principle that when opponents double your opening, you must rebid unless you are exceptionally weak or have an extremely clear reason to pass."
+      "South's initial Takeout Double was textbook, showing a strong hand (15 HCP) and support for the unbid suits.",
+      "North's 1S response was correct, showing 4+ Spades on minimum values (6 HCP) after the double.",
+      "The final contract of 2S makes exactly 8 tricks, securing a successful partial score. While 3C makes 10 tricks, 2S was a very natural and safe outcome given the competitive auction."
     ],
     "basic_section": {
-      "analysis": "West opened correctly 1H. South's double is a standard strong takeout, showing significant strength (16 TP) and support for unbid suits, prioritizing Spades and Clubs. West's subsequent pass was disastrous. When doubled, the opening bidder must redouble, rebid their suit (showing extra length or strength), or bid a new suit/NT. West must rebid 2H (descriptive and protective, showing a 5+ card suit and 11-14 TP). North's bid of 1S (7 TP) is mandatory as they must advance the takeout double. Given N/S 23 combined TP and a good Spade fit, 3S is the target contract.",
+      "analysis": "West opened 1H, showing a 5-card suit and 12+ HCP. South made a perfect Takeout Double, showing a strong hand (15 HCP) and promising support for the majors and/or minors. North responded 1S, showing 4+ Spades on minimum values (6 HCP). South, confirming the 8-card Spade fit and showing extra strength, rebid 2S. This sequence is standard competitive bidding, prioritizing the confirmed major suit fit.",
       "recommended_auction": [
         {
+          "player": "West",
           "bid": "1H",
-          "explanation": "West opens standard 1H (15 TP, 5+ hearts)."
+          "explanation": "Standard opening bid showing 5+ Hearts and 12+ HCP."
         },
         {
+          "player": "North",
           "bid": "p",
-          "explanation": "North is too light to intervene (7 TP)."
+          "explanation": "Not enough strength (6 HCP) or shape to intervene effectively."
         },
         {
+          "player": "East",
           "bid": "p",
-          "explanation": "East is too weak."
+          "explanation": "Weak hand (5 HCP) with no defensive or competitive action available."
         },
         {
-          "bid": "Dbl",
-          "explanation": "South makes a strong takeout double (16 TP, forcing, showing interest in Spades/Minors)."
+          "player": "South",
+          "bid": "d",
+          "explanation": "Takeout Double, showing 10+ points and support for the unbid suits (especially Spades and Clubs). South has 15 HCP."
         },
         {
-          "bid": "2H",
-          "explanation": "West is obligated to rebid over a takeout double, showing 11-14 TP and protecting the suit."
-        },
-        {
+          "player": "West",
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "West has shown their hand and has no clear rebid."
         },
         {
+          "player": "North",
+          "bid": "1S",
+          "explanation": "Minimum response to the Takeout Double, showing 4+ Spades (6 HCP)."
+        },
+        {
+          "player": "East",
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "No action."
         },
         {
-          "bid": "3S",
-          "explanation": "South jumps to 3S, showing 4+ Spades and confirming the high-end strength of the double (15-16 TP), inviting game."
+          "player": "South",
+          "bid": "2S",
+          "explanation": "Constructive raise, confirming the Spade fit and showing extra values (13+ points). This is a safe, makeable contract."
         },
         {
+          "player": "West",
           "bid": "p",
-          "explanation": "Pass"
+          "explanation": "Auction ends."
         },
         {
+          "player": "North",
           "bid": "p",
-          "explanation": "Pass"
+          "explanation": "Auction ends."
         },
         {
+          "player": "East",
           "bid": "p",
-          "explanation": "Contract 3S."
+          "explanation": "Auction ends."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "Given South's powerful distribution (singleton Heart, 5 Clubs) and high TP, a highly competitive approach is warranted. After West protects with 2H, South should utilize 3C as a strong constructive bid, showing the major secondary suit and suggesting game or slam interest, treating 3C as forcing to 3S/4S depending on partnership agreements. This ensures N/S reaches at least 3S, and potentially 4S based on distribution.",
+      "analysis": "While 2S is a good contract, the Double Dummy Solver shows that 3C makes 10 tricks. To reach the optimal minor suit contract, South must prioritize showing the 5-card Club suit over confirming the 4-4 Spade fit immediately. After North's 1S response, South's 2C rebid would be forcing, showing a strong hand and a 5-card suit. North would then have to choose a rebid, likely 2H (showing the 5-card Heart suit, even if weak). South could then bid 3C, which North would pass, reaching the optimal partial.",
       "sequence": [
         {
+          "player": "West",
           "bid": "1H",
-          "explanation": "West opens standard 1H."
+          "explanation": "Opening bid."
         },
         {
+          "player": "North",
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "Pass."
         },
         {
+          "player": "East",
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass."
         },
         {
-          "bid": "Dbl",
-          "explanation": "South strong takeout."
+          "player": "South",
+          "bid": "d",
+          "explanation": "Takeout Double."
         },
         {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "1S",
+          "explanation": "Minimum response."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "2C",
+          "explanation": "Showing 5+ Clubs and extra strength (15 HCP). This bid is forcing, asking North to describe their hand further."
+        },
+        {
+          "player": "North",
           "bid": "2H",
-          "explanation": "West protective rebid."
+          "explanation": "Showing the 5-card Heart suit, prioritizing length over quality after South's forcing bid."
         },
         {
+          "player": "East",
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "Pass."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
+          "player": "South",
           "bid": "3C",
-          "explanation": "South bypasses 2S/3S to show strength and the excellent Club suit, forcing partner to commit to 3S or higher."
+          "explanation": "Reaffirming Clubs as the primary suit, inviting partner to pass or bid game. North should pass with 6 HCP."
         },
         {
+          "player": "West",
           "bid": "p",
-          "explanation": "Pass"
+          "explanation": "Auction ends."
         },
         {
+          "player": "North",
           "bid": "p",
-          "explanation": "Pass"
+          "explanation": "Auction ends."
         },
         {
-          "bid": "3S",
-          "explanation": "North shows preference and minimum response to the strong sequence."
-        },
-        {
+          "player": "East",
           "bid": "p",
-          "explanation": "Pass"
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass"
-        },
-        {
-          "bid": "4S",
-          "explanation": "South judges the distributional value sufficient for game, pushing over North's conservative 3S."
+          "explanation": "Auction ends."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "West",
-        "topic": "Obligation to Rebid Over a Takeout Double",
-        "category": "Error"
-      },
-      {
         "player": "South",
-        "topic": "Using DBL with strong distributional hands",
-        "category": "Good Practice"
+        "topic": "Takeout Double Requirements",
+        "category": "Competitive Bidding"
       },
       {
         "player": "North",
-        "topic": "Advancing a Takeout Double with Minimal Values (7 TP)",
-        "category": "Review"
+        "topic": "Responding to a Takeout Double",
+        "category": "Competitive Bidding"
+      },
+      {
+        "player": "South",
+        "topic": "Rebidding after Partner Responds to a Double",
+        "category": "Competitive Bidding"
       }
     ]
   },
-  "timestamp": "2025-12-21 14:41:52"
+  "timestamp": "2025-12-20"
 }

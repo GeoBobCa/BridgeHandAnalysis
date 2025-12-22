@@ -1,0 +1,333 @@
+{
+  "facts": {
+    "board": "Board 2",
+    "dealer": "East",
+    "vulnerability": "N/S",
+    "contract": "4S",
+    "auction": [
+      "p",
+      "p",
+      "p",
+      "2C",
+      "p",
+      "2H",
+      "p",
+      "2S",
+      "p",
+      "4S",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "HA",
+      "H4",
+      "H9",
+      "H3",
+      "H2",
+      "H5",
+      "HJ",
+      "HQ",
+      "SQ",
+      "S2",
+      "S3",
+      "S9",
+      "SK",
+      "S5",
+      "S6",
+      "C3",
+      "H7",
+      "H6",
+      "HK",
+      "D7",
+      "C2",
+      "C7",
+      "CK",
+      "C6",
+      "DA",
+      "D2",
+      "D3",
+      "D9",
+      "C5",
+      "C8",
+      "S8",
+      "C4",
+      "ST",
+      "DT",
+      "S4",
+      "SJ",
+      "D4",
+      "DK",
+      "DJ",
+      "C9",
+      "H8",
+      "CT",
+      "SA",
+      "D5",
+      "CA",
+      "S7",
+      "HT",
+      "CQ",
+      "D8",
+      "D6",
+      "DQ",
+      "CJ"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "T863",
+            "H": "KT854",
+            "D": "K63",
+            "C": "2"
+          },
+          "hcp": 6,
+          "total_points": 7,
+          "distribution_str": "4=5=3=1"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "9",
+            "H": "J9",
+            "D": "QJT97",
+            "C": "QT743"
+          },
+          "hcp": 6,
+          "total_points": 8,
+          "distribution_str": "1=2=5=5"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "AKQ4",
+            "H": "Q73",
+            "D": "A",
+            "C": "AKJ95"
+          },
+          "hcp": 23,
+          "total_points": 24,
+          "distribution_str": "4=3=1=5"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "J752",
+            "H": "A62",
+            "D": "8542",
+            "C": "86"
+          },
+          "hcp": 5,
+          "total_points": 5,
+          "distribution_str": "4=3=4=2"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S368TH458TKD36KC2,S9H9JD79TJQC347TQ,S4QKAH37QDAC59JKA,|rh||ah|Board 2|sv|n|mb|p|mb|p|mb|p|mb|2C|mb|p|mb|2H|mb|p|mb|2S|mb|p|mb|4S|mb|p|mb|p|mb|p|pg||pc|HA|pc|H4|pc|H9|pc|H3|pg||pc|H2|pc|H5|pc|HJ|pc|HQ|pg||pc|SQ|pc|S2|pc|S3|pc|S9|pg||pc|SK|pc|S5|pc|S6|pc|C3|pg||pc|H7|pc|H6|pc|HK|pc|D7|pg||pc|C2|pc|C7|pc|CK|pc|C6|pg||pc|DA|pc|D2|pc|D3|pc|D9|pg||pc|C5|pc|C8|pc|S8|pc|C4|pg||pc|ST|pc|DT|pc|S4|pc|SJ|pg||pc|D4|pc|DK|pc|DJ|pc|C9|pg||pc|H8|pc|CT|pc|SA|pc|D5|pg||pc|CA|pc|S7|pc|HT|pc|CQ|pg||pc|D8|pc|D6|pc|DQ|pc|CJ|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 6,
+      "total_points": 7,
+      "distribution": "4=5=3=1",
+      "is_balanced": false
+    },
+    "West": {
+      "hcp": 6,
+      "total_points": 8,
+      "distribution": "1=2=5=5",
+      "is_balanced": false
+    },
+    "North": {
+      "hcp": 23,
+      "total_points": 24,
+      "distribution": "4=3=1=5",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 5,
+      "total_points": 5,
+      "distribution": "4=3=4=2",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 11,
+      "D": 11,
+      "H": 8,
+      "S": 10,
+      "NT": 12
+    },
+    "S": {
+      "C": 11,
+      "D": 11,
+      "H": 8,
+      "S": 10,
+      "NT": 12
+    },
+    "E": {
+      "C": 2,
+      "D": 1,
+      "H": 5,
+      "S": 3,
+      "NT": 1
+    },
+    "W": {
+      "C": 2,
+      "D": 1,
+      "H": 5,
+      "S": 3,
+      "NT": 1
+    }
+  },
+  "ai_analysis": {
+    "verdict": "MISSED SLAM",
+    "actual_critique": [
+      "North correctly opened 2C (23 HCP), but the partnership missed the optimal 6NT slam, settling for 4S.",
+      "South's 2H response after 2C, while natural, bypassed the standard 2D negative/waiting bid, complicating North's rebid and obscuring the combined strength and shape suitable for Notrump.",
+      "The final contract of 4S makes 10 tricks, but 6NT is cold for 12 tricks, resulting in a significant score loss."
+    ],
+    "basic_section": {
+      "analysis": "North has a massive 23 HCP and must open 2C, forcing to game. South, with 6 HCP, must use the standard 2D negative response to allow North to describe their hand. North's 2NT rebid shows a strong, semi-balanced hand (22-24 HCP). South, knowing the combined strength is 28-30 HCP, should accept the game and bid 3NT. North, at the high end of the 2NT range (23 HCP), should raise to 6NT.",
+      "recommended_auction": [
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "5 HCP, pass."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "6 HCP, pass."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "6 HCP, pass."
+        },
+        {
+          "player": "North",
+          "bid": "2C",
+          "explanation": "Strong, artificial, game-forcing opening (22+ HCP)."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "2D",
+          "explanation": "Standard negative/waiting response to 2C, showing 0-7 HCP."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "2NT",
+          "explanation": "Shows a balanced or semi-balanced hand in the 22-24 HCP range."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "3NT",
+          "explanation": "Accepting the game force with minimum values (6 HCP). This confirms 28+ combined HCP, suggesting slam potential."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "6NT",
+          "explanation": "With 23 HCP (high end of the 2NT range), North accepts the slam invitation. 6NT is the optimal contract."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "After the 2C opening and 2D negative, North could use a descriptive rebid like 3S (showing 4 Spades) or 3C (showing 5 Clubs). However, since the hand is semi-balanced and 6NT is the best contract, prioritizing the 2NT rebid is crucial. If North wanted to confirm controls before 6NT, they could use 4NT (Quantitative) after South's 3NT, but given the high HCP count, a direct 6NT is justified.",
+      "sequence": [
+        {
+          "player": "North",
+          "bid": "2C",
+          "explanation": "Strong opening."
+        },
+        {
+          "player": "South",
+          "bid": "2D",
+          "explanation": "Negative."
+        },
+        {
+          "player": "North",
+          "bid": "2NT",
+          "explanation": "22-24 HCP, semi-balanced."
+        },
+        {
+          "player": "South",
+          "bid": "3H",
+          "explanation": "Showing 5-card heart suit, minimum values."
+        },
+        {
+          "player": "North",
+          "bid": "4NT",
+          "explanation": "Quantitative slam invitation, asking South to bid 6NT with maximum values (7 HCP) or pass with minimum (6 HCP)."
+        },
+        {
+          "player": "South",
+          "bid": "6NT",
+          "explanation": "South has 6 HCP, but the King of Diamonds covers North's singleton Ace, and the King of Hearts provides good texture. South accepts the quantitative invite, knowing North is 23-24 HCP."
+        }
+      ]
+    },
+    "coaches_corner": [
+      {
+        "player": "South",
+        "topic": "2C Responses",
+        "category": "Bidding System"
+      },
+      {
+        "player": "North",
+        "topic": "Slam Exploration (NT)",
+        "category": "Advanced Bidding"
+      },
+      {
+        "player": "Partnership",
+        "topic": "Hand Evaluation (NT vs Suit)",
+        "category": "Strategy"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

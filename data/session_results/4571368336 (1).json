@@ -1,0 +1,242 @@
+{
+  "facts": {
+    "board": "Board 8",
+    "dealer": "West",
+    "vulnerability": "None",
+    "contract": "2H",
+    "auction": [
+      "1D",
+      "p",
+      "1H",
+      "2D",
+      "2H",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "DK",
+      "DA",
+      "D8",
+      "D2",
+      "CA",
+      "C3",
+      "C5",
+      "CQ",
+      "ST",
+      "S3",
+      "S5",
+      "SK",
+      "DQ",
+      "D6",
+      "D9",
+      "D5",
+      "CJ",
+      "CK",
+      "C4",
+      "C6",
+      "SA",
+      "S8",
+      "S6",
+      "S2",
+      "D7",
+      "H6",
+      "HT",
+      "D3",
+      "S7",
+      "S4",
+      "SJ",
+      "S9",
+      "DT",
+      "H8",
+      "HQ",
+      "D4",
+      "SQ",
+      "DJ",
+      "C2",
+      "HJ",
+      "C7",
+      "C9",
+      "HA",
+      "H2",
+      "H3",
+      "H9",
+      "C8",
+      "H5",
+      "H4",
+      "CT",
+      "HK",
+      "H7"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "K42",
+            "H": "A73",
+            "D": "KQJ43",
+            "C": "QJ"
+          },
+          "hcp": 16,
+          "total_points": 17,
+          "distribution_str": "3=3=5=2"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "AJT",
+            "H": "942",
+            "D": "AT76",
+            "C": "AK2"
+          },
+          "hcp": 16,
+          "total_points": 16,
+          "distribution_str": "3=3=4=3"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "983",
+            "H": "J86",
+            "D": "98",
+            "C": "T8743"
+          },
+          "hcp": 1,
+          "total_points": 2,
+          "distribution_str": "3=3=2=5"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "Q765",
+            "H": "KQT5",
+            "D": "52",
+            "C": "965"
+          },
+          "hcp": 7,
+          "total_points": 7,
+          "distribution_str": "4=4=2=3"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S24KH37AD34JQKCJQ,STJAH249D67TAC2KA,S389H68JD89C3478T,|rh||ah|Board 8|sv|o|mb|1D|mb|p|mb|1H|mb|2D|mb|2H|mb|p|mb|p|mb|p|pg||pc|DK|pc|DA|pc|D8|pc|D2|pg||pc|CA|pc|C3|pc|C5|pc|CQ|pg||pc|ST|pc|S3|pc|S5|pc|SK|pg||pc|DQ|pc|D6|pc|D9|pc|D5|pg||pc|CJ|pc|CK|pc|C4|pc|C6|pg||pc|SA|pc|S8|pc|S6|pc|S2|pg||pc|D7|pc|H6|pc|HT|pc|D3|pg||pc|S7|pc|S4|pc|SJ|pc|S9|pg||pc|DT|pc|H8|pc|HQ|pc|D4|pg||pc|SQ|pc|DJ|pc|C2|pc|HJ|pg||pc|C7|pc|C9|pc|HA|pc|H2|pg||pc|H3|pc|H9|pc|C8|pc|H5|pg||pc|H4|pc|CT|pc|HK|pc|H7|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 16,
+      "total_points": 17,
+      "distribution": "3=3=5=2",
+      "is_balanced": true
+    },
+    "West": {
+      "hcp": 16,
+      "total_points": 16,
+      "distribution": "3=3=4=3",
+      "is_balanced": true
+    },
+    "North": {
+      "hcp": 1,
+      "total_points": 2,
+      "distribution": "3=3=2=5",
+      "is_balanced": true
+    },
+    "East": {
+      "hcp": 7,
+      "total_points": 7,
+      "distribution": "4=4=2=3",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 3,
+      "D": 3,
+      "H": 4,
+      "S": 4,
+      "NT": 3
+    },
+    "S": {
+      "C": 3,
+      "D": 3,
+      "H": 4,
+      "S": 4,
+      "NT": 3
+    },
+    "E": {
+      "C": 10,
+      "D": 10,
+      "H": 9,
+      "S": 8,
+      "NT": 10
+    },
+    "W": {
+      "C": 10,
+      "D": 10,
+      "H": 9,
+      "S": 8,
+      "NT": 10
+    }
+  },
+  "ai_analysis": {
+    "verdict": "MAJOR BIDDING ERROR",
+    "actual_critique": [
+      "West missed the standard 1NT opening (16 HCP, balanced), allowing South to open the bidding.",
+      "North's 1H response (1 HCP, 3 cards) was highly irregular and violated standard SAYC requirements for a 1-level response (6+ points required).",
+      "The resulting 2H contract was disastrous, failing by four tricks (making only 4 tricks total), highlighting poor communication and point count estimation."
+    ],
+    "basic_section": {
+      "analysis": "West, holding 16 HCP and a balanced 3=3=4=3 distribution, should open 1NT (standard 15-17 HCP). This would likely lead to a quick pass-out or E/W playing 1NT, which makes easily. When South opened 1D, North, holding only 1 HCP, must pass. Bidding 1H with 1 HCP and only three cards is a fundamental error that led the partnership into a hopeless contract.",
+      "recommended_auction": [
+        {
+          "player": "West",
+          "bid": "1NT",
+          "explanation": "Standard opening bid for a balanced hand of 15-17 HCP."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "With only 1 HCP, North must pass. No response is warranted."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "7 HCP is insufficient to interfere or transfer over 1NT."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "South has 16 HCP but no fit and no forcing bid available opposite a passed partner. Pass and let E/W play 1NT."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "If West passes initially, South's 1D opening is correct. The critical error remains North's 1H response. If North had passed, the auction would likely have proceeded: S 1D - W 1NT - All Pass, leading to E/W playing 1NT, which is the optimal result for the E/W side (making 10 tricks). South's 2H rebid, showing 3-card support, was based on the false assumption that North had a legitimate response (6+ points and 4+ cards). When partner makes an illegal bid, the partnership is often doomed to find a poor contract.",
+      "sequence": null
+    },
+    "coaches_corner": [
+      {
+        "player": "West",
+        "topic": "Opening 1NT",
+        "category": "Opening Bids"
+      },
+      {
+        "player": "North",
+        "topic": "Minimum Requirements for Responses (6+ HCP)",
+        "category": "Responding"
+      },
+      {
+        "player": "South",
+        "topic": "Trusting Partner's Bids (Assuming legitimacy)",
+        "category": "Partnership Communication"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

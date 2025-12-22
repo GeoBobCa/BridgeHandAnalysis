@@ -1,0 +1,284 @@
+{
+  "facts": {
+    "board": "Board 9",
+    "dealer": "North",
+    "vulnerability": "E/W",
+    "contract": "2S",
+    "auction": [
+      "p",
+      "1D",
+      "d",
+      "1S",
+      "p",
+      "2S",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "D4",
+      "D5",
+      "DA",
+      "D2",
+      "DT",
+      "D3",
+      "DK",
+      "D6",
+      "C3",
+      "C4",
+      "CK",
+      "C2",
+      "DJ",
+      "H3",
+      "D7",
+      "DQ",
+      "S7",
+      "SK",
+      "S2",
+      "S4",
+      "HT",
+      "HA",
+      "H7",
+      "H2",
+      "S3",
+      "S5",
+      "SA",
+      "C7",
+      "SQ",
+      "C8",
+      "S8",
+      "S6",
+      "D8",
+      "C9",
+      "H8",
+      "D9",
+      "HJ",
+      "H5",
+      "H4",
+      "ST",
+      "SJ",
+      "S9",
+      "H9",
+      "CT",
+      "C5",
+      "CJ",
+      "CA",
+      "H6",
+      "C6",
+      "HQ",
+      "CQ",
+      "HK"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "K",
+            "H": "QT64",
+            "D": "AJT",
+            "C": "KT987"
+          },
+          "hcp": 13,
+          "total_points": 14,
+          "distribution_str": "1=4=3=5"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "JT832",
+            "H": "A83",
+            "D": "32",
+            "C": "Q52"
+          },
+          "hcp": 7,
+          "total_points": 8,
+          "distribution_str": "5=3=2=3"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "9654",
+            "H": "KJ7",
+            "D": "K974",
+            "C": "J3"
+          },
+          "hcp": 8,
+          "total_points": 8,
+          "distribution_str": "4=3=4=2"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "AQ7",
+            "H": "952",
+            "D": "Q865",
+            "C": "A64"
+          },
+          "hcp": 12,
+          "total_points": 12,
+          "distribution_str": "3=3=4=3"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3SKH46TQDTJAC789TK,S238TJH38AD23C25Q,S4569H7JKD479KC3J,|rh||ah|Board 9|sv|e|mb|p|mb|1D|mb|d|mb|1S|mb|p|mb|2S|mb|p|mb|p|mb|p|pg||pc|D4|pc|D5|pc|DA|pc|D2|pg||pc|DT|pc|D3|pc|DK|pc|D6|pg||pc|C3|pc|C4|pc|CK|pc|C2|pg||pc|DJ|pc|H3|pc|D7|pc|DQ|pg||pc|S7|pc|SK|pc|S2|pc|S4|pg||pc|HT|pc|HA|pc|H7|pc|H2|pg||pc|S3|pc|S5|pc|SA|pc|C7|pg||pc|SQ|pc|C8|pc|S8|pc|S6|pg||pc|D8|pc|C9|pc|H8|pc|D9|pg||pc|HJ|pc|H5|pc|H4|pc|ST|pg||pc|SJ|pc|S9|pc|H9|pc|CT|pg||pc|C5|pc|CJ|pc|CA|pc|H6|pg||pc|C6|pc|HQ|pc|CQ|pc|HK|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 13,
+      "total_points": 14,
+      "distribution": "1=4=3=5",
+      "is_balanced": false
+    },
+    "West": {
+      "hcp": 7,
+      "total_points": 8,
+      "distribution": "5=3=2=3",
+      "is_balanced": true
+    },
+    "North": {
+      "hcp": 8,
+      "total_points": 8,
+      "distribution": "4=3=4=2",
+      "is_balanced": true
+    },
+    "East": {
+      "hcp": 12,
+      "total_points": 12,
+      "distribution": "3=3=4=3",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 5,
+      "D": 8,
+      "H": 7,
+      "S": 8,
+      "NT": 5
+    },
+    "S": {
+      "C": 5,
+      "D": 8,
+      "H": 7,
+      "S": 8,
+      "NT": 5
+    },
+    "E": {
+      "C": 8,
+      "D": 4,
+      "H": 5,
+      "S": 4,
+      "NT": 7
+    },
+    "W": {
+      "C": 8,
+      "D": 4,
+      "H": 5,
+      "S": 4,
+      "NT": 7
+    }
+  },
+  "ai_analysis": {
+    "verdict": "SUCCESSFUL DEFENSE, MISSED PARTIAL",
+    "actual_critique": [
+      "E/W reached 2S, which fails by two tricks (DDS S=4), resulting in a +100 score for N/S. This is a good defensive outcome.",
+      "N/S missed finding their optimal making partial contract, 2D (8 tricks), which would have scored +130.",
+      "South (13 HCP) was too passive after East raised to 2S. South should have competed further to find a fit or push the opponents higher."
+    ],
+    "basic_section": {
+      "analysis": "The auction began competitively with East opening 1D and South making a strong takeout double (13 HCP). West's 1S response was forced and showed a minimum hand with 5+ Spades. North's subsequent pass allowed E/W to settle in 2S. North should have used 1NT to describe their balanced, minimum hand (8 HCP) and Diamond stopper, allowing South to better locate the N/S fit (Hearts or Diamonds).",
+      "recommended_auction": [
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Standard pass as dealer with 8 HCP."
+        },
+        {
+          "player": "East",
+          "bid": "1D",
+          "explanation": "Standard opening bid (12 HCP, 4 Diamonds)."
+        },
+        {
+          "player": "South",
+          "bid": "d",
+          "explanation": "Takeout double, showing 12+ HCP and support for unbid suits (H/C), excellent bid."
+        },
+        {
+          "player": "West",
+          "bid": "1S",
+          "explanation": "Forced response, showing 5+ Spades and 0-8 HCP."
+        },
+        {
+          "player": "North",
+          "bid": "1NT",
+          "explanation": "Showing 6-9 HCP, balanced shape, and a stopper in the opponent's suit (D)."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "No clear action over 1NT."
+        },
+        {
+          "player": "South",
+          "bid": "2D",
+          "explanation": "Showing 3+ card Diamond support (AJT) and confirming interest in a Diamond partial. This finds the 7-card fit."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Minimum hand, passes."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "North is happy to play 2D, which is the optimal partial contract (DDS makes 2D+2)."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "When the opponents compete strongly (West 1S, East 2S), the doubler (South) must decide whether to compete further or defend. South, holding 13 HCP and good suits, should not allow the opponents to play 2S uncontested. If North had passed 1S, South should have considered a competitive jump (e.g., 3D or 3H) over 2S to show the strength and force partner to act, rather than passing and hoping for a penalty.",
+      "sequence": [
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Minimum hand, passes."
+        },
+        {
+          "player": "East",
+          "bid": "2S",
+          "explanation": "Competitive raise, showing 10-12 points and 3-card support."
+        },
+        {
+          "player": "South",
+          "bid": "3D",
+          "explanation": "A competitive jump showing 13 HCP and 3+ card support for Diamonds, forcing partner to evaluate the partial."
+        }
+      ]
+    },
+    "coaches_corner": [
+      {
+        "player": "South",
+        "topic": "Competitive Bidding After Takeout Double",
+        "category": "Bidding"
+      },
+      {
+        "player": "North",
+        "topic": "Responding to a Takeout Double with a Minimum Hand",
+        "category": "Bidding"
+      },
+      {
+        "player": "E/W",
+        "topic": "Competitive Raises (2S)",
+        "category": "Bidding"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

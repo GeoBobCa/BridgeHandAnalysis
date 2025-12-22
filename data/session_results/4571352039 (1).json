@@ -1,0 +1,277 @@
+{
+  "facts": {
+    "board": "Board 3",
+    "dealer": "South",
+    "vulnerability": "E/W",
+    "contract": "1N",
+    "auction": [
+      "1C",
+      "p",
+      "1S",
+      "p",
+      "1N",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "DA",
+      "D4",
+      "DQ",
+      "D2",
+      "C2",
+      "CQ",
+      "CK",
+      "CA",
+      "CJ",
+      "C6",
+      "D5",
+      "C4",
+      "CT",
+      "H3",
+      "D7",
+      "C5",
+      "C9",
+      "H4",
+      "H5",
+      "C7",
+      "SA",
+      "S3",
+      "S2",
+      "S5",
+      "SK",
+      "SJ",
+      "S4",
+      "S9",
+      "S8",
+      "D6",
+      "SQ",
+      "ST",
+      "S7",
+      "H2",
+      "D3",
+      "H6",
+      "S6",
+      "H7",
+      "D8",
+      "D9",
+      "HA",
+      "HJ",
+      "HT",
+      "H8",
+      "H9",
+      "C8",
+      "HQ",
+      "HK",
+      "DT",
+      "DJ",
+      "DK",
+      "C3"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "AK8",
+            "H": "QT",
+            "D": "832",
+            "C": "AJT93"
+          },
+          "hcp": 14,
+          "total_points": 15,
+          "distribution_str": "3=2=3=5"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "J3",
+            "H": "K8643",
+            "D": "AT96",
+            "C": "62"
+          },
+          "hcp": 8,
+          "total_points": 9,
+          "distribution_str": "2=5=4=2"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "Q7642",
+            "H": "A95",
+            "D": "J754",
+            "C": "Q"
+          },
+          "hcp": 9,
+          "total_points": 10,
+          "distribution_str": "5=3=4=1"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "T95",
+            "H": "J72",
+            "D": "KQ",
+            "C": "K8754"
+          },
+          "hcp": 9,
+          "total_points": 10,
+          "distribution_str": "3=3=2=5"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S8KAHTQD238C39TJA,S3JH3468KD69TAC26,S2467QH59AD457JCQ,|rh||ah|Board 3|sv|e|mb|1C|mb|p|mb|1S|mb|p|mb|1N|mb|p|mb|p|mb|p|pg||pc|DA|pc|D4|pc|DQ|pc|D2|pg||pc|C2|pc|CQ|pc|CK|pc|CA|pg||pc|CJ|pc|C6|pc|D5|pc|C4|pg||pc|CT|pc|H3|pc|D7|pc|C5|pg||pc|C9|pc|H4|pc|H5|pc|C7|pg||pc|SA|pc|S3|pc|S2|pc|S5|pg||pc|SK|pc|SJ|pc|S4|pc|S9|pg||pc|S8|pc|D6|pc|SQ|pc|ST|pg||pc|S7|pc|H2|pc|D3|pc|H6|pg||pc|S6|pc|H7|pc|D8|pc|D9|pg||pc|HA|pc|HJ|pc|HT|pc|H8|pg||pc|H9|pc|C8|pc|HQ|pc|HK|pg||pc|DT|pc|DJ|pc|DK|pc|C3|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 14,
+      "total_points": 15,
+      "distribution": "3=2=3=5",
+      "is_balanced": true
+    },
+    "West": {
+      "hcp": 8,
+      "total_points": 9,
+      "distribution": "2=5=4=2",
+      "is_balanced": false
+    },
+    "North": {
+      "hcp": 9,
+      "total_points": 10,
+      "distribution": "5=3=4=1",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 9,
+      "total_points": 10,
+      "distribution": "3=3=2=5",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 9,
+      "D": 7,
+      "H": 9,
+      "S": 9,
+      "NT": 9
+    },
+    "S": {
+      "C": 9,
+      "D": 7,
+      "H": 9,
+      "S": 9,
+      "NT": 9
+    },
+    "E": {
+      "C": 3,
+      "D": 6,
+      "H": 4,
+      "S": 4,
+      "NT": 3
+    },
+    "W": {
+      "C": 3,
+      "D": 6,
+      "H": 4,
+      "S": 4,
+      "NT": 3
+    }
+  },
+  "ai_analysis": {
+    "verdict": "MISSED OPTIMAL PARTIAL",
+    "actual_critique": [
+      "The partnership correctly identified the 8-card Spade fit (5-3), but North failed to invite higher after South's 1NT rebid.",
+      "The actual contract, 1NT, makes 9 tricks, but the optimal partial contract is 3S, which also makes 9 tricks, yielding a higher score.",
+      "North (9 HCP) should have bid 2S over 1NT, showing the fit and inviting game. South (14 HCP) should accept this invitation."
+    ],
+    "basic_section": {
+      "analysis": "South's 1C opening and 1N rebid (showing 12-14 HCP, 3 Spades) were standard. North's 1S response was also standard. After South's 1N rebid, North knows they have an 8-card Spade fit (5+3). With 9 HCP, North should not pass 1NT, but instead bid 2S. This bid is invitational, showing the fit and asking South to continue to game (4S) if maximum (14 HCP) or pass if minimum (12 HCP). Since South has 14 HCP and good controls, accepting the invitation to 3S is appropriate, maximizing the partial score.",
+      "recommended_auction": [
+        {
+          "player": "South",
+          "bid": "1C",
+          "explanation": "Standard opening bid (12-21 HCP, 5+ Clubs)."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "1S",
+          "explanation": "Standard response, 6+ points, 4+ Spades (North has 5)."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "1N",
+          "explanation": "Rebid showing 12-14 HCP, semi-balanced, denying 4-card Heart suit and denying 4+ Spade support."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "2S",
+          "explanation": "Preference bid showing the 8-card Spade fit and inviting game (9-11 points). This is mandatory with 9 HCP."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "3S",
+          "explanation": "Accepting the invitation with 14 HCP and good controls (AK in Spades, A in Clubs)."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Pass, satisfied with the partial contract."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "The primary decision point was recognizing the invitational nature of the 2S bid after the 1N rebid. While 2S is often just a preference, when responder has 9+ points and a known 8-card fit, it serves as a strong partial/game invitation. South's 14 HCP hand, featuring two Aces and a King, is robust enough to accept the invitation to 3S, even though the partnership is short of the 25 HCP game threshold. Since 3S makes exactly 9 tricks, this is the highest scoring contract available.",
+      "sequence": null
+    },
+    "coaches_corner": [
+      {
+        "player": "North",
+        "topic": "Fit Recognition and Invitational Bidding",
+        "category": "Responder Action"
+      },
+      {
+        "player": "South",
+        "topic": "Hand Valuation and Accepting Invitations",
+        "category": "Opener Rebid"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

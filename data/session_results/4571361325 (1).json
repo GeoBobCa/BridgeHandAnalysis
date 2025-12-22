@@ -1,0 +1,290 @@
+{
+  "facts": {
+    "board": "Board 6",
+    "dealer": "East",
+    "vulnerability": "E/W",
+    "contract": "3C",
+    "auction": [
+      "p",
+      "p",
+      "p",
+      "1C",
+      "1S",
+      "2H",
+      "p",
+      "3C",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "SA",
+      "S5",
+      "S6",
+      "S2",
+      "H3",
+      "H2",
+      "H8",
+      "HJ",
+      "H6",
+      "H7",
+      "HA",
+      "H4",
+      "C3",
+      "C4",
+      "CJ",
+      "C5",
+      "C2",
+      "CT",
+      "CQ",
+      "C7",
+      "H9",
+      "HQ",
+      "C6",
+      "HK",
+      "DT",
+      "D3",
+      "D4",
+      "DK",
+      "H5",
+      "CK",
+      "S3",
+      "HT",
+      "DJ",
+      "D7",
+      "D5",
+      "D2",
+      "DQ",
+      "D8",
+      "DA",
+      "D9",
+      "D6",
+      "C9",
+      "CA",
+      "S4",
+      "ST",
+      "S7",
+      "SJ",
+      "SK",
+      "S8",
+      "SQ",
+      "S9",
+      "C8"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "J5",
+            "H": "AT92",
+            "D": "A654",
+            "C": "Q83"
+          },
+          "hcp": 11,
+          "total_points": 11,
+          "distribution_str": "2=4=4=3"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "K86",
+            "H": "Q854",
+            "D": "K92",
+            "C": "974"
+          },
+          "hcp": 8,
+          "total_points": 8,
+          "distribution_str": "3=4=3=3"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "QT2",
+            "H": "J6",
+            "D": "QJT",
+            "C": "AKJ62"
+          },
+          "hcp": 14,
+          "total_points": 15,
+          "distribution_str": "3=2=3=5"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "A9743",
+            "H": "K73",
+            "D": "873",
+            "C": "T5"
+          },
+          "hcp": 7,
+          "total_points": 8,
+          "distribution_str": "5=3=3=2"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S5JH29TAD456AC38Q,S68KH458QD29KC479,S2TQH6JDTJQC26JKA,|rh||ah|Board 6|sv|e|mb|p|mb|p|mb|p|mb|1C|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|SA|pc|S5|pc|S6|pc|S2|pg||pc|H3|pc|H2|pc|H8|pc|HJ|pg||pc|H6|pc|H7|pc|HA|pc|H4|pg||pc|C3|pc|C4|pc|CJ|pc|C5|pg||pc|C2|pc|CT|pc|CQ|pc|C7|pg||pc|H9|pc|HQ|pc|C6|pc|HK|pg||pc|DT|pc|D3|pc|D4|pc|DK|pg||pc|H5|pc|CK|pc|S3|pc|HT|pg||pc|DJ|pc|D7|pc|D5|pc|D2|pg||pc|DQ|pc|D8|pc|DA|pc|D9|pg||pc|D6|pc|C9|pc|CA|pc|S4|pg||pc|ST|pc|S7|pc|SJ|pc|SK|pg||pc|S8|pc|SQ|pc|S9|pc|C8|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 11,
+      "total_points": 11,
+      "distribution": "2=4=4=3",
+      "is_balanced": true
+    },
+    "West": {
+      "hcp": 8,
+      "total_points": 8,
+      "distribution": "3=4=3=3",
+      "is_balanced": true
+    },
+    "North": {
+      "hcp": 14,
+      "total_points": 15,
+      "distribution": "3=2=3=5",
+      "is_balanced": true
+    },
+    "East": {
+      "hcp": 7,
+      "total_points": 8,
+      "distribution": "5=3=3=2",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 7,
+      "D": 8,
+      "H": 9,
+      "S": 10,
+      "NT": 8
+    },
+    "S": {
+      "C": 7,
+      "D": 8,
+      "H": 9,
+      "S": 10,
+      "NT": 8
+    },
+    "E": {
+      "C": 6,
+      "D": 5,
+      "H": 4,
+      "S": 3,
+      "NT": 4
+    },
+    "W": {
+      "C": 6,
+      "D": 5,
+      "H": 4,
+      "S": 3,
+      "NT": 4
+    }
+  },
+  "ai_analysis": {
+    "verdict": "MISSED GAME OPPORTUNITY",
+    "actual_critique": [
+      "The partnership failed to identify their 4-4 Heart fit, settling instead for a poor 5-2 Club fit.",
+      "North's rebid of 3C was too passive. With 25 combined HCP, North should have bid 2NT to show values and invite game, rather than signing off.",
+      "The final contract of 3C fails by two tricks (making only 7 tricks), whereas 4H was the logical game target, making 9 tricks (down 1)."
+    ],
+    "basic_section": {
+      "analysis": "North opened 1C (14 HCP) and South responded 2H (11 HCP, 4+ Hearts) over East's 1S overcall. This response is constructive and forcing for one round, indicating 10+ points and a potential 4-4 fit. With 25 combined HCP, N/S should be aggressively seeking game. North, holding 14 HCP, should prioritize showing values and a partial Spade stopper by bidding 2NT, inviting South to continue. North's actual bid of 3C showed a minimum hand and denied Heart support, effectively shutting down game exploration prematurely.",
+      "recommended_auction": [
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Dealer passes."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Standard pass."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Standard pass."
+        },
+        {
+          "player": "North",
+          "bid": "1C",
+          "explanation": "Standard opening bid (14 HCP, 5+ Clubs)."
+        },
+        {
+          "player": "East",
+          "bid": "1S",
+          "explanation": "Standard overcall (5+ Spades, 7 HCP)."
+        },
+        {
+          "player": "South",
+          "bid": "2H",
+          "explanation": "Constructive response showing 10+ points and 4+ Hearts. This bid is forcing for one round."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "2NT",
+          "explanation": "Showing 12-14 HCP, semi-balanced shape, and a partial Spade stopper (QT2). This invites game and denies 3-card Heart support."
+        },
+        {
+          "player": "South",
+          "bid": "3H",
+          "explanation": "Showing 4-card Heart support and accepting the game invitation with 11 HCP. This confirms the 4-4 fit."
+        },
+        {
+          "player": "North",
+          "bid": "4H",
+          "explanation": "Accepting the game invitation with 14 HCP and an 8-card fit."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass. Contract 4H."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "While 4H is the logical and percentage game contract (making 9 tricks, down 1), the double dummy analysis reveals that 4S actually makes 10 tricks. This is a highly unusual result given N/S only holds 6 Spades combined (a 3-3 fit). Since the partnership has no natural way to bid 4S, the focus remains on finding the 4-4 Heart fit. The 2NT rebid by North is crucial for showing values without promising support, allowing South to accurately place the contract.",
+      "sequence": null
+    },
+    "coaches_corner": [
+      {
+        "player": "North",
+        "topic": "Rebid after Overcall",
+        "category": "Valuation/Game Exploration"
+      },
+      {
+        "player": "South",
+        "topic": "Responding with a 4-card Major",
+        "category": "Fit Finding"
+      },
+      {
+        "player": "Partnership",
+        "topic": "Finding the 4-4 Major Fit",
+        "category": "Communication"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

@@ -1,0 +1,314 @@
+{
+  "facts": {
+    "board": "Board 11",
+    "dealer": "South",
+    "vulnerability": "None",
+    "contract": "4H",
+    "auction": [
+      "p",
+      "2H",
+      "3C",
+      "3H",
+      "p",
+      "4H",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "C2",
+      "C8",
+      "CQ",
+      "CA",
+      "H2",
+      "HJ",
+      "HA",
+      "H4",
+      "HK",
+      "H8",
+      "H3",
+      "C4",
+      "D2",
+      "D9",
+      "DQ",
+      "DK",
+      "S4",
+      "S9",
+      "ST",
+      "S2",
+      "DA",
+      "D8",
+      "D4",
+      "D5",
+      "D7",
+      "H6",
+      "DJ",
+      "DT",
+      "CK",
+      "C5",
+      "S3",
+      "C7",
+      "C3",
+      "CT",
+      "H5",
+      "C9",
+      "S7",
+      "SJ",
+      "H7",
+      "S5",
+      "C6",
+      "CJ",
+      "HT",
+      "S6",
+      "S8",
+      "D3",
+      "H9",
+      "SK",
+      "HQ",
+      "SA",
+      "SQ",
+      "D6"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "JT6",
+            "H": "84",
+            "D": "A9763",
+            "C": "Q97"
+          },
+          "hcp": 7,
+          "total_points": 8,
+          "distribution_str": "3=2=5=3"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "2",
+            "H": "Q97632",
+            "D": "Q8",
+            "C": "AK63"
+          },
+          "hcp": 11,
+          "total_points": 13,
+          "distribution_str": "1=6=2=4"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "AK54",
+            "H": "J",
+            "D": "KJ4",
+            "C": "JT542"
+          },
+          "hcp": 13,
+          "total_points": 14,
+          "distribution_str": "4=1=3=5"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "Q9873",
+            "H": "AKT5",
+            "D": "T52",
+            "C": "8"
+          },
+          "hcp": 9,
+          "total_points": 10,
+          "distribution_str": "5=4=3=1"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S6TJH48D3679AC79Q,S2H23679QD8QC36KA,S45KAHJD4JKC245TJ,|rh||ah|Board 11|sv|o|mb|p|mb|2H|mb|3C|mb|3H|mb|p|mb|4H|mb|p|mb|p|mb|p|pg||pc|C2|pc|C8|pc|CQ|pc|CA|pg||pc|H2|pc|HJ|pc|HA|pc|H4|pg||pc|HK|pc|H8|pc|H3|pc|C4|pg||pc|D2|pc|D9|pc|DQ|pc|DK|pg||pc|S4|pc|S9|pc|ST|pc|S2|pg||pc|DA|pc|D8|pc|D4|pc|D5|pg||pc|D7|pc|H6|pc|DJ|pc|DT|pg||pc|CK|pc|C5|pc|S3|pc|C7|pg||pc|C3|pc|CT|pc|H5|pc|C9|pg||pc|S7|pc|SJ|pc|H7|pc|S5|pg||pc|C6|pc|CJ|pc|HT|pc|S6|pg||pc|S8|pc|D3|pc|H9|pc|SK|pg||pc|HQ|pc|SA|pc|SQ|pc|D6|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 7,
+      "total_points": 8,
+      "distribution": "3=2=5=3",
+      "is_balanced": true
+    },
+    "West": {
+      "hcp": 11,
+      "total_points": 13,
+      "distribution": "1=6=2=4",
+      "is_balanced": false
+    },
+    "North": {
+      "hcp": 13,
+      "total_points": 14,
+      "distribution": "4=1=3=5",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 9,
+      "total_points": 10,
+      "distribution": "5=4=3=1",
+      "is_balanced": false
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 7,
+      "D": 3,
+      "H": 9,
+      "S": 8,
+      "NT": 5
+    },
+    "S": {
+      "C": 7,
+      "D": 3,
+      "H": 9,
+      "S": 8,
+      "NT": 5
+    },
+    "E": {
+      "C": 5,
+      "D": 10,
+      "H": 4,
+      "S": 5,
+      "NT": 6
+    },
+    "W": {
+      "C": 5,
+      "D": 10,
+      "H": 4,
+      "S": 5,
+      "NT": 8
+    }
+  },
+  "ai_analysis": {
+    "verdict": "FAILED GAME CONTRACT",
+    "actual_critique": [
+      "West's 2H opening was slightly heavy (11 HCP) for a standard Weak Two (6-10 HCP), but acceptable given the 6-card suit and competitive situation.",
+      "North's 3C intervention was an excellent competitive bid, showing 13 HCP and a 5-card suit, attempting to disrupt the opponents and find a potential fit.",
+      "West's decision to push to 4H, despite the known weakness of the opening hand and the minimum raise from East, proved overly optimistic, resulting in a major set (DDS shows 4H makes only 4 tricks)."
+    ],
+    "basic_section": {
+      "analysis": "South passed, and West opened a Weak Two in Hearts (2H). North correctly intervened with 3C, showing a good hand (13 HCP) and a long suit, aiming to compete. East gave a simple raise to 3H, showing minimum support for the weak two. West, having slightly extra strength (11 HCP) and a 10-card fit confirmed, decided to push to game in 4H. While competitively sound in theory, this contract failed dramatically due to poor distribution and missing key controls.",
+      "recommended_auction": [
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Standard pass with 7 HCP."
+        },
+        {
+          "player": "West",
+          "bid": "2H",
+          "explanation": "Weak Two opening, showing 6-10 HCP and a 6-card Heart suit (slightly heavy with 11 HCP, but acceptable)."
+        },
+        {
+          "player": "North",
+          "bid": "3C",
+          "explanation": "Competitive jump overcall, showing a good hand (10+ HCP) and a 5+ card Club suit, aiming to interfere."
+        },
+        {
+          "player": "East",
+          "bid": "3H",
+          "explanation": "Simple raise, showing minimum support for the Weak Two (6-9 HCP)."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "No constructive bid available."
+        },
+        {
+          "player": "West",
+          "bid": "4H",
+          "explanation": "Pushing to game based on 11 HCP and the confirmed 10-card fit, hoping to shut out N/S."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "N/S cannot make game, and a double is risky without better defensive shape."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass, ending the auction."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "Given the competitive nature and the high level reached, North should seriously consider a penalty double of 4H. North has 13 HCP, the AK of Spades, and the J of Hearts (a potential trump trick). While N/S lack a clear fit, the opponents have shown weakness (Weak Two structure). DDS confirms that 4H goes down 3 tricks, making a penalty double highly profitable (+500). North's 3C bid showed values, and doubling 4H is a strong defensive statement.",
+      "sequence": [
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "West",
+          "bid": "2H",
+          "explanation": "Weak Two."
+        },
+        {
+          "player": "North",
+          "bid": "3C",
+          "explanation": "Competitive overcall."
+        },
+        {
+          "player": "East",
+          "bid": "3H",
+          "explanation": "Minimum raise."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "West",
+          "bid": "4H",
+          "explanation": "Game push."
+        },
+        {
+          "player": "North",
+          "bid": "X",
+          "explanation": "Penalty Double. North has sufficient defensive strength (13 HCP, two outside Aces) to expect a significant set."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass, accepting the double."
+        }
+      ]
+    },
+    "coaches_corner": [
+      {
+        "player": "West",
+        "topic": "Weak Two Range Management",
+        "category": "Opening Bids"
+      },
+      {
+        "player": "North",
+        "topic": "Competitive Jump Overcalls (3-level)",
+        "category": "Interference"
+      },
+      {
+        "player": "North",
+        "topic": "Defensive Doubles at Game Level",
+        "category": "Defense"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

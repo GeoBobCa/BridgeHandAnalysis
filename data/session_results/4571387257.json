@@ -130,109 +130,135 @@
     },
     "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|1S479KH239KD24QC8J,S36H6QAD57C3567TK,S258JH5JD39JKC2QA,|rh||ah|Board 15|sv|n|mb|p|mb|p|mb|1D|mb|p|mb|1H|mb|p|mb|1S|mb|p|mb|p|mb|p|pg||pc|DA|pc|D2|pc|D5|pc|D3|pg||pc|C9|pc|C8|pc|CK|pc|CA|pg||pc|S2|pc|ST|pc|SK|pc|S3|pg||pc|S4|pc|S6|pc|S8|pc|SQ|pg||pc|C4|pc|CJ|pc|C3|pc|C2|pg||pc|H3|pc|HQ|pc|H5|pc|H4|pg||pc|HA|pc|HJ|pc|H7|pc|H2|pg||pc|H6|pc|D9|pc|HT|pc|HK|pg||pc|D4|pc|D7|pc|DJ|pc|D6|pg||pc|SJ|pc|SA|pc|S7|pc|C5|pg||pc|H8|pc|H9|pc|C6|pc|S5|pg||pc|CQ|pc|D8|pc|S9|pc|C7|pg||pc|DQ|pc|CT|pc|DK|pc|DT|pg||\n"
   },
+  "math": {
+    "South": {
+      "hcp": 9,
+      "total_points": 9,
+      "distribution": "4=4=3=2",
+      "is_balanced": true
+    },
+    "West": {
+      "hcp": 9,
+      "total_points": 11,
+      "distribution": "2=3=2=6",
+      "is_balanced": false
+    },
+    "North": {
+      "hcp": 12,
+      "total_points": 12,
+      "distribution": "4=2=4=3",
+      "is_balanced": true
+    },
+    "East": {
+      "hcp": 10,
+      "total_points": 10,
+      "distribution": "3=4=4=2",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 7,
+      "D": 6,
+      "H": 7,
+      "S": 4,
+      "NT": 5
+    },
+    "S": {
+      "C": 7,
+      "D": 6,
+      "H": 7,
+      "S": 4,
+      "NT": 5
+    },
+    "E": {
+      "C": 5,
+      "D": 6,
+      "H": 6,
+      "S": 9,
+      "NT": 5
+    },
+    "W": {
+      "C": 5,
+      "D": 6,
+      "H": 6,
+      "S": 9,
+      "NT": 6
+    }
+  },
   "ai_analysis": {
-    "verdict": "MISSED OPTIMAL PARTIAL CONTRACT",
+    "verdict": "MAJOR BIDDING ERROR",
     "actual_critique": [
-      "The partnership settled for 1S when 2S was available, a safer, higher-scoring partial contract based on the known 8-card Spade fit.",
-      "South erred by passing 1S. Holding 9 total points and 4-card support for North's 1S rebid, South should have bid 2S to confirm the fit and show minimum responding strength (6-9 TP).",
-      "The actual auction stopped prematurely, resulting in a low contract score."
+      "North committed a fundamental SAYC error by responding 1H with only two cards. SAYC requires 4+ cards for a 1-level major response.",
+      "South's opening of 1D with 9 HCP is light, but the primary failure was North's misleading response.",
+      "The final contract of 1S is disastrous, failing by 3 tricks according to double dummy analysis (N/S makes only 4 tricks)."
     ],
     "basic_section": {
-      "analysis": "North opened 1D (12 TP, 4=2=4=3 shape). South, with 9 TP, correctly responded 1H showing a four-card major. North then rebid 1S, showing four Spades and 12-14 points. Since North and South hold a combined 8-card Spade fit (4-4), South must confirm this fit with a competitive raise. With 9 TP, South should bid 2S, showing minimal values (6-9 TP) for a partial contract.",
+      "analysis": "South opened 1D, slightly light but acceptable in some styles. North holds 12 HCP and a 4-card Spade suit. North must respond 1S, the higher-ranking major, showing 4+ cards and forcing the bidding open. Bidding 1H with only two cards violates basic SAYC rules and led the partnership to a terrible contract. The recommended auction finds the standard 1NT partial, which is the best percentage contract given the balanced hands and lack of a major fit, even though DDS shows it fails.",
       "recommended_auction": [
         {
+          "player": "South",
           "bid": "1D",
-          "explanation": "North opens 1D (12+ TP, 4+ Diamonds)."
+          "explanation": "Opening the longer minor, though slightly light (9 HCP)."
         },
         {
+          "player": "West",
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass, 9 HCP is insufficient for an overcall."
         },
         {
-          "bid": "1H",
-          "explanation": "South responds 1H (6+ TP, 4+ Hearts)."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
+          "player": "North",
           "bid": "1S",
-          "explanation": "North rebids 1S (12-14 TP, 4+ Spades, showing 4-4 majors or preference)."
+          "explanation": "Correct response. Showing 4+ Spades with 12 HCP. This is mandatory over 1D."
         },
         {
+          "player": "East",
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass."
         },
         {
-          "bid": "2S",
-          "explanation": "South confirms 8-card Spade fit, showing 6-9 TP (minimum responding hand)."
+          "player": "South",
+          "bid": "1NT",
+          "explanation": "Standard rebid showing 9-11 HCP, balanced distribution, and denying a 5-card Spade suit."
         },
         {
+          "player": "West",
           "bid": "p",
-          "explanation": "West passes."
+          "explanation": "Pass."
         },
         {
+          "player": "North",
           "bid": "p",
-          "explanation": "North passes (N/S total 21 TP, not enough for game invitation)."
+          "explanation": "12 HCP opposite a 9-11 HCP 1NT rebid is insufficient for game. Settling for the partial."
         },
         {
+          "player": "East",
           "bid": "p",
-          "explanation": "East passes. Contract: 2S."
+          "explanation": "End of auction. Contract 1NT."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "Given the low combined total points (21 TP) and flat distribution (4=4=3=2 opposite 4=2=4=3), advanced conventional methods like 2/1 Game Force are not applicable, and game is not in consideration. The goal remains finding the optimal partial contract, which is 2S. The recommended basic auction serves as the appropriate advanced sequence here.",
-      "sequence": [
-        {
-          "bid": "1D",
-          "explanation": "North opening standard."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "1H",
-          "explanation": "South standard response."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "1S",
-          "explanation": "North 4-card major rebid."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "2S",
-          "explanation": "South confirms the fit and shows minimum hand strength, reaching the comfortable partial contract."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass out in 2S."
-        }
-      ]
+      "analysis": "The partnership has 21 HCP and no obvious fit. While the DDS shows that 1H or 1C can make 7 tricks, these contracts are based on highly specific distribution (West's long clubs) and cannot be reached naturally, as N/S lacks a 4-4 fit in either suit. The standard 1NT contract, while failing by two tricks according to DDS, is the highest percentage partial based on the bidding information available.",
+      "sequence": null
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Supporting Partner's Major Suit Bid",
-        "category": "Review",
-        "tip": "When partner makes a minimum rebid into a major (1S), and you have 4-card support and minimal responding strength (6-9 TP), you must confirm the 8-card fit by raising to the 2-level (2S)."
+        "player": "North",
+        "topic": "Responding to 1-level openings",
+        "category": "Suit Length Requirements (4+ cards for 1H/1S response)"
       },
       {
-        "player": "North/South Partnership",
-        "topic": "Identifying Partial Score Contracts",
-        "category": "Awareness",
-        "tip": "With combined strength around 20-22 TP, the partnership should aggressively pursue the known 8-card fit to find the highest achievable partial score (usually 2 of the major)."
+        "player": "South",
+        "topic": "Opening Light",
+        "category": "Hand Evaluation (9 HCP is usually a pass in first seat)"
+      },
+      {
+        "player": "Partnership",
+        "topic": "Finding the Safest Partial",
+        "category": "Contract Selection (Aiming for 1NT when no major fit is found)"
       }
     ]
   },
-  "timestamp": "2025-12-21 14:41:33"
+  "timestamp": "2025-12-20"
 }

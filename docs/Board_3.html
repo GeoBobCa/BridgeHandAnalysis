@@ -2,498 +2,385 @@
         <!DOCTYPE html>
         <html>
         <head>
-            <meta charset="utf-8">
-            <title>Board 3 Analysis</title>
+            <meta charset="utf-8"><title>Board 3</title>
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <style>
-                .section-header { border-bottom: 2px solid #dee2e6; margin-bottom: 1rem; padding-bottom: 0.5rem; color: #495057; }
                 .bid-badge { font-family: monospace; font-size: 1.1em; padding: 8px 12px; }
-                .coach-card { background-color: #f8f9fa; border-left: 5px solid #0dcaf0; }
-                .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
                 .hand-box { background: #fdfdfd; border: 1px solid #ccc; padding: 10px; border-radius: 5px; font-size: 0.9rem; }
                 .suit-symbol { display: inline-block; width: 15px; text-align: center; font-weight: bold; }
-                .suit-S { color: black; } .suit-H { color: red; }
-                .suit-D { color: orange; } .suit-C { color: green; }
+                .suit-S { color: black; } .suit-H { color: red; } .suit-D { color: orange; } .suit-C { color: green; }
                 .dealer-badge { background-color: #000; color: #fff; padding: 2px 6px; border-radius: 4px; font-size: 0.7em; margin-left: 5px; }
                 .dir-badge { width: 35px; text-align: center; display: inline-block; margin-right: 10px; font-weight: bold; background-color: #6c757d; color: white; border-radius: 4px; padding: 2px 0; }
+                .coach-card { background-color: #f8f9fa; border-left: 5px solid #0dcaf0; }
+                .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
+                /* DDS Table Styles */
+                .dds-table th, .dds-table td { text-align: center; padding: 4px; font-family: monospace; }
+                .dds-make { background-color: #d4edda; color: #155724; font-weight: bold; }
             </style>
         </head>
-        <body class="bg-white">
-            <div class="container py-4">
-                <div class="d-flex justify-content-between mb-4">
-                    <a href="index.html" class="btn btn-outline-secondary">&larr; Back to Dashboard</a>
-                    <h2 class="m-0">Board 3</h2>
-                    <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C1S8KAHTQD238C39TJA%2CS3JH3468KD69TAC26%2CS2467QH59AD457JCQ%2C%7Crh%7C%7Cah%7CBoard%203%7Csv%7Ce%7Cmb%7C1C%7Cmb%7Cp%7Cmb%7C1S%7Cmb%7Cp%7Cmb%7C1N%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CDA%7Cpc%7CD4%7Cpc%7CDQ%7Cpc%7CD2%7Cpg%7C%7Cpc%7CC2%7Cpc%7CCQ%7Cpc%7CCK%7Cpc%7CCA%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CC6%7Cpc%7CD5%7Cpc%7CC4%7Cpg%7C%7Cpc%7CCT%7Cpc%7CH3%7Cpc%7CD7%7Cpc%7CC5%7Cpg%7C%7Cpc%7CC9%7Cpc%7CH4%7Cpc%7CH5%7Cpc%7CC7%7Cpg%7C%7Cpc%7CSA%7Cpc%7CS3%7Cpc%7CS2%7Cpc%7CS5%7Cpg%7C%7Cpc%7CSK%7Cpc%7CSJ%7Cpc%7CS4%7Cpc%7CS9%7Cpg%7C%7Cpc%7CS8%7Cpc%7CD6%7Cpc%7CSQ%7Cpc%7CST%7Cpg%7C%7Cpc%7CS7%7Cpc%7CH2%7Cpc%7CD3%7Cpc%7CH6%7Cpg%7C%7Cpc%7CS6%7Cpc%7CH7%7Cpc%7CD8%7Cpc%7CD9%7Cpg%7C%7Cpc%7CHA%7Cpc%7CHJ%7Cpc%7CHT%7Cpc%7CH8%7Cpg%7C%7Cpc%7CH9%7Cpc%7CC8%7Cpc%7CHQ%7Cpc%7CHK%7Cpg%7C%7Cpc%7CDT%7Cpc%7CDJ%7Cpc%7CDK%7Cpc%7CC3%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">Replay Hand</a>
-                </div>
-
-                <div class="row mb-5">
-                    <div class="col-md-8">
-                        <div class="card bg-success bg-opacity-10 border-success">
-                            <div class="card-body position-relative" style="min-height: 400px;">
-                                <div class="position-absolute top-50 start-50 translate-middle text-center bg-white p-3 border rounded shadow-sm" style="z-index: 2;">
-                                    <strong>Board 3</strong><br>Dealer: South<br>Vul: E/W
-                                </div>
-                                
-                                    
-                                    <div class="position-absolute top-0 start-50 translate-middle-x mt-2 w-50">
-                                        <div class="hand-box shadow-sm">
-                                            <strong>North</strong> (BeaPercy)
-                                            
-                                            <div class="float-end fw-bold">9 HCP</div>
-                                            <hr class="my-1">
-                                            <div><span class="suit-symbol suit-S">♠</span> Q7642</div>
-                                            <div><span class="suit-symbol suit-H">♥</span> A95</div>
-                                            <div><span class="suit-symbol suit-D">♦</span> J754</div>
-                                            <div><span class="suit-symbol suit-C">♣</span> Q</div>
-                                        </div>
-                                    </div>
-                                
-                                    
-                                    <div class="position-absolute top-50 start-0 translate-middle-y ms-2 w-25">
-                                        <div class="hand-box shadow-sm">
-                                            <strong>West</strong> (georgenamg)
-                                            
-                                            <div class="float-end fw-bold">8 HCP</div>
-                                            <hr class="my-1">
-                                            <div><span class="suit-symbol suit-S">♠</span> J3</div>
-                                            <div><span class="suit-symbol suit-H">♥</span> K8643</div>
-                                            <div><span class="suit-symbol suit-D">♦</span> AT96</div>
-                                            <div><span class="suit-symbol suit-C">♣</span> 62</div>
-                                        </div>
-                                    </div>
-                                
-                                    
-                                    <div class="position-absolute top-50 end-0 translate-middle-y me-2 w-25">
-                                        <div class="hand-box shadow-sm">
-                                            <strong>East</strong> (bobj245)
-                                            
-                                            <div class="float-end fw-bold">9 HCP</div>
-                                            <hr class="my-1">
-                                            <div><span class="suit-symbol suit-S">♠</span> T95</div>
-                                            <div><span class="suit-symbol suit-H">♥</span> J72</div>
-                                            <div><span class="suit-symbol suit-D">♦</span> KQ</div>
-                                            <div><span class="suit-symbol suit-C">♣</span> K8754</div>
-                                        </div>
-                                    </div>
-                                
-                                    
-                                    <div class="position-absolute bottom-0 start-50 translate-middle-x mb-2 w-50">
-                                        <div class="hand-box shadow-sm">
-                                            <strong>South</strong> (Fish075)
-                                            <span class="dealer-badge">DLR</span>
-                                            <div class="float-end fw-bold">14 HCP</div>
-                                            <hr class="my-1">
-                                            <div><span class="suit-symbol suit-S">♠</span> AK8</div>
-                                            <div><span class="suit-symbol suit-H">♥</span> QT</div>
-                                            <div><span class="suit-symbol suit-D">♦</span> 832</div>
-                                            <div><span class="suit-symbol suit-C">♣</span> AJT93</div>
-                                        </div>
-                                    </div>
-                                
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card h-100">
-                            <div class="card-header">Actual Auction</div>
-                            <div class="card-body d-flex align-items-center justify-content-center">
-                                <div class="font-monospace text-center">
-                                    1C - p - 1S - p - 1N - p - p - p
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <h4 class="section-header">🔍 1. Critique of Actual Play</h4>
-                <div class="mb-5">
-                    
-                    <ul class="list-group">
-                        
-                        <li class="list-group-item border-0">🔹 North (Responder, 10 TP, 5 Spades) passed prematurely after South's 1N rebid, failing to force the bidding toward game or confirm the major suit fit.</li>
-                        
-                        <li class="list-group-item border-0">🔹 South's rebid of 1N was overly restrictive, limiting the hand to 15-17 HCP and implicitly denying 3-card Spade support, which South actually possesses (AK8).</li>
-                        
-                        <li class="list-group-item border-0">🔹 N/S missed an easy 8-card Spade fit and failed to explore for the likely 4S game contract, settling instead for the low-level 1N contract.</li>
-                        
-                    </ul>
-                    
-                </div>
-
-                
-                
-                
-
-                <h4 class="section-header">📘 2. The Fundamentals (Standard American)</h4>
-                <div class="card mb-5 border-primary">
-                    <div class="card-body">
-                        
-                            <p class="lead">South opens 1C (15 TP, 5 cards). North responds 1S (10 TP, 5 cards, forcing). South possesses 3-card support (AK8) and 14 HCP. In SAYC, while standard practice usually requires 4 cards for a raise, a good 3-card support (especially with high honors) opposite a 5-card major responder warrants showing the fit and inviting game, rather than rebidding 1N or 2C. 1N limits the hand too much and denies the fit. South should prioritize finding the 8-card fit.</p>
-                            
-                            
-                            <div class="mt-4">
-                                <h6>✅ Correct Standard Sequence:</h6>
-                                <div class="accordion mt-3" id="accordionBasic">
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading1">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
-                                                    <span class="dir-badge">S</span> <strong>1C</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse1" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    South opens the strongest minor (14+ HCP, 5+ Clubs).
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading2">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
-                                                    <span class="dir-badge">W</span> <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    West passes (8 HCP).
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading3">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3">
-                                                    <span class="dir-badge">N</span> <strong>1S</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse3" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    North responds 1S (6+ TP, 5+ Spades, forcing).
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading4">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4">
-                                                    <span class="dir-badge">E</span> <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse4" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    East passes.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading5">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse5">
-                                                    <span class="dir-badge">S</span> <strong>2S</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse5" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    South shows 3-card support and 12-14 TP (14 HCP hand strength), confirming the fit and inviting game.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading6">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse6">
-                                                    <span class="dir-badge">W</span> <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse6" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    West passes.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading7">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse7">
-                                                    <span class="dir-badge">N</span> <strong>4S</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse7" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    North has 10 TP and a 5-card suit; accepting the game invitation is appropriate.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="heading8">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse8">
-                                                    <span class="dir-badge">E</span> <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapse8" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                                <div class="accordion-body text-muted">
-                                                    End of auction.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        
-                    </div>
-                </div>
-
-                <h4 class="section-header">🚀 3. Advanced Concepts</h4>
-                <div class="card mb-5 adv-card">
-                    <div class="card-body">
-                        
-                            <p>In a 2/1 Game Forcing (GF) structure, North should use a forcing rebid to ensure game exploration. South's 2C rebid shows minimum to mid-range strength (14-17 TP) and confirms the Club length. North then uses 2S to confirm the major fit while still pushing toward game based on the partnership's combined 23 HCP.</p>
-                            
-                            
-                            <div class="mt-4">
-                                <h6>✨ Advanced Sequence:</h6>
-                                <div class="accordion mt-3" id="accordionAdv">
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv1">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv1">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">S</span>
-                                                    <strong>1C</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv1" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    South opens.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv2">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv2">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">W</span>
-                                                    <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv2" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    Pass.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv3">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv3">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">N</span>
-                                                    <strong>1S</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv3" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    North 5+ Spades, forcing (or potentially GF if using 2/1). If not GF, North will bid again.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv4">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv4">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">E</span>
-                                                    <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv4" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    Pass.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv5">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv5">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">S</span>
-                                                    <strong>2C</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv5" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    South shows 5+ Clubs, 14-17 TP, forcing.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv6">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv6">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">W</span>
-                                                    <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv6" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    Pass.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv7">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv7">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">N</span>
-                                                    <strong>2S</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv7" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    North confirms 5+ Spades and an 8-card fit, asking South to further define strength.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv8">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv8">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">E</span>
-                                                    <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv8" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    Pass.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv9">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv9">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">S</span>
-                                                    <strong>4S</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv9" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    South knows the fit and recognizes the partnership strength (23 TP); jump to game.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                        
-                                        
-                                        
-                                        <div class="accordion-item">
-                                            <h2 class="accordion-header" id="headingAdv10">
-                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAdv10">
-                                                    <span class="dir-badge" style="background-color: #ffc107; color: black;">W</span>
-                                                    <strong>p</strong>
-                                                </button>
-                                            </h2>
-                                            <div id="collapseAdv10" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                                <div class="accordion-body text-muted">
-                                                    End of auction.
-                                                </div>
-                                            </div>
-                                        </div>
-                                    
-                                </div>
-                            </div>
-                            
-                        
-                    </div>
-                </div>
-
-                <h4 class="section-header">🎓 4. Coach's Corner</h4>
-                <div class="row">
-                    
-                        
-                        <div class="col-md-6 mb-3">
-                            <div class="card coach-card h-100">
-                                <div class="card-body">
-                                    <small class="text-uppercase text-muted">North | Error</small>
-                                    <h5 class="card-title">Responder's Second Bid: Forcing Principle</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-3">
-                            <div class="card coach-card h-100">
-                                <div class="card-body">
-                                    <small class="text-uppercase text-muted">South | Review</small>
-                                    <h5 class="card-title">Rebids After Minor/Major: Prioritizing Fit vs. NT</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-md-6 mb-3">
-                            <div class="card coach-card h-100">
-                                <div class="card-body">
-                                    <small class="text-uppercase text-muted">N/S Partnership | Review</small>
-                                    <h5 class="card-title">Valuing 8-Card Major Fits (Even with 3-Card Support)</h5>
-                                </div>
-                            </div>
-                        </div>
-                        
-                    
-                </div>
-
+        <body class="bg-white"><div class="container py-4">
+            <div class="d-flex justify-content-between mb-4">
+                <a href="index.html" class="btn btn-outline-secondary">&larr; Back</a>
+                <h2 class="m-0">Board 3 <span class="badge bg-primary fs-6 align-middle ms-2">MISSED OPTIMAL PARTIAL</span></h2>
+                <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C1S8KAHTQD238C39TJA%2CS3JH3468KD69TAC26%2CS2467QH59AD457JCQ%2C%7Crh%7C%7Cah%7CBoard%203%7Csv%7Ce%7Cmb%7C1C%7Cmb%7Cp%7Cmb%7C1S%7Cmb%7Cp%7Cmb%7C1N%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CDA%7Cpc%7CD4%7Cpc%7CDQ%7Cpc%7CD2%7Cpg%7C%7Cpc%7CC2%7Cpc%7CCQ%7Cpc%7CCK%7Cpc%7CCA%7Cpg%7C%7Cpc%7CCJ%7Cpc%7CC6%7Cpc%7CD5%7Cpc%7CC4%7Cpg%7C%7Cpc%7CCT%7Cpc%7CH3%7Cpc%7CD7%7Cpc%7CC5%7Cpg%7C%7Cpc%7CC9%7Cpc%7CH4%7Cpc%7CH5%7Cpc%7CC7%7Cpg%7C%7Cpc%7CSA%7Cpc%7CS3%7Cpc%7CS2%7Cpc%7CS5%7Cpg%7C%7Cpc%7CSK%7Cpc%7CSJ%7Cpc%7CS4%7Cpc%7CS9%7Cpg%7C%7Cpc%7CS8%7Cpc%7CD6%7Cpc%7CSQ%7Cpc%7CST%7Cpg%7C%7Cpc%7CS7%7Cpc%7CH2%7Cpc%7CD3%7Cpc%7CH6%7Cpg%7C%7Cpc%7CS6%7Cpc%7CH7%7Cpc%7CD8%7Cpc%7CD9%7Cpg%7C%7Cpc%7CHA%7Cpc%7CHJ%7Cpc%7CHT%7Cpc%7CH8%7Cpg%7C%7Cpc%7CH9%7Cpc%7CC8%7Cpc%7CHQ%7Cpc%7CHK%7Cpg%7C%7Cpc%7CDT%7Cpc%7CDJ%7Cpc%7CDK%7Cpc%7CC3%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">Replay</a>
             </div>
-        </body>
-        </html>
+
+            <div class="row mb-5">
+                <div class="col-md-8">
+                    <div class="card bg-success bg-opacity-10 border-success">
+                        <div class="card-body position-relative" style="min-height: 400px;">
+                            <div class="position-absolute top-50 start-50 translate-middle text-center bg-white p-3 border rounded shadow-sm" style="z-index: 2;">
+                                <strong>Board 3</strong><br>Dlr: South<br>Vul: E/W
+                            </div>
+                            
+                            
+                            <div class="position-absolute top-0 start-50 translate-middle-x mt-2 w-50">
+                                <div class="hand-box shadow-sm">
+                                    <strong>North</strong> (BeaPercy)
+                                    
+                                    <div class="float-end fw-bold">9 HCP</div>
+                                    <hr class="my-1">
+                                    <div><span class="suit-symbol suit-S">♠</span> Q7642</div><div><span class="suit-symbol suit-H">♥</span> A95</div><div><span class="suit-symbol suit-D">♦</span> J754</div><div><span class="suit-symbol suit-C">♣</span> Q</div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="position-absolute top-50 start-0 translate-middle-y ms-2 w-25">
+                                <div class="hand-box shadow-sm">
+                                    <strong>West</strong> (georgenamg)
+                                    
+                                    <div class="float-end fw-bold">8 HCP</div>
+                                    <hr class="my-1">
+                                    <div><span class="suit-symbol suit-S">♠</span> J3</div><div><span class="suit-symbol suit-H">♥</span> K8643</div><div><span class="suit-symbol suit-D">♦</span> AT96</div><div><span class="suit-symbol suit-C">♣</span> 62</div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="position-absolute top-50 end-0 translate-middle-y me-2 w-25">
+                                <div class="hand-box shadow-sm">
+                                    <strong>East</strong> (bobj245)
+                                    
+                                    <div class="float-end fw-bold">9 HCP</div>
+                                    <hr class="my-1">
+                                    <div><span class="suit-symbol suit-S">♠</span> T95</div><div><span class="suit-symbol suit-H">♥</span> J72</div><div><span class="suit-symbol suit-D">♦</span> KQ</div><div><span class="suit-symbol suit-C">♣</span> K8754</div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="position-absolute bottom-0 start-50 translate-middle-x mb-2 w-50">
+                                <div class="hand-box shadow-sm">
+                                    <strong>South</strong> (Fish075)
+                                    <span class="dealer-badge">DLR</span>
+                                    <div class="float-end fw-bold">14 HCP</div>
+                                    <hr class="my-1">
+                                    <div><span class="suit-symbol suit-S">♠</span> AK8</div><div><span class="suit-symbol suit-H">♥</span> QT</div><div><span class="suit-symbol suit-D">♦</span> 832</div><div><span class="suit-symbol suit-C">♣</span> AJT93</div>
+                                </div>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4">
+                    <div class="card mb-3">
+                        <div class="card-header">Actual Auction</div>
+                        <div class="card-body text-center font-monospace">1C - p - 1S - p - 1N - p - p - p</div>
+                    </div>
+                    <div class="card border-info">
+                        <div class="card-header bg-info text-white">Double Dummy Analysis</div>
+                        <div class="card-body p-0">
+                            
+                            <table class="table table-sm table-bordered mb-0 dds-table">
+                                <thead class="table-light"><tr><th></th><th>NT</th><th><span class="suit-S">♠</span></th><th><span class="suit-H">♥</span></th><th><span class="suit-D">♦</span></th><th><span class="suit-C">♣</span></th></tr></thead>
+                                <tbody>
+                                    
+                                    <tr>
+                                        <td><strong>N</strong></td>
+                                        
+                                            
+                                            
+                                            <td class="dds-make">9</td>
+                                        
+                                            
+                                            
+                                            <td class="">9</td>
+                                        
+                                            
+                                            
+                                            <td class="">9</td>
+                                        
+                                            
+                                            
+                                            <td class="">7</td>
+                                        
+                                            
+                                            
+                                            <td class="">9</td>
+                                        
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><strong>S</strong></td>
+                                        
+                                            
+                                            
+                                            <td class="dds-make">9</td>
+                                        
+                                            
+                                            
+                                            <td class="">9</td>
+                                        
+                                            
+                                            
+                                            <td class="">9</td>
+                                        
+                                            
+                                            
+                                            <td class="">7</td>
+                                        
+                                            
+                                            
+                                            <td class="">9</td>
+                                        
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><strong>E</strong></td>
+                                        
+                                            
+                                            
+                                            <td class="">3</td>
+                                        
+                                            
+                                            
+                                            <td class="">4</td>
+                                        
+                                            
+                                            
+                                            <td class="">4</td>
+                                        
+                                            
+                                            
+                                            <td class="">6</td>
+                                        
+                                            
+                                            
+                                            <td class="">3</td>
+                                        
+                                    </tr>
+                                    
+                                    <tr>
+                                        <td><strong>W</strong></td>
+                                        
+                                            
+                                            
+                                            <td class="">3</td>
+                                        
+                                            
+                                            
+                                            <td class="">4</td>
+                                        
+                                            
+                                            
+                                            <td class="">4</td>
+                                        
+                                            
+                                            
+                                            <td class="">6</td>
+                                        
+                                            
+                                            
+                                            <td class="">3</td>
+                                        
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4 class="section-header">🔍 1. Critique</h4>
+            <div class="mb-5">
+                
+                <ul class="list-group"><li class="list-group-item border-0">🔹 The partnership correctly identified the 8-card Spade fit (5-3), but North failed to invite higher after South's 1NT rebid.</li><li class="list-group-item border-0">🔹 The actual contract, 1NT, makes 9 tricks, but the optimal partial contract is 3S, which also makes 9 tricks, yielding a higher score.</li><li class="list-group-item border-0">🔹 North (9 HCP) should have bid 2S over 1NT, showing the fit and inviting game. South (14 HCP) should accept this invitation.</li></ul>
+                
+            </div>
+            
+            <h4 class="section-header">📘 2. Fundamentals</h4>
+            <div class="card mb-5 border-primary">
+                <div class="card-body">
+                    
+                    <p class="lead">South's 1C opening and 1N rebid (showing 12-14 HCP, 3 Spades) were standard. North's 1S response was also standard. After South's 1N rebid, North knows they have an 8-card Spade fit (5+3). With 9 HCP, North should not pass 1NT, but instead bid 2S. This bid is invitational, showing the fit and asking South to continue to game (4S) if maximum (14 HCP) or pass if minimum (12 HCP). Since South has 14 HCP and good controls, accepting the invitation to 3S is appropriate, maximizing the partial score.</p>
+                    
+                    <div class="accordion mt-3" id="accordionBasic">
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1">
+                                    <span class="dir-badge">S</span><strong>1C</strong>
+                                    </button>
+                                </h2>
+                                <div id="c1" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Standard opening bid (12-21 HCP, 5+ Clubs).</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">
+                                    <span class="dir-badge">W</span><strong>p</strong>
+                                    </button>
+                                </h2>
+                                <div id="c2" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Pass.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">
+                                    <span class="dir-badge">N</span><strong>1S</strong>
+                                    </button>
+                                </h2>
+                                <div id="c3" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Standard response, 6+ points, 4+ Spades (North has 5).</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4">
+                                    <span class="dir-badge">E</span><strong>p</strong>
+                                    </button>
+                                </h2>
+                                <div id="c4" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Pass.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5">
+                                    <span class="dir-badge">S</span><strong>1N</strong>
+                                    </button>
+                                </h2>
+                                <div id="c5" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Rebid showing 12-14 HCP, semi-balanced, denying 4-card Heart suit and denying 4+ Spade support.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6">
+                                    <span class="dir-badge">W</span><strong>p</strong>
+                                    </button>
+                                </h2>
+                                <div id="c6" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Pass.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7">
+                                    <span class="dir-badge">N</span><strong>2S</strong>
+                                    </button>
+                                </h2>
+                                <div id="c7" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Preference bid showing the 8-card Spade fit and inviting game (9-11 points). This is mandatory with 9 HCP.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8">
+                                    <span class="dir-badge">E</span><strong>p</strong>
+                                    </button>
+                                </h2>
+                                <div id="c8" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Pass.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c9">
+                                    <span class="dir-badge">S</span><strong>3S</strong>
+                                    </button>
+                                </h2>
+                                <div id="c9" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Accepting the invitation with 14 HCP and good controls (AK in Spades, A in Clubs).</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c10">
+                                    <span class="dir-badge">W</span><strong>p</strong>
+                                    </button>
+                                </h2>
+                                <div id="c10" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Pass.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c11">
+                                    <span class="dir-badge">N</span><strong>p</strong>
+                                    </button>
+                                </h2>
+                                <div id="c11" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Pass, satisfied with the partial contract.</div>
+                                </div>
+                            </div>
+                        
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c12">
+                                    <span class="dir-badge">E</span><strong>p</strong>
+                                    </button>
+                                </h2>
+                                <div id="c12" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
+                                    <div class="accordion-body">Pass.</div>
+                                </div>
+                            </div>
+                        
+                    </div>
+                    
+                    
+                </div>
+            </div>
+
+            <h4 class="section-header">🚀 3. Advanced Concepts</h4>
+            <div class="card mb-5 adv-card">
+                <div class="card-body">
+                    
+                        <p>The primary decision point was recognizing the invitational nature of the 2S bid after the 1N rebid. While 2S is often just a preference, when responder has 9+ points and a known 8-card fit, it serves as a strong partial/game invitation. South's 14 HCP hand, featuring two Aces and a King, is robust enough to accept the invitation to 3S, even though the partnership is short of the 25 HCP game threshold. Since 3S makes exactly 9 tricks, this is the highest scoring contract available.</p>
+                        
+                    
+                </div>
+            </div>
+
+            <h4 class="section-header">🎓 4. Coach's Corner</h4>
+            <div class="row">
+                
+                    
+                    <div class="col-md-6 mb-3"><div class="card coach-card h-100"><div class="card-body">
+                        <small class="text-uppercase text-muted">North | Responder Action</small>
+                        <h5 class="card-title">Fit Recognition and Invitational Bidding</h5>
+                    </div></div></div>
+                    
+                    <div class="col-md-6 mb-3"><div class="card coach-card h-100"><div class="card-body">
+                        <small class="text-uppercase text-muted">South | Opener Rebid</small>
+                        <h5 class="card-title">Hand Valuation and Accepting Invitations</h5>
+                    </div></div></div>
+                    
+                
+            </div>
+        </div></body></html>
         

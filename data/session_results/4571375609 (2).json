@@ -1,0 +1,314 @@
+{
+  "facts": {
+    "board": "Board 10",
+    "dealer": "East",
+    "vulnerability": "Both",
+    "contract": "3C",
+    "auction": [
+      "p",
+      "1D",
+      "1S",
+      "2H",
+      "p",
+      "3C",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "HA",
+      "H2",
+      "H4",
+      "H5",
+      "S3",
+      "SA",
+      "S4",
+      "S2",
+      "D2",
+      "D6",
+      "DT",
+      "DA",
+      "SK",
+      "S7",
+      "S8",
+      "S6",
+      "HQ",
+      "HK",
+      "H6",
+      "HJ",
+      "C5",
+      "C4",
+      "CQ",
+      "C2",
+      "C3",
+      "C7",
+      "CK",
+      "CJ",
+      "C8",
+      "ST",
+      "CA",
+      "CT",
+      "D8",
+      "D3",
+      "DJ",
+      "D7",
+      "H3",
+      "H9",
+      "C6",
+      "D4",
+      "DK",
+      "D5",
+      "H7",
+      "D9",
+      "DQ",
+      "S5",
+      "H8",
+      "SJ",
+      "S9",
+      "SQ",
+      "C9",
+      "HT"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "962",
+            "H": "J5",
+            "D": "KQT8",
+            "C": "AQ63"
+          },
+          "hcp": 12,
+          "total_points": 12,
+          "distribution_str": "3=2=4=4"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "KQ53",
+            "H": "AQ",
+            "D": "A543",
+            "C": "T72"
+          },
+          "hcp": 15,
+          "total_points": 15,
+          "distribution_str": "4=2=4=3"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "A7",
+            "H": "K8732",
+            "D": "J2",
+            "C": "K985"
+          },
+          "hcp": 11,
+          "total_points": 12,
+          "distribution_str": "2=5=2=4"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "JT84",
+            "H": "T964",
+            "D": "976",
+            "C": "J4"
+          },
+          "hcp": 2,
+          "total_points": 2,
+          "distribution_str": "4=4=3=2"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|4S269H5JD8TQKC36QA,S35QKHQAD345AC27T,S7AH2378KD2JC589K,|rh||ah|Board 10|sv|b|mb|p|mb|1D|mb|1S|mb|2H|mb|p|mb|3C|mb|p|mb|p|mb|p|pg||pc|HA|pc|H2|pc|H4|pc|H5|pg||pc|S3|pc|SA|pc|S4|pc|S2|pg||pc|D2|pc|D6|pc|DT|pc|DA|pg||pc|SK|pc|S7|pc|S8|pc|S6|pg||pc|HQ|pc|HK|pc|H6|pc|HJ|pg||pc|C5|pc|C4|pc|CQ|pc|C2|pg||pc|C3|pc|C7|pc|CK|pc|CJ|pg||pc|C8|pc|ST|pc|CA|pc|CT|pg||pc|D8|pc|D3|pc|DJ|pc|D7|pg||pc|H3|pc|H9|pc|C6|pc|D4|pg||pc|DK|pc|D5|pc|H7|pc|D9|pg||pc|DQ|pc|S5|pc|H8|pc|SJ|pg||pc|S9|pc|SQ|pc|C9|pc|HT|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 12,
+      "total_points": 12,
+      "distribution": "3=2=4=4",
+      "is_balanced": true
+    },
+    "West": {
+      "hcp": 15,
+      "total_points": 15,
+      "distribution": "4=2=4=3",
+      "is_balanced": true
+    },
+    "North": {
+      "hcp": 11,
+      "total_points": 12,
+      "distribution": "2=5=2=4",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 2,
+      "total_points": 2,
+      "distribution": "4=4=3=2",
+      "is_balanced": true
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 6,
+      "D": 8,
+      "H": 8,
+      "S": 10,
+      "NT": 8
+    },
+    "S": {
+      "C": 6,
+      "D": 8,
+      "H": 8,
+      "S": 10,
+      "NT": 8
+    },
+    "E": {
+      "C": 7,
+      "D": 4,
+      "H": 4,
+      "S": 3,
+      "NT": 5
+    },
+    "W": {
+      "C": 7,
+      "D": 4,
+      "H": 5,
+      "S": 3,
+      "NT": 5
+    }
+  },
+  "ai_analysis": {
+    "verdict": "DISASTROUS CONTRACT SELECTION",
+    "actual_critique": [
+      "North's 2H jump shift (11 HCP) was an overbid and forced the partnership too high too quickly. 1H was the standard, constructive response.",
+      "The final contract of 3C is severely undertricked, making only 6 tricks when 9 are required (failing by 3 tricks).",
+      "The partnership failed to find the safe 2NT partial, which makes easily (8 tricks) and would have been the optimal resting spot."
+    ],
+    "basic_section": {
+      "analysis": "South's 1D opening and West's 1S overcall were standard. North's 2H response was the primary error. With 11 HCP and a 5-card Heart suit, North must respond 1H to keep the bidding low and descriptive. A jump shift (2H) typically implies a stronger hand (12+ HCP or highly distributional) and is forcing. South's 3C rebid was descriptive of a minimum 4=4 minor hand, denying Heart support. While North correctly passed 3C based on the combined 23 HCP (insufficient for game), the choice of 3C as the final contract was unfortunate, leading to a massive loss.",
+      "recommended_auction": [
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Standard pass with 2 HCP."
+        },
+        {
+          "player": "South",
+          "bid": "1D",
+          "explanation": "Standard opening bid, showing 12+ HCP and 4+ Diamonds (or 4=4 minors)."
+        },
+        {
+          "player": "West",
+          "bid": "1S",
+          "explanation": "Standard overcall, showing 8-16 HCP and 4+ Spades."
+        },
+        {
+          "player": "North",
+          "bid": "1H",
+          "explanation": "Standard response, showing 6+ HCP and 4+ Hearts. This keeps the bidding low and accurately describes the hand."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "2NT",
+          "explanation": "A jump rebid showing a balanced hand (12-14 HCP) with 4=4 minors, denying 3-card Heart support. This is the most descriptive and safest rebid."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "With 11 HCP opposite a 12-14 HCP 2NT rebid, the partnership has 23-25 HCP, which is borderline for game. Given the lack of a major suit fit, 2NT is the correct final contract."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Auction ends."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "When North chose the forcing 2H response, South was obligated to describe their hand. South's 3C rebid showed minimum values (12 HCP) and 4 Clubs, denying 3-card Heart support. However, given the balanced nature of the hand and the presence of stoppers (AQ in Clubs, KQT8 in Diamonds), 2NT would have been a superior rebid over 3C, even if it meant skipping the minor suit fit. 2NT is often preferred over a minor suit partial when the hand is balanced and game is unlikely, as it utilizes the combined strength better. The DDS confirms 2NT makes 8 tricks, while 3C fails.",
+      "sequence": [
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Dealer passes."
+        },
+        {
+          "player": "South",
+          "bid": "1D",
+          "explanation": "Standard opening."
+        },
+        {
+          "player": "West",
+          "bid": "1S",
+          "explanation": "Overcall."
+        },
+        {
+          "player": "North",
+          "bid": "2H",
+          "explanation": "Aggressive, forcing response (as played)."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "South",
+          "bid": "2NT",
+          "explanation": "Better rebid than 3C. Shows 12-14 balanced, stoppers in the unbid suits, and denies Heart support, keeping the contract at a safer level."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Accepting the 2NT contract."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Auction ends."
+        }
+      ]
+    },
+    "coaches_corner": [
+      {
+        "player": "North",
+        "topic": "Response Level",
+        "category": "Bidding Fundamentals"
+      },
+      {
+        "player": "South",
+        "topic": "Rebid Choice",
+        "category": "Safety"
+      },
+      {
+        "player": "Partnership",
+        "topic": "Contract Selection",
+        "category": "Safety"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

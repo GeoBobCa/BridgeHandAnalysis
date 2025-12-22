@@ -1,0 +1,286 @@
+{
+  "facts": {
+    "board": "Board 4",
+    "dealer": "West",
+    "vulnerability": "Both",
+    "contract": "3N",
+    "auction": [
+      "2C",
+      "p",
+      "2S",
+      "p",
+      "3H",
+      "p",
+      "3S",
+      "p",
+      "3N",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "H3",
+      "HT",
+      "H2",
+      "HJ",
+      "HA",
+      "H6",
+      "S5",
+      "H5",
+      "HQ",
+      "H8",
+      "S7",
+      "H7",
+      "CA",
+      "C3",
+      "C4",
+      "C2",
+      "CK",
+      "C5",
+      "C6",
+      "CJ",
+      "SK",
+      "S2",
+      "S8",
+      "SA",
+      "DA",
+      "D7",
+      "D4",
+      "D8",
+      "D2",
+      "DK",
+      "C7",
+      "DJ",
+      "DQ",
+      "C9",
+      "S9",
+      "D3",
+      "S6",
+      "S4",
+      "SQ",
+      "S3",
+      "CQ",
+      "D5",
+      "H4",
+      "CT",
+      "C8",
+      "D6",
+      "H9",
+      "SJ",
+      "ST",
+      "DT",
+      "D9",
+      "HK"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "A3",
+            "H": "752",
+            "D": "AT6532",
+            "C": "J2"
+          },
+          "hcp": 9,
+          "total_points": 11,
+          "distribution_str": "2=3=6=2"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "K6",
+            "H": "AQJ94",
+            "D": "KQ97",
+            "C": "AK"
+          },
+          "hcp": 22,
+          "total_points": 23,
+          "distribution_str": "2=5=4=2"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "J42",
+            "H": "K863",
+            "D": "4",
+            "C": "T9753"
+          },
+          "hcp": 4,
+          "total_points": 5,
+          "distribution_str": "3=4=1=5"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "QT9875",
+            "H": "T",
+            "D": "J8",
+            "C": "Q864"
+          },
+          "hcp": 5,
+          "total_points": 7,
+          "distribution_str": "6=1=2=4"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|2S3AH257D2356TAC2J,S6KH49JQAD79QKCKA,S24JH368KD4C3579T,|rh||ah|Board 4|sv|b|mb|2C|mb|p|mb|2S|mb|p|mb|3H|mb|p|mb|3S|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|H3|pc|HT|pc|H2|pc|HJ|pg||pc|HA|pc|H6|pc|S5|pc|H5|pg||pc|HQ|pc|H8|pc|S7|pc|H7|pg||pc|CA|pc|C3|pc|C4|pc|C2|pg||pc|CK|pc|C5|pc|C6|pc|CJ|pg||pc|SK|pc|S2|pc|S8|pc|SA|pg||pc|DA|pc|D7|pc|D4|pc|D8|pg||pc|D2|pc|DK|pc|C7|pc|DJ|pg||pc|DQ|pc|C9|pc|S9|pc|D3|pg||pc|S6|pc|S4|pc|SQ|pc|S3|pg||pc|CQ|pc|D5|pc|H4|pc|CT|pg||pc|C8|pc|D6|pc|H9|pc|SJ|pg||pc|ST|pc|DT|pc|D9|pc|HK|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 9,
+      "total_points": 11,
+      "distribution": "2=3=6=2",
+      "is_balanced": false
+    },
+    "West": {
+      "hcp": 22,
+      "total_points": 23,
+      "distribution": "2=5=4=2",
+      "is_balanced": false
+    },
+    "North": {
+      "hcp": 4,
+      "total_points": 5,
+      "distribution": "3=4=1=5",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 5,
+      "total_points": 7,
+      "distribution": "6=1=2=4",
+      "is_balanced": false
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 2,
+      "D": 4,
+      "H": 4,
+      "S": 4,
+      "NT": 3
+    },
+    "S": {
+      "C": 2,
+      "D": 4,
+      "H": 4,
+      "S": 4,
+      "NT": 3
+    },
+    "E": {
+      "C": 10,
+      "D": 9,
+      "H": 8,
+      "S": 9,
+      "NT": 10
+    },
+    "W": {
+      "C": 10,
+      "D": 9,
+      "H": 8,
+      "S": 9,
+      "NT": 10
+    }
+  },
+  "ai_analysis": {
+    "verdict": "OPTIMAL GAME CONTRACT ACHIEVED",
+    "actual_critique": [
+      "The partnership correctly identified their combined strength (27 HCP) and opened with the strong, artificial 2 Club bid.",
+      "Although the actual auction used an unconventional 2S response, the final contract of 3NT was reached, which makes 10 tricks (3NT+1) and is the highest scoring game available.",
+      "Suit games in Spades (4S, 9 tricks) and Hearts (4H, 8 tricks) fail, making 3NT the superior choice over 5 Clubs (10 tricks)."
+    ],
+    "basic_section": {
+      "analysis": "West's 2C opening is mandatory, showing 22+ points or equivalent playing strength. East, holding only 5 HCP, must respond negatively with 2D in standard SAYC. West then describes their hand, showing their 5-card Heart suit. East, still weak, shows their 6-card Spade suit as a preference. West, knowing they have stoppers in all suits and 27 combined HCP, correctly bids 3NT, prioritizing the higher-scoring Notrump game over a minor suit game.",
+      "recommended_auction": [
+        {
+          "player": "West",
+          "bid": "2C",
+          "explanation": "Strong, artificial, game-forcing opening bid (22+ HCP or equivalent)."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "East",
+          "bid": "2D",
+          "explanation": "Standard negative response to 2C, showing 0-7 HCP."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "West",
+          "bid": "2H",
+          "explanation": "Opener's rebid showing a 5-card Heart suit, forcing."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "East",
+          "bid": "2S",
+          "explanation": "Showing a 5+ card Spade suit (6 cards held), descriptive bid within the 0-7 HCP range."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "West",
+          "bid": "3N",
+          "explanation": "West has stoppers and sufficient points (27 combined) for game. 3NT is preferred over 4S or 4H, which are poor fits."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "player": "East",
+          "bid": "p",
+          "explanation": "Pass. East is weak and happy to stop at game."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "After the 2C opening and the negative 2D response, West's primary goal is to find the best game. West's 2H rebid shows the major. East's 2S rebid is highly descriptive, showing a six-card suit. West must now evaluate the potential of 3NT versus 4S or 5C. Given the 2=5=4=2 distribution and excellent stoppers (AK in Clubs, KQ in Diamonds, K in Spades), 3NT is the safest and highest-scoring option, even though 5C also makes 10 tricks. West correctly avoids forcing to 4S, recognizing East's weakness and the lack of a strong fit.",
+      "sequence": null
+    },
+    "coaches_corner": [
+      {
+        "player": "West",
+        "topic": "Opening 2 Clubs: Requirements and Rebids",
+        "category": "Opening Bids"
+      },
+      {
+        "player": "East",
+        "topic": "Negative Responses to 2 Clubs (0-7 HCP)",
+        "category": "Responding"
+      },
+      {
+        "player": "West",
+        "topic": "Choosing 3NT over a Minor Suit Game",
+        "category": "Game Bidding"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}

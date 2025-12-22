@@ -1,0 +1,268 @@
+{
+  "facts": {
+    "board": "Board 5",
+    "dealer": "North",
+    "vulnerability": "N/S",
+    "contract": "3N",
+    "auction": [
+      "p",
+      "1D",
+      "1S",
+      "2D",
+      "p",
+      "3N",
+      "p",
+      "p",
+      "p"
+    ],
+    "play": [
+      "S7",
+      "S4",
+      "S6",
+      "SJ",
+      "D3",
+      "H8",
+      "DQ",
+      "D4",
+      "D2",
+      "D6",
+      "DA",
+      "C3",
+      "DK",
+      "C4",
+      "D8",
+      "D7",
+      "D5",
+      "H9",
+      "H2",
+      "DJ",
+      "D9",
+      "DT",
+      "C5",
+      "H3",
+      "S2",
+      "S8",
+      "SA",
+      "S9",
+      "C8",
+      "C2",
+      "CA",
+      "C6",
+      "SQ",
+      "SK",
+      "S5",
+      "H6",
+      "HA",
+      "H5",
+      "HQ",
+      "H4",
+      "ST",
+      "H7",
+      "C7",
+      "HT",
+      "S3",
+      "C9",
+      "CT",
+      "HJ",
+      "CJ",
+      "CK",
+      "CQ",
+      "HK"
+    ],
+    "hands": {
+      "South": {
+        "stats": {
+          "cards": {
+            "S": "KT873",
+            "H": "A98",
+            "D": "",
+            "C": "J6543"
+          },
+          "hcp": 8,
+          "total_points": 10,
+          "distribution_str": "5=3=0=5"
+        },
+        "name": "Fish075"
+      },
+      "West": {
+        "stats": {
+          "cards": {
+            "S": "A54",
+            "H": "7532",
+            "D": "Q82",
+            "C": "K98"
+          },
+          "hcp": 9,
+          "total_points": 9,
+          "distribution_str": "3=4=3=3"
+        },
+        "name": "georgenamg"
+      },
+      "North": {
+        "stats": {
+          "cards": {
+            "S": "96",
+            "H": "Q6",
+            "D": "J9764",
+            "C": "QT72"
+          },
+          "hcp": 5,
+          "total_points": 6,
+          "distribution_str": "2=2=5=4"
+        },
+        "name": "BeaPercy"
+      },
+      "East": {
+        "name": "bobj245",
+        "stats": {
+          "cards": {
+            "S": "QJ2",
+            "H": "KJT4",
+            "D": "AKT53",
+            "C": "A"
+          },
+          "hcp": 18,
+          "total_points": 19,
+          "distribution_str": "3=4=5=1"
+        }
+      }
+    },
+    "raw_lin": "pn|Fish075,georgenamg,BeaPercy,bobj245|st||md|3S378TKH89ADC3456J,S45AH2357D28QC89K,S69H6QD4679JC27TQ,|rh||ah|Board 5|sv|n|mb|p|mb|1D|mb|1S|mb|2D|mb|p|mb|3N|mb|p|mb|p|mb|p|pg||pc|S7|pc|S4|pc|S6|pc|SJ|pg||pc|D3|pc|H8|pc|DQ|pc|D4|pg||pc|D2|pc|D6|pc|DA|pc|C3|pg||pc|DK|pc|C4|pc|D8|pc|D7|pg||pc|D5|pc|H9|pc|H2|pc|DJ|pg||pc|D9|pc|DT|pc|C5|pc|H3|pg||pc|S2|pc|S8|pc|SA|pc|S9|pg||pc|C8|pc|C2|pc|CA|pc|C6|pg||pc|SQ|pc|SK|pc|S5|pc|H6|pg||pc|HA|pc|H5|pc|HQ|pc|H4|pg||pc|ST|pc|H7|pc|C7|pc|HT|pg||pc|S3|pc|C9|pc|CT|pc|HJ|pg||pc|CJ|pc|CK|pc|CQ|pc|HK|pg||\n"
+  },
+  "math": {
+    "South": {
+      "hcp": 8,
+      "total_points": 10,
+      "distribution": "5=3=0=5",
+      "is_balanced": false
+    },
+    "West": {
+      "hcp": 9,
+      "total_points": 9,
+      "distribution": "3=4=3=3",
+      "is_balanced": true
+    },
+    "North": {
+      "hcp": 5,
+      "total_points": 6,
+      "distribution": "2=2=5=4",
+      "is_balanced": false
+    },
+    "East": {
+      "hcp": 18,
+      "total_points": 19,
+      "distribution": "3=4=5=1",
+      "is_balanced": false
+    }
+  },
+  "dds": {
+    "N": {
+      "C": 4,
+      "D": 2,
+      "H": 2,
+      "S": 7,
+      "NT": 2
+    },
+    "S": {
+      "C": 4,
+      "D": 1,
+      "H": 2,
+      "S": 7,
+      "NT": 2
+    },
+    "E": {
+      "C": 8,
+      "D": 11,
+      "H": 11,
+      "S": 5,
+      "NT": 11
+    },
+    "W": {
+      "C": 8,
+      "D": 11,
+      "H": 11,
+      "S": 5,
+      "NT": 11
+    }
+  },
+  "ai_analysis": {
+    "verdict": "OPTIMAL CONTRACT REACHED",
+    "actual_critique": [
+      "East/West successfully navigated the competitive auction to reach 3NT, which is the highest scoring optimal game contract available (making 11 tricks).",
+      "East's direct jump to 3NT over 2D was well-judged, relying on the combined 25+ HCP and excellent stoppers in all suits, including the opponent's overcalled suit (Spades).",
+      "South's 1S overcall was standard, but the 5-5 shape (Spades/Clubs) and Diamond void were not sufficient to disrupt the strong East/West partnership."
+    ],
+    "basic_section": {
+      "analysis": "North passed with only 5 HCP. East opened 1D, showing 12-21 HCP and 3+ Diamonds (here 18 HCP, 5 Diamonds). South made a standard 1S overcall, showing a 5-card suit and 8+ points. West responded with 2D, a constructive raise showing 3+ card Diamond support and 7-10 HCP. With 18 HCP and partner promising 7-10 HCP (25-28 combined), East correctly recognized game potential. Since East held stoppers in all suits (especially QJ in Spades), 3NT was the preferred game contract over 5D, leading to the successful outcome.",
+      "recommended_auction": [
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "Pass. Too weak to open (5 HCP)."
+        },
+        {
+          "player": "East",
+          "bid": "1D",
+          "explanation": "Standard opening bid (18 HCP, 5-card Diamond suit)."
+        },
+        {
+          "player": "South",
+          "bid": "1S",
+          "explanation": "Standard overcall showing a 5-card suit and 8+ points."
+        },
+        {
+          "player": "West",
+          "bid": "2D",
+          "explanation": "Constructive raise, showing 7-10 HCP and 3+ card Diamond support."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "No action with minimum points."
+        },
+        {
+          "player": "East",
+          "bid": "3N",
+          "explanation": "Game bid. Combined strength (25+ HCP) and stoppers in all suits justify 3NT."
+        },
+        {
+          "player": "South",
+          "bid": "p",
+          "explanation": "No competitive action warranted."
+        },
+        {
+          "player": "West",
+          "bid": "p",
+          "explanation": "Satisfied with the game contract."
+        },
+        {
+          "player": "North",
+          "bid": "p",
+          "explanation": "End of auction."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "East's decision to bypass 3D and jump directly to 3NT is a highly efficient use of bidding space. When partner makes a constructive raise (7-10 HCP), the opener with 18 HCP knows game is highly likely (25-28 combined points). Since East holds excellent controls (A in Clubs, AK in Diamonds, KJT in Hearts, QJ in Spades), the priority shifts from exploring the minor suit fit to securing the higher-scoring NT game. This sequence demonstrates confidence in the partnership's combined strength and defensive structure against the opponent's suit.",
+      "sequence": null
+    },
+    "coaches_corner": [
+      {
+        "player": "East",
+        "topic": "Direct Game Bids in NT",
+        "category": "Game Bidding"
+      },
+      {
+        "player": "West",
+        "topic": "Constructive Raises (7-10 HCP)",
+        "category": "Responding"
+      },
+      {
+        "player": "South",
+        "topic": "Overcalling with Two-Suited Hands",
+        "category": "Competitive Bidding"
+      }
+    ]
+  },
+  "timestamp": "2025-12-20"
+}
