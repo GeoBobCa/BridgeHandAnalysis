@@ -11,7 +11,7 @@ from google.genai import types
 # --- CONFIGURATION SECTION ---
 AI_CONFIG = {
     "model_name": "gemini-flash-latest",
-    "temperature": 0.15,  # Slightly bumped to allow for "praise" logic, but still strict
+    "temperature": 0.15,  # Low = Strict Logic, but 0.15 allows for some evaluation nuance
     "response_mime_type": "application/json",
     "env_file_location": ".env"
 }
@@ -40,7 +40,7 @@ class AIOrchestrator:
             "double_dummy_truth": dds_data
         }
 
-        # --- UPDATED PROMPT: STRICT SAYC & BALANCED GRADING ---
+        # --- LATEST PROMPT: STRICT SAYC & BALANCED GRADING ---
         prompt = f"""
         You are an expert Bridge Teacher playing Standard American Yellow Card (SAYC).
         
@@ -119,8 +119,7 @@ class AIOrchestrator:
                 is_game = (suit in ['H','S'] and level>=4) or (suit in ['C','D'] and level>=5) or (suit=='NT' and level>=3)
                 
                 verdict = analysis.get('verdict', '').upper()
-                # If DDS says game makes but verdict says missed...
-                # (Logic can be expanded here, but kept simple for now)
-                
+                if not is_game and "GAME" in verdict and "MISSED" not in verdict:
+                    analysis['verdict'] = "PART-SCORE MADE"
+                    analysis['actual_critique'].insert(0, f"Red Team Correction: {contract} is a part-score, not game.")
         return analysis
-    

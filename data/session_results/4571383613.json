@@ -185,95 +185,107 @@
   "ai_analysis": {
     "verdict": "OVERBID",
     "actual_critique": [
-      "West's opening bid of 1S with only 10 HCP violates standard SAYC rules, which require 12+ HCP. West should have passed.",
-      "East compounded the error by jumping directly to 4S (a massive overbid) based on a weak 3-card fit, failing to explore the partnership's true strength and better 4-4 Heart fit.",
-      "The partnership missed the optimal game contract of 4H, which makes easily (10 tricks), instead choosing 4S which fails disastrously by four tricks (making only 6 tricks)."
+      "East's jump to 4S over partner's 1S opening was a catastrophic error. East holds 14 HCP but only 3-card support, and the contract fails by four tricks.",
+      "East should have responded 1NT (12-14 HCP, no 4-card fit) to allow the partnership to explore safer part-scores or potential Notrump games.",
+      "While West's 1S opening (10 HCP, 5-5 shape) was slightly light, it was acceptable. The partnership missed the opportunity to stop safely in 2NT, which minimizes the loss compared to the massive penalty incurred in 4S."
     ],
     "basic_section": {
-      "analysis": "West's hand is too weak to open (10 HCP) and should pass. East has a strong 14 HCP hand and must open the bidding. East has a 4-card Heart suit, making 1H the best opening bid. The partnership has a 4-4 Heart fit, and with 24 combined HCP, game in Hearts is highly likely and, according to the double dummy truth, makes easily.",
+      "analysis": "West opened 1S on a minimum 10 HCP hand with a 5-5 shape (Spades and Diamonds). East, with 14 HCP, should have focused on finding a safe part-score or game in Notrump, as they lacked 4-card support for Spades. Jumping directly to 4S with only 3-card support and no slam interest is highly aggressive and failed badly here, as the double dummy truth shows 4S goes down 4 tricks.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "West has only 10 HCP and does not meet the 12+ HCP requirement for a 1-level opening."
+          "bid": "1S",
+          "explanation": "Standard opening, slightly light 10 HCP but acceptable given the 5-5 distribution and good suit quality."
         },
         {
-          "bid": "p",
-          "explanation": "North is too weak to intervene."
+          "bid": "P",
+          "explanation": "North has only 7 HCP and no strong defensive action."
         },
         {
-          "bid": "1H",
-          "explanation": "East opens 1H, showing 12+ HCP and a 4-card major (standard for a balanced 14 HCP hand)."
+          "bid": "1NT",
+          "explanation": "Standard response showing 12-14 HCP, denying 4+ Spades or a forcing bid."
         },
         {
           "bid": "2C",
-          "explanation": "South overcalls, showing a 6+ card Club suit and 6-10 points."
+          "explanation": "South shows a good 6-card Club suit and constructive values (9 HCP)."
         },
         {
           "bid": "2D",
-          "explanation": "West competes, showing 5+ Diamonds and 10 HCP."
+          "explanation": "West shows the second 5-card suit (5-5 shape), confirming minimum opening values."
         },
         {
-          "bid": "p",
-          "explanation": "North has no constructive bid."
+          "bid": "P",
+          "explanation": "North still passes."
         },
         {
-          "bid": "3H",
-          "explanation": "East shows 4-card Heart support and strong game interest (14 HCP)."
+          "bid": "2NT",
+          "explanation": "East invites game, showing 14 HCP and implying a Club stopper, asking partner to bid 3NT with maximum values."
         },
         {
-          "bid": "p",
+          "bid": "P",
           "explanation": "South passes."
         },
         {
-          "bid": "4H",
-          "explanation": "West accepts the game invitation. 4H is the optimal contract, making 10 tricks."
+          "bid": "P",
+          "explanation": "West has a minimum hand and declines the 3NT invitation."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The primary error was West's initial light opening, which misled East. East should have recognized that a jump to 4S on a 3-card fit, especially opposite a minimum opening, is highly speculative. The partnership missed the excellent 4-4 Heart fit. Had East opened 1H, the subsequent competitive bidding (2C by South, 2D by West) would have allowed East to show the Heart fit naturally with 3H, leading to the successful 4H game. The DDT confirms 4H makes 10 tricks, while 4S fails badly, highlighting the importance of finding the best fit.",
+      "analysis": "East's evaluation was flawed. While 14 HCP is strong, the hand is flat (3=4=3=3) and lacks the distribution or controls necessary to justify a game jump based on 3-card support. The correct sequence involves 1NT, followed by competitive bidding. West's subsequent 2D bid after South's 2C overcall accurately describes the 5-5 shape. East, knowing West is minimum (10-12) and has two suits, correctly invites 3NT via 2NT, recognizing that 3NT is the most likely game target if West has maximum values. Since West is minimum, stopping in 2NT is correct, minimizing the loss compared to 4S.",
       "sequence": [
         {
           "bid": "1S",
-          "explanation": "West opens 1S (Error: 10 HCP, too light for SAYC opening)."
+          "explanation": "West opens 1S (10 HCP, 5-card major)."
         },
         {
-          "bid": "p",
+          "bid": "P",
           "explanation": "North passes."
         },
         {
-          "bid": "4S",
-          "explanation": "East jumps to game (Error: Massive overbid on a 3-card fit opposite a minimum opening, ignoring standard bidding steps)."
+          "bid": "1NT",
+          "explanation": "East responds 1NT (12-14 HCP, denying 4+ Spades)."
         },
         {
-          "bid": "p",
+          "bid": "2C",
+          "explanation": "South overcalls 2C, showing a 6+ card suit and constructive values."
+        },
+        {
+          "bid": "2D",
+          "explanation": "West shows the second 5-card suit, confirming minimum opening values (5-5 shape)."
+        },
+        {
+          "bid": "P",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "East invites 3NT, showing 14 HCP and a Club stopper."
+        },
+        {
+          "bid": "P",
           "explanation": "South passes."
         },
         {
-          "bid": "p",
-          "explanation": "West passes, accepting the contract."
-        },
-        {
-          "bid": "p",
-          "explanation": "End of auction."
+          "bid": "P",
+          "explanation": "West passes, declining the invitation with minimum values."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "georgenamg (West)",
-        "topic": "Opening Bids (HCP Requirements)",
+        "player": "East",
+        "topic": "Responding to 1-level openings",
         "category": "Bidding Fundamentals"
       },
       {
-        "player": "bobj245 (East)",
-        "topic": "Responding to Minimum Openings",
-        "category": "Fit Judgment"
+        "player": "East",
+        "topic": "Hand evaluation and distribution (3-card support)",
+        "category": "Advanced Evaluation"
       },
       {
-        "player": "bobj245 (East)",
-        "topic": "Game Bidding and Jump Responses",
-        "category": "Bidding Strategy"
+        "player": "West",
+        "topic": "Rebidding with 5-5 shape",
+        "category": "Bidding Technique"
       }
     ]
   },

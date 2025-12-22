@@ -191,24 +191,24 @@
   "ai_analysis": {
     "verdict": "OPTIMAL CONTRACT",
     "actual_critique": [
-      "The partnership successfully reached the optimal game contract (3NT making 10 tricks), securing the maximum score available on this deal.",
-      "West handled the strong 2C opening sequence perfectly, correctly identifying the need for game and settling in 3NT when partner showed weakness but failed to confirm a major suit fit.",
-      "East's 2S response over 2C, holding only 5 HCP, was highly irregular and misleading. In standard SAYC, 2D is the negative response (0-7 HCP). This error could have led West astray, but West recovered well."
+      "West correctly opened 2C, accurately describing their massive 22 HCP hand, which is essential for strong, game-forcing auctions.",
+      "East's 2S response was highly non-standard for a negative response (0-7 HCP) over 2C in SAYC; the standard negative response is 2D.",
+      "Despite the confusing response sequence, West showed excellent judgment in settling for 3N, correctly assessing that East's weakness (5 HCP) precluded any slam attempt, and 3N makes exactly 10 tricks."
     ],
     "basic_section": {
-      "analysis": "West holds a massive 22 HCP, requiring a forcing 2C opening bid. East is weak (5 HCP) but has a long 6-card spade suit. With 27 combined HCP, game is mandatory. Since West is balanced (2=5=4=2) and East is minimum, 3NT is the safest and highest-scoring game contract available, making 10 tricks.",
+      "analysis": "West holds a powerful 22 HCP hand, necessitating the strong, artificial 2C opening. East is very weak (5 HCP) but has a long Spade suit. The partnership must quickly determine if they have enough combined strength for game (25+ HCP). Since West has 22 HCP and East has 5 HCP, the total is 27 HCP\u2014enough for game, but not enough for slam. The lack of a guaranteed major suit fit makes 3NT the most logical and optimal contract.",
       "recommended_auction": [
         {
           "bid": "2C",
-          "explanation": "West opens 2C, showing 22+ HCP, forcing to game."
+          "explanation": "Strong, artificial, game-forcing opening (22+ HCP or strong unbalanced hand)."
         },
         {
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "North has insufficient values to intervene."
         },
         {
           "bid": "2D",
-          "explanation": "East gives the standard negative response (0-7 HCP) over 2C, despite having a long suit."
+          "explanation": "Standard negative response in SAYC, showing 0-7 HCP."
         },
         {
           "bid": "p",
@@ -216,36 +216,36 @@
         },
         {
           "bid": "2N",
-          "explanation": "West shows a balanced hand, 22-24 HCP range."
+          "explanation": "West shows a balanced hand, 22-24 HCP, denying a 5-card major rebid."
         },
         {
           "bid": "p",
           "explanation": "North passes."
         },
         {
-          "bid": "3S",
-          "explanation": "East shows their 6-card spade suit, confirming minimum values after the negative response."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes."
-        },
-        {
           "bid": "3N",
-          "explanation": "West knows game is required and chooses the safest spot, 3NT, given the balanced nature and lack of confirmed major suit fit."
+          "explanation": "East knows West has 22-24 HCP. With only 5 HCP, East knows slam is impossible. 3N is the safest game contract."
         },
         {
           "bid": "p",
-          "explanation": "All pass, ending the auction."
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass. Contract reached: 3N."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "West's 22 HCP hand is slightly unbalanced (5 Hearts) but strong enough to be treated as balanced for the 2C opening structure. In the actual auction, East's 2S response was highly irregular for 5 HCP, typically promising 8+ HCP. West's 3H rebid was a natural description of their 5-card suit. When East rebid 3S, West correctly inferred that East was weak but had length. With 27 combined points and stoppers in all suits, West correctly terminated the auction in 3NT, avoiding potential issues in a suit contract where the combined trump length might be insufficient or the distribution unfavorable for high tricks.",
+      "analysis": "West's hand is highly distributional (5-4-2-2) but strong enough to be treated as balanced for the 2C opening. After the negative response (2D recommended), West must decide between 2N (showing 22-24 balanced) or 3H (showing the 5-card suit). Since West is 22 HCP, 2N is the most descriptive rebid, limiting the hand immediately. The actual auction saw West bid 3H, which is acceptable but less precise. Once East confirms minimum values (5 HCP), West correctly stops at 3N. Slam is impossible (27 total HCP). The double dummy truth confirms 3N is the maximum achievable contract for the East/West partnership.",
       "sequence": [
         {
           "bid": "2C",
-          "explanation": "West: Strong, artificial, forcing to game (22+ HCP)."
+          "explanation": "West opens 2C (22 HCP)."
         },
         {
           "bid": "p",
@@ -253,7 +253,7 @@
         },
         {
           "bid": "2S",
-          "explanation": "East: Irregular response for 5 HCP. Should have been 2D (negative)."
+          "explanation": "East's non-standard response, attempting to show Spades weakly. Should have been 2D (negative)."
         },
         {
           "bid": "p",
@@ -261,7 +261,7 @@
         },
         {
           "bid": "3H",
-          "explanation": "West: Showing a 5-card Heart suit, continuing to describe the hand."
+          "explanation": "West shows their 5-card Heart suit, continuing to describe the hand."
         },
         {
           "bid": "p",
@@ -269,7 +269,7 @@
         },
         {
           "bid": "3S",
-          "explanation": "East: Confirming 6+ Spades, still showing minimum values."
+          "explanation": "East confirms the 6-card Spade suit, still showing minimum values."
         },
         {
           "bid": "p",
@@ -277,37 +277,37 @@
         },
         {
           "bid": "3N",
-          "explanation": "West: Deciding 3NT is the best game contract, based on combined strength and balanced distribution."
+          "explanation": "West recognizes the combined strength is sufficient for game but insufficient for slam, and chooses the safest contract."
         },
         {
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "Pass."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass."
         },
         {
           "bid": "p",
-          "explanation": "South passes. Contract 3NT."
+          "explanation": "Pass. Contract reached: 3N."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "East",
-        "topic": "Response to 2C Opening",
-        "category": "Bidding System/Conventions"
+        "topic": "Responding to 2C Openings (SAYC)",
+        "category": "Bidding System"
       },
       {
         "player": "West",
-        "topic": "Rebidding after 2C Opening",
-        "category": "Advanced Bidding"
+        "topic": "Rebidding after a 2C Opening and Negative Response",
+        "category": "Bidding Technique"
       },
       {
-        "player": "Partnership",
-        "topic": "Game Selection (3NT vs. Suit Game)",
-        "category": "Contract Selection"
+        "player": "West/East",
+        "topic": "Slam Investigation and Combined HCP Limits",
+        "category": "Judgment"
       }
     ]
   },

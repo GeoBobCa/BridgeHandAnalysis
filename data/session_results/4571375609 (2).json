@@ -186,7 +186,114 @@
     }
   },
   "ai_analysis": {
-    "error": "Server disconnected without sending a response."
+    "verdict": "MISSED PART-SCORE",
+    "actual_critique": [
+      "South's 3C rebid was highly misleading, ignoring the established 7-card Heart fit (N's 2H bid) in favor of a minor suit preference that proved unplayable (3C goes down 1).",
+      "North correctly showed their 5-card Heart suit with 2H, but should have reasserted the Heart suit (e.g., 3H) when South bid the inferior 3C, rather than passing.",
+      "NS missed a comfortable making part-score in 3NT or 3H (both make 8 tricks), failing to capitalize on their combined 23 HCP."
+    ],
+    "basic_section": {
+      "analysis": "NS have 23 combined HCP, enough for a strong part-score and potentially game. South opened 1D, and North showed a good 5-card Heart suit with 2H over West's 1S overcall. South should have focused on finding the 7-card Heart fit or bidding 2NT to show strength and allow North to place the contract. The actual 3C contract was a poor choice, leading to failure.",
+      "recommended_auction": [
+        {
+          "bid": "p",
+          "explanation": "East has only 2 HCP and passes."
+        },
+        {
+          "bid": "1D",
+          "explanation": "South opens 1D (12 HCP, 4-card suit, standard)."
+        },
+        {
+          "bid": "1S",
+          "explanation": "West overcalls 1S (15 HCP, 4+ Spades, standard)."
+        },
+        {
+          "bid": "2H",
+          "explanation": "North bids 2H, showing 5+ Hearts and 10+ points, constructive."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "South bids 2NT, showing 12-14 HCP, semi-balanced, and asking partner to choose the final contract."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "North knows NS have 23 HCP and chooses the highest scoring part-score, relying on the A7 in Spades for protection."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes, ending the auction in 3NT, which makes 8 tricks."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "After the competitive 1S overcall, South must prioritize showing strength and shape accurately. While South lacks a perfect Spade stopper for 2NT, bidding 2NT is the most descriptive way to show 12-14 HCP and a semi-balanced hand, allowing North (who has the 5-card major) to make the final decision. North, knowing the combined strength and holding the Spade Ace, correctly pushes to 3NT, which is the optimal strain for a part-score (making 8 tricks). The actual 3C bid by South was a poor preference bid that ignored the superior Heart fit and the potential for NT.",
+      "sequence": [
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "1D",
+          "explanation": "South opens 1D."
+        },
+        {
+          "bid": "1S",
+          "explanation": "West overcalls 1S."
+        },
+        {
+          "bid": "2H",
+          "explanation": "North shows 5+ Hearts, 10+ points, constructive."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "South shows 12-14 HCP, semi-balanced, forcing partner to place the contract. This is superior to misrepresenting distribution with a 3H bid (only 2 cards) or a 3D rebid (only 4 cards)."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "North, knowing the combined 23 HCP and having the Spade Ace, bids 3NT, aiming for the highest scoring part-score."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        }
+      ]
+    },
+    "coaches_corner": [
+      {
+        "player": "Fish075 (South)",
+        "topic": "Rebid Strategy in Competitive Auctions",
+        "category": "Bidding Error"
+      },
+      {
+        "player": "BeaPercy (North)",
+        "topic": "Strain Selection and Reasserting Fit",
+        "category": "Bidding Improvement"
+      }
+    ]
   },
   "timestamp": "2025-12-20"
 }

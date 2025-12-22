@@ -192,81 +192,81 @@
   "ai_analysis": {
     "verdict": "MISSED SLAM",
     "actual_critique": [
-      "North correctly opened 2C (Game Forcing, 22+ HCP) and established the game force, ensuring the partnership reached at least game level.",
-      "South's jump to 4S with only 6 HCP was premature. A constructive bid like 3S would have shown minimum support and allowed North (23 HCP) to continue describing their massive hand and initiate slam investigation.",
-      "The partnership missed the optimal contract of 6NT, which makes 12 tricks (DDT), due to the lack of slam investigation after South's aggressive 4S bid."
+      "The partnership successfully reached the making game contract of 4S, demonstrating good communication regarding the Spade fit and North's immense strength.",
+      "South's jump to 4S was premature and preemptive. With 6 HCP and 4-card support opposite a 2C opening, South should have bid 3S to allow the 23 HCP opener (North) to explore slam potential.",
+      "North/South missed the excellent 6NT slam, which makes 12 tricks. North's powerful 23 HCP hand, combined with South's controls (Kx in Diamonds and Hearts), provides sufficient assets for the grand slam potential."
     ],
     "basic_section": {
-      "analysis": "North holds a powerhouse hand (23 HCP, 4=3=1=5 distribution) suitable for a 2C opening. South has minimum values (6 HCP) but holds 4-card Spade support. The partnership has 29 HCP and excellent controls, making slam highly probable. The goal is to find the Spade fit, confirm minimum support from South, and then use a quantitative slam try to reach 6NT.",
+      "analysis": "North opened 2C, indicating a massive hand (22+ HCP, Game Forcing). South responded 2H, a standard negative response showing 0-7 HCP. North then showed 4 Spades (2S). South, having 4-card support and knowing game was forced, jumped to 4S. While 4S makes, this jump shut down the auction. North's hand is highly suitable for Notrump play due to its controls and 5-card club suit. The partnership should have investigated slam, as they hold 29 combined HCP and excellent distribution.",
       "recommended_auction": [
         {
           "bid": "p",
-          "explanation": "East is too weak to open or overcall (5 HCP)."
+          "explanation": "East is dealer and passes with only 5 HCP."
         },
         {
           "bid": "p",
-          "explanation": "South is too weak to open (6 HCP)."
+          "explanation": "South passes with 6 HCP."
         },
         {
           "bid": "p",
-          "explanation": "West is too weak to open (6 HCP)."
+          "explanation": "West passes with 6 HCP."
         },
         {
           "bid": "2C",
-          "explanation": "North opens 2C, showing a game-forcing hand (22+ HCP)."
+          "explanation": "North opens 2C, the standard strong, artificial, and game-forcing bid (23 HCP)."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
           "bid": "2H",
-          "explanation": "South gives the standard negative response (0-7 HCP), showing minimum values."
+          "explanation": "South responds 2H, the standard negative response (0-7 HCP), showing 5 Hearts incidentally."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "West passes."
         },
         {
           "bid": "2NT",
-          "explanation": "North describes the hand as 22-24 HCP, semi-balanced, denying a 5-card major. This is a better description than 2S immediately."
+          "explanation": "North rebids 2NT, showing a balanced or semi-balanced hand in the 22-24 HCP range, inviting slam."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "bid": "3S",
-          "explanation": "South shows 4-card Spade support, confirming the fit, but still indicating minimum values (6 HCP)."
+          "bid": "3D",
+          "explanation": "South shows a feature/control in Diamonds (Kx). This is a cooperative bid, showing maximum values for the 2H response (6 HCP) and good controls."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "West passes."
         },
         {
           "bid": "4NT",
-          "explanation": "North uses Quantitative 4NT, inviting slam. North knows they have 23 HCP and excellent controls, needing only minimum help from partner."
+          "explanation": "North bids 4NT, used here as quantitative slam invitation, asking South to bid 6NT with maximum values/controls."
         },
         {
           "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes 4NT, confirming minimum values (6 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
           "bid": "6NT",
-          "explanation": "North knows the combined strength is 29 HCP and all controls are present. 6NT is the optimal contract."
+          "explanation": "South accepts the quantitative invitation. South has 6 HCP (maximum negative) and key controls (Kx in D and H). 6NT makes 12 tricks."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The 2C opening sequence requires precise hand description. North's 4=3=1=5 shape, while not perfectly balanced, is strong enough to warrant a 2NT rebid after the negative 2H response, showing 22-24 HCP. This allows South to use 3S as a constructive bid showing minimum support. North then uses the Quantitative 4NT bid, which is highly effective when the opener has a known massive point count (23 HCP) and is looking for partner to confirm maximum minimum values (6-7 HCP). Since South has 6 HCP, passing 4NT is correct, but North, knowing the total 29 HCP and the excellent distribution (singleton Ace of Diamonds), can confidently bid 6NT, which makes 12 tricks.",
+      "analysis": "The primary goal after a 2C opening is accurate slam investigation. North's 23 HCP hand is highly distributional (4=3=1=5) but plays well in NT due to the strong controls and the 5-card club suit. After South's negative 2H response, North's 2NT rebid is crucial, defining the strength and shape (22-24 semi-balanced). South must then cooperate by describing features. South's 3D shows the Diamond King, which is vital as North is singleton Diamond. North then uses 4NT quantitatively, recognizing that 6NT is the superior contract (12 tricks) over 6S (10 tricks) due to the excellent side suits and the potential for club establishment. South's acceptance of the quantitative bid with 6NT is correct given the maximum 6 HCP and the known fit/controls.",
       "sequence": [
         {
           "bid": "p",
@@ -282,7 +282,7 @@
         },
         {
           "bid": "2C",
-          "explanation": "North opens 2C (Game Forcing)."
+          "explanation": "North opens 2C (23 HCP, GF)."
         },
         {
           "bid": "p",
@@ -290,60 +290,53 @@
         },
         {
           "bid": "2H",
-          "explanation": "South gives the negative response (0-7 HCP)."
+          "explanation": "South responds 2H (Negative, 0-7 HCP)."
         },
         {
           "bid": "p",
           "explanation": "West passes."
         },
         {
-          "bid": "2NT",
-          "explanation": "North shows 22-24 HCP, semi-balanced."
+          "bid": "2S",
+          "explanation": "North shows 4 Spades. This rebid is natural but less descriptive of overall strength than 2NT."
         },
         {
           "bid": "p",
           "explanation": "East passes."
         },
         {
-          "bid": "3S",
-          "explanation": "South shows 4-card Spade support, minimum values (6 HCP)."
+          "bid": "4S",
+          "explanation": "South jumps to game, accepting the force but denying slam interest. This preempts further slam investigation by North."
         },
         {
           "bid": "p",
           "explanation": "West passes."
         },
         {
-          "bid": "4NT",
-          "explanation": "North uses Quantitative 4NT, inviting slam based on total HCP (23+)."
+          "bid": "p",
+          "explanation": "North passes, accepting the game contract."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes, confirming minimum values for the 2H response."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "6NT",
-          "explanation": "North bids slam, knowing 29 HCP and excellent controls guarantee 12 tricks."
+          "explanation": "East passes. Contract 4S."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "Fish075 (South)",
-        "topic": "Responding to 2C Openings",
-        "category": "Bidding Strategy"
+        "player": "South",
+        "topic": "Responding to 2C with minimum values and support",
+        "category": "Bidding Technique"
       },
       {
-        "player": "BeaPercy (North)",
-        "topic": "Rebidding after 2C Opening",
-        "category": "Hand Description"
+        "player": "North",
+        "topic": "Slam investigation after a 2C opening and negative response (2NT rebid vs. suit rebid)",
+        "category": "Strong Opening Follow-ups"
+      },
+      {
+        "player": "South",
+        "topic": "Accepting quantitative 4NT invitations (Slam decision)",
+        "category": "Slam Bidding"
       }
     ]
   },

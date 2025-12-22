@@ -188,71 +188,47 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME",
+    "verdict": "GOOD PART-SCORE",
     "actual_critique": [
-      "The partnership stopped short in 2N when 3N was available and makes 9 tricks (confirmed by Double Dummy Analysis).",
-      "East (11 HCP) made a critical error by passing West's 2N game invitation. With 11 HCP and good controls (A, K), East should have raised to 3N.",
-      "West's opening bid of 1H on a 4-card suit is non-standard in strict SAYC (which requires 5+ cards for 1H/1S), though it successfully located the NT strain."
+      "The contract of 2NT was optimal for East-West, making exactly 9 tricks (+1). Since 3NT fails (maximum 9 tricks available), stopping at 2NT was excellent judgment.",
+      "East's 1NT overcall (11 HCP, K4 in Hearts) was highly irregular and misleading. Standard SAYC requires 15-18 HCP or a strong balanced hand with a stopper in the opponent's suit, neither of which East possessed.",
+      "North (Dealer) was too passive. With 10 HCP and a 5-card Spade suit, North should have opened 1S or overcalled 1S after West's 1H opening to compete for the part-score."
     ],
     "basic_section": {
-      "analysis": "E/W hold 25 combined HCP, which is sufficient for a game contract. West opened 1H (14 HCP) and East responded 1N (11 HCP, slightly over the standard 6-10 range for 1N). West correctly invited game with 2N. East, holding 11 HCP and excellent controls (Ace of Diamonds, King of Spades), should have accepted the invitation and bid 3N. The actual contract 2N makes 9 tricks, meaning 3N is cold.",
+      "analysis": "East-West successfully navigated a tricky auction to reach 2NT. West opened 1H (14 HCP) and East responded 1NT, suggesting a balanced hand and some strength (though the strength was overstated). West, holding 14 HCP, correctly invited game with 2NT, knowing the partnership had at least 25 combined points. East correctly passed the invitation, recognizing that their hand was minimum for the previous bid. The contract makes 9 tricks, achieving a good part-score result.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "North passes with 10 HCP, lacking a strong opening hand or suitable preempt."
+          "bid": "1S",
+          "explanation": "North, as dealer, should open 1S with 10 HCP and a 5-card major, rather than passing."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "East passes, lacking a clear competitive bid."
         },
         {
           "bid": "p",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "1H",
-          "explanation": "West opens 1H (14 HCP). While non-standard on 4 cards in strict SAYC, this is the chosen opening."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
+          "explanation": "South passes with only 5 HCP."
         },
         {
           "bid": "1N",
-          "explanation": "East responds 1N (11 HCP). This is the best descriptive bid, denying 4+ Spades or Heart support, though slightly exceeding the 10 HCP maximum."
+          "explanation": "West shows 12-14 HCP balanced, denying 4-card Spade support."
+        },
+        {
+          "bid": "2S",
+          "explanation": "North rebids the suit, showing a minimum opening hand and 5+ Spades."
         },
         {
           "bid": "p",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "2N",
-          "explanation": "West invites game, showing a strong opening hand (14 HCP) and interest in NT."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "3N",
-          "explanation": "East accepts the game invitation with 11 HCP and good controls, knowing the partnership has 25+ HCP."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes. Contract 3N."
+          "explanation": "East passes, allowing N/S to play the part-score."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The partnership successfully navigated the initial response phase, but East failed to apply proper judgment when faced with the 2N invitation. When a responder stretches the 1N limit to 11 HCP, they must treat that hand as maximum when opener invites game. East's hand is highly suitable for No Trump, featuring the Ace of Diamonds and King of Spades, providing quick tricks and excellent coverage. The combined 25 HCP guarantees 3N. West's 1H opening on 4 cards is a calculated risk, often taken to keep the bidding low and find a major fit, but here it led directly to the successful NT strain.",
+      "analysis": "The primary error in the actual auction was East's 1NT overcall. This bid is typically reserved for 15-18 HCP or a strong 10-14 HCP balanced hand with a stopper in the opponent's suit. East's 11 HCP hand with Kx in Hearts does not meet this requirement, risking a misjudged game try by West. West's 2NT rebid was a standard game invitation based on the strength promised by East. Since the partnership has 25 HCP, 2NT is a reasonable invite, and East's subsequent pass was correct, recognizing the lack of high card strength needed for 3NT.",
       "sequence": [
         {
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "North passes (Error: Should open 1S)."
         },
         {
           "bid": "p",
@@ -264,15 +240,15 @@
         },
         {
           "bid": "1H",
-          "explanation": "West opens 1H (14 HCP, 4H)."
+          "explanation": "West opens 1H (14 HCP, 4-card major opening)."
         },
         {
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "North passes (Error: Should overcall 1S)."
         },
         {
           "bid": "1N",
-          "explanation": "East responds 1N (11 HCP). This is an underbid, but the most descriptive option available."
+          "explanation": "East overcalls 1NT (Major error: Non-standard bid, misleading strength and lack of Heart stopper)."
         },
         {
           "bid": "p",
@@ -280,7 +256,7 @@
         },
         {
           "bid": "2N",
-          "explanation": "West invites game, showing 18-19 combined points potential."
+          "explanation": "West invites game, expecting 11+ HCP from East based on the 1NT bid."
         },
         {
           "bid": "p",
@@ -288,29 +264,29 @@
         },
         {
           "bid": "p",
-          "explanation": "East passes, failing to accept the game invitation with a maximum hand. This is the critical error that missed 3N."
+          "explanation": "East correctly declines the game invitation."
         },
         {
           "bid": "p",
-          "explanation": "South passes. Contract 2N."
+          "explanation": "South passes, ending the auction."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "East",
-        "topic": "Accepting Game Invitations with Maximum Responses",
-        "category": "Bidding Judgment"
+        "player": "North",
+        "topic": "Opening Requirements",
+        "category": "Bidding Fundamentals"
       },
       {
         "player": "East",
-        "topic": "Hand Evaluation (11 HCP after 1N response)",
-        "category": "Hand Evaluation"
+        "topic": "1NT Overcall Requirements (HCP and Stopper)",
+        "category": "Competitive Bidding"
       },
       {
         "player": "West",
-        "topic": "Strict SAYC Opening Requirements (5-card majors)",
-        "category": "Opening Bids"
+        "topic": "Hand Evaluation based on Partner's Misleading Bid",
+        "category": "Judgment"
       }
     ]
   },

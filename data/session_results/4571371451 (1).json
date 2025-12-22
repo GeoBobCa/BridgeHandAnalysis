@@ -188,49 +188,49 @@
   "ai_analysis": {
     "verdict": "OVERBID",
     "actual_critique": [
-      "East/West severely overbid their hand, reaching 2S which fails by four tricks (making only 4 tricks total). This resulted from East raising a weak competitive response (West's 1S) too aggressively.",
-      "South made an excellent takeout double, accurately describing a strong opening hand (13 HCP) and setting the stage for N/S to compete for a part-score, which they failed to do by passing out 2S.",
-      "South missed a massive penalty opportunity. Given the singleton Spade and the opponents' weak auction, doubling 2S would have yielded a huge score (down 4, vulnerable)."
+      "East made a critical error by raising partner's weak 1S response to 2S. East holds only three spades and 12 HCP, making 2S a massive overbid that fails by four tricks (DDT shows 4 tricks available).",
+      "South's takeout double was excellent, accurately describing the partnership's combined strength (21 HCP) and setting the stage for competition.",
+      "N/S correctly chose to defend 2S, earning a large penalty (+400) due to E/W's aggressive bidding mistake. However, N/S missed finding their optimal part-score contract of 2D (8 tricks)."
     ],
     "basic_section": {
-      "analysis": "North/South have 21 combined HCP and should be looking for a safe part-score. South's hand is ideal for a takeout double. East's 1D opening is standard. West's 1S response is competitive and weak (7 HCP). N/S should prioritize finding their best fit, which the double-dummy analysis shows is 2D or 2S (making 8 tricks). Since South has only a singleton Spade, Diamonds is the safer suit to bid.",
+      "analysis": "North passed initially, and East opened 1D. South correctly made a takeout double showing 12+ points and support for the unbid suits. West competed with 1S, showing a weak hand and a five-card suit. The auction went wrong when East, holding 12 points and only three spades, raised 1S to 2S, committing the partnership to a contract they could not make. N/S should have competed to 2D, where they have a makeable part-score.",
       "recommended_auction": [
         {
           "bid": "p",
-          "explanation": "North passes with 8 HCP, standard."
+          "explanation": "Standard pass with 8 HCP."
         },
         {
           "bid": "1D",
-          "explanation": "East opens 1D with 12 HCP and a 4-card suit."
+          "explanation": "Standard opening bid with 12 HCP and a four-card diamond suit."
         },
         {
           "bid": "d",
-          "explanation": "South makes a takeout double, showing 12+ HCP and interest in the unbid suits."
+          "explanation": "Takeout double, showing 12+ HCP and support for the unbid suits (H, C, S)."
         },
         {
           "bid": "1S",
-          "explanation": "West competes with 5 Spades, showing 6-9 HCP."
+          "explanation": "Competitive bid showing a five-card suit and typically 6-10 points."
         },
         {
           "bid": "2D",
-          "explanation": "North shows 4+ Diamonds and 8-10 points, competing for the part-score. This is the safest contract for N/S."
+          "explanation": "Competitive bid showing 4+ diamonds and 7-10 points, finding the partnership's best fit."
         },
         {
           "bid": "p",
-          "explanation": "East passes, recognizing the partnership weakness."
+          "explanation": "East has no good bid. Raising 2S is wrong, and 1NT is risky. Passing is safest."
         },
         {
           "bid": "p",
-          "explanation": "South accepts the part-score in Diamonds, which makes easily."
+          "explanation": "South is happy to play 2D, which makes easily."
         },
         {
           "bid": "p",
-          "explanation": "Auction ends. Contract 2D by N/S (makes 8 tricks)."
+          "explanation": "Auction ends."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The critical error occurred when East raised 1S to 2S. West's 1S response was purely minimum and competitive (7 HCP). East's 12 HCP are largely defensive, and raising to 2S with only 19 combined HCP and a known strong hand opposite (South's double) is reckless. The resulting contract of 2S fails by four tricks. South missed a crucial opportunity to penalize this overbid. With a singleton Spade and the King, South has excellent defensive shape and high cards to double 2S for penalty, turning a -200 score (undoubled, vulnerable) into a massive -1100 penalty.",
+      "analysis": "The combined N/S strength (21 HCP) dictates they should be playing the hand. After South's takeout double and West's 1S intervention, North's 2D bid is a constructive, competitive action showing a 4-card suit and 7-10 points, suggesting a partscore. East's failure to rebid 1NT (showing 12-14 balanced, with a diamond stopper) or pass, opting instead for a highly speculative 2S raise, was the defining mistake. East must recognize that partner's 1S response is weak and competitive, not invitational or forcing.",
       "sequence": [
         {
           "bid": "p",
@@ -242,23 +242,23 @@
         },
         {
           "bid": "d",
-          "explanation": "South makes a takeout double (13 HCP)."
+          "explanation": "South makes a strong takeout double."
         },
         {
           "bid": "1S",
-          "explanation": "West competes with 5 Spades, 6-9 HCP."
+          "explanation": "West competes with 1S."
         },
         {
           "bid": "p",
-          "explanation": "North passes, allowing South to act."
+          "explanation": "North passes, as they have no clear competitive bid that doesn't risk overcommitting."
         },
         {
           "bid": "2S",
-          "explanation": "East raises, overestimating the partnership's strength (12 HCP + 7 HCP = 19 HCP total)."
+          "explanation": "East's error. This is a highly aggressive and unwarranted raise with only 3-card support and 12 HCP, committing the partnership to a failing contract."
         },
         {
-          "bid": "X",
-          "explanation": "South doubles for penalty. South has a singleton Spade and the K, guaranteeing excellent defense against this weak contract."
+          "bid": "p",
+          "explanation": "South passes, choosing to defend 2S rather than compete further, which proves profitable."
         },
         {
           "bid": "p",
@@ -266,29 +266,25 @@
         },
         {
           "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "Auction ends. Contract 2S Doubled by E/W (Down 4, -1100)."
+          "explanation": "North passes, ending the auction."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "East",
-        "topic": "Competitive Raises",
-        "category": "Hand Evaluation"
+        "topic": "Competitive Raises and Fit",
+        "category": "Bidding Error"
       },
       {
         "player": "South",
-        "topic": "Penalty Doubles",
-        "category": "Defense"
+        "topic": "Takeout Doubles",
+        "category": "Good Judgment"
       },
       {
-        "player": "East/West",
-        "topic": "Responding to Takeout Doubles",
-        "category": "Competitive Bidding"
+        "player": "North/South",
+        "topic": "Finding the Part-Score Fit (Diamonds)",
+        "category": "Missed Opportunity"
       }
     ]
   },

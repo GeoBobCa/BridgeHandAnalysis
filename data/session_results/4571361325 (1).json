@@ -190,73 +190,20 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "The partnership missed the technically optimal game contract of 4S (10 tricks), although reaching this contract would have been highly unconventional due to the poor 5-card fit.",
-      "North (Opener) shut down the auction prematurely with the 3C rebid. After South's constructive 2H response (showing 10+ points and 4+ Hearts), North should have explored game by bidding 2NT, showing a Spade stopper and inviting 3NT.",
-      "The final contract of 3C is severely underbid and fails by two tricks (7 tricks taken), resulting in a poor score when a game was available."
+      "South's 2H bid over East's 1S overcall was a significant error. With 11 HCP and a 4-card heart suit, South should have made a simple 1H response, reserving the jump shift for stronger or more forcing hands. This overstatement of strength misled North.",
+      "North failed to investigate the major suits after South's strong response (2H). North should have cue-bid 2S or bid 2NT to explore game potential, rather than immediately settling on 3C, which was a poor fit and ultimately failed by two tricks.",
+      "The partnership missed the making partscore contracts of 3H (9 tricks) and 2NT (8 tricks). Although 4S makes 10 tricks, the 5-card fit makes it highly speculative and unbiddable."
     ],
     "basic_section": {
-      "analysis": "North/South have 25 HCP combined, which is sufficient for game. North opened 1C (14 HCP) and South responded constructively with 2H (11 HCP, 4-card Heart suit). North's 3C rebid was a minimum preference bid, denying 4-card Heart support and showing 5+ Clubs. However, with 14 HCP, North should have prioritized game exploration. The most logical game target, 3NT, fails by one trick (8 tricks), but the partnership should have aimed for it. Stopping in 3C, which fails by two tricks, was a major missed opportunity.",
+      "analysis": "North/South hold 25 combined HCP, making a game contract highly probable. North opened 1C, and East interfered with 1S. South, with 11 HCP and a 4-card heart suit, must respond 1H to show the suit and keep the bidding low. North should then rebid 2C, showing minimum opening strength and 5+ clubs. South can then show their invitational strength (10-12 points) by raising hearts to 2H, finding the 6-card heart fit. North, holding 14 HCP, should accept this invitation to 3H, which makes easily.",
       "recommended_auction": [
         {
           "bid": "p",
-          "explanation": "East passes with 7 HCP."
+          "explanation": "East is too weak to open (7 HCP)."
         },
         {
           "bid": "p",
-          "explanation": "South passes with 11 HCP. While borderline, passing is acceptable under strict SAYC 12+ HCP opening rules."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes with 8 HCP."
-        },
-        {
-          "bid": "1C",
-          "explanation": "North opens 1C (14 HCP, 5-card suit)."
-        },
-        {
-          "bid": "1S",
-          "explanation": "East overcalls 1S (5-card suit, 7 HCP)."
-        },
-        {
-          "bid": "2H",
-          "explanation": "South bids 2H, showing 4+ Hearts and 10+ points (constructive response)."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "2NT",
-          "explanation": "North bids 2NT. This shows 12-14 HCP, a Spade stopper, and denies 4-card Heart support. This is an invitational bid to 3NT."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "3NT",
-          "explanation": "South accepts the invitation with 11 HCP and good controls (AAQ)."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
-        }
-      ]
-    },
-    "advanced_section": {
-      "analysis": "The double dummy truth indicates that 4S makes 10 tricks, which is highly anomalous given the 5-card N/S fit and the E/W holding of AK in Spades. Since 4S is unbiddable using standard methods, the partnership should focus on the most logical game, 3NT. North's decision to bid 3C over 2H was a failure of evaluation. North has excellent controls (AKJ in Clubs, QT in Spades, QJT in Diamonds) and should recognize the combined strength. Bidding 2NT is crucial here to describe the hand accurately (minimum opener, stopper, no major fit) and allow the 11 HCP responder to push to game. The actual 3C contract is a poor choice, as the Club suit is vulnerable to the 10 and 9 in East/West hands, leading to quick losers.",
-      "sequence": [
-        {
-          "bid": "p",
-          "explanation": "East passes (7 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes (11 HCP)."
+          "explanation": "South passes (11 HCP, not enough for 1-level opening)."
         },
         {
           "bid": "p",
@@ -264,7 +211,72 @@
         },
         {
           "bid": "1C",
-          "explanation": "North opens 1C (14 HCP, 5+ C)."
+          "explanation": "North opens 1C (14 HCP, 5-card suit)."
+        },
+        {
+          "bid": "1S",
+          "explanation": "East overcalls 1S (5-card suit, light)."
+        },
+        {
+          "bid": "1H",
+          "explanation": "South responds 1H, showing 6+ HCP and 4+ hearts. This is the correct, non-forcing response."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "2C",
+          "explanation": "North rebids 2C, showing 5+ clubs and minimum opening strength (12-15 HCP)."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2H",
+          "explanation": "South raises hearts, showing 4+ hearts and 10-12 HCP, inviting game."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "3H",
+          "explanation": "North accepts the game invitation, knowing they have a 6-card heart fit and 25+ combined points. 3H makes 9 tricks."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes. Contract: 3H."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "The actual auction broke down when South chose a jump shift (2H) instead of a simple response (1H). A jump shift over an opponent's overcall is highly constructive, often implying a strong hand (10+ points) and a good suit, sometimes forcing to game. North, holding a minimum 14 HCP, should have recognized the game potential after South's strong bid. North's subsequent 3C bid was a premature attempt to settle the contract in a minor suit, ignoring the implied 4-4 major fit. A better approach for North after 1C - (1S) - 2H would be a cue-bid of 2S (asking for a stopper or showing interest in game) or 2NT, allowing South to accurately place the final contract based on their shape and controls.",
+      "sequence": [
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "1C",
+          "explanation": "North opens 1C."
         },
         {
           "bid": "1S",
@@ -272,49 +284,45 @@
         },
         {
           "bid": "2H",
-          "explanation": "South shows 10+ points and 4+ Hearts."
+          "explanation": "South's error: This is too strong for 11 HCP and a 4-card suit, especially when 1H is available."
         },
         {
           "bid": "p",
           "explanation": "West passes."
         },
         {
-          "bid": "2NT",
-          "explanation": "North shows minimum opening values (12-14), a Spade stopper, and denies 4H support. Game invitation."
+          "bid": "3C",
+          "explanation": "North's error: North should investigate majors or bid 2NT. 3C is a poor choice, failing to find the fit or game."
         },
         {
           "bid": "p",
           "explanation": "East passes."
         },
         {
-          "bid": "3NT",
-          "explanation": "South accepts the game invitation."
+          "bid": "p",
+          "explanation": "South passes."
         },
         {
           "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
+          "explanation": "West passes. Contract: 3C (Down 2)."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "Opening Hand Evaluation",
-        "category": "Bidding Basics"
+        "topic": "Responding to Interference: Simple vs. Jump Shifts",
+        "category": "Bidding Fundamentals"
       },
       {
         "player": "North",
-        "topic": "Rebid Strategy (2NT vs. 3C)",
-        "category": "Intermediate Bidding"
+        "topic": "Handling Game Forcing Sequences and Cue Bidding",
+        "category": "Advanced Bidding"
       },
       {
-        "player": "Partnership",
-        "topic": "Game Exploration after Constructive Response",
-        "category": "Partnership Agreement"
+        "player": "Partnership (N/S)",
+        "topic": "Prioritizing Major Suit Fits (6-card Heart fit available)",
+        "category": "Contract Selection"
       }
     ]
   },

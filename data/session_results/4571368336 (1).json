@@ -187,32 +187,32 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "West (16 HCP) significantly underbid their hand by only raising to 2H over South's 2D competitive bid. This bid suggested a minimum opening (12-15 HCP) and allowed the auction to die prematurely.",
-      "East correctly passed 2H, as their 7 HCP hand is insufficient to push for game opposite a partner who has shown minimum strength in a competitive auction.",
-      "E/W missed the optimal contract of 3NT (10 tricks) or the achievable 4H game (9 tricks), settling for a part-score when they held 23 combined HCP."
+      "E/W missed their optimal contract of 3NT. West, holding 16 HCP, was too passive after South's 2D overcall, failing to use 2NT to show strength (15-17 HCP, balanced, Diamond stopper) and invite game.",
+      "South made a critical error by passing 2H. Holding 16 HCP and knowing N/S had a 6-card Heart fit (A73/J86), South should have competed further, perhaps with 3D or 2NT, to explore game or push the opponents higher.",
+      "The partnership of E/W stopped short in a part-score (2H, making +1) despite having 23 combined HCP, which is sufficient for a Notrump game (3NT makes 10 tricks)."
     ],
     "basic_section": {
-      "analysis": "West and East quickly found a Heart fit and held 23 combined HCP, which is sufficient for game. However, the auction stopped short because West failed to adequately describe their strength (16 HCP) after South interfered with 2D. West's 2H rebid was too passive, suggesting only 12-15 HCP. This led East, with only 7 HCP, to pass, missing the easy 3NT game.",
+      "analysis": "The bidding was competitive, but both partnerships failed to reach their respective games. E/W had 23 combined HCP, making 3NT the most likely optimal contract. N/S had 17 combined HCP and a 6-card Heart fit, making 4H possible. West's 2H rebid was competitive but failed to describe the full strength of the hand. South's final pass was a major mistake, allowing the opponents to play a low contract when N/S had game potential.",
       "recommended_auction": [
         {
           "bid": "1D",
-          "explanation": "West opens 1D (16 HCP, 4 cards)."
+          "explanation": "West opens 1D, standard 16 HCP."
         },
         {
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "North passes with 1 HCP."
         },
         {
           "bid": "1H",
-          "explanation": "East responds 1H (7 HCP, 4 cards)."
+          "explanation": "East responds 1H, showing 4+ hearts and 6+ HCP."
         },
         {
           "bid": "2D",
-          "explanation": "South enters competitively, showing a strong hand (10+ points, 5+ diamonds)."
+          "explanation": "South overcalls 2D, showing a strong hand (12+ HCP, here 16 HCP) and a 5+ card Diamond suit."
         },
         {
           "bid": "2NT",
-          "explanation": "West shows 15-17 HCP, balanced distribution (3=3=4=3), and stoppers in unbid suits (S/C). This is the most descriptive bid to show extra strength and invite game."
+          "explanation": "West bids 2NT, showing 15-17 HCP, balanced, and a stopper in the opponent's suit (Diamonds). This is a game invitation."
         },
         {
           "bid": "p",
@@ -220,7 +220,7 @@
         },
         {
           "bid": "3NT",
-          "explanation": "East knows partner has 15-17 HCP, totaling 22-24 combined. East bids the optimal game contract."
+          "explanation": "East accepts the game invitation with 7 HCP, knowing West has 15-17 HCP (22-24 combined)."
         },
         {
           "bid": "p",
@@ -232,12 +232,12 @@
         },
         {
           "bid": "p",
-          "explanation": "North passes."
+          "explanation": "North passes. Contract 3NT by West."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The critical decision point was West's rebid over South's 2D interference. With 16 HCP and a relatively balanced hand (3=3=4=3), West must find a way to show the extra strength beyond a minimum competitive raise (2H). Bidding 2NT is the most accurate way to convey the 15-17 HCP range and balanced shape, allowing East to correctly evaluate the partnership's potential for 3NT, which makes 10 tricks. The actual 2H bid was a severe underbid, masking the partnership's game potential.",
+      "analysis": "West's decision over 2D was crucial. While 2H was a competitive preference, it failed to utilize the descriptive power of 2NT, which is the standard way to show a strong, balanced hand with a stopper in the opponent's suit, inviting 3NT. South's failure to bid 3D or 2NT over 2H was a missed opportunity to either find the N/S 4H game or push E/W higher. South's 16 HCP hand is too strong to pass out a competitive part-score, especially when holding good controls (A, K, QJ).",
       "sequence": [
         {
           "bid": "1D",
@@ -249,15 +249,15 @@
         },
         {
           "bid": "1H",
-          "explanation": "East responds 1H."
+          "explanation": "East responds 1H (7 HCP, 4+H)."
         },
         {
           "bid": "2D",
-          "explanation": "South overcalls 2D, showing a strong hand and 5+ diamonds."
+          "explanation": "South overcalls 2D (16 HCP, 5+D). A strong competitive jump shift."
         },
         {
           "bid": "2H",
-          "explanation": "West shows 3+ Heart support, but this bid is non-forcing and suggests only 12-15 HCP in a competitive auction. This is an underbid given 16 HCP."
+          "explanation": "West raises 2H, showing competitive support (3 cards) and minimum opening values. This bid masks West's true strength."
         },
         {
           "bid": "p",
@@ -265,24 +265,29 @@
         },
         {
           "bid": "p",
-          "explanation": "East passes, correctly declining to push for game opposite a minimum raise."
+          "explanation": "East passes, satisfied with the part-score."
         },
         {
           "bid": "p",
-          "explanation": "South passes, ending the auction in 2H."
+          "explanation": "South passes, failing to compete further or explore game potential (4H makes)."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "West",
-        "topic": "Rebidding with Extra Strength in Competition",
-        "category": "Opener Strategy"
+        "topic": "Rebid Strategy in Competition (Using 2NT)",
+        "category": "Bidding"
       },
       {
-        "player": "East",
-        "topic": "Recognizing Partner's Underbid",
-        "category": "Responder Strategy"
+        "player": "South",
+        "topic": "Competitive Bidding and Game Exploration",
+        "category": "Bidding"
+      },
+      {
+        "player": "East/West Partnership",
+        "topic": "Game Evaluation (Recognizing 23+ HCP for 3NT)",
+        "category": "Partnership"
       }
     ]
   },
