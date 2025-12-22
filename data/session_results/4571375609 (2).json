@@ -186,96 +186,140 @@
     }
   },
   "ai_analysis": {
-    "verdict": "POOR CONTRACT CHOICE",
+    "verdict": "OVERBID",
     "actual_critique": [
-      "The contract of 3C is severely misplaced. Double dummy analysis indicates N/S can only take 6 or 7 tricks in Clubs, resulting in a loss of at least two tricks (down 2 or 3).",
-      "South's rebid of 3C was an aggressive overbid. With a minimum 12 HCP and a semi-balanced 4=4 minor suit shape, 2NT would have been the standard and safer descriptive rebid, showing minimum values and inviting game.",
-      "The partnership failed to reach 3NT, which, despite failing by one trick according to double dummy, represents the highest percentage contract for their combined 23 HCP."
+      "The final contract of 3C is an overbid, as the partnership only makes 6 tricks in Clubs according to double dummy analysis, resulting in down three.",
+      "South's 3C bid was poorly descriptive. After North's 2H, South should have prioritized showing the balanced nature of the hand (12 HCP) via 2NT, or rebid the stronger Diamond suit, rather than jumping to 3C on a minimum 4-card suit.",
+      "The partnership missed several making contracts, including 3D (8 tricks), 3NT (8 tricks), and the excellent 4S (10 tricks), demonstrating a failure to accurately assess combined strength and fit."
     ],
     "basic_section": {
-      "analysis": "East passes as dealer with only 2 HCP. South opens 1D. West responds 1S, showing 4+ Spades and 6+ points. North enters the auction competitively with 2H, showing a 5-card suit and 8-12 points. South, holding a minimum 12 HCP and a semi-balanced hand, must now describe their values and shape. Bidding 2NT is the most descriptive action, showing 11-12 points and stoppers (or partial stoppers) in the opponent's suit.",
+      "analysis": "South opened 1D (12 HCP). West made a strong 1S overcall (15 HCP). North responded 2H, showing a constructive hand (11 HCP) with a 5-card Heart suit. South, holding a balanced minimum hand (12 HCP) with weak Spade coverage, should prioritize describing the hand shape and strength accurately. Bidding 2NT is the most descriptive action, showing 12-14 balanced points and a partial stopper in Spades. This allows North to choose the best strain, which should lead to 3D, a making contract.",
       "recommended_auction": [
         {
-          "bid": "Pass",
-          "explanation": "East has only 2 HCP and passes."
+          "bid": "p",
+          "explanation": "East is dealer but has only 2 HCP."
         },
         {
           "bid": "1D",
-          "explanation": "South opens 1D, showing 4+ Diamonds and 12+ HCP."
+          "explanation": "South opens 1D, showing 12+ HCP and 4+ Diamonds."
         },
         {
           "bid": "1S",
-          "explanation": "West responds 1S, showing 4+ Spades and 6+ points."
+          "explanation": "West overcalls 1S, showing 10-15 HCP and 4+ Spades. This hand is strong (15 HCP)."
         },
         {
           "bid": "2H",
-          "explanation": "North competes with 2H, showing a 5-card Heart suit and 8-12 points."
+          "explanation": "North shows a constructive hand (8+ points, 11 actual) and a 5-card Heart suit."
         },
         {
-          "bid": "Pass",
-          "explanation": "East passes with minimum values."
+          "bid": "p",
+          "explanation": "East passes."
         },
         {
           "bid": "2NT",
-          "explanation": "South rebids 2NT, showing a minimum opening hand (11-12 HCP), semi-balanced shape, and partial stoppers in the opponent's suit (Spades)."
+          "explanation": "South shows a balanced hand (12-14 HCP) and denies 3-card Heart support. This is the most accurate description of the hand."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes, not wanting to commit higher without partner support."
+          "bid": "p",
+          "explanation": "West passes, having made a descriptive overcall."
         },
         {
-          "bid": "3NT",
-          "explanation": "North accepts the 2NT invitation. With 11 HCP and a 5-card suit, 3NT is the standard target for 23 combined HCP."
+          "bid": "3C",
+          "explanation": "North shows a preference for Clubs (4 cards) over Hearts or NT, knowing South is minimum."
         },
         {
-          "bid": "Pass",
-          "explanation": "End of auction."
+          "bid": "p",
+          "explanation": "East passes."
         },
         {
-          "bid": "Pass",
-          "explanation": "End of auction."
+          "bid": "3D",
+          "explanation": "South shows 4-4 in the minors and prefers the original suit (Diamonds). 3D makes 8 tricks."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North accepts the partial contract in Diamonds."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes. Contract: 3D."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The critical decision is South's rebid over 2H. South's hand (3=2=4=4, 12 HCP) is highly suitable for a 2NT rebid. While 3C was played, it is a poor choice because it commits the partnership to the 3-level in an 8-card minor fit, denying the possibility of a better contract like 3NT. Even though 3NT fails by one trick (DDT: 8 tricks), it is the statistically sound contract given the combined strength and balanced nature of the hands. The actual 3C contract fails much worse (down 3 or 4).",
+      "analysis": "In a competitive auction, 2/1 Game Forcing is off. The focus remains on accurate hand description and finding the best fit/level. South's 2NT rebid is still the superior choice to 3C, as it clearly defines the strength and shape. While the partnership has a 5-card Spade fit (A7 opposite 962) that makes 4S, finding this fit after West's 1S overcall is extremely difficult. The recommended sequence aims for the safest making partial (3D) by using descriptive rebids.",
       "sequence": [
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
         {
           "bid": "1D",
           "explanation": "Standard opening."
         },
         {
           "bid": "1S",
-          "explanation": "Standard response."
+          "explanation": "Strong overcall by West (15 HCP)."
         },
         {
           "bid": "2H",
-          "explanation": "Competitive bid showing a 5-card suit."
+          "explanation": "Constructive response by North, 5+ Hearts."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
         },
         {
           "bid": "2NT",
-          "explanation": "The correct descriptive rebid by South, showing minimum values and a semi-balanced hand, inviting 3NT."
+          "explanation": "South shows 12-14 balanced points and a weak Spade stopper. This is the most informative rebid."
         },
         {
-          "bid": "3NT",
-          "explanation": "North, holding 11 HCP and a 5-card suit, raises to game, aiming for the high probability contract."
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "3C",
+          "explanation": "North shows 4-card Club preference, suggesting a minor suit partial."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "3D",
+          "explanation": "South shows 4-4 in the minors and settles for the Diamond partial."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes. Contract: 3D."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South (Fish075)",
-        "topic": "Rebid Choice After Interference",
-        "category": "Bidding Principles"
+        "player": "South",
+        "topic": "Rebidding a Balanced Hand in Competition",
+        "category": "Bidding"
       },
       {
-        "player": "North (BeaPercy)",
-        "topic": "Valuing 3NT Invitation",
-        "category": "Game Bidding"
+        "player": "North",
+        "topic": "Evaluating Game Potential After Partner's Minimum Rebid",
+        "category": "Declarer Play/Bidding"
       },
       {
-        "player": "Partnership (N/S)",
-        "topic": "Avoiding Minor Suit Jumps Without Fit/Strength",
+        "player": "West",
+        "topic": "The Disruptive Power of Strong Overcalls",
         "category": "Competitive Bidding"
       }
     ]

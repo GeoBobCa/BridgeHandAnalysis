@@ -185,96 +185,101 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL CONTRACT REACHED",
+    "verdict": "OPTIMAL",
     "actual_critique": [
-      "South's opening bid of 1C and North's 1S response correctly established the partnership's strength and shape according to SAYC standards.",
-      "South's rebid of 1NT accurately described a minimum opening hand (12-14 HCP) that was relatively balanced and lacked 4-card support for Spades.",
-      "North correctly passed 1NT. With only 9 HCP and a 5-3 fit in Spades, the partnership total (21-23 HCP) is insufficient to pursue game."
+      "The partnership correctly stopped in 1NT. With a combined 23 HCP (14 + 9), they are significantly short of the 25-26 HCP usually required for a reliable 3NT game.",
+      "South's 1NT rebid was highly descriptive, showing a minimum opening hand (12-14 HCP) and denying 4-card support for North's Spades, leading to the perfect final contract.",
+      "The contract 1NT is successful, making 9 tricks according to Double Dummy analysis, confirming that the auction achieved the maximum practical result."
     ],
     "basic_section": {
-      "analysis": "South is the dealer and has 14 HCP with a 5-card club suit (AJT93). 1C is the standard opening. North responds 1S, showing a 5-card major and 6+ points. South's hand is balanced enough (3=2=3=5) and is minimum strength (14 HCP). Since South does not have 4-card support for Spades, the descriptive rebid is 1NT, showing 12-14 HCP and a balanced hand. North, with only 9 HCP, correctly passes, as the partnership is well short of game requirements (typically 25+ points).",
+      "analysis": "South opens 1C, standard for 14 HCP and a 5-card minor. North responds 1S, showing 6+ HCP and 4+ Spades (here 5). South's 1NT rebid is standard, showing 12-14 HCP, a balanced hand, and denying 4-card Spade support. North, holding only 9 HCP, has no reason to push for game or investigate further, leading to a correct pass.",
       "recommended_auction": [
         {
           "bid": "1C",
-          "explanation": "Standard opening bid for 14 HCP with a 5-card club suit."
+          "explanation": "Standard opening bid, 12+ HCP, 5+ Clubs."
         },
         {
-          "bid": "Pass",
-          "explanation": "West has only 8 HCP and insufficient shape for an overcall or takeout double."
+          "bid": "p",
+          "explanation": "West passes with only 8 HCP."
         },
         {
           "bid": "1S",
-          "explanation": "Standard response showing 5+ Spades and 6+ points (9 HCP)."
+          "explanation": "Standard response, 6+ HCP, showing 4+ Spades (here 5)."
         },
         {
-          "bid": "Pass",
-          "explanation": "East has 9 HCP but no clear defensive or competitive action."
+          "bid": "p",
+          "explanation": "East passes with 9 HCP, lacking a clear entry point."
         },
         {
           "bid": "1N",
-          "explanation": "South shows 12-14 HCP, a balanced hand, and denies 4-card support for Spades. This is a minimum rebid."
+          "explanation": "South's rebid showing 12-14 HCP, balanced shape, and denying 4-card support for Spades. This is non-forcing."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
-          "bid": "Pass",
-          "explanation": "North recognizes that the partnership maximum is 23 HCP, insufficient for game, and passes 1NT."
+          "bid": "p",
+          "explanation": "North accepts the non-forcing 1NT contract, as 9 HCP is insufficient to continue bidding."
         },
         {
-          "bid": "Pass",
-          "explanation": "East passes, ending the auction."
+          "bid": "p",
+          "explanation": "Pass. Contract is 1NT."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The 1NT contract is sound. Although the partnership has a 5-3 fit in Spades, 1NT is often preferable to a low-level major suit partial when the combined strength is low and the NT tricks are easily identifiable. South's club suit (AJT93) provides excellent source tricks, and the QT of hearts is well-placed. The DD analysis confirms 1NT makes exactly 9 tricks, demonstrating that the players found the optimal partial contract.",
+      "analysis": "Under 2/1 Game Forcing rules, the auction remains identical. North's 1S response is at the 1-level and is therefore non-forcing. South's 1NT rebid confirms a minimum opening hand (12-14 HCP) and is also non-forcing. Since North has only 9 HCP and no strong secondary suit to show, passing 1NT is the correct action, regardless of whether 2/1 GF is active.",
       "sequence": [
         {
           "bid": "1C",
-          "explanation": "Opening."
+          "explanation": "Standard opening bid (14 HCP)."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
           "bid": "1S",
-          "explanation": "North's 5-card major response."
+          "explanation": "Standard 1-level response, non-forcing, showing 6+ HCP and 5 Spades."
         },
         {
-          "bid": "Pass",
-          "explanation": "East passes."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
           "bid": "1N",
-          "explanation": "Minimum, balanced rebid denying 4-card Spade support. This is highly descriptive."
+          "explanation": "Minimum rebid (12-14 HCP), balanced, denying 4 Spades. Non-forcing."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
-          "bid": "Pass",
-          "explanation": "North correctly stops the bidding, recognizing the lack of game potential."
+          "bid": "p",
+          "explanation": "North has a minimum response and correctly passes the non-forcing 1NT contract."
         },
         {
-          "bid": "Pass",
-          "explanation": "Auction ends."
+          "bid": "p",
+          "explanation": "Pass. Contract is 1NT."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "Minimum Opening Rebids: Choosing 1NT",
+        "topic": "Rebid Structure after 1-level Response",
         "category": "Bidding Theory"
       },
       {
         "player": "North",
-        "topic": "Responder's Evaluation: Knowing when to stop at a partial",
-        "category": "Partnership Bidding"
+        "topic": "Accepting the Non-Forcing 1NT Rebid",
+        "category": "Hand Evaluation"
+      },
+      {
+        "player": "East",
+        "topic": "Intervention Thresholds (When to bid 1NT or 2C over 1C)",
+        "category": "Competitive Bidding"
       }
     ]
   },

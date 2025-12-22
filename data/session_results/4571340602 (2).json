@@ -185,101 +185,134 @@
     }
   },
   "ai_analysis": {
-    "verdict": "STANDARD GAME BID, UNLUCKY RESULT",
+    "verdict": "OVERBID",
     "actual_critique": [
-      "North's 1S opening (19 HCP, 5-card major) was textbook and highly appropriate.",
-      "South's 3S response was a perfect Limit Raise (10 Total Points, 5-card support, singleton), clearly defining the hand's strength and fit.",
-      "North correctly accepted the game invitation with 4S, as the partnership easily reached the 28+ HCP threshold (19 + 9 = 28 HCP, 30 TP). The contract failed due to poor minor suit controls, not poor bidding judgment."
+      "The partnership severely misjudged the fit and strength. North (19 HCP, singleton club, all Aces) underbid drastically by jumping directly to 4S after South's 3S game-forcing raise, failing to show slam interest or extra values.",
+      "The final contract of 4S is a disaster, making only 7 tricks according to Double Dummy Solver (DDS). This results in a loss of three tricks.",
+      "The partnership missed a laydown slam. N/S can make 13 tricks in the minor suits (6C or 6D) and 11 tricks in Notrump (4NT/5NT/6NT). The failure to explore slam possibilities was the primary error."
     ],
     "basic_section": {
-      "analysis": "North is the dealer with a powerful 19 HCP hand featuring a 5-card Spade suit. South provides excellent support (5-card fit, 10 Total Points, and a singleton Diamond). The partnership has 28 HCP and 30 Total Points, making game mandatory. The auction sequence followed standard SAYC principles to reach the expected 4S contract.",
+      "analysis": "In Standard American, North's 19 HCP hand with excellent controls demands a strong rebid after South's game-forcing 3S raise (showing 9-11 HCP and 5+ support). Since North has a semi-balanced hand (5=4=3=1) and 19 HCP, a quantitative 4NT is the simplest way to explore slam in NT, which is often safer than a major suit slam when distribution is not extreme. South, with a minimum 9 HCP, should pass 4NT.",
       "recommended_auction": [
         {
           "bid": "1S",
-          "explanation": "Standard opening bid for North: 19 HCP, 5-card major."
+          "explanation": "Standard opening bid (19 HCP, 5-card major)."
         },
         {
-          "bid": "Pass",
-          "explanation": "East is too weak (5 HCP) to intervene."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
           "bid": "3S",
-          "explanation": "South uses the Limit Raise (10-12 TP, 4+ card support). South has 10 TP and a 5-card fit, making this an ideal descriptive bid."
+          "explanation": "Game-forcing constructive raise, showing 5+ card support and 9-11 HCP."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
-          "bid": "4S",
-          "explanation": "North has 19 HCP and knows South has at least 10 TP, confirming game is highly probable (29+ TP total). North accepts the invitation."
+          "bid": "4NT",
+          "explanation": "Quantitative bid, showing 18-19 HCP and asking partner to bid 6NT with maximum values."
         },
         {
-          "bid": "Pass",
-          "explanation": "Auction ends."
+          "bid": "p",
+          "explanation": "East passes."
         },
         {
-          "bid": "Pass",
-          "explanation": "Auction ends."
+          "bid": "p",
+          "explanation": "South has only 9 HCP and passes the quantitative invitation."
         },
         {
-          "bid": "Pass",
-          "explanation": "Auction ends."
+          "bid": "p",
+          "explanation": "Pass. Contract 4NT (Makes 11 tricks)."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "While the point count strongly dictates a game contract, the distribution creates significant defensive challenges. North's singleton Club (A) and South's singleton Diamond (5) leave the partnership vulnerable in the minor suits. West holds a dangerous 5-card Diamond suit headed by the King, Jack, and Ten. The defense can quickly establish three Diamond tricks and potentially two or three Club tricks after the Ace of Clubs is knocked out, leading to the contract's downfall. Given the lack of controls in the minors, exploring slam was correctly avoided, even though the total points might suggest it.",
+      "analysis": "With 2/1 Game Forcing active, South's 3S response remains game forcing. North, knowing they have 19 HCP and all four Aces, must immediately start cuebidding to explore slam. Since the Spade fit is established, cuebids show first-round controls (Aces or Kings). The partnership should quickly realize they have all controls and sufficient strength (28 HCP) for a slam, likely in NT or a minor suit, as the Spade suit is not robust enough for 6S.",
       "sequence": [
         {
           "bid": "1S",
-          "explanation": "Standard opening."
+          "explanation": "Standard opening (19 HCP)."
         },
         {
-          "bid": "Pass",
-          "explanation": "East passes."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
           "bid": "3S",
-          "explanation": "Limit Raise, showing 10 TP and excellent support."
+          "explanation": "Game-forcing raise, showing 5+ card support and 9+ HCP."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
-          "bid": "4S",
-          "explanation": "North, with 19 HCP, guarantees game. This is the highest percentage bid based on standard valuation."
+          "bid": "4C",
+          "explanation": "Cuebid, showing the Ace of Clubs and strong slam interest."
         },
         {
-          "bid": "Pass",
-          "explanation": "End of auction."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
-          "bid": "Pass",
-          "explanation": "End of auction."
+          "bid": "4D",
+          "explanation": "Cuebid, showing Diamond control (Ace or King) and continuing slam exploration."
         },
         {
-          "bid": "Pass",
-          "explanation": "End of auction."
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4H",
+          "explanation": "Cuebid, showing the Ace of Hearts. All side suit Aces are now confirmed."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "5NT",
+          "explanation": "Grand Slam force/Pick a slam. North knows all controls are present and 28 HCP total. Asking partner to choose the best slam (6NT or a minor suit)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "6C",
+          "explanation": "South chooses the Club suit, recognizing the 4-card fit and the potential for ruffing/cross-ruffing potential in the minors. (6C makes 13 tricks.)"
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Limit Raise vs. Simple Raise",
-        "category": "Responding"
+        "player": "North (BeaPercy)",
+        "topic": "Rebidding Strong Hands",
+        "category": "Bidding Theory"
       },
       {
-        "player": "North",
-        "topic": "Accepting a Game Invitation with Maximum Values",
-        "category": "Opener Rebids"
+        "player": "North (BeaPercy)",
+        "topic": "Cuebidding for Slam Exploration",
+        "category": "Slam Bidding"
       },
       {
-        "player": "South",
-        "topic": "Total Points Valuation (9 HCP + 1 for singleton = 10 TP)",
-        "category": "Valuation"
+        "player": "South (Fish075)",
+        "topic": "Quantitative Notrump Responses",
+        "category": "Notrump Bidding"
+      },
+      {
+        "player": "Partnership",
+        "topic": "Double Dummy Analysis: Why 4S Fails",
+        "category": "Declarer Play"
       }
     ]
   },

@@ -183,145 +183,117 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED SLAM INVESTIGATION (4S was bid too quickly, shutting down constructive bidding.)",
+    "verdict": "OVERBID",
     "actual_critique": [
-      "West's 1S opening was standard and correct (10 HCP, 5-card major).",
-      "East's immediate jump to 4S was highly non-constructive. With 14 HCP and a fit, East must use a forcing sequence (like Jacoby 2NT or a strong intermediate raise) to investigate slam potential, not preemptively bid game.",
-      "The partnership missed the chance to investigate the theoretical slam (6S), which is indicated by their combined 24 HCP and controls. (Note: Double Dummy analysis shows 4S fails by 4 tricks, indicating the cards lie very poorly for E/W, but the bidding should still aim for the high-probability contract.)"
+      "West opened 1S with only 10 HCP (12 total points), violating the strict 12+ HCP requirement for a standard 1-level opening.",
+      "East's jump to 4S was highly aggressive and speculative. With 14 HCP and a balanced hand, East should have used a measured response (like 2NT or 3S) to explore game, especially since the partnership lacked combined strength.",
+      "The 4S contract fails by two tricks (DDS shows 6 tricks made), confirming a significant overestimation of the partnership's playing strength."
     ],
     "basic_section": {
-      "analysis": "West has a minimum 1S opening (10 HCP, 5 Spades). East has 14 HCP and 3-card support. The partnership has 24 combined HCP, making game mandatory and slam highly probable. East must use a constructive sequence to ensure West describes their hand fully.",
+      "analysis": "Under strict Standard American rules, West must pass with only 10 HCP. East, holding 14 HCP, opens 1H. The partnership eventually finds a 5-3 Spade fit, but due to the poor distribution and lack of high cards, game is impossible. The highest making contract in Spades is 2S (6 tricks).",
       "recommended_auction": [
         {
-          "bid": "1S",
-          "explanation": "Standard 5-card major opening by West (10 HCP)."
+          "bid": "Pass",
+          "explanation": "West has only 10 HCP and must pass according to standard opening rules (12+ HCP required)."
         },
         {
           "bid": "Pass",
-          "explanation": "North passes with only 7 HCP."
+          "explanation": "North passes with 7 HCP."
+        },
+        {
+          "bid": "1H",
+          "explanation": "East opens 1H, showing 12+ HCP and a 4-card major."
+        },
+        {
+          "bid": "1C",
+          "explanation": "South overcalls 1C, showing a strong 6-card suit and 9 HCP."
+        },
+        {
+          "bid": "1S",
+          "explanation": "West competes with 1S, showing a 5-card suit and 10 HCP."
+        },
+        {
+          "bid": "2H",
+          "explanation": "North raises Hearts competitively, showing 5-card support."
         },
         {
           "bid": "2S",
-          "explanation": "East uses the Limit Raise, showing 10-12+ TP and 3+ card support. Although East has 14 HCP, this is the most common constructive step if Jacoby 2NT is not used or requires 4-card support."
+          "explanation": "East raises partner's suit, showing 3+ card support and invitational values (14 HCP). This is the highest level the partnership should reach, as 3S fails."
         },
         {
           "bid": "Pass",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "3S",
-          "explanation": "West accepts the invitation, showing a maximum opener (12 TP/good shape) or good suit quality."
+          "explanation": "South passes, having shown their hand."
         },
         {
           "bid": "Pass",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "4S",
-          "explanation": "East confirms game based on West's maximum response."
+          "explanation": "West passes, showing a minimum hand (10 HCP) and accepting 2S as the final contract."
         },
         {
           "bid": "Pass",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "West passes. Contract reached: 4S."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "North passes."
+          "explanation": "Auction ends."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "With 24 combined HCP and excellent controls (East holds K74, KJ92, AKT), slam investigation is mandatory. East should use Jacoby 2NT (Game Forcing Spade Raise) to initiate control bidding and find out about West's side suits and key cards.",
+      "analysis": "Even utilizing 2/1 Game Forcing, West should still pass the opening bid due to the 10 HCP minimum. East opens 1H. The subsequent competitive auction leads E/W to their 5-3 Spade fit. Since 4S fails, the partnership must exercise caution. East's 2S raise is invitational, and West's minimum hand dictates passing 2S, which is the highest making contract.",
       "sequence": [
         {
+          "bid": "Pass",
+          "explanation": "West adheres to the 12+ HCP opening rule."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "1H",
+          "explanation": "East opens 1H (14 HCP, 4-card major)."
+        },
+        {
+          "bid": "1C",
+          "explanation": "South overcalls 1C."
+        },
+        {
           "bid": "1S",
-          "explanation": "West opens."
+          "explanation": "West competes with 1S (5-card suit, 10 HCP)."
         },
         {
-          "bid": "Pass",
-          "explanation": "North passes."
+          "bid": "2H",
+          "explanation": "North raises Hearts competitively."
         },
         {
-          "bid": "2NT",
-          "explanation": "East uses Jacoby 2NT, showing 12+ HCP and a Game Forcing raise in Spades."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "3C",
-          "explanation": "West shows a feature or shortage in Clubs (West has a doubleton 94)."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "4D",
-          "explanation": "East cue bids Diamonds, showing first-round control (Ace/Void). East has AKT."
+          "bid": "2S",
+          "explanation": "East raises partner's suit, showing 3+ card support and invitational values (14 HCP). This is forcing to 2S."
         },
         {
           "bid": "Pass",
           "explanation": "South passes."
         },
         {
-          "bid": "4H",
-          "explanation": "West cue bids Hearts, showing first-round control (Singleton 6)."
+          "bid": "Pass",
+          "explanation": "West has a minimum hand and passes, settling for 2S, which makes exactly 6 tricks."
         },
         {
           "bid": "Pass",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "4NT",
-          "explanation": "East uses Blackwood RKCB."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "5C",
-          "explanation": "West responds 5C, showing 0 or 3 key cards (West has 0 Aces/Key Cards)."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "5S",
-          "explanation": "East stops short of slam due to missing key cards, settling for 5S (or 4S, depending on safety)."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "North passes."
+          "explanation": "Auction ends."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "East",
-        "topic": "Bidding Strength",
-        "category": "Responding"
+        "player": "West",
+        "topic": "Opening Hand Valuation",
+        "category": "Bidding Fundamentals"
       },
       {
         "player": "East",
-        "topic": "Constructive Raises vs. Preemptive Jumps",
-        "category": "Game Bidding"
+        "topic": "Responding to Partner's Suit (Jump Bids)",
+        "category": "Response Strategy"
       },
       {
-        "player": "Partnership",
-        "topic": "Slam Investigation Tools (Jacoby 2NT)",
-        "category": "Advanced Bidding"
+        "player": "E/W Partnership",
+        "topic": "Safety and Level Selection",
+        "category": "Valuation and Safety"
       }
     ]
   },

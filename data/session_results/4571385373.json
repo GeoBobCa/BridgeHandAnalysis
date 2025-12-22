@@ -188,113 +188,133 @@
     }
   },
   "ai_analysis": {
-    "verdict": "GOOD RESULT, POOR START",
+    "verdict": "UNDERBID",
     "actual_critique": [
-      "East erred significantly by passing a clear 1D opening bid. With 9 HCP and a 5-card suit (10 Total Points), East meets the criteria for opening 1D, especially as dealer.",
-      "North's 1C opening was standard for their 18 HCP, balanced hand (4=2=3=4) after three passes, effectively taking control of the auction.",
-      "The final contract of 1S by North/South was successful, making exactly 8 tricks according to double dummy analysis. This was a safe, if slightly underbid, result."
+      "The final contract of 1S is a significant underbid. North holds 18 HCP, and the partnership has 24 combined HCP, suggesting a game attempt (3NT or 4S). DDS confirms 3NT makes 8 tricks.",
+      "North failed to adequately convey the strength of the hand (18 HCP) after the opponents' intervention. A simple 1S rebid is too weak for this powerhouse hand.",
+      "West's pass over South's 1H was too passive. West should have supported partner's 1C opening with 2C, showing 7 HCP and a 4-card fit, which would have allowed North to better describe the hand."
     ],
     "basic_section": {
-      "analysis": "East, as dealer, holds 9 HCP and a good 5-card Diamond suit, totaling 10 Total Points. This is a mandatory 1D opening. South and West are too weak to intervene. North holds 18 HCP and must respond strongly. The actual auction was distorted by East's initial pass, allowing North to open 1C and setting up a competitive exchange that ultimately found the 4-4 spade fit.",
+      "analysis": "In Standard American, North's 18 HCP hand requires a strong rebid after the opponents intervene. Since 4S fails, the goal is to reach 2S (the maximum making suit contract) or 3NT. West should support Clubs, allowing North to show the Spades strongly.",
       "recommended_auction": [
         {
+          "bid": "p",
+          "explanation": "East passes, 9 HCP is insufficient for a standard 1-level opening."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes (6 HCP)."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes (7 HCP)."
+        },
+        {
+          "bid": "1C",
+          "explanation": "North opens 1C (18 HCP, 4=2=3=4 distribution)."
+        },
+        {
           "bid": "1D",
-          "explanation": "East must open 1D. 9 HCP, 5-card suit, 10 Total Points."
+          "explanation": "East overcalls 1D, showing a 5-card suit and 8+ HCP (9 HCP)."
         },
         {
-          "bid": "Pass",
-          "explanation": "South (7 TP) is too weak to respond over 1D."
+          "bid": "1H",
+          "explanation": "South competes with 1H, showing a 5-card suit, though very weak (6 HCP)."
         },
         {
-          "bid": "Pass",
-          "explanation": "West (7 TP) is too weak to overcall."
+          "bid": "2C",
+          "explanation": "West supports partner's Clubs, showing 4+ cards and 7-10 HCP."
         },
         {
-          "bid": "1S",
-          "explanation": "North has 18 HCP and a 4-card major. This is a forcing response showing 6+ points."
+          "bid": "2S",
+          "explanation": "North shows the 4-card Spade suit strongly (16+ HCP, forcing). This is the highest successful suit contract."
         },
         {
-          "bid": "2D",
-          "explanation": "East rebids their suit, showing a minimum opening hand (11-14 TP) and 6+ diamonds."
+          "bid": "p",
+          "explanation": "East passes."
         },
         {
-          "bid": "Pass",
-          "explanation": "South passes."
+          "bid": "p",
+          "explanation": "South passes, having shown the hand."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "2NT",
-          "explanation": "North has 18 HCP and is balanced (4=2=3=4). 2NT is the standard game try/invitation over a minimum rebid, showing 18-19 balanced points. (Note: This contract fails in reality, but it is the standard, probability-based bid.)"
-        },
-        {
-          "bid": "Pass",
-          "explanation": "East passes, having shown a minimum hand."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "West passes."
+          "bid": "p",
+          "explanation": "West passes, happy to stop at 2S with a minimum response."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "North's hand is extremely powerful, holding 18 HCP and excellent controls (Aces in H and D, AKQ in S). In the recommended sequence, North knows the partnership has at least 27 points (18 + 9 minimum). While the 4-4 spade fit is present, the overall balance of the hands suggests a No Trump game try (2NT). Although the double dummy analysis shows 2NT fails by one trick, bidding 2NT is the correct standard procedure to explore game based on high probability, given the combined strength.",
+      "analysis": "With 2/1 Game Forcing active, North must use a forcing sequence to explore game, likely 3NT, which makes 8 tricks. North's 18 HCP hand is balanced enough to consider 2NT as a rebid, asking partner for stoppers or preference.",
       "sequence": [
         {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "1C",
+          "explanation": "North opens 1C (18 HCP)."
+        },
+        {
           "bid": "1D",
-          "explanation": "East opens."
+          "explanation": "East overcalls 1D."
         },
         {
-          "bid": "P",
-          "explanation": "South passes."
+          "bid": "1H",
+          "explanation": "South competes with 1H."
         },
         {
-          "bid": "P",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "1S",
-          "explanation": "North responds strongly."
-        },
-        {
-          "bid": "2D",
-          "explanation": "East shows minimum opening strength and 6+ diamonds."
-        },
-        {
-          "bid": "P",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "P",
-          "explanation": "West passes."
+          "bid": "2C",
+          "explanation": "West makes a constructive raise, showing 7-10 HCP and 4+ Clubs."
         },
         {
           "bid": "2NT",
-          "explanation": "North bids 2NT, forcing partner to decide on game (3NT) or settling for 3D/3S/Pass."
+          "explanation": "North shows 18-19 balanced HCP, forcing to game, asking partner for a Diamond stopper or preference."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "3C",
+          "explanation": "West shows preference for Clubs and denies a Diamond stopper (T62)."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "North pushes for game. North has KJ3 in Diamonds and enough overall strength (24+ combined HCP) to risk 3NT, which makes 8 tricks."
+        },
+        {
+          "bid": "p",
+          "explanation": "All pass, playing 3NT."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "East",
-        "topic": "Opening Light Hands: Using Total Points (TP)",
-        "category": "Valuation/Opening"
-      },
-      {
         "player": "North",
-        "topic": "Responding with 18+ HCP: Forcing to Game",
-        "category": "Forcing Bids/Responses"
+        "topic": "Showing Strength After Interference",
+        "category": "Bidding Technique"
       },
       {
         "player": "South",
-        "topic": "Competitive Bidding: When to bid a 5-card major with minimal points",
+        "topic": "Competitive Bidding on Weak Hands (The Rule of Two and Three)",
         "category": "Competitive Bidding"
+      },
+      {
+        "player": "West",
+        "topic": "Responding to Opener After Opponent's Overcall",
+        "category": "Responding"
       }
     ]
   },

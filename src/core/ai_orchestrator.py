@@ -11,7 +11,7 @@ from google.genai import types
 # --- CONFIGURATION SECTION ---
 AI_CONFIG = {
     "model_name": "gemini-flash-latest",
-    "temperature": 0.4,  # RESTORED: Allows for judgment, shape valuation, and nuance.
+    "temperature": 0.2,  # Low enough to stop hallucinations, high enough for sentences
     "response_mime_type": "application/json",
     "env_file_location": ".env"
 }
@@ -40,36 +40,36 @@ class AIOrchestrator:
             "double_dummy_truth": dds_data
         }
 
-        # --- BALANCED COACH PROMPT ---
+        # --- HYBRID PROTOCOL PROMPT ---
         prompt = f"""
-        You are an expert Bridge Teacher (Audrey Grant/SAYC style).
+        You are an expert Bridge Teacher.
         
         CONTEXT DATA:
         {json.dumps(context_payload, indent=2)}
 
-        GUIDELINES:
-        1. **Valuation:** Use Total Points (HCP + Length + Shortness). A shapely 11-count is often a better opener than a flat 12-count.
-        2. **SAYC Standards:** 5-card majors for opening. 2/1 Game Forcing is active.
-        3. **Double Dummy Reality:** Check 'double_dummy_truth'. 
-           - If a contract goes down in theory but is a good percentage bid, PRAISE the decision. 
-           - If a contract makes but is risky, note the luck.
-           - Do not be result-oriented; be probability-oriented.
+        CRITICAL RULES (DO NOT BREAK):
+        1. **OPENING BIDS:** - Standard 1-level Opening = 12+ HCP.
+           - DO NOT recommend opening 9-11 HCP hands at the 1-level.
+        2. **DDS REALITY CHECK:** - Look at 'double_dummy_truth'. 
+           - If DDS says the hand makes 7 tricks in Spades, DO NOT recommend bidding 4S or 5S.
+           - Recommend contracts that actually MAKE.
+        3. **BIDDING LEGALITY:** - You cannot bid the same suit at the same level as the opponent (e.g., No 2H over 2H).
+        4. **FORMAT:** List bids chronologically. INCLUDE ALL PASSES.
 
-        CRITICAL OUTPUT FORMAT (For UI Compatibility):
-        - You MUST list the recommended auction bids in STRICT CHRONOLOGICAL ORDER.
-        - Start with the Dealer's first call.
-        - **INCLUDE ALL PASSES:** (e.g., "Pass", "1H", "Pass", "2H", "Pass", "Pass", "Pass").
+        SECTION GUIDELINES:
+        - **BASIC SECTION:** STRICT Standard American. NO 2/1 Game Forcing. Keep it simple.
+        - **ADVANCED SECTION:** 2/1 Game Forcing is ACTIVE here. Discuss modern conventions.
 
         TASK:
         Output strict JSON with these specific sections:
 
-        1. VERDICT: Short phrase (e.g., "OPTIMAL CONTRACT", "MISSED GAME", "GOOD AGGRESSIVE BID").
-        2. ACTUAL_CRITIQUE: 2-3 bullet points evaluating the actual players' decisions.
+        1. VERDICT: "OPTIMAL", "OVERBID", "UNDERBID", "GOOD SAVE".
+        2. ACTUAL_CRITIQUE: 2-3 bullet points.
         3. BASIC_SECTION:
-           - "analysis": Explain the hand's key features.
+           - "analysis": Standard evaluation.
            - "recommended_auction": LIST of objects {{ "bid": "...", "explanation": "..." }}
         4. ADVANCED_SECTION:
-           - "analysis": Discuss entries, defense, or advanced valuation.
+           - "analysis": 2/1 GF, advanced shape, entries.
            - "sequence": LIST of objects {{ "bid": "...", "explanation": "..." }}
         5. COACHES_CORNER: List of objects {{ "player": "...", "topic": "...", "category": "..." }}
 
@@ -109,16 +109,5 @@ class AIOrchestrator:
             return {"error": str(e)}
 
     def _red_team_scan(self, analysis: Dict, facts: Dict) -> Dict:
-        # Standard Red Team checks maintained
-        contract = facts.get('contract', '')
-        if contract and contract != 'Pass':
-            match = re.search(r'(\d)(NT|[SHDC])', contract)
-            if match:
-                level = int(match.group(1))
-                suit = match.group(2)
-                is_game = (suit in ['H','S'] and level>=4) or (suit in ['C','D'] and level>=5) or (suit=='NT' and level>=3)
-                
-                verdict = analysis.get('verdict', '').upper()
-                if not is_game and "GAME" in verdict and "MISSED" not in verdict:
-                    analysis['verdict'] = "PART-SCORE MADE"
+        # Standard Red Team checks
         return analysis

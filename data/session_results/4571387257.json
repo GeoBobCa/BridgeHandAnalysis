@@ -187,97 +187,117 @@
     }
   },
   "ai_analysis": {
-    "verdict": "POOR CONTRACT, OPTIMAL AUCTION SEQUENCE",
+    "verdict": "OVERBID",
     "actual_critique": [
-      "The auction followed standard SAYC principles perfectly. North opened 1D, South responded 1H, and North showed their 4-card Spade suit with 1S.",
-      "N/S correctly stopped at the 1-level, recognizing the minimal combined strength (21 Total Points) and the lack of slam or game potential.",
-      "Despite the textbook bidding, the 1S contract is disastrous, going down 3 tricks (making only 4 tricks according to Double Dummy Truth). This highlights the danger of playing a 4-4 fit when the opponents hold all the top honors (AQT of Spades)."
+      "The final contract of 1S is severely misplaced, making only 4 tricks (down 3), according to Double Dummy analysis. The best available contract for N/S is 1H, which takes 7 tricks (down 0).",
+      "North's 1S rebid correctly showed a 4-card Spade suit but failed to find the superior 4-4 Heart fit available with South.",
+      "South, holding 9 HCP, correctly responded 1H but lacked the strength to bid again over North's minimum 1S rebid, leading to the poor final contract."
     ],
     "basic_section": {
-      "analysis": "South is too light to open (9 TP). North has a minimum opening hand (12 HCP, 4=2=4=3) and opens 1D. South responds 1H, showing 6+ points and a 4-card major. North then shows their 4-card Spade suit with 1S, completing the description of their 4-4 shape. South, having only 9 points and a minimal 4-card fit, correctly passes.",
+      "analysis": "South (9 HCP) and West (9 HCP) correctly passed initially. North opened 1D (12 HCP, 4-card suit). South responded 1H (6+ HCP, 4+ Hearts). North, holding 4 Spades and 12 HCP, must rebid. 1S is the cheapest new suit and shows 4 Spades, promising 12-14 HCP. South, with minimum responding values (9 HCP), should pass 1S, as bidding 2H would be invitational (10-11 HCP) and unwarranted.",
       "recommended_auction": [
         {
-          "bid": "Pass",
-          "explanation": "South (9 TP) is too light to open."
+          "bid": "p",
+          "explanation": "South has only 9 HCP, too light for a 1-level opening."
         },
         {
-          "bid": "Pass",
-          "explanation": "West (9 HCP, 11 TP) is conservative, passing despite a 6-card club suit."
+          "bid": "p",
+          "explanation": "West has only 9 HCP."
         },
         {
           "bid": "1D",
-          "explanation": "North (12 HCP, 4=2=4=3) opens 1D, standard for a minimum balanced hand with 4 cards in both minors."
+          "explanation": "North opens 1D, showing 12+ HCP and a 4+ card Diamond suit."
         },
         {
-          "bid": "Pass",
-          "explanation": "East (10 HCP) is too light to overcall."
+          "bid": "p",
+          "explanation": "East passes with 10 HCP and no clear overcall."
         },
         {
           "bid": "1H",
-          "explanation": "South (9 TP) responds 1H, showing 6+ points and a 4-card Heart suit."
+          "explanation": "South responds 1H, showing 6+ HCP and 4+ Hearts."
         },
         {
-          "bid": "Pass",
+          "bid": "p",
           "explanation": "West passes."
         },
         {
           "bid": "1S",
-          "explanation": "North shows their 4-card Spade suit, describing the 4-4 shape (4 Diamonds, 4 Spades) with minimum opening values."
+          "explanation": "North rebids 1S, showing 4 Spades and confirming 12-14 HCP. This is the standard cheapest rebid."
         },
         {
-          "bid": "Pass",
+          "bid": "p",
           "explanation": "East passes."
         },
         {
-          "bid": "Pass",
-          "explanation": "South has 9 points and a 4-card fit. Since the partnership is minimal (21 TP), passing 1S is correct."
+          "bid": "p",
+          "explanation": "South has minimum values (9 HCP) and should pass North's minimum rebid. Bidding 2H would be invitational."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "North closes the auction."
+          "bid": "p",
+          "explanation": "West passes, ending the auction."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The primary issue is the quality of the fit. While N/S found a 4-4 Spade fit, they are missing AQT, making the suit unrunnable and highly vulnerable to immediate defense. North, after 1D - 1H, had an alternative rebid of 1NT, showing a balanced 12-14 HCP hand. Given the poor quality of the spade suit (J852), 1NT might have been a safer choice, although bidding the 4-card major (1S) is technically more descriptive of the shape. Both 1S (down 3) and 1NT (down 2) are poor contracts, confirming that the hand distribution favors the defense.",
+      "analysis": "Since South's 1H response is not a 2/1 Game Force bid, the initial sequence remains identical to the Basic approach. North's 1S rebid is still standard. In modern systems, South might consider bidding 2H over 1S to show preference and invite game, especially with a 4-4 major fit, but 9 HCP is still slightly below the typical 10-11 HCP requirement for an invitational bid. The partnership failed to prioritize the 4-4 Heart fit (which performs better) over the 4-4 Spade fit.",
       "sequence": [
         {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
           "bid": "1D",
-          "explanation": "North opens."
+          "explanation": "North opens 1D."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
         },
         {
           "bid": "1H",
-          "explanation": "South responds."
+          "explanation": "South responds 1H."
         },
         {
-          "bid": "1NT",
-          "explanation": "Alternative rebid for North, showing 12-14 balanced values. This avoids playing in a weak 4-4 major fit."
+          "bid": "p",
+          "explanation": "West passes."
         },
         {
-          "bid": "Pass",
-          "explanation": "South passes 1NT, lacking sufficient strength to continue."
+          "bid": "1S",
+          "explanation": "North rebids 1S, showing 4 Spades and minimum opening strength."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes. While 2H would show a preference for the Heart fit, 9 HCP is insufficient for an invitational bid after North's minimum rebid."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
         }
       ]
     },
     "coaches_corner": [
       {
+        "player": "North/South Partnership",
+        "topic": "Prioritizing 4-4 Major Fits",
+        "category": "Strategy"
+      },
+      {
         "player": "North",
-        "topic": "Rebid Choice: 1S vs 1NT",
-        "category": "Bidding Theory"
+        "topic": "Rebid Choices with Two 4-Card Suits (1D - 1H - ?)",
+        "category": "Bidding"
       },
       {
-        "player": "South/North",
-        "topic": "Evaluating the Quality of a 4-4 Fit",
-        "category": "Declarer Play/Valuation"
-      },
-      {
-        "player": "West",
-        "topic": "Opening Light Distributional Hands (1C)",
-        "category": "Opening Bids"
+        "player": "South",
+        "topic": "Passing vs. Inviting with 9 HCP",
+        "category": "Bidding"
       }
     ]
   },
