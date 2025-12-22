@@ -2,34 +2,61 @@ import os
 import json
 import re
 import urllib.parse
+from pathlib import Path  # <--- NEW: For bulletproof paths
 from jinja2 import Environment, FileSystemLoader
 
 # --- CONFIGURATION SECTION ---
+# 1. Find the Root Directory (BridgeMaster/)
+#    Current file is: BridgeMaster/src/core/web_generator.py
+#    Parent 1: src/core/
+#    Parent 2: src/
+#    Parent 3: BridgeMaster/
+ROOT_DIR = Path(__file__).resolve().parent.parent.parent
+
+# 2. Define Paths relative to Root
 WEB_CONFIG = {
-    "input_folder": "data/session_results",
-    "output_folder": "docs",
-    "template_dir": "src/templates",
+    "input_folder": ROOT_DIR / "data/session_results",
+    "output_folder": ROOT_DIR / "docs",
+    "template_dir": ROOT_DIR / "src/templates",
     "handviewer_base_url": "http://www.bridgebase.com/tools/handviewer.html?lin="
 }
 
 class WebGenerator:
     def __init__(self):
-        os.makedirs(WEB_CONFIG["output_folder"], exist_ok=True)
-        os.makedirs(WEB_CONFIG["template_dir"], exist_ok=True)
-        self.env = Environment(loader=FileSystemLoader(WEB_CONFIG["template_dir"]))
+        # Convert Paths to strings for OS compatibility
+        self.out_dir = str(WEB_CONFIG["output_folder"])
+        self.tpl_dir = str(WEB_CONFIG["template_dir"])
+        self.in_dir = str(WEB_CONFIG["input_folder"])
+
+        # Create directories if missing
+        os.makedirs(self.out_dir, exist_ok=True)
+        os.makedirs(self.tpl_dir, exist_ok=True)
+        
+        # Initialize Jinja2
+        self.env = Environment(loader=FileSystemLoader(self.tpl_dir))
+        
+        # Force Create Templates
         self._create_templates()
 
     def generate_all(self):
-        files = [f for f in os.listdir(WEB_CONFIG["input_folder"]) if f.endswith(".json")]
+        # Debug Print: Tell the user exactly where we are looking
+        print(f"📂 Scanning for JSON in: {self.in_dir}")
+        print(f"📝 Writing Templates to: {self.tpl_dir}")
+
+        files = [f for f in os.listdir(self.in_dir) if f.endswith(".json")]
+        if not files:
+            print("⚠️  No JSON files found! Did you run analyze_session.py?")
+            return
+
         hands_data = []
         
         for f in files:
             try:
-                with open(os.path.join(WEB_CONFIG["input_folder"], f), 'r', encoding='utf-8') as json_file:
+                with open(os.path.join(self.in_dir, f), 'r', encoding='utf-8') as json_file:
                     data = json.load(json_file)
                     if 'ai_analysis' not in data: data['ai_analysis'] = {}
                     
-                    # Normalize Declarer for UI (e.g., 'S' -> 'South')
+                    # Normalize Declarer
                     facts = data.get('facts', {})
                     dec_map = {'N': 'North', 'S': 'South', 'E': 'East', 'W': 'West'}
                     raw_dec = facts.get('declarer', '')
@@ -56,15 +83,17 @@ class WebGenerator:
             hand['handviewer_url'] = WEB_CONFIG["handviewer_base_url"] + urllib.parse.quote(facts.get('raw_lin', ''))
             self._render("hand_detail.html", safe_filename, hand=hand, title=page_title)
             
-        print(f"Website generated in: {WEB_CONFIG['output_folder']}/")
+        print(f"✅ Website generated in: {self.out_dir}")
 
     def _render(self, tpl, out, **kwargs):
         template = self.env.get_template(tpl)
         content = template.render(**kwargs)
-        with open(os.path.join(WEB_CONFIG["output_folder"], out), 'w', encoding='utf-8') as f:
+        with open(os.path.join(self.out_dir, out), 'w', encoding='utf-8') as f:
             f.write(content)
 
     def _create_templates(self):
+        print("🔨 Rebuilding HTML Templates...")
+        
         # 1. DASHBOARD
         index_html = """
         <!DOCTYPE html>
@@ -85,7 +114,7 @@ class WebGenerator:
         </div></div></body></html>
         """
         
-        # 2. DETAIL PAGE (With Bidding Table & Contract Header)
+        # 2. DETAIL PAGE (With Bidding Table & Compass Logic)
         detail_html = """
         <!DOCTYPE html>
         <html>
@@ -286,10 +315,12 @@ class WebGenerator:
         </div></body></html>
         """
 
-        with open(os.path.join(WEB_CONFIG["output_folder"], "index.html"), 'w', encoding='utf-8') as f:
+        # Write the files
+        with open(os.path.join(self.tpl_dir, "index.html"), 'w', encoding='utf-8') as f:
             f.write(index_html)
-        with open(os.path.join(WEB_CONFIG["output_folder"], "hand_detail.html"), 'w', encoding='utf-8') as f:
+        with open(os.path.join(self.tpl_dir, "hand_detail.html"), 'w', encoding='utf-8') as f:
             f.write(detail_html)
 
 if __name__ == "__main__":
     WebGenerator().generate_all()
+    

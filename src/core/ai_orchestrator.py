@@ -11,7 +11,7 @@ from google.genai import types
 # --- CONFIGURATION SECTION ---
 AI_CONFIG = {
     "model_name": "gemini-flash-latest",
-    "temperature": 0.15,  # Low = Strict Logic, but 0.15 allows for some evaluation nuance
+    "temperature": 0.4,  # RESTORED: Allows for judgment, shape valuation, and nuance.
     "response_mime_type": "application/json",
     "env_file_location": ".env"
 }
@@ -40,38 +40,37 @@ class AIOrchestrator:
             "double_dummy_truth": dds_data
         }
 
-        # --- LATEST PROMPT: STRICT SAYC & BALANCED GRADING ---
+        # --- BALANCED COACH PROMPT ---
         prompt = f"""
-        You are an expert Bridge Teacher playing Standard American Yellow Card (SAYC).
+        You are an expert Bridge Teacher (Audrey Grant/SAYC style).
         
         CONTEXT DATA:
         {json.dumps(context_payload, indent=2)}
 
-        STRICT BIDDING RULES (SAYC):
-        1. **OPENING BIDS:** - 1-level suit opening requires 12+ HCP (or very strong 11). 
-           - **NEVER** recommend opening 1-level with 9 HCP.
-           - Preempts (2-level, 3-level) require long suits (6+ cards) and weak points (6-10).
-        2. **MAJORS:** Opener needs 5+ cards for 1H/1S. Responder needs 4+.
-        3. **GAME FORCING:** 2/1 is ON (Game Forcing). 1NT Opening is 15-17.
+        GUIDELINES:
+        1. **Valuation:** Use Total Points (HCP + Length + Shortness). A shapely 11-count is often a better opener than a flat 12-count.
+        2. **SAYC Standards:** 5-card majors for opening. 2/1 Game Forcing is active.
+        3. **Double Dummy Reality:** Check 'double_dummy_truth'. 
+           - If a contract goes down in theory but is a good percentage bid, PRAISE the decision. 
+           - If a contract makes but is risky, note the luck.
+           - Do not be result-oriented; be probability-oriented.
 
-        LOGIC & EVALUATION GUIDELINES:
-        1. **USE THE TRUTH:** Look at 'double_dummy_truth'. If it says 4S makes 10 tricks, DO NOT suggest stopping in 2NT unless the bidding makes reaching 4S impossible.
-           - If Game makes but is less than 50% probability, note it as "Lucky."
-           - If Game makes and is >50%, criticize stopping low.
-        2. **BE FAIR:** If the actual auction reached the correct contract, grade it "OPTIMAL" or "WELL BID." Do not look for minor flaws just to be critical.
-        3. **AUCTION FORMAT:** List bids chronologically, starting with Dealer. INCLUDE ALL PASSES.
+        CRITICAL OUTPUT FORMAT (For UI Compatibility):
+        - You MUST list the recommended auction bids in STRICT CHRONOLOGICAL ORDER.
+        - Start with the Dealer's first call.
+        - **INCLUDE ALL PASSES:** (e.g., "Pass", "1H", "Pass", "2H", "Pass", "Pass", "Pass").
 
         TASK:
         Output strict JSON with these specific sections:
 
-        1. VERDICT: "OPTIMAL CONTRACT", "MISSED GAME", "OVERBID", or "GOOD PART-SCORE".
-        2. ACTUAL_CRITIQUE: 2-3 balanced bullet points. Praise good judgment; correct errors.
+        1. VERDICT: Short phrase (e.g., "OPTIMAL CONTRACT", "MISSED GAME", "GOOD AGGRESSIVE BID").
+        2. ACTUAL_CRITIQUE: 2-3 bullet points evaluating the actual players' decisions.
         3. BASIC_SECTION:
-           - "analysis": Explain the hand for a beginner.
+           - "analysis": Explain the hand's key features.
            - "recommended_auction": LIST of objects {{ "bid": "...", "explanation": "..." }}
         4. ADVANCED_SECTION:
-           - "analysis": Advanced concepts (evaluation, entries, defense).
-           - "sequence": LIST of objects {{ "bid": "...", "explanation": "..." }} (Include ALL passes!)
+           - "analysis": Discuss entries, defense, or advanced valuation.
+           - "sequence": LIST of objects {{ "bid": "...", "explanation": "..." }}
         5. COACHES_CORNER: List of objects {{ "player": "...", "topic": "...", "category": "..." }}
 
         OUTPUT JSON FORMAT:
@@ -110,6 +109,7 @@ class AIOrchestrator:
             return {"error": str(e)}
 
     def _red_team_scan(self, analysis: Dict, facts: Dict) -> Dict:
+        # Standard Red Team checks maintained
         contract = facts.get('contract', '')
         if contract and contract != 'Pass':
             match = re.search(r'(\d)(NT|[SHDC])', contract)
@@ -121,5 +121,4 @@ class AIOrchestrator:
                 verdict = analysis.get('verdict', '').upper()
                 if not is_game and "GAME" in verdict and "MISSED" not in verdict:
                     analysis['verdict'] = "PART-SCORE MADE"
-                    analysis['actual_critique'].insert(0, f"Red Team Correction: {contract} is a part-score, not game.")
         return analysis

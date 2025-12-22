@@ -185,101 +185,101 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL CONTRACT",
+    "verdict": "STANDARD GAME BID, UNLUCKY RESULT",
     "actual_critique": [
-      "North correctly opened 1S with a powerful 19 HCP hand and a 5-card major, setting the stage for game.",
-      "South's 3S jump raise was constructive and highly functional. Although slightly light on HCP (9), the 5-card support and excellent controls (QJT in spades, KQT in hearts) justified inviting game.",
-      "The partnership correctly identified the 28 combined HCP and solid 5-5 fit, leading them directly to the optimal contract of 4S, which makes exactly 10 tricks."
+      "North's 1S opening (19 HCP, 5-card major) was textbook and highly appropriate.",
+      "South's 3S response was a perfect Limit Raise (10 Total Points, 5-card support, singleton), clearly defining the hand's strength and fit.",
+      "North correctly accepted the game invitation with 4S, as the partnership easily reached the 28+ HCP threshold (19 + 9 = 28 HCP, 30 TP). The contract failed due to poor minor suit controls, not poor bidding judgment."
     ],
     "basic_section": {
-      "analysis": "North holds a very strong opening hand (19 HCP) with a 5-card spade suit. South has excellent support (5 spades) and 9 HCP. With a combined 28 HCP and a solid 5-5 major suit fit, reaching game (4S) is mandatory. The auction successfully reached the correct destination.",
+      "analysis": "North is the dealer with a powerful 19 HCP hand featuring a 5-card Spade suit. South provides excellent support (5-card fit, 10 Total Points, and a singleton Diamond). The partnership has 28 HCP and 30 Total Points, making game mandatory. The auction sequence followed standard SAYC principles to reach the expected 4S contract.",
       "recommended_auction": [
         {
           "bid": "1S",
-          "explanation": "Standard opening bid, showing 5+ spades and 12+ HCP (North has 19)."
+          "explanation": "Standard opening bid for North: 19 HCP, 5-card major."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "Pass",
+          "explanation": "East is too weak (5 HCP) to intervene."
         },
         {
           "bid": "3S",
-          "explanation": "A constructive jump raise showing 4+ spade support and typically 10-12 points, inviting game. South's 9 HCP is compensated by the excellent fit and controls."
+          "explanation": "South uses the Limit Raise (10-12 TP, 4+ card support). South has 10 TP and a 5-card fit, making this an ideal descriptive bid."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
           "bid": "4S",
-          "explanation": "North accepts the game invitation. With 19 HCP and knowing partner has at least 9-10 functional points, game is assured."
+          "explanation": "North has 19 HCP and knows South has at least 10 TP, confirming game is highly probable (29+ TP total). North accepts the invitation."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "Pass",
+          "explanation": "Auction ends."
         },
         {
-          "bid": "p",
-          "explanation": "South passes, satisfied with game."
+          "bid": "Pass",
+          "explanation": "Auction ends."
         },
         {
-          "bid": "p",
-          "explanation": "West passes, ending the auction."
+          "bid": "Pass",
+          "explanation": "Auction ends."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "North's hand is highly distributional (5=4=3=1) and features four Aces, providing excellent control. South's 3S bid, while technically slightly under the standard 10-12 HCP range for a limit raise, is justified by the quality of the support (QJT65) and the secondary 4-card suit (KQT4). This hand is highly functional. North correctly recognized that with 19 HCP, any game invitation must be accepted, especially given the known 5-5 fit. The partnership avoided unnecessary slam exploration, stopping perfectly in the making game contract.",
+      "analysis": "While the point count strongly dictates a game contract, the distribution creates significant defensive challenges. North's singleton Club (A) and South's singleton Diamond (5) leave the partnership vulnerable in the minor suits. West holds a dangerous 5-card Diamond suit headed by the King, Jack, and Ten. The defense can quickly establish three Diamond tricks and potentially two or three Club tricks after the Ace of Clubs is knocked out, leading to the contract's downfall. Given the lack of controls in the minors, exploring slam was correctly avoided, even though the total points might suggest it.",
       "sequence": [
         {
           "bid": "1S",
-          "explanation": "North opens 1S (19 HCP, 5 cards)."
+          "explanation": "Standard opening."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "East passes."
         },
         {
           "bid": "3S",
-          "explanation": "South shows 4+ support and game-invitational values (9+ functional points)."
+          "explanation": "Limit Raise, showing 10 TP and excellent support."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
           "bid": "4S",
-          "explanation": "North accepts the invitation, knowing the combined strength is sufficient for game."
+          "explanation": "North, with 19 HCP, guarantees game. This is the highest percentage bid based on standard valuation."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "Pass",
+          "explanation": "End of auction."
         },
         {
-          "bid": "p",
-          "explanation": "South passes."
+          "bid": "Pass",
+          "explanation": "End of auction."
         },
         {
-          "bid": "p",
-          "explanation": "West passes. Contract 4S."
+          "bid": "Pass",
+          "explanation": "End of auction."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "Functional Points and Jump Raises",
-        "category": "Bidding Judgment"
-      },
-      {
-        "player": "North",
-        "topic": "Accepting Game Invitations with Maximum Openers",
+        "topic": "Limit Raise vs. Simple Raise",
         "category": "Responding"
       },
       {
-        "player": "General",
-        "topic": "Identifying Game Potential (28+ HCP)",
-        "category": "Partnership Strategy"
+        "player": "North",
+        "topic": "Accepting a Game Invitation with Maximum Values",
+        "category": "Opener Rebids"
+      },
+      {
+        "player": "South",
+        "topic": "Total Points Valuation (9 HCP + 1 for singleton = 10 TP)",
+        "category": "Valuation"
       }
     ]
   },

@@ -186,109 +186,109 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL CONTRACT",
+    "verdict": "OPTIMAL CONTRACT ACHIEVED",
     "actual_critique": [
-      "East showed excellent judgment bidding 3NT directly over 2D, recognizing the partnership had game values (18 + 7-10 HCP) and sufficient stoppers against the opponent's 1S overcall.",
-      "West's 2D raise was constructive and accurate, confirming minimum support for Diamonds and showing enough strength (9 HCP) to encourage game.",
-      "The partnership correctly identified that 3NT was the best scoring game option, making 11 tricks, which is confirmed by the double dummy analysis."
+      "East showed excellent judgment by opening 1D (18 HCP) and then jumping directly to 3NT. With stoppers in all suits and knowing the partnership held at least 24 points, 3NT was the highest percentage game.",
+      "South's 1S overcall was well-timed and descriptive, utilizing the 5-card suit and competitive shape. This put pressure on the opponents but did not deter East/West from finding their optimal contract.",
+      "West's 2D rebid was a perfect constructive raise (6-10 points, 3+ card support), providing East with the necessary information to confidently bid game in Notrump."
     ],
     "basic_section": {
-      "analysis": "East holds a strong opening hand (18 HCP) with a 5-card Diamond suit. South's 1S overcall complicates the auction, but West's 2D raise confirms 7-10 HCP and 3+ card Diamond support. With a combined minimum of 25 HCP, game is mandatory. Since the partnership has stoppers in all suits (especially Spades, the opponent's suit), 3NT is the preferred contract over 5D, especially since the Diamond fit is only 8 cards. The auction successfully reached the optimal contract.",
+      "analysis": "East holds a powerful 18 HCP hand with a 5-card Diamond suit, making 1D the standard opening. South has a shapely hand (5=3=0=5) and uses the 1S overcall to compete. West has minimum values (9 HCP) but provides Diamond support. The combined strength of East/West (27 HCP) dictates a game contract. East has stoppers in all suits (A in Clubs, KJT in Hearts, QJ in Spades) and a solid Diamond suit, making 3NT the clear choice over a suit contract.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "North has only 5 HCP and passes."
+          "bid": "Pass",
+          "explanation": "North is too weak to open (5 HCP)."
         },
         {
           "bid": "1D",
-          "explanation": "Standard opening bid (18 HCP, 5-card suit)."
+          "explanation": "Standard opening bid for 18 HCP and a 5-card suit."
         },
         {
           "bid": "1S",
-          "explanation": "Competitive overcall showing 5+ Spades and 8+ points."
+          "explanation": "Standard competitive overcall showing a 5-card suit and 8+ TP."
         },
         {
           "bid": "2D",
-          "explanation": "Constructive raise, showing 7-10 HCP and 3+ card Diamond support. Confirms game interest."
+          "explanation": "Constructive raise, showing 6-10 points and 3+ card Diamond support."
         },
         {
-          "bid": "p",
-          "explanation": "North passes."
+          "bid": "Pass",
+          "explanation": "North still lacks the values to intervene."
         },
         {
           "bid": "3N",
-          "explanation": "East knows the partnership has 25+ HCP and sufficient stoppers (A54 in West, QJ2 in East). Bidding 3NT directly is the best way to reach game."
+          "explanation": "East has 18 HCP, knows partner has 6-10 points (24+ total), and has stoppers in all suits, including the overcalled suit (Spades). Jumps directly to the optimal game contract."
         },
         {
-          "bid": "p",
-          "explanation": "South passes."
+          "bid": "Pass",
+          "explanation": "South has done their duty."
         },
         {
-          "bid": "p",
-          "explanation": "West accepts the game bid."
+          "bid": "Pass",
+          "explanation": "West is happy to stop at game."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "End of auction."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "East's jump to 3NT is a highly advanced and effective bid. After a competitive overcall (1S) and a constructive raise (2D), East must evaluate the partnership's defensive structure against Spades and the overall point count. With 18 HCP and knowing West has 7-10, game is certain. Bypassing 3D (which might be interpreted as invitational or forcing to game depending on style, but often implies a desire to play in the suit) for 3NT shows confidence in stoppers and a preference for the higher-scoring NT game, especially given the 4-4 major suit distribution in the E/W hands. The DD truth confirms 3NT makes 11 tricks, validating this aggressive game decision.",
+      "analysis": "East's decision to bypass 2NT or 3D and jump straight to 3NT is based on an advanced assessment of stoppers and combined strength. East has the Ace of Clubs (singleton, but still a stopper), solid Heart honors, and the QJ of Spades, which effectively stops the 1S overcall. Since the Diamond suit is robust (AKT53), there is no need to play in Diamonds, and Notrump offers more potential overtricks. The double dummy truth confirms 3NT makes easily (+2), validating East's aggressive and accurate bidding.",
       "sequence": [
         {
-          "bid": "p",
-          "explanation": "North passes (5 HCP)."
+          "bid": "Pass",
+          "explanation": "N passes."
         },
         {
           "bid": "1D",
-          "explanation": "East opens 1D (18 HCP, 5-card suit)."
+          "explanation": "E opens."
         },
         {
           "bid": "1S",
-          "explanation": "South overcalls 1S, showing a competitive hand with a 5-card suit."
+          "explanation": "S overcalls."
         },
         {
           "bid": "2D",
-          "explanation": "West makes a constructive raise, showing 7-10 HCP and 3+ support, confirming game interest."
+          "explanation": "W shows constructive support."
         },
         {
-          "bid": "p",
-          "explanation": "North passes."
+          "bid": "Pass",
+          "explanation": "N passes."
         },
         {
           "bid": "3N",
-          "explanation": "East jumps to game. With 18 HCP and partner promising 7+, 3NT is the best spot, relying on stoppers in all suits."
+          "explanation": "East recognizes the partnership has 24+ points and all stoppers are present, justifying the immediate game jump."
         },
         {
-          "bid": "p",
-          "explanation": "South passes."
+          "bid": "Pass",
+          "explanation": "S passes."
         },
         {
-          "bid": "p",
-          "explanation": "West passes."
+          "bid": "Pass",
+          "explanation": "W passes."
         },
         {
-          "bid": "p",
-          "explanation": "North passes. Contract 3NT by East."
+          "bid": "Pass",
+          "explanation": "N passes."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "East",
-        "topic": "Direct Game Bids in NT after Competition",
-        "category": "Bidding Judgment"
-      },
-      {
-        "player": "West",
-        "topic": "Constructive Raises after Overcalls",
-        "category": "Responding"
+        "topic": "Direct Game Bids in Notrump",
+        "category": "Bidding Strategy"
       },
       {
         "player": "South",
-        "topic": "Competitive Overcalls and Hand Evaluation",
-        "category": "Competition"
+        "topic": "Competitive Overcalls with Shape",
+        "category": "Defensive Bidding"
+      },
+      {
+        "player": "West",
+        "topic": "Constructive Raises (6-10 points)",
+        "category": "Responding"
       }
     ]
   },

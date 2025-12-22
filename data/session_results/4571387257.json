@@ -187,128 +187,97 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED PART-SCORE",
+    "verdict": "POOR CONTRACT, OPTIMAL AUCTION SEQUENCE",
     "actual_critique": [
-      "The partnership failed to find their best fit (Hearts), resulting in a contract (1S) that fails by three tricks, while 1H makes seven tricks according to double dummy analysis.",
-      "North correctly opened 1D and used the 1S rebid to show a minimum hand (12-14 HCP) with four cards in both Diamonds and Spades, describing their shape accurately.",
-      "South's pass of 1S was poor judgment. Holding a 4-4 fit in Hearts (bid first) and a 4-4 fit in Spades, South should have shown preference for Hearts by bidding 2H, suggesting the better part-score location."
+      "The auction followed standard SAYC principles perfectly. North opened 1D, South responded 1H, and North showed their 4-card Spade suit with 1S.",
+      "N/S correctly stopped at the 1-level, recognizing the minimal combined strength (21 Total Points) and the lack of slam or game potential.",
+      "Despite the textbook bidding, the 1S contract is disastrous, going down 3 tricks (making only 4 tricks according to Double Dummy Truth). This highlights the danger of playing a 4-4 fit when the opponents hold all the top honors (AQT of Spades)."
     ],
     "basic_section": {
-      "analysis": "South is the dealer but is too weak to open (9 HCP). North opens 1D (12 HCP). South responds 1H, showing 6+ points and 4+ Hearts. North then bids 1S, showing four Spades and confirming a minimum hand (12-14 HCP). Since the partnership has a 4-4 fit in Hearts, South should have continued bidding to suggest Hearts as the final contract, rather than passing 1S, which proved to be a poor fit.",
+      "analysis": "South is too light to open (9 TP). North has a minimum opening hand (12 HCP, 4=2=4=3) and opens 1D. South responds 1H, showing 6+ points and a 4-card major. North then shows their 4-card Spade suit with 1S, completing the description of their 4-4 shape. South, having only 9 points and a minimal 4-card fit, correctly passes.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "South (9 HCP) is too weak to open."
+          "bid": "Pass",
+          "explanation": "South (9 TP) is too light to open."
         },
         {
-          "bid": "p",
-          "explanation": "West (9 HCP) passes."
+          "bid": "Pass",
+          "explanation": "West (9 HCP, 11 TP) is conservative, passing despite a 6-card club suit."
         },
         {
           "bid": "1D",
-          "explanation": "North opens 1D (12 HCP, 4-card suit)."
+          "explanation": "North (12 HCP, 4=2=4=3) opens 1D, standard for a minimum balanced hand with 4 cards in both minors."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "Pass",
+          "explanation": "East (10 HCP) is too light to overcall."
         },
         {
           "bid": "1H",
-          "explanation": "South responds 1H, showing 6+ HCP and 4+ Hearts."
+          "explanation": "South (9 TP) responds 1H, showing 6+ points and a 4-card Heart suit."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
           "bid": "1S",
-          "explanation": "North shows their 4-card Spade suit, confirming a minimum hand (12-14 HCP) and 4+ Diamonds."
+          "explanation": "North shows their 4-card Spade suit, describing the 4-4 shape (4 Diamonds, 4 Spades) with minimum opening values."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "East passes."
         },
         {
-          "bid": "2H",
-          "explanation": "South shows preference for the 4-4 Heart fit, suggesting a constructive part-score (8-10 points) and inviting partner to pass."
+          "bid": "Pass",
+          "explanation": "South has 9 points and a 4-card fit. Since the partnership is minimal (21 TP), passing 1S is correct."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
-          "bid": "p",
-          "explanation": "North has a minimum 12 HCP and passes the invitational 2H bid."
-        },
-        {
-          "bid": "p",
-          "explanation": "End of auction. Contract 2H."
+          "bid": "Pass",
+          "explanation": "North closes the auction."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The partnership has 21 combined HCP, making game highly unlikely. The goal is to find the best part-score. North's 1S rebid is standard 'up the line' bidding, showing 4 Spades and 4 Diamonds. South must recognize that while 1S is a 4-4 fit, 1H was bid first and is equally a 4-4 fit. With 9 HCP, South's hand is too strong to pass 1S, especially when 1S is a poor contract. Bidding 2H is a constructive preference bid, showing 4-card support for the suit South originally responded in, and inviting partner to play there. This avoids the failing 1S contract and aims for the better fit, 2H (which fails by only one trick, compared to 1S failing by three).",
+      "analysis": "The primary issue is the quality of the fit. While N/S found a 4-4 Spade fit, they are missing AQT, making the suit unrunnable and highly vulnerable to immediate defense. North, after 1D - 1H, had an alternative rebid of 1NT, showing a balanced 12-14 HCP hand. Given the poor quality of the spade suit (J852), 1NT might have been a safer choice, although bidding the 4-card major (1S) is technically more descriptive of the shape. Both 1S (down 3) and 1NT (down 2) are poor contracts, confirming that the hand distribution favors the defense.",
       "sequence": [
         {
-          "bid": "p",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
           "bid": "1D",
-          "explanation": "North opens 1D (12 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
+          "explanation": "North opens."
         },
         {
           "bid": "1H",
-          "explanation": "South responds 1H (4+ Hearts, 6+ HCP)."
+          "explanation": "South responds."
         },
         {
-          "bid": "p",
-          "explanation": "West passes."
+          "bid": "1NT",
+          "explanation": "Alternative rebid for North, showing 12-14 balanced values. This avoids playing in a weak 4-4 major fit."
         },
         {
-          "bid": "1S",
-          "explanation": "North shows 4 Spades, minimum hand (12-14 HCP), 4D/4S shape."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "2H",
-          "explanation": "South shows preference for the Heart fit, confirming 4+ Hearts and inviting partner to 2H (8-10 points)."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "North, holding only 12 HCP, passes the invitation."
-        },
-        {
-          "bid": "p",
-          "explanation": "End of auction."
+          "bid": "Pass",
+          "explanation": "South passes 1NT, lacking sufficient strength to continue."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "Fish075 (South)",
-        "topic": "Showing Preference in Part-Score Auctions",
-        "category": "Bidding"
+        "player": "North",
+        "topic": "Rebid Choice: 1S vs 1NT",
+        "category": "Bidding Theory"
       },
       {
-        "player": "BeaPercy (North)",
-        "topic": "Rebidding Minimum Hands (Up the Line)",
-        "category": "Bidding"
+        "player": "South/North",
+        "topic": "Evaluating the Quality of a 4-4 Fit",
+        "category": "Declarer Play/Valuation"
+      },
+      {
+        "player": "West",
+        "topic": "Opening Light Distributional Hands (1C)",
+        "category": "Opening Bids"
       }
     ]
   },

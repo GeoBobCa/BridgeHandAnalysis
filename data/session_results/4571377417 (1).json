@@ -186,109 +186,101 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OVERBID",
+    "verdict": "POOR CONTRACT SELECTION",
     "actual_critique": [
-      "West's 2H opening was slightly strong (11 HCP) for a standard weak two, but effective in preempting the auction and establishing the major suit.",
-      "North's 3C bid was an excellent competitive action, signaling 13 HCP and a 5-card suit, which should have served as a warning to East/West about the strength of the defense.",
-      "Pushing to 4H was a severe overbid. The partnership only holds 20 combined HCP, and the contract fails by 3 tricks (making only 4 tricks). West should have passed 3H, recognizing the danger signaled by North's intervention."
+      "West's 2H opening (11 HCP, 6-card suit) is slightly robust for a Weak Two but acceptable given the shape.",
+      "North's 3C intervention was highly unconventional and descriptive of the hand. With 13 HCP and a singleton heart, North should have made a Takeout Double to show values and tolerance for the unbid suits.",
+      "The final contract of 4H by West is a significant overbid. Double Dummy analysis shows that 4H fails by six tricks (E/W only make 4 tricks), highlighting the massive defensive potential North/South missed by not finding the optimal defense."
     ],
     "basic_section": {
-      "analysis": "South passed, and West opened a weak two in Hearts (2H). North, holding 13 HCP and a 5-card club suit, competed strongly with 3C. East supported hearts with 3H. West then made the critical error of pushing to game (4H). With only 20 combined HCP and the opponents showing strength, game was highly unlikely. The double dummy truth confirms 4H fails badly, making only 4 tricks.",
+      "analysis": "South correctly passed as dealer. West opened a standard Weak Two in Hearts. North holds a strong hand (13 HCP, 16 TP) with a singleton heart and good support for Spades and Clubs. This situation demands a Takeout Double to initiate a competitive auction and describe the defensive strength. East is obligated to support partner with 3H.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "South has only 7 HCP and passes."
+          "bid": "Pass",
+          "explanation": "South is too weak to open (7 HCP)."
         },
         {
           "bid": "2H",
-          "explanation": "West opens a weak two, showing a 6-card heart suit and 6-10 points (though this hand is 11 HCP, it's acceptable for a strong preempt)."
+          "explanation": "Standard Weak Two opening, showing 6 cards in hearts and 6-11 HCP."
         },
         {
-          "bid": "3C",
-          "explanation": "North competes strongly, showing 10+ points and a 5-card club suit (13 HCP)."
+          "bid": "Double",
+          "explanation": "Takeout Double. North has 13 HCP, a singleton heart, and support for the unbid suits. This is the primary action."
         },
         {
           "bid": "3H",
-          "explanation": "East raises, showing heart support and minimum values for the preempt."
+          "explanation": "East supports partner competitively, showing 4+ hearts and 6-9 points."
         },
         {
-          "bid": "p",
-          "explanation": "South passes."
+          "bid": "Pass",
+          "explanation": "South is still too weak to intervene safely."
         },
         {
-          "bid": "p",
-          "explanation": "West must pass 3H. The partnership has insufficient strength (20 HCP) for game, especially after North's strong intervention."
+          "bid": "Pass",
+          "explanation": "West is happy to stop at 3H, having shown a weak hand initially."
         },
         {
-          "bid": "p",
-          "explanation": "North passes, content to defend."
+          "bid": "Pass",
+          "explanation": "North has shown values via the Double. Since partner passed twice, North should trust the defense against 3H."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "Pass",
+          "explanation": "The auction ends."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The distribution of high cards is highly unfavorable for East/West. North/South hold 20 HCP and excellent defensive shape against hearts (North has a singleton heart). North's 3C bid was highly informative, indicating N/S had sufficient values (20 combined HCP) to compete or defend strongly. West failed to heed this warning. The optimal result for N/S would have been to double 4H for a penalty (+300), or play 3H/4S (which are non-making but better than E/W's 4H). Stopping at 3H (down 5) or 4H (down 3) are both poor results for E/W, but 4H is the more aggressive and costly mistake.",
+      "analysis": "The key decision point is North's response to 2H. By doubling, North sets up a strong defense. Since 3H is the final contract in the recommended auction, and Double Dummy shows E/W making only 4 tricks, N/S achieves a massive penalty (down 6). The actual auction allowed E/W to reach 4H, which, while still failing, is a much better result for the opponents than the potential penalty available.",
       "sequence": [
         {
-          "bid": "p",
-          "explanation": "South passes."
+          "bid": "Pass",
+          "explanation": "S passes."
         },
         {
           "bid": "2H",
-          "explanation": "Preempt."
+          "explanation": "W opens Weak Two."
         },
         {
-          "bid": "3C",
-          "explanation": "Strong competitive bid, showing values and distribution."
+          "bid": "Double",
+          "explanation": "Takeout Double by N, showing strong defense and shape."
         },
         {
           "bid": "3H",
-          "explanation": "Support."
+          "explanation": "E competes, showing minimum support."
         },
         {
-          "bid": "p",
-          "explanation": "South passes."
+          "bid": "Pass",
+          "explanation": "S passes."
         },
         {
-          "bid": "p",
-          "explanation": "West must pass. Pushing to game with 20 combined HCP against a strong intervening hand is reckless."
+          "bid": "Pass",
+          "explanation": "W passes. E/W are satisfied with 3H."
         },
         {
-          "bid": "3S",
-          "explanation": "North continues to compete, showing 4 spades and looking for a fit."
+          "bid": "Pass",
+          "explanation": "N passes. N/S expects to defeat 3H heavily."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
+          "bid": "Pass",
+          "explanation": "Contract: 3H by West. Expected result: Down 6."
         }
       ]
     },
     "coaches_corner": [
       {
+        "player": "North",
+        "topic": "Responding to Weak Twos: Takeout Double vs. Suit Bid",
+        "category": "Competitive Bidding"
+      },
+      {
         "player": "West",
-        "topic": "Preempt Follow-up",
+        "topic": "Rebidding after a Weak Two: Avoiding Game Overbids",
         "category": "Judgment"
       },
       {
-        "player": "North",
-        "topic": "Competitive Bidding",
-        "category": "Technique"
-      },
-      {
-        "player": "East/West",
-        "topic": "Combined Strength Assessment",
-        "category": "Evaluation"
+        "player": "All",
+        "topic": "Recognizing Defensive Potential (Shape and HCP)",
+        "category": "Valuation"
       }
     ]
   },

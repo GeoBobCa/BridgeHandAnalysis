@@ -188,105 +188,136 @@
     }
   },
   "ai_analysis": {
-    "verdict": "GOOD PART-SCORE",
+    "verdict": "MISSED GAME (3N was available)",
     "actual_critique": [
-      "The contract of 2NT was optimal for East-West, making exactly 9 tricks (+1). Since 3NT fails (maximum 9 tricks available), stopping at 2NT was excellent judgment.",
-      "East's 1NT overcall (11 HCP, K4 in Hearts) was highly irregular and misleading. Standard SAYC requires 15-18 HCP or a strong balanced hand with a stopper in the opponent's suit, neither of which East possessed.",
-      "North (Dealer) was too passive. With 10 HCP and a 5-card Spade suit, North should have opened 1S or overcalled 1S after West's 1H opening to compete for the part-score."
+      "East (bobj245), holding 11 HCP, responded 1N over 1H. This response typically promises only 6-9 HCP and significantly understates the partnership's strength, leading to the failure to reach game.",
+      "West (georgenamg) correctly assessed the partnership minimum based on East's 1N bid and stopped cautiously at 2N. However, since 3N makes easily (9 tricks available), the partnership missed a profitable contract.",
+      "North's initial pass with a 5-card major (Spades) and 11 total points (10 HCP + 1 length) is acceptable, though many experts would open 1S on this distribution and strength."
     ],
     "basic_section": {
-      "analysis": "East-West successfully navigated a tricky auction to reach 2NT. West opened 1H (14 HCP) and East responded 1NT, suggesting a balanced hand and some strength (though the strength was overstated). West, holding 14 HCP, correctly invited game with 2NT, knowing the partnership had at least 25 combined points. East correctly passed the invitation, recognizing that their hand was minimum for the previous bid. The contract makes 9 tricks, achieving a good part-score result.",
+      "analysis": "West holds 14 HCP and opens 1H (best 4-card suit). East has 11 HCP, a balanced hand, and four diamonds. When holding 10+ points, East must make a forcing bid (2/1 Game Forcing is active) to show strength. Bidding 1N with 11 HCP is a major error, as it suggests a weak hand and shuts down game exploration. If East bids 2D, the partnership easily reaches the makable 3N contract (25 combined HCP).",
       "recommended_auction": [
         {
-          "bid": "1S",
-          "explanation": "North, as dealer, should open 1S with 10 HCP and a 5-card major, rather than passing."
+          "bid": "Pass",
+          "explanation": "North (Dealer) has 10 HCP and 11 TP. While 1S is possible, passing is conservative and safe."
         },
         {
-          "bid": "p",
-          "explanation": "East passes, lacking a clear competitive bid."
+          "bid": "Pass",
+          "explanation": "East passes, as North passed."
         },
         {
-          "bid": "p",
-          "explanation": "South passes with only 5 HCP."
-        },
-        {
-          "bid": "1N",
-          "explanation": "West shows 12-14 HCP balanced, denying 4-card Spade support."
-        },
-        {
-          "bid": "2S",
-          "explanation": "North rebids the suit, showing a minimum opening hand and 5+ Spades."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes, allowing N/S to play the part-score."
-        }
-      ]
-    },
-    "advanced_section": {
-      "analysis": "The primary error in the actual auction was East's 1NT overcall. This bid is typically reserved for 15-18 HCP or a strong 10-14 HCP balanced hand with a stopper in the opponent's suit. East's 11 HCP hand with Kx in Hearts does not meet this requirement, risking a misjudged game try by West. West's 2NT rebid was a standard game invitation based on the strength promised by East. Since the partnership has 25 HCP, 2NT is a reasonable invite, and East's subsequent pass was correct, recognizing the lack of high card strength needed for 3NT.",
-      "sequence": [
-        {
-          "bid": "p",
-          "explanation": "North passes (Error: Should open 1S)."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "South passes."
         },
         {
           "bid": "1H",
-          "explanation": "West opens 1H (14 HCP, 4-card major opening)."
+          "explanation": "West opens 1H (14 HCP, best suit)."
         },
         {
-          "bid": "p",
-          "explanation": "North passes (Error: Should overcall 1S)."
+          "bid": "Pass",
+          "explanation": "North passes, too weak to intervene."
         },
         {
-          "bid": "1N",
-          "explanation": "East overcalls 1NT (Major error: Non-standard bid, misleading strength and lack of Heart stopper)."
+          "bid": "2D",
+          "explanation": "East must show strength (11 HCP). 2D is a 2/1 forcing response, showing 10+ points and 4+ diamonds."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "South passes."
         },
         {
           "bid": "2N",
-          "explanation": "West invites game, expecting 11+ HCP from East based on the 1NT bid."
+          "explanation": "West shows a balanced hand, denying 4 Spades, and confirms minimum opening strength (14 HCP). This rebid suggests 22-24 combined points potential."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "North passes."
         },
         {
-          "bid": "p",
-          "explanation": "East correctly declines the game invitation."
+          "bid": "3N",
+          "explanation": "East knows the partnership has 25 combined HCP (14 + 11) and sufficient stops for Notrump. 3N is the correct contract."
         },
         {
-          "bid": "p",
-          "explanation": "South passes, ending the auction."
+          "bid": "Pass",
+          "explanation": "Auction ends."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "Auction ends."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "Auction ends."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "The combined E/W hands total 25 HCP, which is standard for 3N. The distribution is flat enough (3=4=3=3 opposite 3=2=4=4) to make NT the primary goal. The double dummy analysis confirms 3N makes 9 tricks. The defensive threat is North's 5-card Spade suit. However, East holds the K and J of Spades, providing enough cover to establish the necessary winners (4 Hearts, 3 Clubs, 2 Diamonds) before the defense can run Spades.",
+      "sequence": [
+        {
+          "bid": "Pass",
+          "explanation": "N passes."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "E passes."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "S passes."
+        },
+        {
+          "bid": "1H",
+          "explanation": "W opens 1H."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "N passes."
+        },
+        {
+          "bid": "2D",
+          "explanation": "E uses 2/1 GF to show 11 HCP."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "S passes."
+        },
+        {
+          "bid": "2N",
+          "explanation": "W shows a balanced 14 HCP hand."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "N passes."
+        },
+        {
+          "bid": "3N",
+          "explanation": "E bids game."
+        },
+        {
+          "bid": "Pass",
+          "explanation": "P"
+        },
+        {
+          "bid": "Pass",
+          "explanation": "P"
+        },
+        {
+          "bid": "Pass",
+          "explanation": "P"
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Opening Requirements",
-        "category": "Bidding Fundamentals"
+        "player": "bobj245 (East)",
+        "topic": "Responding with 10+ points (2/1 Game Forcing)",
+        "category": "Bidding Basics"
       },
       {
-        "player": "East",
-        "topic": "1NT Overcall Requirements (HCP and Stopper)",
-        "category": "Competitive Bidding"
-      },
-      {
-        "player": "West",
-        "topic": "Hand Evaluation based on Partner's Misleading Bid",
-        "category": "Judgment"
+        "player": "BeaPercy (North)",
+        "topic": "Opening marginal hands (5-card major, 10 HCP)",
+        "category": "Opening Bids"
       }
     ]
   },

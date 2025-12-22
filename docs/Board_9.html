@@ -6,7 +6,6 @@
             <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
             <style>
-                .bid-badge { font-family: monospace; font-size: 1.1em; padding: 8px 12px; }
                 .hand-box { background: #fdfdfd; border: 1px solid #ccc; padding: 10px; border-radius: 5px; font-size: 0.9rem; }
                 .suit-symbol { display: inline-block; width: 15px; text-align: center; font-weight: bold; }
                 .suit-S { color: black; } .suit-H { color: red; } .suit-D { color: orange; } .suit-C { color: green; }
@@ -14,24 +13,28 @@
                 .dir-badge { width: 35px; text-align: center; display: inline-block; margin-right: 10px; font-weight: bold; background-color: #6c757d; color: white; border-radius: 4px; padding: 2px 0; }
                 .coach-card { background-color: #f8f9fa; border-left: 5px solid #0dcaf0; }
                 .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
-                /* DDS Table Styles */
                 .dds-table th, .dds-table td { text-align: center; padding: 4px; font-family: monospace; }
                 .dds-make { background-color: #d4edda; color: #155724; font-weight: bold; }
+                
+                /* New Bidding Table Styles */
+                .auction-table th { text-align: center; background-color: #f8f9fa; color: #666; font-size: 0.85rem; }
+                .auction-table td { text-align: center; font-family: monospace; font-size: 1.1rem; height: 40px; }
             </style>
         </head>
         <body class="bg-white"><div class="container py-4">
             <div class="d-flex justify-content-between mb-4">
                 <a href="index.html" class="btn btn-outline-secondary">&larr; Back</a>
-                <h2 class="m-0">Board 9 <span class="badge bg-primary fs-6 align-middle ms-2">OVERBID</span></h2>
+                <h2 class="m-0">Board 9 <span class="badge bg-primary fs-6 align-middle ms-2">MISSED DEFENSIVE OPPORTUNITY</span></h2>
                 <a href="http://www.bridgebase.com/tools/handviewer.html?lin=pn%7CFish075%2Cgeorgenamg%2CBeaPercy%2Cbobj245%7Cst%7C%7Cmd%7C3SKH46TQDTJAC789TK%2CS238TJH38AD23C25Q%2CS4569H7JKD479KC3J%2C%7Crh%7C%7Cah%7CBoard%209%7Csv%7Ce%7Cmb%7Cp%7Cmb%7C1D%7Cmb%7Cd%7Cmb%7C1S%7Cmb%7Cp%7Cmb%7C2S%7Cmb%7Cp%7Cmb%7Cp%7Cmb%7Cp%7Cpg%7C%7Cpc%7CD4%7Cpc%7CD5%7Cpc%7CDA%7Cpc%7CD2%7Cpg%7C%7Cpc%7CDT%7Cpc%7CD3%7Cpc%7CDK%7Cpc%7CD6%7Cpg%7C%7Cpc%7CC3%7Cpc%7CC4%7Cpc%7CCK%7Cpc%7CC2%7Cpg%7C%7Cpc%7CDJ%7Cpc%7CH3%7Cpc%7CD7%7Cpc%7CDQ%7Cpg%7C%7Cpc%7CS7%7Cpc%7CSK%7Cpc%7CS2%7Cpc%7CS4%7Cpg%7C%7Cpc%7CHT%7Cpc%7CHA%7Cpc%7CH7%7Cpc%7CH2%7Cpg%7C%7Cpc%7CS3%7Cpc%7CS5%7Cpc%7CSA%7Cpc%7CC7%7Cpg%7C%7Cpc%7CSQ%7Cpc%7CC8%7Cpc%7CS8%7Cpc%7CS6%7Cpg%7C%7Cpc%7CD8%7Cpc%7CC9%7Cpc%7CH8%7Cpc%7CD9%7Cpg%7C%7Cpc%7CHJ%7Cpc%7CH5%7Cpc%7CH4%7Cpc%7CST%7Cpg%7C%7Cpc%7CSJ%7Cpc%7CS9%7Cpc%7CH9%7Cpc%7CCT%7Cpg%7C%7Cpc%7CC5%7Cpc%7CCJ%7Cpc%7CCA%7Cpc%7CH6%7Cpg%7C%7Cpc%7CC6%7Cpc%7CHQ%7Cpc%7CCQ%7Cpc%7CHK%7Cpg%7C%7C%0A" target="_blank" class="btn btn-danger">Replay</a>
             </div>
 
             <div class="row mb-5">
                 <div class="col-md-8">
-                    <div class="card bg-success bg-opacity-10 border-success">
+                    <div class="card bg-success bg-opacity-10 border-success h-100">
                         <div class="card-body position-relative" style="min-height: 400px;">
                             <div class="position-absolute top-50 start-50 translate-middle text-center bg-white p-3 border rounded shadow-sm" style="z-index: 2;">
-                                <strong>Board 9</strong><br>Dlr: North<br>Vul: E/W
+                                <strong>Board 9</strong><br>
+                                Dlr: North | Vul: E/W
                             </div>
                             
                             
@@ -83,10 +86,71 @@
                 </div>
 
                 <div class="col-md-4">
+                    
                     <div class="card mb-3">
-                        <div class="card-header">Actual Auction</div>
-                        <div class="card-body text-center font-monospace">p - 1D - d - 1S - p - 2S - p - p - p</div>
+                        <div class="card-header text-center">
+                            <strong>2S</strong> by <strong></strong>
+                        </div>
+                        <div class="card-body p-0">
+                            <table class="table table-bordered mb-0 auction-table">
+                                <thead><tr><th>WEST</th><th>NORTH</th><th>EAST</th><th>SOUTH</th></tr></thead>
+                                <tbody>
+                                    <tr>
+                                    
+                                    
+                                    
+                                    
+                                    <td></td>
+                                    
+                                    
+                                    
+                                        
+                                        
+                                        <td>p</td>
+                                    
+                                        
+                                        
+                                        <td>1D</td>
+                                    
+                                        
+                                        
+                                        <td>d</td>
+                                    
+                                        
+                                        </tr><tr>
+                                        <td>1S</td>
+                                    
+                                        
+                                        
+                                        <td>p</td>
+                                    
+                                        
+                                        
+                                        <td>2S</td>
+                                    
+                                        
+                                        
+                                        <td>p</td>
+                                    
+                                        
+                                        </tr><tr>
+                                        <td>p</td>
+                                    
+                                        
+                                        
+                                        <td>p</td>
+                                    
+                                    
+                                    
+                                    
+                                    
+                                    <td></td><td></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+
                     <div class="card border-info">
                         <div class="card-header bg-info text-white">Double Dummy Analysis</div>
                         <div class="card-body p-0">
@@ -206,7 +270,7 @@
             <h4 class="section-header">🔍 1. Critique</h4>
             <div class="mb-5">
                 
-                <ul class="list-group"><li class="list-group-item border-0">🔹 East made a critical error by raising partner's weak 1S response to 2S. East holds only three spades and 12 HCP, making 2S a massive overbid that fails by four tricks (DDT shows 4 tricks available).</li><li class="list-group-item border-0">🔹 South's takeout double was excellent, accurately describing the partnership's combined strength (21 HCP) and setting the stage for competition.</li><li class="list-group-item border-0">🔹 N/S correctly chose to defend 2S, earning a large penalty (+400) due to E/W's aggressive bidding mistake. However, N/S missed finding their optimal part-score contract of 2D (8 tricks).</li></ul>
+                <ul class="list-group"><li class="list-group-item border-0">🔹 East's 2S raise was overly optimistic. Raising a minimum 1S response (7 HCP) to the 2-level when vulnerable is highly risky, even with 12 HCP. The resulting contract (2S) is theoretically defeated by four tricks.</li><li class="list-group-item border-0">🔹 South (14 TP) missed a clear opportunity to compete after East raised to 2S. Passing allowed the opponents to play a heavily defeated contract uncontested, failing to find N/S's own making contract (2D).</li><li class="list-group-item border-0">🔹 North's initial pass after South's takeout double and West's 1S was understandable given the weak hand (8 TP), but standard procedure requires North to bid, likely 2D, to show their best 4-card suit.</li></ul>
                 
             </div>
             
@@ -214,91 +278,103 @@
             <div class="card mb-5 border-primary">
                 <div class="card-body">
                     
-                    <p class="lead">North passed initially, and East opened 1D. South correctly made a takeout double showing 12+ points and support for the unbid suits. West competed with 1S, showing a weak hand and a five-card suit. The auction went wrong when East, holding 12 points and only three spades, raised 1S to 2S, committing the partnership to a contract they could not make. N/S should have competed to 2D, where they have a makeable part-score.</p>
+                    <p class="lead">South holds a strong hand (13 HCP, 14 TP) with good distribution (1=4=3=5), making the takeout double mandatory. East's 1D opening is standard. West's 1S is a minimum competitive response (5 cards, 7 HCP). The E/W partnership found a poor 8-card Spade fit and overbid to 2S, which is doomed. The N/S partnership should have competed to 2D, which makes exactly (8 tricks), or at least found their 7-card Heart fit.</p>
                     
                     <div class="accordion mt-3" id="accordionBasic">
                         
+                        
+                        
+                        
+                        
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c1">
-                                    <span class="dir-badge">?</span><strong>p</strong>
+                                    <span class="dir-badge">N</span><strong>Pass</strong>
                                     </button>
                                 </h2>
                                 <div id="c1" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                    <div class="accordion-body">Standard pass with 8 HCP.</div>
+                                    <div class="accordion-body">North is dealer but has only 8 TP, standard pass.</div>
                                 </div>
                             </div>
                         
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c2">
-                                    <span class="dir-badge">?</span><strong>1D</strong>
+                                    <span class="dir-badge">E</span><strong>1D</strong>
                                     </button>
                                 </h2>
                                 <div id="c2" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                    <div class="accordion-body">Standard opening bid with 12 HCP and a four-card diamond suit.</div>
+                                    <div class="accordion-body">Standard opening bid (12 HCP, 4-card suit).</div>
                                 </div>
                             </div>
                         
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c3">
-                                    <span class="dir-badge">?</span><strong>d</strong>
+                                    <span class="dir-badge">S</span><strong>Double</strong>
                                     </button>
                                 </h2>
                                 <div id="c3" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                    <div class="accordion-body">Takeout double, showing 12+ HCP and support for the unbid suits (H, C, S).</div>
+                                    <div class="accordion-body">Takeout double, showing an opening hand (13+ TP) and support for unbid suits.</div>
                                 </div>
                             </div>
                         
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c4">
-                                    <span class="dir-badge">?</span><strong>1S</strong>
+                                    <span class="dir-badge">W</span><strong>1S</strong>
                                     </button>
                                 </h2>
                                 <div id="c4" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                    <div class="accordion-body">Competitive bid showing a five-card suit and typically 6-10 points.</div>
+                                    <div class="accordion-body">Minimum competitive response, showing 5+ Spades and 6+ points.</div>
                                 </div>
                             </div>
                         
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c5">
-                                    <span class="dir-badge">?</span><strong>2D</strong>
+                                    <span class="dir-badge">N</span><strong>2D</strong>
                                     </button>
                                 </h2>
                                 <div id="c5" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                    <div class="accordion-body">Competitive bid showing 4+ diamonds and 7-10 points, finding the partnership's best fit.</div>
+                                    <div class="accordion-body">North must bid after partner's takeout double. 2D shows a 4-card Diamond suit and a weak hand (0-8 TP).</div>
                                 </div>
                             </div>
                         
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c6">
-                                    <span class="dir-badge">?</span><strong>p</strong>
+                                    <span class="dir-badge">E</span><strong>Pass</strong>
                                     </button>
                                 </h2>
                                 <div id="c6" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                    <div class="accordion-body">East has no good bid. Raising 2S is wrong, and 1NT is risky. Passing is safest.</div>
+                                    <div class="accordion-body">East cannot raise 1S further and has no defensive action against 2D.</div>
                                 </div>
                             </div>
                         
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c7">
-                                    <span class="dir-badge">?</span><strong>p</strong>
+                                    <span class="dir-badge">S</span><strong>Pass</strong>
                                     </button>
                                 </h2>
                                 <div id="c7" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
-                                    <div class="accordion-body">South is happy to play 2D, which makes easily.</div>
+                                    <div class="accordion-body">South is content to play 2D, which is known to make exactly (8 tricks), rather than pushing for a higher contract on a 7-card fit.</div>
                                 </div>
                             </div>
                         
+                            
                             <div class="accordion-item">
                                 <h2 class="accordion-header">
                                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#c8">
-                                    <span class="dir-badge">?</span><strong>p</strong>
+                                    <span class="dir-badge">W</span><strong>Pass</strong>
                                     </button>
                                 </h2>
                                 <div id="c8" class="accordion-collapse collapse" data-bs-parent="#accordionBasic">
@@ -316,134 +392,132 @@
             <div class="card mb-5 adv-card">
                 <div class="card-body">
                     
-                        <p>The combined N/S strength (21 HCP) dictates they should be playing the hand. After South's takeout double and West's 1S intervention, North's 2D bid is a constructive, competitive action showing a 4-card suit and 7-10 points, suggesting a partscore. East's failure to rebid 1NT (showing 12-14 balanced, with a diamond stopper) or pass, opting instead for a highly speculative 2S raise, was the defining mistake. East must recognize that partner's 1S response is weak and competitive, not invitational or forcing.</p>
+                        <p>The key tactical decision was North's response to the double. Since 1S was bid, North was forced to the 2-level to show Diamonds (2D). This accurately describes the hand and finds the partnership's best making contract. South's subsequent pass shows discipline, recognizing that while they have a strong hand, the combined partnership strength is insufficient for game, and 2D is a safe, making partial contract. The actual outcome (2S down 4) highlights the danger of raising a minimum competitive response when vulnerable.</p>
                         
                         <div class="mt-4">
                             <h6>✨ Advanced Sequence:</h6>
                             <div class="accordion mt-3" id="accordionAdv">
                                 
+                                
+                                
+                                
+                                
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv1">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
-                                                <strong>p</strong>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">N</span>
+                                                <strong>Pass</strong>
                                             </button>
                                         </h2>
                                         <div id="adv1" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                North passes.
+                                                North is weak.
                                             </div>
                                         </div>
                                     </div>
                                 
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv2">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">E</span>
                                                 <strong>1D</strong>
                                             </button>
                                         </h2>
                                         <div id="adv2" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                East opens 1D.
+                                                Standard opening.
                                             </div>
                                         </div>
                                     </div>
                                 
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv3">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
-                                                <strong>d</strong>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">S</span>
+                                                <strong>Double</strong>
                                             </button>
                                         </h2>
                                         <div id="adv3" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                South makes a strong takeout double.
+                                                Takeout.
                                             </div>
                                         </div>
                                     </div>
                                 
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv4">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">W</span>
                                                 <strong>1S</strong>
                                             </button>
                                         </h2>
                                         <div id="adv4" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                West competes with 1S.
+                                                Minimum response.
                                             </div>
                                         </div>
                                     </div>
                                 
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv5">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
-                                                <strong>p</strong>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">N</span>
+                                                <strong>2D</strong>
                                             </button>
                                         </h2>
                                         <div id="adv5" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                North passes, as they have no clear competitive bid that doesn't risk overcommitting.
+                                                Forced bid, showing 4+ Diamonds.
                                             </div>
                                         </div>
                                     </div>
                                 
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv6">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
-                                                <strong>2S</strong>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">E</span>
+                                                <strong>Pass</strong>
                                             </button>
                                         </h2>
                                         <div id="adv6" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                East's error. This is a highly aggressive and unwarranted raise with only 3-card support and 12 HCP, committing the partnership to a failing contract.
+                                                East passes.
                                             </div>
                                         </div>
                                     </div>
                                 
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv7">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
-                                                <strong>p</strong>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">S</span>
+                                                <strong>Pass</strong>
                                             </button>
                                         </h2>
                                         <div id="adv7" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                South passes, choosing to defend 2S rather than compete further, which proves profitable.
+                                                South passes, accepting the making partial.
                                             </div>
                                         </div>
                                     </div>
                                 
+                                    
                                     <div class="accordion-item">
                                         <h2 class="accordion-header">
                                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv8">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
-                                                <strong>p</strong>
+                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">W</span>
+                                                <strong>Pass</strong>
                                             </button>
                                         </h2>
                                         <div id="adv8" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
                                             <div class="accordion-body text-muted">
-                                                West passes.
-                                            </div>
-                                        </div>
-                                    </div>
-                                
-                                    <div class="accordion-item">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#adv9">
-                                                <span class="dir-badge" style="background-color: #ffc107; color: black;">?</span>
-                                                <strong>p</strong>
-                                            </button>
-                                        </h2>
-                                        <div id="adv9" class="accordion-collapse collapse" data-bs-parent="#accordionAdv">
-                                            <div class="accordion-body text-muted">
-                                                North passes, ending the auction.
+                                                Contract 2D by North.
                                             </div>
                                         </div>
                                     </div>
@@ -460,18 +534,18 @@
                 
                     
                     <div class="col-md-6 mb-3"><div class="card coach-card h-100"><div class="card-body">
-                        <small class="text-uppercase text-muted">East | Bidding Error</small>
-                        <h5 class="card-title">Competitive Raises and Fit</h5>
+                        <small class="text-uppercase text-muted">South | Judgment</small>
+                        <h5 class="card-title">Competitive Bidding: When to re-enter the auction after RHO raises.</h5>
                     </div></div></div>
                     
                     <div class="col-md-6 mb-3"><div class="card coach-card h-100"><div class="card-body">
-                        <small class="text-uppercase text-muted">South | Good Judgment</small>
-                        <h5 class="card-title">Takeout Doubles</h5>
+                        <small class="text-uppercase text-muted">North | SAYC Fundamentals</small>
+                        <h5 class="card-title">Responses to Takeout Double: Forced bidding rules and suit selection.</h5>
                     </div></div></div>
                     
                     <div class="col-md-6 mb-3"><div class="card coach-card h-100"><div class="card-body">
-                        <small class="text-uppercase text-muted">North/South | Missed Opportunity</small>
-                        <h5 class="card-title">Finding the Part-Score Fit (Diamonds)</h5>
+                        <small class="text-uppercase text-muted">East | Bidding Strategy</small>
+                        <h5 class="card-title">Constructive Raises: Evaluating partner's minimum response in competitive auctions.</h5>
                     </div></div></div>
                     
                 

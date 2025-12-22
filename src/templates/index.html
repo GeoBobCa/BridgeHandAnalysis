@@ -10,6 +10,7 @@
         <div class="col-md-3 mb-3"><div class="card shadow-sm h-100"><div class="card-body text-center">
             <h5 class="card-title">{{ item.facts.board }}</h5>
             <span class="badge bg-primary mb-3">{{ item.ai_analysis.get('verdict', 'Pending') }}</span>
+            <p class="card-text small text-muted">{{ item.facts.contract }} by {{ item.facts.declarer_full }}</p>
             <a href="{{ item.facts.board | replace(' ', '_') }}.html" class="btn btn-outline-dark btn-sm w-100">View</a>
         </div></div></div>
         {% endfor %}

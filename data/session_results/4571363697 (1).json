@@ -193,147 +193,147 @@
   "ai_analysis": {
     "verdict": "MISSED GAME",
     "actual_critique": [
-      "The partnership missed the optimal contract of 3NT, which makes 9 tricks, settling instead for 3D which fails by one trick (making only 6 tricks).",
-      "South's bidding was accurate, showing 4 hearts (1H) then showing minimum values and diamond preference (2D).",
-      "North (Opener) failed to recognize the game potential. After South's 2D rebid showed 6-9 HCP, North knew the partnership held 22-25 HCP, making 3NT mandatory given the balanced nature of the hands."
+      "The partnership missed the optimal game contract of 3NT, which makes exactly 9 tricks (DD Truth). They stopped in 3D, which failed by one trick.",
+      "North (16 HCP, 4=1=4=4) chose a 1S reverse after South's 1H response. While technically showing strength, a 1NT rebid would have been more descriptive of the balanced nature of the hand and would have simplified reaching 3NT.",
+      "Even after South showed minimum values (6-9 TP) with the 2D rebid, North should have recognized the combined 25+ HCP and the strong stoppers, leading to a 3NT bid rather than pushing the 4-4 Diamond fit to the three level."
     ],
     "basic_section": {
-      "analysis": "North holds 16 HCP and a balanced hand (4=1=4=4), opening 1D. South has 9 HCP and 4 cards in both Hearts and Diamonds. After North showed 4 spades (1S rebid), South correctly showed preference for diamonds (2D), limiting the hand to minimum response values (6-9 HCP). North should have calculated the combined strength (16 + 6/9 = 22-25 HCP) and bid 3NT, as the hands are balanced and game is highly likely.",
+      "analysis": "North has 16 HCP (19 TP) and a balanced 4=1=4=4 hand, ideal for Notrump. South has 9 TP and a 4-card heart suit. The combined strength of 25+ HCP dictates a game contract. Since North has stoppers in all suits, 3NT is the primary target, especially since the 4-4 Diamond fit is not robust enough to guarantee 10 tricks.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "South has only 9 HCP, too weak to open."
+          "bid": "Pass",
+          "explanation": "South (9 TP) is too light to open."
         },
         {
-          "bid": "p",
-          "explanation": "West has only 4 HCP."
+          "bid": "Pass",
+          "explanation": "West (7 TP) passes."
         },
         {
           "bid": "1D",
-          "explanation": "North opens 1D (16 HCP, 4-card suit)."
+          "explanation": "North (16 HCP) opens 1D, as 1NT (15-17) is usually reserved for 4333 or 4432 shapes, and 1D is standard for 4-card minors when no 5-card major exists."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "East passes."
         },
         {
           "bid": "1H",
-          "explanation": "South responds 1H, showing 6+ HCP and 4+ hearts."
+          "explanation": "South (9 TP) responds 1H, showing 4+ hearts and 6+ points."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
-          "bid": "1S",
-          "explanation": "North shows 4 spades and extra strength (15+ HCP), looking for a major fit."
+          "bid": "1NT",
+          "explanation": "North rebids 1NT, showing 15-17 HCP, balanced, and stoppers, which is the most descriptive rebid for this hand shape (4=1=4=4)."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "East passes."
         },
         {
           "bid": "2D",
-          "explanation": "South shows preference for opener's first suit (Diamonds) and limits the hand to minimum response values (6-9 HCP)."
+          "explanation": "South shows preference for Diamonds (4-card support) at the minimum level, confirming 6-9 points."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
           "bid": "3NT",
-          "explanation": "North calculates 22-25 combined HCP. Since no major fit was found and the hands are balanced, 3NT is the correct game contract."
+          "explanation": "North knows the partnership has 25+ HCP and stoppers. Since 4D is risky (4-4 fit, 8 tricks available), 3NT is the percentage game bid (9 tricks available)."
         },
         {
-          "bid": "p",
-          "explanation": "End of auction."
+          "bid": "Pass",
+          "explanation": "East passes."
         },
         {
-          "bid": "p",
-          "explanation": "End of auction."
+          "bid": "Pass",
+          "explanation": "South passes, happy to stop in game."
         },
         {
-          "bid": "p",
-          "explanation": "End of auction."
+          "bid": "Pass",
+          "explanation": "West passes. Contract: 3NT."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "North's rebid of 1S is a strong action, promising 15+ HCP (since 1NT rebid was available for 15-17 balanced hands). South's 2D rebid is non-forcing and highly descriptive, showing 4-card support for diamonds and minimum responding values (6-9 HCP). North must recognize that even if South is minimum (6 HCP), 22 combined points is enough for 3NT when the distribution is balanced (4=1=4=4 opposite 2=4=4=3). The failure to bid 3NT here is a common error of focusing too much on the minor suit fit (which is poor at 4-4) instead of the overall point count and balanced shape, which dictates NT game.",
+      "analysis": "The actual auction featured North's 1S reverse, which is forcing and shows 16+ HCP. South's 2D rebid confirms minimum values (6-9 TP) and 4-card diamond support. North now has a clear picture: 25+ combined points, an 8-card diamond fit, but a weak responder. North must evaluate whether 4D (a 4-4 fit) or 3NT is safer. Since 3NT makes and 4D fails, North must prioritize the NT game based on high HCP and stoppers, overriding the weak diamond preference.",
       "sequence": [
         {
-          "bid": "p",
-          "explanation": "South passes (9 HCP)."
+          "bid": "Pass",
+          "explanation": "South passes."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
           "bid": "1D",
-          "explanation": "North opens 1D (16 HCP)."
+          "explanation": "North opens 1D."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "East passes."
         },
         {
           "bid": "1H",
-          "explanation": "South responds 1H (4+ H, 6+ HCP)."
+          "explanation": "South responds 1H."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
           "bid": "1S",
-          "explanation": "North shows 4 spades and extra values (15+)."
+          "explanation": "North's reverse, showing 16+ HCP and 4 Spades, forcing."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "East passes."
         },
         {
           "bid": "2D",
-          "explanation": "South shows preference for diamonds, minimum response values (6-9 HCP)."
+          "explanation": "South shows minimum values (6-9 TP) and preference for Diamonds."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "West passes."
         },
         {
           "bid": "3NT",
-          "explanation": "North recognizes 22-25 HCP combined and bids the optimal game contract."
+          "explanation": "North recognizes game is mandatory and selects the safer 3NT contract, knowing 4D is likely to fail due to the lack of extra tricks in the 4-4 fit."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "East passes."
         },
         {
-          "bid": "p",
+          "bid": "Pass",
           "explanation": "South passes."
         },
         {
-          "bid": "p",
-          "explanation": "West passes."
+          "bid": "Pass",
+          "explanation": "West passes. Contract: 3NT."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Game Bidding with 25+ HCP",
-        "category": "Bidding Strategy"
+        "topic": "Rebidding Balanced Hands (1NT vs Reverse)",
+        "category": "Bidding Theory"
       },
       {
         "player": "North",
-        "topic": "Opener's Rebid after Responder Limits the Hand",
-        "category": "Opener's Second Bid"
+        "topic": "Game Selection (NT vs 4-4 Major/Minor Fit)",
+        "category": "Judgment"
       },
       {
         "player": "South",
-        "topic": "Responding with Minimum Values (Preference Bids)",
-        "category": "Standard Bidding"
+        "topic": "Responding with Minimum Hands (Showing Preference)",
+        "category": "Bidding Basics"
       }
     ]
   },
