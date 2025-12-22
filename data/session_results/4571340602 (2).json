@@ -185,96 +185,141 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED SLAM, FAILED GAME",
+    "verdict": "MISSED SLAM",
     "actual_critique": [
-      "The partnership correctly identified game strength (28 HCP) and a 10-card Spade fit, leading to the standard 4S contract.",
-      "Despite the strong point count and fit, the contract 4S fails dramatically, making only 7 tricks according to double dummy analysis. This indicates a highly unfavorable lie of the cards for the trump suit.",
-      "The optimal achievable contract is 6NT (11 tricks), which was missed because the partnership settled for the major suit game without exploring Notrump or slam potential."
+      "The partnership stopped prematurely in 4S, missing a guaranteed 6S slam.",
+      "With 28 combined HCP and a 5-5 major suit fit, North (19 HCP) should have initiated slam investigation after South's constructive 3S raise.",
+      "North's immediate jump to 4S shut down the bidding dialogue necessary to confirm controls and key cards."
     ],
     "basic_section": {
-      "analysis": "North has a powerful 19 HCP hand with a 5-card Spade suit. South has 10 HCP and 5 Spades/4 Hearts. The partnership has 29 combined HCP, making slam highly likely. Instead of jumping directly to 3S, South should use 2H to describe the hand shape and allow North to rebid in Notrump, which is the superior strain here.",
+      "analysis": "North holds 19 HCP and a 5-card Spade suit, opening 1S. South's 3S bid, while slightly aggressive with 9 HCP, shows a constructive raise (8-10+ HCP) and a 5-card fit, promising game interest. The combined strength (28 HCP) and 10-card fit strongly suggest slam potential. North should use 4NT (Blackwood) immediately to check for Aces, confirming all four Aces are present, making 6S a certainty.",
       "recommended_auction": [
         {
-          "player": "North",
           "bid": "1S",
-          "explanation": "Standard opening bid, 5+ Spades, 19 HCP."
+          "explanation": "Standard opening bid (19 HCP, 5+ Spades)."
         },
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "player": "South",
-          "bid": "2H",
-          "explanation": "Standard response showing 10+ HCP and a 4+ card Heart suit, forcing to game. This allows for NT exploration."
+          "bid": "3S",
+          "explanation": "Constructive raise, showing 5+ Spades and 8-10 HCP, inviting game."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "West passes."
         },
         {
-          "player": "North",
-          "bid": "2NT",
-          "explanation": "Showing 18-19 HCP, semi-balanced distribution (5=4=3=1), denying 4-card Heart support."
-        },
-        {
-          "player": "East",
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "player": "South",
           "bid": "4NT",
-          "explanation": "Quantitative slam invitation. South has 10 points, confirming sufficient strength for 6NT."
+          "explanation": "Blackwood. North recognizes the slam potential (28+ HCP, 5-5 fit) and asks for Aces."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "player": "North",
-          "bid": "6NT",
-          "explanation": "Accepting the slam invitation with a maximum 19 HCP hand. 6NT makes 11 tricks."
+          "bid": "5C",
+          "explanation": "Response showing 0 or 4 Aces. North knows they hold all 4 Aces, confirming the partnership has all of them."
         },
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "West passes."
         },
         {
-          "player": "South",
-          "bid": "p",
-          "explanation": "Pass."
+          "bid": "6S",
+          "explanation": "North bids the slam, knowing all Aces are present and the fit is excellent."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The DDS result showing 4S making only 7 tricks is highly unusual for a 10-card fit with 28 HCP. This suggests a catastrophic distribution where opponents can immediately ruff or establish winners before trumps can be drawn. The partnership correctly identified slam potential (29 HCP), but the failure of the major suit game highlights the importance of exploring Notrump when hands are semi-balanced (5=4=3=1 and 5=4=1=3) and high card strength is concentrated in the opener's hand.",
-      "sequence": null
+      "analysis": "A more precise method for slam investigation is cue bidding, which confirms first-round controls (Aces or voids) before resorting to 4NT. North's 4C cue bid shows the Club Ace and asks South to cue bid their controls. After confirming controls in all side suits (Clubs, Hearts, Diamonds), North can then use 4NT (RKCB) to confirm the presence of the Trump King and Queen, ensuring 6S is safe. Since N holds all 4 Aces and the Trump King, 6S is a laydown (11+ tricks available).",
+      "sequence": [
+        {
+          "bid": "1S",
+          "explanation": "Opener (North)."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "3S",
+          "explanation": "Constructive raise, showing game interest."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "4C",
+          "explanation": "Cue bid (first round control in Clubs), initiating slam investigation."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "4H",
+          "explanation": "Cue bid (first round control in Hearts, the King)."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "4D",
+          "explanation": "Cue bid (first round control in Diamonds, the Ace)."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "6S",
+          "explanation": "All controls confirmed. North knows they have all 4 Aces and the Trump King, and South has the Trump Queen. Slam is guaranteed."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        }
+      ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Hand Evaluation and Rebid Strength",
-        "category": "Opening Bids"
+        "topic": "Slam Investigation",
+        "category": "Bidding Technique"
+      },
+      {
+        "player": "North",
+        "topic": "Hand Valuation (19 HCP, 5-5 fit)",
+        "category": "Judgment"
       },
       {
         "player": "South",
-        "topic": "Responding with a Second Suit (2/1 Game Forcing)",
-        "category": "Responding"
-      },
-      {
-        "player": "Partnership",
-        "topic": "Quantitative Notrump Slam Bidding (4NT)",
-        "category": "Slam Bidding"
+        "topic": "Constructive Raises (3S with 9 HCP)",
+        "category": "Partnership Agreement"
       }
     ]
   },

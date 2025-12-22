@@ -186,127 +186,109 @@
     }
   },
   "ai_analysis": {
-    "verdict": "FAILED GAME CONTRACT",
+    "verdict": "POOR DEFENSE/MISPLACED SACRIFICE",
     "actual_critique": [
-      "West's 2H opening was slightly heavy (11 HCP) for a standard Weak Two (6-10 HCP), but acceptable given the 6-card suit and competitive situation.",
-      "North's 3C intervention was an excellent competitive bid, showing 13 HCP and a 5-card suit, attempting to disrupt the opponents and find a potential fit.",
-      "West's decision to push to 4H, despite the known weakness of the opening hand and the minimum raise from East, proved overly optimistic, resulting in a major set (DDS shows 4H makes only 4 tricks)."
+      "North's 3C jump overcall was highly aggressive and failed to prioritize showing the 4-card Major (Spades).",
+      "The final contract of 4H by N/S, declaring the opponent's trump suit, was a competitive error. N/S went down 1 (-50).",
+      "The optimal result for N/S was defending 3H, which would have failed by 3 tricks, yielding +150."
     ],
     "basic_section": {
-      "analysis": "South passed, and West opened a Weak Two in Hearts (2H). North correctly intervened with 3C, showing a good hand (13 HCP) and a long suit, aiming to compete. East gave a simple raise to 3H, showing minimum support for the weak two. West, having slightly extra strength (11 HCP) and a 10-card fit confirmed, decided to push to game in 4H. While competitively sound in theory, this contract failed dramatically due to poor distribution and missing key controls.",
+      "analysis": "South correctly passed with only 7 HCP. West opened a standard Weak Two in Hearts. North, holding 13 HCP and a 4-card Spade suit, should have used a takeout double to show competitive values and interest in the unbid suits, especially Spades. Instead, North jumped to 3C, which is usually reserved for stronger hands or specific conventions. When East raised to 3H, North should have passed, allowing E/W to play 3H, which DDS confirms goes down 3 tricks (+150 to N/S). Bidding 4H, the opponent's suit, resulted in N/S going down 1 (-50), a loss of 200 points compared to the optimal defense.",
       "recommended_auction": [
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Standard pass with 7 HCP."
+          "explanation": "South is too weak to open (7 HCP)."
         },
         {
-          "player": "West",
           "bid": "2H",
-          "explanation": "Weak Two opening, showing 6-10 HCP and a 6-card Heart suit (slightly heavy with 11 HCP, but acceptable)."
+          "explanation": "Standard Weak Two opening (6-card suit, 5-11 HCP)."
         },
         {
-          "player": "North",
-          "bid": "3C",
-          "explanation": "Competitive jump overcall, showing a good hand (10+ HCP) and a 5+ card Club suit, aiming to interfere."
+          "bid": "Dbl",
+          "explanation": "Takeout double, showing 10+ HCP and tolerance for unbid suits, especially Spades."
         },
         {
-          "player": "East",
           "bid": "3H",
-          "explanation": "Simple raise, showing minimum support for the Weak Two (6-9 HCP)."
+          "explanation": "Competitive raise, showing support and trying to shut out N/S."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "No constructive bid available."
+          "explanation": "South has no constructive bid."
         },
         {
-          "player": "West",
-          "bid": "4H",
-          "explanation": "Pushing to game based on 11 HCP and the confirmed 10-card fit, hoping to shut out N/S."
-        },
-        {
-          "player": "North",
           "bid": "p",
-          "explanation": "N/S cannot make game, and a double is risky without better defensive shape."
+          "explanation": "North is satisfied defending 3H, which is likely to fail significantly."
         },
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes, ending the auction."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Pass, ending the auction."
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes. Contract 3H by West, down 3."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "Given the competitive nature and the high level reached, North should seriously consider a penalty double of 4H. North has 13 HCP, the AK of Spades, and the J of Hearts (a potential trump trick). While N/S lack a clear fit, the opponents have shown weakness (Weak Two structure). DDS confirms that 4H goes down 3 tricks, making a penalty double highly profitable (+500). North's 3C bid showed values, and doubling 4H is a strong defensive statement.",
+      "analysis": "North's 3C bid over 2H is a significant misjudgment of priority. With 4 Spades and 13 HCP, a Double is mandatory to keep the auction open and find a potential Spade fit. The 3C jump is highly preemptive and fails to describe the hand accurately. The final 4H bid by North is a competitive error, likely intended as a sacrifice or a penalty double that was misapplied. Since N/S make 9 tricks in Hearts, they are down 1 in 4H. Had N/S found their 8-card minor fits (Clubs or Diamonds), game was still unreachable, but 2S (8 tricks) or 3C (7 tricks) would have been better contracts if they insisted on bidding. However, the best result was achieved by defending 3H.",
       "sequence": [
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "South passes."
         },
         {
-          "player": "West",
           "bid": "2H",
           "explanation": "Weak Two."
         },
         {
-          "player": "North",
           "bid": "3C",
-          "explanation": "Competitive overcall."
+          "explanation": "Misplaced jump overcall. Double or 2S is preferred with 4 Spades and 13 HCP."
         },
         {
-          "player": "East",
           "bid": "3H",
-          "explanation": "Minimum raise."
+          "explanation": "Competitive raise."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "South passes."
         },
         {
-          "player": "West",
           "bid": "4H",
-          "explanation": "Game push."
+          "explanation": "Competitive error. Bidding the opponent's suit as a sacrifice when defending 3H was the better option."
         },
         {
-          "player": "North",
-          "bid": "X",
-          "explanation": "Penalty Double. North has sufficient defensive strength (13 HCP, two outside Aces) to expect a significant set."
-        },
-        {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Pass, accepting the double."
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes. Contract 4H by North/South."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "West",
-        "topic": "Weak Two Range Management",
-        "category": "Opening Bids"
+        "player": "North (BeaPercy)",
+        "topic": "Responding to Preempts (Weak Twos)",
+        "category": "Competitive Bidding"
       },
       {
-        "player": "North",
-        "topic": "Competitive Jump Overcalls (3-level)",
-        "category": "Interference"
+        "player": "North (BeaPercy)",
+        "topic": "Takeout Double vs. Direct Overcall",
+        "category": "Bidding Fundamentals"
       },
       {
-        "player": "North",
-        "topic": "Defensive Doubles at Game Level",
-        "category": "Defense"
+        "player": "North (BeaPercy)",
+        "topic": "Sacrifice Bidding and Penalty Decisions",
+        "category": "Advanced Competition"
       }
     ]
   },

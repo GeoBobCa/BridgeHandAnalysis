@@ -189,96 +189,133 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL GAME CONTRACT ACHIEVED",
+    "verdict": "OPTIMAL CONTRACT REACHED",
     "actual_critique": [
-      "The partnership correctly identified their combined strength (27 HCP) and opened with the strong, artificial 2 Club bid.",
-      "Although the actual auction used an unconventional 2S response, the final contract of 3NT was reached, which makes 10 tricks (3NT+1) and is the highest scoring game available.",
-      "Suit games in Spades (4S, 9 tricks) and Hearts (4H, 8 tricks) fail, making 3NT the superior choice over 5 Clubs (10 tricks)."
+      "West correctly opened 2C, showing a game-forcing hand (22+ HCP).",
+      "East's 2S response was highly non-standard and misleading; 2D is the required negative response (0-7 HCP) for their 5 HCP hand.",
+      "Despite the irregular response sequence, West successfully navigated to 3NT, which is the optimal game contract (10 tricks)."
     ],
     "basic_section": {
-      "analysis": "West's 2C opening is mandatory, showing 22+ points or equivalent playing strength. East, holding only 5 HCP, must respond negatively with 2D in standard SAYC. West then describes their hand, showing their 5-card Heart suit. East, still weak, shows their 6-card Spade suit as a preference. West, knowing they have stoppers in all suits and 27 combined HCP, correctly bids 3NT, prioritizing the higher-scoring Notrump game over a minor suit game.",
+      "analysis": "West holds 22 HCP, requiring a strong, artificial 2C opening. East, with only 5 HCP, must give the standard negative response, 2D. West then describes their hand, starting with the 5-card Heart suit (2H). East shows their 6-card Spade suit (2S). Knowing the combined strength is 27 HCP and having stoppers in all suits, West correctly concludes that 3NT is the safest and highest-scoring game contract.",
       "recommended_auction": [
         {
-          "player": "West",
           "bid": "2C",
-          "explanation": "Strong, artificial, game-forcing opening bid (22+ HCP or equivalent)."
+          "explanation": "Strong, artificial, game-forcing opening (22+ HCP)."
         },
         {
-          "player": "North",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "Standard pass."
         },
         {
-          "player": "East",
           "bid": "2D",
-          "explanation": "Standard negative response to 2C, showing 0-7 HCP."
+          "explanation": "Standard negative response, showing 0-7 HCP."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "Standard pass."
         },
         {
-          "player": "West",
           "bid": "2H",
-          "explanation": "Opener's rebid showing a 5-card Heart suit, forcing."
+          "explanation": "Opener shows a 5-card Heart suit, forcing."
         },
         {
-          "player": "North",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "Standard pass."
         },
         {
-          "player": "East",
           "bid": "2S",
-          "explanation": "Showing a 5+ card Spade suit (6 cards held), descriptive bid within the 0-7 HCP range."
+          "explanation": "Responder shows a 6-card Spade suit, confirming minimum values (5 HCP)."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "Standard pass."
         },
         {
-          "player": "West",
           "bid": "3N",
-          "explanation": "West has stoppers and sufficient points (27 combined) for game. 3NT is preferred over 4S or 4H, which are poor fits."
+          "explanation": "Opener has shown 22+ HCP and stoppers everywhere. 3NT is the best game given the combined 27 HCP and the lack of slam interest."
         },
         {
-          "player": "North",
+          "bid": "p",
+          "explanation": "Standard pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Standard pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Auction closes."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "After the 2D negative, West knows slam is highly unlikely. West's primary goal is to find the best game. The 2H rebid is descriptive. East's 2S shows shape and minimum values. West could continue describing shape (e.g., 3D showing 5H-4D), but since East is weak and West has a balanced hand with excellent controls (AK in Clubs, AQJ in Hearts, KQ in Diamonds, K in Spades), jumping directly to 3NT is the most efficient and accurate conclusion, maximizing the high-card strength.",
+      "sequence": [
+        {
+          "bid": "2C",
+          "explanation": "Strong, artificial, game-forcing."
+        },
+        {
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "East",
-          "bid": "p",
-          "explanation": "Pass. East is weak and happy to stop at game."
+          "bid": "2D",
+          "explanation": "Negative response (0-7 HCP)."
         },
         {
-          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "2H",
+          "explanation": "Opener shows 5+ Hearts."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "2S",
+          "explanation": "Responder shows 6 Spades, minimum values."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "3N",
+          "explanation": "Opener concludes the auction. 27 combined HCP and balanced distribution makes 3NT the optimal game."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
           "bid": "p",
           "explanation": "Pass."
         }
       ]
     },
-    "advanced_section": {
-      "analysis": "After the 2C opening and the negative 2D response, West's primary goal is to find the best game. West's 2H rebid shows the major. East's 2S rebid is highly descriptive, showing a six-card suit. West must now evaluate the potential of 3NT versus 4S or 5C. Given the 2=5=4=2 distribution and excellent stoppers (AK in Clubs, KQ in Diamonds, K in Spades), 3NT is the safest and highest-scoring option, even though 5C also makes 10 tricks. West correctly avoids forcing to 4S, recognizing East's weakness and the lack of a strong fit.",
-      "sequence": null
-    },
     "coaches_corner": [
       {
-        "player": "West",
-        "topic": "Opening 2 Clubs: Requirements and Rebids",
-        "category": "Opening Bids"
-      },
-      {
         "player": "East",
-        "topic": "Negative Responses to 2 Clubs (0-7 HCP)",
-        "category": "Responding"
+        "topic": "Responding to 2C: The 2D Negative",
+        "category": "Bidding Fundamentals"
       },
       {
         "player": "West",
-        "topic": "Choosing 3NT over a Minor Suit Game",
-        "category": "Game Bidding"
+        "topic": "Rebidding after a 2C/2D sequence to describe shape (5-4-2-2)",
+        "category": "Strong Opening Bids"
+      },
+      {
+        "player": "E/W",
+        "topic": "Contract Selection: Prioritizing 3NT over Major Suit Games with 27+ HCP",
+        "category": "Contract Evaluation"
       }
     ]
   },

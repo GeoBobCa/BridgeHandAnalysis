@@ -1,6 +1,5 @@
 import os
 import json
-import time
 import re
 from pathlib import Path
 from typing import Dict, List
@@ -33,20 +32,19 @@ class AIOrchestrator:
             "double_dummy_truth": dds_data
         }
 
-        # --- GOLDEN MASTER PROMPT ---
+        # --- SIMPLIFIED PROMPT (No explicit player labels) ---
         prompt = f"""
         You are an expert Bridge Teacher (Audrey Grant/SAYC style).
         
         CONTEXT DATA:
         {json.dumps(context_payload, indent=2)}
 
-        CRITICAL EVALUATION RULES:
-        1. **SAYC Rules:** - OPENER: Must have 5+ cards to OPEN 1H or 1S.
-           - RESPONDER: May bid 1H or 1S with 4+ cards (Standard Response).
-        2. **DDS TRUTH:** - Use 'double_dummy_truth' to see if contracts actually make.
-           - If a contract fails deep analysis but is a good percentage bid, praise the bid but note the bad luck.
-        3. **AUCTIONS:** - Generate FULL auctions including final passes.
-           - **STRICT FORMAT:** You MUST include the 'player' field for every bid.
+        CRITICAL RULES:
+        1. **SAYC Logic:** Opener needs 5+ cards for Majors. Responder needs 4+.
+        2. **DDS Truth:** Use 'double_dummy_truth' to validate your advice.
+        3. **AUCTION FORMAT (CRITICAL):** - You MUST list the bids in strict chronological order starting with the Dealer.
+           - **INCLUDE ALL PASSES:** If the auction is "1S - Pass - 4S", you MUST list the Pass. Do not skip opponents.
+           - Format: Simple list of objects {{ "bid": "...", "explanation": "..." }}
 
         TASK:
         Output strict JSON with these specific sections:
@@ -55,13 +53,11 @@ class AIOrchestrator:
         2. ACTUAL_CRITIQUE: 2-3 concise strings.
         3. BASIC_SECTION:
            - "analysis": Standard American explanation.
-           - "recommended_auction": LIST OF OBJECTS.
-             Format: {{ "player": "North", "bid": "1H", "explanation": "..." }}
+           - "recommended_auction": LIST of objects {{ "bid": "...", "explanation": "..." }}
            
         4. ADVANCED_SECTION:
            - "analysis": Advanced concepts.
-           - "sequence": LIST OF OBJECTS (or null).
-             Format: {{ "player": "North", "bid": "Splinter", "explanation": "..." }}
+           - "sequence": LIST of objects {{ "bid": "...", "explanation": "..." }} (Include ALL passes!)
 
         5. COACHES_CORNER: List of objects {{ "player": "...", "topic": "...", "category": "..." }}
 
@@ -72,13 +68,13 @@ class AIOrchestrator:
             "basic_section": {{
                 "analysis": "...",
                 "recommended_auction": [
-                    {{ "player": "North", "bid": "1D", "explanation": "..." }}
+                    {{ "bid": "1D", "explanation": "..." }}
                 ]
             }},
             "advanced_section": {{
                 "analysis": "...",
                 "sequence": [ 
-                    {{ "player": "North", "bid": "...", "explanation": "..." }} 
+                    {{ "bid": "...", "explanation": "..." }} 
                 ]
             }},
             "coaches_corner": []
@@ -86,13 +82,13 @@ class AIOrchestrator:
         """
 
         try:
-            time.sleep(0.5)
+            # NO SLEEP NEEDED FOR PAID PLAN
             response = self.client.models.generate_content(
                 model='gemini-flash-latest', 
                 contents=prompt,
                 config=types.GenerateContentConfig(
                     response_mime_type='application/json',
-                    temperature=0.1  # <--- CRITICAL: Low creativity = Better Bridge
+                    temperature=0.1 # Keep strict logic
                 )
             )
             

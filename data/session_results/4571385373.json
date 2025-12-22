@@ -188,91 +188,133 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL PARTIAL CONTRACT",
+    "verdict": "OPTIMAL RESULT ACHIEVED (Level Too Low)",
     "actual_critique": [
-      "The partnership successfully located the 4-4 Spade fit despite opponent interference, securing a making partial contract (1S makes 8 tricks).",
-      "North's 1S rebid was highly descriptive, prioritizing the major suit fit over re-bidding the minor or attempting a difficult NT contract.",
-      "Stopping at 1S was correct, as the combined 24 HCP and lack of distributional values meant game (4S or 3NT) was not viable (DDS confirms 4S fails)."
+      "The partnership stopped at the 1-level (1S), missing the opportunity to reach the optimal 2-level contract (2S or 2NT), although 1S made the maximum possible 8 tricks.",
+      "South (Fish075) made a critical error by passing 1S. Opener's new suit (1S) was forcing, especially given North's strong opening hand (18 HCP).",
+      "Game (4S or 3NT) was impossible, as Double Dummy analysis shows a maximum of 8 tricks for the N/S partnership in any strain."
     ],
     "basic_section": {
-      "analysis": "East passed, and North opened 1C (18 HCP, standard for 4=2=3=4 shape). East made a good competitive overcall of 1D. South responded 1H, showing 6+ points and a 5-card Heart suit. North, holding 4 Spades, correctly bid 1S to find the 4-4 major suit fit. Since South is minimum (6 HCP) and North has already shown significant strength, passing 1S is the appropriate action to secure a safe partial score.",
+      "analysis": "North opened 1C (18 HCP) and found a competitive auction. South's 1H bid showed 5+ hearts and 6+ points. North's 1S rebid was descriptive, showing 4 Spades and looking for a 4-4 fit. Since N/S have 24 total points, they should explore the 2-level. South should have supported Spades at the 2-level (2S) to confirm the fit and settle for the optimal partial score.",
       "recommended_auction": [
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass is standard with 9 HCP, lacking a strong opening hand or a clear defensive action."
+          "explanation": "East passes with 9 HCP in first seat, acceptable."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Pass with 6 HCP."
+          "explanation": "South passes."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass with 7 HCP."
+          "explanation": "West passes."
         },
         {
-          "player": "North",
           "bid": "1C",
-          "explanation": "Standard opening bid with 18 HCP and a 4-card minor."
+          "explanation": "North opens 1C, standard for 18 HCP."
         },
         {
-          "player": "East",
           "bid": "1D",
-          "explanation": "Competitive overcall showing 5+ Diamonds and 8+ points."
+          "explanation": "East overcalls 1D, showing 5+ Diamonds and 8+ HCP."
         },
         {
-          "player": "South",
           "bid": "1H",
-          "explanation": "Standard response showing 6+ points and a 5-card Heart suit."
+          "explanation": "South competes with 1H, showing 5+ Hearts and 6+ HCP."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "No reason to bid."
+          "explanation": "West passes."
         },
         {
-          "player": "North",
           "bid": "1S",
-          "explanation": "Showing 4 Spades and confirming 12+ points, finding the 4-4 major suit fit."
+          "explanation": "North shows 4 Spades, forcing for one round, looking for the 4-4 fit."
         },
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "player": "South",
-          "bid": "p",
-          "explanation": "With only 6 HCP, South passes 1S, confirming the partial contract."
+          "bid": "2S",
+          "explanation": "South corrects the actual auction error by showing 4 Spades support and minimum values (6-9 HCP)."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "End of auction."
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North accepts the partial score, knowing game is unlikely given South's minimum rebid."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "North's 1S rebid is a crucial step in competitive bidding, demonstrating control and seeking the best fit at the lowest level. Although North has 18 HCP, South's 1H response (6-10 points) limits the partnership potential to 24-28 total points. Since North has a balanced hand and no strong distributional features, the priority shifts from game exploration to securing the best partial. Bidding 1S over 1NT (which would understate strength) or 2C (which would suggest a 5-card suit) was the most accurate description of the hand and led to the optimal result.",
-      "sequence": null
+      "analysis": "North's 1S rebid, a new suit at the 1-level after an intervening bid, is forcing on the Responder (South). South, having already shown 6+ points, is obligated to bid again, even if they have minimum values. Passing 1S is a technical error that prematurely ends the auction. North, with 18 HCP, should have considered a stronger rebid like 2C to better convey strength and force game exploration, but 1S was the most direct way to find the 4-4 Spade fit. Once the 4-4 fit is confirmed at 2S, North correctly passes, recognizing that 24 total points combined with poor distribution limits the trick-taking potential to 8 tricks.",
+      "sequence": [
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "1C",
+          "explanation": "North opens 1C (18 HCP)."
+        },
+        {
+          "bid": "1D",
+          "explanation": "East overcalls."
+        },
+        {
+          "bid": "1H",
+          "explanation": "South competes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "1S",
+          "explanation": "North shows 4 Spades. This is a forcing bid."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "South must bid, showing preference for Spades and minimum values. (Correcting the actual pass.)"
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes, settling for the optimal partial score of 2S."
+        }
+      ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Opening 1C with a 4-card suit",
-        "category": "Opening Bids"
+        "player": "South (Fish075)",
+        "topic": "Forcing Bids and Responder Obligations",
+        "category": "Bidding Fundamentals"
       },
       {
-        "player": "East",
-        "topic": "Effective 1-level overcalls",
-        "category": "Competitive Bidding"
+        "player": "North (BeaPercy)",
+        "topic": "Rebidding Strength in Competitive Auctions",
+        "category": "Bidding Technique"
       },
       {
-        "player": "North/South",
-        "topic": "Finding the 4-4 major suit fit at the 1-level",
-        "category": "Partnership Bidding"
+        "player": "East (bobj245)",
+        "topic": "Borderline Opening Decisions (9 HCP in 1st Seat)",
+        "category": "Opening Strategy"
       }
     ]
   },

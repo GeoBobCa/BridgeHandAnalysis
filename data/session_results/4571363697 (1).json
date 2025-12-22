@@ -191,137 +191,133 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME OPPORTUNITY",
+    "verdict": "MISSED GAME AND REACHED A POOR PART SCORE",
     "actual_critique": [
-      "South's rebid of 1S with only two cards was a serious misstatement of shape, violating SAYC principles requiring 4+ cards (ideally 5+) to bid a major at the 1-level as opener.",
-      "The partnership stopped prematurely in 3D, which makes easily, but missed the optimal 3NT game (9 tricks) available based on combined strength (9 + 16 = 25 HCP).",
-      "North, holding 16 HCP, should have continued bidding after South showed minimum values (9 HCP) to ensure the partnership reached the known game zone."
+      "South erred significantly by passing a 9 HCP hand in first seat, severely distorting the auction and making game finding difficult.",
+      "North failed to adequately describe their 16 HCP hand, settling for minimum rebids (1S) when 3NT was the clear target.",
+      "The partnership missed the optimal 3NT game contract, which makes easily (9 tricks), and instead landed in 3D, which fails by 3 or 4 tricks (DDS shows 6 tricks maximum)."
     ],
     "basic_section": {
-      "analysis": "South opened 1D (9 HCP, 4-card suit). North responded 1H (16 HCP, 4-card major, forcing). South's hand is minimum and semi-balanced (4=4=4=3). The most descriptive rebid for a minimum, balanced hand that denies support for the responder's major is 1NT. This bid limits South's hand to 6-9 HCP and shows 4+ Diamonds. North, knowing the partnership has 25+ HCP, must now drive to game, likely 3NT, as no strong major suit fit was found.",
+      "analysis": "South should open 1D with 9 HCP. North's 1S response shows 10+ HCP and 4+ Spades. South's subsequent 1NT rebid shows 8-10 HCP and a balanced hand, denying 4-card Spade support. With 25 combined HCP and stoppers in all suits, North should immediately bid 3NT, securing the optimal contract.",
       "recommended_auction": [
         {
-          "player": "South",
           "bid": "1D",
-          "explanation": "Standard opening bid, showing 4+ Diamonds and 12-21 HCP (here, 9 HCP)."
+          "explanation": "Standard opening bid, 4+ Diamonds, 12-21 HCP (9 HCP is acceptable for a light opening)."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Insufficient strength to intervene."
+          "explanation": "Pass, 4 HCP."
         },
         {
-          "player": "North",
-          "bid": "1H",
-          "explanation": "Standard response showing 4+ Hearts and 6+ HCP. North has 16 HCP, making this a strong response."
+          "bid": "1S",
+          "explanation": "Forcing response, 4+ Spades, 10+ HCP (16 HCP here)."
         },
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Insufficient strength or shape to intervene effectively."
+          "explanation": "Pass."
         },
         {
-          "player": "South",
           "bid": "1NT",
-          "explanation": "The best rebid. Shows a minimum hand (6-9 HCP), balanced shape, and denies 4-card Heart support. This is highly descriptive."
+          "explanation": "Minimum rebid, 8-10 HCP, balanced shape, denying 4-card Spade support."
         },
         {
-          "player": "West",
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "North",
-          "bid": "2S",
-          "explanation": "Checkback/Natural bid showing 4 Spades and forcing to game, as North knows the partnership has 25+ HCP."
-        },
-        {
-          "player": "East",
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "player": "South",
-          "bid": "2NT",
-          "explanation": "Shows the top of the 1NT range (8-9 HCP) and denies 3-card support for Spades."
-        },
-        {
-          "player": "West",
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "player": "North",
           "bid": "3NT",
-          "explanation": "Game reached. North has sufficient points and controls to declare 3NT."
+          "explanation": "Game bid. North knows the partnership has 25+ HCP and excellent stoppers, making 3NT the best contract."
         },
         {
-          "player": "East",
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "South",
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "West",
           "bid": "p",
           "explanation": "Pass."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The actual auction failed because South prioritized bidding a non-existent 4-card major (1S) over describing the hand's strength and balance (1NT). When Opener has a minimum hand (6-9 HCP) and is semi-balanced (4-4-3-2 or similar), 1NT is often the most accurate second bid, even if it means bypassing a rebid of the opening minor. North's 16 HCP hand is too strong to stop short of game. After South's actual 1S rebid, North should have used 2NT (invitational/forcing) or 3C/3S (cuebids/forcing) to confirm game interest, rather than settling for 3D.",
+      "analysis": "In the actual auction, after South passed, North opened 1D (16 HCP). South's 1H response showed 6-9 points. North now knows the partnership has 25 HCP. Given the 4=1=4=4 shape and the lack of a strong major suit fit (only 5-card Heart fit), North should have jumped directly to 3NT after South's 1H response. North's 1S rebid was an underbid, and the subsequent 3D invitation was a poor choice, leading to a contract that fails badly.",
       "sequence": [
         {
-          "player": "South",
+          "bid": "p",
+          "explanation": "Error. South should open 1D/1C with 9 HCP."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
           "bid": "1D",
-          "explanation": "Standard opening."
+          "explanation": "3rd seat opening, 16 HCP, 4 Diamonds."
         },
         {
-          "player": "North",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
           "bid": "1H",
-          "explanation": "Strong response."
+          "explanation": "Response showing 6-9 HCP, 4+ Hearts."
         },
         {
-          "player": "South",
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
           "bid": "1S",
-          "explanation": "CRITICAL ERROR: Bidding a 2-card suit. Should be 1NT."
+          "explanation": "Underbid. North has 16 HCP and should show game interest immediately, likely 3NT."
         },
         {
-          "player": "North",
-          "bid": "2NT",
-          "explanation": "After the confusing 1S rebid, North shows 13+ HCP and asks South to clarify shape/strength, forcing to game."
+          "bid": "p",
+          "explanation": "Pass."
         },
         {
-          "player": "South",
+          "bid": "2D",
+          "explanation": "Minimum preference for Diamonds, 4 cards, 6-9 HCP confirmed."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
           "bid": "3D",
-          "explanation": "Shows minimum hand (9 HCP) and 4+ Diamonds, denying 3-card Spade support."
+          "explanation": "Invitational bid, confirming Diamond fit. Poor choice as 3NT is superior and guaranteed."
         },
         {
-          "player": "North",
-          "bid": "3NT",
-          "explanation": "North takes the game decision based on combined points and controls."
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Accepting the invitation with a minimum hand."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
         }
       ]
     },
     "coaches_corner": [
       {
         "player": "South",
-        "topic": "Opener's Rebid Priority",
-        "category": "Bidding Fundamentals"
-      },
-      {
-        "player": "South",
-        "topic": "Misrepresenting Suit Length (1S with 2 cards)",
-        "category": "SAYC Rules"
+        "topic": "Opening Bids",
+        "category": "Fundamentals"
       },
       {
         "player": "North",
-        "topic": "Driving to Game with 25+ Combined Points",
-        "category": "Game Valuation"
+        "topic": "Rebid Strength and Game Bidding",
+        "category": "Game Bidding"
+      },
+      {
+        "player": "N/S Partnership",
+        "topic": "Contract Selection (3NT vs. Minor Suit Game)",
+        "category": "Valuation"
       }
     ]
   },

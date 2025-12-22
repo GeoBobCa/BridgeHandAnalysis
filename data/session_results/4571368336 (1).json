@@ -185,56 +185,117 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MAJOR BIDDING ERROR",
+    "verdict": "MISSED GAME (3NT)",
     "actual_critique": [
-      "West missed the standard 1NT opening (16 HCP, balanced), allowing South to open the bidding.",
-      "North's 1H response (1 HCP, 3 cards) was highly irregular and violated standard SAYC requirements for a 1-level response (6+ points required).",
-      "The resulting 2H contract was disastrous, failing by four tricks (making only 4 tricks total), highlighting poor communication and point count estimation."
+      "E/W missed the optimal 3NT game contract, which makes 10 tricks easily.",
+      "West (Opener, 16 HCP) failed to accurately describe the strength of the hand after South's competitive 2D overcall.",
+      "The actual contract of 2H was an underbid, though it made 9 tricks (+1)."
     ],
     "basic_section": {
-      "analysis": "West, holding 16 HCP and a balanced 3=3=4=3 distribution, should open 1NT (standard 15-17 HCP). This would likely lead to a quick pass-out or E/W playing 1NT, which makes easily. When South opened 1D, North, holding only 1 HCP, must pass. Bidding 1H with 1 HCP and only three cards is a fundamental error that led the partnership into a hopeless contract.",
+      "analysis": "West opened 1D and East responded 1H. South's 2D overcall was strong (16 HCP) and forced E/W to make a decision. West, holding 16 HCP and a balanced hand with a Diamond stopper (AT76), should have bid 2NT to show the 15-17 point range. This descriptive bid would have allowed East (7 HCP) to correctly raise to the making game of 3NT (23 combined points). The actual 2H bid by West was too passive and obscured the partnership's game potential.",
       "recommended_auction": [
         {
-          "player": "West",
-          "bid": "1NT",
-          "explanation": "Standard opening bid for a balanced hand of 15-17 HCP."
+          "bid": "1D",
+          "explanation": "Standard opening, 16 HCP, 4-card Diamond suit."
         },
         {
-          "player": "North",
           "bid": "p",
-          "explanation": "With only 1 HCP, North must pass. No response is warranted."
+          "explanation": "North has only 1 HCP."
         },
         {
-          "player": "East",
-          "bid": "p",
-          "explanation": "7 HCP is insufficient to interfere or transfer over 1NT."
+          "bid": "1H",
+          "explanation": "4+ Hearts, 6+ HCP response."
         },
         {
-          "player": "South",
+          "bid": "2D",
+          "explanation": "Strong competitive overcall, showing 5+ Diamonds and 10+ points (here 16 HCP)."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "Showing 15-17 HCP, balanced shape, and a stopper in the opponent's suit (Diamonds). This is the most descriptive bid."
+        },
+        {
           "bid": "p",
-          "explanation": "South has 16 HCP but no fit and no forcing bid available opposite a passed partner. Pass and let E/W play 1NT."
+          "explanation": "No action for North."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "With 7 HCP, East knows the partnership has 23+ points and a balanced fit, guaranteeing game."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes, satisfied with the game contract."
+        },
+        {
+          "bid": "p",
+          "explanation": "Auction closes."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "If West passes initially, South's 1D opening is correct. The critical error remains North's 1H response. If North had passed, the auction would likely have proceeded: S 1D - W 1NT - All Pass, leading to E/W playing 1NT, which is the optimal result for the E/W side (making 10 tricks). South's 2H rebid, showing 3-card support, was based on the false assumption that North had a legitimate response (6+ points and 4+ cards). When partner makes an illegal bid, the partnership is often doomed to find a poor contract.",
-      "sequence": null
+      "analysis": "In competitive auctions, opener must prioritize showing strength when holding more than a minimum hand. West's 16 HCP hand is too strong for a simple 2H competitive raise, which often suggests 12-14 points. The 2NT rebid is a highly effective tool, guaranteeing the 15-17 HCP range and a stopper, which is crucial for finding NT games. East's subsequent 3NT bid is automatic, recognizing the combined strength and the balanced nature of the hands, leading to the optimal contract.",
+      "sequence": [
+        {
+          "bid": "1D",
+          "explanation": "West opens 1D."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "1H",
+          "explanation": "East responds 1H."
+        },
+        {
+          "bid": "2D",
+          "explanation": "South overcalls 2D, showing strength and length."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "West shows 15-17 HCP and a Diamond stopper."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "East bids game based on combined strength."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        }
+      ]
     },
     "coaches_corner": [
       {
         "player": "West",
-        "topic": "Opening 1NT",
-        "category": "Opening Bids"
-      },
-      {
-        "player": "North",
-        "topic": "Minimum Requirements for Responses (6+ HCP)",
-        "category": "Responding"
+        "topic": "Rebidding Strength in Competition (Using 2NT)",
+        "category": "Bidding Accuracy"
       },
       {
         "player": "South",
-        "topic": "Trusting Partner's Bids (Assuming legitimacy)",
-        "category": "Partnership Communication"
+        "topic": "Aggressive Overcalls with Strong Hands",
+        "category": "Competitive Bidding"
+      },
+      {
+        "player": "East",
+        "topic": "Game Decision based on Opener's 2NT Rebid",
+        "category": "Partnership Evaluation"
       }
     ]
   },

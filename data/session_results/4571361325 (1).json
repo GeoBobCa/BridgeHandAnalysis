@@ -188,101 +188,152 @@
     }
   },
   "ai_analysis": {
-    "verdict": "MISSED GAME OPPORTUNITY",
+    "verdict": "MISSED OPTIMAL GAME (4H)",
     "actual_critique": [
-      "The partnership failed to identify their 4-4 Heart fit, settling instead for a poor 5-2 Club fit.",
-      "North's rebid of 3C was too passive. With 25 combined HCP, North should have bid 2NT to show values and invite game, rather than signing off.",
-      "The final contract of 3C fails by two tricks (making only 7 tricks), whereas 4H was the logical game target, making 9 tricks (down 1)."
+      "The partnership missed a makeable game contract (4H makes exactly 9 tricks).",
+      "North's 3C rebid was too passive, failing to explore game possibilities after South's forcing 2H response.",
+      "The final contract of 3C was severely underbid and failed by two tricks (DDS shows 7 tricks available)."
     ],
     "basic_section": {
-      "analysis": "North opened 1C (14 HCP) and South responded 2H (11 HCP, 4+ Hearts) over East's 1S overcall. This response is constructive and forcing for one round, indicating 10+ points and a potential 4-4 fit. With 25 combined HCP, N/S should be aggressively seeking game. North, holding 14 HCP, should prioritize showing values and a partial Spade stopper by bidding 2NT, inviting South to continue. North's actual bid of 3C showed a minimum hand and denied Heart support, effectively shutting down game exploration prematurely.",
+      "analysis": "N/S hold 25 high card points, making game highly probable. North's 1C opening and South's 2H response established a forcing sequence. North, with 14 HCP, should have continued exploring game rather than retreating to 3C, which suggested a minimum hand and shut down the auction prematurely. The partnership failed to find the 4-2 Heart fit, which provides the best natural game contract.",
       "recommended_auction": [
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Dealer passes."
+          "explanation": "East passes, 7 HCP is insufficient for an opening bid."
         },
         {
-          "player": "South",
           "bid": "p",
-          "explanation": "Standard pass."
+          "explanation": "South passes, waiting for North to open."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Standard pass."
+          "explanation": "West passes."
         },
         {
-          "player": "North",
           "bid": "1C",
-          "explanation": "Standard opening bid (14 HCP, 5+ Clubs)."
+          "explanation": "North opens 1C (14 HCP, 5-card suit)."
         },
         {
-          "player": "East",
           "bid": "1S",
-          "explanation": "Standard overcall (5+ Spades, 7 HCP)."
+          "explanation": "East overcalls 1S (5 cards, 7 HCP)."
         },
         {
-          "player": "South",
           "bid": "2H",
-          "explanation": "Constructive response showing 10+ points and 4+ Hearts. This bid is forcing for one round."
+          "explanation": "South responds 2H, showing 4+ Hearts and 10+ HCP. This is forcing."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "West passes."
         },
         {
-          "player": "North",
           "bid": "2NT",
-          "explanation": "Showing 12-14 HCP, semi-balanced shape, and a partial Spade stopper (QT2). This invites game and denies 3-card Heart support."
+          "explanation": "North shows 12-14 HCP, balanced shape, and a partial stopper in Spades, denying 3-card Heart support."
         },
         {
-          "player": "South",
-          "bid": "3H",
-          "explanation": "Showing 4-card Heart support and accepting the game invitation with 11 HCP. This confirms the 4-4 fit."
-        },
-        {
-          "player": "North",
-          "bid": "4H",
-          "explanation": "Accepting the game invitation with 14 HCP and an 8-card fit."
-        },
-        {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "player": "South",
-          "bid": "p",
-          "explanation": "Pass."
+          "bid": "3NT",
+          "explanation": "South has 11 HCP and good controls, bidding the expected game based on combined strength (25 HCP). (Note: While 3NT fails by 1, it is the standard bid here.)"
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass. Contract 4H."
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "While 4H is the logical and percentage game contract (making 9 tricks, down 1), the double dummy analysis reveals that 4S actually makes 10 tricks. This is a highly unusual result given N/S only holds 6 Spades combined (a 3-3 fit). Since the partnership has no natural way to bid 4S, the focus remains on finding the 4-4 Heart fit. The 2NT rebid by North is crucial for showing values without promising support, allowing South to accurately place the contract.",
-      "sequence": null
+      "analysis": "Given the competitive auction and the 4-2 Heart fit that makes game, N/S should use the 2NT rebid by Opener to describe strength, followed by Responder's secondary suit (3D) to find the optimal fit. North's 3H rebid, showing preference for the 4-2 fit over 3NT, is crucial here, allowing South to raise to the makeable 4H contract.",
+      "sequence": [
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "1C",
+          "explanation": "North opens 1C."
+        },
+        {
+          "bid": "1S",
+          "explanation": "East overcalls 1S."
+        },
+        {
+          "bid": "2H",
+          "explanation": "South shows 4+ H, 10+ HCP, forcing."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "North shows 12-14 HCP, balanced, partial S stopper."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "3D",
+          "explanation": "South shows a 4-card Diamond suit, confirming game interest, forcing."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "3H",
+          "explanation": "North shows 2-card support, preferring Hearts over Diamonds, suggesting 4H might be better than 3NT."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "4H",
+          "explanation": "South accepts the preference, knowing 25 HCP warrants game in the best available fit."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        }
+      ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Rebid after Overcall",
-        "category": "Valuation/Game Exploration"
+        "player": "North (BeaPercy)",
+        "topic": "Competitive Rebids by Opener",
+        "category": "Bidding Judgment"
       },
       {
-        "player": "South",
-        "topic": "Responding with a 4-card Major",
-        "category": "Fit Finding"
-      },
-      {
-        "player": "Partnership",
-        "topic": "Finding the 4-4 Major Fit",
-        "category": "Communication"
+        "player": "South (Fish075)",
+        "topic": "Continuing to Game after Opener Shows Strength",
+        "category": "Game Theory"
       }
     ]
   },

@@ -183,117 +183,145 @@
     }
   },
   "ai_analysis": {
-    "verdict": "POOR BIDDING, DISASTROUS RESULT",
+    "verdict": "MISSED OPTIMAL GAME",
     "actual_critique": [
-      "West's 1S opening was standard, but East's immediate jump to 4S was highly irregular and aggressive, especially with only 3-card Spade support (K74) and 14 HCP.",
-      "East should have used a forcing response (like 2D) to describe their strength and secondary suit, allowing the partnership to find the best fit or settle in 3NT.",
-      "The actual contract, 4S, failed badly, making only 6 tricks (down 4), confirming that E/W should have focused on accurate description rather than preemptive action."
+      "The partnership failed to locate the optimal 4-4 Heart fit, resulting in a contract of 4S which fails by four tricks (making only 6 tricks).",
+      "East's immediate jump to 4S was premature. With 14 HCP, East should have used a forcing sequence (like 2C) to explore partner's shape and find the best fit.",
+      "The optimal contract is 4H, which makes 10 tricks, or 4C, which also makes 10 tricks. Both are superior to 4S."
     ],
     "basic_section": {
-      "analysis": "West opened a standard 1S (5+ Spades, 10+ HCP). East, holding 14 HCP, has game-forcing values. East must use a forcing response to ensure the partnership reaches game and finds the best denomination. A jump to 4S with only 3-card support is non-standard and usually reserved for preemptive purposes or specific slam sequences. The correct basic response is 2D (forcing, showing 10+ HCP and 4+ Diamonds).",
+      "analysis": "East/West have 24 combined HCP, guaranteeing a game contract. West's 1S opening is standard (5+ cards, 10-12 HCP). East, holding 14 HCP, must ensure the partnership reaches the best game. Jumping directly to 4S, while showing support and strength, bypasses crucial information exchange. By using the 2/1 Game Forcing sequence (2C), East allows West to describe their 5-5 shape (1S-2D), leading to the discovery of the superior 4-4 Heart fit.",
       "recommended_auction": [
         {
-          "player": "West",
           "bid": "1S",
-          "explanation": "Standard opening bid, 5-card major."
+          "explanation": "Standard opening, 5+ Spades, 10 HCP (acceptable due to good shape)."
         },
         {
-          "player": "North",
           "bid": "p",
-          "explanation": "Insufficient points for intervention."
+          "explanation": "Pass, insufficient points for intervention."
         },
         {
-          "player": "East",
+          "bid": "2C",
+          "explanation": "Game forcing response (2/1 GF), showing 13+ HCP and forcing partner to rebid."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
           "bid": "2D",
-          "explanation": "Forcing response showing 10+ HCP and 4+ Diamonds. This ensures game is reached."
+          "explanation": "West describes their 5-5 shape (5 Spades, 5 Diamonds), showing a minimum opening hand (10-12 HCP)."
         },
         {
-          "player": "South",
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "West",
+          "bid": "2H",
+          "explanation": "East shows a 4-card Heart suit, still forcing, looking for a major fit."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
           "bid": "2S",
-          "explanation": "Rebid of Spades, showing 5+ Spades and a minimum opening hand (11-15 HCP)."
+          "explanation": "West denies 3+ Heart support and confirms minimum strength."
         },
         {
-          "player": "North",
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "East",
-          "bid": "4S",
-          "explanation": "Game bid in the 8-card Spade fit, knowing the partnership has 24+ combined points."
+          "bid": "3H",
+          "explanation": "East insists on Hearts, confirming game interest and the 4-card suit."
         },
         {
-          "player": "South",
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "West",
-          "bid": "p",
-          "explanation": "Pass."
+          "bid": "4H",
+          "explanation": "West accepts the game call in the known 4-4 fit. 4H makes 10 tricks."
         },
         {
-          "player": "North",
           "bid": "p",
-          "explanation": "Pass. Contract 4S by West. (DDS: Fails, making 6 tricks)."
+          "explanation": "End of auction."
+        },
+        {
+          "bid": "p",
+          "explanation": "End of auction."
+        },
+        {
+          "bid": "p",
+          "explanation": "End of auction."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "East's 14 HCP hand is slightly awkward. While 2D is the best forcing response, West's 5-5 shape (S/D) makes 3D a potential rebid, showing the two suits and minimum strength. East could then bid 4D, the other 8-card fit. However, regardless of the suit chosen (4S, 4D, or 3NT), the DDS confirms that E/W cannot make game due to the adverse distribution and N/S defensive strength, particularly South's long Clubs.",
+      "analysis": "The 2/1 Game Forcing structure is essential here. West's 5-5 shape is well-described by 1S followed by 2D. East, knowing the partnership has game values, uses 2H to check for the 4-4 major fit. Although West denies support with 2S, East's subsequent 3H bid confirms the suit quality and forces West to choose game. Despite West's singleton Heart, the combined high card strength and the 4-4 fit make 4H the superior contract, avoiding the poor playability of 4S.",
       "sequence": [
         {
-          "player": "West",
           "bid": "1S",
-          "explanation": "Standard opening."
+          "explanation": "West opens 1S (5+ cards, 10 HCP)."
         },
         {
-          "player": "North",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "North passes."
         },
         {
-          "player": "East",
+          "bid": "2C",
+          "explanation": "East initiates 2/1 Game Forcing, showing 13+ HCP."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
           "bid": "2D",
-          "explanation": "Forcing response, 10+ HCP."
+          "explanation": "West shows 5 Spades and 5 Diamonds, minimum opening."
         },
         {
-          "player": "South",
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "2H",
+          "explanation": "East shows 4+ Hearts, still forcing."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "West shows minimum strength and denies 3+ Heart support."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "3H",
+          "explanation": "East insists on the Heart fit, showing 4-4 and strong game interest."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "4H",
+          "explanation": "West accepts the game call in the known 4-4 fit."
+        },
+        {
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "West",
-          "bid": "3D",
-          "explanation": "Reverse/Jump Shift showing 5 Spades and 5 Diamonds, minimum hand (11-15 HCP)."
-        },
-        {
-          "player": "North",
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "player": "East",
-          "bid": "4D",
-          "explanation": "Game in the Diamond fit. (DDS: Fails, making 6 tricks)."
-        },
-        {
-          "player": "South",
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "player": "West",
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "player": "North",
           "bid": "p",
           "explanation": "Pass."
         }
@@ -301,22 +329,19 @@
     },
     "coaches_corner": [
       {
-        "player": "East",
-        "topic": "Forcing Responses",
-        "category": "Bidding Fundamentals",
-        "tip": "With 14 HCP, East must use a 2-level new suit response (2D) to ensure the partnership reaches game, rather than jumping preemptively."
+        "player": "East (bobj245)",
+        "topic": "Game Forcing Responses",
+        "category": "Bidding Technique"
       },
       {
-        "player": "East",
-        "topic": "Support Requirements",
-        "category": "Bidding Conventions",
-        "tip": "Avoid raising partner's major suit above the 2-level without at least 4-card support, unless playing specific weak jump raise conventions."
+        "player": "East (bobj245)",
+        "topic": "Fit Location vs. Direct Game Jump",
+        "category": "Partnership Communication"
       },
       {
-        "player": "E/W Partnership",
-        "topic": "Game Safety",
-        "category": "Strategy",
-        "tip": "Even with 24 combined HCP, be cautious when the opener has a minimum hand and the opponents have a strong side suit (South's Clubs). Sometimes, 2S or 3S is the best result when game is highly vulnerable."
+        "player": "West (georgenamg)",
+        "topic": "Opening Light Hands",
+        "category": "Opening Bids"
       }
     ]
   },

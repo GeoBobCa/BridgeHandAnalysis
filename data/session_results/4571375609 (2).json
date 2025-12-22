@@ -186,107 +186,81 @@
     }
   },
   "ai_analysis": {
-    "verdict": "DISASTROUS CONTRACT SELECTION",
+    "verdict": "POOR CONTRACT SELECTION",
     "actual_critique": [
-      "North's 2H jump shift (11 HCP) was an overbid and forced the partnership too high too quickly. 1H was the standard, constructive response.",
-      "The final contract of 3C is severely undertricked, making only 6 tricks when 9 are required (failing by 3 tricks).",
-      "The partnership failed to find the safe 2NT partial, which makes easily (8 tricks) and would have been the optimal resting spot."
+      "The partnership missed the optimal partial contract of 2NT (making 8 tricks).",
+      "South's bid of 3C was an overbid for a sign-off, leading to a contract that fails by three tricks (DDS shows 6 tricks available).",
+      "South failed to use 2NT to show a Spade stopper and general invitational strength after West's overcall."
     ],
     "basic_section": {
-      "analysis": "South's 1D opening and West's 1S overcall were standard. North's 2H response was the primary error. With 11 HCP and a 5-card Heart suit, North must respond 1H to keep the bidding low and descriptive. A jump shift (2H) typically implies a stronger hand (12+ HCP or highly distributional) and is forcing. South's 3C rebid was descriptive of a minimum 4=4 minor hand, denying Heart support. While North correctly passed 3C based on the combined 23 HCP (insufficient for game), the choice of 3C as the final contract was unfortunate, leading to a massive loss.",
+      "analysis": "East's pass and South's 1D opening are standard. West's 1S overcall is strong (15 HCP). North's 2H is a constructive competitive bid showing a 5-card suit and 10+ points. At South's turn, having 12 HCP and a Spade stopper (962 opposite A7, though weak, it's enough to consider NT), the best action is 2NT, showing 11-12 points and inviting game. This is far superior to pushing to 3C in a low-quality 8-card fit. 2NT makes 8 tricks, achieving the optimal partial score.",
       "recommended_auction": [
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Standard pass with 2 HCP."
+          "explanation": "East passes with only 2 HCP."
         },
         {
-          "player": "South",
           "bid": "1D",
-          "explanation": "Standard opening bid, showing 12+ HCP and 4+ Diamonds (or 4=4 minors)."
+          "explanation": "South opens 1D (12 HCP, 4-card minor, no 5-card major)."
         },
         {
-          "player": "West",
           "bid": "1S",
-          "explanation": "Standard overcall, showing 8-16 HCP and 4+ Spades."
+          "explanation": "West overcalls 1S, showing 8+ HCP and a 4+ card suit (15 HCP)."
         },
         {
-          "player": "North",
-          "bid": "1H",
-          "explanation": "Standard response, showing 6+ HCP and 4+ Hearts. This keeps the bidding low and accurately describes the hand."
+          "bid": "2H",
+          "explanation": "North bids 2H, showing a 5-card Heart suit and 10+ points, constructively competing."
         },
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "player": "South",
           "bid": "2NT",
-          "explanation": "A jump rebid showing a balanced hand (12-14 HCP) with 4=4 minors, denying 3-card Heart support. This is the most descriptive and safest rebid."
+          "explanation": "South shows 11-12 HCP, a Spade stopper, and invites game. This is the most descriptive bid."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "North has 11 HCP. Combined 23 HCP is not quite enough for a guaranteed 3NT (which fails), so North passes, settling for the optimal partial."
         },
         {
-          "player": "North",
-          "bid": "p",
-          "explanation": "With 11 HCP opposite a 12-14 HCP 2NT rebid, the partnership has 23-25 HCP, which is borderline for game. Given the lack of a major suit fit, 2NT is the correct final contract."
-        },
-        {
-          "player": "East",
           "bid": "p",
           "explanation": "Auction ends."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "When North chose the forcing 2H response, South was obligated to describe their hand. South's 3C rebid showed minimum values (12 HCP) and 4 Clubs, denying 3-card Heart support. However, given the balanced nature of the hand and the presence of stoppers (AQ in Clubs, KQT8 in Diamonds), 2NT would have been a superior rebid over 3C, even if it meant skipping the minor suit fit. 2NT is often preferred over a minor suit partial when the hand is balanced and game is unlikely, as it utilizes the combined strength better. The DDS confirms 2NT makes 8 tricks, while 3C fails.",
+      "analysis": "The partnership correctly identified the strength needed for a partial, but failed to find the safest denomination. South's 3C bid, while identifying an 8-card fit, was based on poor suit quality (AQ opposite K9) and ignored the potential for NT. When opponents intervene with a strong overcall (1S), the responder (South) must prioritize showing a stopper and overall strength via 2NT if they lack support for partner's suit or a clear game force. The actual contract 3C was a competitive misjudgment, as N/S lacked the high cards and distribution to make 9 tricks in Clubs.",
       "sequence": [
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Dealer passes."
+          "explanation": "East passes."
         },
         {
-          "player": "South",
           "bid": "1D",
-          "explanation": "Standard opening."
+          "explanation": "South opens 1D."
         },
         {
-          "player": "West",
           "bid": "1S",
-          "explanation": "Overcall."
+          "explanation": "West overcalls 1S (15 HCP)."
         },
         {
-          "player": "North",
           "bid": "2H",
-          "explanation": "Aggressive, forcing response (as played)."
+          "explanation": "North shows 5+ Hearts, 10+ points."
         },
         {
-          "player": "East",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "East passes."
         },
         {
-          "player": "South",
           "bid": "2NT",
-          "explanation": "Better rebid than 3C. Shows 12-14 balanced, stoppers in the unbid suits, and denies Heart support, keeping the contract at a safer level."
+          "explanation": "South shows 11-12 HCP and a Spade stopper, inviting game."
         },
         {
-          "player": "West",
           "bid": "p",
-          "explanation": "Pass."
+          "explanation": "North passes, recognizing 2NT is the limit (2NT makes 8 tricks, 3NT fails)."
         },
         {
-          "player": "North",
-          "bid": "p",
-          "explanation": "Accepting the 2NT contract."
-        },
-        {
-          "player": "East",
           "bid": "p",
           "explanation": "Auction ends."
         }
@@ -294,19 +268,19 @@
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Response Level",
-        "category": "Bidding Fundamentals"
+        "player": "Fish075 (South)",
+        "topic": "Responding to Overcalls: 2NT",
+        "category": "Bidding Technique"
       },
       {
-        "player": "South",
-        "topic": "Rebid Choice",
-        "category": "Safety"
+        "player": "Fish075 (South)",
+        "topic": "Suit Quality vs. Length",
+        "category": "Contract Selection"
       },
       {
-        "player": "Partnership",
-        "topic": "Contract Selection",
-        "category": "Safety"
+        "player": "BeaPercy (North)",
+        "topic": "Evaluating Game Potential after 2NT Invitation",
+        "category": "Judgment"
       }
     ]
   },

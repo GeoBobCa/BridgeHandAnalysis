@@ -188,76 +188,133 @@
     }
   },
   "ai_analysis": {
-    "verdict": "POOR BIDDING SEQUENCE",
+    "verdict": "MISSED GAME",
     "actual_critique": [
-      "North committed a fundamental error by opening 1H with only four cards in the suit. The 5-card major rule dictates that 1S was the correct opening bid.",
-      "North's subsequent rebid of 2N with only 10 HCP was a severe overstatement of strength. This bid typically promises 12-14 balanced points or more, leading directly to a failed contract (2N makes only 4 tricks).",
-      "The partnership failed to find their best partial (likely 1S or 2S, both failing) and instead landed in a disastrous No Trump contract."
+      "The partnership had 25 combined HCP (West 14, East 11), making 3NT a standard and achievable contract (DDS confirms 3NT makes 9 tricks).",
+      "West's rebid of 2NT over 1NT was too cautious. With 14 HCP, West should have pushed directly to 3NT, assuming partner held at least 9-10 HCP for the 1NT response.",
+      "East's 1NT response with 11 HCP was slightly high for the standard 6-10 range, but the subsequent failure to reach game rests primarily on West's conservative rebid."
     ],
     "basic_section": {
-      "analysis": "North must prioritize the 5-card major, Spades, and open 1S. South, with only 5 HCP, is too weak to respond under standard SAYC rules and should pass. When the auction comes back to West, West should make a takeout double to balance the bidding. North then shows their minimum hand by rebidding 2S. This disciplined approach prevents the partnership from reaching an unmakeable game or high partial.",
+      "analysis": "West opened 1H and partner responded 1NT, showing 6-10 HCP and a balanced hand. West has 14 HCP and a balanced hand (4=4=3=3). Even if East holds only 9 HCP, the partnership total is 23 HCP, which is sufficient for a non-vulnerable 3NT contract, especially given the good controls (A, K, Q holdings). West should have jumped to 3NT immediately.",
       "recommended_auction": [
         {
-          "player": "North",
-          "bid": "1S",
-          "explanation": "Standard opening bid showing 5+ Spades and 10+ HCP. This is mandatory over 1H."
+          "bid": "p",
+          "explanation": "North passes with 10 HCP, choosing not to open a borderline hand."
         },
         {
-          "player": "East",
-          "bid": "P",
-          "explanation": "No suitable overcall."
+          "bid": "p",
+          "explanation": "East passes with 11 HCP, waiting for partner to open."
         },
         {
-          "player": "South",
-          "bid": "P",
-          "explanation": "With only 5 HCP, South must pass 1S. Standard responding range is 6+ HCP."
+          "bid": "p",
+          "explanation": "South passes."
         },
         {
-          "player": "West",
-          "bid": "D",
-          "explanation": "Takeout Double, reopening the auction and showing 10+ HCP and support for the unbid suits."
+          "bid": "1H",
+          "explanation": "West opens 1H (14 HCP, 4-card suit)."
         },
         {
-          "player": "North",
-          "bid": "2S",
-          "explanation": "Rebidding the suit shows a minimum hand (10-11 HCP) and 5 cards, fulfilling the obligation to bid after partner's double."
+          "bid": "p",
+          "explanation": "North passes."
         },
         {
-          "player": "East",
-          "bid": "P",
-          "explanation": "No action."
+          "bid": "1N",
+          "explanation": "East responds 1NT (6-10 HCP, balanced). East stretches the range slightly with 11 HCP."
         },
         {
-          "player": "South",
-          "bid": "P",
-          "explanation": "South has insufficient strength to bid further."
+          "bid": "p",
+          "explanation": "South passes."
         },
         {
-          "player": "West",
-          "bid": "P",
-          "explanation": "West is satisfied with the defensive position."
+          "bid": "3N",
+          "explanation": "West recognizes the combined strength (14 + 9/10 minimum = 23/24 HCP) and bids game immediately."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass. Contract 3N."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The combined N/S strength is only 21 HCP, making any game contract highly improbable. The opponents (E/W) hold 25 HCP and have a makeable 3NT contract (9 tricks). North's aggressive 2N rebid, besides being technically unsound, gave E/W no chance to compete for their own game. When holding a minimum opening hand (10-11 HCP), the opener must be extremely cautious about raising the level, especially into No Trump, unless partner has shown significant strength.",
-      "sequence": null
+      "analysis": "A more aggressive approach would see North open 1S with 10 HCP and a 5-card major. However, assuming North passes, East should use a 2/1 Game Forcing (GF) response with 11 HCP to ensure game is reached and to better describe their strength. Bidding 2C (the cheapest new suit) forces West to describe their hand further, leading to a precise 3NT contract.",
+      "sequence": [
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "East passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "1H",
+          "explanation": "West opens 1H (14 HCP)."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "2C",
+          "explanation": "East responds 2C (11 HCP, 4 Clubs). This is a 2/1 GF response, showing 10+ HCP and forcing West to rebid."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "2N",
+          "explanation": "West shows a balanced hand, 12-14 HCP, denying 5+ hearts or 4-card support for clubs."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "3N",
+          "explanation": "East knows the partnership has 23-25 HCP and places the contract in game."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass. Contract 3N."
+        }
+      ]
     },
     "coaches_corner": [
       {
         "player": "North",
-        "topic": "Opening 5-Card Majors",
+        "topic": "Opening Light Hands",
         "category": "Opening Bids"
       },
       {
-        "player": "North",
-        "topic": "Rebidding No Trump Strength Requirements",
-        "category": "Rebids"
+        "player": "East",
+        "topic": "Response Selection (1NT vs. 2/1 GF)",
+        "category": "Responding"
       },
       {
-        "player": "South",
-        "topic": "Discipline in Responding (6+ HCP required)",
-        "category": "Responding"
+        "player": "West",
+        "topic": "Game Evaluation and Rebid Strategy",
+        "category": "Declarer Play/Bidding"
       }
     ]
   },
