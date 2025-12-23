@@ -185,115 +185,83 @@
   "ai_analysis": {
     "verdict": "OVERBID",
     "actual_critique": [
-      "West opened 1S with only 10 HCP (12 total points), violating the strict 12+ HCP requirement for a standard 1-level opening.",
-      "East's jump to 4S was highly aggressive and speculative. With 14 HCP and a balanced hand, East should have used a measured response (like 2NT or 3S) to explore game, especially since the partnership lacked combined strength.",
-      "The 4S contract fails by two tricks (DDS shows 6 tricks made), confirming a significant overestimation of the partnership's playing strength."
+      "East's jump to 4S with 14 HCP and only 3-card support was a severe overbid, especially opposite a minimum 1S opening (10 HCP). The partnership lacked the necessary controls and playing strength for game (making only 6 tricks).",
+      "East should have used a more measured approach, such as a 3S Limit Raise, allowing West (10 HCP) to pass and keep the contract safe at 3S (which still fails, but minimizes the loss).",
+      "South missed a clear opportunity to enter the auction with a 2C overcall (9 HCP, 6-card suit), failing to compete for the N/S makeable game in Clubs or Hearts (4C/4H make)."
     ],
     "basic_section": {
-      "analysis": "Under strict Standard American rules, West must pass with only 10 HCP. East, holding 14 HCP, opens 1H. The partnership eventually finds a 5-3 Spade fit, but due to the poor distribution and lack of high cards, game is impossible. The highest making contract in Spades is 2S (6 tricks).",
+      "analysis": "West's 1S opening is acceptable (10 HCP, Rule of 20). East, holding 14 HCP and 3-card support, should not jump directly to 4S. The standard approach for 10-12/13 HCP with support is a Limit Raise (3S). East's hand is slightly strong for 3S, but it is the safest bid to invite game without forcing it, allowing West to pass with a minimum.",
       "recommended_auction": [
         {
-          "bid": "Pass",
-          "explanation": "West has only 10 HCP and must pass according to standard opening rules (12+ HCP required)."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "North passes with 7 HCP."
-        },
-        {
-          "bid": "1H",
-          "explanation": "East opens 1H, showing 12+ HCP and a 4-card major."
-        },
-        {
-          "bid": "1C",
-          "explanation": "South overcalls 1C, showing a strong 6-card suit and 9 HCP."
-        },
-        {
           "bid": "1S",
-          "explanation": "West competes with 1S, showing a 5-card suit and 10 HCP."
+          "explanation": "Standard opening, 5+ Spades, 10 HCP (acceptable Rule of 20)."
         },
         {
-          "bid": "2H",
-          "explanation": "North raises Hearts competitively, showing 5-card support."
+          "bid": "P",
+          "explanation": "Pass (7 HCP)."
         },
         {
-          "bid": "2S",
-          "explanation": "East raises partner's suit, showing 3+ card support and invitational values (14 HCP). This is the highest level the partnership should reach, as 3S fails."
+          "bid": "3S",
+          "explanation": "Limit Raise, showing 3+ support and 10-13 HCP. This allows partner to pass with a minimum."
         },
         {
-          "bid": "Pass",
-          "explanation": "South passes, having shown their hand."
+          "bid": "P",
+          "explanation": "Pass."
         },
         {
-          "bid": "Pass",
-          "explanation": "West passes, showing a minimum hand (10 HCP) and accepting 2S as the final contract."
+          "bid": "P",
+          "explanation": "Minimum 1S opener (10 HCP), declining the game invitation."
         },
         {
-          "bid": "Pass",
-          "explanation": "Auction ends."
+          "bid": "P",
+          "explanation": "End of auction. Contract 3S."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "Even utilizing 2/1 Game Forcing, West should still pass the opening bid due to the 10 HCP minimum. East opens 1H. The subsequent competitive auction leads E/W to their 5-3 Spade fit. Since 4S fails, the partnership must exercise caution. East's 2S raise is invitational, and West's minimum hand dictates passing 2S, which is the highest making contract.",
+      "analysis": "In 2/1 GF, East's 14 HCP and 3-card support is strong. Assuming Jacoby 2NT requires 4-card support, East must choose between a Limit Raise (3S) or bidding a new suit to force game (awkward here). Since the partnership has a 5-3 fit and West is minimum, 3S is the most responsible bid to minimize risk, allowing West to pass.",
       "sequence": [
         {
-          "bid": "Pass",
-          "explanation": "West adheres to the 12+ HCP opening rule."
-        },
-        {
-          "bid": "Pass",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "1H",
-          "explanation": "East opens 1H (14 HCP, 4-card major)."
-        },
-        {
-          "bid": "1C",
-          "explanation": "South overcalls 1C."
-        },
-        {
           "bid": "1S",
-          "explanation": "West competes with 1S (5-card suit, 10 HCP)."
+          "explanation": "Standard opening, 5+ Spades, 11-15 HCP range."
         },
         {
-          "bid": "2H",
-          "explanation": "North raises Hearts competitively."
+          "bid": "P",
+          "explanation": "Pass."
         },
         {
-          "bid": "2S",
-          "explanation": "East raises partner's suit, showing 3+ card support and invitational values (14 HCP). This is forcing to 2S."
+          "bid": "3S",
+          "explanation": "Limit Raise, showing 3+ support and 10-13 HCP. Prioritizing safety over forcing game with a minimum hand opposite."
         },
         {
-          "bid": "Pass",
-          "explanation": "South passes."
+          "bid": "P",
+          "explanation": "Pass."
         },
         {
-          "bid": "Pass",
-          "explanation": "West has a minimum hand and passes, settling for 2S, which makes exactly 6 tricks."
+          "bid": "P",
+          "explanation": "Minimum hand (10 HCP), declining the invitation."
         },
         {
-          "bid": "Pass",
-          "explanation": "Auction ends."
+          "bid": "P",
+          "explanation": "End of auction. Contract 3S."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "West",
-        "topic": "Opening Hand Valuation",
-        "category": "Bidding Fundamentals"
-      },
-      {
         "player": "East",
-        "topic": "Responding to Partner's Suit (Jump Bids)",
-        "category": "Response Strategy"
+        "topic": "Jump Raises and Game Bidding",
+        "category": "Bidding Strategy"
       },
       {
-        "player": "E/W Partnership",
-        "topic": "Safety and Level Selection",
-        "category": "Valuation and Safety"
+        "player": "South",
+        "topic": "Competitive Overcalls",
+        "category": "Bidding Strategy"
+      },
+      {
+        "player": "West/East",
+        "topic": "Evaluating Playing Strength vs. HCP",
+        "category": "Hand Evaluation"
       }
     ]
   },

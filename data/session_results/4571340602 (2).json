@@ -185,18 +185,18 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OVERBID",
+    "verdict": "MISSED GAME",
     "actual_critique": [
-      "The partnership severely misjudged the fit and strength. North (19 HCP, singleton club, all Aces) underbid drastically by jumping directly to 4S after South's 3S game-forcing raise, failing to show slam interest or extra values.",
-      "The final contract of 4S is a disaster, making only 7 tricks according to Double Dummy Solver (DDS). This results in a loss of three tricks.",
-      "The partnership missed a laydown slam. N/S can make 13 tricks in the minor suits (6C or 6D) and 11 tricks in Notrump (4NT/5NT/6NT). The failure to explore slam possibilities was the primary error."
+      "North (19 HCP) failed to initiate slam investigation after South's constructive 3S raise confirmed a 10-card fit and 9+ points. The partnership holds 28 total HCP and all four Aces.",
+      "The actual auction stopped prematurely at 4S. With all Key Cards present and excellent controls, the partnership should have bid 6S at minimum, and 7S is a laydown Grand Slam.",
+      "North should have used cuebids (4C/4D) followed by 4NT Blackwood to confirm controls and Key Cards, leading directly to the Grand Slam."
     ],
     "basic_section": {
-      "analysis": "In Standard American, North's 19 HCP hand with excellent controls demands a strong rebid after South's game-forcing 3S raise (showing 9-11 HCP and 5+ support). Since North has a semi-balanced hand (5=4=3=1) and 19 HCP, a quantitative 4NT is the simplest way to explore slam in NT, which is often safer than a major suit slam when distribution is not extreme. South, with a minimum 9 HCP, should pass 4NT.",
+      "analysis": "North/South have a massive 10-card Spade fit and 28 high card points. North holds all four Aces, making slam virtually certain and Grand Slam highly probable. The 3S response by South (9 HCP, 5 Spades) was constructive, demanding that North explore beyond game.",
       "recommended_auction": [
         {
           "bid": "1S",
-          "explanation": "Standard opening bid (19 HCP, 5-card major)."
+          "explanation": "Standard opening, 5+ Spades, 12+ HCP (North has 19)."
         },
         {
           "bid": "p",
@@ -204,44 +204,7 @@
         },
         {
           "bid": "3S",
-          "explanation": "Game-forcing constructive raise, showing 5+ card support and 9-11 HCP."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "4NT",
-          "explanation": "Quantitative bid, showing 18-19 HCP and asking partner to bid 6NT with maximum values."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "South has only 9 HCP and passes the quantitative invitation."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass. Contract 4NT (Makes 11 tricks)."
-        }
-      ]
-    },
-    "advanced_section": {
-      "analysis": "With 2/1 Game Forcing active, South's 3S response remains game forcing. North, knowing they have 19 HCP and all four Aces, must immediately start cuebidding to explore slam. Since the Spade fit is established, cuebids show first-round controls (Aces or Kings). The partnership should quickly realize they have all controls and sufficient strength (28 HCP) for a slam, likely in NT or a minor suit, as the Spade suit is not robust enough for 6S.",
-      "sequence": [
-        {
-          "bid": "1S",
-          "explanation": "Standard opening (19 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "3S",
-          "explanation": "Game-forcing raise, showing 5+ card support and 9+ HCP."
+          "explanation": "Constructive raise, showing 4+ Spades and 7-10/11 HCP (South has 9 HCP and 5 Spades). Confirms a 10-card fit."
         },
         {
           "bid": "p",
@@ -249,7 +212,7 @@
         },
         {
           "bid": "4C",
-          "explanation": "Cuebid, showing the Ace of Clubs and strong slam interest."
+          "explanation": "Cuebid, showing first-round control (Ace) in Clubs and initiating slam investigation. North knows they have 28+ points and a fit."
         },
         {
           "bid": "p",
@@ -257,15 +220,23 @@
         },
         {
           "bid": "4D",
-          "explanation": "Cuebid, showing Diamond control (Ace or King) and continuing slam exploration."
+          "explanation": "Cuebid, showing first-round control (singleton/void) in Diamonds. Highly encouraging."
         },
         {
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "bid": "4H",
-          "explanation": "Cuebid, showing the Ace of Hearts. All side suit Aces are now confirmed."
+          "bid": "4NT",
+          "explanation": "Roman Key Card Blackwood (RKCB). Asking for the 5 Key Cards (4 Aces + King of Spades)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "5D",
+          "explanation": "Response showing 0 or 3 Key Cards (South has 0 Key Cards). North knows all 4 Key Cards are present."
         },
         {
           "bid": "p",
@@ -273,15 +244,104 @@
         },
         {
           "bid": "5NT",
-          "explanation": "Grand Slam force/Pick a slam. North knows all controls are present and 28 HCP total. Asking partner to choose the best slam (6NT or a minor suit)."
+          "explanation": "Grand Slam Force/King Ask. Since all Key Cards are present, North asks for Kings outside the trump suit."
         },
         {
           "bid": "p",
           "explanation": "Pass."
         },
         {
-          "bid": "6C",
-          "explanation": "South chooses the Club suit, recognizing the 4-card fit and the potential for ruffing/cross-ruffing potential in the minors. (6C makes 13 tricks.)"
+          "bid": "6D",
+          "explanation": "Response showing 1 King outside the trump suit (the King of Hearts)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "7S",
+          "explanation": "North knows all controls are present for 13 tricks. Grand Slam."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "In a 2/1 GF environment, the 3S constructive raise confirms the fit and sufficient values (9 HCP) to explore slam opposite 19 HCP. North's decision to stop at 4S was a major error in valuation and technique. The sequence must proceed through cuebidding and RKCB to confirm the Grand Slam potential.",
+      "sequence": [
+        {
+          "bid": "1S",
+          "explanation": "Standard opening."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "3S",
+          "explanation": "Constructive raise, showing 7-10/11 points and 4+ Spades."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4C",
+          "explanation": "First cuebid, showing first-round control in Clubs and forcing to slam level if controls are confirmed."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4D",
+          "explanation": "Second cuebid, showing first-round control in Diamonds (singleton)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "4NT",
+          "explanation": "RKCB. North has confirmed controls in C and D, and holds A/K in S and A in H. Time to check Key Cards."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "5D",
+          "explanation": "0 or 3 Key Cards. South has 0 Key Cards."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "5NT",
+          "explanation": "Grand Slam Force/King Ask. All 4 Key Cards are present. Asking for Kings."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "6D",
+          "explanation": "Shows 1 King (King of Hearts)."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "7S",
+          "explanation": "North knows 7S is safe."
         },
         {
           "bid": "p",
@@ -295,24 +355,19 @@
     },
     "coaches_corner": [
       {
-        "player": "North (BeaPercy)",
-        "topic": "Rebidding Strong Hands",
-        "category": "Bidding Theory"
+        "player": "North",
+        "topic": "Slam Valuation and Exploration",
+        "category": "Bidding Technique"
       },
       {
-        "player": "North (BeaPercy)",
-        "topic": "Cuebidding for Slam Exploration",
+        "player": "North",
+        "topic": "Using Cuebids and RKCB",
         "category": "Slam Bidding"
       },
       {
-        "player": "South (Fish075)",
-        "topic": "Quantitative Notrump Responses",
-        "category": "Notrump Bidding"
-      },
-      {
-        "player": "Partnership",
-        "topic": "Double Dummy Analysis: Why 4S Fails",
-        "category": "Declarer Play"
+        "player": "South",
+        "topic": "Responding to Slam Tries (Cuebidding)",
+        "category": "Slam Bidding"
       }
     ]
   },

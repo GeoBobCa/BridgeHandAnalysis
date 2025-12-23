@@ -188,49 +188,53 @@
   "ai_analysis": {
     "verdict": "OPTIMAL",
     "actual_critique": [
-      "The final contract of 2S is highly successful, making 8 tricks according to Double Dummy Solver (DDS). This is an excellent result in a competitive auction.",
-      "South's bid of 2S with a singleton Spade was technically poor. North, holding four Spades and 8 HCP, should have been the one to bid 2S over West's 1S, showing competitive support for the doubled suit.",
-      "North's initial pass over 1S was too passive. With 8 HCP and 4-card support for Spades (the suit South implied support for via the takeout double), North should have competed immediately with 2S."
+      "The E/W partnership correctly identified their 8-card Spade fit and stopped conservatively in 2S, consistent with their combined 19 HCP.",
+      "South's initial takeout double was appropriate, signaling the N/S side's combined strength (21 HCP).",
+      "Although N/S could have made 2D (+90), allowing E/W to play 2S resulted in a massive penalty (+400), making the defense the optimal strategic choice for N/S."
     ],
     "basic_section": {
-      "analysis": "East opens 1D (12 HCP). South makes a standard takeout double (13 HCP, good shape). West competes with 1S (7 HCP, 5 cards). North, holding 8 HCP and 4 Spades, must now compete to show the fit. Bidding 2S is mandatory here, showing minimum support and competing for the partscore. South, having achieved a successful competitive raise, should pass, accepting the partscore contract.",
+      "analysis": "East opened 1D and West responded 1S after South's takeout double. East's raise to 2S was standard, showing minimum opening values (12-14 HCP) and 3-card support. N/S had the majority of the points (21 HCP) but lacked a confirmed 8-card fit. South's decision to pass 2S, judging that the opponents were likely overextended, was strategically sound and led to the best possible result for N/S.",
       "recommended_auction": [
         {
           "bid": "p",
-          "explanation": "North (8 HCP) is too light to open."
+          "explanation": "North passes with 8 HCP."
         },
         {
           "bid": "1D",
           "explanation": "East opens 1D (12 HCP, 4-card suit)."
         },
         {
-          "bid": "d",
-          "explanation": "South makes a standard takeout double (13 HCP, showing support for unbid suits, especially majors)."
+          "bid": "D",
+          "explanation": "South makes a takeout double (13 HCP, good distribution, promising support for unbid suits)."
         },
         {
           "bid": "1S",
-          "explanation": "West competes with 1S (7 HCP, 5-card suit)."
+          "explanation": "West responds 1S, showing 0-8 HCP and 4+ Spades (5 Spades here)."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes, having no clear bid."
         },
         {
           "bid": "2S",
-          "explanation": "North (8 HCP, 4 Spades) shows competitive support for Spades, the suit implied by South's double."
+          "explanation": "East raises to 2S, showing minimum opening values (12-14 HCP) and 3+ Spades."
         },
         {
           "bid": "p",
-          "explanation": "East has no clear action over 2S."
+          "explanation": "South strategically passes. While N/S could compete to 2D (a making contract), defending 2S is likely to yield a higher score."
         },
         {
           "bid": "p",
-          "explanation": "South accepts the competitive partscore. While South has a strong hand, pushing higher risks penalty, and 2S is a safe, makeable contract."
+          "explanation": "West is happy to stop at 2S with 7 HCP."
         },
         {
           "bid": "p",
-          "explanation": "The auction ends."
+          "explanation": "Contract finalized."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "In this competitive auction, 2/1 Game Forcing rules are secondary to finding the best fit and level. N/S have a 4-4 Heart fit and a 5-2 Club fit. North should prioritize showing the major suit response (2H) over the competitive raise (2S) if they believe a better fit exists. However, since West bid 1S, 2S is the most direct competitive action. If North bids 2H, South must decide whether to show their 5-card Club suit or support Hearts. Given the DDS truth (2S makes 8 tricks, 3H makes 7 tricks), 2S is the superior contract.",
+      "analysis": "The 2/1 system does not significantly alter this competitive auction. East's 1D opening is standard. South's double is still takeout. West's 1S response is minimum. East's 2S raise is descriptive and non-forcing, showing a limit raise equivalent (12-14 HCP). The decision by South to pass 2S remains the optimal strategic choice.",
       "sequence": [
         {
           "bid": "p",
@@ -241,46 +245,50 @@
           "explanation": "East opens 1D."
         },
         {
-          "bid": "d",
-          "explanation": "South makes a takeout double (13 HCP)."
+          "bid": "D",
+          "explanation": "South makes a takeout double."
         },
         {
           "bid": "1S",
-          "explanation": "West competes."
+          "explanation": "West responds 1S, minimum."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
         },
         {
           "bid": "2S",
-          "explanation": "North uses the competitive jump to 2S, showing 4-card support and a minimum hand (8-10 points) in response to the takeout double."
+          "explanation": "East raises to 2S, showing 12-14 HCP and 3+ Spades."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "South passes, choosing defense over competition."
         },
         {
           "bid": "p",
-          "explanation": "South passes. While South has 13 HCP, the partnership has found a safe, makeable partscore in a competitive auction. Pushing to 3C or 3H is unnecessary and risks going down."
+          "explanation": "West passes."
         },
         {
           "bid": "p",
-          "explanation": "The auction ends."
+          "explanation": "Contract finalized."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South (Fish075)",
-        "topic": "Rebidding after a Takeout Double and Partner's Pass",
-        "category": "Competitive Bidding"
+        "player": "Fish075",
+        "topic": "Strategic Defense",
+        "category": "Strategy"
       },
       {
-        "player": "North (BeaPercy)",
-        "topic": "Responding to a Takeout Double after Opponent Interference",
-        "category": "Competitive Bidding"
+        "player": "georgenamg",
+        "topic": "Responding to Takeout Doubles",
+        "category": "System Application"
       },
       {
-        "player": "South (Fish075)",
-        "topic": "Suit Preference vs. Competitive Raise (Bidding 2S with a singleton)",
-        "category": "Bidding Technique"
+        "player": "bobj245",
+        "topic": "Minimum Suit Raises",
+        "category": "Valuation"
       }
     ]
   },

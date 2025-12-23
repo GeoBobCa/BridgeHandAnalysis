@@ -185,34 +185,46 @@
     }
   },
   "ai_analysis": {
-    "verdict": "OPTIMAL",
+    "verdict": "WRONG CONTRACT",
     "actual_critique": [
-      "The partnership correctly stopped in 1NT. With a combined 23 HCP (14 + 9), they are significantly short of the 25-26 HCP usually required for a reliable 3NT game.",
-      "South's 1NT rebid was highly descriptive, showing a minimum opening hand (12-14 HCP) and denying 4-card support for North's Spades, leading to the perfect final contract.",
-      "The contract 1NT is successful, making 9 tricks according to Double Dummy analysis, confirming that the auction achieved the maximum practical result."
+      "The partnership missed the optimal part-score contract. While 1NT makes 9 tricks, 2S also makes 9 tricks (3S), offering a superior score (170 vs 120).",
+      "North, holding 9 HCP and a 5-card Spade suit, should not have passed 1NT. Opposite a limited 12-14 HCP rebid, North should bid 2S to confirm the 5-3 fit and play in the major suit.",
+      "South's 1NT rebid was accurate, limiting the hand to 12-14 HCP and denying 4-card support for Spades, but confirming 3 cards is implied by the subsequent bidding."
     ],
     "basic_section": {
-      "analysis": "South opens 1C, standard for 14 HCP and a 5-card minor. North responds 1S, showing 6+ HCP and 4+ Spades (here 5). South's 1NT rebid is standard, showing 12-14 HCP, a balanced hand, and denying 4-card Spade support. North, holding only 9 HCP, has no reason to push for game or investigate further, leading to a correct pass.",
+      "analysis": "South opens 1C (14 HCP). North responds 1S (9 HCP, 5 cards). South rebids 1NT (12-14 HCP, semi-balanced, 3 Spades). North should recognize the 5-3 Spade fit and prefer 2S over 1NT, even with only 9 HCP, as 1NT is limited.",
       "recommended_auction": [
         {
           "bid": "1C",
-          "explanation": "Standard opening bid, 12+ HCP, 5+ Clubs."
+          "explanation": "Standard opening bid, 14 HCP, 5+ Clubs."
         },
         {
           "bid": "p",
-          "explanation": "West passes with only 8 HCP."
+          "explanation": "Pass."
         },
         {
           "bid": "1S",
-          "explanation": "Standard response, 6+ HCP, showing 4+ Spades (here 5)."
+          "explanation": "Standard response, 9 HCP, 5 Spades."
         },
         {
           "bid": "p",
-          "explanation": "East passes with 9 HCP, lacking a clear entry point."
+          "explanation": "Pass."
         },
         {
           "bid": "1N",
-          "explanation": "South's rebid showing 12-14 HCP, balanced shape, and denying 4-card support for Spades. This is non-forcing."
+          "explanation": "12-14 HCP, semi-balanced, denying 4-card support for Spades."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "2S",
+          "explanation": "Part-score preference/invite. Shows 5 Spades and confirms the 8-card fit. As opener is limited, this is usually played as non-forcing."
+        },
+        {
+          "bid": "p",
+          "explanation": "South has 14 HCP but is minimum for the 1NT rebid range. Passing 2S is appropriate."
         },
         {
           "bid": "p",
@@ -220,20 +232,16 @@
         },
         {
           "bid": "p",
-          "explanation": "North accepts the non-forcing 1NT contract, as 9 HCP is insufficient to continue bidding."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass. Contract is 1NT."
+          "explanation": "Pass. Contract: 2S."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "Under 2/1 Game Forcing rules, the auction remains identical. North's 1S response is at the 1-level and is therefore non-forcing. South's 1NT rebid confirms a minimum opening hand (12-14 HCP) and is also non-forcing. Since North has only 9 HCP and no strong secondary suit to show, passing 1NT is the correct action, regardless of whether 2/1 GF is active.",
+      "analysis": "Since North's hand (9 HCP) is below the 10+ HCP threshold for a 2/1 Game Forcing response, the auction proceeds identically to SAYC. North must still prioritize finding the 5-3 major suit fit over playing 1NT.",
       "sequence": [
         {
           "bid": "1C",
-          "explanation": "Standard opening bid (14 HCP)."
+          "explanation": "Standard opening bid."
         },
         {
           "bid": "p",
@@ -241,7 +249,7 @@
         },
         {
           "bid": "1S",
-          "explanation": "Standard 1-level response, non-forcing, showing 6+ HCP and 5 Spades."
+          "explanation": "Standard 1-level response, 5 Spades, 9 HCP."
         },
         {
           "bid": "p",
@@ -249,7 +257,19 @@
         },
         {
           "bid": "1N",
-          "explanation": "Minimum rebid (12-14 HCP), balanced, denying 4 Spades. Non-forcing."
+          "explanation": "12-14 HCP, semi-balanced."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass."
+        },
+        {
+          "bid": "2S",
+          "explanation": "Part-score preference, showing 5 Spades and confirming the fit. Non-forcing."
+        },
+        {
+          "bid": "p",
+          "explanation": "Opener passes 2S with 14 HCP, satisfied with the part-score."
         },
         {
           "bid": "p",
@@ -257,29 +277,20 @@
         },
         {
           "bid": "p",
-          "explanation": "North has a minimum response and correctly passes the non-forcing 1NT contract."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass. Contract is 1NT."
+          "explanation": "Pass. Contract: 2S."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Rebid Structure after 1-level Response",
+        "player": "North (BeaPercy)",
+        "topic": "Part-score decision making",
+        "category": "Bidding Judgment"
+      },
+      {
+        "player": "North (BeaPercy)",
+        "topic": "Prioritizing Major Suit Fits (5-3)",
         "category": "Bidding Theory"
-      },
-      {
-        "player": "North",
-        "topic": "Accepting the Non-Forcing 1NT Rebid",
-        "category": "Hand Evaluation"
-      },
-      {
-        "player": "East",
-        "topic": "Intervention Thresholds (When to bid 1NT or 2C over 1C)",
-        "category": "Competitive Bidding"
       }
     ]
   },

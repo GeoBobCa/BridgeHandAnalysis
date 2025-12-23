@@ -185,42 +185,30 @@
     }
   },
   "ai_analysis": {
-    "verdict": "UNDERBID",
+    "verdict": "MISSED GAME",
     "actual_critique": [
-      "The E/W partnership stopped significantly short of game (4H), which makes easily (10 tricks according to Double Dummy Solver).",
-      "South's strong 2D intervention (16 HCP) successfully disrupted the E/W auction, preventing them from reaching their optimal contract.",
-      "East (7 HCP) should have recognized the game potential after West's competitive 2H raise, which signaled a strong hand (16 HCP) and a known Heart fit."
+      "E/W missed a makeable game contract of 3NT (10 tricks). The combined 32 HCP for E/W makes them the natural declarers.",
+      "West's initial pass with 16 HCP was a critical error. West should have intervened with 1NT (15-17 balanced overcall) or a Takeout Double to describe their hand and allow E/W to find their game.",
+      "North's response of 1H on only 1 HCP was highly irregular and led the N/S partnership into the severely overbid 2H contract, which fails by four tricks."
     ],
     "basic_section": {
-      "analysis": "West opens 1D (16 HCP). East responds 1H (7 HCP, 4 cards). South intervenes strongly with 2D (16 HCP, 5 cards). West's 2H is a competitive raise showing 3-card support and 12+ HCP. Given West's actual 16 HCP, East should realize the combined strength (23 HCP) warrants a game try. Since 4H makes easily, East should bid game directly over 2H.",
+      "analysis": "South opens 1D (16 HCP). West, holding 16 HCP and a balanced hand, must intervene. Passing allows N/S to control the auction despite E/W holding the balance of power. West should overcall 1NT (15-17 balanced). East, holding 7 HCP, knows E/W have 22-24 combined points, sufficient for 3NT.",
       "recommended_auction": [
         {
           "bid": "1D",
-          "explanation": "Standard opening bid by West (16 HCP, 4+ Diamonds)."
+          "explanation": "South opens 1D on 16 HCP and a 5-card Diamond suit."
+        },
+        {
+          "bid": "1NT",
+          "explanation": "West overcalls 1NT, showing 15-17 HCP and a balanced hand with stoppers in the opponent's suit (D)."
         },
         {
           "bid": "p",
-          "explanation": "North has only 1 HCP and passes."
+          "explanation": "North passes with only 1 HCP."
         },
         {
-          "bid": "1H",
-          "explanation": "Standard response by East, showing 6+ points and 4+ Hearts."
-        },
-        {
-          "bid": "2D",
-          "explanation": "Strong competitive overcall by South, showing 5+ Diamonds and 10+ points (actually 16 HCP)."
-        },
-        {
-          "bid": "2H",
-          "explanation": "Competitive raise by West, showing 3+ Heart support and a minimum opening hand or better (16 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "4H",
-          "explanation": "East recognizes the combined strength (23 HCP) and the known fit, bidding game directly."
+          "bid": "3NT",
+          "explanation": "East jumps to game. With 7 HCP opposite a guaranteed 15-17 HCP 1NT overcall, 3NT is mandatory."
         },
         {
           "bid": "p",
@@ -232,78 +220,53 @@
         },
         {
           "bid": "p",
-          "explanation": "North passes. Contract 4H."
+          "explanation": "North passes. Contract: 3NT by West (Makes 10 tricks)."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "In advanced play, West's 16 HCP balanced hand is best described by 2NT after the 2D intervention, as West only holds 3-card Heart support. 2NT shows 15-17 balanced and invites game. East, with 7 HCP and 4 Hearts, can then use 3H as an invitational preference bid, allowing West to accept with 4H given their maximum 16 HCP.",
+      "analysis": "In 2/1 GF, the 1NT overcall remains the standard descriptive bid for a 15-17 balanced hand. East's decision to bid 3NT is straightforward, as 7 HCP is more than enough to accept the 1NT invitation to game.",
       "sequence": [
         {
           "bid": "1D",
-          "explanation": "Standard opening by West (16 HCP)."
+          "explanation": "South opens 1D."
+        },
+        {
+          "bid": "1NT",
+          "explanation": "West overcalls 1NT (15-17, balanced)."
         },
         {
           "bid": "p",
           "explanation": "North passes."
         },
         {
-          "bid": "1H",
-          "explanation": "Standard response by East."
-        },
-        {
-          "bid": "2D",
-          "explanation": "Strong competitive overcall by South."
-        },
-        {
-          "bid": "2NT",
-          "explanation": "Descriptive bid by West, showing 15-17 balanced HCP and denying 4-card Heart support, inviting game."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "3H",
-          "explanation": "East shows preference for Hearts and invites game with 7 HCP."
+          "bid": "3NT",
+          "explanation": "East bids 3NT, confirming game opposite 15-17 HCP."
         },
         {
           "bid": "p",
           "explanation": "South passes."
         },
         {
-          "bid": "4H",
-          "explanation": "West accepts the game invitation with maximum values (16 HCP)."
+          "bid": "p",
+          "explanation": "West passes."
         },
         {
           "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes. Contract 4H."
+          "explanation": "North passes. Contract: 3NT by West."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "East (bobj245)",
-        "topic": "Recognizing Game Potential with Minimum Response Values",
-        "category": "Partnership Bidding"
+        "player": "West",
+        "topic": "Intervening with Strong Hands (1NT Overcall)",
+        "category": "Competitive Bidding"
       },
       {
-        "player": "West (georgenamg)",
-        "topic": "Describing Balanced Hands After Intervention",
-        "category": "Responding to Intervention"
-      },
-      {
-        "player": "South (Fish075)",
-        "topic": "Competitive Bidding Strength Assessment",
-        "category": "Overcalls/Interventions"
+        "player": "North",
+        "topic": "Minimum Requirements for a Response",
+        "category": "Bidding Fundamentals"
       }
     ]
   },

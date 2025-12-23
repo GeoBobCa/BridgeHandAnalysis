@@ -188,133 +188,128 @@
     }
   },
   "ai_analysis": {
-    "verdict": "UNDERBID",
+    "verdict": "WRONG CONTRACT",
     "actual_critique": [
-      "The final contract of 1S is a significant underbid. North holds 18 HCP, and the partnership has 24 combined HCP, suggesting a game attempt (3NT or 4S). DDS confirms 3NT makes 8 tricks.",
-      "North failed to adequately convey the strength of the hand (18 HCP) after the opponents' intervention. A simple 1S rebid is too weak for this powerhouse hand.",
-      "West's pass over South's 1H was too passive. West should have supported partner's 1C opening with 2C, showing 7 HCP and a 4-card fit, which would have allowed North to better describe the hand."
+      "The partnership stopped far too low in 1S. With 24 combined HCP and a confirmed 8-card Spade fit, they should have explored at least 2S (which makes) or 3S (the standard invitational level).",
+      "North's 1S rebid showed significant strength (17+ HCP) and a 4-card Spade suit. South, holding 4-card support and 6 HCP, was obligated to raise to 2S to show the fit and minimum values.",
+      "South's decision to pass 1S, despite knowing North was strong and having found the major suit fit, was overly cautious and shut down the auction prematurely."
     ],
     "basic_section": {
-      "analysis": "In Standard American, North's 18 HCP hand requires a strong rebid after the opponents intervene. Since 4S fails, the goal is to reach 2S (the maximum making suit contract) or 3NT. West should support Clubs, allowing North to show the Spades strongly.",
+      "analysis": "North opened 1C (18 HCP) and subsequently rebid 1S over East's 1D overcall and South's 1H response. This 1S rebid is strong (17+ HCP, 4 Spades) and forcing for one round. South (6 HCP, 4 Spades) must bid 2S to show the fit and minimum values (6-9 HCP). Although 4S fails, 2S makes easily, and 3S is the standard invitational contract that should have been reached.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "East passes, 9 HCP is insufficient for a standard 1-level opening."
+          "bid": "P",
+          "explanation": "East (9 HCP) passes, though 1D is often opened light as dealer."
         },
         {
-          "bid": "p",
-          "explanation": "South passes (6 HCP)."
+          "bid": "P",
+          "explanation": "South (6 HCP) passes."
         },
         {
-          "bid": "p",
-          "explanation": "West passes (7 HCP)."
+          "bid": "P",
+          "explanation": "West (7 HCP) passes."
         },
         {
           "bid": "1C",
-          "explanation": "North opens 1C (18 HCP, 4=2=3=4 distribution)."
+          "explanation": "North (18 HCP) opens 1C, standard."
         },
         {
           "bid": "1D",
-          "explanation": "East overcalls 1D, showing a 5-card suit and 8+ HCP (9 HCP)."
+          "explanation": "East overcalls with a 5-card suit and 9 HCP."
         },
         {
           "bid": "1H",
-          "explanation": "South competes with 1H, showing a 5-card suit, though very weak (6 HCP)."
+          "explanation": "South responds with a minimum hand (6 HCP) and a 5-card suit."
         },
         {
-          "bid": "2C",
-          "explanation": "West supports partner's Clubs, showing 4+ cards and 7-10 HCP."
+          "bid": "P",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "1S",
+          "explanation": "North shows 4 Spades and 17+ HCP. This is a strong, forcing rebid."
         },
         {
           "bid": "2S",
-          "explanation": "North shows the 4-card Spade suit strongly (16+ HCP, forcing). This is the highest successful suit contract."
+          "explanation": "South shows 4-card Spade support and 6-9 HCP (constructive raise)."
         },
         {
-          "bid": "p",
-          "explanation": "East passes."
+          "bid": "3S",
+          "explanation": "North (18 HCP) is maximum for the range and invites game, knowing they have a good fit."
         },
         {
-          "bid": "p",
-          "explanation": "South passes, having shown the hand."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes, happy to stop at 2S with a minimum response."
+          "bid": "P",
+          "explanation": "South has only 6 HCP and declines the game invitation."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "With 2/1 Game Forcing active, North must use a forcing sequence to explore game, likely 3NT, which makes 8 tricks. North's 18 HCP hand is balanced enough to consider 2NT as a rebid, asking partner for stoppers or preference.",
+      "analysis": "Since the opponents intervened with 1D, the 2/1 Game Forcing structure is deactivated. The auction reverts to standard forcing/non-forcing responses. North's 1S rebid is still highly forcing (showing 17+ HCP). South's 2S response is a limit raise equivalent (6-9 points, 4-card support), which North should treat as invitational to game. The sequence remains identical to the SAYC recommendation.",
       "sequence": [
         {
-          "bid": "p",
+          "bid": "P",
           "explanation": "East passes."
         },
         {
-          "bid": "p",
+          "bid": "P",
           "explanation": "South passes."
         },
         {
-          "bid": "p",
+          "bid": "P",
           "explanation": "West passes."
         },
         {
           "bid": "1C",
-          "explanation": "North opens 1C (18 HCP)."
+          "explanation": "North opens 1C."
         },
         {
           "bid": "1D",
-          "explanation": "East overcalls 1D."
+          "explanation": "East overcalls."
         },
         {
           "bid": "1H",
-          "explanation": "South competes with 1H."
+          "explanation": "South responds, non-forcing, 6-10 HCP."
         },
         {
-          "bid": "2C",
-          "explanation": "West makes a constructive raise, showing 7-10 HCP and 4+ Clubs."
+          "bid": "P",
+          "explanation": "West passes."
         },
         {
-          "bid": "2NT",
-          "explanation": "North shows 18-19 balanced HCP, forcing to game, asking partner for a Diamond stopper or preference."
+          "bid": "1S",
+          "explanation": "North shows 17+ HCP and 4 Spades, forcing for one round."
         },
         {
-          "bid": "p",
+          "bid": "2S",
+          "explanation": "South shows 4-card support and minimum values (6-9 HCP)."
+        },
+        {
+          "bid": "3S",
+          "explanation": "North invites game."
+        },
+        {
+          "bid": "P",
           "explanation": "East passes."
         },
         {
-          "bid": "p",
-          "explanation": "South passes."
+          "bid": "P",
+          "explanation": "South passes, declining the invitation."
         },
         {
-          "bid": "3C",
-          "explanation": "West shows preference for Clubs and denies a Diamond stopper (T62)."
-        },
-        {
-          "bid": "3NT",
-          "explanation": "North pushes for game. North has KJ3 in Diamonds and enough overall strength (24+ combined HCP) to risk 3NT, which makes 8 tricks."
-        },
-        {
-          "bid": "p",
-          "explanation": "All pass, playing 3NT."
+          "bid": "P",
+          "explanation": "West passes."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "North",
-        "topic": "Showing Strength After Interference",
-        "category": "Bidding Technique"
-      },
-      {
-        "player": "South",
-        "topic": "Competitive Bidding on Weak Hands (The Rule of Two and Three)",
-        "category": "Competitive Bidding"
-      },
-      {
-        "player": "West",
-        "topic": "Responding to Opener After Opponent's Overcall",
+        "player": "Fish075 (South)",
+        "topic": "Supporting Partner's Strong Rebid",
         "category": "Responding"
+      },
+      {
+        "player": "BeaPercy (North)",
+        "topic": "Game Exploration After Finding a Fit",
+        "category": "Declarer Play/Bidding"
       }
     ]
   },

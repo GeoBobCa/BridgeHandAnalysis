@@ -11,7 +11,7 @@ from google.genai import types
 # --- CONFIGURATION SECTION ---
 AI_CONFIG = {
     "model_name": "gemini-flash-latest",
-    "temperature": 0.2,  # Low enough to stop hallucinations, high enough for sentences
+    "temperature": 0.3,  # Strict enough for rules, smart enough for judgment
     "response_mime_type": "application/json",
     "env_file_location": ".env"
 }
@@ -40,37 +40,39 @@ class AIOrchestrator:
             "double_dummy_truth": dds_data
         }
 
-        # --- HYBRID PROTOCOL PROMPT ---
+        # --- THE "IRONCLAD" PROMPT (v3.0) ---
         prompt = f"""
-        You are an expert Bridge Teacher.
+        You are an expert Bridge Teacher (Standard American / SAYC).
         
         CONTEXT DATA:
         {json.dumps(context_payload, indent=2)}
 
-        CRITICAL RULES (DO NOT BREAK):
-        1. **OPENING BIDS:** - Standard 1-level Opening = 12+ HCP.
-           - DO NOT recommend opening 9-11 HCP hands at the 1-level.
-        2. **DDS REALITY CHECK:** - Look at 'double_dummy_truth'. 
-           - If DDS says the hand makes 7 tricks in Spades, DO NOT recommend bidding 4S or 5S.
-           - Recommend contracts that actually MAKE.
-        3. **BIDDING LEGALITY:** - You cannot bid the same suit at the same level as the opponent (e.g., No 2H over 2H).
-        4. **FORMAT:** List bids chronologically. INCLUDE ALL PASSES.
+        MASTER RULE #1: THE "GAME HUNTER" MANDATE (Board 6 Fix)
+        - Look at 'double_dummy_truth'. 
+        - If DDS says a Game Contract (3NT, 4H, 4S, 5C, 5D) makes, you CANNOT recommend stopping in a part-score.
+        - If Game is makeable but the players stopped low, Verdict MUST be "MISSED GAME".
 
-        SECTION GUIDELINES:
-        - **BASIC SECTION:** STRICT Standard American. NO 2/1 Game Forcing. Keep it simple.
-        - **ADVANCED SECTION:** 2/1 Game Forcing is ACTIVE here. Discuss modern conventions.
+        MASTER RULE #2: THE "DUCK" TEST (Board 11 Fix)
+        - **Weak Twos:** If a hand has 6 cards and 6-10 HCP, it is a WEAK TWO (2D/2H/2S). 
+        - Do NOT count "length points" to upgrade this to a 1-opener. Structure beats Valuation.
+        - **Opening Criteria:** 1-level suit opening requires 12+ HCP (or 11 HCP + Rule of 20). Never open 9-10 HCP hands at 1-level.
+
+        MASTER RULE #3: THE GOLDEN FIT (Board 15 Fix)
+        - **Fit Requirement:** Do NOT recommend a final suit contract unless the partnership has a confirmed 8+ card fit.
+        - If DDS shows Spades make (e.g. 3S) and Hearts don't, you MUST find the auction that reaches Spades. 
+        - Do not strand players in a 7-card fit (like 1H) if a better fit exists.
 
         TASK:
         Output strict JSON with these specific sections:
 
-        1. VERDICT: "OPTIMAL", "OVERBID", "UNDERBID", "GOOD SAVE".
+        1. VERDICT: "OPTIMAL", "MISSED GAME", "OVERBID", "WRONG OPENER", "WRONG CONTRACT".
         2. ACTUAL_CRITIQUE: 2-3 bullet points.
-        3. BASIC_SECTION:
-           - "analysis": Standard evaluation.
+        3. BASIC_SECTION (Standard American):
+           - "analysis": Basic evaluation.
            - "recommended_auction": LIST of objects {{ "bid": "...", "explanation": "..." }}
-        4. ADVANCED_SECTION:
-           - "analysis": 2/1 GF, advanced shape, entries.
-           - "sequence": LIST of objects {{ "bid": "...", "explanation": "..." }}
+        4. ADVANCED_SECTION (2/1 GF Active):
+           - "analysis": 2/1 logic.
+           - "sequence": LIST of objects {{ "bid": "...", "explanation": "..." }} (Include ALL passes!)
         5. COACHES_CORNER: List of objects {{ "player": "...", "topic": "...", "category": "..." }}
 
         OUTPUT JSON FORMAT:
@@ -109,5 +111,4 @@ class AIOrchestrator:
             return {"error": str(e)}
 
     def _red_team_scan(self, analysis: Dict, facts: Dict) -> Dict:
-        # Standard Red Team checks
         return analysis

@@ -188,81 +188,32 @@
   "ai_analysis": {
     "verdict": "OPTIMAL",
     "actual_critique": [
-      "The contract 3NT was bid by East (E/W partnership). Given the combined 27 HCP (18 E + 9 W) and the favorable distribution, E/W had sufficient strength for game.",
-      "The Double Dummy Solution confirms that E/W can make 11 tricks in Notrump, meaning 3NT is easily achieved and is an optimal result.",
-      "East's decision to bid 3NT over 5D was aggressive, relying on the singleton Ace of Clubs as a stopper. This paid off, as 3NT often offers better overtricks than a minor suit game."
+      "The final contract of 3NT is optimal, as Double Dummy analysis confirms 11 tricks are available for East-West.",
+      "East (18 HCP) made an inaccurate rebid of 2D over South's 1S overcall. 2D suggests a minimum opening hand (12-15 HCP), significantly understating East's strength.",
+      "East correctly recovered by jumping to 3NT later, recognizing the high-card strength and game potential, but a more descriptive 2NT rebid on the second round would have been preferable."
     ],
     "basic_section": {
-      "analysis": "The auction proceeded P - 1D - 1S - 2D. West's 2D bid was a constructive raise, showing 7-10 HCP and 3+ card support for Diamonds. East, holding 18 HCP, knows the partnership has at least 25 HCP, making game mandatory. East has stoppers in Spades (QJ2 opposite A54), Hearts (KJT4), and Diamonds (AKT53). The only weakness is the singleton Ace of Clubs. Given the high point count and good overall coverage, 3NT is the standard game choice.",
+      "analysis": "East has a strong 18 HCP hand with a 5-card Diamond suit and a Spade stopper (QJ2). Game in Notrump is highly likely. East must use the rebid to show the full strength immediately after the competitive overcall.",
       "recommended_auction": [
         {
           "bid": "p",
-          "explanation": "North is too weak (5 HCP) to open or intervene."
+          "explanation": "North passes with only 5 HCP."
         },
         {
           "bid": "1D",
-          "explanation": "East opens 1D, showing 12+ HCP and 5+ Diamonds (18 HCP)."
+          "explanation": "East opens 1D, standard for 12+ HCP and 5+ Diamonds."
         },
         {
           "bid": "1S",
-          "explanation": "South overcalls 1S, showing a 5-card suit and 8 HCP, a competitive bid."
-        },
-        {
-          "bid": "2D",
-          "explanation": "West makes a constructive raise, showing 7-10 HCP and 3+ card support for Diamonds."
+          "explanation": "South overcalls 1S, showing 5+ Spades and 8-16 HCP."
         },
         {
           "bid": "p",
-          "explanation": "North passes, still too weak."
+          "explanation": "West passes with 9 HCP and no clear fit or action."
         },
         {
-          "bid": "3N",
-          "explanation": "East knows game is certain (25+ combined points). 3NT is chosen over 5D due to good stoppers in three suits and the potential for overtricks."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes, satisfied with the game contract."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes, ending the auction."
-        }
-      ]
-    },
-    "advanced_section": {
-      "analysis": "In a 2/1 Game Forcing environment, the auction remains largely the same. West's 2D is still a limit raise (7-10 HCP). East recognizes the game force immediately upon hearing the limit raise combined with their 18 HCP. East could consider cuebidding 2S to confirm the Spade stopper, but since West already showed a minimum hand, East trusts their own QJ2 opposite West's A54 and bids 3NT directly, prioritizing the best scoring game.",
-      "sequence": [
-        {
-          "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "1D",
-          "explanation": "East opens 1D (18 HCP)."
-        },
-        {
-          "bid": "1S",
-          "explanation": "South overcalls 1S."
-        },
-        {
-          "bid": "2D",
-          "explanation": "West makes a limit raise (7-10 HCP, 3+ D)."
-        },
-        {
-          "bid": "p",
-          "explanation": "North passes."
-        },
-        {
-          "bid": "3N",
-          "explanation": "East bids game directly, knowing the partnership has sufficient strength and reasonable stoppers for Notrump."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
+          "bid": "2NT",
+          "explanation": "East shows 18-19 HCP, a balanced/semi-balanced hand, and a stopper in the opponent's suit (Spades). This is invitational to game."
         },
         {
           "bid": "p",
@@ -271,24 +222,60 @@
         {
           "bid": "p",
           "explanation": "South passes."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "West has 9 HCP. Opposite East's 18+ HCP, game is mandatory (27+ combined points). West accepts the invitation by bidding 3NT."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "In a competitive auction initiated by an overcall (1S), the principles of showing strength and stoppers override standard 2/1 forcing responses. East must use 2NT to accurately describe the 18 HCP hand and the Spade stopper, aiming for game.",
+      "sequence": [
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "1D",
+          "explanation": "East opens 1D."
+        },
+        {
+          "bid": "1S",
+          "explanation": "South overcalls 1S."
+        },
+        {
+          "bid": "p",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "2NT",
+          "explanation": "East shows 18-19 HCP, a Spade stopper, and strong game interest."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "West knows game is mandatory with 9 HCP opposite 18+ HCP."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "East (bobj245)",
-        "topic": "Evaluating Notrump Stoppers",
-        "category": "Bidding"
+        "player": "East",
+        "topic": "Rebid Strength",
+        "category": "Bidding Accuracy"
       },
       {
-        "player": "West (georgenamg)",
-        "topic": "Constructive vs. Weak Raises",
-        "category": "Bidding"
-      },
-      {
-        "player": "South (Fish075)",
-        "topic": "Effective Competitive Overcalls",
-        "category": "Bidding"
+        "player": "East",
+        "topic": "Describing Stopper and Strength (2NT rebid)",
+        "category": "Bidding Technique"
       }
     ]
   },

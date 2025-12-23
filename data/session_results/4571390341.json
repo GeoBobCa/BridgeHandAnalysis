@@ -190,48 +190,32 @@
   "ai_analysis": {
     "verdict": "OPTIMAL",
     "actual_critique": [
-      "The partnership successfully located their 4-4 Spade fit and stopped accurately at the two-level. Double Dummy analysis confirms that 2S makes exactly 8 tricks, and game (4S) fails.",
-      "South's initial takeout double was textbook, showing 15 HCP and support for the unbid suits, setting the stage for competition.",
-      "West's decision to pass the takeout double was questionable. Holding 14 HCP and a good 5-card suit, West should typically rebid 2H or bid a side suit (like 2D) to compete, rather than suggesting a desire for penalty."
+      "North/South successfully located their 8-card Spade fit and stopped accurately in 2S, which makes exactly eight tricks. Since no game contract (4S, 5C, 3NT) is makeable, this result is optimal.",
+      "West made a significant procedural error by passing South's takeout double after East had already passed. This converts the double to penalty, which is highly dangerous and non-standard.",
+      "South's bidding was excellent: a strong takeout double (15 HCP, 4S/5C) followed by an invitational raise to 2S, correctly assessing that 21 combined HCP was insufficient for game."
     ],
     "basic_section": {
-      "analysis": "West opens 1H. South, holding 15 HCP and good shape (4=1=3=5), makes a standard takeout double. When West passes, North is obligated to bid 1S, showing 4+ Spades. South confirms the fit and raises to 2S, showing a minimum hand for the double (12-15 points) and competitive values. This sequence correctly identifies the partial contract.",
+      "analysis": "West's 1H opening is standard (14 HCP, 5-card suit). South's double is a strong takeout double (15 HCP, 4 Spades, 5 Clubs). West should not pass the double, especially since East has already passed; West must rebid 2H to show their suit and force partner to act. Assuming the double was treated as takeout, North's 1S response is standard, showing 4+ Spades and a weak hand (6 HCP). South's 2S raise is invitational, and North correctly passes with a minimum hand.",
       "recommended_auction": [
         {
           "bid": "1H",
-          "explanation": "Standard 12+ HCP opening bid showing a 5-card Heart suit."
+          "explanation": "Standard opening bid by West (14 HCP, 5-card suit)."
         },
         {
           "bid": "P",
-          "explanation": "North has only 6 HCP and passes."
+          "explanation": "North is too weak to bid (6 HCP)."
         },
         {
           "bid": "P",
-          "explanation": "East has only 5 HCP and passes."
+          "explanation": "East is too weak to bid (5 HCP)."
         },
         {
           "bid": "D",
-          "explanation": "Takeout double, showing 12+ HCP and support for the unbid suits (S, D, C)."
+          "explanation": "South makes a strong takeout double (15 HCP, short in Hearts, 4 Spades, 5 Clubs)."
         },
         {
-          "bid": "P",
-          "explanation": "West passes the double (though 2H would be a better competitive action)."
-        },
-        {
-          "bid": "1S",
-          "explanation": "Forced response after partner's takeout double is passed around. Shows 4+ Spades, 0-9 points."
-        },
-        {
-          "bid": "P",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "2S",
-          "explanation": "South confirms the 4-4 Spade fit and shows a minimum hand for the double (12-15 points), denying game interest."
-        },
-        {
-          "bid": "P",
-          "explanation": "West passes."
+          "bid": "2H",
+          "explanation": "West must rebid their suit to clarify the contract and prevent the double from becoming penalty. Passing is highly risky."
         },
         {
           "bid": "P",
@@ -239,12 +223,28 @@
         },
         {
           "bid": "P",
-          "explanation": "Auction ends."
+          "explanation": "East passes."
+        },
+        {
+          "bid": "2S",
+          "explanation": "South shows 4 Spades and invites game with 15 HCP. This is the correct level to stop, confirming the 8-card fit."
+        },
+        {
+          "bid": "P",
+          "explanation": "West passes."
+        },
+        {
+          "bid": "P",
+          "explanation": "North passes, declining the game invitation with 6 HCP."
+        },
+        {
+          "bid": "P",
+          "explanation": "East passes. Contract 2S."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The 2/1 Game Forcing structure does not significantly alter this competitive auction. South's double is still the best initial action. Since North's response (1S) is at the one-level, it is non-forcing and competitive. South's 2S rebid is a competitive limit raise equivalent, showing minimum values for the double and confirming the fit. Game is not viable, so stopping at 2S is correct.",
+      "analysis": "In 2/1 GF, the initial auction structure remains the same as the opening was 1H, not 1D/1C/1S. The double is still takeout. West's obligation to rebid 2H after being doubled is critical, regardless of system, as passing the double when partner has passed is universally poor procedure. N/S correctly identify the Spade fit and stop at the part-score level, as 21 combined points are insufficient for a forcing sequence.",
       "sequence": [
         {
           "bid": "1H",
@@ -260,15 +260,15 @@
         },
         {
           "bid": "D",
-          "explanation": "Takeout double (12+ HCP)."
+          "explanation": "Takeout double (15 HCP)."
+        },
+        {
+          "bid": "2H",
+          "explanation": "West must rebid their suit to compete and prevent a penalty double."
         },
         {
           "bid": "P",
-          "explanation": "West passes."
-        },
-        {
-          "bid": "1S",
-          "explanation": "Forced response, 4+ Spades."
+          "explanation": "Pass."
         },
         {
           "bid": "P",
@@ -276,7 +276,7 @@
         },
         {
           "bid": "2S",
-          "explanation": "Competitive raise, showing minimum values for the double and confirming the fit."
+          "explanation": "South shows 4 Spades and invites game. North will pass with minimum values."
         },
         {
           "bid": "P",
@@ -288,25 +288,20 @@
         },
         {
           "bid": "P",
-          "explanation": "Auction ends."
+          "explanation": "Pass. Contract 2S."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "West (georgenamg)",
-        "topic": "Responding to Takeout Doubles",
-        "category": "Defensive Bidding"
+        "player": "West",
+        "topic": "Responding to a Takeout Double",
+        "category": "Procedure/Defense"
       },
       {
-        "player": "South (Fish075)",
-        "topic": "Takeout Double Requirements and Rebids",
-        "category": "Competitive Bidding"
-      },
-      {
-        "player": "North (BeaPercy)",
-        "topic": "Forced Responses After Partner's Double",
-        "category": "Competitive Bidding"
+        "player": "South",
+        "topic": "Game Invitation vs. Partscore",
+        "category": "Bidding Strength"
       }
     ]
   },

@@ -191,16 +191,69 @@
   "ai_analysis": {
     "verdict": "OPTIMAL",
     "actual_critique": [
-      "West correctly opened 2C, defining the hand as strong and game-forcing (22 HCP).",
-      "The partnership successfully navigated the strong 2C auction, with East showing weakness (5 HCP) and a long Spade suit, leading West to the optimal 3NT contract.",
-      "3NT is cold, making 10 tricks according to Double Dummy analysis, confirming that the final contract selection was excellent."
+      "West correctly opened 2C, showing a powerful hand (22 HCP) suitable for game.",
+      "Although East's 2S response was non-standard for a weak hand (5 HCP) in SAYC (where 2D is the typical negative response), it effectively communicated the long Spade suit.",
+      "The partnership successfully navigated the strong opening sequence to reach 3NT, which is the only makeable game contract (10 tricks)."
     ],
     "basic_section": {
-      "analysis": "West holds 22 HCP and a semi-balanced 2=5=4=2 distribution, requiring a strong 2C opening. In Standard American, after a negative 2D response, West typically rebids 2NT to show a balanced hand in the 22-24 HCP range. East, holding only 5 HCP, must respond negatively (2D). Since West has defined the hand as balanced and strong, 3NT is the logical conclusion, as there is no major suit fit and partner is weak.",
+      "analysis": "West's 22 HCP hand mandates a 2C strong opening. East holds only 5 HCP and must issue a negative response (2D). West shows their 5-card Heart suit, and East shows preference for their 6-card Spade suit. Since the partnership lacks an 8-card fit in either major, and West has good stoppers, 3NT is the logical and correct final contract.",
       "recommended_auction": [
         {
           "bid": "2C",
-          "explanation": "Strong, artificial, game forcing (22+ HCP)."
+          "explanation": "Strong, artificial, game-forcing opening (22+ HCP)."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "2D",
+          "explanation": "Standard SAYC negative response, 0-7 HCP."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "3H",
+          "explanation": "West shows a 5-card Heart suit, still forcing to game."
+        },
+        {
+          "bid": "p",
+          "explanation": "North passes."
+        },
+        {
+          "bid": "3S",
+          "explanation": "East shows preference for Spades (6 cards), still weak."
+        },
+        {
+          "bid": "p",
+          "explanation": "South passes."
+        },
+        {
+          "bid": "3N",
+          "explanation": "West denies Spade support, shows stoppers, and sets the contract in the best spot."
+        },
+        {
+          "bid": "p",
+          "explanation": "All pass, contract 3N."
+        },
+        {
+          "bid": "p",
+          "explanation": "All pass, contract 3N."
+        },
+        {
+          "bid": "p",
+          "explanation": "All pass, contract 3N."
+        }
+      ]
+    },
+    "advanced_section": {
+      "analysis": "The 2C opening is game-forcing regardless of system. The bidding sequence focuses on finding a major suit fit (which doesn't exist) before settling in the highly successful 3NT contract.",
+      "sequence": [
+        {
+          "bid": "2C",
+          "explanation": "Strong, artificial, game-forcing opening."
         },
         {
           "bid": "p",
@@ -208,60 +261,7 @@
         },
         {
           "bid": "2D",
-          "explanation": "Standard negative/waiting response (0-7 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "2NT",
-          "explanation": "Shows a balanced hand, 22-24 HCP."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "3C",
-          "explanation": "Weak preference, showing some length in Clubs (4 cards) and minimal values (5 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "3N",
-          "explanation": "To play. West is confident in 3NT based on their 22 HCP and partner's defined weakness."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        }
-      ]
-    },
-    "advanced_section": {
-      "analysis": "In advanced systems, the 2C opening is still mandatory. East's actual response of 2S is often used to show a weak hand (0-7 HCP) with a 5+ card Spade suit, which is highly descriptive. West's subsequent 3H rebid shows their 5-card Heart suit. East's 3S rebid confirms the long Spades and preference, but West correctly ignores the minor suit fit potential and focuses on the high card strength, concluding that 3NT is the safest game given the lack of a strong fit and partner's minimal contribution.",
-      "sequence": [
-        {
-          "bid": "2C",
-          "explanation": "Strong, artificial, game forcing (22+ HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "Pass."
-        },
-        {
-          "bid": "2S",
-          "explanation": "Weak response (0-7 HCP) showing a 5+ card Spade suit (East has 6 Spades, 5 HCP)."
+          "explanation": "Negative response (0-7 HCP)."
         },
         {
           "bid": "p",
@@ -269,7 +269,7 @@
         },
         {
           "bid": "3H",
-          "explanation": "Natural, showing a 5-card Heart suit (or longer). West is describing their shape."
+          "explanation": "Showing 5+ Hearts, forcing to game."
         },
         {
           "bid": "p",
@@ -277,7 +277,7 @@
         },
         {
           "bid": "3S",
-          "explanation": "Natural, confirming 6+ Spades and showing preference, still denying meaningful values."
+          "explanation": "Showing preference for 6+ Spades."
         },
         {
           "bid": "p",
@@ -285,7 +285,7 @@
         },
         {
           "bid": "3N",
-          "explanation": "West judges that 3NT is the best spot, relying on their high card strength and the lack of a viable major suit game."
+          "explanation": "Setting the contract in No Trump, denying Spade fit."
         },
         {
           "bid": "p",
@@ -304,18 +304,13 @@
     "coaches_corner": [
       {
         "player": "West",
-        "topic": "Strong 2C Rebid Structure",
-        "category": "Systemic"
+        "topic": "Strong Opening Bids",
+        "category": "Opening Bids"
       },
       {
         "player": "East",
-        "topic": "Descriptive Weak Responses to 2C",
-        "category": "Bidding Technique"
-      },
-      {
-        "player": "West",
-        "topic": "Contract Selection in NT vs. Suit Game (22 HCP, weak partner)",
-        "category": "Judgment"
+        "topic": "2C Responses (Standard Negative)",
+        "category": "Responding Bids"
       }
     ]
   },

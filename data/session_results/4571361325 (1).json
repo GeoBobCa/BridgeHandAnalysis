@@ -188,125 +188,109 @@
     }
   },
   "ai_analysis": {
-    "verdict": "UNDERBID",
+    "verdict": "MISSED GAME",
     "actual_critique": [
-      "The partnership missed the optimal contract of 3H (which makes exactly 9 tricks according to DDS), settling instead for 3C, which fails by two tricks.",
-      "South's initial pass in 2nd seat with 11 HCP was non-standard and prevented the partnership from finding a better opening sequence.",
-      "After South showed 4+ Hearts with 2H, North (14 HCP) should have bid 2NT to show a balanced hand and game interest, rather than prioritizing the 5-3 Club fit with 3C."
+      "North/South had 25 combined HCP and a makeable game (3NT makes 8 tricks, 4H makes 9 tricks), but stopped prematurely in a failing part-score (3C goes down 2 tricks).",
+      "South (Fish075) made the critical error by passing North's 3C rebid. South's 2H response was constructive (10+ HCP) and implied game interest, requiring continuation to 3NT once North confirmed strength.",
+      "The partnership failed to adequately explore Notrump, which was the most reliable game contract given the balanced nature of the hands and the lack of a confirmed 8-card major suit fit."
     ],
     "basic_section": {
-      "analysis": "South's 11 HCP hand should typically open 1D or 1H in 2nd seat. Following the actual auction, North opened 1C and East overcalled 1S. South's 2H response was standard, showing 10+ points and a 4-card Heart suit. North, holding 14 HCP, should aim for game. Instead of rebidding 3C (which shows minimum strength and denies interest in the 4-4 Heart fit), North should bid 2NT, showing 13-15 HCP and a weak Spade stopper, allowing South to continue exploring the major suit fit.",
+      "analysis": "North opened 1C (14 HCP). South responded 2H (11 HCP, 4+ Hearts), showing a constructive hand (10+ HCP) and game interest. North's 3C rebid confirmed a good club suit and 14 HCP. With 25 combined points, South must recognize the game potential. Since no 8-card major fit was found, 3NT is the standard target, which makes easily.",
       "recommended_auction": [
         {
-          "bid": "p",
-          "explanation": "East passes as dealer (7 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes with 11 HCP (non-standard, but following the actual history)."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes (8 HCP)."
-        },
-        {
           "bid": "1C",
-          "explanation": "North opens 1C (14 HCP, 5-card suit)."
+          "explanation": "Standard opening bid, 14 HCP, 5-card suit."
         },
         {
           "bid": "1S",
-          "explanation": "East overcalls 1S (5-card suit, 7 HCP)."
+          "explanation": "Standard overcall by East."
         },
         {
           "bid": "2H",
-          "explanation": "South responds 2H, showing 10+ points and 4+ Hearts (non-forcing)."
-        },
-        {
-          "bid": "2NT",
-          "explanation": "North shows 13-15 HCP, a balanced hand, and a weak Spade stopper, inviting game and exploring the 4-4 Heart fit."
+          "explanation": "Constructive response showing 4+ Hearts and 10+ HCP, forcing."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass."
         },
         {
-          "bid": "3H",
-          "explanation": "South shows 4 Hearts and invites game, confirming the 4-4 fit."
+          "bid": "3C",
+          "explanation": "Rebid showing a good 5+ card club suit and minimum opening strength (14 HCP), denying 4-card Heart support."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "With 11 HCP, South knows game is likely (25+ combined). 3NT is the best contract when no 8-card fit is confirmed. (3NT makes 8 tricks.)"
         },
         {
           "bid": "p",
-          "explanation": "North has minimum 14 HCP and only a doubleton Heart (J6). North declines the game invitation."
+          "explanation": "Pass."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass. Contract is 3NT."
         }
       ]
     },
     "advanced_section": {
-      "analysis": "The 2/1 Game Forcing convention does not apply here as 2H is a response over an opponent's overcall, not a direct 2/1 response. However, the principle of descriptive bidding remains paramount. North's 14 HCP hand is suitable for a 2NT rebid, which is more descriptive of strength and shape than 3C. This allows South to use subsequent bids (like 3H) to accurately describe their hand and find the optimal 4-4 Heart fit, which makes 3H.",
+      "analysis": "In 2/1 Game Force (GF) systems, South's 2H response is GF because it is a new suit at the 2-level. Once 2H is bid, the partnership is committed to game. North's 3C rebid is descriptive, showing 12-15 HCP and a 5+ club suit. South must continue to 3NT, as passing is illegal in a GF sequence.",
       "sequence": [
         {
-          "bid": "p",
-          "explanation": "East passes."
-        },
-        {
-          "bid": "p",
-          "explanation": "South passes (11 HCP)."
-        },
-        {
-          "bid": "p",
-          "explanation": "West passes."
-        },
-        {
           "bid": "1C",
-          "explanation": "North opens 1C."
+          "explanation": "Standard opening."
         },
         {
           "bid": "1S",
-          "explanation": "East overcalls 1S."
+          "explanation": "Overcall."
         },
         {
           "bid": "2H",
-          "explanation": "South shows 10+ points and 4+ Hearts, constructive."
-        },
-        {
-          "bid": "2NT",
-          "explanation": "North shows 13-15 HCP, balanced shape, and game interest."
+          "explanation": "Game Force response (new suit at 2-level), 4+ Hearts, 10+ HCP."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass."
         },
         {
-          "bid": "3H",
-          "explanation": "South shows the 4-4 Heart fit and invites game."
+          "bid": "3C",
+          "explanation": "Minimum rebid (12-15 HCP) showing 5+ clubs, denying Heart support."
+        },
+        {
+          "bid": "3NT",
+          "explanation": "Since the auction is GF, South bids the logical game contract, 3NT."
         },
         {
           "bid": "p",
-          "explanation": "North passes, declining game with minimum strength and poor Heart support."
+          "explanation": "Pass."
         },
         {
           "bid": "p",
-          "explanation": "East passes."
+          "explanation": "Pass."
+        },
+        {
+          "bid": "p",
+          "explanation": "Pass. Contract is 3NT."
         }
       ]
     },
     "coaches_corner": [
       {
-        "player": "South",
-        "topic": "Opening the Bidding (11 HCP in 2nd seat)",
-        "category": "Bidding Fundamentals"
+        "player": "Fish075",
+        "topic": "Game Bidding and Evaluation",
+        "category": "Partnership Communication"
       },
       {
-        "player": "North",
-        "topic": "Rebidding 2NT vs. Rebidding the Suit (Descriptive Bidding)",
-        "category": "Responder Rebids/NT Bidding"
+        "player": "Fish075",
+        "topic": "Responding to Forcing Bids",
+        "category": "Bidding Principles"
       },
       {
-        "player": "Partnership (N/S)",
-        "topic": "Finding the 4-4 Major Suit Fit",
-        "category": "Fit Finding"
+        "player": "BeaPercy",
+        "topic": "Rebids in Competition (Considering 2NT vs 3C)",
+        "category": "Bidding Accuracy"
       }
     ]
   },
