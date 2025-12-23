@@ -15,8 +15,6 @@
                 .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
                 .dds-table th, .dds-table td { text-align: center; padding: 4px; font-family: monospace; }
                 .dds-make { background-color: #d4edda; color: #155724; font-weight: bold; }
-                
-                /* New Bidding Table Styles */
                 .auction-table th { text-align: center; background-color: #f8f9fa; color: #666; font-size: 0.85rem; }
                 .auction-table td { text-align: center; font-family: monospace; font-size: 1.1rem; height: 40px; }
             </style>
@@ -53,33 +51,25 @@
                 </div>
 
                 <div class="col-md-4">
-                    
                     <div class="card mb-3">
                         <div class="card-header text-center">
-                            <strong>{{ hand.facts.contract }}</strong> by <strong>{{ hand.facts.declarer_full }}</strong>
+                            <span class="fs-5 fw-bold">{{ hand.facts.result_display }}</span><br>
+                            <span class="text-muted small">by {{ hand.facts.declarer_full }}</span>
                         </div>
                         <div class="card-body p-0">
                             <table class="table table-bordered mb-0 auction-table">
                                 <thead><tr><th>WEST</th><th>NORTH</th><th>EAST</th><th>SOUTH</th></tr></thead>
                                 <tbody>
                                     <tr>
-                                    {# CALCULATE OFFSET #}
                                     {% set offset = {'West':0, 'North':1, 'East':2, 'South':3}[hand.facts.dealer] %}
-                                    
-                                    {# PAD START #}
                                     {% for i in range(offset) %}<td></td>{% endfor %}
-                                    
-                                    {# LOOP BIDS #}
                                     {% for bid in hand.facts.auction %}
-                                        {# New row if index + offset is multiple of 4 #}
                                         {% if loop.index0 > 0 and (loop.index0 + offset) % 4 == 0 %}</tr><tr>{% endif %}
                                         <td>{{ bid }}</td>
                                     {% endfor %}
-                                    
-                                    {# PAD END #}
-                                    {% set total_cells = offset + hand.facts.auction|length %}
-                                    {% set remainder = 4 - (total_cells % 4) %}
-                                    {% if remainder != 4 %}{% for i in range(remainder) %}<td></td>{% endfor %}{% endif %}
+                                    {% set total = offset + hand.facts.auction|length %}
+                                    {% set rem = 4 - (total % 4) %}
+                                    {% if rem != 4 %}{% for i in range(rem) %}<td></td>{% endfor %}{% endif %}
                                     </tr>
                                 </tbody>
                             </table>
@@ -128,7 +118,6 @@
                         {% set compass = ['North', 'East', 'South', 'West'] %}
                         {% set dealer_map = {'North': 0, 'East': 1, 'South': 2, 'West': 3} %}
                         {% set start_idx = dealer_map[hand.facts.dealer] %}
-                        
                         {% for step in hand.ai_analysis.basic_section.recommended_auction %}
                             {% set current_idx = (start_idx + loop.index0) % 4 %}
                             <div class="accordion-item">
@@ -160,7 +149,6 @@
                                 {% set compass = ['North', 'East', 'South', 'West'] %}
                                 {% set dealer_map = {'North': 0, 'East': 1, 'South': 2, 'West': 3} %}
                                 {% set start_idx = dealer_map[hand.facts.dealer] %}
-                                
                                 {% for step in hand.ai_analysis.advanced_section.sequence %}
                                     {% set current_idx = (start_idx + loop.index0) % 4 %}
                                     <div class="accordion-item">

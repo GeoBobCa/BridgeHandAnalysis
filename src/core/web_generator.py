@@ -2,18 +2,11 @@ import os
 import json
 import re
 import urllib.parse
-from pathlib import Path  # <--- NEW: For bulletproof paths
+from pathlib import Path
 from jinja2 import Environment, FileSystemLoader
 
 # --- CONFIGURATION SECTION ---
-# 1. Find the Root Directory (BridgeMaster/)
-#    Current file is: BridgeMaster/src/core/web_generator.py
-#    Parent 1: src/core/
-#    Parent 2: src/
-#    Parent 3: BridgeMaster/
 ROOT_DIR = Path(__file__).resolve().parent.parent.parent
-
-# 2. Define Paths relative to Root
 WEB_CONFIG = {
     "input_folder": ROOT_DIR / "data/session_results",
     "output_folder": ROOT_DIR / "docs",
@@ -23,29 +16,19 @@ WEB_CONFIG = {
 
 class WebGenerator:
     def __init__(self):
-        # Convert Paths to strings for OS compatibility
         self.out_dir = str(WEB_CONFIG["output_folder"])
         self.tpl_dir = str(WEB_CONFIG["template_dir"])
         self.in_dir = str(WEB_CONFIG["input_folder"])
-
-        # Create directories if missing
         os.makedirs(self.out_dir, exist_ok=True)
         os.makedirs(self.tpl_dir, exist_ok=True)
-        
-        # Initialize Jinja2
         self.env = Environment(loader=FileSystemLoader(self.tpl_dir))
-        
-        # Force Create Templates
         self._create_templates()
 
     def generate_all(self):
-        # Debug Print: Tell the user exactly where we are looking
         print(f"📂 Scanning for JSON in: {self.in_dir}")
-        print(f"📝 Writing Templates to: {self.tpl_dir}")
-
         files = [f for f in os.listdir(self.in_dir) if f.endswith(".json")]
         if not files:
-            print("⚠️  No JSON files found! Did you run analyze_session.py?")
+            print("⚠️  No JSON files found!")
             return
 
         hands_data = []
@@ -56,15 +39,48 @@ class WebGenerator:
                     data = json.load(json_file)
                     if 'ai_analysis' not in data: data['ai_analysis'] = {}
                     
-                    # Normalize Declarer
                     facts = data.get('facts', {})
-                    dec_map = {'N': 'North', 'S': 'South', 'E': 'East', 'W': 'West'}
+                    
+                    # --- FIX 1: DECLARER MAPPING ---
+                    # Handles uppercase, lowercase, and missing data
                     raw_dec = facts.get('declarer', '')
-                    facts['declarer_full'] = dec_map.get(raw_dec, raw_dec)
+                    dec_map = {
+                        'N': 'North', 'S': 'South', 'E': 'East', 'W': 'West',
+                        'n': 'North', 's': 'South', 'e': 'East', 'w': 'West',
+                    }
+                    # Default to 'Unknown' if key is missing or empty
+                    if raw_dec and str(raw_dec).upper() in dec_map:
+                        facts['declarer_full'] = dec_map[str(raw_dec).upper()]
+                    else:
+                        facts['declarer_full'] = "Unknown"
+
+                    # --- FIX 2: RESULT MATH (e.g. 4S +1) ---
+                    contract = facts.get('contract', 'Pass')
+                    tricks = facts.get('tricks_taken')
+                    
+                    result_suffix = ""
+                    if tricks is not None and contract != 'Pass':
+                        try:
+                            # Parse level (e.g. "4" from "4S")
+                            level = int(contract[0])
+                            # Bridge math: Target = Level + 6
+                            target = level + 6
+                            actual = int(tricks)
+                            diff = actual - target
+                            
+                            if diff > 0: result_suffix = f"+{diff}"
+                            elif diff == 0: result_suffix = "="
+                            else: result_suffix = f"{diff}"
+                        except:
+                            # If math fails (e.g. contract is "Pass"), ignore
+                            pass
+                    
+                    # Create a display string: "4S +1" or "3NT ="
+                    facts['result_display'] = f"{contract} {result_suffix}".strip()
                     
                     hands_data.append(data)
             except Exception as e:
-                print(f"Warning: {f} {e}")
+                print(f"Warning processing {f}: {e}")
         
         # Sort by board number
         def get_board_num(item):
@@ -92,8 +108,6 @@ class WebGenerator:
             f.write(content)
 
     def _create_templates(self):
-        print("🔨 Rebuilding HTML Templates...")
-        
         # 1. DASHBOARD
         index_html = """
         <!DOCTYPE html>
@@ -107,14 +121,15 @@ class WebGenerator:
         <div class="col-md-3 mb-3"><div class="card shadow-sm h-100"><div class="card-body text-center">
             <h5 class="card-title">{{ item.facts.board }}</h5>
             <span class="badge bg-primary mb-3">{{ item.ai_analysis.get('verdict', 'Pending') }}</span>
-            <p class="card-text small text-muted">{{ item.facts.contract }} by {{ item.facts.declarer_full }}</p>
+            <p class="card-text fw-bold">{{ item.facts.result_display }}</p>
+            <p class="card-text small text-muted">by {{ item.facts.declarer_full }}</p>
             <a href="{{ item.facts.board | replace(' ', '_') }}.html" class="btn btn-outline-dark btn-sm w-100">View</a>
         </div></div></div>
         {% endfor %}
         </div></div></body></html>
         """
         
-        # 2. DETAIL PAGE (With Bidding Table & Compass Logic)
+        # 2. DETAIL PAGE
         detail_html = """
         <!DOCTYPE html>
         <html>
@@ -132,8 +147,6 @@ class WebGenerator:
                 .adv-card { background-color: #fff3cd; border-left: 5px solid #ffc107; }
                 .dds-table th, .dds-table td { text-align: center; padding: 4px; font-family: monospace; }
                 .dds-make { background-color: #d4edda; color: #155724; font-weight: bold; }
-                
-                /* New Bidding Table Styles */
                 .auction-table th { text-align: center; background-color: #f8f9fa; color: #666; font-size: 0.85rem; }
                 .auction-table td { text-align: center; font-family: monospace; font-size: 1.1rem; height: 40px; }
             </style>
@@ -170,33 +183,25 @@ class WebGenerator:
                 </div>
 
                 <div class="col-md-4">
-                    
                     <div class="card mb-3">
                         <div class="card-header text-center">
-                            <strong>{{ hand.facts.contract }}</strong> by <strong>{{ hand.facts.declarer_full }}</strong>
+                            <span class="fs-5 fw-bold">{{ hand.facts.result_display }}</span><br>
+                            <span class="text-muted small">by {{ hand.facts.declarer_full }}</span>
                         </div>
                         <div class="card-body p-0">
                             <table class="table table-bordered mb-0 auction-table">
                                 <thead><tr><th>WEST</th><th>NORTH</th><th>EAST</th><th>SOUTH</th></tr></thead>
                                 <tbody>
                                     <tr>
-                                    {# CALCULATE OFFSET #}
                                     {% set offset = {'West':0, 'North':1, 'East':2, 'South':3}[hand.facts.dealer] %}
-                                    
-                                    {# PAD START #}
                                     {% for i in range(offset) %}<td></td>{% endfor %}
-                                    
-                                    {# LOOP BIDS #}
                                     {% for bid in hand.facts.auction %}
-                                        {# New row if index + offset is multiple of 4 #}
                                         {% if loop.index0 > 0 and (loop.index0 + offset) % 4 == 0 %}</tr><tr>{% endif %}
                                         <td>{{ bid }}</td>
                                     {% endfor %}
-                                    
-                                    {# PAD END #}
-                                    {% set total_cells = offset + hand.facts.auction|length %}
-                                    {% set remainder = 4 - (total_cells % 4) %}
-                                    {% if remainder != 4 %}{% for i in range(remainder) %}<td></td>{% endfor %}{% endif %}
+                                    {% set total = offset + hand.facts.auction|length %}
+                                    {% set rem = 4 - (total % 4) %}
+                                    {% if rem != 4 %}{% for i in range(rem) %}<td></td>{% endfor %}{% endif %}
                                     </tr>
                                 </tbody>
                             </table>
@@ -245,7 +250,6 @@ class WebGenerator:
                         {% set compass = ['North', 'East', 'South', 'West'] %}
                         {% set dealer_map = {'North': 0, 'East': 1, 'South': 2, 'West': 3} %}
                         {% set start_idx = dealer_map[hand.facts.dealer] %}
-                        
                         {% for step in hand.ai_analysis.basic_section.recommended_auction %}
                             {% set current_idx = (start_idx + loop.index0) % 4 %}
                             <div class="accordion-item">
@@ -277,7 +281,6 @@ class WebGenerator:
                                 {% set compass = ['North', 'East', 'South', 'West'] %}
                                 {% set dealer_map = {'North': 0, 'East': 1, 'South': 2, 'West': 3} %}
                                 {% set start_idx = dealer_map[hand.facts.dealer] %}
-                                
                                 {% for step in hand.ai_analysis.advanced_section.sequence %}
                                     {% set current_idx = (start_idx + loop.index0) % 4 %}
                                     <div class="accordion-item">
@@ -315,7 +318,6 @@ class WebGenerator:
         </div></body></html>
         """
 
-        # Write the files
         with open(os.path.join(self.tpl_dir, "index.html"), 'w', encoding='utf-8') as f:
             f.write(index_html)
         with open(os.path.join(self.tpl_dir, "hand_detail.html"), 'w', encoding='utf-8') as f:
@@ -323,4 +325,3 @@ class WebGenerator:
 
 if __name__ == "__main__":
     WebGenerator().generate_all()
-    
